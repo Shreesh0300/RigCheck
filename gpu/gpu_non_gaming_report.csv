@@ -1,0 +1,475 @@
+gpu_name,manufacturer,benchmark_score,non_gaming_reason
+RTX A5000,NVIDIA,22867,Professional/Quadro
+RTX A6000,NVIDIA,22122,Professional/Quadro
+RTX A4500,NVIDIA,21546,Professional/Quadro
+Quadro RTX 6000,NVIDIA,19692,Professional/Quadro
+Quadro RTX 8000,NVIDIA,19126,Professional/Quadro
+RTX A4000,NVIDIA,18988,Professional/Quadro
+TITAN V,NVIDIA,18816,TITAN Compute
+Quadro GV100,NVIDIA,17675,Professional/Quadro
+TITAN V CEO Edition,NVIDIA,16988,TITAN Compute
+RTX A4000 Laptop GPU,NVIDIA,16297,Professional/Quadro
+RTX A5000 Laptop GPU,NVIDIA,16273,Professional/Quadro
+Quadro RTX 5000,NVIDIA,16260,Professional/Quadro
+Tesla V100 SXM2 16GB,NVIDIA,16235,Datacenter/Tesla
+Quadro GP100,NVIDIA,16203,Professional/Quadro
+Quadro P6000,NVIDIA,15811,Professional/Quadro
+Quadro RTX 4000,NVIDIA,15515,Professional/Quadro
+Quadro RTX 5000 (Mobile),NVIDIA,14832,Professional/Quadro
+Quadro RTX 5000 with Max Q Design,NVIDIA,13893,Professional/Quadro
+RTX A2000 12GB,NVIDIA,13688,Professional/Quadro
+TITAN X,NVIDIA,13660,Other-Professional
+Quadro RTX 4000 with Max Q Design,NVIDIA,13622,Professional/Quadro
+Tesla T10,NVIDIA,13264,Datacenter/Tesla
+RTX A3000 Laptop GPU,NVIDIA,13263,Professional/Quadro
+GTX TITAN X,NVIDIA,13173,Other-Professional
+RTX A2000,NVIDIA,13128,Professional/Quadro
+Quadro RTX 4000 (Mobile),NVIDIA,13008,Professional/Quadro
+Pro V520 MxGPU,AMD,12853,GRID/Virtual
+Quadro P5200 with Max Q Design,NVIDIA,12323,Professional/Quadro
+Quadro M6000 24GB,NVIDIA,12264,Professional/Quadro
+Quadro P5200,NVIDIA,12144,Professional/Quadro
+Quadro P5000,NVIDIA,11976,Professional/Quadro
+Quadro P4200 with Max Q Design,NVIDIA,11869,Professional/Quadro
+Tesla M40 24GB,NVIDIA,11658,Datacenter/Tesla
+Quadro P4000,NVIDIA,11422,Professional/Quadro
+Quadro M6000,NVIDIA,11397,Professional/Quadro
+Quadro RTX 3000,NVIDIA,11122,Professional/Quadro
+Tesla T4,NVIDIA,11113,Datacenter/Tesla
+Instinct MI25 MxGPU,AMD,10466,GRID/Virtual
+RTX A2000 Laptop GPU,NVIDIA,10148,Professional/Quadro
+Tesla M40,NVIDIA,10117,Datacenter/Tesla
+RTX A3000 12GB Laptop GPU,NVIDIA,9975,Professional/Quadro
+Quadro P4200,NVIDIA,9827,Professional/Quadro
+Quadro P2200,NVIDIA,9486,Professional/Quadro
+Quadro M5000,NVIDIA,9262,Professional/Quadro
+Quadro P3200 with Max Q Design,NVIDIA,9242,Professional/Quadro
+Quadro P4000 with Max Q Design,NVIDIA,9083,Professional/Quadro
+Quadro RTX 3000 with Max Q Design,NVIDIA,8754,Professional/Quadro
+Quadro P3200,NVIDIA,8663,Professional/Quadro
+15FF,Unknown,8229,Junk/Unknown
+Quadro K6000,NVIDIA,8108,Professional/Quadro
+Quadro M5500,NVIDIA,7915,Professional/Quadro
+Tesla M60,NVIDIA,7771,Datacenter/Tesla
+FirePro W9100,AMD,7719,Professional/Quadro
+Tesla M6,NVIDIA,7509,Datacenter/Tesla
+FirePro W8100,AMD,7327,Professional/Quadro
+Tesla P100 PCIE 16GB,NVIDIA,7225,Datacenter/Tesla
+Quadro T2000,NVIDIA,7169,Professional/Quadro
+Quadro P2000,NVIDIA,7096,Professional/Quadro
+Quadro T2000 with Max Q Design,NVIDIA,6871,Professional/Quadro
+Quadro M5000M,NVIDIA,6807,Professional/Quadro
+Quadro M4000,NVIDIA,6644,Professional/Quadro
+Quadro T1000 with Max Q Design,NVIDIA,6589,Professional/Quadro
+Quadro P3000,NVIDIA,6572,Professional/Quadro
+Quadro M4000M,NVIDIA,6530,Professional/Quadro
+Quadro T1000,NVIDIA,6513,Professional/Quadro
+FirePro S7150,AMD,6276,Professional/Quadro
+FirePro W9000,AMD,6138,Professional/Quadro
+P106 100,Unknown,5967,Mining/Compute
+A16,Unknown,5797,Junk/Unknown
+Quadro K5200,NVIDIA,5780,Professional/Quadro
+Quadro M3000M,NVIDIA,5678,Professional/Quadro
+Tesla K20m,NVIDIA,5675,Datacenter/Tesla
+Tesla K20Xm,NVIDIA,5428,Datacenter/Tesla
+FirePro S10000,AMD,5315,Professional/Quadro
+FirePro W7100,AMD,5175,Professional/Quadro
+FirePro S9000,AMD,5059,Professional/Quadro
+EIZO Quadro MED XN51LP,NVIDIA,4955,Professional/Quadro
+Barco MXRT 7600,Unknown,4944,Embedded/ISV
+FirePro S9050,AMD,4901,Professional/Quadro
+GRID RTX6000P 6Q,NVIDIA,4777,GRID/Virtual
+Quadro P2000 with Max Q Design,NVIDIA,4597,Professional/Quadro
+Quadro P1000,NVIDIA,4466,Professional/Quadro
+P104 100,Unknown,4450,Mining/Compute
+Citrix Indirect Display Adapter,Unknown,4447,GRID/Virtual
+Quadro M2200,NVIDIA,4342,Professional/Quadro
+FirePro W7000 Adapter,AMD,4340,Professional/Quadro
+GRID GTX P40 6,NVIDIA,4340,GRID/Virtual
+Quadro K4200,NVIDIA,4337,Professional/Quadro
+Barco MXRT 7500,Unknown,4319,Embedded/ISV
+GRID RTX6000P 4Q,NVIDIA,4283,GRID/Virtual
+FirePro W7000,AMD,4276,Professional/Quadro
+FirePro S7000,AMD,4166,Professional/Quadro
+GRID V100D 8Q,Unknown,4156,GRID/Virtual
+FirePro W8000,AMD,4138,Professional/Quadro
+GRID RTX8000 4Q,NVIDIA,3961,GRID/Virtual
+Quadro M2000,NVIDIA,3942,Professional/Quadro
+Quadro K5000,NVIDIA,3901,Professional/Quadro
+Quadro K2200M,NVIDIA,3877,Professional/Quadro
+GRID RTX8000P 2Q,NVIDIA,3843,GRID/Virtual
+Quadro P620,NVIDIA,3640,Professional/Quadro
+GRID RTX8000 2Q,NVIDIA,3574,GRID/Virtual
+Quadro K2200,NVIDIA,3541,Professional/Quadro
+Quadro M2000M,NVIDIA,3539,Professional/Quadro
+Tesla C2050,NVIDIA,3515,Datacenter/Tesla
+Quadro 7000,NVIDIA,3505,Professional/Quadro
+Tesla M10,NVIDIA,3490,Datacenter/Tesla
+Tesla C2050 / C2070,NVIDIA,3428,Datacenter/Tesla
+GRID K520,Unknown,3399,GRID/Virtual
+Quadro M1200,NVIDIA,3342,Professional/Quadro
+Quadro P600,NVIDIA,3324,Professional/Quadro
+Quadro K5100M,NVIDIA,3266,Professional/Quadro
+FirePro V7000,AMD,3162,Professional/Quadro
+FirePro W7170M,AMD,3162,Professional/Quadro
+Tesla C2075,NVIDIA,3118,Datacenter/Tesla
+Tesla C2070,NVIDIA,3101,Datacenter/Tesla
+FirePro W5000,AMD,3056,Professional/Quadro
+EIZO MED X5000,Unknown,3038,Embedded/ISV
+Quadro M1000M,NVIDIA,2987,Professional/Quadro
+FirePro W5100,AMD,2957,Professional/Quadro
+GRID K260Q,Unknown,2949,GRID/Virtual
+Quadro K1200,NVIDIA,2874,Professional/Quadro
+FirePro W4300,AMD,2863,Professional/Quadro
+Pro V340 MxGPU,AMD,2853,GRID/Virtual
+Quadro M620,NVIDIA,2845,Professional/Quadro
+GRID K280Q,Unknown,2840,GRID/Virtual
+FirePro 3D V9800,AMD,2812,Professional/Quadro
+Quadro K4100M,NVIDIA,2756,Professional/Quadro
+Quadro K5000M,NVIDIA,2754,Professional/Quadro
+GRID K2,Unknown,2737,GRID/Virtual
+FirePro V9800,AMD,2727,Professional/Quadro
+Barco MXRT 5500,Unknown,2702,Embedded/ISV
+Quadro K4000,NVIDIA,2700,Professional/Quadro
+Quadro 6000,NVIDIA,2689,Professional/Quadro
+FirePro M6100 FireGL V,AMD,2656,Professional/Quadro
+FirePro R5000,AMD,2647,Professional/Quadro
+GRID K240Q,Unknown,2541,GRID/Virtual
+FireStream 9370,Unknown,2528,Professional/Quadro
+FirePro 3D V8800,AMD,2438,Professional/Quadro
+P106 090,Unknown,2402,Mining/Compute
+FirePro V7900,AMD,2310,Professional/Quadro
+Quadro K3100M,NVIDIA,2263,Professional/Quadro
+Quadro K620,NVIDIA,2246,Professional/Quadro
+FirePro V8800,AMD,2223,Professional/Quadro
+Quadro P520,NVIDIA,2126,Professional/Quadro
+FirePro M5100,AMD,2103,Professional/Quadro
+Quadro 5000M,NVIDIA,2060,Professional/Quadro
+FirePro V7800,AMD,2034,Professional/Quadro
+Quadro M600M,NVIDIA,2008,Professional/Quadro
+Quadro 5000,NVIDIA,1982,Professional/Quadro
+Quadro M520,NVIDIA,1981,Professional/Quadro
+Quadro K4000M,NVIDIA,1949,Professional/Quadro
+FirePro M6100,AMD,1945,Professional/Quadro
+Matrox C680 PCIe x16,Unknown,1904,Embedded/ISV
+Quadro 5010M,NVIDIA,1891,Professional/Quadro
+FirePro 3D V7800,AMD,1867,Professional/Quadro
+FirePro M5100 FireGL V,AMD,1839,Professional/Quadro
+MxGPU,Unknown,1826,GRID/Virtual
+FirePro M6000,AMD,1820,Professional/Quadro
+Matrox C900 PCIe x16,Unknown,1812,Embedded/ISV
+FirePro W600,AMD,1752,Professional/Quadro
+FirePro M6000 Mobility Pro,AMD,1709,Professional/Quadro
+Qualcomm Adreno 8cx Gen 3,Qualcomm,1670,Mobile SoC
+Quadro K3000M,NVIDIA,1626,Professional/Quadro
+Quadro K2000D,NVIDIA,1614,Professional/Quadro
+Quadro P400,NVIDIA,1614,Professional/Quadro
+FirePro M4000,AMD,1597,Professional/Quadro
+FirePro M4000 Mobility Pro,AMD,1591,Professional/Quadro
+Quadro K2000,NVIDIA,1567,Professional/Quadro
+Firepro W5170M,AMD,1555,Professional/Quadro
+FirePro W4100,AMD,1541,Professional/Quadro
+FirePro V8700,AMD,1539,Professional/Quadro
+FirePro W6150M,AMD,1515,Professional/Quadro
+Quadro P500,NVIDIA,1508,Professional/Quadro
+Quadro 4000,NVIDIA,1489,Professional/Quadro
+FirePro M40003,AMD,1364,Professional/Quadro
+Quadro K2100M,NVIDIA,1348,Professional/Quadro
+FirePro W5130M,AMD,1341,Professional/Quadro
+FireStream 9270,Unknown,1341,Professional/Quadro
+FirePro M5950,AMD,1314,Professional/Quadro
+Quadro 4000M,NVIDIA,1307,Professional/Quadro
+Tesla M2070 Q,NVIDIA,1306,Datacenter/Tesla
+FirePro 3D V8750,AMD,1272,Professional/Quadro
+FirePro V5900,AMD,1271,Professional/Quadro
+Quadro FX 5800,NVIDIA,1248,Professional/Quadro
+Quadro 2000 D,NVIDIA,1239,Professional/Quadro
+FirePro 3D V5800,AMD,1232,Professional/Quadro
+FirePro 3D V8700,AMD,1206,Professional/Quadro
+FirePro V5800,AMD,1186,Professional/Quadro
+FireStream 9250,Unknown,1165,Professional/Quadro
+Barco MXRT 5400,Unknown,1161,Embedded/ISV
+Quadro K620M,NVIDIA,1157,Professional/Quadro
+NVS 810,Unknown,1141,Embedded/ISV
+Quadro 2100M,NVIDIA,1100,Professional/Quadro
+Quadro M500M,NVIDIA,1098,Professional/Quadro
+Firepro W4190M,AMD,1086,Professional/Quadro
+Quadro K1100M,NVIDIA,1082,Professional/Quadro
+Barco MXRT 5450,Unknown,1079,Embedded/ISV
+FirePro M4170,AMD,1067,Professional/Quadro
+Firepro M4100,AMD,1059,Professional/Quadro
+Quadro K2000M,NVIDIA,1027,Professional/Quadro
+Quadro 3000M,NVIDIA,1024,Professional/Quadro
+FirePro M4150,AMD,999,Professional/Quadro
+Quadro 2000D,NVIDIA,989,Professional/Quadro
+Quadro FX 4800,NVIDIA,979,Professional/Quadro
+FirePro V4900,AMD,974,Professional/Quadro
+FirePro W4170M,AMD,953,Professional/Quadro
+Qualcomm Adreno 690 GPU,Qualcomm,952,Mobile SoC
+Quadro CX,NVIDIA,947,Professional/Quadro
+Quadro 2000,NVIDIA,942,Professional/Quadro
+GRID K220Q,Unknown,912,GRID/Virtual
+Barco MXRT 7400,Unknown,901,Embedded/ISV
+Barco MXRT 2600,Unknown,900,Embedded/ISV
+FirePro W2100,AMD,890,Professional/Quadro
+FirePro 3D V4800,AMD,854,Professional/Quadro
+FireGL V8600,Unknown,839,Embedded/ISV
+GRID K1,Unknown,811,GRID/Virtual
+Quadro FX 3800,NVIDIA,780,Professional/Quadro
+Quadro K420,NVIDIA,775,Professional/Quadro
+Quadro 2000M,NVIDIA,773,Professional/Quadro
+Quadro K1000M,NVIDIA,773,Professional/Quadro
+Quadro K600,NVIDIA,769,Professional/Quadro
+Quadro 1100M,NVIDIA,755,Professional/Quadro
+NVS 510,Unknown,730,Embedded/ISV
+GRID K140Q,Unknown,728,GRID/Virtual
+Quadro K610M,NVIDIA,708,Professional/Quadro
+Tesla K40m,NVIDIA,705,Datacenter/Tesla
+Quadro FX 4700 X2,NVIDIA,676,Professional/Quadro
+FirePro M7740,AMD,665,Professional/Quadro
+Quadro 500M,NVIDIA,664,Professional/Quadro
+FirePro V3900,AMD,662,Professional/Quadro
+FireGL V7700,Unknown,660,Embedded/ISV
+FireStream 9170,Unknown,647,Professional/Quadro
+Matrox C420 LP PCIe x16,Unknown,635,Embedded/ISV
+NVS 5400M,Unknown,635,Embedded/ISV
+GRID K160Q,Unknown,628,GRID/Virtual
+Quadro FX 3800M,NVIDIA,628,Professional/Quadro
+FireGL V7600,Unknown,616,Embedded/ISV
+Quadro K510M,NVIDIA,610,Professional/Quadro
+Quadro 1000M,NVIDIA,599,Professional/Quadro
+Quadro FX 5600,NVIDIA,562,Professional/Quadro
+FireGL V8650,Unknown,550,Embedded/ISV
+FirePro 3D V5700,AMD,547,Professional/Quadro
+Quadro 600,NVIDIA,546,Professional/Quadro
+FirePro 3D V7750,AMD,545,Professional/Quadro
+Quadro FX 2700,NVIDIA,543,Professional/Quadro
+GRID K180Q,Unknown,534,GRID/Virtual
+NVS 5200M,Unknown,534,Embedded/ISV
+Quadro K500M,NVIDIA,480,Professional/Quadro
+FirePro 3D V3800,AMD,472,Professional/Quadro
+Quadro FX 1800M,NVIDIA,469,Professional/Quadro
+Quadro FX 3600M,NVIDIA,467,Professional/Quadro
+Quadro FX 3700M,NVIDIA,467,Professional/Quadro
+FirePro V5700,AMD,465,Professional/Quadro
+Qualcomm Adreno 680 GPU,Qualcomm,449,Mobile SoC
+Quadro FX 4600,NVIDIA,437,Professional/Quadro
+Quadro 410,NVIDIA,436,Professional/Quadro
+Quadro FX 2800M,NVIDIA,433,Professional/Quadro
+FirePro M2000,AMD,406,Professional/Quadro
+Quadro FX 1800,NVIDIA,405,Professional/Quadro
+Quadro FX 3700,NVIDIA,384,Professional/Quadro
+Matrox Millennium P690 PCIe x16,Unknown,367,Embedded/ISV
+Quadro FX 2700M,NVIDIA,358,Professional/Quadro
+FireGL V5600,Unknown,341,Embedded/ISV
+FirePro 3D V3750,AMD,341,Professional/Quadro
+FirePro RG220,AMD,335,Professional/Quadro
+FirePro V3800,AMD,332,Professional/Quadro
+Quadro FX 3500M,NVIDIA,306,Professional/Quadro
+GRID K120Q,Unknown,293,GRID/Virtual
+Quadro FX 3500,NVIDIA,292,Professional/Quadro
+NVS 315,Unknown,286,Embedded/ISV
+Mobile Intel HD,Intel,285,Integrated/Legacy
+Qualcomm Adreno 630 GPU,Qualcomm,268,Mobile SoC
+NVS 4200M,Unknown,257,Embedded/ISV
+Quadro NVS 510M,NVIDIA,254,Professional/Quadro
+NVS 310,Unknown,242,Embedded/ISV
+Quadro FX 5500,NVIDIA,242,Professional/Quadro
+Quadro FX 4500 X2,NVIDIA,236,Professional/Quadro
+Quadro FX 4500,NVIDIA,226,Professional/Quadro
+Mobility FireGL V5725,Unknown,219,Embedded/ISV
+Quadro FX 880M,NVIDIA,219,Professional/Quadro
+Quadro FX 2500M,NVIDIA,218,Professional/Quadro
+Barco MXRT 1450,Unknown,206,Embedded/ISV
+Quadro NVS 290,NVIDIA,205,Professional/Quadro
+Quadro FX 770M,NVIDIA,198,Professional/Quadro
+NVS 5100M,Unknown,190,Embedded/ISV
+Quadro FX 1500,NVIDIA,190,Professional/Quadro
+Quadro FX 1600M,NVIDIA,186,Professional/Quadro
+Quadro FX 3450/4000 SDI,NVIDIA,186,Professional/Quadro
+Quadro FX 380,NVIDIA,186,Professional/Quadro
+Barco MXRT 7100,Unknown,180,Embedded/ISV
+FireGL V3600,Unknown,180,Embedded/ISV
+FirePro 3D V3700,AMD,179,Professional/Quadro
+Quadro FX 1700M,NVIDIA,173,Professional/Quadro
+Quadro FX 1500M,NVIDIA,171,Professional/Quadro
+FirePro 2460,AMD,170,Professional/Quadro
+Quadro FX 570,NVIDIA,156,Professional/Quadro
+Quadro FX 580,NVIDIA,155,Professional/Quadro
+Quadro FX 3450,NVIDIA,149,Professional/Quadro
+FirePro 2270,AMD,147,Professional/Quadro
+Quadro 400,NVIDIA,146,Professional/Quadro
+S3 5400EW,Unknown,145,Integrated/Legacy
+Q45/Q43 Express Chipset,Intel,142,Integrated/Legacy
+NVS 2100M,Unknown,139,Embedded/ISV
+Quadro FX 380 LP,NVIDIA,136,Professional/Quadro
+FireGL V7300,Unknown,128,Embedded/ISV
+Quadro NVS 320M,NVIDIA,128,Professional/Quadro
+Quadro FX 1400,NVIDIA,124,Professional/Quadro
+Quadro FX 380M,NVIDIA,124,Professional/Quadro
+Matrox G200e WDDM 2.0,Unknown,123,Embedded/ISV
+Qualcomm Adreno 540 GPU,Qualcomm,120,Mobile SoC
+Qualcomm Adreno 618 GPU,Qualcomm,120,Mobile SoC
+Quadro FX 1700,NVIDIA,118,Professional/Quadro
+FireMV 2260,Unknown,117,Embedded/ISV
+Mobile Intel 45 Express Chipsatzfamilie,Intel,117,Integrated/Legacy
+FireGL V7200,Unknown,116,Embedded/ISV
+FireGL V5200,Unknown,115,Embedded/ISV
+NVS 3100M,Unknown,115,Embedded/ISV
+NVS 300,Unknown,114,Embedded/ISV
+Quadro FX 560,NVIDIA,114,Professional/Quadro
+FirePro 2260,AMD,113,Professional/Quadro
+FireGL V7350,Unknown,111,Embedded/ISV
+Quadro FX 570M,NVIDIA,111,Professional/Quadro
+Quadro FX 370 LP,NVIDIA,108,Professional/Quadro
+Quadro FX 3400/4400,NVIDIA,104,Professional/Quadro
+FireGL V3400,Unknown,103,Embedded/ISV
+Quadro FX 370 Low Profile,NVIDIA,103,Professional/Quadro
+Quadro FX Go1400,NVIDIA,102,Professional/Quadro
+Quadro FX 4000,NVIDIA,101,Professional/Quadro
+Quadro NVS 130M,NVIDIA,97,Professional/Quadro
+Matrox G200eW3 WDDM 2.0,Unknown,94,Embedded/ISV
+FireGL V5100,Unknown,93,Embedded/ISV
+Quadro FX 370M,NVIDIA,93,Professional/Quadro
+Quadro NVS 150M,NVIDIA,93,Professional/Quadro
+Quadro FX 360M,NVIDIA,87,Professional/Quadro
+Quadro FX 350,NVIDIA,86,Professional/Quadro
+FireGL V3200,Unknown,85,Embedded/ISV
+Quadro FX 370,NVIDIA,84,Professional/Quadro
+G41 Express Chipset,Intel,83,Integrated/Legacy
+MOBILITY FireGL V5000,Unknown,82,Embedded/ISV
+Quadro FX 540,NVIDIA,81,Professional/Quadro
+Quadro NVS 160M,NVIDIA,76,Professional/Quadro
+G45/G43 Express Chipset,Intel,75,Integrated/Legacy
+Quadro NVS 295,NVIDIA,75,Professional/Quadro
+FireMV 2450,Unknown,74,Embedded/ISV
+FireGL V7100,Unknown,72,Embedded/ISV
+FireGL V3300,Unknown,71,Embedded/ISV
+Quadro NVS 420,NVIDIA,70,Professional/Quadro
+FireGL V3350,Unknown,69,Embedded/ISV
+Quadro FX 3000,NVIDIA,69,Professional/Quadro
+B43 Express Chipset,Intel,68,Integrated/Legacy
+G45/G43/G41 Express Chipset,Intel,68,Integrated/Legacy
+Matrox G200eR WDDM 2.0,Unknown,68,Embedded/ISV
+Quadro NVS 135M,NVIDIA,67,Professional/Quadro
+Quadro FX 550,NVIDIA,64,Professional/Quadro
+Quadro NVS 450,NVIDIA,64,Professional/Quadro
+MOBILITY FireGL V3200,Unknown,62,Embedded/ISV
+FireGL X1,Unknown,59,Embedded/ISV
+Matrox G200e WDDM 1.2,Unknown,59,Embedded/ISV
+Express Chipset Q45/Q43,Intel,58,Integrated/Legacy
+Mobile Intel 965 Express,Intel,58,Integrated/Legacy
+Express Chipset G41,Intel,57,Integrated/Legacy
+G41 Express Chipsatz,Intel,57,Integrated/Legacy
+Q45/Q43 Express Chipsatz,Intel,57,Integrated/Legacy
+FireGL V3100,Unknown,53,Embedded/ISV
+Matrox G200eh WDDM 1.2,Unknown,52,Embedded/ISV
+FirePro 2450,AMD,51,Professional/Quadro
+Matrox G200eW WDDM 1.2,Unknown,50,Embedded/ISV
+Quadro NVS 140M,NVIDIA,49,Professional/Quadro
+Quadro NVS 110M,NVIDIA,48,Professional/Quadro
+Quadro NVS 120M,NVIDIA,47,Professional/Quadro
+FireMV 2250,Unknown,46,Embedded/ISV
+Matrox G200eh WDDM 2.0,Unknown,45,Embedded/ISV
+Matrox G200eR WDDM 1.2,Unknown,45,Embedded/ISV
+Mobile Intel 4 Express Chipsatzfamilie,Intel,45,Integrated/Legacy
+Mobile Intel serie 4 Express,Intel,45,Integrated/Legacy
+MOBILITY FireGL V5200,Unknown,45,Embedded/ISV
+Quadro FX 350M,NVIDIA,45,Professional/Quadro
+Matrox M9138 LP PCIe x16,Unknown,42,Embedded/ISV
+Mobile Intel 45 Express,Intel,42,Integrated/Legacy
+Matrox G200eh,Unknown,41,Embedded/ISV
+MOBILITY FIREGL T2,Unknown,41,Embedded/ISV
+Matrox G200eW,Unknown,40,Embedded/ISV
+S3 Chrome 430 ULP,Unknown,40,Integrated/Legacy
+Mobile Intel famiglia Express Chipset 45,Intel,39,Integrated/Legacy
+Quadro NVS 285,NVIDIA,39,Professional/Quadro
+Quadro NVS 285 128MB,NVIDIA,38,Professional/Quadro
+Quadro NVS 440,NVIDIA,38,Professional/Quadro
+Matrox G200eR,Unknown,37,Embedded/ISV
+FireMV 2200 PCIe,Unknown,36,Embedded/ISV
+Quadro FX 1100,NVIDIA,36,Professional/Quadro
+MOBILITY FIREGL T2/T2e,Unknown,34,Embedded/ISV
+Quadro FX 1000,NVIDIA,34,Professional/Quadro
+Quadro FX 1300,NVIDIA,34,Professional/Quadro
+S3 Chrome S27 DDR3,Unknown,33,Integrated/Legacy
+Matrox M9148 LP PCIe x16,Unknown,32,Embedded/ISV
+Red Hat QXL controller,Unknown,32,Integrated/Legacy
+FireGL T2 128,Unknown,31,Embedded/ISV
+Matrox M9128 LP PCIe x16,Unknown,29,Embedded/ISV
+MOBILITY FireGL V5250,Unknown,27,Embedded/ISV
+Matrox M9120 Plus LP PCIe x16,Unknown,26,Embedded/ISV
+Matrox M9125 PCIe x16,Unknown,26,Embedded/ISV
+PHDGD Sapphire GR for Mobile Intel 965,Intel,26,Integrated/Legacy
+Mobile Intel 965 Express Chipsatzfamilie,Intel,24,Integrated/Legacy
+Quadro NVS 210S,NVIDIA,24,Professional/Quadro
+Matrox M9140 LP PCIe x16,Unknown,23,Embedded/ISV
+Quadro NVS 210S / GeForce 6150LE,NVIDIA,21,Professional/Quadro
+Matrox M9120 PCIe x16,Unknown,20,Embedded/ISV
+Quadro FX 2000,NVIDIA,18,Professional/Quadro
+S3 Chrome S25 DDR2,Unknown,18,Integrated/Legacy
+Quadro FX 500/600 PCI,NVIDIA,14,Professional/Quadro
+FireMV 2400 PCIe,Unknown,11,Embedded/ISV
+Familia Intel Q33 Express Chipset,Intel,10,Integrated/Legacy
+MOBILITY IGP 9000/9100,Unknown,10,Integrated/Legacy
+Matrox Parhelia 256MB,Unknown,9,Embedded/ISV
+VIA Chrome9 HD IGP,Unknown,9,Integrated/Legacy
+82945G Express Chipsatzfamilie,Intel,8,Integrated/Legacy
+Mobile Intel 965 Express BR 0907 0461 v1839,Intel,8,Integrated/Legacy
+MOBILITY RADEON 9000 IGP,AMD,8,Integrated/Legacy
+Quadro FX 500/FX 600,NVIDIA,8,Professional/Quadro
+Quadro NVS 280 PCI,NVIDIA,8,Professional/Quadro
+US15 Embedded Media and Controller,Intel,7,Integrated/Legacy
+Matrox Millennium P690 Plus LP PCIe x16,Unknown,7,Embedded/ISV
+Matrox Parhelia APVe,Unknown,6,Embedded/ISV
+Mobile Intel 945GM Express,Intel,6,Integrated/Legacy
+MOBILITY RADEON 7000 IGP,AMD,6,Integrated/Legacy
+MOBILITY RADEON 9000/9100 IGP,AMD,6,Integrated/Legacy
+Quadro 280 NVS PCIe,NVIDIA,6,Professional/Quadro
+Quadro NVS 55/280 PCI,NVIDIA,6,Professional/Quadro
+IGP 350M,AMD,6,Integrated/Legacy
+82865G Controller,Intel,5,Integrated/Legacy
+915G/915GV/910GL Embedded Controller Functio,Intel,5,Integrated/Legacy
+945G Embedded Chipset Function 0,Intel,5,Integrated/Legacy
+Matrox Millennium P650 PCIe 128,Unknown,5,Embedded/ISV
+Mobile Intel 945GM/GU Express,Intel,5,Integrated/Legacy
+MOBILITY FIREGL 7800,Unknown,5,Embedded/ISV
+Quadro2 MXR/EX,NVIDIA,5,Other-Professional
+9100 IGP,AMD,5,Integrated/Legacy
+VIA/S3G UniChrome Pro IGP,Unknown,5,Integrated/Legacy
+Dell 8200,Unknown,4,Other-Professional
+865 Embedded Controller,Intel,4,Integrated/Legacy
+IGP 320,AMD,4,Integrated/Legacy
+IGP 320M,AMD,4,Integrated/Legacy
+VIA Chrome9 HC IGP,Unknown,4,Integrated/Legacy
+VIA Chrome9 HC IGP Family,Unknown,4,Integrated/Legacy
+VIA Chrome9 HC IGP Family WDDM,Unknown,4,Integrated/Legacy
+VIA/S3G UniChrome IGP,Unknown,4,Integrated/Legacy
+82845G/GL Controller,Intel,3,Integrated/Legacy
+82845G/GL/GE/PE/GV Controller,Intel,3,Integrated/Legacy
+946GZ Embedded Chipset Function 0,Intel,3,Integrated/Legacy
+Matrox Parhelia 128MB,Unknown,3,Embedded/ISV
+MOBILITY RADEON 9100 IGP,AMD,3,Integrated/Legacy
+IGP 340M,AMD,3,Integrated/Legacy
+IGP 345M,AMD,3,Integrated/Legacy
+S3 Inc. Savage4,Unknown,3,Integrated/Legacy
+VIA Chrome9 HC IGP WDDM,Unknown,3,Integrated/Legacy
+VIA Chrome9 HC IGP WDDM 1.1,Unknown,3,Integrated/Legacy
+VIA Chrome9 HC3 IGP,Unknown,3,Integrated/Legacy
+VIA/S3G DeltaChrome IGP,Unknown,3,Integrated/Legacy
+Dell 8100,Unknown,2,Other-Professional
+82845G Controller,Intel,2,Integrated/Legacy
+Extreme Controller,Intel,2,Integrated/Legacy
+Mobile Intel 915GM/GMS/910GML Express,Intel,2,Integrated/Legacy
+Mobile Intel 945 Express,Intel,2,Integrated/Legacy
+Quadro NVS 280 SD,NVIDIA,2,Professional/Quadro
+IGP 34xM,AMD,2,Integrated/Legacy
+S3 SuperSavage/IXC 1014,Unknown,2,Integrated/Legacy
+VIA Chrome9 HC IGP Prerelease WDDM 1.1,Unknown,2,Integrated/Legacy
+VIA Chrome9 HCM IGP,Unknown,2,Integrated/Legacy
+FireMV 2200 PCI,Unknown,1,Embedded/ISV
+82852/82855 GM/GME Controller,Intel,1,Integrated/Legacy
+Quadro2 Pro,NVIDIA,1,Other-Professional
+Rage 128 Pro,Unknown,1,Integrated/Legacy
+RAGE 128 PRO AGP 4X TMDS,Unknown,1,Integrated/Legacy
+S3 ProSavageDDR,Unknown,1,Integrated/Legacy

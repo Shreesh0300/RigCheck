@@ -1,0 +1,15 @@
+node_modules/
+venv/
+__pycache__/
+*.py[cod]
+
+.codex-run-logs/
+dist/
+.vite/
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
+Thumbs.db

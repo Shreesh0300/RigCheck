@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
+
+:root {
+  color-scheme: dark;
+  --bg: #0a0f18;
+  --surface: rgba(14, 20, 30, 0.75);
+  --surface-strong: rgba(10, 16, 26, 0.9);
+  --panel-border: rgba(80, 120, 180, 0.25);
+  --text: #e9f0ff;
+  --muted: #9aa8c4;
+  --accent: #32f5ff;
+  --accent-strong: #ff8a1f;
+  --accent-soft: rgba(50, 245, 255, 0.16);
+  --glow: rgba(50, 245, 255, 0.22);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Space Grotesk", sans-serif;
+  background: radial-gradient(circle at top, #1a2338, var(--bg) 55%);
+  color: var(--text);
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(50, 245, 255, 0.12), transparent 50%),
+    radial-gradient(circle at 80% 10%, rgba(255, 138, 31, 0.12), transparent 55%),
+    radial-gradient(circle at 30% 90%, rgba(80, 255, 200, 0.1), transparent 55%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.grid-lines {
+  position: fixed;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at 50% 20%, rgba(0, 0, 0, 0.8), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.25;
+}
+
+.app {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+  display: grid;
+  gap: 28px;
+}
+
+.hero {
+  display: grid;
+  gap: 12px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin: 0;
+}
+
+h1 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: clamp(2.2rem, 3vw, 3.4rem);
+  margin: 0;
+}
+
+.subhead {
+  margin: 0;
+  color: var(--muted);
+  max-width: 720px;
+}
+
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--panel-border);
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  animation: lift-in 600ms ease both;
+}
+
+.panel-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  margin-top: 0;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.2rem;
+}
+
+form {
+  display: grid;
+  gap: 16px;
+}
+
+label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+  display: block;
+}
+
+textarea,
+input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--panel-border);
+  background: var(--surface-strong);
+  color: var(--text);
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--glow);
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(120deg, var(--accent), var(--accent-strong));
+  color: #061017;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 24px rgba(0, 224, 255, 0.18);
+}
+
+.status {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(50, 245, 255, 0.3);
+  color: var(--text);
+  margin-bottom: 18px;
+}
+
+.loader {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(10, 16, 26, 0.7);
+  border: 1px solid rgba(50, 245, 255, 0.35);
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgba(50, 245, 255, 0.3);
+  border-top-color: var(--accent);
+  animation: spin 1s linear infinite;
+}
+
+.result {
+  display: grid;
+  gap: 18px;
+}
+
+.result.animate-in > * {
+  animation: fade-up 500ms ease both;
+  animation-delay: var(--delay, 0ms);
+}
+
+.result.animate-in .featured-card,
+.result.animate-in .card,
+.result.animate-in .alt-card {
+  animation: fade-up 500ms ease both, card-float 6s ease-in-out infinite 600ms;
+}
+
+.featured-card {
+  padding: 24px;
+  border: 1px solid rgba(50, 245, 255, 0.35);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+.featured-header {
+  display: grid;
+  gap: 18px;
+}
+
+.featured-copy h3 {
+  margin: 8px 0 10px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.6rem;
+}
+
+.description {
+  margin: 0;
+  color: var(--muted);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: rgba(255, 138, 31, 0.15);
+  border: 1px solid rgba(255, 138, 31, 0.4);
+}
+
+.stat-stack {
+  display: grid;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(8, 12, 20, 0.6);
+  border: 1px solid rgba(80, 120, 180, 0.25);
+}
+
+.stat {
+  display: grid;
+  gap: 6px;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.stat-note {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.confidence-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.confidence-fill {
+  width: 0;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-strong));
+  transition: width 600ms ease;
+}
+
+.advice-block {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(80, 120, 180, 0.25);
+}
+
+.advice-block h4 {
+  margin: 0 0 8px;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: rgba(8, 12, 20, 0.7);
+  border-radius: 12px;
+  border: 1px solid var(--panel-border);
+  padding: 16px;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+}
+
+.card h4 {
+  margin: 0 0 10px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1rem;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(50, 245, 255, 0.12);
+  border: 1px solid rgba(50, 245, 255, 0.35);
+  font-size: 0.8rem;
+}
+
+.meta-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.meta-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(50, 245, 255, 0.08);
+  border: 1px solid rgba(50, 245, 255, 0.2);
+}
+
+.alt-section {
+  padding: 18px;
+}
+
+.alt-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.alt-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(180px, 1fr);
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.alt-card {
+  background: rgba(10, 16, 26, 0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(80, 120, 180, 0.25);
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+  min-height: 120px;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.alt-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.alt-title {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.alt-price {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.muted {
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+/* ── Steam store link buttons ── */
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%);
+  border: 1px solid rgba(102, 192, 244, 0.35);
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.store-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(102, 192, 244, 0.25);
+  border-color: rgba(102, 192, 244, 0.6);
+}
+
+.store-btn .steam-icon {
+  flex-shrink: 0;
+}
+
+.alt-store-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 4px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: #66c0f4;
+  background: rgba(27, 40, 56, 0.6);
+  border: 1px solid rgba(102, 192, 244, 0.2);
+  transition: background 150ms ease, border-color 150ms ease;
+}
+
+.alt-store-link:hover {
+  background: rgba(42, 71, 94, 0.8);
+  border-color: rgba(102, 192, 244, 0.5);
+}
+
+.alt-store-link .steam-icon-sm {
+  flex-shrink: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes lift-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes card-float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 900px) {
+  .featured-header {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.6fr);
+    align-items: start;
+  }
+}
+
+@media (max-width: 720px) {
+  .panel {
+    padding: 20px;
+  }
+
+  .alt-row {
+    grid-auto-columns: minmax(160px, 1fr);
+  }
+}
