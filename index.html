@@ -2,124 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RigCheck - AI Game Finder</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RigCheck AI — Your intelligent gaming concierge. Get personalized game recommendations based on your hardware specs and vibe." />
+    <meta name="theme-color" content="#02040a" />
+    <title>RigCheck AI — Gaming Concierge Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div class="backdrop"></div>
-    <div class="grid-lines" aria-hidden="true"></div>
-    <main class="app">
-      <header class="hero">
-        <p class="eyebrow">RigCheck AI</p>
-        <h1>Find the right game for your rig.</h1>
-        <p class="subhead">
-          Test the real NLP pipeline end-to-end. Fill in your hardware, hit
-          scan, and see what RigCheck recommends.
-        </p>
-      </header>
-
-      <section class="panel">
-        <h2>Input</h2>
-        <form id="rigcheck-form">
-          <label for="description">Game vibe</label>
-          <textarea
-            id="description"
-            name="description"
-            rows="4"
-            placeholder="e.g. tactical sci-fi shooter with co-op"
-            required
-          ></textarea>
-
-          <div class="field-grid">
-            <div>
-              <label for="budget">Budget (INR)</label>
-              <input id="budget" name="budget" type="number" min="0" value="2000" required />
-            </div>
-            <div>
-              <label for="gpu-tier">GPU Tier</label>
-              <input id="gpu-tier" name="gpu-tier" type="number" min="0" value="4" required />
-            </div>
-            <div>
-              <label for="ram">RAM (GB)</label>
-              <input id="ram" name="ram" type="number" min="0" value="16" required />
-            </div>
-          </div>
-
-          <button type="submit">Run RigCheck</button>
-        </form>
-      </section>
-
-      <section class="panel results-panel">
-        <div class="panel-head">
-          <h2>Results</h2>
-          <div id="loader" class="loader hidden" aria-live="polite">
-            <span class="spinner" aria-hidden="true"></span>
-            <span class="loader-text">Scanning your rig...</span>
-          </div>
-        </div>
-
-        <div id="status" class="status hidden" role="status"></div>
-
-        <div id="result" class="result hidden">
-          <article class="card featured-card">
-            <div class="featured-header">
-              <div class="featured-copy">
-                <p class="badge">Recommended</p>
-                <h3 id="game-title">Game Title</h3>
-                <p id="game-description" class="description"></p>
-                <a id="steam-link" class="store-btn hidden" href="#" target="_blank" rel="noopener noreferrer">
-                  <svg class="steam-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-9.96 9.04l5.35 2.21a2.83 2.83 0 0 1 1.6-.49c.06 0 .11 0 .17.01l2.4-3.47v-.05a3.77 3.77 0 1 1 3.77 3.77h-.09l-3.41 2.44c0 .08.01.16.01.24a2.84 2.84 0 0 1-5.66.29L2.1 14.46A10 10 0 1 0 12 2zm-5.84 14.3l-1.71-.71a2.13 2.13 0 0 0 3.87.84 2.13 2.13 0 0 0-1.03-2.83l1.77.73a1.57 1.57 0 1 1-2.9 1.97zm9.6-5.05a2.52 2.52 0 1 0-2.52-2.52 2.52 2.52 0 0 0 2.52 2.52z"/></svg>
-                  View on Steam
-                </a>
-              </div>
-              <div class="stat-stack">
-                <div class="stat">
-                  <span class="stat-label">Confidence</span>
-                  <span class="stat-value" id="confidence-chip">--%</span>
-                  <div class="confidence-bar">
-                    <div id="confidence-fill" class="confidence-fill"></div>
-                  </div>
-                </div>
-                <div class="stat">
-                  <span class="stat-label">Estimated FPS</span>
-                  <span class="stat-value" id="fps-estimate">--</span>
-                  <span class="stat-note">UI estimate based on confidence</span>
-                </div>
-              </div>
-            </div>
-            <div class="advice-block">
-              <h4>Hardware Advice</h4>
-              <p id="hardware-advice"></p>
-            </div>
-          </article>
-
-          <div class="result-grid">
-            <div class="card">
-              <h4>Matched Keywords</h4>
-              <div id="keywords" class="chip-row"></div>
-            </div>
-            <div class="card">
-              <h4>Your Inputs</h4>
-              <ul class="meta-list">
-                <li><span>Budget</span><strong id="budget-meta">--</strong></li>
-                <li><span>GPU Tier</span><strong id="gpu-meta">--</strong></li>
-                <li><span>RAM</span><strong id="ram-meta">--</strong></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card alt-section">
-            <div class="alt-header">
-              <h4>You may also like</h4>
-              <p class="muted">Other strong matches</p>
-            </div>
-            <div id="alternatives-list" class="alt-row"></div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

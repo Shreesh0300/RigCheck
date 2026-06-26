@@ -11,11 +11,11 @@ export default defineConfig({
   build: {
     outDir: "dist",
     rollupOptions: {
-      input: path.resolve(__dirname, "react-preview.html"),
+      input: path.resolve(__dirname, "index.html"),
     },
   },
   server: {
-    open: "/react-preview.html",
+    open: "/",
     // Proxy API calls to the FastAPI backend so we avoid CORS issues in dev
     proxy: {
       "/recommend": {
