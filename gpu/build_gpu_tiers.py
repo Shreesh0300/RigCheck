@@ -56,10 +56,16 @@ def audit_dataset(filepath: Path, name_col: str) -> dict:
 
 
 def run_audit():
+    # Prefer merged dataset if it exists, else fall back to v7
+    benchmark_file = (
+        "GPU_benchmarks_merged.csv"
+        if (GPU_DIR / "GPU_benchmarks_merged.csv").exists()
+        else "GPU_benchmarks_v7.csv"
+    )
     files_meta = [
         (GPU_DIR / "All_GPUs.csv",                  "Name"),
         (GPU_DIR / "All_GPUs (1).csv",              "Name"),
-        (GPU_DIR / "GPU_benchmarks_v7.csv",         "gpuName"),
+        (GPU_DIR / benchmark_file,                  "gpuName"),
         (GPU_DIR / "GPU_scores_graphicsAPIs.csv",   "Device"),
     ]
 
@@ -96,12 +102,14 @@ def identify_sources():
     print("  TASK 2 — DATA SOURCE ROLES")
     print("═" * 70)
 
+    merged_exists = (GPU_DIR / "GPU_benchmarks_merged.csv").exists()
+    bench_src = "GPU_benchmarks_merged.csv" if merged_exists else "GPU_benchmarks_v7.csv"
     roles = {
         "GPU Catalog (names, manufacturer, VRAM, release)": "All_GPUs.csv",
-        "Benchmark Data (G3D performance scores)"          : "GPU_benchmarks_v7.csv",
+        "Benchmark Data (G3D performance scores)"          : bench_src,
         "Graphics API Scores (CUDA, OpenCL, Vulkan, Metal)": "GPU_scores_graphicsAPIs.csv",
-        "Source of Truth for GPU identity"                 : "GPU_benchmarks_v7.csv  (most complete + cleaned names)",
-        "Source of Truth for performance ranking"          : "GPU_benchmarks_v7.csv  (G3Dmark — industry standard)",
+        "Source of Truth for GPU identity"                 : f"{bench_src}  (most complete + cleaned names)",
+        "Source of Truth for performance ranking"          : f"{bench_src}  (G3Dmark — industry standard)",
         "Source of Truth for API capability"               : "GPU_scores_graphicsAPIs.csv",
     }
     for role, source in roles.items():
@@ -191,7 +199,10 @@ def parse_release_year(raw: str) -> float:
 
 
 def clean_benchmarks() -> pd.DataFrame:
-    df = pd.read_csv(GPU_DIR / "GPU_benchmarks_v7.csv", on_bad_lines="skip")
+    # Prefer merged dataset (includes RTX 40/50, RX 7000/9000, Arc B-series)
+    merged_path = GPU_DIR / "GPU_benchmarks_merged.csv"
+    src_path = merged_path if merged_path.exists() else GPU_DIR / "GPU_benchmarks_v7.csv"
+    df = pd.read_csv(src_path, on_bad_lines="skip")
     df = df.rename(columns={"gpuName": "raw_name", "G3Dmark": "benchmark_score"})
     df = df[["raw_name", "benchmark_score", "testDate", "category"]].copy()
     df["benchmark_score"] = pd.to_numeric(df["benchmark_score"], errors="coerce")
@@ -203,6 +214,12 @@ def clean_benchmarks() -> pd.DataFrame:
         case=False, na=False
     )
     df = df[~noise].copy()
+    # Drop CPU-named entries (APUs/iGPUs reported under processor name, not GPU name)
+    cpu_names = df["raw_name"].str.contains(
+        r"\b(Ryzen\s+\d|Core\s+i\d|Xeon|Celeron|Pentium|Athlon|FX-\d|A10-|A8-|A6-|A4-)\b",
+        case=False, na=False
+    )
+    df = df[~cpu_names].copy()
     # Normalise
     df["gpu_name"] = df["raw_name"].apply(normalize_gpu_name)
     df["release_year"] = pd.to_numeric(df["testDate"], errors="coerce")

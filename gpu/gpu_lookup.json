@@ -1,4 +1,166 @@
 {
+  "RTX 5090": {
+    "tier": "S",
+    "benchmark_score": 64000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2025
+  },
+  "RTX 5080": {
+    "tier": "S",
+    "benchmark_score": 52000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2025
+  },
+  "RTX 6000 Ada": {
+    "tier": "S",
+    "benchmark_score": 52000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
+  "RTX A6000 Ada": {
+    "tier": "S",
+    "benchmark_score": 49500,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
+  "RTX 5070 Ti": {
+    "tier": "S",
+    "benchmark_score": 46000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2025
+  },
+  "RTX A5000 Ada": {
+    "tier": "S",
+    "benchmark_score": 42000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
+  "PRO W7900": {
+    "tier": "S",
+    "benchmark_score": 41000,
+    "manufacturer": "AMD",
+    "release_year": 2023
+  },
+  "RTX 5070": {
+    "tier": "S",
+    "benchmark_score": 40000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2025
+  },
+  "RTX 4090": {
+    "tier": "S",
+    "benchmark_score": 39819,
+    "manufacturer": "NVIDIA",
+    "release_year": 2022
+  },
+  "RTX 5000 Ada": {
+    "tier": "S",
+    "benchmark_score": 39800,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
+  "RTX 5090 Laptop GPU": {
+    "tier": "S",
+    "benchmark_score": 39000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2025
+  },
+  "RTX 4090 D": {
+    "tier": "S",
+    "benchmark_score": 38500,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
+  "RX 9070 XT": {
+    "tier": "S",
+    "benchmark_score": 37800,
+    "manufacturer": "AMD",
+    "release_year": 2025
+  },
+  "RX 7900 XTX": {
+    "tier": "S",
+    "benchmark_score": 37600,
+    "manufacturer": "AMD",
+    "release_year": 2022
+  },
+  "RTX 4080 SUPER": {
+    "tier": "S",
+    "benchmark_score": 37500,
+    "manufacturer": "NVIDIA",
+    "release_year": 2024
+  },
+  "RTX 4080": {
+    "tier": "S",
+    "benchmark_score": 35817,
+    "manufacturer": "NVIDIA",
+    "release_year": 2022
+  },
+  "RX 7900 XT": {
+    "tier": "S",
+    "benchmark_score": 34500,
+    "manufacturer": "AMD",
+    "release_year": 2022
+  },
+  "PRO W7800": {
+    "tier": "S",
+    "benchmark_score": 34000,
+    "manufacturer": "AMD",
+    "release_year": 2023
+  },
+  "RTX 4070 Ti SUPER": {
+    "tier": "S",
+    "benchmark_score": 33845,
+    "manufacturer": "NVIDIA",
+    "release_year": 2024
+  },
+  "RX 9070": {
+    "tier": "S",
+    "benchmark_score": 33500,
+    "manufacturer": "AMD",
+    "release_year": 2025
+  },
+  "RTX 5080 Laptop GPU": {
+    "tier": "S",
+    "benchmark_score": 32000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2025
+  },
+  "RX 7900 GRE": {
+    "tier": "S",
+    "benchmark_score": 31700,
+    "manufacturer": "AMD",
+    "release_year": 2023
+  },
+  "RTX 4070 Ti": {
+    "tier": "S",
+    "benchmark_score": 31600,
+    "manufacturer": "NVIDIA",
+    "release_year": 2022
+  },
+  "RTX 4500 Ada": {
+    "tier": "S",
+    "benchmark_score": 31000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
+  "RTX A4000 Ada": {
+    "tier": "S",
+    "benchmark_score": 30500,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
+  "RTX 4070 SUPER": {
+    "tier": "S",
+    "benchmark_score": 30400,
+    "manufacturer": "NVIDIA",
+    "release_year": 2024
+  },
+  "RTX 5060 Ti": {
+    "tier": "S",
+    "benchmark_score": 30000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2025
+  },
   "RTX 3090 Ti": {
     "tier": "S",
     "benchmark_score": 29094,
@@ -6,12 +168,48 @@
     "graphics_api_score": 210406,
     "release_year": 2022
   },
+  "RTX 5070 Ti Laptop GPU": {
+    "tier": "S",
+    "benchmark_score": 28000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2025
+  },
+  "RTX 4070": {
+    "tier": "S",
+    "benchmark_score": 27600,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
+  "PRO W7700": {
+    "tier": "S",
+    "benchmark_score": 27500,
+    "manufacturer": "AMD",
+    "release_year": 2024
+  },
+  "RTX 4000 Ada": {
+    "tier": "S",
+    "benchmark_score": 27500,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
   "RTX 3080 Ti": {
     "tier": "S",
     "benchmark_score": 26887,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 192190,
     "release_year": 2021
+  },
+  "RX 7800 XT": {
+    "tier": "S",
+    "benchmark_score": 26700,
+    "manufacturer": "AMD",
+    "release_year": 2023
+  },
+  "RTX 4090 Laptop GPU": {
+    "tier": "S",
+    "benchmark_score": 26500,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
   },
   "RTX 3090": {
     "tier": "S",
@@ -27,12 +225,36 @@
     "graphics_api_score": 136693,
     "release_year": 2020
   },
+  "RTX 4060 Ti 16GB": {
+    "tier": "S",
+    "benchmark_score": 25300,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
   "RTX 3080": {
     "tier": "S",
     "benchmark_score": 24853,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 171433,
     "release_year": 2020
+  },
+  "RTX 4060 Ti": {
+    "tier": "S",
+    "benchmark_score": 24600,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
+  "RTX 5070 Laptop GPU": {
+    "tier": "S",
+    "benchmark_score": 24000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2025
+  },
+  "RX 7700 XT": {
+    "tier": "S",
+    "benchmark_score": 23600,
+    "manufacturer": "AMD",
+    "release_year": 2023
   },
   "RTX 3070 Ti": {
     "tier": "S",
@@ -48,12 +270,30 @@
     "graphics_api_score": 136290,
     "release_year": 2020
   },
+  "RTX 4080 Laptop GPU": {
+    "tier": "S",
+    "benchmark_score": 23200,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
+  "RX 9060 XT": {
+    "tier": "S",
+    "benchmark_score": 23000,
+    "manufacturer": "AMD",
+    "release_year": 2025
+  },
   "RTX A5000": {
     "tier": "S",
     "benchmark_score": 22867,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 156140,
     "release_year": 2021
+  },
+  "RX 7900M": {
+    "tier": "S",
+    "benchmark_score": 22400,
+    "manufacturer": "AMD",
+    "release_year": 2023
   },
   "RTX A6000": {
     "tier": "S",
@@ -69,6 +309,18 @@
     "graphics_api_score": 128259,
     "release_year": 2020
   },
+  "RTX 5060": {
+    "tier": "S",
+    "benchmark_score": 22000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2025
+  },
+  "RX 7700": {
+    "tier": "S",
+    "benchmark_score": 21800,
+    "manufacturer": "AMD",
+    "release_year": 2024
+  },
   "RTX 2080 Ti": {
     "tier": "S",
     "benchmark_score": 21796,
@@ -83,12 +335,30 @@
     "graphics_api_score": 163533,
     "release_year": 2022
   },
+  "PRO W7600": {
+    "tier": "S",
+    "benchmark_score": 21500,
+    "manufacturer": "AMD",
+    "release_year": 2024
+  },
+  "RTX 4070 Ti Laptop GPU": {
+    "tier": "S",
+    "benchmark_score": 20800,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
   "RX 6800": {
     "tier": "S",
     "benchmark_score": 20667,
     "manufacturer": "AMD",
     "graphics_api_score": 107762,
     "release_year": 2020
+  },
+  "RTX 4060": {
+    "tier": "S",
+    "benchmark_score": 20300,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
   },
   "RTX 3060 Ti": {
     "tier": "S",
@@ -103,6 +373,18 @@
     "manufacturer": "NVIDIA",
     "graphics_api_score": 138830,
     "release_year": 2018
+  },
+  "Arc B580": {
+    "tier": "S",
+    "benchmark_score": 20100,
+    "manufacturer": "Intel",
+    "release_year": 2024
+  },
+  "RX 7600 XT": {
+    "tier": "S",
+    "benchmark_score": 19700,
+    "manufacturer": "AMD",
+    "release_year": 2024
   },
   "Quadro RTX 6000": {
     "tier": "S",
@@ -132,12 +414,30 @@
     "graphics_api_score": 125090,
     "release_year": 2022
   },
+  "RTX A2000 Ada": {
+    "tier": "S",
+    "benchmark_score": 19500,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
+  "Arc A770": {
+    "tier": "S",
+    "benchmark_score": 19300,
+    "manufacturer": "Intel",
+    "release_year": 2022
+  },
   "Quadro RTX 8000": {
     "tier": "S",
     "benchmark_score": 19126,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 119838,
     "release_year": 2019
+  },
+  "RX 9060": {
+    "tier": "S",
+    "benchmark_score": 19000,
+    "manufacturer": "AMD",
+    "release_year": 2025
   },
   "RX 6700 XT": {
     "tier": "S",
@@ -152,6 +452,12 @@
     "manufacturer": "NVIDIA",
     "graphics_api_score": 108029,
     "release_year": 2021
+  },
+  "RTX 4070 Laptop GPU": {
+    "tier": "S",
+    "benchmark_score": 18900,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
   },
   "TITAN V": {
     "tier": "S",
@@ -181,6 +487,12 @@
     "graphics_api_score": 55651,
     "release_year": 2017
   },
+  "RX 7800M": {
+    "tier": "S",
+    "benchmark_score": 18600,
+    "manufacturer": "AMD",
+    "release_year": 2024
+  },
   "RTX 3070 Ti Laptop GPU": {
     "tier": "S",
     "benchmark_score": 18490,
@@ -203,12 +515,30 @@
     "graphics_api_score": 96013,
     "release_year": 2019
   },
+  "RX 7600": {
+    "tier": "S",
+    "benchmark_score": 17900,
+    "manufacturer": "AMD",
+    "release_year": 2023
+  },
   "Quadro GV100": {
     "tier": "S",
     "benchmark_score": 17675,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 162000,
     "release_year": 2018
+  },
+  "Arc A750": {
+    "tier": "S",
+    "benchmark_score": 17100,
+    "manufacturer": "Intel",
+    "release_year": 2022
+  },
+  "RTX 5060 Laptop GPU": {
+    "tier": "S",
+    "benchmark_score": 17000,
+    "manufacturer": "NVIDIA",
+    "release_year": 2025
   },
   "TITAN V CEO Edition": {
     "tier": "S",
@@ -236,6 +566,18 @@
     "manufacturer": "AMD",
     "graphics_api_score": 85607,
     "release_year": 2020
+  },
+  "Arc B580M": {
+    "tier": "S",
+    "benchmark_score": 16800,
+    "manufacturer": "Intel",
+    "release_year": 2024
+  },
+  "RX 7700S": {
+    "tier": "S",
+    "benchmark_score": 16800,
+    "manufacturer": "AMD",
+    "release_year": 2024
   },
   "VII": {
     "tier": "S",
@@ -300,6 +642,18 @@
     "graphics_api_score": 87744,
     "release_year": 2017
   },
+  "Arc B570": {
+    "tier": "S",
+    "benchmark_score": 16200,
+    "manufacturer": "Intel",
+    "release_year": 2025
+  },
+  "RTX 4050": {
+    "tier": "S",
+    "benchmark_score": 16100,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
+  },
   "RTX 2070": {
     "tier": "S",
     "benchmark_score": 16079,
@@ -326,6 +680,12 @@
     "manufacturer": "NVIDIA",
     "graphics_api_score": 60579,
     "release_year": 2016
+  },
+  "RTX 4060 Laptop GPU": {
+    "tier": "S",
+    "benchmark_score": 15800,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
   },
   "Quadro RTX 4000": {
     "tier": "S",
@@ -362,11 +722,29 @@
     "graphics_api_score": 53289,
     "release_year": 2020
   },
+  "RX 7600M XT": {
+    "tier": "S",
+    "benchmark_score": 15000,
+    "manufacturer": "AMD",
+    "release_year": 2024
+  },
+  "PRO W7500": {
+    "tier": "S",
+    "benchmark_score": 15000,
+    "manufacturer": "AMD",
+    "release_year": 2024
+  },
   "Quadro RTX 5000 (Mobile)": {
     "tier": "S",
     "benchmark_score": 14832,
     "manufacturer": "NVIDIA",
     "release_year": 2019
+  },
+  "Arc A580": {
+    "tier": "S",
+    "benchmark_score": 14800,
+    "manufacturer": "Intel",
+    "release_year": 2023
   },
   "Pro Vega II": {
     "tier": "S",
@@ -396,6 +774,12 @@
     "graphics_api_score": 69634,
     "release_year": 2021
   },
+  "RX 7500 XT": {
+    "tier": "S",
+    "benchmark_score": 14500,
+    "manufacturer": "AMD",
+    "release_year": 2024
+  },
   "GTX 1070 Ti": {
     "tier": "S",
     "benchmark_score": 14500,
@@ -416,6 +800,12 @@
     "manufacturer": "AMD",
     "graphics_api_score": 68311,
     "release_year": 2021
+  },
+  "Arc A730M": {
+    "tier": "S",
+    "benchmark_score": 14200,
+    "manufacturer": "Intel",
+    "release_year": 2022
   },
   "Pro WX 8200": {
     "tier": "S",
@@ -535,6 +925,12 @@
     "graphics_api_score": 64132,
     "release_year": 2017
   },
+  "RX 7600S": {
+    "tier": "S",
+    "benchmark_score": 13200,
+    "manufacturer": "AMD",
+    "release_year": 2024
+  },
   "GTX TITAN X": {
     "tier": "S",
     "benchmark_score": 13173,
@@ -561,6 +957,12 @@
     "manufacturer": "AMD",
     "graphics_api_score": 61506,
     "release_year": 2020
+  },
+  "RX 7600M": {
+    "tier": "S",
+    "benchmark_score": 12800,
+    "manufacturer": "AMD",
+    "release_year": 2024
   },
   "GTX 1660 SUPER": {
     "tier": "S",
@@ -596,6 +998,12 @@
     "manufacturer": "AMD",
     "graphics_api_score": 68457,
     "release_year": 2018
+  },
+  "RTX 4050 Laptop GPU": {
+    "tier": "S",
+    "benchmark_score": 12400,
+    "manufacturer": "NVIDIA",
+    "release_year": 2023
   },
   "Pro Vega 56": {
     "tier": "S",
@@ -734,6 +1142,12 @@
     "manufacturer": "NVIDIA",
     "graphics_api_score": 29945,
     "release_year": 2014
+  },
+  "Arc A550M": {
+    "tier": "S",
+    "benchmark_score": 11200,
+    "manufacturer": "Intel",
+    "release_year": 2022
   },
   "Quadro RTX 3000": {
     "tier": "S",
@@ -878,6 +1292,12 @@
     "graphics_api_score": 49946,
     "release_year": 2018
   },
+  "Arc A530M": {
+    "tier": "S",
+    "benchmark_score": 9600,
+    "manufacturer": "Intel",
+    "release_year": 2022
+  },
   "R9 Fury": {
     "tier": "S",
     "benchmark_score": 9551,
@@ -898,12 +1318,6 @@
     "manufacturer": "NVIDIA",
     "graphics_api_score": 32281,
     "release_year": 2019
-  },
-  "Ryzen 9 4900HSS": {
-    "tier": "S",
-    "benchmark_score": 9461,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "RTX 3050 Ti Laptop GPU": {
     "tier": "S",
@@ -1011,12 +1425,6 @@
     "graphics_api_score": 45400,
     "release_year": 2017
   },
-  "Ryzen 7 4800HS": {
-    "tier": "S",
-    "benchmark_score": 8842,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "RX 5500": {
     "tier": "S",
     "benchmark_score": 8817,
@@ -1033,119 +1441,119 @@
     "release_year": 2020
   },
   "Quadro RTX 3000 with Max Q Design": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8754,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 59905,
     "release_year": 2019
   },
   "GTX 1060 5GB": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8704,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 33511,
     "release_year": 2018
   },
+  "Arc A380": {
+    "tier": "A",
+    "benchmark_score": 8700,
+    "manufacturer": "Intel",
+    "release_year": 2022
+  },
   "RX 480": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8674,
     "manufacturer": "AMD",
     "graphics_api_score": 45295,
     "release_year": 2016
   },
   "Quadro P3200": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8663,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 31309,
     "release_year": 2018
   },
   "GTX 1660 Ti with Max Q Design": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8646,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 54832,
     "release_year": 2019
   },
   "RX590 GME": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8628,
     "manufacturer": "AMD",
     "release_year": 2020
   },
   "R9 295X2": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8619,
     "manufacturer": "AMD",
     "vram_gb": 8.0,
     "release_year": 2014
   },
-  "Ryzen 9 4900HS": {
-    "tier": "S",
-    "benchmark_score": 8572,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "GTX Titan": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8556,
     "manufacturer": "NVIDIA",
     "vram_gb": 6.0,
     "release_year": 2013
   },
-  "Ryzen 9 5900HS": {
-    "tier": "S",
-    "benchmark_score": 8428,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "R9 290": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8409,
     "manufacturer": "AMD",
     "vram_gb": 4.0,
     "release_year": 2020
   },
   "R9 290X / 390X": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8389,
     "manufacturer": "AMD",
     "release_year": 2013
   },
   "Pro Duo": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8324,
     "manufacturer": "AMD",
     "graphics_api_score": 55841,
     "release_year": 2016
   },
   "Pro 5500 XT": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8298,
     "manufacturer": "AMD",
     "graphics_api_score": 36736,
     "release_year": 2020
   },
   "15FF": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8229,
     "manufacturer": "Unknown",
     "release_year": 2020
   },
+  "Arc A370M": {
+    "tier": "A",
+    "benchmark_score": 8200,
+    "manufacturer": "Intel",
+    "release_year": 2022
+  },
   "GTX 1060 (Mobile)": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8161,
     "manufacturer": "NVIDIA",
     "release_year": 2019
   },
   "R9 290 / 390": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8150,
     "manufacturer": "AMD",
     "release_year": 2013
   },
   "Quadro K6000": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8108,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 17232,
@@ -1153,13 +1561,13 @@
     "release_year": 2013
   },
   "RX 470/570": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8070,
     "manufacturer": "AMD",
     "release_year": 2016
   },
   "GTX 780": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8022,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 17698,
@@ -1167,96 +1575,90 @@
     "release_year": 2013
   },
   "RTX 2050": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 8007,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 45986,
     "release_year": 2022
   },
-  "Ryzen 5 4600HS": {
-    "tier": "S",
-    "benchmark_score": 7942,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "Quadro M5500": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7915,
     "manufacturer": "NVIDIA",
     "release_year": 2016
   },
   "GTX 1060 with Max Q Design": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7907,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 30110,
     "release_year": 2017
   },
   "T1200 Laptop GPU": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7884,
     "manufacturer": "Unknown",
     "graphics_api_score": 41258,
     "release_year": 2021
   },
   "T1000": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7829,
     "manufacturer": "Unknown",
     "graphics_api_score": 36253,
     "release_year": 2021
   },
   "Pro WX 7100": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7822,
     "manufacturer": "AMD",
     "graphics_api_score": 37123,
     "release_year": 2016
   },
   "GTX 1650": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7807,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 38160,
     "release_year": 2019
   },
   "RX 580X": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7798,
     "manufacturer": "AMD",
     "graphics_api_score": 41822,
     "release_year": 2019
   },
   "Tesla M60": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7771,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 28425,
     "release_year": 2017
   },
   "RX 580 2048SP": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7768,
     "manufacturer": "AMD",
     "graphics_api_score": 39203,
     "release_year": 2019
   },
   "T1000 8GB": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7760,
     "manufacturer": "Unknown",
     "graphics_api_score": 38230,
     "release_year": 2022
   },
   "Pro 580": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7753,
     "manufacturer": "AMD",
     "graphics_api_score": 45401,
     "release_year": 2018
   },
   "FirePro W9100": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7719,
     "manufacturer": "AMD",
     "graphics_api_score": 43046,
@@ -1264,160 +1666,148 @@
     "release_year": 2014
   },
   "RX 5300": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7611,
     "manufacturer": "AMD",
     "graphics_api_score": 39363,
     "release_year": 2021
   },
   "Pro 580X": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7540,
     "manufacturer": "AMD",
     "graphics_api_score": 40277,
     "release_year": 2019
   },
   "Pro 5300": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7522,
     "manufacturer": "AMD",
     "graphics_api_score": 33776,
     "release_year": 2020
   },
   "Tesla M6": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7509,
     "manufacturer": "NVIDIA",
     "release_year": 2018
   },
   "GTX 1650 Ti": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7490,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 43651,
     "release_year": 2020
   },
-  "Ryzen 7 5800HS with Radeon": {
-    "tier": "S",
-    "benchmark_score": 7391,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "FirePro W8100": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7327,
     "manufacturer": "AMD",
     "graphics_api_score": 34705,
     "release_year": 2014
   },
   "RadeonT RX 5300": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7321,
     "manufacturer": "AMD",
     "release_year": 2021
   },
   "GTX 980M": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7317,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 23799,
     "release_year": 2014
   },
   "Tesla P100 PCIE 16GB": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7225,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 74400,
     "release_year": 2019
   },
   "Quadro T2000": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7169,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 38419,
     "release_year": 2019
   },
   "RX 5600M": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7157,
     "manufacturer": "AMD",
     "graphics_api_score": 45916,
     "release_year": 2020
   },
   "Quadro P2000": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 7096,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 22896,
     "release_year": 2017
   },
-  "Ryzen 7 4800HS with Radeon": {
-    "tier": "S",
-    "benchmark_score": 6999,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "GTX 1650 (Mobile)": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6969,
     "manufacturer": "NVIDIA",
     "release_year": 2019
   },
   "RX 6400": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6958,
     "manufacturer": "AMD",
     "release_year": 2022
   },
   "Quadro T2000 with Max Q Design": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6871,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 38798,
     "release_year": 2020
   },
   "Quadro M5000M": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6807,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 21979,
     "release_year": 2016
   },
   "Pro 5500M": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6763,
     "manufacturer": "AMD",
     "graphics_api_score": 30531,
     "release_year": 2019
   },
   "RX Vega M GH": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6734,
     "manufacturer": "AMD",
     "graphics_api_score": 30311,
     "release_year": 2018
   },
   "T600 Laptop GPU": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6725,
     "manufacturer": "Unknown",
     "graphics_api_score": 35318,
     "release_year": 2021
   },
   "GTX 970XM FORCE": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6707,
     "manufacturer": "NVIDIA",
     "release_year": 2018
   },
   "R9 285": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6680,
     "manufacturer": "AMD",
     "release_year": 2021
   },
   "Quadro M4000": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6644,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 18663,
@@ -1425,77 +1815,84 @@
     "release_year": 2015
   },
   "Quadro T1000 with Max Q Design": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6589,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 31583,
     "release_year": 2020
   },
   "Quadro P3000": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6572,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 24325,
     "release_year": 2017
   },
   "Quadro M4000M": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6530,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 21785,
     "release_year": 2015
   },
   "Quadro T1000": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6513,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 32285,
     "release_year": 2019
   },
   "T600": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6509,
     "manufacturer": "Unknown",
     "graphics_api_score": 26973,
     "release_year": 2021
   },
+  "Arc A350M": {
+    "tier": "A",
+    "benchmark_score": 6500,
+    "manufacturer": "Intel",
+    "graphics_api_score": 23107,
+    "release_year": 2022
+  },
   "GTX 1650 Ti with Max Q Design": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6342,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 39533,
     "release_year": 2020
   },
   "Pro 570": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6337,
     "manufacturer": "AMD",
     "graphics_api_score": 31996,
     "release_year": 2019
   },
   "GTX 1050 Ti": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6314,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 17968,
     "release_year": 2016
   },
   "R9 280X": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6284,
     "manufacturer": "AMD",
     "vram_gb": 3.0,
     "release_year": 2016
   },
   "FirePro S7150": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6276,
     "manufacturer": "AMD",
     "graphics_api_score": 31599,
     "release_year": 2016
   },
   "R9 380": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6275,
     "manufacturer": "AMD",
     "graphics_api_score": 31820,
@@ -1503,14 +1900,14 @@
     "release_year": 2016
   },
   "R9 380X": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6189,
     "manufacturer": "AMD",
     "vram_gb": 4.0,
     "release_year": 2015
   },
   "FirePro W9000": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6138,
     "manufacturer": "AMD",
     "graphics_api_score": 31775,
@@ -1518,40 +1915,40 @@
     "release_year": 2012
   },
   "Pro WX Vega M GL": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6049,
     "manufacturer": "AMD",
     "graphics_api_score": 17282,
     "release_year": 2019
   },
   "GTX 960": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 6042,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 17502,
     "release_year": 2015
   },
   "P106 100": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 5967,
     "manufacturer": "Unknown",
     "graphics_api_score": 35062,
     "release_year": 2019
   },
   "GTX 1050 Ti (Mobile)": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 5919,
     "manufacturer": "NVIDIA",
     "release_year": 2019
   },
   "PRO W6400": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 5916,
     "manufacturer": "AMD",
     "release_year": 2022
   },
   "GTX 770": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 5892,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 14295,
@@ -1559,14 +1956,14 @@
     "release_year": 2013
   },
   "GTX 1650 with Max Q Design": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 5884,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 35710,
     "release_year": 2019
   },
   "Pro 5300M": {
-    "tier": "S",
+    "tier": "A",
     "benchmark_score": 5840,
     "manufacturer": "AMD",
     "graphics_api_score": 24901,
@@ -1727,12 +2124,6 @@
     "manufacturer": "NVIDIA",
     "release_year": 2014
   },
-  "Ryzen 7 4800H": {
-    "tier": "A",
-    "benchmark_score": 5178,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "FirePro W7100": {
     "tier": "A",
     "benchmark_score": 5175,
@@ -1760,6 +2151,13 @@
     "graphics_api_score": 26681,
     "release_year": 2018
   },
+  "MX550": {
+    "tier": "A",
+    "benchmark_score": 5090,
+    "manufacturer": "NVIDIA",
+    "graphics_api_score": 36084,
+    "release_year": 2022
+  },
   "GTX 1050": {
     "tier": "A",
     "benchmark_score": 5090,
@@ -1768,25 +2166,12 @@
     "vram_gb": 2.0,
     "release_year": 2016
   },
-  "MX550": {
-    "tier": "A",
-    "benchmark_score": 5090,
-    "manufacturer": "NVIDIA",
-    "graphics_api_score": 36084,
-    "release_year": 2022
-  },
   "FirePro S9000": {
     "tier": "A",
     "benchmark_score": 5059,
     "manufacturer": "AMD",
     "vram_gb": 6.0,
     "release_year": 2015
-  },
-  "Ryzen 9 5900HS with Radeon": {
-    "tier": "A",
-    "benchmark_score": 5049,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "T550 Laptop GPU": {
     "tier": "A",
@@ -1897,6 +2282,12 @@
     "manufacturer": "Unknown",
     "release_year": 2018
   },
+  "Pro 465": {
+    "tier": "A",
+    "benchmark_score": 4538,
+    "manufacturer": "AMD",
+    "release_year": 2019
+  },
   "GTX 580": {
     "tier": "A",
     "benchmark_score": 4538,
@@ -1904,12 +2295,6 @@
     "graphics_api_score": 14740,
     "vram_gb": 1.5,
     "release_year": 2012
-  },
-  "Pro 465": {
-    "tier": "A",
-    "benchmark_score": 4538,
-    "manufacturer": "AMD",
-    "release_year": 2019
   },
   "R7 370": {
     "tier": "A",
@@ -2143,18 +2528,18 @@
     "graphics_api_score": 10787,
     "release_year": 2015
   },
-  "GTX 880M": {
-    "tier": "A",
-    "benchmark_score": 3876,
-    "manufacturer": "NVIDIA",
-    "graphics_api_score": 10952,
-    "release_year": 2014
-  },
   "HD 8970M": {
     "tier": "A",
     "benchmark_score": 3876,
     "manufacturer": "AMD",
     "vram_gb": 2.0,
+    "release_year": 2014
+  },
+  "GTX 880M": {
+    "tier": "A",
+    "benchmark_score": 3876,
+    "manufacturer": "NVIDIA",
+    "graphics_api_score": 10952,
     "release_year": 2014
   },
   "GRID RTX8000P 2Q": {
@@ -2482,12 +2867,6 @@
     "graphics_api_score": 14108,
     "release_year": 2017
   },
-  "Ryzen 9 5900HX": {
-    "tier": "A",
-    "benchmark_score": 3126,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "Tesla C2075": {
     "tier": "A",
     "benchmark_score": 3118,
@@ -2603,12 +2982,6 @@
     "graphics_api_score": 8402,
     "release_year": 2015
   },
-  "Ryzen 9 5900HX with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2968,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "FirePro W5100": {
     "tier": "A",
     "benchmark_score": 2957,
@@ -2635,12 +3008,6 @@
     "manufacturer": "AMD",
     "vram_gb": 2.0,
     "release_year": 2014
-  },
-  "Ryzen 7 PRO 4700G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2880,
-    "manufacturer": "AMD",
-    "release_year": 2020
   },
   "Quadro K1200": {
     "tier": "A",
@@ -2688,12 +3055,6 @@
     "manufacturer": "Unknown",
     "release_year": 2015
   },
-  "Ryzen 7 5800H with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2833,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "Custom GPU 0405": {
     "tier": "A",
     "benchmark_score": 2832,
@@ -2720,36 +3081,12 @@
     "manufacturer": "Intel",
     "release_year": 2020
   },
-  "Ryzen 7 5700G": {
-    "tier": "A",
-    "benchmark_score": 2782,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 7 PRO 5750GE": {
-    "tier": "A",
-    "benchmark_score": 2771,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 7 5800H": {
-    "tier": "A",
-    "benchmark_score": 2759,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "Quadro K4100M": {
     "tier": "A",
     "benchmark_score": 2756,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 6002,
     "release_year": 2013
-  },
-  "Ryzen 9 5900H": {
-    "tier": "A",
-    "benchmark_score": 2755,
-    "manufacturer": "AMD",
-    "release_year": 2022
   },
   "Quadro K5000M": {
     "tier": "A",
@@ -2758,12 +3095,6 @@
     "graphics_api_score": 5107,
     "vram_gb": 4.0,
     "release_year": 2012
-  },
-  "Ryzen 5 4600H": {
-    "tier": "A",
-    "benchmark_score": 2747,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "GRID K2": {
     "tier": "A",
@@ -2793,12 +3124,6 @@
     "graphics_api_score": 16230,
     "release_year": 2017
   },
-  "Ryzen 9 4900H with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2714,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "GTX 560": {
     "tier": "A",
     "benchmark_score": 2711,
@@ -2806,12 +3131,6 @@
     "graphics_api_score": 8094,
     "vram_gb": 1.0,
     "release_year": 2012
-  },
-  "Ryzen 7 5700G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2709,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "Barco MXRT 5500": {
     "tier": "A",
@@ -2826,12 +3145,6 @@
     "graphics_api_score": 5526,
     "release_year": 2012
   },
-  "Ryzen 5 5600H": {
-    "tier": "A",
-    "benchmark_score": 2696,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "Quadro 6000": {
     "tier": "A",
     "benchmark_score": 2689,
@@ -2840,18 +3153,6 @@
     "vram_gb": 6.0,
     "release_year": 2010
   },
-  "Ryzen 9 4900H": {
-    "tier": "A",
-    "benchmark_score": 2685,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 7 Pro 4750G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2682,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "GTX 465": {
     "tier": "A",
     "benchmark_score": 2681,
@@ -2859,12 +3160,6 @@
     "graphics_api_score": 8081,
     "vram_gb": 1.0,
     "release_year": 2012
-  },
-  "Ryzen 7 5700GE with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2675,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "FirePro M6100 FireGL V": {
     "tier": "A",
@@ -2905,22 +3200,10 @@
     "manufacturer": "AMD",
     "release_year": 2021
   },
-  "Ryzen 7 PRO 5750GE with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2613,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "UHD 770": {
     "tier": "A",
     "benchmark_score": 2611,
     "manufacturer": "Intel",
-    "release_year": 2021
-  },
-  "Ryzen 7 PRO 4750G": {
-    "tier": "A",
-    "benchmark_score": 2604,
-    "manufacturer": "AMD",
     "release_year": 2021
   },
   "GTX 950M": {
@@ -2930,42 +3213,12 @@
     "graphics_api_score": 9672,
     "release_year": 2015
   },
-  "Ryzen 5 5600GE with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2602,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 5 5600G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2595,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 7 PRO 5750G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2591,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 7 4700G": {
-    "tier": "A",
-    "benchmark_score": 2580,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "GTX 850M": {
     "tier": "A",
     "benchmark_score": 2574,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 9648,
     "release_year": 2014
-  },
-  "Ryzen 7 PRO 4750GE with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2550,
-    "manufacturer": "AMD",
-    "release_year": 2020
   },
   "MX330": {
     "tier": "A",
@@ -2982,11 +3235,11 @@
     "vram_gb": 2.0,
     "release_year": 2017
   },
-  "Ryzen 5 5600G": {
+  "UHD P630": {
     "tier": "A",
-    "benchmark_score": 2545,
-    "manufacturer": "AMD",
-    "release_year": 2021
+    "benchmark_score": 2541,
+    "manufacturer": "Intel",
+    "release_year": 2018
   },
   "GRID K240Q": {
     "tier": "A",
@@ -2994,24 +3247,12 @@
     "manufacturer": "Unknown",
     "release_year": 2014
   },
-  "UHD P630": {
-    "tier": "A",
-    "benchmark_score": 2541,
-    "manufacturer": "Intel",
-    "release_year": 2018
-  },
   "HD 6850 X2": {
     "tier": "A",
     "benchmark_score": 2534,
     "manufacturer": "AMD",
     "graphics_api_score": 3977,
     "release_year": 2017
-  },
-  "Ryzen 9 5980HS with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2534,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "FireStream 9370": {
     "tier": "A",
@@ -3041,42 +3282,12 @@
     "graphics_api_score": 9957,
     "release_year": 2019
   },
-  "Ryzen 5 PRO 5650G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2513,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 7 4700GE": {
-    "tier": "A",
-    "benchmark_score": 2508,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 5 PRO 5650GE with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2506,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 7 4700GE with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2496,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "GTX 950A": {
     "tier": "A",
     "benchmark_score": 2483,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 10489,
     "release_year": 2015
-  },
-  "Ryzen 7 5800U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2467,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "Pro WX 3200": {
     "tier": "A",
@@ -3085,23 +3296,11 @@
     "graphics_api_score": 16075,
     "release_year": 2019
   },
-  "Ryzen 7 PRO 5850U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2440,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "FirePro 3D V8800": {
     "tier": "A",
     "benchmark_score": 2438,
     "manufacturer": "AMD",
     "release_year": 2010
-  },
-  "Ryzen 5 PRO 4650G": {
-    "tier": "A",
-    "benchmark_score": 2418,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "GTX 960A": {
     "tier": "A",
@@ -3109,42 +3308,18 @@
     "manufacturer": "NVIDIA",
     "release_year": 2015
   },
-  "P106 090": {
-    "tier": "A",
-    "benchmark_score": 2402,
-    "manufacturer": "Unknown",
-    "graphics_api_score": 20157,
-    "release_year": 2020
-  },
   "RX Vega 11 PRD": {
     "tier": "A",
     "benchmark_score": 2402,
     "manufacturer": "AMD",
     "release_year": 2019
   },
-  "Ryzen 3 4300GE with Radeon": {
+  "P106 090": {
     "tier": "A",
     "benchmark_score": 2402,
-    "manufacturer": "AMD",
+    "manufacturer": "Unknown",
+    "graphics_api_score": 20157,
     "release_year": 2020
-  },
-  "Ryzen 5 Pro 4650G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2395,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
-  "Ryzen 5 5600H with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2387,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 3 5300GE with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2386,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "GTX 580M": {
     "tier": "A",
@@ -3161,36 +3336,12 @@
     "graphics_api_score": 12726,
     "release_year": 2019
   },
-  "Ryzen 5 PRO 5650GE": {
-    "tier": "A",
-    "benchmark_score": 2363,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "GTX 485M": {
     "tier": "A",
     "benchmark_score": 2360,
     "manufacturer": "NVIDIA",
     "vram_gb": 2.0,
     "release_year": 2011
-  },
-  "Ryzen 7 4800U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2344,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
-  "Ryzen 3 PRO 5350G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2341,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 3 PRO 5350GE with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2341,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "GTX 675MX": {
     "tier": "A",
@@ -3200,25 +3351,6 @@
     "vram_gb": 2.0,
     "release_year": 2013
   },
-  "Ryzen 7 PRO 5850U": {
-    "tier": "A",
-    "benchmark_score": 2333,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 7 5800U": {
-    "tier": "A",
-    "benchmark_score": 2321,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "FirePro V7900": {
-    "tier": "A",
-    "benchmark_score": 2310,
-    "manufacturer": "AMD",
-    "vram_gb": 2.0,
-    "release_year": 2011
-  },
   "MX150": {
     "tier": "A",
     "benchmark_score": 2310,
@@ -3226,23 +3358,12 @@
     "graphics_api_score": 10042,
     "release_year": 2017
   },
-  "Ryzen 3 4300GE": {
+  "FirePro V7900": {
     "tier": "A",
-    "benchmark_score": 2306,
+    "benchmark_score": 2310,
     "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 5 PRO 4400G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2306,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
-  "Ryzen 7 Microsoft Surface Edition": {
-    "tier": "A",
-    "benchmark_score": 2298,
-    "manufacturer": "AMD",
-    "release_year": 2021
+    "vram_gb": 2.0,
+    "release_year": 2011
   },
   "GTX 460": {
     "tier": "A",
@@ -3252,29 +3373,11 @@
     "vram_gb": 1.0,
     "release_year": 2012
   },
-  "Ryzen 7 5700U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2289,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "R9 M470": {
     "tier": "A",
     "benchmark_score": 2288,
     "manufacturer": "AMD",
     "release_year": 2016
-  },
-  "Ryzen 7 4800U": {
-    "tier": "A",
-    "benchmark_score": 2273,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Pro Ryzen 7 PRO 5850U": {
-    "tier": "A",
-    "benchmark_score": 2271,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "HD 6970M": {
     "tier": "A",
@@ -3342,18 +3445,6 @@
     "vram_gb": 1.0,
     "release_year": 2012
   },
-  "Ryzen 3 5300G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2223,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 5 PRO 5650G": {
-    "tier": "A",
-    "benchmark_score": 2212,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "HD 7770": {
     "tier": "A",
     "benchmark_score": 2204,
@@ -3361,47 +3452,11 @@
     "graphics_api_score": 13536,
     "release_year": 2012
   },
-  "Ryzen 7 PRO 4750GE": {
-    "tier": "A",
-    "benchmark_score": 2200,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 3 Pro 4350G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2190,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
-  "Ryzen 7 4700G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2187,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
-  "Ryzen 5 4600G": {
-    "tier": "A",
-    "benchmark_score": 2186,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "RadeonT R7 450": {
     "tier": "A",
     "benchmark_score": 2185,
     "manufacturer": "AMD",
     "release_year": 2017
-  },
-  "Ryzen 5 PRO 5650U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2184,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 3 PRO 4350GE with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2181,
-    "manufacturer": "AMD",
-    "release_year": 2020
   },
   "GTX 745": {
     "tier": "A",
@@ -3416,47 +3471,11 @@
     "manufacturer": "Intel",
     "release_year": 2016
   },
-  "Ryzen 3 PRO 4350G": {
-    "tier": "A",
-    "benchmark_score": 2162,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 5 5600U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2160,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 7 Extreme Edition": {
-    "tier": "A",
-    "benchmark_score": 2158,
-    "manufacturer": "Unknown",
-    "release_year": 2020
-  },
-  "Ryzen 7 PRO 5750G": {
-    "tier": "A",
-    "benchmark_score": 2154,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "Ryzen Embedded V2718": {
     "tier": "A",
     "benchmark_score": 2149,
     "manufacturer": "AMD",
     "release_year": 2021
-  },
-  "Ryzen 5 PRO 5650U": {
-    "tier": "A",
-    "benchmark_score": 2138,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 7 4850U Mobile": {
-    "tier": "A",
-    "benchmark_score": 2138,
-    "manufacturer": "AMD",
-    "release_year": 2022
   },
   "RX Vega 11": {
     "tier": "A",
@@ -3472,12 +3491,6 @@
     "graphics_api_score": 8283,
     "release_year": 2019
   },
-  "Ryzen 7 4800H with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2113,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "TM R9 A360": {
     "tier": "A",
     "benchmark_score": 2105,
@@ -3492,24 +3505,12 @@
     "vram_gb": 2.0,
     "release_year": 2014
   },
-  "Ryzen 5 Microsoft Surface Edition": {
-    "tier": "A",
-    "benchmark_score": 2093,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "GTX 560 SE": {
     "tier": "A",
     "benchmark_score": 2087,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 6235,
     "release_year": 2012
-  },
-  "Ryzen 5 4600G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2062,
-    "manufacturer": "AMD",
-    "release_year": 2020
   },
   "Quadro 5000M": {
     "tier": "A",
@@ -3525,18 +3526,6 @@
     "vram_gb": 2.0,
     "release_year": 2010
   },
-  "Ryzen 7 4700U": {
-    "tier": "A",
-    "benchmark_score": 2044,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 5 PRO 4650GE": {
-    "tier": "A",
-    "benchmark_score": 2038,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "FirePro V7800": {
     "tier": "A",
     "benchmark_score": 2034,
@@ -3545,35 +3534,11 @@
     "vram_gb": 2.0,
     "release_year": 2018
   },
-  "Ryzen 7 4700U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2033,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
-  "Ryzen 7 PRO 4750U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2028,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
-  "Ryzen 7 PRO 4750U": {
-    "tier": "A",
-    "benchmark_score": 2024,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "R9 M385": {
     "tier": "A",
     "benchmark_score": 2018,
     "manufacturer": "AMD",
     "release_year": 2020
-  },
-  "Ryzen 5 5600U": {
-    "tier": "A",
-    "benchmark_score": 2015,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "Pro W5500M": {
     "tier": "A",
@@ -3587,12 +3552,6 @@
     "manufacturer": "NVIDIA",
     "graphics_api_score": 5969,
     "release_year": 2015
-  },
-  "Ryzen 5 PRO 4500U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2008,
-    "manufacturer": "AMD",
-    "release_year": 2020
   },
   "R9 350": {
     "tier": "A",
@@ -3614,12 +3573,6 @@
     "graphics_api_score": 7872,
     "vram_gb": 1.0,
     "release_year": 2011
-  },
-  "Ryzen 5 5500U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 2001,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "Iris Pro 580": {
     "tier": "A",
@@ -3655,12 +3608,6 @@
     "vram_gb": 1.0,
     "release_year": 2012
   },
-  "Ryzen 5 PRO 4650GE with Radeon": {
-    "tier": "A",
-    "benchmark_score": 1977,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "GTX 460 SE": {
     "tier": "A",
     "benchmark_score": 1974,
@@ -3683,18 +3630,18 @@
     "vram_gb": 2.0,
     "release_year": 2013
   },
-  "HD 5850": {
-    "tier": "A",
-    "benchmark_score": 1966,
-    "manufacturer": "AMD",
-    "release_year": 2012
-  },
   "R7 450": {
     "tier": "A",
     "benchmark_score": 1966,
     "manufacturer": "AMD",
     "graphics_api_score": 10240,
     "release_year": 2016
+  },
+  "HD 5850": {
+    "tier": "A",
+    "benchmark_score": 1966,
+    "manufacturer": "AMD",
+    "release_year": 2012
   },
   "R9 M275X": {
     "tier": "A",
@@ -3736,12 +3683,6 @@
     "vram_gb": 1.5,
     "release_year": 2010
   },
-  "Ryzen 5 4600U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 1951,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "Quadro K4000M": {
     "tier": "A",
     "benchmark_score": 1949,
@@ -3764,12 +3705,6 @@
     "manufacturer": "NVIDIA",
     "graphics_api_score": 8099,
     "release_year": 2015
-  },
-  "Ryzen 5 4600H with Radeon": {
-    "tier": "A",
-    "benchmark_score": 1939,
-    "manufacturer": "AMD",
-    "release_year": 2020
   },
   "Pro WX 4150": {
     "tier": "A",
@@ -3825,12 +3760,6 @@
     "benchmark_score": 1904,
     "manufacturer": "Unknown",
     "release_year": 2014
-  },
-  "Ryzen 3 4300G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 1903,
-    "manufacturer": "AMD",
-    "release_year": 2020
   },
   "HD 7700 serie": {
     "tier": "A",
@@ -3938,12 +3867,6 @@
     "graphics_api_score": 9420,
     "release_year": 2012
   },
-  "Ryzen 5 4500U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 1813,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "Matrox C900 PCIe x16": {
     "tier": "A",
     "benchmark_score": 1812,
@@ -3968,18 +3891,6 @@
     "manufacturer": "AMD",
     "release_year": 2020
   },
-  "Ryzen 5 4600U": {
-    "tier": "A",
-    "benchmark_score": 1802,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "HD 8870M / R9 M270X / M370X": {
-    "tier": "A",
-    "benchmark_score": 1800,
-    "manufacturer": "AMD",
-    "release_year": 2014
-  },
   "RX Vega 11 Processor": {
     "tier": "A",
     "benchmark_score": 1800,
@@ -3987,17 +3898,11 @@
     "graphics_api_score": 12716,
     "release_year": 2021
   },
-  "Ryzen 5 4500U": {
+  "HD 8870M / R9 M270X / M370X": {
     "tier": "A",
     "benchmark_score": 1800,
     "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 3 PRO 4200G with Radeon": {
-    "tier": "A",
-    "benchmark_score": 1799,
-    "manufacturer": "AMD",
-    "release_year": 2021
+    "release_year": 2014
   },
   "Embedded Radeon E9173": {
     "tier": "A",
@@ -4024,11 +3929,11 @@
     "manufacturer": "AMD",
     "release_year": 2013
   },
-  "Ryzen 3 PRO 4200GE with Radeon": {
+  "UHD 750": {
     "tier": "A",
-    "benchmark_score": 1784,
-    "manufacturer": "AMD",
-    "release_year": 2020
+    "benchmark_score": 1775,
+    "manufacturer": "Intel",
+    "release_year": 2021
   },
   "GTX 670M": {
     "tier": "A",
@@ -4037,12 +3942,6 @@
     "graphics_api_score": 5785,
     "vram_gb": 1.5,
     "release_year": 2012
-  },
-  "UHD 750": {
-    "tier": "A",
-    "benchmark_score": 1775,
-    "manufacturer": "Intel",
-    "release_year": 2021
   },
   "Iris Plus 655": {
     "tier": "A",
@@ -4096,24 +3995,12 @@
     "vram_gb": 1.0,
     "release_year": 2012
   },
-  "Ryzen 3 5400U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 1734,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "RX Vega11": {
     "tier": "A",
     "benchmark_score": 1717,
     "manufacturer": "AMD",
     "graphics_api_score": 11576,
     "release_year": 2019
-  },
-  "Ryzen 3 PRO 4200GE": {
-    "tier": "A",
-    "benchmark_score": 1712,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "HD 6900M": {
     "tier": "A",
@@ -4128,23 +4015,11 @@
     "manufacturer": "AMD",
     "release_year": 2013
   },
-  "Ryzen 5 PRO 4650U": {
-    "tier": "A",
-    "benchmark_score": 1699,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "HD 7750": {
     "tier": "A",
     "benchmark_score": 1696,
     "manufacturer": "AMD",
     "release_year": 2012
-  },
-  "Ryzen 5 PRO 4650U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 1696,
-    "manufacturer": "AMD",
-    "release_year": 2020
   },
   "RX Vega 10": {
     "tier": "A",
@@ -4167,18 +4042,18 @@
     "manufacturer": "Qualcomm",
     "release_year": 2022
   },
-  "R7 M380": {
-    "tier": "A",
-    "benchmark_score": 1669,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
   "Vega 9": {
     "tier": "A",
     "benchmark_score": 1669,
     "manufacturer": "AMD",
     "graphics_api_score": 9624,
     "release_year": 2019
+  },
+  "R7 M380": {
+    "tier": "A",
+    "benchmark_score": 1669,
+    "manufacturer": "AMD",
+    "release_year": 2017
   },
   "Iris Pro P6300": {
     "tier": "A",
@@ -4214,21 +4089,9 @@
     "manufacturer": "AMD",
     "release_year": 2015
   },
-  "Ryzen 3 5300U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 1626,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "R7 M465X": {
     "tier": "A",
     "benchmark_score": 1624,
-    "manufacturer": "AMD",
-    "release_year": 2018
-  },
-  "Ryzen 7 2700U with Radeon Vega": {
-    "tier": "A",
-    "benchmark_score": 1617,
     "manufacturer": "AMD",
     "release_year": 2018
   },
@@ -4274,12 +4137,6 @@
     "graphics_api_score": 6494,
     "vram_gb": 2.0,
     "release_year": 2012
-  },
-  "Ryzen 3 4300G": {
-    "tier": "A",
-    "benchmark_score": 1596,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "Vega 8": {
     "tier": "A",
@@ -4341,12 +4198,6 @@
     "graphics_api_score": 9342,
     "release_year": 2019
   },
-  "Ryzen 3 PRO 5450U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 1556,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "Firepro W5170M": {
     "tier": "A",
     "benchmark_score": 1555,
@@ -4385,12 +4236,6 @@
     "manufacturer": "AMD",
     "release_year": 2018
   },
-  "Ryzen 3 PRO 4300U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 1543,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "FirePro W4100": {
     "tier": "A",
     "benchmark_score": 1541,
@@ -4404,12 +4249,6 @@
     "manufacturer": "AMD",
     "vram_gb": 1.0,
     "release_year": 2015
-  },
-  "Ryzen 3 PRO 4450U with Radeon": {
-    "tier": "A",
-    "benchmark_score": 1538,
-    "manufacturer": "AMD",
-    "release_year": 2020
   },
   "RX 640": {
     "tier": "A",
@@ -4453,24 +4292,12 @@
     "vram_gb": 2.0,
     "release_year": 2012
   },
-  "Ryzen 3 PRO 4450U": {
-    "tier": "A",
-    "benchmark_score": 1505,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "940MX": {
     "tier": "A",
     "benchmark_score": 1503,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 6256,
     "release_year": 2016
-  },
-  "Ryzen 5 2500U with Radeon Vega": {
-    "tier": "A",
-    "benchmark_score": 1503,
-    "manufacturer": "AMD",
-    "release_year": 2018
   },
   "HD 6670 + 7660D Dual": {
     "tier": "A",
@@ -4518,18 +4345,6 @@
     "graphics_api_score": 9499,
     "release_year": 2017
   },
-  "Ryzen 3 PRO 4350GE": {
-    "tier": "A",
-    "benchmark_score": 1464,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "Ryzen 5 PRO 4400GE with Radeon": {
-    "tier": "A",
-    "benchmark_score": 1442,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "Vega 8 Mobile": {
     "tier": "A",
     "benchmark_score": 1438,
@@ -4543,19 +4358,19 @@
     "manufacturer": "AMD",
     "release_year": 2017
   },
-  "845M": {
-    "tier": "A",
-    "benchmark_score": 1430,
-    "manufacturer": "NVIDIA",
-    "graphics_api_score": 6112,
-    "release_year": 2015
-  },
   "550X": {
     "tier": "A",
     "benchmark_score": 1430,
     "manufacturer": "AMD",
     "graphics_api_score": 10870,
     "release_year": 2019
+  },
+  "845M": {
+    "tier": "A",
+    "benchmark_score": 1430,
+    "manufacturer": "NVIDIA",
+    "graphics_api_score": 6112,
+    "release_year": 2015
   },
   "Iris Pro Graphics 6200": {
     "tier": "A",
@@ -4585,12 +4400,6 @@
     "vram_gb": 2.0,
     "release_year": 2012
   },
-  "Ryzen 5 4600GE": {
-    "tier": "A",
-    "benchmark_score": 1412,
-    "manufacturer": "AMD",
-    "release_year": 2022
-  },
   "Pro WX 4170": {
     "tier": "A",
     "benchmark_score": 1409,
@@ -4598,27 +4407,15 @@
     "graphics_api_score": 20842,
     "release_year": 2019
   },
-  "Ryzen 3 PRO 5350G": {
-    "tier": "A",
-    "benchmark_score": 1408,
-    "manufacturer": "AMD",
-    "release_year": 2022
-  },
-  "Ryzen 3 5300G": {
-    "tier": "B",
-    "benchmark_score": 1406,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "GTX 275": {
-    "tier": "B",
+    "tier": "A",
     "benchmark_score": 1401,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.88,
     "release_year": 2012
   },
   "540X": {
-    "tier": "B",
+    "tier": "A",
     "benchmark_score": 1398,
     "manufacturer": "AMD",
     "graphics_api_score": 8600,
@@ -4684,12 +4481,6 @@
     "graphics_api_score": 3051,
     "release_year": 2013
   },
-  "Ryzen 3 4300U with Radeon": {
-    "tier": "B",
-    "benchmark_score": 1348,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "HD 7560D + HD 7700 Dual": {
     "tier": "B",
     "benchmark_score": 1347,
@@ -4702,19 +4493,19 @@
     "manufacturer": "Intel",
     "release_year": 2016
   },
-  "FirePro W5130M": {
-    "tier": "B",
-    "benchmark_score": 1341,
-    "manufacturer": "AMD",
-    "graphics_api_score": 8058,
-    "release_year": 2016
-  },
   "FireStream 9270": {
     "tier": "B",
     "benchmark_score": 1341,
     "manufacturer": "Unknown",
     "vram_gb": 2.0,
     "release_year": 2014
+  },
+  "FirePro W5130M": {
+    "tier": "B",
+    "benchmark_score": 1341,
+    "manufacturer": "AMD",
+    "graphics_api_score": 8058,
+    "release_year": 2016
   },
   "Iris Plus 640": {
     "tier": "B",
@@ -4752,18 +4543,6 @@
     "vram_gb": 2.0,
     "release_year": 2013
   },
-  "R7 PRO A8 8670E": {
-    "tier": "B",
-    "benchmark_score": 1310,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
-  "Ryzen 3 4300U": {
-    "tier": "B",
-    "benchmark_score": 1310,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "HD 4870 X2": {
     "tier": "B",
     "benchmark_score": 1309,
@@ -4800,18 +4579,18 @@
     "graphics_api_score": 5577,
     "release_year": 2016
   },
-  "Ryzen Embedded V2748": {
-    "tier": "B",
-    "benchmark_score": 1296,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "Vega 6": {
     "tier": "B",
     "benchmark_score": 1296,
     "manufacturer": "AMD",
     "graphics_api_score": 6900,
     "release_year": 2018
+  },
+  "Ryzen Embedded V2748": {
+    "tier": "B",
+    "benchmark_score": 1296,
+    "manufacturer": "AMD",
+    "release_year": 2021
   },
   "UHD 630": {
     "tier": "B",
@@ -4824,12 +4603,6 @@
     "benchmark_score": 1281,
     "manufacturer": "AMD",
     "release_year": 2016
-  },
-  "R7 A10 7870K": {
-    "tier": "B",
-    "benchmark_score": 1280,
-    "manufacturer": "AMD",
-    "release_year": 2015
   },
   "540": {
     "tier": "B",
@@ -4934,17 +4707,17 @@
     "manufacturer": "AMD",
     "release_year": 2017
   },
-  "FirePro 3D V5800": {
-    "tier": "B",
-    "benchmark_score": 1232,
-    "manufacturer": "AMD",
-    "release_year": 2010
-  },
   "R7 + R7 250 Dual": {
     "tier": "B",
     "benchmark_score": 1232,
     "manufacturer": "AMD",
     "release_year": 2016
+  },
+  "FirePro 3D V5800": {
+    "tier": "B",
+    "benchmark_score": 1232,
+    "manufacturer": "AMD",
+    "release_year": 2010
   },
   "HD 6770": {
     "tier": "B",
@@ -5048,12 +4821,6 @@
     "vram_gb": 1.0,
     "release_year": 2016
   },
-  "Ryzen 3 5400U": {
-    "tier": "B",
-    "benchmark_score": 1183,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "GT 640": {
     "tier": "B",
     "benchmark_score": 1182,
@@ -5148,12 +4915,6 @@
     "manufacturer": "NVIDIA",
     "release_year": 2013
   },
-  "Ryzen 3 PRO 5450U": {
-    "tier": "B",
-    "benchmark_score": 1143,
-    "manufacturer": "AMD",
-    "release_year": 2022
-  },
   "NVS 810": {
     "tier": "B",
     "benchmark_score": 1141,
@@ -5165,12 +4926,6 @@
     "benchmark_score": 1140,
     "manufacturer": "AMD",
     "release_year": 2016
-  },
-  "R7 A10 9700E RADEON": {
-    "tier": "B",
-    "benchmark_score": 1138,
-    "manufacturer": "AMD",
-    "release_year": 2018
   },
   "HD 4850 X2": {
     "tier": "B",
@@ -5273,12 +5028,6 @@
     "graphics_api_score": 3261,
     "release_year": 2012
   },
-  "R5 PRO A6 9500 2C+6G": {
-    "tier": "B",
-    "benchmark_score": 1096,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
   "GTX 850M MODDED": {
     "tier": "B",
     "benchmark_score": 1092,
@@ -5298,13 +5047,6 @@
     "manufacturer": "AMD",
     "release_year": 2016
   },
-  "930A": {
-    "tier": "B",
-    "benchmark_score": 1082,
-    "manufacturer": "NVIDIA",
-    "graphics_api_score": 5317,
-    "release_year": 2016
-  },
   "Quadro K1100M": {
     "tier": "B",
     "benchmark_score": 1082,
@@ -5312,6 +5054,13 @@
     "graphics_api_score": 2159,
     "vram_gb": 2.0,
     "release_year": 2013
+  },
+  "930A": {
+    "tier": "B",
+    "benchmark_score": 1082,
+    "manufacturer": "NVIDIA",
+    "graphics_api_score": 5317,
+    "release_year": 2016
   },
   "MIRRORV3": {
     "tier": "B",
@@ -5344,12 +5093,6 @@
     "manufacturer": "NVIDIA",
     "graphics_api_score": 5591,
     "release_year": 2014
-  },
-  "R5 PRO A6 8570 R5, 8 COMPUTE CORES 2C+6G": {
-    "tier": "B",
-    "benchmark_score": 1064,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "Mobility Radeon HD 5870": {
     "tier": "B",
@@ -5398,12 +5141,6 @@
     "manufacturer": "Unknown",
     "release_year": 2015
   },
-  "GTX 850A": {
-    "tier": "B",
-    "benchmark_score": 1050,
-    "manufacturer": "NVIDIA",
-    "release_year": 2015
-  },
   "HD 7670A": {
     "tier": "B",
     "benchmark_score": 1050,
@@ -5411,11 +5148,11 @@
     "vram_gb": 1.0,
     "release_year": 2012
   },
-  "R7 PRO A8 9600": {
+  "GTX 850A": {
     "tier": "B",
-    "benchmark_score": 1049,
-    "manufacturer": "AMD",
-    "release_year": 2016
+    "benchmark_score": 1050,
+    "manufacturer": "NVIDIA",
+    "release_year": 2015
   },
   "535": {
     "tier": "B",
@@ -5511,17 +5248,17 @@
     "manufacturer": "AMD",
     "release_year": 2020
   },
-  "Iris Pro 5200": {
-    "tier": "B",
-    "benchmark_score": 1020,
-    "manufacturer": "Intel",
-    "release_year": 2013
-  },
   "HD 8670D + R7 240 Dual": {
     "tier": "B",
     "benchmark_score": 1020,
     "manufacturer": "AMD",
     "release_year": 2014
+  },
+  "Iris Pro 5200": {
+    "tier": "B",
+    "benchmark_score": 1020,
+    "manufacturer": "Intel",
+    "release_year": 2013
   },
   "HD 6700M": {
     "tier": "B",
@@ -5535,12 +5272,6 @@
     "benchmark_score": 1016,
     "manufacturer": "AMD",
     "release_year": 2017
-  },
-  "R5 A6 9500E 2C+4G": {
-    "tier": "B",
-    "benchmark_score": 1015,
-    "manufacturer": "AMD",
-    "release_year": 2018
   },
   "930M": {
     "tier": "B",
@@ -5556,19 +5287,19 @@
     "vram_gb": 1.0,
     "release_year": 2015
   },
-  "830A": {
-    "tier": "B",
-    "benchmark_score": 1005,
-    "manufacturer": "NVIDIA",
-    "graphics_api_score": 4315,
-    "release_year": 2014
-  },
   "HD 6750": {
     "tier": "B",
     "benchmark_score": 1005,
     "manufacturer": "AMD",
     "vram_gb": 1.0,
     "release_year": 2011
+  },
+  "830A": {
+    "tier": "B",
+    "benchmark_score": 1005,
+    "manufacturer": "NVIDIA",
+    "graphics_api_score": 4315,
+    "release_year": 2014
   },
   "HD 7690M": {
     "tier": "B",
@@ -5584,11 +5315,11 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
-  "R5 PRO A6 9500 R5, 8 COMPUTE CORES 2C+6G": {
+  "HD 8570D + R7 200 Dual": {
     "tier": "B",
-    "benchmark_score": 1000,
+    "benchmark_score": 999,
     "manufacturer": "AMD",
-    "release_year": 2021
+    "release_year": 2014
   },
   "FirePro M4150": {
     "tier": "B",
@@ -5602,12 +5333,6 @@
     "benchmark_score": 999,
     "manufacturer": "AMD",
     "release_year": 2016
-  },
-  "HD 8570D + R7 200 Dual": {
-    "tier": "B",
-    "benchmark_score": 999,
-    "manufacturer": "AMD",
-    "release_year": 2014
   },
   "HD 7640G + HD 8750M Dual": {
     "tier": "B",
@@ -5669,24 +5394,12 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
-  "R7 A10 7850K": {
-    "tier": "B",
-    "benchmark_score": 982,
-    "manufacturer": "AMD",
-    "release_year": 2014
-  },
   "Quadro FX 4800": {
     "tier": "B",
     "benchmark_score": 979,
     "manufacturer": "NVIDIA",
     "vram_gb": 1.5,
     "release_year": 2012
-  },
-  "R5 A10 9630P 4C+6G": {
-    "tier": "B",
-    "benchmark_score": 977,
-    "manufacturer": "AMD",
-    "release_year": 2017
   },
   "830M": {
     "tier": "B",
@@ -5695,11 +5408,11 @@
     "graphics_api_score": 4281,
     "release_year": 2014
   },
-  "R7 A10 9700 RADEON": {
+  "HD 8670D + 8570 Dual": {
     "tier": "B",
-    "benchmark_score": 975,
+    "benchmark_score": 974,
     "manufacturer": "AMD",
-    "release_year": 2017
+    "release_year": 2014
   },
   "FirePro V4900": {
     "tier": "B",
@@ -5708,12 +5421,6 @@
     "graphics_api_score": 1666,
     "release_year": 2012
   },
-  "HD 8670D + 8570 Dual": {
-    "tier": "B",
-    "benchmark_score": 974,
-    "manufacturer": "AMD",
-    "release_year": 2014
-  },
   "HD 8850M": {
     "tier": "B",
     "benchmark_score": 973,
@@ -5721,12 +5428,6 @@
     "graphics_api_score": 8067,
     "vram_gb": 2.0,
     "release_year": 2015
-  },
-  "R6 A10 9600P 4C+6G": {
-    "tier": "B",
-    "benchmark_score": 970,
-    "manufacturer": "AMD",
-    "release_year": 2018
   },
   "HD 7660G N HD 7660G + HD 7700M N HD 7700M D": {
     "tier": "B",
@@ -5755,17 +5456,23 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
+  "R7 PRO A12 8870E": {
+    "tier": "B",
+    "benchmark_score": 962,
+    "manufacturer": "AMD",
+    "release_year": 2016
+  },
   "R7 M270DX": {
     "tier": "B",
     "benchmark_score": 962,
     "manufacturer": "AMD",
     "release_year": 2020
   },
-  "R7 PRO A12 8870E": {
+  "R7 A10 PRO 7850B": {
     "tier": "B",
-    "benchmark_score": 962,
+    "benchmark_score": 958,
     "manufacturer": "AMD",
-    "release_year": 2016
+    "release_year": 2014
   },
   "GT 645M": {
     "tier": "B",
@@ -5774,12 +5481,6 @@
     "graphics_api_score": 2445,
     "vram_gb": 2.0,
     "release_year": 2013
-  },
-  "R7 A10 PRO 7850B": {
-    "tier": "B",
-    "benchmark_score": 958,
-    "manufacturer": "AMD",
-    "release_year": 2014
   },
   "R6 Opteron X3418": {
     "tier": "B",
@@ -5826,19 +5527,6 @@
     "manufacturer": "AMD",
     "release_year": 2013
   },
-  "R7 A8 7500": {
-    "tier": "B",
-    "benchmark_score": 948,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
-  "Quadro CX": {
-    "tier": "B",
-    "benchmark_score": 947,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 1.5,
-    "release_year": 2009
-  },
   "R7 M260X": {
     "tier": "B",
     "benchmark_score": 947,
@@ -5846,6 +5534,13 @@
     "graphics_api_score": 5979,
     "vram_gb": 2.0,
     "release_year": 2015
+  },
+  "Quadro CX": {
+    "tier": "B",
+    "benchmark_score": 947,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 1.5,
+    "release_year": 2009
   },
   "HD 6670/7670": {
     "tier": "B",
@@ -5866,17 +5561,17 @@
     "graphics_api_score": 6912,
     "release_year": 2017
   },
-  "R7 PRO A10 8850B": {
-    "tier": "B",
-    "benchmark_score": 945,
-    "manufacturer": "AMD",
-    "release_year": 2016
-  },
   "zxcvIntel HD 620": {
     "tier": "B",
     "benchmark_score": 944,
     "manufacturer": "Intel",
     "release_year": 2020
+  },
+  "HD 7660D + R7 240 Dual": {
+    "tier": "B",
+    "benchmark_score": 942,
+    "manufacturer": "AMD",
+    "release_year": 2015
   },
   "Quadro 2000": {
     "tier": "B",
@@ -5885,12 +5580,6 @@
     "graphics_api_score": 3240,
     "vram_gb": 1.0,
     "release_year": 2010
-  },
-  "HD 7660D + R7 240 Dual": {
-    "tier": "B",
-    "benchmark_score": 942,
-    "manufacturer": "AMD",
-    "release_year": 2015
   },
   "R7 A12 9800E RADEON": {
     "tier": "B",
@@ -5925,12 +5614,6 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
-  "R7 PRO A10 9700E": {
-    "tier": "B",
-    "benchmark_score": 933,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
   "HD 7660G + 7730M Dual": {
     "tier": "B",
     "benchmark_score": 931,
@@ -5942,12 +5625,6 @@
     "benchmark_score": 931,
     "manufacturer": "AMD",
     "release_year": 2016
-  },
-  "R7 PRO A10 8770": {
-    "tier": "B",
-    "benchmark_score": 931,
-    "manufacturer": "AMD",
-    "release_year": 2017
   },
   "R7 240 + HD 8670D Dual": {
     "tier": "B",
@@ -5994,12 +5671,6 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
-  "R7 A8 8650": {
-    "tier": "B",
-    "benchmark_score": 913,
-    "manufacturer": "AMD",
-    "release_year": 2016
-  },
   "R7 M445": {
     "tier": "B",
     "benchmark_score": 913,
@@ -6012,12 +5683,6 @@
     "benchmark_score": 912,
     "manufacturer": "Unknown",
     "release_year": 2015
-  },
-  "R7 A10 7860K": {
-    "tier": "B",
-    "benchmark_score": 912,
-    "manufacturer": "AMD",
-    "release_year": 2016
   },
   "6750M": {
     "tier": "B",
@@ -6069,12 +5734,6 @@
     "manufacturer": "AMD",
     "release_year": 2017
   },
-  "R7 PRO A10 8770E": {
-    "tier": "B",
-    "benchmark_score": 897,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
   "7900 MOD Radeon HD 6550D": {
     "tier": "B",
     "benchmark_score": 893,
@@ -6101,18 +5760,6 @@
     "manufacturer": "AMD",
     "graphics_api_score": 4656,
     "release_year": 2018
-  },
-  "R7 + R5 435 Dual A10 9700 RADEON": {
-    "tier": "B",
-    "benchmark_score": 886,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
-  "R7 A10 8750": {
-    "tier": "B",
-    "benchmark_score": 885,
-    "manufacturer": "AMD",
-    "release_year": 2015
   },
   "HD 8650G + 7670M Dual": {
     "tier": "B",
@@ -6145,12 +5792,6 @@
     "manufacturer": "NVIDIA",
     "vram_gb": 3.0,
     "release_year": 2010
-  },
-  "R5 A6 9500 RADEON R5, 8 COMPUTE CORES 2C+6G": {
-    "tier": "B",
-    "benchmark_score": 878,
-    "manufacturer": "AMD",
-    "release_year": 2020
   },
   "E6760": {
     "tier": "B",
@@ -6195,30 +5836,18 @@
     "vram_gb": 1.0,
     "release_year": 2009
   },
-  "R5 PRO A6 8570E R5, 6 COMPUTE CORES 2C+4G": {
-    "tier": "B",
-    "benchmark_score": 866,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
-  "R7 A8 7670K": {
-    "tier": "B",
-    "benchmark_score": 866,
-    "manufacturer": "AMD",
-    "release_year": 2015
-  },
-  "HD 8470D + HD 6450 Dual": {
-    "tier": "B",
-    "benchmark_score": 863,
-    "manufacturer": "AMD",
-    "release_year": 2014
-  },
   "R7 240": {
     "tier": "B",
     "benchmark_score": 863,
     "manufacturer": "AMD",
     "graphics_api_score": 5174,
     "release_year": 2013
+  },
+  "HD 8470D + HD 6450 Dual": {
+    "tier": "B",
+    "benchmark_score": 863,
+    "manufacturer": "AMD",
+    "release_year": 2014
   },
   "R7 M440": {
     "tier": "B",
@@ -6260,18 +5889,6 @@
     "graphics_api_score": 6052,
     "release_year": 2015
   },
-  "R5 A6 9500 2C+6G": {
-    "tier": "B",
-    "benchmark_score": 853,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
-  "R7 A8 7500 4C+6G": {
-    "tier": "B",
-    "benchmark_score": 853,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
   "GT 635": {
     "tier": "B",
     "benchmark_score": 852,
@@ -6290,12 +5907,6 @@
     "benchmark_score": 848,
     "manufacturer": "Intel",
     "release_year": 2019
-  },
-  "R5 PRO A6 8570 2C+6G": {
-    "tier": "B",
-    "benchmark_score": 847,
-    "manufacturer": "AMD",
-    "release_year": 2017
   },
   "R5 435": {
     "tier": "B",
@@ -6467,12 +6078,6 @@
     "graphics_api_score": 1976,
     "release_year": 2013
   },
-  "R5 A6 7480": {
-    "tier": "B",
-    "benchmark_score": 811,
-    "manufacturer": "AMD",
-    "release_year": 2019
-  },
   "R8 M445DX": {
     "tier": "B",
     "benchmark_score": 806,
@@ -6498,12 +6103,6 @@
     "manufacturer": "NVIDIA",
     "vram_gb": 1.0,
     "release_year": 2009
-  },
-  "R7 A8 9600 RADEON": {
-    "tier": "B",
-    "benchmark_score": 798,
-    "manufacturer": "AMD",
-    "release_year": 2017
   },
   "HD 8550G + 8750M Dual": {
     "tier": "B",
@@ -6537,29 +6136,11 @@
     "graphics_api_score": 1508,
     "release_year": 2012
   },
-  "R7 A8 7600": {
-    "tier": "B",
-    "benchmark_score": 782,
-    "manufacturer": "AMD",
-    "release_year": 2014
-  },
-  "R7 A10 7890K": {
-    "tier": "B",
-    "benchmark_score": 781,
-    "manufacturer": "AMD",
-    "release_year": 2016
-  },
   "R7 A365": {
     "tier": "B",
     "benchmark_score": 781,
     "manufacturer": "AMD",
     "release_year": 2016
-  },
-  "R7 PRO A6 9500 2C+6G": {
-    "tier": "B",
-    "benchmark_score": 781,
-    "manufacturer": "AMD",
-    "release_year": 2019
   },
   "Quadro FX 3800": {
     "tier": "B",
@@ -6621,29 +6202,6 @@
     "vram_gb": 1.0,
     "release_year": 2011
   },
-  "Mobility Radeon HD 5000": {
-    "tier": "B",
-    "benchmark_score": 773,
-    "manufacturer": "AMD",
-    "graphics_api_score": 1212,
-    "release_year": 2012
-  },
-  "Quadro 2000M": {
-    "tier": "B",
-    "benchmark_score": 773,
-    "manufacturer": "NVIDIA",
-    "graphics_api_score": 2794,
-    "vram_gb": 2.0,
-    "release_year": 2012
-  },
-  "Quadro K1000M": {
-    "tier": "B",
-    "benchmark_score": 773,
-    "manufacturer": "NVIDIA",
-    "graphics_api_score": 1345,
-    "vram_gb": 2.0,
-    "release_year": 2012
-  },
   "HD 7600M + 7600M Dual": {
     "tier": "B",
     "benchmark_score": 773,
@@ -6656,23 +6214,34 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
-  "R7 A10 8850": {
+  "Quadro K1000M": {
+    "tier": "B",
+    "benchmark_score": 773,
+    "manufacturer": "NVIDIA",
+    "graphics_api_score": 1345,
+    "vram_gb": 2.0,
+    "release_year": 2012
+  },
+  "Quadro 2000M": {
+    "tier": "B",
+    "benchmark_score": 773,
+    "manufacturer": "NVIDIA",
+    "graphics_api_score": 2794,
+    "vram_gb": 2.0,
+    "release_year": 2012
+  },
+  "Mobility Radeon HD 5000": {
     "tier": "B",
     "benchmark_score": 773,
     "manufacturer": "AMD",
-    "release_year": 2017
+    "graphics_api_score": 1212,
+    "release_year": 2012
   },
-  "R5 PRO A6 9500E 2C+4G": {
+  "HD 4810": {
     "tier": "B",
-    "benchmark_score": 771,
+    "benchmark_score": 769,
     "manufacturer": "AMD",
-    "release_year": 2017
-  },
-  "R7 PRO A10 9700": {
-    "tier": "B",
-    "benchmark_score": 771,
-    "manufacturer": "AMD",
-    "release_year": 2017
+    "release_year": 2014
   },
   "730A": {
     "tier": "B",
@@ -6680,12 +6249,6 @@
     "manufacturer": "NVIDIA",
     "graphics_api_score": 3088,
     "release_year": 2015
-  },
-  "825M": {
-    "tier": "B",
-    "benchmark_score": 769,
-    "manufacturer": "NVIDIA",
-    "release_year": 2014
   },
   "9800 GTX": {
     "tier": "B",
@@ -6702,10 +6265,10 @@
     "vram_gb": 1.0,
     "release_year": 2013
   },
-  "HD 4810": {
+  "825M": {
     "tier": "B",
     "benchmark_score": 769,
-    "manufacturer": "AMD",
+    "manufacturer": "NVIDIA",
     "release_year": 2014
   },
   "GT 440": {
@@ -6722,13 +6285,6 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
-  "Mobility Radeon HD 5850": {
-    "tier": "B",
-    "benchmark_score": 763,
-    "manufacturer": "AMD",
-    "vram_gb": 1.0,
-    "release_year": 2010
-  },
   "HD 6450 + 8470D Dual": {
     "tier": "B",
     "benchmark_score": 763,
@@ -6742,11 +6298,12 @@
     "graphics_api_score": 10036,
     "release_year": 2015
   },
-  "UHD 615": {
+  "Mobility Radeon HD 5850": {
     "tier": "B",
-    "benchmark_score": 760,
-    "manufacturer": "Intel",
-    "release_year": 2018
+    "benchmark_score": 763,
+    "manufacturer": "AMD",
+    "vram_gb": 1.0,
+    "release_year": 2010
   },
   "HD 7660G + HD 7500/7600 Dual": {
     "tier": "B",
@@ -6754,16 +6311,22 @@
     "manufacturer": "AMD",
     "release_year": 2016
   },
+  "UHD 615": {
+    "tier": "B",
+    "benchmark_score": 760,
+    "manufacturer": "Intel",
+    "release_year": 2018
+  },
   "R7 A12 9720P RADEON": {
     "tier": "B",
     "benchmark_score": 759,
     "manufacturer": "AMD",
     "release_year": 2017
   },
-  "Iris 5100": {
+  "HD 8650G + HD 8600M N HD 8600M Dual": {
     "tier": "B",
     "benchmark_score": 758,
-    "manufacturer": "Intel",
+    "manufacturer": "AMD",
     "release_year": 2013
   },
   "HD 7660G + HD 8500M Dual": {
@@ -6772,23 +6335,11 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
-  "HD 8650G + HD 8600M N HD 8600M Dual": {
+  "Iris 5100": {
     "tier": "B",
     "benchmark_score": 758,
-    "manufacturer": "AMD",
+    "manufacturer": "Intel",
     "release_year": 2013
-  },
-  "R7 PRO A10 8750B": {
-    "tier": "B",
-    "benchmark_score": 758,
-    "manufacturer": "AMD",
-    "release_year": 2015
-  },
-  "R7 PRO A10 9700B": {
-    "tier": "B",
-    "benchmark_score": 758,
-    "manufacturer": "AMD",
-    "release_year": 2018
   },
   "HD 7660G + 7700M Dual": {
     "tier": "B",
@@ -6821,12 +6372,6 @@
     "vram_gb": 1.0,
     "release_year": 2011
   },
-  "R7 A8 7680": {
-    "tier": "B",
-    "benchmark_score": 752,
-    "manufacturer": "AMD",
-    "release_year": 2019
-  },
   "IncrediblE HD 4600": {
     "tier": "B",
     "benchmark_score": 750,
@@ -6839,23 +6384,17 @@
     "manufacturer": "AMD",
     "release_year": 2019
   },
-  "R7 A10 7700K": {
+  "HD 7660G + HD 8600/8700M Dual": {
     "tier": "B",
-    "benchmark_score": 749,
+    "benchmark_score": 747,
     "manufacturer": "AMD",
-    "release_year": 2014
+    "release_year": 2016
   },
   "HD 7640G + 7650M Dual": {
     "tier": "B",
     "benchmark_score": 747,
     "manufacturer": "AMD",
     "release_year": 2014
-  },
-  "HD 7660G + HD 8600/8700M Dual": {
-    "tier": "B",
-    "benchmark_score": 747,
-    "manufacturer": "AMD",
-    "release_year": 2016
   },
   "HD 7660G + 7610M Dual": {
     "tier": "B",
@@ -6883,17 +6422,17 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
-  "GT 730A": {
-    "tier": "B",
-    "benchmark_score": 743,
-    "manufacturer": "NVIDIA",
-    "release_year": 2014
-  },
   "HD 7660G + 7670M Dual": {
     "tier": "B",
     "benchmark_score": 743,
     "manufacturer": "AMD",
     "release_year": 2012
+  },
+  "GT 730A": {
+    "tier": "B",
+    "benchmark_score": 743,
+    "manufacturer": "NVIDIA",
+    "release_year": 2014
   },
   "HD 8650G + 7600M Dual": {
     "tier": "B",
@@ -6908,12 +6447,6 @@
     "graphics_api_score": 5601,
     "vram_gb": 2.0,
     "release_year": 2019
-  },
-  "R7 PRO A8 8650B": {
-    "tier": "B",
-    "benchmark_score": 740,
-    "manufacturer": "AMD",
-    "release_year": 2015
   },
   "Poison Ivy": {
     "tier": "B",
@@ -6940,12 +6473,6 @@
     "graphics_api_score": 6810,
     "vram_gb": 4.0,
     "release_year": 2015
-  },
-  "R5 A10 9620P 4C+6G": {
-    "tier": "B",
-    "benchmark_score": 732,
-    "manufacturer": "AMD",
-    "release_year": 2017
   },
   "NVS 510": {
     "tier": "B",
@@ -7047,12 +6574,6 @@
     "manufacturer": "AMD",
     "release_year": 2015
   },
-  "R5 PRO A8 9600B R5, 10 COMPUTE CORES 4C+6G": {
-    "tier": "B",
-    "benchmark_score": 718,
-    "manufacturer": "AMD",
-    "release_year": 2021
-  },
   "HD 8470D + 6450 Dual": {
     "tier": "B",
     "benchmark_score": 717,
@@ -7064,12 +6585,6 @@
     "benchmark_score": 716,
     "manufacturer": "AMD",
     "release_year": 2014
-  },
-  "R5 A10 9600P RADEON R5, 10 COMPUTE CORES 4C": {
-    "tier": "B",
-    "benchmark_score": 716,
-    "manufacturer": "AMD",
-    "release_year": 2020
   },
   "HD 5600": {
     "tier": "B",
@@ -7135,12 +6650,6 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
-  "R7 A8 7650K": {
-    "tier": "B",
-    "benchmark_score": 704,
-    "manufacturer": "AMD",
-    "release_year": 2015
-  },
   "R7 A12 9700P RADEON": {
     "tier": "B",
     "benchmark_score": 703,
@@ -7166,35 +6675,11 @@
     "manufacturer": "Unknown",
     "release_year": 2016
   },
-  "R5 PRO A10 8730B 4C+6G": {
-    "tier": "B",
-    "benchmark_score": 695,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
-  "R5 PRO A6 9500B 2C+4G": {
-    "tier": "B",
-    "benchmark_score": 693,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
   "HD 7640G + 7700M Dual": {
     "tier": "B",
     "benchmark_score": 691,
     "manufacturer": "AMD",
     "release_year": 2013
-  },
-  "R7 A10 7800": {
-    "tier": "B",
-    "benchmark_score": 691,
-    "manufacturer": "AMD",
-    "release_year": 2014
-  },
-  "R5 PRO A6 8530B 2C+4G": {
-    "tier": "B",
-    "benchmark_score": 690,
-    "manufacturer": "AMD",
-    "release_year": 2017
   },
   "R7E": {
     "tier": "B",
@@ -7337,16 +6822,16 @@
     "vram_gb": 1.0,
     "release_year": 2009
   },
-  "Quadro 500M": {
-    "tier": "B",
-    "benchmark_score": 664,
-    "manufacturer": "NVIDIA",
-    "release_year": 2013
-  },
   "HD 8550G + 8690M Dual": {
     "tier": "B",
     "benchmark_score": 664,
     "manufacturer": "AMD",
+    "release_year": 2013
+  },
+  "Quadro 500M": {
+    "tier": "B",
+    "benchmark_score": 664,
+    "manufacturer": "NVIDIA",
     "release_year": 2013
   },
   "FirePro V3900": {
@@ -7385,18 +6870,18 @@
     "vram_gb": 1.0,
     "release_year": 2015
   },
-  "R5 PRO A8 9600B 4C+6G": {
-    "tier": "B",
-    "benchmark_score": 659,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
   "GT 140": {
     "tier": "B",
     "benchmark_score": 658,
     "manufacturer": "NVIDIA",
     "vram_gb": 1.0,
     "release_year": 2009
+  },
+  "HD 8550G + HD 8600/8700M Dual": {
+    "tier": "B",
+    "benchmark_score": 655,
+    "manufacturer": "AMD",
+    "release_year": 2015
   },
   "GTS 360M": {
     "tier": "B",
@@ -7411,23 +6896,17 @@
     "manufacturer": "AMD",
     "release_year": 2013
   },
-  "HD 8550G + HD 8600/8700M Dual": {
+  "HD 8650G + 8570M Dual": {
     "tier": "B",
-    "benchmark_score": 655,
+    "benchmark_score": 654,
     "manufacturer": "AMD",
-    "release_year": 2015
+    "release_year": 2013
   },
   "Professional HD Driver": {
     "tier": "B",
     "benchmark_score": 654,
     "manufacturer": "Unknown",
     "release_year": 2018
-  },
-  "HD 8650G + 8570M Dual": {
-    "tier": "B",
-    "benchmark_score": 654,
-    "manufacturer": "AMD",
-    "release_year": 2013
   },
   "HD 7520G + HD 8750M Dual": {
     "tier": "B",
@@ -7499,12 +6978,6 @@
     "vram_gb": 0.75,
     "release_year": 2009
   },
-  "R5 PRO A6 8570E 2C+4G": {
-    "tier": "B",
-    "benchmark_score": 638,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
   "GT 710": {
     "tier": "B",
     "benchmark_score": 637,
@@ -7551,6 +7024,12 @@
     "manufacturer": "AMD",
     "release_year": 2013
   },
+  "HD 8650G + HD 7670M Dual": {
+    "tier": "B",
+    "benchmark_score": 634,
+    "manufacturer": "AMD",
+    "release_year": 2016
+  },
   "HD 7660D + HD 7000 Dual": {
     "tier": "B",
     "benchmark_score": 634,
@@ -7565,24 +7044,18 @@
     "vram_gb": 2.0,
     "release_year": 2015
   },
-  "HD 8650G + HD 7670M Dual": {
-    "tier": "B",
-    "benchmark_score": 634,
-    "manufacturer": "AMD",
-    "release_year": 2016
-  },
-  "9800 GTX/9800 GTX+": {
-    "tier": "B",
-    "benchmark_score": 632,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
   "HD 7610M": {
     "tier": "B",
     "benchmark_score": 632,
     "manufacturer": "AMD",
     "vram_gb": 1.0,
     "release_year": 2012
+  },
+  "9800 GTX/9800 GTX+": {
+    "tier": "B",
+    "benchmark_score": 632,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
   },
   "HD 7640G + HD 7700M N HD 7700M Dual": {
     "tier": "B",
@@ -7651,29 +7124,17 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
-  "R5 A10 9620P RADEON R5, 10 COMPUTE CORES 4C": {
-    "tier": "B",
-    "benchmark_score": 626,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
-  "HD P4600/P4700": {
-    "tier": "B",
-    "benchmark_score": 624,
-    "manufacturer": "Intel",
-    "release_year": 2013
-  },
   "HD 7520G + HD 8600/8700M Dual": {
     "tier": "B",
     "benchmark_score": 624,
     "manufacturer": "AMD",
     "release_year": 2014
   },
-  "R5 A6 8500P": {
+  "HD P4600/P4700": {
     "tier": "B",
     "benchmark_score": 624,
-    "manufacturer": "AMD",
-    "release_year": 2018
+    "manufacturer": "Intel",
+    "release_year": 2013
   },
   "HD 515": {
     "tier": "B",
@@ -7726,11 +7187,11 @@
     "manufacturer": "AMD",
     "release_year": 2015
   },
-  "R5 A10 9600P 4C+6G": {
+  "HD 8550G + 8600M Dual": {
     "tier": "B",
-    "benchmark_score": 619,
+    "benchmark_score": 618,
     "manufacturer": "AMD",
-    "release_year": 2016
+    "release_year": 2013
   },
   "GTS 250": {
     "tier": "B",
@@ -7738,12 +7199,6 @@
     "manufacturer": "NVIDIA",
     "vram_gb": 1.0,
     "release_year": 2012
-  },
-  "HD 8550G + 8600M Dual": {
-    "tier": "B",
-    "benchmark_score": 618,
-    "manufacturer": "AMD",
-    "release_year": 2013
   },
   "HD 7500G + 7500M/7600M Dual": {
     "tier": "B",
@@ -7828,11 +7283,11 @@
     "manufacturer": "Intel",
     "release_year": 2013
   },
-  "R5 A6 9400 RADEON R5, 6 COMPUTE CORES 2C+4G": {
+  "HD 8550G + 8500M Dual": {
     "tier": "B",
-    "benchmark_score": 605,
+    "benchmark_score": 603,
     "manufacturer": "AMD",
-    "release_year": 2020
+    "release_year": 2013
   },
   "GT 430": {
     "tier": "B",
@@ -7841,12 +7296,6 @@
     "graphics_api_score": 1974,
     "vram_gb": 1.0,
     "release_year": 2012
-  },
-  "HD 8550G + 8500M Dual": {
-    "tier": "B",
-    "benchmark_score": 603,
-    "manufacturer": "AMD",
-    "release_year": 2013
   },
   "GT 720A": {
     "tier": "B",
@@ -7868,23 +7317,11 @@
     "vram_gb": 2.0,
     "release_year": 2012
   },
-  "R5 PRO A10 8730B R5, 10 COMPUTE CORES 4C+6G": {
-    "tier": "B",
-    "benchmark_score": 598,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "8800 GTX": {
     "tier": "B",
     "benchmark_score": 597,
     "manufacturer": "NVIDIA",
     "release_year": 2012
-  },
-  "HD 8510G + 8500M Dual": {
-    "tier": "B",
-    "benchmark_score": 596,
-    "manufacturer": "AMD",
-    "release_year": 2014
   },
   "R5 M330": {
     "tier": "B",
@@ -7892,6 +7329,12 @@
     "manufacturer": "AMD",
     "graphics_api_score": 5206,
     "release_year": 2015
+  },
+  "HD 8510G + 8500M Dual": {
+    "tier": "B",
+    "benchmark_score": 596,
+    "manufacturer": "AMD",
+    "release_year": 2014
   },
   "HD 7640G + 7470M Dual": {
     "tier": "B",
@@ -7913,15 +7356,21 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
+  "HD 7520G + 7600M Dual": {
+    "tier": "B",
+    "benchmark_score": 591,
+    "manufacturer": "AMD",
+    "release_year": 2013
+  },
   "8800 GTS 512": {
     "tier": "B",
     "benchmark_score": 591,
     "manufacturer": "NVIDIA",
     "release_year": 2012
   },
-  "HD 7520G + 7600M Dual": {
+  "HD 8610G + 8600M Dual": {
     "tier": "B",
-    "benchmark_score": 591,
+    "benchmark_score": 589,
     "manufacturer": "AMD",
     "release_year": 2013
   },
@@ -7931,9 +7380,15 @@
     "manufacturer": "AMD",
     "release_year": 2015
   },
-  "HD 8610G + 8600M Dual": {
+  "HD 7660G + 8670M Dual": {
     "tier": "B",
-    "benchmark_score": 589,
+    "benchmark_score": 588,
+    "manufacturer": "AMD",
+    "release_year": 2014
+  },
+  "HD 7660G + 7400M Dual": {
+    "tier": "B",
+    "benchmark_score": 588,
     "manufacturer": "AMD",
     "release_year": 2013
   },
@@ -7942,18 +7397,6 @@
     "benchmark_score": 588,
     "manufacturer": "AMD",
     "release_year": 2013
-  },
-  "HD 7660G + 7400M Dual": {
-    "tier": "B",
-    "benchmark_score": 588,
-    "manufacturer": "AMD",
-    "release_year": 2013
-  },
-  "HD 7660G + 8670M Dual": {
-    "tier": "B",
-    "benchmark_score": 588,
-    "manufacturer": "AMD",
-    "release_year": 2014
   },
   "HD 7640G + HD 8600/8700M Dual": {
     "tier": "B",
@@ -7973,18 +7416,18 @@
     "manufacturer": "AMD",
     "release_year": 2015
   },
+  "HD 7520G + 7500/7600 Dual": {
+    "tier": "B",
+    "benchmark_score": 582,
+    "manufacturer": "AMD",
+    "release_year": 2013
+  },
   "HD 5500": {
     "tier": "B",
     "benchmark_score": 582,
     "manufacturer": "Intel",
     "graphics_api_score": 1085,
     "release_year": 2014
-  },
-  "HD 7520G + 7500/7600 Dual": {
-    "tier": "B",
-    "benchmark_score": 582,
-    "manufacturer": "AMD",
-    "release_year": 2013
   },
   "GT 550M": {
     "tier": "B",
@@ -7993,12 +7436,6 @@
     "graphics_api_score": 2137,
     "vram_gb": 1.0,
     "release_year": 2011
-  },
-  "R5 A10 9630P RADEON R5, 10 COMPUTE CORES 4C": {
-    "tier": "B",
-    "benchmark_score": 580,
-    "manufacturer": "AMD",
-    "release_year": 2021
   },
   "HD 8550G + 8670M Dual": {
     "tier": "B",
@@ -8026,17 +7463,25 @@
     "vram_gb": 2.0,
     "release_year": 2013
   },
+  "HD 7620G + 8670M Dual": {
+    "tier": "B",
+    "benchmark_score": 577,
+    "manufacturer": "AMD",
+    "release_year": 2013
+  },
   "Skylake HD DT GT2": {
     "tier": "B",
     "benchmark_score": 577,
     "manufacturer": "Intel",
     "release_year": 2015
   },
-  "HD 7620G + 8670M Dual": {
+  "R7 M265": {
     "tier": "B",
-    "benchmark_score": 577,
+    "benchmark_score": 576,
     "manufacturer": "AMD",
-    "release_year": 2013
+    "graphics_api_score": 6743,
+    "vram_gb": 2.0,
+    "release_year": 2014
   },
   "HD 3870": {
     "tier": "B",
@@ -8051,13 +7496,17 @@
     "manufacturer": "AMD",
     "release_year": 2016
   },
-  "R7 M265": {
+  "HD 8450G + HD 8670M Dual": {
     "tier": "B",
-    "benchmark_score": 576,
+    "benchmark_score": 575,
     "manufacturer": "AMD",
-    "graphics_api_score": 6743,
-    "vram_gb": 2.0,
-    "release_year": 2014
+    "release_year": 2017
+  },
+  "R5 420": {
+    "tier": "B",
+    "benchmark_score": 575,
+    "manufacturer": "AMD",
+    "release_year": 2017
   },
   "HD 7520G + HD 7700M Dual": {
     "tier": "B",
@@ -8070,18 +7519,6 @@
     "benchmark_score": 575,
     "manufacturer": "AMD",
     "release_year": 2013
-  },
-  "HD 8450G + HD 8670M Dual": {
-    "tier": "B",
-    "benchmark_score": 575,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
-  "R5 420": {
-    "tier": "B",
-    "benchmark_score": 575,
-    "manufacturer": "AMD",
-    "release_year": 2017
   },
   "i gfx driver ci master 9938 DCH I": {
     "tier": "B",
@@ -8096,17 +7533,17 @@
     "graphics_api_score": 4867,
     "release_year": 2019
   },
-  "R6 PRO A8 8600B R6, 10 Compute Cores 4C+6G": {
-    "tier": "B",
-    "benchmark_score": 572,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "R6 + R7 M265DX Dual": {
     "tier": "B",
     "benchmark_score": 571,
     "manufacturer": "AMD",
     "release_year": 2015
+  },
+  "HD 7560D + 6450 Dual": {
+    "tier": "B",
+    "benchmark_score": 569,
+    "manufacturer": "AMD",
+    "release_year": 2013
   },
   "GTS 250M": {
     "tier": "B",
@@ -8114,12 +7551,6 @@
     "manufacturer": "NVIDIA",
     "vram_gb": 1.0,
     "release_year": 2009
-  },
-  "HD 7560D + 6450 Dual": {
-    "tier": "B",
-    "benchmark_score": 569,
-    "manufacturer": "AMD",
-    "release_year": 2013
   },
   "820A": {
     "tier": "B",
@@ -8142,6 +7573,18 @@
     "vram_gb": 1.0,
     "release_year": 2012
   },
+  "HD 7560D + R5 235 Dual": {
+    "tier": "B",
+    "benchmark_score": 563,
+    "manufacturer": "AMD",
+    "release_year": 2015
+  },
+  "HD 5000": {
+    "tier": "B",
+    "benchmark_score": 563,
+    "manufacturer": "Intel",
+    "release_year": 2013
+  },
   "GT 635M": {
     "tier": "B",
     "benchmark_score": 563,
@@ -8150,17 +7593,11 @@
     "vram_gb": 2.0,
     "release_year": 2012
   },
-  "HD 5000": {
+  "R7 A10 PRO 7800B": {
     "tier": "B",
-    "benchmark_score": 563,
-    "manufacturer": "Intel",
-    "release_year": 2013
-  },
-  "HD 7560D + R5 235 Dual": {
-    "tier": "B",
-    "benchmark_score": 563,
+    "benchmark_score": 562,
     "manufacturer": "AMD",
-    "release_year": 2015
+    "release_year": 2014
   },
   "Quadro FX 5600": {
     "tier": "B",
@@ -8168,12 +7605,6 @@
     "manufacturer": "NVIDIA",
     "vram_gb": 1.5,
     "release_year": 2009
-  },
-  "R7 A10 PRO 7800B": {
-    "tier": "B",
-    "benchmark_score": 562,
-    "manufacturer": "AMD",
-    "release_year": 2014
   },
   "HD 7640G + R5 M200 Dual": {
     "tier": "B",
@@ -8336,11 +7767,11 @@
     "manufacturer": "AMD",
     "release_year": 2013
   },
-  "R6 A10 8700P": {
+  "KV SPECTRE LITE MOBILE 25W": {
     "tier": "B",
-    "benchmark_score": 541,
-    "manufacturer": "AMD",
-    "release_year": 2016
+    "benchmark_score": 538,
+    "manufacturer": "Unknown",
+    "release_year": 2015
   },
   "9800 GTX+": {
     "tier": "B",
@@ -8348,18 +7779,6 @@
     "manufacturer": "NVIDIA",
     "vram_gb": 0.5,
     "release_year": 2012
-  },
-  "KV SPECTRE LITE MOBILE 25W": {
-    "tier": "B",
-    "benchmark_score": 538,
-    "manufacturer": "Unknown",
-    "release_year": 2015
-  },
-  "R6 PRO A10 8700B 4C+6G": {
-    "tier": "B",
-    "benchmark_score": 538,
-    "manufacturer": "AMD",
-    "release_year": 2016
   },
   "GRID K180Q": {
     "tier": "B",
@@ -8393,12 +7812,6 @@
     "manufacturer": "AMD",
     "release_year": 2012
   },
-  "R6 PRO A8 8600B 4C+6G": {
-    "tier": "B",
-    "benchmark_score": 532,
-    "manufacturer": "AMD",
-    "release_year": 2016
-  },
   "HD 8550G + HD 8570M Dual": {
     "tier": "B",
     "benchmark_score": 529,
@@ -8423,12 +7836,6 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
-  "R6 PRO A10 8700B R6, 10 Compute Cores 4C+6G": {
-    "tier": "B",
-    "benchmark_score": 526,
-    "manufacturer": "AMD",
-    "release_year": 2020
-  },
   "HD 7660D + R5 235 Dual": {
     "tier": "B",
     "benchmark_score": 524,
@@ -8441,6 +7848,12 @@
     "manufacturer": "AMD",
     "release_year": 2012
   },
+  "HD 4400": {
+    "tier": "B",
+    "benchmark_score": 521,
+    "manufacturer": "Intel",
+    "release_year": 2013
+  },
   "GT 435M": {
     "tier": "B",
     "benchmark_score": 521,
@@ -8449,17 +7862,18 @@
     "vram_gb": 1.0,
     "release_year": 2012
   },
-  "HD 4400": {
-    "tier": "B",
-    "benchmark_score": 521,
-    "manufacturer": "Intel",
-    "release_year": 2013
-  },
   "MCT USB3.0 External Device": {
     "tier": "B",
     "benchmark_score": 520,
     "manufacturer": "Unknown",
     "release_year": 2020
+  },
+  "R5 240": {
+    "tier": "B",
+    "benchmark_score": 520,
+    "manufacturer": "AMD",
+    "graphics_api_score": 4964,
+    "release_year": 2014
   },
   "HD 8670M": {
     "tier": "B",
@@ -8469,11 +7883,10 @@
     "vram_gb": 1.0,
     "release_year": 2014
   },
-  "R5 240": {
+  "HD 7640G + HD 7670M Dual": {
     "tier": "B",
-    "benchmark_score": 520,
+    "benchmark_score": 519,
     "manufacturer": "AMD",
-    "graphics_api_score": 4964,
     "release_year": 2014
   },
   "8800 GT": {
@@ -8482,12 +7895,6 @@
     "manufacturer": "NVIDIA",
     "vram_gb": 0.5,
     "release_year": 2009
-  },
-  "HD 7640G + HD 7670M Dual": {
-    "tier": "B",
-    "benchmark_score": 519,
-    "manufacturer": "AMD",
-    "release_year": 2014
   },
   "GT 425M": {
     "tier": "B",
@@ -8509,23 +7916,17 @@
     "manufacturer": "Intel",
     "release_year": 2012
   },
-  "A10 8700P": {
+  "R5 330": {
     "tier": "B",
-    "benchmark_score": 514,
-    "manufacturer": "Unknown",
-    "release_year": 2019
+    "benchmark_score": 513,
+    "manufacturer": "AMD",
+    "release_year": 2017
   },
   "6600M": {
     "tier": "B",
     "benchmark_score": 513,
     "manufacturer": "AMD",
     "release_year": 2012
-  },
-  "R5 330": {
-    "tier": "B",
-    "benchmark_score": 513,
-    "manufacturer": "AMD",
-    "release_year": 2017
   },
   "Mobility Radeon HD 4830": {
     "tier": "B",
@@ -8557,12 +7958,6 @@
     "benchmark_score": 509,
     "manufacturer": "AMD",
     "release_year": 2013
-  },
-  "R5 PRO A6 8500B 2C+4G": {
-    "tier": "B",
-    "benchmark_score": 508,
-    "manufacturer": "AMD",
-    "release_year": 2017
   },
   "HD 7620G + HD 8670M Dual": {
     "tier": "B",
@@ -8602,17 +7997,17 @@
     "manufacturer": "AMD",
     "release_year": 2020
   },
-  "SUMO 964A": {
-    "tier": "B",
-    "benchmark_score": 498,
-    "manufacturer": "Unknown",
-    "release_year": 2011
-  },
   "TRINITY SCRAPPER MOBILE": {
     "tier": "B",
     "benchmark_score": 498,
     "manufacturer": "Unknown",
     "release_year": 2016
+  },
+  "SUMO 964A": {
+    "tier": "B",
+    "benchmark_score": 498,
+    "manufacturer": "Unknown",
+    "release_year": 2011
   },
   "HD 7500G + 7550M Dual": {
     "tier": "B",
@@ -8626,14 +8021,6 @@
     "manufacturer": "Unknown",
     "release_year": 2009
   },
-  "HD 6570": {
-    "tier": "B",
-    "benchmark_score": 496,
-    "manufacturer": "AMD",
-    "graphics_api_score": 1404,
-    "vram_gb": 1.0,
-    "release_year": 2012
-  },
   "R5 M255": {
     "tier": "B",
     "benchmark_score": 496,
@@ -8642,11 +8029,26 @@
     "vram_gb": 4.0,
     "release_year": 2014
   },
+  "HD 6570": {
+    "tier": "B",
+    "benchmark_score": 496,
+    "manufacturer": "AMD",
+    "graphics_api_score": 1404,
+    "vram_gb": 1.0,
+    "release_year": 2012
+  },
   "HD 7520G + HD 7670M Dual": {
     "tier": "B",
     "benchmark_score": 495,
     "manufacturer": "AMD",
     "release_year": 2016
+  },
+  "GT625M": {
+    "tier": "B",
+    "benchmark_score": 493,
+    "manufacturer": "NVIDIA",
+    "graphics_api_score": 1994,
+    "release_year": 2014
   },
   "GT 540M": {
     "tier": "B",
@@ -8655,13 +8057,6 @@
     "graphics_api_score": 1797,
     "vram_gb": 1.0,
     "release_year": 2012
-  },
-  "GT625M": {
-    "tier": "B",
-    "benchmark_score": 493,
-    "manufacturer": "NVIDIA",
-    "graphics_api_score": 1994,
-    "release_year": 2014
   },
   "Vega 2": {
     "tier": "B",
@@ -8715,18 +8110,18 @@
     "vram_gb": 1.0,
     "release_year": 2012
   },
+  "HD 8610G + HD 8600M Dual": {
+    "tier": "B",
+    "benchmark_score": 481,
+    "manufacturer": "AMD",
+    "release_year": 2014
+  },
   "9800 GT": {
     "tier": "B",
     "benchmark_score": 481,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.5,
     "release_year": 2012
-  },
-  "HD 8610G + HD 8600M Dual": {
-    "tier": "B",
-    "benchmark_score": 481,
-    "manufacturer": "AMD",
-    "release_year": 2014
   },
   "Quadro K500M": {
     "tier": "B",
@@ -8754,19 +8149,19 @@
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "HD 7660G": {
-    "tier": "B",
-    "benchmark_score": 476,
-    "manufacturer": "AMD",
-    "graphics_api_score": 1714,
-    "release_year": 2012
-  },
   "R5 M315": {
     "tier": "B",
     "benchmark_score": 476,
     "manufacturer": "AMD",
     "graphics_api_score": 3930,
     "release_year": 2016
+  },
+  "HD 7660G": {
+    "tier": "B",
+    "benchmark_score": 476,
+    "manufacturer": "AMD",
+    "graphics_api_score": 1714,
+    "release_year": 2012
   },
   "HD 7640G + HD 8570M Dual": {
     "tier": "B",
@@ -8780,24 +8175,12 @@
     "manufacturer": "AMD",
     "release_year": 2013
   },
-  "R6 A8 8600P": {
-    "tier": "B",
-    "benchmark_score": 475,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
   "HD 5570": {
     "tier": "B",
     "benchmark_score": 473,
     "manufacturer": "AMD",
     "graphics_api_score": 1275,
     "release_year": 2012
-  },
-  "R5 PRO A6 9500B R5, 6 COMPUTE CORES 2C+4G": {
-    "tier": "B",
-    "benchmark_score": 473,
-    "manufacturer": "AMD",
-    "release_year": 2020
   },
   "FirePro 3D V3800": {
     "tier": "B",
@@ -8845,6 +8228,13 @@
     "graphics_api_score": 1303,
     "release_year": 2014
   },
+  "Quadro FX 3600M": {
+    "tier": "B",
+    "benchmark_score": 467,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 1.0,
+    "release_year": 2009
+  },
   "GT 720M": {
     "tier": "B",
     "benchmark_score": 467,
@@ -8853,25 +8243,12 @@
     "vram_gb": 1.0,
     "release_year": 2013
   },
-  "Quadro FX 3600M": {
-    "tier": "B",
-    "benchmark_score": 467,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 1.0,
-    "release_year": 2009
-  },
   "Quadro FX 3700M": {
     "tier": "B",
     "benchmark_score": 467,
     "manufacturer": "NVIDIA",
     "vram_gb": 1.0,
     "release_year": 2009
-  },
-  "HD 7660D + 7470 Dual": {
-    "tier": "B",
-    "benchmark_score": 466,
-    "manufacturer": "AMD",
-    "release_year": 2012
   },
   "HD 8690A": {
     "tier": "B",
@@ -8884,6 +8261,12 @@
     "benchmark_score": 466,
     "manufacturer": "Unknown",
     "release_year": 2011
+  },
+  "HD 7660D + 7470 Dual": {
+    "tier": "B",
+    "benchmark_score": 466,
+    "manufacturer": "AMD",
+    "release_year": 2012
   },
   "FirePro V5700": {
     "tier": "B",
@@ -8952,12 +8335,6 @@
     "manufacturer": "AMD",
     "release_year": 2013
   },
-  "HIS DIGITAL HD 4650 AGP": {
-    "tier": "B",
-    "benchmark_score": 452,
-    "manufacturer": "Unknown",
-    "release_year": 2014
-  },
   "HD 7620G N HD 7620G + HD 8600M N HD 8600M D": {
     "tier": "B",
     "benchmark_score": 452,
@@ -8970,6 +8347,12 @@
     "manufacturer": "AMD",
     "release_year": 2015
   },
+  "HIS DIGITAL HD 4650 AGP": {
+    "tier": "B",
+    "benchmark_score": 452,
+    "manufacturer": "Unknown",
+    "release_year": 2014
+  },
   "R7 M260": {
     "tier": "B",
     "benchmark_score": 452,
@@ -8977,19 +8360,6 @@
     "graphics_api_score": 5738,
     "vram_gb": 2.0,
     "release_year": 2014
-  },
-  "710A": {
-    "tier": "B",
-    "benchmark_score": 451,
-    "manufacturer": "NVIDIA",
-    "graphics_api_score": 2638,
-    "release_year": 2014
-  },
-  "HD Family": {
-    "tier": "B",
-    "benchmark_score": 451,
-    "manufacturer": "Intel",
-    "release_year": 2012
   },
   "Mobility Radeon HD 5650": {
     "tier": "B",
@@ -9006,8 +8376,21 @@
     "vram_gb": 1.0,
     "release_year": 2012
   },
+  "710A": {
+    "tier": "B",
+    "benchmark_score": 451,
+    "manufacturer": "NVIDIA",
+    "graphics_api_score": 2638,
+    "release_year": 2014
+  },
+  "HD Family": {
+    "tier": "B",
+    "benchmark_score": 451,
+    "manufacturer": "Intel",
+    "release_year": 2012
+  },
   "710M": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 450,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 1976,
@@ -9015,38 +8398,38 @@
     "release_year": 2013
   },
   "Qualcomm Adreno 680 GPU": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 449,
     "manufacturer": "Qualcomm",
     "release_year": 2021
   },
   "HD 7640G": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 448,
     "manufacturer": "AMD",
     "graphics_api_score": 1255,
     "release_year": 2012
   },
   "HD 7520G + HD 7600M Dual": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 447,
     "manufacturer": "AMD",
     "release_year": 2014
   },
   "HD 7660G + 8600M Dual": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 446,
     "manufacturer": "AMD",
     "release_year": 2014
   },
   "PHDGD Ivy 5": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 445,
     "manufacturer": "Unknown",
     "release_year": 2020
   },
   "HD 7570M": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 445,
     "manufacturer": "AMD",
     "graphics_api_score": 1004,
@@ -9054,96 +8437,96 @@
     "release_year": 2012
   },
   "GT 320": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 444,
     "manufacturer": "NVIDIA",
     "vram_gb": 1.0,
     "release_year": 2010
   },
   "GT 710M": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 444,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 2103,
     "release_year": 2014
   },
-  "HD 7620G + HD 8600M Dual": {
-    "tier": "C",
-    "benchmark_score": 443,
-    "manufacturer": "AMD",
-    "release_year": 2014
-  },
   "HD 8350G": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 443,
     "manufacturer": "AMD",
     "release_year": 2013
   },
+  "HD 7620G + HD 8600M Dual": {
+    "tier": "B",
+    "benchmark_score": 443,
+    "manufacturer": "AMD",
+    "release_year": 2014
+  },
   "8800 GTS": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 440,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.31,
     "release_year": 2012
   },
   "Quadro FX 4600": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 437,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.75,
     "release_year": 2009
   },
   "Quadro 410": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 436,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 1125,
     "vram_gb": 0.5,
     "release_year": 2012
   },
+  "HD 8410G": {
+    "tier": "B",
+    "benchmark_score": 435,
+    "manufacturer": "AMD",
+    "release_year": 2014
+  },
+  "HD 7600G + HD Dual": {
+    "tier": "B",
+    "benchmark_score": 435,
+    "manufacturer": "AMD",
+    "release_year": 2014
+  },
   "GT 625M": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 435,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 2229,
     "vram_gb": 2.0,
     "release_year": 2013
   },
-  "HD 7600G + HD Dual": {
-    "tier": "C",
-    "benchmark_score": 435,
-    "manufacturer": "AMD",
-    "release_year": 2014
-  },
-  "HD 8410G": {
-    "tier": "C",
-    "benchmark_score": 435,
-    "manufacturer": "AMD",
-    "release_year": 2014
-  },
   "HD 8570D": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 434,
     "manufacturer": "AMD",
     "graphics_api_score": 1521,
     "release_year": 2013
   },
   "Quadro FX 2800M": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 433,
     "manufacturer": "NVIDIA",
     "vram_gb": 1.0,
     "release_year": 2010
   },
   "HD 3850 AGP": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 432,
     "manufacturer": "AMD",
     "vram_gb": 0.5,
     "release_year": 2012
   },
   "R5 M240": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 432,
     "manufacturer": "AMD",
     "graphics_api_score": 3721,
@@ -9151,7 +8534,7 @@
     "release_year": 2015
   },
   "GT 620M": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 431,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 1605,
@@ -9159,51 +8542,51 @@
     "release_year": 2012
   },
   "800A": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 428,
     "manufacturer": "NVIDIA",
     "release_year": 2015
   },
   "9800M GT": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 424,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.5,
     "release_year": 2009
   },
   "HD 7640G + HD 7500/7600 Dual": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 424,
     "manufacturer": "AMD",
     "release_year": 2015
   },
   "HD 7600G + 7550M Dual": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 423,
     "manufacturer": "AMD",
     "release_year": 2014
   },
   "HD 7640G N HD 7640G + HD 8570M Dual": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 423,
     "manufacturer": "AMD",
     "release_year": 2013
   },
   "HD6410D": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 423,
     "manufacturer": "AMD",
     "release_year": 2012
   },
   "GT 330": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 422,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.25,
     "release_year": 2010
   },
   "HD 8570M": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 422,
     "manufacturer": "AMD",
     "graphics_api_score": 4646,
@@ -9211,49 +8594,49 @@
     "release_year": 2015
   },
   "4th Generation Haswell HD": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 420,
     "manufacturer": "Intel",
     "release_year": 2017
   },
+  "R5 M320": {
+    "tier": "B",
+    "benchmark_score": 418,
+    "manufacturer": "AMD",
+    "graphics_api_score": 4972,
+    "release_year": 2015
+  },
   "GT 420M": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 418,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 1334,
     "vram_gb": 0.5,
     "release_year": 2010
   },
-  "R5 M320": {
-    "tier": "C",
-    "benchmark_score": 418,
-    "manufacturer": "AMD",
-    "graphics_api_score": 4972,
-    "release_year": 2015
-  },
   "HD 6550D": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 417,
     "manufacturer": "AMD",
     "graphics_api_score": 1189,
     "release_year": 2011
   },
   "HD 8610G": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 414,
     "manufacturer": "AMD",
     "graphics_api_score": 1490,
     "release_year": 2013
   },
   "GTX 260M": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 412,
     "manufacturer": "NVIDIA",
     "vram_gb": 1.0,
     "release_year": 2012
   },
   "GT 420": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 411,
     "manufacturer": "NVIDIA",
     "graphics_api_score": 1055,
@@ -9261,28 +8644,28 @@
     "release_year": 2010
   },
   "HD 3850": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 410,
     "manufacturer": "AMD",
     "vram_gb": 0.25,
     "release_year": 2011
   },
   "GTS 350M": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 408,
     "manufacturer": "NVIDIA",
     "vram_gb": 1.0,
     "release_year": 2010
   },
   "HD 7470M": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 408,
     "manufacturer": "AMD",
     "vram_gb": 0.5,
     "release_year": 2012
   },
   "HD 7640G + HD 7600M N HD 7600M Dual": {
-    "tier": "C",
+    "tier": "B",
     "benchmark_score": 407,
     "manufacturer": "AMD",
     "release_year": 2013
@@ -9299,18 +8682,18 @@
     "manufacturer": "AMD",
     "release_year": 2013
   },
+  "E4690": {
+    "tier": "C",
+    "benchmark_score": 405,
+    "manufacturer": "AMD",
+    "release_year": 2011
+  },
   "Quadro FX 1800": {
     "tier": "C",
     "benchmark_score": 405,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.75,
     "release_year": 2009
-  },
-  "E4690": {
-    "tier": "C",
-    "benchmark_score": 405,
-    "manufacturer": "AMD",
-    "release_year": 2011
   },
   "HD 8550G": {
     "tier": "C",
@@ -9438,16 +8821,16 @@
     "manufacturer": "AMD",
     "release_year": 2013
   },
-  "PHDGD Ivy 4": {
-    "tier": "C",
-    "benchmark_score": 374,
-    "manufacturer": "Unknown",
-    "release_year": 2016
-  },
   "HD 8570D + HD8490 Dual": {
     "tier": "C",
     "benchmark_score": 374,
     "manufacturer": "AMD",
+    "release_year": 2016
+  },
+  "PHDGD Ivy 4": {
+    "tier": "C",
+    "benchmark_score": 374,
+    "manufacturer": "Unknown",
     "release_year": 2016
   },
   "UHD 605": {
@@ -9488,6 +8871,12 @@
     "manufacturer": "AMD",
     "release_year": 2012
   },
+  "HD 7520G N HD 7520G + HD 7600M N HD 7600M D": {
+    "tier": "C",
+    "benchmark_score": 365,
+    "manufacturer": "AMD",
+    "release_year": 2013
+  },
   "GT 620": {
     "tier": "C",
     "benchmark_score": 365,
@@ -9495,12 +8884,6 @@
     "graphics_api_score": 1337,
     "vram_gb": 1.0,
     "release_year": 2012
-  },
-  "HD 7520G N HD 7520G + HD 7600M N HD 7600M D": {
-    "tier": "C",
-    "benchmark_score": 365,
-    "manufacturer": "AMD",
-    "release_year": 2013
   },
   "HD 7660G + HD 8600M Dual": {
     "tier": "C",
@@ -9515,18 +8898,18 @@
     "graphics_api_score": 1115,
     "release_year": 2013
   },
-  "HD 8450G": {
-    "tier": "C",
-    "benchmark_score": 361,
-    "manufacturer": "AMD",
-    "graphics_api_score": 984,
-    "release_year": 2013
-  },
   "HD 8510G": {
     "tier": "C",
     "benchmark_score": 361,
     "manufacturer": "AMD",
     "graphics_api_score": 1370,
+    "release_year": 2013
+  },
+  "HD 8450G": {
+    "tier": "C",
+    "benchmark_score": 361,
+    "manufacturer": "AMD",
+    "graphics_api_score": 984,
     "release_year": 2013
   },
   "Quadro FX 2700M": {
@@ -9603,13 +8986,6 @@
     "vram_gb": 0.5,
     "release_year": 2011
   },
-  "FireGL V5600": {
-    "tier": "C",
-    "benchmark_score": 341,
-    "manufacturer": "Unknown",
-    "vram_gb": 0.5,
-    "release_year": 2009
-  },
   "FirePro 3D V3750": {
     "tier": "C",
     "benchmark_score": 341,
@@ -9621,6 +8997,13 @@
     "benchmark_score": 341,
     "manufacturer": "AMD",
     "release_year": 2015
+  },
+  "FireGL V5600": {
+    "tier": "C",
+    "benchmark_score": 341,
+    "manufacturer": "Unknown",
+    "vram_gb": 0.5,
+    "release_year": 2009
   },
   "HD 7660D + HD 7400 Dual": {
     "tier": "C",
@@ -9659,11 +9042,11 @@
     "manufacturer": "Intel",
     "release_year": 2012
   },
-  "FirePro V3800": {
+  "R5 310": {
     "tier": "C",
     "benchmark_score": 332,
     "manufacturer": "AMD",
-    "release_year": 2016
+    "release_year": 2015
   },
   "8800 GS": {
     "tier": "C",
@@ -9672,11 +9055,18 @@
     "vram_gb": 0.38,
     "release_year": 2009
   },
-  "R5 310": {
+  "FirePro V3800": {
     "tier": "C",
     "benchmark_score": 332,
     "manufacturer": "AMD",
-    "release_year": 2015
+    "release_year": 2016
+  },
+  "HD 7500G": {
+    "tier": "C",
+    "benchmark_score": 330,
+    "manufacturer": "AMD",
+    "graphics_api_score": 824,
+    "release_year": 2012
   },
   "HD 7450M": {
     "tier": "C",
@@ -9685,13 +9075,6 @@
     "graphics_api_score": 476,
     "vram_gb": 1.0,
     "release_year": 2015
-  },
-  "HD 7500G": {
-    "tier": "C",
-    "benchmark_score": 330,
-    "manufacturer": "AMD",
-    "graphics_api_score": 824,
-    "release_year": 2012
   },
   "GT 625": {
     "tier": "C",
@@ -9868,6 +9251,12 @@
     "graphics_api_score": 1991,
     "release_year": 2014
   },
+  "HD P3000": {
+    "tier": "C",
+    "benchmark_score": 297,
+    "manufacturer": "Intel",
+    "release_year": 2012
+  },
   "GT 520": {
     "tier": "C",
     "benchmark_score": 297,
@@ -9875,12 +9264,6 @@
     "graphics_api_score": 1139,
     "vram_gb": 1.0,
     "release_year": 2011
-  },
-  "HD P3000": {
-    "tier": "C",
-    "benchmark_score": 297,
-    "manufacturer": "Intel",
-    "release_year": 2012
   },
   "HD 500": {
     "tier": "C",
@@ -9943,6 +9326,13 @@
     "manufacturer": "Unknown",
     "release_year": 2021
   },
+  "HD 7450A": {
+    "tier": "C",
+    "benchmark_score": 288,
+    "manufacturer": "AMD",
+    "graphics_api_score": 668,
+    "release_year": 2012
+  },
   "7950 Xtreme": {
     "tier": "C",
     "benchmark_score": 288,
@@ -9955,13 +9345,6 @@
     "manufacturer": "NVIDIA",
     "graphics_api_score": 1013,
     "vram_gb": 1.0,
-    "release_year": 2012
-  },
-  "HD 7450A": {
-    "tier": "C",
-    "benchmark_score": 288,
-    "manufacturer": "AMD",
-    "graphics_api_score": 668,
     "release_year": 2012
   },
   "GT 415M": {
@@ -10128,19 +9511,18 @@
     "graphics_api_score": 1453,
     "release_year": 2013
   },
-  "510": {
-    "tier": "C",
-    "benchmark_score": 257,
-    "manufacturer": "NVIDIA",
-    "graphics_api_score": 758,
-    "vram_gb": 1.0,
-    "release_year": 2011
-  },
   "HD 3000": {
     "tier": "C",
     "benchmark_score": 257,
     "manufacturer": "Intel",
     "release_year": 2012
+  },
+  "HD 8470": {
+    "tier": "C",
+    "benchmark_score": 257,
+    "manufacturer": "AMD",
+    "graphics_api_score": 785,
+    "release_year": 2013
   },
   "NVS 4200M": {
     "tier": "C",
@@ -10150,12 +9532,13 @@
     "vram_gb": 1.0,
     "release_year": 2012
   },
-  "HD 8470": {
+  "510": {
     "tier": "C",
     "benchmark_score": 257,
-    "manufacturer": "AMD",
-    "graphics_api_score": 785,
-    "release_year": 2013
+    "manufacturer": "NVIDIA",
+    "graphics_api_score": 758,
+    "vram_gb": 1.0,
+    "release_year": 2011
   },
   "7900 GS": {
     "tier": "C",
@@ -10184,6 +9567,12 @@
     "graphics_api_score": 1726,
     "release_year": 2013
   },
+  "HD 7640G + 8600M Dual": {
+    "tier": "C",
+    "benchmark_score": 250,
+    "manufacturer": "AMD",
+    "release_year": 2017
+  },
   "410M": {
     "tier": "C",
     "benchmark_score": 250,
@@ -10192,29 +9581,23 @@
     "vram_gb": 1.0,
     "release_year": 2011
   },
-  "HD 7640G + 8600M Dual": {
-    "tier": "C",
-    "benchmark_score": 250,
-    "manufacturer": "AMD",
-    "release_year": 2017
-  },
   "GT 415": {
     "tier": "C",
     "benchmark_score": 248,
     "manufacturer": "NVIDIA",
     "release_year": 2013
   },
-  "CARRIZO 9874": {
-    "tier": "C",
-    "benchmark_score": 247,
-    "manufacturer": "Unknown",
-    "release_year": 2020
-  },
   "7900 GT/GTO": {
     "tier": "C",
     "benchmark_score": 247,
     "manufacturer": "NVIDIA",
     "release_year": 2009
+  },
+  "CARRIZO 9874": {
+    "tier": "C",
+    "benchmark_score": 247,
+    "manufacturer": "Unknown",
+    "release_year": 2020
   },
   "7800 GT": {
     "tier": "C",
@@ -10430,17 +9813,17 @@
     "manufacturer": "Intel",
     "release_year": 2015
   },
-  "2nd Generation SandyBridge HD": {
-    "tier": "C",
-    "benchmark_score": 212,
-    "manufacturer": "Intel",
-    "release_year": 2017
-  },
   "WinFast GT 610": {
     "tier": "C",
     "benchmark_score": 212,
     "manufacturer": "Unknown",
     "release_year": 2014
+  },
+  "2nd Generation SandyBridge HD": {
+    "tier": "C",
+    "benchmark_score": 212,
+    "manufacturer": "Intel",
+    "release_year": 2017
   },
   "GT 220": {
     "tier": "C",
@@ -10455,18 +9838,18 @@
     "manufacturer": "AMD",
     "release_year": 2011
   },
-  "Go 7600 GT": {
-    "tier": "C",
-    "benchmark_score": 210,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.25,
-    "release_year": 2009
-  },
   "Go 7800 GTX": {
     "tier": "C",
     "benchmark_score": 210,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.5,
+    "release_year": 2009
+  },
+  "Go 7600 GT": {
+    "tier": "C",
+    "benchmark_score": 210,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.25,
     "release_year": 2009
   },
   "GT 330M": {
@@ -10489,11 +9872,11 @@
     "graphics_api_score": 1075,
     "release_year": 2013
   },
-  "Barco MXRT 1450": {
+  "R3E": {
     "tier": "C",
     "benchmark_score": 206,
-    "manufacturer": "Unknown",
-    "release_year": 2013
+    "manufacturer": "AMD",
+    "release_year": 2015
   },
   "i gfx driver ci master 9938": {
     "tier": "C",
@@ -10501,11 +9884,11 @@
     "manufacturer": "Intel",
     "release_year": 2021
   },
-  "R3E": {
+  "Barco MXRT 1450": {
     "tier": "C",
     "benchmark_score": 206,
-    "manufacturer": "AMD",
-    "release_year": 2015
+    "manufacturer": "Unknown",
+    "release_year": 2013
   },
   "GT 240M": {
     "tier": "C",
@@ -10527,18 +9910,18 @@
     "vram_gb": 0.25,
     "release_year": 2009
   },
-  "7600 GT": {
-    "tier": "C",
-    "benchmark_score": 204,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
   "HD 6380G": {
     "tier": "C",
     "benchmark_score": 204,
     "manufacturer": "AMD",
     "graphics_api_score": 426,
     "release_year": 2012
+  },
+  "7600 GT": {
+    "tier": "C",
+    "benchmark_score": 204,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
   },
   "7950 GX2": {
     "tier": "C",
@@ -10681,6 +10064,13 @@
     "manufacturer": "NVIDIA",
     "release_year": 2013
   },
+  "Quadro FX 380": {
+    "tier": "C",
+    "benchmark_score": 186,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.25,
+    "release_year": 2012
+  },
   "Quadro FX 1600M": {
     "tier": "C",
     "benchmark_score": 186,
@@ -10693,13 +10083,6 @@
     "benchmark_score": 186,
     "manufacturer": "NVIDIA",
     "release_year": 2009
-  },
-  "Quadro FX 380": {
-    "tier": "C",
-    "benchmark_score": 186,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.25,
-    "release_year": 2012
   },
   "Mobility Radeon HD 5430": {
     "tier": "C",
@@ -10714,18 +10097,18 @@
     "manufacturer": "AMD",
     "release_year": 2014
   },
-  "Barco MXRT 7100": {
-    "tier": "C",
-    "benchmark_score": 180,
-    "manufacturer": "Unknown",
-    "release_year": 2013
-  },
   "FireGL V3600": {
     "tier": "C",
     "benchmark_score": 180,
     "manufacturer": "Unknown",
     "vram_gb": 0.25,
     "release_year": 2009
+  },
+  "Barco MXRT 7100": {
+    "tier": "C",
+    "benchmark_score": 180,
+    "manufacturer": "Unknown",
+    "release_year": 2013
   },
   "FirePro 3D V3700": {
     "tier": "C",
@@ -10780,12 +10163,6 @@
     "vram_gb": 0.5,
     "release_year": 2009
   },
-  "9200": {
-    "tier": "C",
-    "benchmark_score": 171,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
   "GT 325M": {
     "tier": "C",
     "benchmark_score": 171,
@@ -10800,17 +10177,23 @@
     "vram_gb": 0.5,
     "release_year": 2009
   },
-  "FirePro 2460": {
+  "9200": {
     "tier": "C",
-    "benchmark_score": 170,
-    "manufacturer": "AMD",
-    "release_year": 2012
+    "benchmark_score": 171,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
   },
   "HDG 4670": {
     "tier": "C",
     "benchmark_score": 170,
     "manufacturer": "AMD",
     "release_year": 2015
+  },
+  "FirePro 2460": {
+    "tier": "C",
+    "benchmark_score": 170,
+    "manufacturer": "AMD",
+    "release_year": 2012
   },
   "Mobility Radeon HD 2600": {
     "tier": "C",
@@ -10915,18 +10298,18 @@
     "manufacturer": "AMD",
     "release_year": 2013
   },
+  "HD 3670": {
+    "tier": "C",
+    "benchmark_score": 151,
+    "manufacturer": "AMD",
+    "release_year": 2011
+  },
   "305M": {
     "tier": "C",
     "benchmark_score": 151,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.5,
     "release_year": 2012
-  },
-  "HD 3670": {
-    "tier": "C",
-    "benchmark_score": 151,
-    "manufacturer": "AMD",
-    "release_year": 2011
   },
   "X1950 CrossFire Edition": {
     "tier": "C",
@@ -10986,19 +10369,19 @@
     "manufacturer": "Unknown",
     "release_year": 2017
   },
-  "GT 130M": {
-    "tier": "C",
-    "benchmark_score": 146,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 1.0,
-    "release_year": 2009
-  },
   "Quadro 400": {
     "tier": "C",
     "benchmark_score": 146,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.5,
     "release_year": 2011
+  },
+  "GT 130M": {
+    "tier": "C",
+    "benchmark_score": 146,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 1.0,
+    "release_year": 2009
   },
   "X1900 GT": {
     "tier": "C",
@@ -11019,13 +10402,6 @@
     "manufacturer": "Intel",
     "release_year": 2009
   },
-  "6800 GT": {
-    "tier": "C",
-    "benchmark_score": 142,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.25,
-    "release_year": 2009
-  },
   "Q45/Q43 Express Chipset": {
     "tier": "C",
     "benchmark_score": 142,
@@ -11039,17 +10415,12 @@
     "graphics_api_score": 456,
     "release_year": 2012
   },
-  "EG PARK": {
+  "6800 GT": {
     "tier": "C",
-    "benchmark_score": 141,
-    "manufacturer": "Unknown",
-    "release_year": 2021
-  },
-  "HD 4290": {
-    "tier": "C",
-    "benchmark_score": 141,
-    "manufacturer": "AMD",
-    "release_year": 2010
+    "benchmark_score": 142,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.25,
+    "release_year": 2009
   },
   "HD 6350": {
     "tier": "C",
@@ -11064,6 +10435,18 @@
     "manufacturer": "AMD",
     "vram_gb": 0.25,
     "release_year": 2009
+  },
+  "EG PARK": {
+    "tier": "C",
+    "benchmark_score": 141,
+    "manufacturer": "Unknown",
+    "release_year": 2021
+  },
+  "HD 4290": {
+    "tier": "C",
+    "benchmark_score": 141,
+    "manufacturer": "AMD",
+    "release_year": 2010
   },
   "nForce 760i SLI": {
     "tier": "C",
@@ -11110,19 +10493,19 @@
     "graphics_api_score": 392,
     "release_year": 2012
   },
-  "6600 GT": {
-    "tier": "C",
-    "benchmark_score": 137,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.12,
-    "release_year": 2010
-  },
   "9650M GT": {
     "tier": "C",
     "benchmark_score": 137,
     "manufacturer": "NVIDIA",
     "vram_gb": 1.0,
     "release_year": 2009
+  },
+  "6600 GT": {
+    "tier": "C",
+    "benchmark_score": 137,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.12,
+    "release_year": 2010
   },
   "X1900 CrossFire Edition": {
     "tier": "C",
@@ -11137,19 +10520,12 @@
     "vram_gb": 0.5,
     "release_year": 2010
   },
-  "7300 GT": {
+  "R5 220": {
     "tier": "C",
     "benchmark_score": 135,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.25,
-    "release_year": 2009
-  },
-  "9500 GT": {
-    "tier": "C",
-    "benchmark_score": 135,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.5,
-    "release_year": 2009
+    "manufacturer": "AMD",
+    "vram_gb": 1.0,
+    "release_year": 2015
   },
   "Mobility Radeon HD 4330": {
     "tier": "C",
@@ -11158,13 +10534,6 @@
     "vram_gb": 0.5,
     "release_year": 2009
   },
-  "Mobility Radeon HD 4570": {
-    "tier": "C",
-    "benchmark_score": 135,
-    "manufacturer": "AMD",
-    "vram_gb": 0.5,
-    "release_year": 2011
-  },
   "Mobility Radeon X1900": {
     "tier": "C",
     "benchmark_score": 135,
@@ -11172,12 +10541,26 @@
     "vram_gb": 0.25,
     "release_year": 2010
   },
-  "R5 220": {
+  "Mobility Radeon HD 4570": {
     "tier": "C",
     "benchmark_score": 135,
     "manufacturer": "AMD",
-    "vram_gb": 1.0,
-    "release_year": 2015
+    "vram_gb": 0.5,
+    "release_year": 2011
+  },
+  "9500 GT": {
+    "tier": "C",
+    "benchmark_score": 135,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.5,
+    "release_year": 2009
+  },
+  "7300 GT": {
+    "tier": "C",
+    "benchmark_score": 135,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.25,
+    "release_year": 2009
   },
   "EAH5450": {
     "tier": "C",
@@ -11217,17 +10600,17 @@
     "manufacturer": "AMD",
     "release_year": 2021
   },
-  "Mobility Radeon HD 3650": {
-    "tier": "C",
-    "benchmark_score": 130,
-    "manufacturer": "AMD",
-    "vram_gb": 0.5,
-    "release_year": 2009
-  },
   "MOBILITY RADEON X1800": {
     "tier": "C",
     "benchmark_score": 130,
     "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "X800 SE": {
+    "tier": "C",
+    "benchmark_score": 130,
+    "manufacturer": "AMD",
+    "vram_gb": 0.25,
     "release_year": 2009
   },
   "HD 7310": {
@@ -11237,11 +10620,11 @@
     "graphics_api_score": 312,
     "release_year": 2012
   },
-  "X800 SE": {
+  "Mobility Radeon HD 3650": {
     "tier": "C",
     "benchmark_score": 130,
     "manufacturer": "AMD",
-    "vram_gb": 0.25,
+    "vram_gb": 0.5,
     "release_year": 2009
   },
   "9300 / nForce 730i": {
@@ -11315,6 +10698,20 @@
     "manufacturer": "AMD",
     "release_year": 2013
   },
+  "Quadro FX 380M": {
+    "tier": "C",
+    "benchmark_score": 124,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.5,
+    "release_year": 2010
+  },
+  "Quadro FX 1400": {
+    "tier": "C",
+    "benchmark_score": 124,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.12,
+    "release_year": 2011
+  },
   "8700M GT": {
     "tier": "C",
     "benchmark_score": 124,
@@ -11327,31 +10724,11 @@
     "manufacturer": "Unknown",
     "release_year": 2009
   },
-  "Quadro FX 1400": {
-    "tier": "C",
-    "benchmark_score": 124,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.12,
-    "release_year": 2011
-  },
-  "Quadro FX 380M": {
-    "tier": "C",
-    "benchmark_score": 124,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.5,
-    "release_year": 2010
-  },
-  "Haswell HD GT1": {
+  "HD 7290M": {
     "tier": "C",
     "benchmark_score": 123,
-    "manufacturer": "Intel",
+    "manufacturer": "AMD",
     "release_year": 2014
-  },
-  "Matrox G200e WDDM 2.0": {
-    "tier": "C",
-    "benchmark_score": 123,
-    "manufacturer": "Unknown",
-    "release_year": 2018
   },
   "HD 4250": {
     "tier": "C",
@@ -11359,31 +10736,24 @@
     "manufacturer": "AMD",
     "release_year": 2012
   },
+  "Matrox G200e WDDM 2.0": {
+    "tier": "C",
+    "benchmark_score": 123,
+    "manufacturer": "Unknown",
+    "release_year": 2018
+  },
+  "Haswell HD GT1": {
+    "tier": "C",
+    "benchmark_score": 123,
+    "manufacturer": "Intel",
+    "release_year": 2014
+  },
   "HD 6310": {
     "tier": "C",
     "benchmark_score": 123,
     "manufacturer": "AMD",
     "graphics_api_score": 302,
     "release_year": 2012
-  },
-  "HD 7290M": {
-    "tier": "C",
-    "benchmark_score": 123,
-    "manufacturer": "AMD",
-    "release_year": 2014
-  },
-  "310": {
-    "tier": "C",
-    "benchmark_score": 122,
-    "manufacturer": "NVIDIA",
-    "release_year": 2010
-  },
-  "405": {
-    "tier": "C",
-    "benchmark_score": 122,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 1.0,
-    "release_year": 2011
   },
   "9500M G": {
     "tier": "C",
@@ -11397,6 +10767,19 @@
     "benchmark_score": 122,
     "manufacturer": "NVIDIA",
     "release_year": 2009
+  },
+  "310": {
+    "tier": "C",
+    "benchmark_score": 122,
+    "manufacturer": "NVIDIA",
+    "release_year": 2010
+  },
+  "405": {
+    "tier": "C",
+    "benchmark_score": 122,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 1.0,
+    "release_year": 2011
   },
   "GT 220M": {
     "tier": "C",
@@ -11429,19 +10812,19 @@
     "manufacturer": "Qualcomm",
     "release_year": 2021
   },
-  "9600M GS": {
-    "tier": "C",
-    "benchmark_score": 119,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 1.0,
-    "release_year": 2009
-  },
   "HD 2400 XT": {
     "tier": "C",
     "benchmark_score": 119,
     "manufacturer": "AMD",
     "vram_gb": 0.25,
     "release_year": 2011
+  },
+  "9600M GS": {
+    "tier": "C",
+    "benchmark_score": 119,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 1.0,
+    "release_year": 2009
   },
   "RV530 PRO": {
     "tier": "C",
@@ -11494,19 +10877,19 @@
     "manufacturer": "AMD",
     "release_year": 2012
   },
-  "FireGL V7200": {
-    "tier": "C",
-    "benchmark_score": 116,
-    "manufacturer": "Unknown",
-    "vram_gb": 0.25,
-    "release_year": 2010
-  },
   "315M": {
     "tier": "C",
     "benchmark_score": 116,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.5,
     "release_year": 2011
+  },
+  "FireGL V7200": {
+    "tier": "C",
+    "benchmark_score": 116,
+    "manufacturer": "Unknown",
+    "vram_gb": 0.25,
+    "release_year": 2010
   },
   "X1600 XT": {
     "tier": "C",
@@ -11575,6 +10958,12 @@
     "vram_gb": 0.25,
     "release_year": 2011
   },
+  "Sapphire RADEON X800 GT": {
+    "tier": "C",
+    "benchmark_score": 113,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
   "FirePro 2260": {
     "tier": "C",
     "benchmark_score": 113,
@@ -11594,23 +10983,17 @@
     "vram_gb": 0.5,
     "release_year": 2009
   },
-  "Sapphire RADEON X800 GT": {
+  "HD Modded": {
     "tier": "C",
-    "benchmark_score": 113,
-    "manufacturer": "AMD",
-    "release_year": 2009
+    "benchmark_score": 112,
+    "manufacturer": "Intel",
+    "release_year": 2014
   },
   "9400": {
     "tier": "C",
     "benchmark_score": 112,
     "manufacturer": "NVIDIA",
     "release_year": 2009
-  },
-  "HD Modded": {
-    "tier": "C",
-    "benchmark_score": 112,
-    "manufacturer": "Intel",
-    "release_year": 2014
   },
   "HD 4200": {
     "tier": "C",
@@ -11689,17 +11072,17 @@
     "manufacturer": "AMD",
     "release_year": 2019
   },
-  "HD 4330": {
-    "tier": "C",
-    "benchmark_score": 109,
-    "manufacturer": "AMD",
-    "release_year": 2012
-  },
   "HD 6290": {
     "tier": "C",
     "benchmark_score": 109,
     "manufacturer": "AMD",
     "graphics_api_score": 220,
+    "release_year": 2012
+  },
+  "HD 4330": {
+    "tier": "C",
+    "benchmark_score": 109,
+    "manufacturer": "AMD",
     "release_year": 2012
   },
   "G105M": {
@@ -11767,12 +11150,6 @@
     "vram_gb": 0.25,
     "release_year": 2010
   },
-  "9500M": {
-    "tier": "C",
-    "benchmark_score": 104,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
   "9500M GS": {
     "tier": "C",
     "benchmark_score": 104,
@@ -11780,11 +11157,11 @@
     "vram_gb": 0.5,
     "release_year": 2009
   },
-  "M880G with Mobility Radeon HD 4250": {
+  "9500M": {
     "tier": "C",
     "benchmark_score": 104,
-    "manufacturer": "AMD",
-    "release_year": 2012
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
   },
   "Quadro FX 3400/4400": {
     "tier": "C",
@@ -11792,17 +11169,23 @@
     "manufacturer": "NVIDIA",
     "release_year": 2012
   },
-  "FireGL V3400": {
+  "M880G with Mobility Radeon HD 4250": {
     "tier": "C",
-    "benchmark_score": 103,
-    "manufacturer": "Unknown",
-    "vram_gb": 0.12,
-    "release_year": 2009
+    "benchmark_score": 104,
+    "manufacturer": "AMD",
+    "release_year": 2012
   },
   "6800 GS/XT": {
     "tier": "C",
     "benchmark_score": 103,
     "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "FireGL V3400": {
+    "tier": "C",
+    "benchmark_score": 103,
+    "manufacturer": "Unknown",
+    "vram_gb": 0.12,
     "release_year": 2009
   },
   "G210": {
@@ -11861,23 +11244,22 @@
     "manufacturer": "AMD",
     "release_year": 2012
   },
-  "8400M GS": {
+  "3000": {
     "tier": "C",
     "benchmark_score": 98,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.25,
+    "manufacturer": "AMD",
+    "release_year": 2012
+  },
+  "ION LE": {
+    "tier": "C",
+    "benchmark_score": 98,
+    "manufacturer": "Unknown",
     "release_year": 2009
   },
   "9300GE": {
     "tier": "C",
     "benchmark_score": 98,
     "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "ION LE": {
-    "tier": "C",
-    "benchmark_score": 98,
-    "manufacturer": "Unknown",
     "release_year": 2009
   },
   "Mobility Radeon HD 3430": {
@@ -11894,12 +11276,6 @@
     "vram_gb": 0.5,
     "release_year": 2010
   },
-  "3000": {
-    "tier": "C",
-    "benchmark_score": 98,
-    "manufacturer": "AMD",
-    "release_year": 2012
-  },
   "X800 XT": {
     "tier": "C",
     "benchmark_score": 98,
@@ -11907,11 +11283,18 @@
     "vram_gb": 0.25,
     "release_year": 2012
   },
-  "210": {
+  "8400M GS": {
+    "tier": "C",
+    "benchmark_score": 98,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.25,
+    "release_year": 2009
+  },
+  "Quadro NVS 130M": {
     "tier": "C",
     "benchmark_score": 97,
     "manufacturer": "NVIDIA",
-    "vram_gb": 0.5,
+    "vram_gb": 0.25,
     "release_year": 2009
   },
   "Mobility Radeon HD serie 4200": {
@@ -11920,11 +11303,11 @@
     "manufacturer": "AMD",
     "release_year": 2013
   },
-  "Quadro NVS 130M": {
+  "210": {
     "tier": "C",
     "benchmark_score": 97,
     "manufacturer": "NVIDIA",
-    "vram_gb": 0.25,
+    "vram_gb": 0.5,
     "release_year": 2009
   },
   "6700 XL": {
@@ -11957,6 +11340,13 @@
     "manufacturer": "AMD",
     "release_year": 2012
   },
+  "Mobility Radeon HD 3470": {
+    "tier": "C",
+    "benchmark_score": 93,
+    "manufacturer": "AMD",
+    "vram_gb": 0.25,
+    "release_year": 2009
+  },
   "FireGL V5100": {
     "tier": "C",
     "benchmark_score": 93,
@@ -11970,10 +11360,10 @@
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "Mobility Radeon HD 3470": {
+  "Quadro NVS 150M": {
     "tier": "C",
     "benchmark_score": 93,
-    "manufacturer": "AMD",
+    "manufacturer": "NVIDIA",
     "vram_gb": 0.25,
     "release_year": 2009
   },
@@ -11989,10 +11379,23 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "Quadro NVS 150M": {
+  "G205M": {
     "tier": "C",
-    "benchmark_score": 93,
+    "benchmark_score": 92,
     "manufacturer": "NVIDIA",
+    "release_year": 2010
+  },
+  "9300M GS": {
+    "tier": "C",
+    "benchmark_score": 92,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.25,
+    "release_year": 2009
+  },
+  "Mobility Radeon X1600": {
+    "tier": "C",
+    "benchmark_score": 92,
+    "manufacturer": "AMD",
     "vram_gb": 0.25,
     "release_year": 2009
   },
@@ -12003,24 +11406,10 @@
     "vram_gb": 0.25,
     "release_year": 2009
   },
-  "9300M GS": {
-    "tier": "C",
-    "benchmark_score": 92,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.25,
-    "release_year": 2009
-  },
-  "G205M": {
-    "tier": "C",
-    "benchmark_score": 92,
-    "manufacturer": "NVIDIA",
-    "release_year": 2010
-  },
-  "Mobility Radeon X1600": {
+  "X600XT": {
     "tier": "C",
     "benchmark_score": 92,
     "manufacturer": "AMD",
-    "vram_gb": 0.25,
     "release_year": 2009
   },
   "nForce 780a SLI": {
@@ -12029,11 +11418,12 @@
     "manufacturer": "Unknown",
     "release_year": 2009
   },
-  "X600XT": {
+  "Mobility Radeon HD 4200": {
     "tier": "C",
-    "benchmark_score": 92,
+    "benchmark_score": 91,
     "manufacturer": "AMD",
-    "release_year": 2009
+    "vram_gb": 0.25,
+    "release_year": 2011
   },
   "Mobility Radeon HD 3450": {
     "tier": "C",
@@ -12041,13 +11431,6 @@
     "manufacturer": "AMD",
     "vram_gb": 0.25,
     "release_year": 2009
-  },
-  "Mobility Radeon HD 4200": {
-    "tier": "C",
-    "benchmark_score": 91,
-    "manufacturer": "AMD",
-    "vram_gb": 0.25,
-    "release_year": 2011
   },
   "Mobility Radeon HD 2400": {
     "tier": "C",
@@ -12134,10 +11517,24 @@
     "manufacturer": "AMD",
     "release_year": 2010
   },
-  "ALL IN WONDER X800 GT": {
+  "Quadro FX 370": {
     "tier": "C",
     "benchmark_score": 84,
-    "manufacturer": "Unknown",
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "X800 GT": {
+    "tier": "C",
+    "benchmark_score": 84,
+    "manufacturer": "AMD",
+    "vram_gb": 0.25,
+    "release_year": 2009
+  },
+  "X1300 PRO": {
+    "tier": "C",
+    "benchmark_score": 84,
+    "manufacturer": "AMD",
+    "vram_gb": 0.25,
     "release_year": 2009
   },
   "9300 GE": {
@@ -12153,24 +11550,10 @@
     "manufacturer": "NVIDIA",
     "release_year": 2017
   },
-  "Quadro FX 370": {
+  "ALL IN WONDER X800 GT": {
     "tier": "C",
     "benchmark_score": 84,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "X1300 PRO": {
-    "tier": "C",
-    "benchmark_score": 84,
-    "manufacturer": "AMD",
-    "vram_gb": 0.25,
-    "release_year": 2009
-  },
-  "X800 GT": {
-    "tier": "C",
-    "benchmark_score": 84,
-    "manufacturer": "AMD",
-    "vram_gb": 0.25,
+    "manufacturer": "Unknown",
     "release_year": 2009
   },
   "G41 Express Chipset": {
@@ -12185,6 +11568,12 @@
     "manufacturer": "Unknown",
     "release_year": 2009
   },
+  "9300 SE": {
+    "tier": "C",
+    "benchmark_score": 82,
+    "manufacturer": "NVIDIA",
+    "release_year": 2015
+  },
   "7300 GS": {
     "tier": "C",
     "benchmark_score": 82,
@@ -12197,12 +11586,6 @@
     "manufacturer": "NVIDIA",
     "vram_gb": 0.06,
     "release_year": 2009
-  },
-  "9300 SE": {
-    "tier": "C",
-    "benchmark_score": 82,
-    "manufacturer": "NVIDIA",
-    "release_year": 2015
   },
   "MOBILITY FireGL V5000": {
     "tier": "C",
@@ -12217,12 +11600,6 @@
     "vram_gb": 0.25,
     "release_year": 2009
   },
-  "nForce 980a/780a SLI": {
-    "tier": "C",
-    "benchmark_score": 82,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
   "HD 3200": {
     "tier": "C",
     "benchmark_score": 82,
@@ -12235,7 +11612,19 @@
     "manufacturer": "AMD",
     "release_year": 2011
   },
-  "8400": {
+  "nForce 980a/780a SLI": {
+    "tier": "C",
+    "benchmark_score": 82,
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "X800 XT Platinum Edition": {
+    "tier": "C",
+    "benchmark_score": 81,
+    "manufacturer": "AMD",
+    "release_year": 2012
+  },
+  "Quadro FX 540": {
     "tier": "C",
     "benchmark_score": 81,
     "manufacturer": "NVIDIA",
@@ -12247,17 +11636,11 @@
     "manufacturer": "AMD",
     "release_year": 2010
   },
-  "Quadro FX 540": {
+  "8400": {
     "tier": "C",
     "benchmark_score": 81,
     "manufacturer": "NVIDIA",
     "release_year": 2009
-  },
-  "X800 XT Platinum Edition": {
-    "tier": "C",
-    "benchmark_score": 81,
-    "manufacturer": "AMD",
-    "release_year": 2012
   },
   "X850 XT": {
     "tier": "C",
@@ -12354,19 +11737,6 @@
     "manufacturer": "AMD",
     "release_year": 2012
   },
-  "8600M GS": {
-    "tier": "C",
-    "benchmark_score": 73,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.5,
-    "release_year": 2009
-  },
-  "Mobility Radeon HD 4300 Serisi": {
-    "tier": "C",
-    "benchmark_score": 73,
-    "manufacturer": "AMD",
-    "release_year": 2013
-  },
   "X700": {
     "tier": "C",
     "benchmark_score": 73,
@@ -12385,17 +11755,17 @@
     "manufacturer": "AMD",
     "release_year": 2010
   },
-  "FireGL V7100": {
+  "Mobility Radeon HD 4300 Serisi": {
     "tier": "C",
-    "benchmark_score": 72,
-    "manufacturer": "Unknown",
-    "vram_gb": 0.25,
-    "release_year": 2009
+    "benchmark_score": 73,
+    "manufacturer": "AMD",
+    "release_year": 2013
   },
-  "8200M G": {
+  "8600M GS": {
     "tier": "C",
-    "benchmark_score": 72,
+    "benchmark_score": 73,
     "manufacturer": "NVIDIA",
+    "vram_gb": 0.5,
     "release_year": 2009
   },
   "M880G with Mobility Radeon HD 4225": {
@@ -12410,11 +11780,17 @@
     "manufacturer": "AMD",
     "release_year": 2010
   },
-  "FireGL V3300": {
+  "FireGL V7100": {
     "tier": "C",
-    "benchmark_score": 71,
+    "benchmark_score": 72,
     "manufacturer": "Unknown",
-    "vram_gb": 0.12,
+    "vram_gb": 0.25,
+    "release_year": 2009
+  },
+  "8200M G": {
+    "tier": "C",
+    "benchmark_score": 72,
+    "manufacturer": "NVIDIA",
     "release_year": 2009
   },
   "X1650 SE": {
@@ -12434,6 +11810,13 @@
     "tier": "C",
     "benchmark_score": 71,
     "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "FireGL V3300": {
+    "tier": "C",
+    "benchmark_score": 71,
+    "manufacturer": "Unknown",
+    "vram_gb": 0.12,
     "release_year": 2009
   },
   "BASICDISPLAY": {
@@ -12525,6 +11908,13 @@
     "manufacturer": "Unknown",
     "release_year": 2017
   },
+  "Quadro NVS 135M": {
+    "tier": "C",
+    "benchmark_score": 67,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.25,
+    "release_year": 2010
+  },
   "256MB RADEON X600": {
     "tier": "C",
     "benchmark_score": 67,
@@ -12538,25 +11928,18 @@
     "vram_gb": 0.5,
     "release_year": 2009
   },
-  "MOBILITY RADEON X700": {
-    "tier": "C",
-    "benchmark_score": 67,
-    "manufacturer": "AMD",
-    "release_year": 2010
-  },
-  "Quadro NVS 135M": {
-    "tier": "C",
-    "benchmark_score": 67,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.25,
-    "release_year": 2010
-  },
   "X1550": {
     "tier": "C",
     "benchmark_score": 67,
     "manufacturer": "AMD",
     "vram_gb": 0.25,
     "release_year": 2009
+  },
+  "MOBILITY RADEON X700": {
+    "tier": "C",
+    "benchmark_score": 67,
+    "manufacturer": "AMD",
+    "release_year": 2010
   },
   "128MB DDR Radeon 9800 Pro": {
     "tier": "C",
@@ -12590,11 +11973,17 @@
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "8400M GT": {
+  "Quadro NVS 450": {
     "tier": "C",
     "benchmark_score": 64,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.5,
+    "release_year": 2009
+  },
+  "Quadro FX 550": {
+    "tier": "C",
+    "benchmark_score": 64,
+    "manufacturer": "NVIDIA",
     "release_year": 2009
   },
   "M71 M": {
@@ -12603,13 +11992,7 @@
     "manufacturer": "Unknown",
     "release_year": 2010
   },
-  "Quadro FX 550": {
-    "tier": "C",
-    "benchmark_score": 64,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "Quadro NVS 450": {
+  "8400M GT": {
     "tier": "C",
     "benchmark_score": 64,
     "manufacturer": "NVIDIA",
@@ -12641,18 +12024,18 @@
     "manufacturer": "Unknown",
     "release_year": 2009
   },
+  "SAPPHIRE Radeon X1550": {
+    "tier": "C",
+    "benchmark_score": 61,
+    "manufacturer": "AMD",
+    "release_year": 2010
+  },
   "G 103M": {
     "tier": "C",
     "benchmark_score": 61,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.5,
     "release_year": 2012
-  },
-  "SAPPHIRE Radeon X1550": {
-    "tier": "C",
-    "benchmark_score": 61,
-    "manufacturer": "AMD",
-    "release_year": 2010
   },
   "MOBILITY RADEON X700 XL": {
     "tier": "C",
@@ -12666,26 +12049,7 @@
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "FireGL X1": {
-    "tier": "C",
-    "benchmark_score": 59,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "6800 XE": {
-    "tier": "C",
-    "benchmark_score": 59,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
   "8400M G": {
-    "tier": "C",
-    "benchmark_score": 59,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.25,
-    "release_year": 2009
-  },
-  "FX 5950 Ultra": {
     "tier": "C",
     "benchmark_score": 59,
     "manufacturer": "NVIDIA",
@@ -12698,9 +12062,46 @@
     "manufacturer": "Unknown",
     "release_year": 2013
   },
+  "FX 5950 Ultra": {
+    "tier": "C",
+    "benchmark_score": 59,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.25,
+    "release_year": 2009
+  },
   "9800 PRO": {
     "tier": "C",
     "benchmark_score": 59,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "6800 XE": {
+    "tier": "C",
+    "benchmark_score": 59,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "FireGL X1": {
+    "tier": "C",
+    "benchmark_score": 59,
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "9800": {
+    "tier": "C",
+    "benchmark_score": 58,
+    "manufacturer": "AMD",
+    "release_year": 2010
+  },
+  "Mobile Intel 965 Express": {
+    "tier": "C",
+    "benchmark_score": 58,
+    "manufacturer": "Intel",
+    "release_year": 2010
+  },
+  "X1300": {
+    "tier": "C",
+    "benchmark_score": 58,
     "manufacturer": "AMD",
     "release_year": 2009
   },
@@ -12710,110 +12111,104 @@
     "manufacturer": "Intel",
     "release_year": 2011
   },
-  "Mobile Intel 965 Express": {
-    "tier": "C",
-    "benchmark_score": 58,
-    "manufacturer": "Intel",
-    "release_year": 2010
-  },
-  "9800": {
-    "tier": "C",
-    "benchmark_score": 58,
-    "manufacturer": "AMD",
-    "release_year": 2010
-  },
-  "X1300": {
-    "tier": "C",
-    "benchmark_score": 58,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
   "Express Chipset G41": {
-    "tier": "D",
+    "tier": "C",
     "benchmark_score": 57,
     "manufacturer": "Intel",
     "release_year": 2011
   },
-  "G41 Express Chipsatz": {
-    "tier": "D",
+  "X600 256MB HyperMemory": {
+    "tier": "C",
     "benchmark_score": 57,
-    "manufacturer": "Intel",
-    "release_year": 2012
-  },
-  "Q45/Q43 Express Chipsatz": {
-    "tier": "D",
-    "benchmark_score": 57,
-    "manufacturer": "Intel",
-    "release_year": 2010
+    "manufacturer": "AMD",
+    "release_year": 2009
   },
   "9800 XT": {
-    "tier": "D",
+    "tier": "C",
     "benchmark_score": 57,
     "manufacturer": "AMD",
     "vram_gb": 0.25,
     "release_year": 2009
   },
-  "X600 256MB HyperMemory": {
-    "tier": "D",
+  "G41 Express Chipsatz": {
+    "tier": "C",
     "benchmark_score": 57,
-    "manufacturer": "AMD",
-    "release_year": 2009
+    "manufacturer": "Intel",
+    "release_year": 2012
+  },
+  "Q45/Q43 Express Chipsatz": {
+    "tier": "C",
+    "benchmark_score": 57,
+    "manufacturer": "Intel",
+    "release_year": 2010
   },
   "X550XT": {
-    "tier": "D",
+    "tier": "C",
     "benchmark_score": 56,
     "manufacturer": "AMD",
     "release_year": 2009
   },
   "9700 PRO": {
-    "tier": "D",
+    "tier": "C",
     "benchmark_score": 54,
     "manufacturer": "AMD",
     "release_year": 2009
   },
   "FireGL V3100": {
-    "tier": "D",
+    "tier": "C",
     "benchmark_score": 53,
     "manufacturer": "Unknown",
     "vram_gb": 0.12,
     "release_year": 2009
   },
-  "7100 GS": {
-    "tier": "D",
-    "benchmark_score": 52,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
   "Go 7300": {
-    "tier": "D",
+    "tier": "C",
     "benchmark_score": 52,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.06,
     "release_year": 2012
   },
   "Matrox G200eh WDDM 1.2": {
-    "tier": "D",
+    "tier": "C",
     "benchmark_score": 52,
     "manufacturer": "Unknown",
     "release_year": 2014
   },
+  "7100 GS": {
+    "tier": "C",
+    "benchmark_score": 52,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
   "E2400": {
-    "tier": "D",
+    "tier": "C",
     "benchmark_score": 52,
     "manufacturer": "AMD",
     "release_year": 2011
   },
   "Xpress 1300": {
-    "tier": "D",
+    "tier": "C",
     "benchmark_score": 52,
     "manufacturer": "AMD",
     "release_year": 2014
+  },
+  "FX Go5700": {
+    "tier": "D",
+    "benchmark_score": 51,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
   },
   "FirePro 2450": {
     "tier": "D",
     "benchmark_score": 51,
     "manufacturer": "AMD",
     "release_year": 2010
+  },
+  "X550": {
+    "tier": "D",
+    "benchmark_score": 51,
+    "manufacturer": "AMD",
+    "release_year": 2009
   },
   "6600 LE": {
     "tier": "D",
@@ -12822,24 +12217,12 @@
     "vram_gb": 0.25,
     "release_year": 2009
   },
-  "FX Go5700": {
-    "tier": "D",
-    "benchmark_score": 51,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
   "Mobility Radeon HD 2300": {
     "tier": "D",
     "benchmark_score": 51,
     "manufacturer": "AMD",
     "vram_gb": 0.12,
     "release_year": 2012
-  },
-  "X550": {
-    "tier": "D",
-    "benchmark_score": 51,
-    "manufacturer": "AMD",
-    "release_year": 2009
   },
   "Matrox G200eW WDDM 1.2": {
     "tier": "D",
@@ -12853,7 +12236,7 @@
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "128MB RADEON X600 SE": {
+  "MOBILITY RADEON X600 SE": {
     "tier": "D",
     "benchmark_score": 49,
     "manufacturer": "AMD",
@@ -12865,22 +12248,10 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "Mobility Radeon X2300 HD": {
+  "128MB RADEON X600 SE": {
     "tier": "D",
     "benchmark_score": 49,
     "manufacturer": "AMD",
-    "release_year": 2009
-  },
-  "MOBILITY RADEON X600 SE": {
-    "tier": "D",
-    "benchmark_score": 49,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
-  "Quadro NVS 140M": {
-    "tier": "D",
-    "benchmark_score": 49,
-    "manufacturer": "NVIDIA",
     "release_year": 2009
   },
   "X1050": {
@@ -12890,10 +12261,29 @@
     "vram_gb": 0.12,
     "release_year": 2009
   },
+  "Mobility Radeon X2300 HD": {
+    "tier": "D",
+    "benchmark_score": 49,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
   "X1600": {
     "tier": "D",
     "benchmark_score": 49,
     "manufacturer": "AMD",
+    "vram_gb": 0.5,
+    "release_year": 2009
+  },
+  "Quadro NVS 140M": {
+    "tier": "D",
+    "benchmark_score": 49,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "Quadro NVS 110M": {
+    "tier": "D",
+    "benchmark_score": 48,
+    "manufacturer": "NVIDIA",
     "vram_gb": 0.5,
     "release_year": 2009
   },
@@ -12903,16 +12293,15 @@
     "manufacturer": "AMD",
     "release_year": 2012
   },
-  "Quadro NVS 110M": {
-    "tier": "D",
-    "benchmark_score": 48,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.5,
-    "release_year": 2009
-  },
   "X1550 64 bit": {
     "tier": "D",
     "benchmark_score": 48,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "SAPPHIRE RADEON 9600 ATLANTIS": {
+    "tier": "D",
+    "benchmark_score": 47,
     "manufacturer": "AMD",
     "release_year": 2009
   },
@@ -12921,12 +12310,6 @@
     "benchmark_score": 47,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.5,
-    "release_year": 2009
-  },
-  "SAPPHIRE RADEON 9600 ATLANTIS": {
-    "tier": "D",
-    "benchmark_score": 47,
-    "manufacturer": "AMD",
     "release_year": 2009
   },
   "FireMV 2250": {
@@ -12948,6 +12331,37 @@
     "manufacturer": "AMD",
     "release_year": 2009
   },
+  "MOBILITY FireGL V5200": {
+    "tier": "D",
+    "benchmark_score": 45,
+    "manufacturer": "Unknown",
+    "release_year": 2012
+  },
+  "Matrox G200eh WDDM 2.0": {
+    "tier": "D",
+    "benchmark_score": 45,
+    "manufacturer": "Unknown",
+    "release_year": 2017
+  },
+  "Mobile Intel serie 4 Express": {
+    "tier": "D",
+    "benchmark_score": 45,
+    "manufacturer": "Intel",
+    "release_year": 2013
+  },
+  "Quadro FX 350M": {
+    "tier": "D",
+    "benchmark_score": 45,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.25,
+    "release_year": 2009
+  },
+  "Matrox G200eR WDDM 1.2": {
+    "tier": "D",
+    "benchmark_score": 45,
+    "manufacturer": "Unknown",
+    "release_year": 2014
+  },
   "Go 6600 TE/6200 TE": {
     "tier": "D",
     "benchmark_score": 45,
@@ -12961,48 +12375,23 @@
     "vram_gb": 0.06,
     "release_year": 2012
   },
-  "Matrox G200eh WDDM 2.0": {
-    "tier": "D",
-    "benchmark_score": 45,
-    "manufacturer": "Unknown",
-    "release_year": 2017
-  },
-  "Matrox G200eR WDDM 1.2": {
-    "tier": "D",
-    "benchmark_score": 45,
-    "manufacturer": "Unknown",
-    "release_year": 2014
-  },
   "Mobile Intel 4 Express Chipsatzfamilie": {
     "tier": "D",
     "benchmark_score": 45,
     "manufacturer": "Intel",
     "release_year": 2013
   },
-  "Mobile Intel serie 4 Express": {
-    "tier": "D",
-    "benchmark_score": 45,
-    "manufacturer": "Intel",
-    "release_year": 2013
-  },
-  "MOBILITY FireGL V5200": {
-    "tier": "D",
-    "benchmark_score": 45,
-    "manufacturer": "Unknown",
-    "release_year": 2012
-  },
-  "Quadro FX 350M": {
-    "tier": "D",
-    "benchmark_score": 45,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.25,
-    "release_year": 2009
-  },
   "128 DDR Radeon 9700 TX w/TV Out": {
     "tier": "D",
     "benchmark_score": 44,
     "manufacturer": "AMD",
     "release_year": 2011
+  },
+  "Xpress 1250": {
+    "tier": "D",
+    "benchmark_score": 43,
+    "manufacturer": "AMD",
+    "release_year": 2012
   },
   "Mobility Radeon X1400": {
     "tier": "D",
@@ -13017,12 +12406,6 @@
     "manufacturer": "AMD",
     "vram_gb": 0.12,
     "release_year": 2011
-  },
-  "Xpress 1250": {
-    "tier": "D",
-    "benchmark_score": 43,
-    "manufacturer": "AMD",
-    "release_year": 2012
   },
   "Matrox M9138 LP PCIe x16": {
     "tier": "D",
@@ -13042,13 +12425,6 @@
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "FX 5700": {
-    "tier": "D",
-    "benchmark_score": 41,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.25,
-    "release_year": 2009
-  },
   "FX 5900 Ultra": {
     "tier": "D",
     "benchmark_score": 41,
@@ -13056,10 +12432,17 @@
     "vram_gb": 0.25,
     "release_year": 2009
   },
-  "Gigabyte RADEON X300": {
+  "FX 5700": {
     "tier": "D",
     "benchmark_score": 41,
-    "manufacturer": "AMD",
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.25,
+    "release_year": 2009
+  },
+  "MOBILITY FIREGL T2": {
+    "tier": "D",
+    "benchmark_score": 41,
+    "manufacturer": "Unknown",
     "release_year": 2009
   },
   "Matrox G200eh": {
@@ -13068,17 +12451,10 @@
     "manufacturer": "Unknown",
     "release_year": 2013
   },
-  "MOBILITY FIREGL T2": {
+  "Gigabyte RADEON X300": {
     "tier": "D",
     "benchmark_score": 41,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "FX 5900XT": {
-    "tier": "D",
-    "benchmark_score": 40,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.12,
+    "manufacturer": "AMD",
     "release_year": 2009
   },
   "Matrox G200eW": {
@@ -13087,6 +12463,13 @@
     "manufacturer": "Unknown",
     "release_year": 2012
   },
+  "FX 5900XT": {
+    "tier": "D",
+    "benchmark_score": 40,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.12,
+    "release_year": 2009
+  },
   "Mobility Radeon X1300": {
     "tier": "D",
     "benchmark_score": 40,
@@ -13094,11 +12477,10 @@
     "vram_gb": 0.12,
     "release_year": 2009
   },
-  "Mobility Radeon X1350": {
+  "S3 Chrome 430 ULP": {
     "tier": "D",
     "benchmark_score": 40,
-    "manufacturer": "AMD",
-    "vram_gb": 0.12,
+    "manufacturer": "Unknown",
     "release_year": 2009
   },
   "Xpress 1300M": {
@@ -13107,28 +12489,11 @@
     "manufacturer": "AMD",
     "release_year": 2011
   },
-  "S3 Chrome 430 ULP": {
+  "Mobility Radeon X1350": {
     "tier": "D",
     "benchmark_score": 40,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "7050 / nForce 620i": {
-    "tier": "D",
-    "benchmark_score": 39,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "7300 SE": {
-    "tier": "D",
-    "benchmark_score": 39,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "GIGABYTE RADEON 9600 PRO": {
-    "tier": "D",
-    "benchmark_score": 39,
     "manufacturer": "AMD",
+    "vram_gb": 0.12,
     "release_year": 2009
   },
   "Mobile Intel famiglia Express Chipset 45": {
@@ -13137,11 +12502,11 @@
     "manufacturer": "Intel",
     "release_year": 2011
   },
-  "MOBILITY RADEON 9600/9700": {
+  "7300 SE": {
     "tier": "D",
     "benchmark_score": 39,
-    "manufacturer": "AMD",
-    "release_year": 2010
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
   },
   "Quadro NVS 285": {
     "tier": "D",
@@ -13150,17 +12515,40 @@
     "vram_gb": 0.12,
     "release_year": 2012
   },
+  "MOBILITY RADEON 9600/9700": {
+    "tier": "D",
+    "benchmark_score": 39,
+    "manufacturer": "AMD",
+    "release_year": 2010
+  },
+  "GIGABYTE RADEON 9600 PRO": {
+    "tier": "D",
+    "benchmark_score": 39,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "7050 / nForce 620i": {
+    "tier": "D",
+    "benchmark_score": 39,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
   "256MB DDR Radeon 9800 XT": {
     "tier": "D",
     "benchmark_score": 38,
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "6500": {
+  "Quadro NVS 440": {
     "tier": "D",
     "benchmark_score": 38,
     "manufacturer": "NVIDIA",
-    "vram_gb": 0.25,
+    "release_year": 2009
+  },
+  "X300SE": {
+    "tier": "D",
+    "benchmark_score": 38,
+    "manufacturer": "AMD",
     "release_year": 2009
   },
   "7050 / nForce 630i": {
@@ -13175,16 +12563,11 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "Quadro NVS 440": {
+  "6500": {
     "tier": "D",
     "benchmark_score": 38,
     "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "X300SE": {
-    "tier": "D",
-    "benchmark_score": 38,
-    "manufacturer": "AMD",
+    "vram_gb": 0.25,
     "release_year": 2009
   },
   "6200SE TurboCache": {
@@ -13205,29 +12588,23 @@
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "CONNECT 3D RADEON X300": {
-    "tier": "D",
-    "benchmark_score": 36,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
   "FireMV 2200 PCIe": {
     "tier": "D",
     "benchmark_score": 36,
     "manufacturer": "Unknown",
     "release_year": 2011
   },
-  "MOBILITY RADEON 9600": {
-    "tier": "D",
-    "benchmark_score": 36,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
   "Quadro FX 1100": {
     "tier": "D",
     "benchmark_score": 36,
     "manufacturer": "NVIDIA",
     "vram_gb": 0.12,
+    "release_year": 2009
+  },
+  "MOBILITY RADEON 9600": {
+    "tier": "D",
+    "benchmark_score": 36,
+    "manufacturer": "AMD",
     "release_year": 2009
   },
   "9500": {
@@ -13243,11 +12620,16 @@
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "6200": {
+  "CONNECT 3D RADEON X300": {
+    "tier": "D",
+    "benchmark_score": 36,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "9600 XT": {
     "tier": "D",
     "benchmark_score": 35,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.25,
+    "manufacturer": "AMD",
     "release_year": 2009
   },
   "7100 / nForce 630i": {
@@ -13256,10 +12638,11 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "FX 5900": {
+  "6200": {
     "tier": "D",
     "benchmark_score": 35,
     "manufacturer": "NVIDIA",
+    "vram_gb": 0.25,
     "release_year": 2009
   },
   "PCX 5750": {
@@ -13268,6 +12651,12 @@
     "manufacturer": "NVIDIA",
     "release_year": 2010
   },
+  "FX 5900": {
+    "tier": "D",
+    "benchmark_score": 35,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
   "9550": {
     "tier": "D",
     "benchmark_score": 35,
@@ -13275,10 +12664,29 @@
     "vram_gb": 0.25,
     "release_year": 2009
   },
-  "9600 XT": {
+  "MOBILITY RADEON X300": {
     "tier": "D",
-    "benchmark_score": 35,
+    "benchmark_score": 34,
     "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "MOBILITY FIREGL T2/T2e": {
+    "tier": "D",
+    "benchmark_score": 34,
+    "manufacturer": "Unknown",
+    "release_year": 2012
+  },
+  "Xpress 1100": {
+    "tier": "D",
+    "benchmark_score": 34,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "Quadro FX 1300": {
+    "tier": "D",
+    "benchmark_score": 34,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.12,
     "release_year": 2009
   },
   "7025 / nForce 630a": {
@@ -13300,18 +12708,6 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "MOBILITY FIREGL T2/T2e": {
-    "tier": "D",
-    "benchmark_score": 34,
-    "manufacturer": "Unknown",
-    "release_year": 2012
-  },
-  "MOBILITY RADEON X300": {
-    "tier": "D",
-    "benchmark_score": 34,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
   "Quadro FX 1000": {
     "tier": "D",
     "benchmark_score": 34,
@@ -13319,18 +12715,17 @@
     "vram_gb": 0.12,
     "release_year": 2009
   },
-  "Quadro FX 1300": {
+  "FX 5700VE": {
     "tier": "D",
-    "benchmark_score": 34,
+    "benchmark_score": 33,
     "manufacturer": "NVIDIA",
-    "vram_gb": 0.12,
     "release_year": 2009
   },
-  "Xpress 1100": {
+  "Media Accelerator": {
     "tier": "D",
-    "benchmark_score": 34,
-    "manufacturer": "AMD",
-    "release_year": 2009
+    "benchmark_score": 33,
+    "manufacturer": "Intel",
+    "release_year": 2015
   },
   "6150 LE": {
     "tier": "D",
@@ -13344,29 +12739,11 @@
     "manufacturer": "NVIDIA",
     "release_year": 2012
   },
-  "FX 5700VE": {
+  "S3 Chrome S27 DDR3": {
     "tier": "D",
     "benchmark_score": 33,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "FX 5900ZT": {
-    "tier": "D",
-    "benchmark_score": 33,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "Media Accelerator": {
-    "tier": "D",
-    "benchmark_score": 33,
-    "manufacturer": "Intel",
-    "release_year": 2015
-  },
-  "Mobility Radeon X1450": {
-    "tier": "D",
-    "benchmark_score": 33,
-    "manufacturer": "AMD",
-    "release_year": 2009
+    "manufacturer": "Unknown",
+    "release_year": 2022
   },
   "X1200": {
     "tier": "D",
@@ -13374,16 +12751,16 @@
     "manufacturer": "AMD",
     "release_year": 2010
   },
-  "S3 Chrome S27 DDR3": {
+  "FX 5900ZT": {
     "tier": "D",
     "benchmark_score": 33,
-    "manufacturer": "Unknown",
-    "release_year": 2022
-  },
-  "6200 A LE": {
-    "tier": "D",
-    "benchmark_score": 32,
     "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "Mobility Radeon X1450": {
+    "tier": "D",
+    "benchmark_score": 33,
+    "manufacturer": "AMD",
     "release_year": 2009
   },
   "Matrox M9148 LP PCIe x16": {
@@ -13397,6 +12774,12 @@
     "benchmark_score": 32,
     "manufacturer": "Unknown",
     "release_year": 2015
+  },
+  "6200 A LE": {
+    "tier": "D",
+    "benchmark_score": 32,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
   },
   "FireGL T2 128": {
     "tier": "D",
@@ -13429,11 +12812,11 @@
     "manufacturer": "AMD",
     "release_year": 2010
   },
-  "All in Wonder X1800XL": {
+  "XPRESS 200": {
     "tier": "D",
     "benchmark_score": 30,
-    "manufacturer": "Unknown",
-    "release_year": 2011
+    "manufacturer": "AMD",
+    "release_year": 2009
   },
   "6150SE nForce 430": {
     "tier": "D",
@@ -13441,11 +12824,11 @@
     "manufacturer": "NVIDIA",
     "release_year": 2012
   },
-  "MOBILITY RADEON 9550": {
+  "All in Wonder X1800XL": {
     "tier": "D",
     "benchmark_score": 30,
-    "manufacturer": "AMD",
-    "release_year": 2012
+    "manufacturer": "Unknown",
+    "release_year": 2011
   },
   "Xpress 1150": {
     "tier": "D",
@@ -13453,11 +12836,11 @@
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "XPRESS 200": {
+  "MOBILITY RADEON 9550": {
     "tier": "D",
     "benchmark_score": 30,
     "manufacturer": "AMD",
-    "release_year": 2009
+    "release_year": 2012
   },
   "Matrox M9128 LP PCIe x16": {
     "tier": "D",
@@ -13471,10 +12854,16 @@
     "manufacturer": "AMD",
     "release_year": 2010
   },
-  "6100": {
+  "9600SE": {
     "tier": "D",
     "benchmark_score": 27,
-    "manufacturer": "NVIDIA",
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "MOBILITY RADEON 9700": {
+    "tier": "D",
+    "benchmark_score": 27,
+    "manufacturer": "AMD",
     "release_year": 2009
   },
   "MOBILITY FireGL V5250": {
@@ -13483,7 +12872,19 @@
     "manufacturer": "Unknown",
     "release_year": 2009
   },
-  "MOBILITY RADEON 9700": {
+  "6100": {
+    "tier": "D",
+    "benchmark_score": 27,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "9600 PRO Family": {
+    "tier": "D",
+    "benchmark_score": 27,
+    "manufacturer": "AMD",
+    "release_year": 2010
+  },
+  "Xpress 1270": {
     "tier": "D",
     "benchmark_score": 27,
     "manufacturer": "AMD",
@@ -13495,23 +12896,11 @@
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "9600 PRO Family": {
+  "PHDGD Sapphire GR for Mobile Intel 965": {
     "tier": "D",
-    "benchmark_score": 27,
-    "manufacturer": "AMD",
-    "release_year": 2010
-  },
-  "9600SE": {
-    "tier": "D",
-    "benchmark_score": 27,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
-  "Xpress 1270": {
-    "tier": "D",
-    "benchmark_score": 27,
-    "manufacturer": "AMD",
-    "release_year": 2009
+    "benchmark_score": 26,
+    "manufacturer": "Intel",
+    "release_year": 2017
   },
   "7100 / nForce 620i": {
     "tier": "D",
@@ -13531,16 +12920,16 @@
     "manufacturer": "Unknown",
     "release_year": 2009
   },
-  "PHDGD Sapphire GR for Mobile Intel 965": {
-    "tier": "D",
-    "benchmark_score": 26,
-    "manufacturer": "Intel",
-    "release_year": 2017
-  },
-  "6100 nForce 400": {
+  "MOBILITY RADEON 9600 PRO TURBO": {
     "tier": "D",
     "benchmark_score": 25,
-    "manufacturer": "NVIDIA",
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "9600 Family": {
+    "tier": "D",
+    "benchmark_score": 25,
+    "manufacturer": "AMD",
     "release_year": 2009
   },
   "6100 nForce 405": {
@@ -13549,7 +12938,13 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "6100 nForce 420": {
+  "G965 Express": {
+    "tier": "D",
+    "benchmark_score": 25,
+    "manufacturer": "Intel",
+    "release_year": 2009
+  },
+  "6100 nForce 400": {
     "tier": "D",
     "benchmark_score": 25,
     "manufacturer": "NVIDIA",
@@ -13567,35 +12962,10 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "G965 Express": {
+  "6100 nForce 420": {
     "tier": "D",
     "benchmark_score": 25,
-    "manufacturer": "Intel",
-    "release_year": 2009
-  },
-  "MOBILITY RADEON 9600 PRO TURBO": {
-    "tier": "D",
-    "benchmark_score": 25,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
-  "9600 Family": {
-    "tier": "D",
-    "benchmark_score": 25,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
-  "7050 / nForce 610i": {
-    "tier": "D",
-    "benchmark_score": 24,
     "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "Go 6400": {
-    "tier": "D",
-    "benchmark_score": 24,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.03,
     "release_year": 2009
   },
   "Mobile Intel 965 Express Chipsatzfamilie": {
@@ -13604,7 +12974,20 @@
     "manufacturer": "Intel",
     "release_year": 2014
   },
+  "Go 6400": {
+    "tier": "D",
+    "benchmark_score": 24,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.03,
+    "release_year": 2009
+  },
   "Quadro NVS 210S": {
+    "tier": "D",
+    "benchmark_score": 24,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "7050 / nForce 610i": {
     "tier": "D",
     "benchmark_score": 24,
     "manufacturer": "NVIDIA",
@@ -13652,17 +13035,17 @@
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "9xx Soldiers sans frontiers Sigma 2": {
-    "tier": "D",
-    "benchmark_score": 22,
-    "manufacturer": "Unknown",
-    "release_year": 2014
-  },
   "6150": {
     "tier": "D",
     "benchmark_score": 22,
     "manufacturer": "NVIDIA",
     "release_year": 2012
+  },
+  "9xx Soldiers sans frontiers Sigma 2": {
+    "tier": "D",
+    "benchmark_score": 22,
+    "manufacturer": "Unknown",
+    "release_year": 2014
   },
   "Quadro NVS 210S / GeForce 6150LE": {
     "tier": "D",
@@ -13694,12 +13077,6 @@
     "manufacturer": "Unknown",
     "release_year": 2014
   },
-  "7150M / nForce 630M": {
-    "tier": "D",
-    "benchmark_score": 18,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
   "FX Go 5600": {
     "tier": "D",
     "benchmark_score": 18,
@@ -13711,12 +13088,6 @@
     "benchmark_score": 18,
     "manufacturer": "NVIDIA",
     "release_year": 2009
-  },
-  "Mobile Intel965 Express": {
-    "tier": "D",
-    "benchmark_score": 18,
-    "manufacturer": "Intel",
-    "release_year": 2018
   },
   "Quadro FX 2000": {
     "tier": "D",
@@ -13742,6 +13113,18 @@
     "benchmark_score": 18,
     "manufacturer": "Unknown",
     "release_year": 2011
+  },
+  "Mobile Intel965 Express": {
+    "tier": "D",
+    "benchmark_score": 18,
+    "manufacturer": "Intel",
+    "release_year": 2018
+  },
+  "7150M / nForce 630M": {
+    "tier": "D",
+    "benchmark_score": 18,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
   },
   "FX 5600 Ultra": {
     "tier": "D",
@@ -13775,27 +13158,15 @@
     "manufacturer": "Intel",
     "release_year": 2009
   },
-  "Quadro FX 500/600 PCI": {
-    "tier": "D",
-    "benchmark_score": 14,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
   "HD 2400 PCI": {
     "tier": "D",
     "benchmark_score": 14,
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "7000M": {
+  "Quadro FX 500/600 PCI": {
     "tier": "D",
-    "benchmark_score": 13,
-    "manufacturer": "NVIDIA",
-    "release_year": 2010
-  },
-  "7000M / nForce 610M": {
-    "tier": "D",
-    "benchmark_score": 13,
+    "benchmark_score": 14,
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
@@ -13811,9 +13182,15 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "FX 5200 Ultra": {
+  "7000M": {
     "tier": "D",
-    "benchmark_score": 12,
+    "benchmark_score": 13,
+    "manufacturer": "NVIDIA",
+    "release_year": 2010
+  },
+  "7000M / nForce 610M": {
+    "tier": "D",
+    "benchmark_score": 13,
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
@@ -13822,6 +13199,12 @@
     "benchmark_score": 12,
     "manufacturer": "NVIDIA",
     "release_year": 2013
+  },
+  "FX 5200 Ultra": {
+    "tier": "D",
+    "benchmark_score": 12,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
   },
   "FireMV 2400 PCIe": {
     "tier": "D",
@@ -13841,6 +13224,12 @@
     "manufacturer": "Unknown",
     "release_year": 2016
   },
+  "MOBILITY IGP 9000/9100": {
+    "tier": "D",
+    "benchmark_score": 10,
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
   "Familia Intel Q33 Express Chipset": {
     "tier": "D",
     "benchmark_score": 10,
@@ -13852,30 +13241,6 @@
     "benchmark_score": 10,
     "manufacturer": "Unknown",
     "release_year": 2017
-  },
-  "MOBILITY IGP 9000/9100": {
-    "tier": "D",
-    "benchmark_score": 10,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "ASUS A7000": {
-    "tier": "D",
-    "benchmark_score": 9,
-    "manufacturer": "Unknown",
-    "release_year": 2010
-  },
-  "GeCube RADEON 7000": {
-    "tier": "D",
-    "benchmark_score": 9,
-    "manufacturer": "AMD",
-    "release_year": 2010
-  },
-  "FX 5600XT": {
-    "tier": "D",
-    "benchmark_score": 9,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
   },
   "Matrox Parhelia 256MB": {
     "tier": "D",
@@ -13889,11 +13254,29 @@
     "manufacturer": "Unknown",
     "release_year": 2010
   },
-  "ASUS V9520 X V62.11": {
+  "GeCube RADEON 7000": {
+    "tier": "D",
+    "benchmark_score": 9,
+    "manufacturer": "AMD",
+    "release_year": 2010
+  },
+  "ASUS A7000": {
+    "tier": "D",
+    "benchmark_score": 9,
+    "manufacturer": "Unknown",
+    "release_year": 2010
+  },
+  "FX 5600XT": {
+    "tier": "D",
+    "benchmark_score": 9,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "82945G Express Chipsatzfamilie": {
     "tier": "D",
     "benchmark_score": 8,
-    "manufacturer": "Unknown",
-    "release_year": 2011
+    "manufacturer": "Intel",
+    "release_year": 2016
   },
   "FX 5100": {
     "tier": "D",
@@ -13921,16 +13304,16 @@
     "manufacturer": "NVIDIA",
     "release_year": 2010
   },
-  "82945G Express Chipsatzfamilie": {
-    "tier": "D",
-    "benchmark_score": 8,
-    "manufacturer": "Intel",
-    "release_year": 2016
-  },
   "Q35 Embedded": {
     "tier": "D",
     "benchmark_score": 8,
     "manufacturer": "Intel",
+    "release_year": 2011
+  },
+  "ASUS V9520 X V62.11": {
+    "tier": "D",
+    "benchmark_score": 8,
+    "manufacturer": "Unknown",
     "release_year": 2011
   },
   "Mobile Intel 965 Express BR 0907 0461 v1839": {
@@ -13957,29 +13340,10 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "Famille de jeu de puces Express Intel 946GZ": {
+  "Matrox Millennium P690 Plus LP PCIe x16": {
     "tier": "D",
     "benchmark_score": 7,
-    "manufacturer": "Intel",
-    "release_year": 2016
-  },
-  "FX 5200LE": {
-    "tier": "D",
-    "benchmark_score": 7,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "GeForce4 MX Integrated GPU": {
-    "tier": "D",
-    "benchmark_score": 7,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "GeForce4 Ti 4400": {
-    "tier": "D",
-    "benchmark_score": 7,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.12,
+    "manufacturer": "Unknown",
     "release_year": 2009
   },
   "GeForce4 Ti 4800 SE": {
@@ -13989,24 +13353,6 @@
     "vram_gb": 0.12,
     "release_year": 2009
   },
-  "Media Accelerator 600": {
-    "tier": "D",
-    "benchmark_score": 7,
-    "manufacturer": "Intel",
-    "release_year": 2011
-  },
-  "US15 Embedded Media and Controller": {
-    "tier": "D",
-    "benchmark_score": 7,
-    "manufacturer": "Intel",
-    "release_year": 2015
-  },
-  "Matrox Millennium P690 Plus LP PCIe x16": {
-    "tier": "D",
-    "benchmark_score": 7,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
   "Quadro4 380 XGL": {
     "tier": "D",
     "benchmark_score": 7,
@@ -14014,17 +13360,48 @@
     "vram_gb": 0.12,
     "release_year": 2009
   },
+  "US15 Embedded Media and Controller": {
+    "tier": "D",
+    "benchmark_score": 7,
+    "manufacturer": "Intel",
+    "release_year": 2015
+  },
   "8500 Family": {
     "tier": "D",
     "benchmark_score": 7,
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "64MB DDR GeForce3 Ti 200": {
+  "GeForce4 Ti 4400": {
     "tier": "D",
-    "benchmark_score": 6,
+    "benchmark_score": 7,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.12,
+    "release_year": 2009
+  },
+  "GeForce4 MX Integrated GPU": {
+    "tier": "D",
+    "benchmark_score": 7,
     "manufacturer": "NVIDIA",
     "release_year": 2009
+  },
+  "FX 5200LE": {
+    "tier": "D",
+    "benchmark_score": 7,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "Famille de jeu de puces Express Intel 946GZ": {
+    "tier": "D",
+    "benchmark_score": 7,
+    "manufacturer": "Intel",
+    "release_year": 2016
+  },
+  "Media Accelerator 600": {
+    "tier": "D",
+    "benchmark_score": 7,
+    "manufacturer": "Intel",
+    "release_year": 2011
   },
   "ALL IN WONDER RADEON 8500DV": {
     "tier": "D",
@@ -14032,10 +13409,103 @@
     "manufacturer": "AMD",
     "release_year": 2010
   },
+  "Mobile Intel 945GM Express": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "Intel",
+    "release_year": 2011
+  },
+  "VIA/S3G UniChromeII": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "V9560XT V62.11": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "Unknown",
+    "release_year": 2016
+  },
+  "IGP 350M": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "Quadro NVS 55/280 PCI": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "MOBILITY RADEON 9000/9100 IGP": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "MOBILITY RADEON 7000 IGP": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "Matrox Parhelia APVe": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "9100 Family": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "GeForce4 Ti 4800": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.12,
+    "release_year": 2009
+  },
   "PCX 5300": {
     "tier": "D",
     "benchmark_score": 6,
     "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "GeForce4 Ti 4200": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.12,
+    "release_year": 2009
+  },
+  "Quadro 280 NVS PCIe": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "82915G Express": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "Intel",
+    "release_year": 2010
+  },
+  "64MB DDR GeForce3 Ti 200": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "GeForce4 Ti 4600": {
+    "tier": "D",
+    "benchmark_score": 6,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.12,
     "release_year": 2009
   },
   "GeForce2 Ultra": {
@@ -14057,129 +13527,10 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "GeForce4 Ti 4200": {
+  "82865G Controller": {
     "tier": "D",
-    "benchmark_score": 6,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.12,
-    "release_year": 2009
-  },
-  "GeForce4 Ti 4600": {
-    "tier": "D",
-    "benchmark_score": 6,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.12,
-    "release_year": 2009
-  },
-  "GeForce4 Ti 4800": {
-    "tier": "D",
-    "benchmark_score": 6,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.12,
-    "release_year": 2009
-  },
-  "82915G Express": {
-    "tier": "D",
-    "benchmark_score": 6,
+    "benchmark_score": 5,
     "manufacturer": "Intel",
-    "release_year": 2010
-  },
-  "Matrox Parhelia APVe": {
-    "tier": "D",
-    "benchmark_score": 6,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "Mobile Intel 945GM Express": {
-    "tier": "D",
-    "benchmark_score": 6,
-    "manufacturer": "Intel",
-    "release_year": 2011
-  },
-  "MOBILITY RADEON 7000 IGP": {
-    "tier": "D",
-    "benchmark_score": 6,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
-  "MOBILITY RADEON 9000/9100 IGP": {
-    "tier": "D",
-    "benchmark_score": 6,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
-  "Quadro 280 NVS PCIe": {
-    "tier": "D",
-    "benchmark_score": 6,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "Quadro NVS 55/280 PCI": {
-    "tier": "D",
-    "benchmark_score": 6,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "9100 Family": {
-    "tier": "D",
-    "benchmark_score": 6,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
-  "IGP 350M": {
-    "tier": "D",
-    "benchmark_score": 6,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
-  "V9560XT V62.11": {
-    "tier": "D",
-    "benchmark_score": 6,
-    "manufacturer": "Unknown",
-    "release_year": 2016
-  },
-  "VIA/S3G UniChromeII": {
-    "tier": "D",
-    "benchmark_score": 6,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "ALL IN WONDER 9000": {
-    "tier": "D",
-    "benchmark_score": 5,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "ASUS AGP V3800PRO v31.40H": {
-    "tier": "D",
-    "benchmark_score": 5,
-    "manufacturer": "Unknown",
-    "release_year": 2013
-  },
-  "256": {
-    "tier": "D",
-    "benchmark_score": 5,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.03,
-    "release_year": 2009
-  },
-  "GeForce2 MX with DVI D and TV out": {
-    "tier": "D",
-    "benchmark_score": 5,
-    "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "GeForce2 Ti": {
-    "tier": "D",
-    "benchmark_score": 5,
-    "manufacturer": "NVIDIA",
-    "vram_gb": 0.06,
-    "release_year": 2009
-  },
-  "GeForce3": {
-    "tier": "D",
-    "benchmark_score": 5,
-    "manufacturer": "NVIDIA",
     "release_year": 2009
   },
   "GeForce4 420 Go 32M": {
@@ -14188,13 +13539,13 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "GeForce4 440": {
+  "GeForce4 MX 440 with AGP8X": {
     "tier": "D",
     "benchmark_score": 5,
     "manufacturer": "NVIDIA",
-    "release_year": 2015
+    "release_year": 2009
   },
-  "GeForce4 MX 4000": {
+  "GeForce4 MX 440": {
     "tier": "D",
     "benchmark_score": 5,
     "manufacturer": "NVIDIA",
@@ -14207,28 +13558,28 @@
     "vram_gb": 0.06,
     "release_year": 2009
   },
-  "GeForce4 MX 440": {
+  "GeForce4 MX 4000": {
     "tier": "D",
     "benchmark_score": 5,
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "GeForce4 MX 440 with AGP8X": {
+  "GeForce4 440": {
+    "tier": "D",
+    "benchmark_score": 5,
+    "manufacturer": "NVIDIA",
+    "release_year": 2015
+  },
+  "GeForce2 MX with DVI D and TV out": {
     "tier": "D",
     "benchmark_score": 5,
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "GeForce4 MX 440SE": {
+  "GeForce3": {
     "tier": "D",
     "benchmark_score": 5,
     "manufacturer": "NVIDIA",
-    "release_year": 2009
-  },
-  "82865G Controller": {
-    "tier": "D",
-    "benchmark_score": 5,
-    "manufacturer": "Intel",
     "release_year": 2009
   },
   "915G/915GV/910GL Embedded Controller Functio": {
@@ -14237,19 +13588,45 @@
     "manufacturer": "Intel",
     "release_year": 2016
   },
-  "945G Embedded Chipset Function 0": {
+  "GeForce2 Ti": {
     "tier": "D",
     "benchmark_score": 5,
-    "manufacturer": "Intel",
-    "release_year": 2016
-  },
-  "Q33 Express": {
-    "tier": "D",
-    "benchmark_score": 5,
-    "manufacturer": "Intel",
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.06,
     "release_year": 2009
   },
-  "Matrox Millennium P650 PCIe 128": {
+  "GeForce4 MX 440SE": {
+    "tier": "D",
+    "benchmark_score": 5,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "256": {
+    "tier": "D",
+    "benchmark_score": 5,
+    "manufacturer": "NVIDIA",
+    "vram_gb": 0.03,
+    "release_year": 2009
+  },
+  "WinFast A250 LE": {
+    "tier": "D",
+    "benchmark_score": 5,
+    "manufacturer": "Unknown",
+    "release_year": 2014
+  },
+  "ASUS AGP V3800PRO v31.40H": {
+    "tier": "D",
+    "benchmark_score": 5,
+    "manufacturer": "Unknown",
+    "release_year": 2013
+  },
+  "MOBILITY FIREGL 7800": {
+    "tier": "D",
+    "benchmark_score": 5,
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "ALL IN WONDER 9000": {
     "tier": "D",
     "benchmark_score": 5,
     "manufacturer": "Unknown",
@@ -14261,17 +13638,47 @@
     "manufacturer": "Intel",
     "release_year": 2011
   },
-  "MOBILITY FIREGL 7800": {
+  "9000": {
+    "tier": "D",
+    "benchmark_score": 5,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "XGI Volari Family v1.13.23.D V": {
     "tier": "D",
     "benchmark_score": 5,
     "manufacturer": "Unknown",
     "release_year": 2009
   },
-  "Quadro2 MXR/EX": {
+  "VIA/S3G UniChrome Pro IGP": {
     "tier": "D",
     "benchmark_score": 5,
-    "manufacturer": "NVIDIA",
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "SAPPHIRE RADEON 9000 ATLANTIS PRO": {
+    "tier": "D",
+    "benchmark_score": 5,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "9100 IGP": {
+    "tier": "D",
+    "benchmark_score": 5,
+    "manufacturer": "AMD",
     "release_year": 2010
+  },
+  "7500 Family": {
+    "tier": "D",
+    "benchmark_score": 5,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "Xabre": {
+    "tier": "D",
+    "benchmark_score": 5,
+    "manufacturer": "Unknown",
+    "release_year": 2012
   },
   "Quadro4 900 XGL": {
     "tier": "D",
@@ -14287,65 +13694,113 @@
     "vram_gb": 0.12,
     "release_year": 2009
   },
-  "7500 Family": {
+  "Matrox Millennium P650 PCIe 128": {
     "tier": "D",
     "benchmark_score": 5,
-    "manufacturer": "AMD",
+    "manufacturer": "Unknown",
     "release_year": 2009
   },
-  "9000": {
+  "Q33 Express": {
     "tier": "D",
     "benchmark_score": 5,
-    "manufacturer": "AMD",
+    "manufacturer": "Intel",
     "release_year": 2009
   },
-  "9100 IGP": {
+  "945G Embedded Chipset Function 0": {
     "tier": "D",
     "benchmark_score": 5,
+    "manufacturer": "Intel",
+    "release_year": 2016
+  },
+  "Quadro2 MXR/EX": {
+    "tier": "D",
+    "benchmark_score": 5,
+    "manufacturer": "NVIDIA",
+    "release_year": 2010
+  },
+  "7000 / RADEON VE Family": {
+    "tier": "D",
+    "benchmark_score": 4,
     "manufacturer": "AMD",
     "release_year": 2010
   },
-  "SAPPHIRE RADEON 9000 ATLANTIS PRO": {
+  "9000 Family": {
     "tier": "D",
-    "benchmark_score": 5,
+    "benchmark_score": 4,
+    "manufacturer": "AMD",
+    "release_year": 2010
+  },
+  "VIA Chrome9 HC IGP Family WDDM": {
+    "tier": "D",
+    "benchmark_score": 4,
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "IGP 320M": {
+    "tier": "D",
+    "benchmark_score": 4,
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "VIA/S3G UniChrome Pro IGP": {
+  "MOBILITY RADEON 7500": {
     "tier": "D",
-    "benchmark_score": 5,
+    "benchmark_score": 4,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "GeForce2 MX/MX 400": {
+    "tier": "D",
+    "benchmark_score": 4,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "MOBILITY/RADEON 9000": {
+    "tier": "D",
+    "benchmark_score": 4,
+    "manufacturer": "AMD",
+    "release_year": 2011
+  },
+  "IGP 320": {
+    "tier": "D",
+    "benchmark_score": 4,
+    "manufacturer": "AMD",
+    "release_year": 2013
+  },
+  "RIVA TNT2 Model 64/Model 64 Pro": {
+    "tier": "D",
+    "benchmark_score": 4,
     "manufacturer": "Unknown",
     "release_year": 2009
   },
-  "WinFast A250 LE": {
+  "VIA Chrome9 HC IGP": {
     "tier": "D",
-    "benchmark_score": 5,
+    "benchmark_score": 4,
     "manufacturer": "Unknown",
-    "release_year": 2014
+    "release_year": 2009
   },
-  "Xabre": {
+  "VIA Chrome9 HC IGP Family": {
     "tier": "D",
-    "benchmark_score": 5,
+    "benchmark_score": 4,
     "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "865 Embedded Controller": {
+    "tier": "D",
+    "benchmark_score": 4,
+    "manufacturer": "Intel",
+    "release_year": 2010
+  },
+  "VIA/S3G KM400/KN400": {
+    "tier": "D",
+    "benchmark_score": 4,
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "GeForce2 GTS/GeForce2 Pro": {
+    "tier": "D",
+    "benchmark_score": 4,
+    "manufacturer": "NVIDIA",
     "release_year": 2012
-  },
-  "XGI Volari Family v1.13.23.D V": {
-    "tier": "D",
-    "benchmark_score": 5,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "ABIT Siluro T400": {
-    "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "Unknown",
-    "release_year": 2015
-  },
-  "Dell 8200": {
-    "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "Unknown",
-    "release_year": 2009
   },
   "6200A": {
     "tier": "D",
@@ -14359,19 +13814,37 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "GeForce2 GTS/GeForce2 Pro": {
+  "82915G/915GV/910GL": {
     "tier": "D",
     "benchmark_score": 4,
-    "manufacturer": "NVIDIA",
-    "release_year": 2012
+    "manufacturer": "Intel",
+    "release_year": 2020
   },
-  "GeForce2 Integrated GPU": {
+  "VIA/S3G UniChrome IGP": {
     "tier": "D",
     "benchmark_score": 4,
-    "manufacturer": "NVIDIA",
+    "manufacturer": "Unknown",
     "release_year": 2009
   },
-  "GeForce2 MX/MX 400": {
+  "ABIT Siluro T400": {
+    "tier": "D",
+    "benchmark_score": 4,
+    "manufacturer": "Unknown",
+    "release_year": 2015
+  },
+  "915G,910G Express": {
+    "tier": "D",
+    "benchmark_score": 4,
+    "manufacturer": "Intel",
+    "release_year": 2015
+  },
+  "Dell 8200": {
+    "tier": "D",
+    "benchmark_score": 4,
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "GeForce2 Integrated GPU": {
     "tier": "D",
     "benchmark_score": 4,
     "manufacturer": "NVIDIA",
@@ -14402,93 +13875,27 @@
     "vram_gb": 0.12,
     "release_year": 2009
   },
-  "82915G/915GV/910GL": {
+  "GeForce2 MX 100/200": {
     "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "Intel",
-    "release_year": 2020
-  },
-  "865 Embedded Controller": {
-    "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "Intel",
-    "release_year": 2010
-  },
-  "915G,910G Express": {
-    "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "Intel",
-    "release_year": 2015
-  },
-  "MOBILITY RADEON 7500": {
-    "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "AMD",
+    "benchmark_score": 3,
+    "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "MOBILITY/RADEON 9000": {
+  "GeForce2 MX": {
     "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "AMD",
+    "benchmark_score": 3,
+    "manufacturer": "NVIDIA",
     "release_year": 2011
   },
-  "7000 / RADEON VE Family": {
+  "AMIGAMERLIN 3.1 R1 For Voodoo 4 4500 PCI": {
     "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "AMD",
-    "release_year": 2010
-  },
-  "9000 Family": {
-    "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "AMD",
-    "release_year": 2010
-  },
-  "IGP 320": {
-    "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "AMD",
-    "release_year": 2013
-  },
-  "IGP 320M": {
-    "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
-  "RIVA TNT2 Model 64/Model 64 Pro": {
-    "tier": "D",
-    "benchmark_score": 4,
+    "benchmark_score": 3,
     "manufacturer": "Unknown",
-    "release_year": 2009
+    "release_year": 2019
   },
-  "VIA Chrome9 HC IGP": {
+  "Vanta/Vanta LT": {
     "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "VIA Chrome9 HC IGP Family": {
-    "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "VIA Chrome9 HC IGP Family WDDM": {
-    "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "VIA/S3G KM400/KN400": {
-    "tier": "D",
-    "benchmark_score": 4,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "VIA/S3G UniChrome IGP": {
-    "tier": "D",
-    "benchmark_score": 4,
+    "benchmark_score": 3,
     "manufacturer": "Unknown",
     "release_year": 2009
   },
@@ -14498,22 +13905,10 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "AMIGAMERLIN 3.1 R1 For Voodoo 4 4500 PCI": {
+  "VIA Chrome9 HC IGP WDDM": {
     "tier": "D",
     "benchmark_score": 3,
     "manufacturer": "Unknown",
-    "release_year": 2019
-  },
-  "GeForce2 MX": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "NVIDIA",
-    "release_year": 2011
-  },
-  "GeForce2 MX 100/200": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "NVIDIA",
     "release_year": 2009
   },
   "GeForce3 Ti 500": {
@@ -14522,10 +13917,47 @@
     "manufacturer": "NVIDIA",
     "release_year": 2009
   },
-  "GeForce4 420 Go": {
+  "RIVA TNT2/TNT2 Pro": {
     "tier": "D",
     "benchmark_score": 3,
-    "manufacturer": "NVIDIA",
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "7200": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "AMD",
+    "release_year": 2011
+  },
+  "VIA Chrome9 HC IGP WDDM 1.1": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "VIA Chrome9 HC3 IGP": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "VIA/S3G DeltaChrome IGP": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "S3 Inc. Savage4": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "Unknown",
+    "release_year": 2011
+  },
+  "9250": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "AMD",
+    "vram_gb": 0.12,
     "release_year": 2009
   },
   "82845G/GL Controller": {
@@ -14534,17 +13966,71 @@
     "manufacturer": "Intel",
     "release_year": 2009
   },
-  "82845G/GL/GE/PE/GV Controller": {
+  "IGP 345M": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "GeForce4 420 Go": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "NVIDIA",
+    "release_year": 2009
+  },
+  "IGP 340M": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "7500": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "AMD",
+    "release_year": 2012
+  },
+  "MOBILITY RADEON 9000": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "9200 PRO Family": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "AMD",
+    "release_year": 2011
+  },
+  "9200 LE Family": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "AMD",
+    "release_year": 2010
+  },
+  "Rage Fury Pro/Xpert 2000 Pro": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "7000 / Radeon VE": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "AMD",
+    "release_year": 2009
+  },
+  "GMA 3150 Express": {
     "tier": "D",
     "benchmark_score": 3,
     "manufacturer": "Intel",
     "release_year": 2009
   },
-  "82915G/GV/910GL Advanced v3.5": {
+  "MOBILITY RADEON 9200": {
     "tier": "D",
     "benchmark_score": 3,
-    "manufacturer": "Intel",
-    "release_year": 2010
+    "manufacturer": "AMD",
+    "release_year": 2011
   },
   "82915G/GV/910GL Express": {
     "tier": "D",
@@ -14552,19 +14038,13 @@
     "manufacturer": "Intel",
     "release_year": 2010
   },
-  "946GZ Embedded Chipset Function 0": {
+  "82915G/GV/910GL Advanced v3.5": {
     "tier": "D",
     "benchmark_score": 3,
     "manufacturer": "Intel",
-    "release_year": 2017
+    "release_year": 2010
   },
   "946GZ Express": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "Intel",
-    "release_year": 2009
-  },
-  "GMA 3150 Express": {
     "tier": "D",
     "benchmark_score": 3,
     "manufacturer": "Intel",
@@ -14588,11 +14068,11 @@
     "manufacturer": "Unknown",
     "release_year": 2009
   },
-  "MOBILITY RADEON 9000": {
+  "9200 SE": {
     "tier": "D",
     "benchmark_score": 3,
     "manufacturer": "AMD",
-    "release_year": 2009
+    "release_year": 2010
   },
   "MOBILITY RADEON 9100 IGP": {
     "tier": "D",
@@ -14600,114 +14080,23 @@
     "manufacturer": "AMD",
     "release_year": 2009
   },
-  "MOBILITY RADEON 9200": {
+  "946GZ Embedded Chipset Function 0": {
     "tier": "D",
     "benchmark_score": 3,
-    "manufacturer": "AMD",
+    "manufacturer": "Intel",
+    "release_year": 2017
+  },
+  "82845G/GL/GE/PE/GV Controller": {
+    "tier": "D",
+    "benchmark_score": 3,
+    "manufacturer": "Intel",
+    "release_year": 2009
+  },
+  "Mobile Intel 945 Express": {
+    "tier": "D",
+    "benchmark_score": 2,
+    "manufacturer": "Intel",
     "release_year": 2011
-  },
-  "7000 / Radeon VE": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
-  "7200": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "AMD",
-    "release_year": 2011
-  },
-  "7500": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "AMD",
-    "release_year": 2012
-  },
-  "9200 LE Family": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "AMD",
-    "release_year": 2010
-  },
-  "9200 PRO Family": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "AMD",
-    "release_year": 2011
-  },
-  "9200 SE": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "AMD",
-    "release_year": 2010
-  },
-  "9250": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "AMD",
-    "vram_gb": 0.12,
-    "release_year": 2009
-  },
-  "IGP 340M": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
-  "IGP 345M": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "AMD",
-    "release_year": 2009
-  },
-  "Rage Fury Pro/Xpert 2000 Pro": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "RIVA TNT2/TNT2 Pro": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "S3 Inc. Savage4": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "Unknown",
-    "release_year": 2011
-  },
-  "Vanta/Vanta LT": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "VIA Chrome9 HC IGP WDDM": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "VIA Chrome9 HC IGP WDDM 1.1": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "VIA Chrome9 HC3 IGP": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "Unknown",
-    "release_year": 2009
-  },
-  "VIA/S3G DeltaChrome IGP": {
-    "tier": "D",
-    "benchmark_score": 3,
-    "manufacturer": "Unknown",
-    "release_year": 2009
   },
   "Dell 8100": {
     "tier": "D",
@@ -14733,16 +14122,10 @@
     "manufacturer": "Intel",
     "release_year": 2012
   },
-  "Mobile Intel 945 Express": {
+  "S3 SuperSavage/IXC 1014": {
     "tier": "D",
     "benchmark_score": 2,
-    "manufacturer": "Intel",
-    "release_year": 2011
-  },
-  "Quadro NVS 280 SD": {
-    "tier": "D",
-    "benchmark_score": 2,
-    "manufacturer": "NVIDIA",
+    "manufacturer": "Unknown",
     "release_year": 2009
   },
   "IGP 34xM": {
@@ -14750,12 +14133,6 @@
     "benchmark_score": 2,
     "manufacturer": "AMD",
     "release_year": 2010
-  },
-  "S3 SuperSavage/IXC 1014": {
-    "tier": "D",
-    "benchmark_score": 2,
-    "manufacturer": "Unknown",
-    "release_year": 2009
   },
   "VIA Chrome9 HC IGP Prerelease WDDM 1.1": {
     "tier": "D",
@@ -14767,6 +14144,12 @@
     "tier": "D",
     "benchmark_score": 2,
     "manufacturer": "Unknown",
+    "release_year": 2009
+  },
+  "Quadro NVS 280 SD": {
+    "tier": "D",
+    "benchmark_score": 2,
+    "manufacturer": "NVIDIA",
     "release_year": 2009
   },
   "VisionTek Radeon 7000": {

@@ -1,12 +1,144 @@
 {
   "S": [
     {
+      "gpu_name": "RTX 5090",
+      "benchmark_score": 64000
+    },
+    {
+      "gpu_name": "RTX 6000 Ada",
+      "benchmark_score": 52000
+    },
+    {
+      "gpu_name": "RTX 5080",
+      "benchmark_score": 52000
+    },
+    {
+      "gpu_name": "RTX A6000 Ada",
+      "benchmark_score": 49500
+    },
+    {
+      "gpu_name": "RTX 5070 Ti",
+      "benchmark_score": 46000
+    },
+    {
+      "gpu_name": "RTX A5000 Ada",
+      "benchmark_score": 42000
+    },
+    {
+      "gpu_name": "PRO W7900",
+      "benchmark_score": 41000
+    },
+    {
+      "gpu_name": "RTX 5070",
+      "benchmark_score": 40000
+    },
+    {
+      "gpu_name": "RTX 4090",
+      "benchmark_score": 39819
+    },
+    {
+      "gpu_name": "RTX 5000 Ada",
+      "benchmark_score": 39800
+    },
+    {
+      "gpu_name": "RTX 5090 Laptop GPU",
+      "benchmark_score": 39000
+    },
+    {
+      "gpu_name": "RTX 4090 D",
+      "benchmark_score": 38500
+    },
+    {
+      "gpu_name": "RX 9070 XT",
+      "benchmark_score": 37800
+    },
+    {
+      "gpu_name": "RX 7900 XTX",
+      "benchmark_score": 37600
+    },
+    {
+      "gpu_name": "RTX 4080 SUPER",
+      "benchmark_score": 37500
+    },
+    {
+      "gpu_name": "RTX 4080",
+      "benchmark_score": 35817
+    },
+    {
+      "gpu_name": "RX 7900 XT",
+      "benchmark_score": 34500
+    },
+    {
+      "gpu_name": "PRO W7800",
+      "benchmark_score": 34000
+    },
+    {
+      "gpu_name": "RTX 4070 Ti SUPER",
+      "benchmark_score": 33845
+    },
+    {
+      "gpu_name": "RX 9070",
+      "benchmark_score": 33500
+    },
+    {
+      "gpu_name": "RTX 5080 Laptop GPU",
+      "benchmark_score": 32000
+    },
+    {
+      "gpu_name": "RX 7900 GRE",
+      "benchmark_score": 31700
+    },
+    {
+      "gpu_name": "RTX 4070 Ti",
+      "benchmark_score": 31600
+    },
+    {
+      "gpu_name": "RTX 4500 Ada",
+      "benchmark_score": 31000
+    },
+    {
+      "gpu_name": "RTX A4000 Ada",
+      "benchmark_score": 30500
+    },
+    {
+      "gpu_name": "RTX 4070 SUPER",
+      "benchmark_score": 30400
+    },
+    {
+      "gpu_name": "RTX 5060 Ti",
+      "benchmark_score": 30000
+    },
+    {
       "gpu_name": "RTX 3090 Ti",
       "benchmark_score": 29094
     },
     {
+      "gpu_name": "RTX 5070 Ti Laptop GPU",
+      "benchmark_score": 28000
+    },
+    {
+      "gpu_name": "RTX 4070",
+      "benchmark_score": 27600
+    },
+    {
+      "gpu_name": "PRO W7700",
+      "benchmark_score": 27500
+    },
+    {
+      "gpu_name": "RTX 4000 Ada",
+      "benchmark_score": 27500
+    },
+    {
       "gpu_name": "RTX 3080 Ti",
       "benchmark_score": 26887
+    },
+    {
+      "gpu_name": "RX 7800 XT",
+      "benchmark_score": 26700
+    },
+    {
+      "gpu_name": "RTX 4090 Laptop GPU",
+      "benchmark_score": 26500
     },
     {
       "gpu_name": "RTX 3090",
@@ -17,8 +149,24 @@
       "benchmark_score": 25458
     },
     {
+      "gpu_name": "RTX 4060 Ti 16GB",
+      "benchmark_score": 25300
+    },
+    {
       "gpu_name": "RTX 3080",
       "benchmark_score": 24853
+    },
+    {
+      "gpu_name": "RTX 4060 Ti",
+      "benchmark_score": 24600
+    },
+    {
+      "gpu_name": "RTX 5070 Laptop GPU",
+      "benchmark_score": 24000
+    },
+    {
+      "gpu_name": "RX 7700 XT",
+      "benchmark_score": 23600
     },
     {
       "gpu_name": "RTX 3070 Ti",
@@ -29,8 +177,20 @@
       "benchmark_score": 23364
     },
     {
+      "gpu_name": "RTX 4080 Laptop GPU",
+      "benchmark_score": 23200
+    },
+    {
+      "gpu_name": "RX 9060 XT",
+      "benchmark_score": 23000
+    },
+    {
       "gpu_name": "RTX A5000",
       "benchmark_score": 22867
+    },
+    {
+      "gpu_name": "RX 7900M",
+      "benchmark_score": 22400
     },
     {
       "gpu_name": "RTX A6000",
@@ -41,6 +201,14 @@
       "benchmark_score": 22093
     },
     {
+      "gpu_name": "RTX 5060",
+      "benchmark_score": 22000
+    },
+    {
+      "gpu_name": "RX 7700",
+      "benchmark_score": 21800
+    },
+    {
       "gpu_name": "RTX 2080 Ti",
       "benchmark_score": 21796
     },
@@ -49,8 +217,20 @@
       "benchmark_score": 21546
     },
     {
+      "gpu_name": "PRO W7600",
+      "benchmark_score": 21500
+    },
+    {
+      "gpu_name": "RTX 4070 Ti Laptop GPU",
+      "benchmark_score": 20800
+    },
+    {
       "gpu_name": "RX 6800",
       "benchmark_score": 20667
+    },
+    {
+      "gpu_name": "RTX 4060",
+      "benchmark_score": 20300
     },
     {
       "gpu_name": "RTX 3060 Ti",
@@ -59,6 +239,14 @@
     {
       "gpu_name": "TITAN RTX",
       "benchmark_score": 20169
+    },
+    {
+      "gpu_name": "Arc B580",
+      "benchmark_score": 20100
+    },
+    {
+      "gpu_name": "RX 7600 XT",
+      "benchmark_score": 19700
     },
     {
       "gpu_name": "Quadro RTX 6000",
@@ -77,8 +265,20 @@
       "benchmark_score": 19507
     },
     {
+      "gpu_name": "RTX A2000 Ada",
+      "benchmark_score": 19500
+    },
+    {
+      "gpu_name": "Arc A770",
+      "benchmark_score": 19300
+    },
+    {
       "gpu_name": "Quadro RTX 8000",
       "benchmark_score": 19126
+    },
+    {
+      "gpu_name": "RX 9060",
+      "benchmark_score": 19000
     },
     {
       "gpu_name": "RX 6700 XT",
@@ -87,6 +287,10 @@
     {
       "gpu_name": "RTX A4000",
       "benchmark_score": 18988
+    },
+    {
+      "gpu_name": "RTX 4070 Laptop GPU",
+      "benchmark_score": 18900
     },
     {
       "gpu_name": "TITAN V",
@@ -105,6 +309,10 @@
       "benchmark_score": 18721
     },
     {
+      "gpu_name": "RX 7800M",
+      "benchmark_score": 18600
+    },
+    {
       "gpu_name": "RTX 3070 Ti Laptop GPU",
       "benchmark_score": 18490
     },
@@ -117,8 +325,20 @@
       "benchmark_score": 18168
     },
     {
+      "gpu_name": "RX 7600",
+      "benchmark_score": 17900
+    },
+    {
       "gpu_name": "Quadro GV100",
       "benchmark_score": 17675
+    },
+    {
+      "gpu_name": "Arc A750",
+      "benchmark_score": 17100
+    },
+    {
+      "gpu_name": "RTX 5060 Laptop GPU",
+      "benchmark_score": 17000
     },
     {
       "gpu_name": "TITAN V CEO Edition",
@@ -135,6 +355,14 @@
     {
       "gpu_name": "Pro VII",
       "benchmark_score": 16853
+    },
+    {
+      "gpu_name": "Arc B580M",
+      "benchmark_score": 16800
+    },
+    {
+      "gpu_name": "RX 7700S",
+      "benchmark_score": 16800
     },
     {
       "gpu_name": "VII",
@@ -173,6 +401,14 @@
       "benchmark_score": 16203
     },
     {
+      "gpu_name": "Arc B570",
+      "benchmark_score": 16200
+    },
+    {
+      "gpu_name": "RTX 4050",
+      "benchmark_score": 16100
+    },
+    {
       "gpu_name": "RTX 2070",
       "benchmark_score": 16079
     },
@@ -187,6 +423,10 @@
     {
       "gpu_name": "Quadro P6000",
       "benchmark_score": 15811
+    },
+    {
+      "gpu_name": "RTX 4060 Laptop GPU",
+      "benchmark_score": 15800
     },
     {
       "gpu_name": "Quadro RTX 4000",
@@ -209,8 +449,20 @@
       "benchmark_score": 15085
     },
     {
+      "gpu_name": "RX 7600M XT",
+      "benchmark_score": 15000
+    },
+    {
+      "gpu_name": "PRO W7500",
+      "benchmark_score": 15000
+    },
+    {
       "gpu_name": "Quadro RTX 5000 (Mobile)",
       "benchmark_score": 14832
+    },
+    {
+      "gpu_name": "Arc A580",
+      "benchmark_score": 14800
     },
     {
       "gpu_name": "Pro Vega II",
@@ -233,12 +485,20 @@
       "benchmark_score": 14500
     },
     {
+      "gpu_name": "RX 7500 XT",
+      "benchmark_score": 14500
+    },
+    {
       "gpu_name": "RTX 2070 Super with Max Q Design",
       "benchmark_score": 14261
     },
     {
       "gpu_name": "PRO W6600",
       "benchmark_score": 14212
+    },
+    {
+      "gpu_name": "Arc A730M",
+      "benchmark_score": 14200
     },
     {
       "gpu_name": "Pro WX 8200",
@@ -309,6 +569,10 @@
       "benchmark_score": 13241
     },
     {
+      "gpu_name": "RX 7600S",
+      "benchmark_score": 13200
+    },
+    {
       "gpu_name": "GTX TITAN X",
       "benchmark_score": 13173
     },
@@ -323,6 +587,10 @@
     {
       "gpu_name": "Pro V520 MxGPU",
       "benchmark_score": 12853
+    },
+    {
+      "gpu_name": "RX 7600M",
+      "benchmark_score": 12800
     },
     {
       "gpu_name": "GTX 1660 SUPER",
@@ -343,6 +611,10 @@
     {
       "gpu_name": "Pro Vega 64",
       "benchmark_score": 12402
+    },
+    {
+      "gpu_name": "RTX 4050 Laptop GPU",
+      "benchmark_score": 12400
     },
     {
       "gpu_name": "Pro Vega 56",
@@ -423,6 +695,10 @@
     {
       "gpu_name": "GTX 980",
       "benchmark_score": 11237
+    },
+    {
+      "gpu_name": "Arc A550M",
+      "benchmark_score": 11200
     },
     {
       "gpu_name": "Quadro RTX 3000",
@@ -509,6 +785,10 @@
       "benchmark_score": 9665
     },
     {
+      "gpu_name": "Arc A530M",
+      "benchmark_score": 9600
+    },
+    {
       "gpu_name": "R9 Fury",
       "benchmark_score": 9551
     },
@@ -519,10 +799,6 @@
     {
       "gpu_name": "Quadro P2200",
       "benchmark_score": 9486
-    },
-    {
-      "gpu_name": "Ryzen 9 4900HSS",
-      "benchmark_score": 9461
     },
     {
       "gpu_name": "RTX 3050 Ti Laptop GPU",
@@ -585,17 +861,15 @@
       "benchmark_score": 8907
     },
     {
-      "gpu_name": "Ryzen 7 4800HS",
-      "benchmark_score": 8842
-    },
-    {
       "gpu_name": "RX 5500",
       "benchmark_score": 8817
     },
     {
       "gpu_name": "R9 290X",
       "benchmark_score": 8794
-    },
+    }
+  ],
+  "A": [
     {
       "gpu_name": "Quadro RTX 3000 with Max Q Design",
       "benchmark_score": 8754
@@ -603,6 +877,10 @@
     {
       "gpu_name": "GTX 1060 5GB",
       "benchmark_score": 8704
+    },
+    {
+      "gpu_name": "Arc A380",
+      "benchmark_score": 8700
     },
     {
       "gpu_name": "RX 480",
@@ -625,16 +903,8 @@
       "benchmark_score": 8619
     },
     {
-      "gpu_name": "Ryzen 9 4900HS",
-      "benchmark_score": 8572
-    },
-    {
       "gpu_name": "GTX Titan",
       "benchmark_score": 8556
-    },
-    {
-      "gpu_name": "Ryzen 9 5900HS",
-      "benchmark_score": 8428
     },
     {
       "gpu_name": "R9 290",
@@ -655,6 +925,10 @@
     {
       "gpu_name": "15FF",
       "benchmark_score": 8229
+    },
+    {
+      "gpu_name": "Arc A370M",
+      "benchmark_score": 8200
     },
     {
       "gpu_name": "GTX 1060 (Mobile)",
@@ -679,10 +953,6 @@
     {
       "gpu_name": "RTX 2050",
       "benchmark_score": 8007
-    },
-    {
-      "gpu_name": "Ryzen 5 4600HS",
-      "benchmark_score": 7942
     },
     {
       "gpu_name": "Quadro M5500",
@@ -753,10 +1023,6 @@
       "benchmark_score": 7490
     },
     {
-      "gpu_name": "Ryzen 7 5800HS with Radeon",
-      "benchmark_score": 7391
-    },
-    {
       "gpu_name": "FirePro W8100",
       "benchmark_score": 7327
     },
@@ -783,10 +1049,6 @@
     {
       "gpu_name": "Quadro P2000",
       "benchmark_score": 7096
-    },
-    {
-      "gpu_name": "Ryzen 7 4800HS with Radeon",
-      "benchmark_score": 6999
     },
     {
       "gpu_name": "GTX 1650 (Mobile)",
@@ -847,6 +1109,10 @@
     {
       "gpu_name": "T600",
       "benchmark_score": 6509
+    },
+    {
+      "gpu_name": "Arc A350M",
+      "benchmark_score": 6500
     },
     {
       "gpu_name": "GTX 1650 Ti with Max Q Design",
@@ -911,9 +1177,7 @@
     {
       "gpu_name": "Pro 5300M",
       "benchmark_score": 5840
-    }
-  ],
-  "A": [
+    },
     {
       "gpu_name": "A16",
       "benchmark_score": 5797
@@ -1003,10 +1267,6 @@
       "benchmark_score": 5206
     },
     {
-      "gpu_name": "Ryzen 7 4800H",
-      "benchmark_score": 5178
-    },
-    {
       "gpu_name": "FirePro W7100",
       "benchmark_score": 5175
     },
@@ -1023,20 +1283,16 @@
       "benchmark_score": 5117
     },
     {
-      "gpu_name": "GTX 1050",
+      "gpu_name": "MX550",
       "benchmark_score": 5090
     },
     {
-      "gpu_name": "MX550",
+      "gpu_name": "GTX 1050",
       "benchmark_score": 5090
     },
     {
       "gpu_name": "FirePro S9000",
       "benchmark_score": 5059
-    },
-    {
-      "gpu_name": "Ryzen 9 5900HS with Radeon",
-      "benchmark_score": 5049
     },
     {
       "gpu_name": "T550 Laptop GPU",
@@ -1243,11 +1499,11 @@
       "benchmark_score": 3877
     },
     {
-      "gpu_name": "GTX 880M",
+      "gpu_name": "HD 8970M",
       "benchmark_score": 3876
     },
     {
-      "gpu_name": "HD 8970M",
+      "gpu_name": "GTX 880M",
       "benchmark_score": 3876
     },
     {
@@ -1439,10 +1695,6 @@
       "benchmark_score": 3141
     },
     {
-      "gpu_name": "Ryzen 9 5900HX",
-      "benchmark_score": 3126
-    },
-    {
       "gpu_name": "Tesla C2075",
       "benchmark_score": 3118
     },
@@ -1507,10 +1759,6 @@
       "benchmark_score": 2987
     },
     {
-      "gpu_name": "Ryzen 9 5900HX with Radeon",
-      "benchmark_score": 2968
-    },
-    {
       "gpu_name": "FirePro W5100",
       "benchmark_score": 2957
     },
@@ -1525,10 +1773,6 @@
     {
       "gpu_name": "R7 260",
       "benchmark_score": 2892
-    },
-    {
-      "gpu_name": "Ryzen 7 PRO 4700G with Radeon",
-      "benchmark_score": 2880
     },
     {
       "gpu_name": "Quadro K1200",
@@ -1559,10 +1803,6 @@
       "benchmark_score": 2840
     },
     {
-      "gpu_name": "Ryzen 7 5800H with Radeon",
-      "benchmark_score": 2833
-    },
-    {
       "gpu_name": "Custom GPU 0405",
       "benchmark_score": 2832
     },
@@ -1579,32 +1819,12 @@
       "benchmark_score": 2782
     },
     {
-      "gpu_name": "Ryzen 7 5700G",
-      "benchmark_score": 2782
-    },
-    {
-      "gpu_name": "Ryzen 7 PRO 5750GE",
-      "benchmark_score": 2771
-    },
-    {
-      "gpu_name": "Ryzen 7 5800H",
-      "benchmark_score": 2759
-    },
-    {
       "gpu_name": "Quadro K4100M",
       "benchmark_score": 2756
     },
     {
-      "gpu_name": "Ryzen 9 5900H",
-      "benchmark_score": 2755
-    },
-    {
       "gpu_name": "Quadro K5000M",
       "benchmark_score": 2754
-    },
-    {
-      "gpu_name": "Ryzen 5 4600H",
-      "benchmark_score": 2747
     },
     {
       "gpu_name": "GRID K2",
@@ -1623,16 +1843,8 @@
       "benchmark_score": 2718
     },
     {
-      "gpu_name": "Ryzen 9 4900H with Radeon",
-      "benchmark_score": 2714
-    },
-    {
       "gpu_name": "GTX 560",
       "benchmark_score": 2711
-    },
-    {
-      "gpu_name": "Ryzen 7 5700G with Radeon",
-      "benchmark_score": 2709
     },
     {
       "gpu_name": "Barco MXRT 5500",
@@ -1643,28 +1855,12 @@
       "benchmark_score": 2700
     },
     {
-      "gpu_name": "Ryzen 5 5600H",
-      "benchmark_score": 2696
-    },
-    {
       "gpu_name": "Quadro 6000",
       "benchmark_score": 2689
     },
     {
-      "gpu_name": "Ryzen 9 4900H",
-      "benchmark_score": 2685
-    },
-    {
-      "gpu_name": "Ryzen 7 Pro 4750G with Radeon",
-      "benchmark_score": 2682
-    },
-    {
       "gpu_name": "GTX 465",
       "benchmark_score": 2681
-    },
-    {
-      "gpu_name": "Ryzen 7 5700GE with Radeon",
-      "benchmark_score": 2675
     },
     {
       "gpu_name": "FirePro M6100 FireGL V",
@@ -1691,44 +1887,16 @@
       "benchmark_score": 2615
     },
     {
-      "gpu_name": "Ryzen 7 PRO 5750GE with Radeon",
-      "benchmark_score": 2613
-    },
-    {
       "gpu_name": "UHD 770",
       "benchmark_score": 2611
-    },
-    {
-      "gpu_name": "Ryzen 7 PRO 4750G",
-      "benchmark_score": 2604
     },
     {
       "gpu_name": "GTX 950M",
       "benchmark_score": 2602
     },
     {
-      "gpu_name": "Ryzen 5 5600GE with Radeon",
-      "benchmark_score": 2602
-    },
-    {
-      "gpu_name": "Ryzen 5 5600G with Radeon",
-      "benchmark_score": 2595
-    },
-    {
-      "gpu_name": "Ryzen 7 PRO 5750G with Radeon",
-      "benchmark_score": 2591
-    },
-    {
-      "gpu_name": "Ryzen 7 4700G",
-      "benchmark_score": 2580
-    },
-    {
       "gpu_name": "GTX 850M",
       "benchmark_score": 2574
-    },
-    {
-      "gpu_name": "Ryzen 7 PRO 4750GE with Radeon",
-      "benchmark_score": 2550
     },
     {
       "gpu_name": "MX330",
@@ -1739,23 +1907,15 @@
       "benchmark_score": 2545
     },
     {
-      "gpu_name": "Ryzen 5 5600G",
-      "benchmark_score": 2545
+      "gpu_name": "UHD P630",
+      "benchmark_score": 2541
     },
     {
       "gpu_name": "GRID K240Q",
       "benchmark_score": 2541
     },
     {
-      "gpu_name": "UHD P630",
-      "benchmark_score": 2541
-    },
-    {
       "gpu_name": "HD 6850 X2",
-      "benchmark_score": 2534
-    },
-    {
-      "gpu_name": "Ryzen 9 5980HS with Radeon",
       "benchmark_score": 2534
     },
     {
@@ -1775,72 +1935,28 @@
       "benchmark_score": 2515
     },
     {
-      "gpu_name": "Ryzen 5 PRO 5650G with Radeon",
-      "benchmark_score": 2513
-    },
-    {
-      "gpu_name": "Ryzen 7 4700GE",
-      "benchmark_score": 2508
-    },
-    {
-      "gpu_name": "Ryzen 5 PRO 5650GE with Radeon",
-      "benchmark_score": 2506
-    },
-    {
-      "gpu_name": "Ryzen 7 4700GE with Radeon",
-      "benchmark_score": 2496
-    },
-    {
       "gpu_name": "GTX 950A",
       "benchmark_score": 2483
-    },
-    {
-      "gpu_name": "Ryzen 7 5800U with Radeon",
-      "benchmark_score": 2467
     },
     {
       "gpu_name": "Pro WX 3200",
       "benchmark_score": 2456
     },
     {
-      "gpu_name": "Ryzen 7 PRO 5850U with Radeon",
-      "benchmark_score": 2440
-    },
-    {
       "gpu_name": "FirePro 3D V8800",
       "benchmark_score": 2438
-    },
-    {
-      "gpu_name": "Ryzen 5 PRO 4650G",
-      "benchmark_score": 2418
     },
     {
       "gpu_name": "GTX 960A",
       "benchmark_score": 2411
     },
     {
-      "gpu_name": "P106 090",
-      "benchmark_score": 2402
-    },
-    {
       "gpu_name": "RX Vega 11 PRD",
       "benchmark_score": 2402
     },
     {
-      "gpu_name": "Ryzen 3 4300GE with Radeon",
+      "gpu_name": "P106 090",
       "benchmark_score": 2402
-    },
-    {
-      "gpu_name": "Ryzen 5 Pro 4650G with Radeon",
-      "benchmark_score": 2395
-    },
-    {
-      "gpu_name": "Ryzen 5 5600H with Radeon",
-      "benchmark_score": 2387
-    },
-    {
-      "gpu_name": "Ryzen 3 5300GE with Radeon",
-      "benchmark_score": 2386
     },
     {
       "gpu_name": "GTX 580M",
@@ -1851,76 +1967,28 @@
       "benchmark_score": 2370
     },
     {
-      "gpu_name": "Ryzen 5 PRO 5650GE",
-      "benchmark_score": 2363
-    },
-    {
       "gpu_name": "GTX 485M",
       "benchmark_score": 2360
-    },
-    {
-      "gpu_name": "Ryzen 7 4800U with Radeon",
-      "benchmark_score": 2344
-    },
-    {
-      "gpu_name": "Ryzen 3 PRO 5350G with Radeon",
-      "benchmark_score": 2341
-    },
-    {
-      "gpu_name": "Ryzen 3 PRO 5350GE with Radeon",
-      "benchmark_score": 2341
     },
     {
       "gpu_name": "GTX 675MX",
       "benchmark_score": 2338
     },
     {
-      "gpu_name": "Ryzen 7 PRO 5850U",
-      "benchmark_score": 2333
-    },
-    {
-      "gpu_name": "Ryzen 7 5800U",
-      "benchmark_score": 2321
+      "gpu_name": "MX150",
+      "benchmark_score": 2310
     },
     {
       "gpu_name": "FirePro V7900",
       "benchmark_score": 2310
     },
     {
-      "gpu_name": "MX150",
-      "benchmark_score": 2310
-    },
-    {
-      "gpu_name": "Ryzen 3 4300GE",
-      "benchmark_score": 2306
-    },
-    {
-      "gpu_name": "Ryzen 5 PRO 4400G with Radeon",
-      "benchmark_score": 2306
-    },
-    {
-      "gpu_name": "Ryzen 7 Microsoft Surface Edition",
-      "benchmark_score": 2298
-    },
-    {
       "gpu_name": "GTX 460",
-      "benchmark_score": 2289
-    },
-    {
-      "gpu_name": "Ryzen 7 5700U with Radeon",
       "benchmark_score": 2289
     },
     {
       "gpu_name": "R9 M470",
       "benchmark_score": 2288
-    },
-    {
-      "gpu_name": "Ryzen 7 4800U",
-      "benchmark_score": 2273
-    },
-    {
-      "gpu_name": "Pro Ryzen 7 PRO 5850U",
-      "benchmark_score": 2271
     },
     {
       "gpu_name": "HD 6970M",
@@ -1959,44 +2027,12 @@
       "benchmark_score": 2223
     },
     {
-      "gpu_name": "Ryzen 3 5300G with Radeon",
-      "benchmark_score": 2223
-    },
-    {
-      "gpu_name": "Ryzen 5 PRO 5650G",
-      "benchmark_score": 2212
-    },
-    {
       "gpu_name": "HD 7770",
       "benchmark_score": 2204
     },
     {
-      "gpu_name": "Ryzen 7 PRO 4750GE",
-      "benchmark_score": 2200
-    },
-    {
-      "gpu_name": "Ryzen 3 Pro 4350G with Radeon",
-      "benchmark_score": 2190
-    },
-    {
-      "gpu_name": "Ryzen 7 4700G with Radeon",
-      "benchmark_score": 2187
-    },
-    {
-      "gpu_name": "Ryzen 5 4600G",
-      "benchmark_score": 2186
-    },
-    {
       "gpu_name": "RadeonT R7 450",
       "benchmark_score": 2185
-    },
-    {
-      "gpu_name": "Ryzen 5 PRO 5650U with Radeon",
-      "benchmark_score": 2184
-    },
-    {
-      "gpu_name": "Ryzen 3 PRO 4350GE with Radeon",
-      "benchmark_score": 2181
     },
     {
       "gpu_name": "GTX 745",
@@ -2007,32 +2043,8 @@
       "benchmark_score": 2169
     },
     {
-      "gpu_name": "Ryzen 3 PRO 4350G",
-      "benchmark_score": 2162
-    },
-    {
-      "gpu_name": "Ryzen 5 5600U with Radeon",
-      "benchmark_score": 2160
-    },
-    {
-      "gpu_name": "Ryzen 7 Extreme Edition",
-      "benchmark_score": 2158
-    },
-    {
-      "gpu_name": "Ryzen 7 PRO 5750G",
-      "benchmark_score": 2154
-    },
-    {
       "gpu_name": "Ryzen Embedded V2718",
       "benchmark_score": 2149
-    },
-    {
-      "gpu_name": "Ryzen 5 PRO 5650U",
-      "benchmark_score": 2138
-    },
-    {
-      "gpu_name": "Ryzen 7 4850U Mobile",
-      "benchmark_score": 2138
     },
     {
       "gpu_name": "RX Vega 11",
@@ -2043,10 +2055,6 @@
       "benchmark_score": 2126
     },
     {
-      "gpu_name": "Ryzen 7 4800H with Radeon",
-      "benchmark_score": 2113
-    },
-    {
       "gpu_name": "TM R9 A360",
       "benchmark_score": 2105
     },
@@ -2055,16 +2063,8 @@
       "benchmark_score": 2103
     },
     {
-      "gpu_name": "Ryzen 5 Microsoft Surface Edition",
-      "benchmark_score": 2093
-    },
-    {
       "gpu_name": "GTX 560 SE",
       "benchmark_score": 2087
-    },
-    {
-      "gpu_name": "Ryzen 5 4600G with Radeon",
-      "benchmark_score": 2062
     },
     {
       "gpu_name": "Quadro 5000M",
@@ -2075,36 +2075,12 @@
       "benchmark_score": 2051
     },
     {
-      "gpu_name": "Ryzen 7 4700U",
-      "benchmark_score": 2044
-    },
-    {
-      "gpu_name": "Ryzen 5 PRO 4650GE",
-      "benchmark_score": 2038
-    },
-    {
       "gpu_name": "FirePro V7800",
       "benchmark_score": 2034
     },
     {
-      "gpu_name": "Ryzen 7 4700U with Radeon",
-      "benchmark_score": 2033
-    },
-    {
-      "gpu_name": "Ryzen 7 PRO 4750U with Radeon",
-      "benchmark_score": 2028
-    },
-    {
-      "gpu_name": "Ryzen 7 PRO 4750U",
-      "benchmark_score": 2024
-    },
-    {
       "gpu_name": "R9 M385",
       "benchmark_score": 2018
-    },
-    {
-      "gpu_name": "Ryzen 5 5600U",
-      "benchmark_score": 2015
     },
     {
       "gpu_name": "Pro W5500M",
@@ -2112,10 +2088,6 @@
     },
     {
       "gpu_name": "Quadro M600M",
-      "benchmark_score": 2008
-    },
-    {
-      "gpu_name": "Ryzen 5 PRO 4500U with Radeon",
       "benchmark_score": 2008
     },
     {
@@ -2131,19 +2103,15 @@
       "benchmark_score": 2005
     },
     {
-      "gpu_name": "Ryzen 5 5500U with Radeon",
-      "benchmark_score": 2001
-    },
-    {
       "gpu_name": "Iris Pro 580",
       "benchmark_score": 1993
     },
     {
-      "gpu_name": "Quadro 5000",
+      "gpu_name": "R7 + R7 350 Dual",
       "benchmark_score": 1982
     },
     {
-      "gpu_name": "R7 + R7 350 Dual",
+      "gpu_name": "Quadro 5000",
       "benchmark_score": 1982
     },
     {
@@ -2153,10 +2121,6 @@
     {
       "gpu_name": "HD 6850",
       "benchmark_score": 1979
-    },
-    {
-      "gpu_name": "Ryzen 5 PRO 4650GE with Radeon",
-      "benchmark_score": 1977
     },
     {
       "gpu_name": "GTX 460 SE",
@@ -2171,11 +2135,11 @@
       "benchmark_score": 1972
     },
     {
-      "gpu_name": "HD 5850",
+      "gpu_name": "R7 450",
       "benchmark_score": 1966
     },
     {
-      "gpu_name": "R7 450",
+      "gpu_name": "HD 5850",
       "benchmark_score": 1966
     },
     {
@@ -2203,24 +2167,16 @@
       "benchmark_score": 1953
     },
     {
-      "gpu_name": "Ryzen 5 4600U with Radeon",
-      "benchmark_score": 1951
-    },
-    {
       "gpu_name": "Quadro K4000M",
       "benchmark_score": 1949
-    },
-    {
-      "gpu_name": "FirePro M6100",
-      "benchmark_score": 1945
     },
     {
       "gpu_name": "945M",
       "benchmark_score": 1945
     },
     {
-      "gpu_name": "Ryzen 5 4600H with Radeon",
-      "benchmark_score": 1939
+      "gpu_name": "FirePro M6100",
+      "benchmark_score": 1945
     },
     {
       "gpu_name": "Pro WX 4150",
@@ -2253,10 +2209,6 @@
     {
       "gpu_name": "Matrox C680 PCIe x16",
       "benchmark_score": 1904
-    },
-    {
-      "gpu_name": "Ryzen 3 4300G with Radeon",
-      "benchmark_score": 1903
     },
     {
       "gpu_name": "HD 7700 serie",
@@ -2323,10 +2275,6 @@
       "benchmark_score": 1820
     },
     {
-      "gpu_name": "Ryzen 5 4500U with Radeon",
-      "benchmark_score": 1813
-    },
-    {
       "gpu_name": "Matrox C900 PCIe x16",
       "benchmark_score": 1812
     },
@@ -2343,24 +2291,12 @@
       "benchmark_score": 1804
     },
     {
-      "gpu_name": "Ryzen 5 4600U",
-      "benchmark_score": 1802
-    },
-    {
-      "gpu_name": "HD 8870M / R9 M270X / M370X",
-      "benchmark_score": 1800
-    },
-    {
       "gpu_name": "RX Vega 11 Processor",
       "benchmark_score": 1800
     },
     {
-      "gpu_name": "Ryzen 5 4500U",
+      "gpu_name": "HD 8870M / R9 M270X / M370X",
       "benchmark_score": 1800
-    },
-    {
-      "gpu_name": "Ryzen 3 PRO 4200G with Radeon",
-      "benchmark_score": 1799
     },
     {
       "gpu_name": "Embedded Radeon E9173",
@@ -2377,10 +2313,6 @@
     {
       "gpu_name": "HD 8670D + 7700 Dual",
       "benchmark_score": 1789
-    },
-    {
-      "gpu_name": "Ryzen 3 PRO 4200GE with Radeon",
-      "benchmark_score": 1784
     },
     {
       "gpu_name": "GTX 670M",
@@ -2423,16 +2355,8 @@
       "benchmark_score": 1735
     },
     {
-      "gpu_name": "Ryzen 3 5400U with Radeon",
-      "benchmark_score": 1734
-    },
-    {
       "gpu_name": "RX Vega11",
       "benchmark_score": 1717
-    },
-    {
-      "gpu_name": "Ryzen 3 PRO 4200GE",
-      "benchmark_score": 1712
     },
     {
       "gpu_name": "HD 6900M",
@@ -2443,15 +2367,7 @@
       "benchmark_score": 1709
     },
     {
-      "gpu_name": "Ryzen 5 PRO 4650U",
-      "benchmark_score": 1699
-    },
-    {
       "gpu_name": "HD 7750",
-      "benchmark_score": 1696
-    },
-    {
-      "gpu_name": "Ryzen 5 PRO 4650U with Radeon",
       "benchmark_score": 1696
     },
     {
@@ -2495,16 +2411,8 @@
       "benchmark_score": 1626
     },
     {
-      "gpu_name": "Ryzen 3 5300U with Radeon",
-      "benchmark_score": 1626
-    },
-    {
       "gpu_name": "R7 M465X",
       "benchmark_score": 1624
-    },
-    {
-      "gpu_name": "Ryzen 7 2700U with Radeon Vega",
-      "benchmark_score": 1617
     },
     {
       "gpu_name": "Quadro K2000D",
@@ -2529,10 +2437,6 @@
     {
       "gpu_name": "FirePro M4000",
       "benchmark_score": 1597
-    },
-    {
-      "gpu_name": "Ryzen 3 4300G",
-      "benchmark_score": 1596
     },
     {
       "gpu_name": "Vega 8",
@@ -2571,10 +2475,6 @@
       "benchmark_score": 1557
     },
     {
-      "gpu_name": "Ryzen 3 PRO 5450U with Radeon",
-      "benchmark_score": 1556
-    },
-    {
       "gpu_name": "Firepro W5170M",
       "benchmark_score": 1555
     },
@@ -2599,20 +2499,12 @@
       "benchmark_score": 1545
     },
     {
-      "gpu_name": "Ryzen 3 PRO 4300U with Radeon",
-      "benchmark_score": 1543
-    },
-    {
       "gpu_name": "FirePro W4100",
       "benchmark_score": 1541
     },
     {
       "gpu_name": "FirePro V8700",
       "benchmark_score": 1539
-    },
-    {
-      "gpu_name": "Ryzen 3 PRO 4450U with Radeon",
-      "benchmark_score": 1538
     },
     {
       "gpu_name": "RX 640",
@@ -2639,15 +2531,7 @@
       "benchmark_score": 1507
     },
     {
-      "gpu_name": "Ryzen 3 PRO 4450U",
-      "benchmark_score": 1505
-    },
-    {
       "gpu_name": "940MX",
-      "benchmark_score": 1503
-    },
-    {
-      "gpu_name": "Ryzen 5 2500U with Radeon Vega",
       "benchmark_score": 1503
     },
     {
@@ -2679,14 +2563,6 @@
       "benchmark_score": 1465
     },
     {
-      "gpu_name": "Ryzen 3 PRO 4350GE",
-      "benchmark_score": 1464
-    },
-    {
-      "gpu_name": "Ryzen 5 PRO 4400GE with Radeon",
-      "benchmark_score": 1442
-    },
-    {
       "gpu_name": "Vega 8 Mobile",
       "benchmark_score": 1438
     },
@@ -2695,11 +2571,11 @@
       "benchmark_score": 1436
     },
     {
-      "gpu_name": "845M",
+      "gpu_name": "550X",
       "benchmark_score": 1430
     },
     {
-      "gpu_name": "550X",
+      "gpu_name": "845M",
       "benchmark_score": 1430
     },
     {
@@ -2719,22 +2595,8 @@
       "benchmark_score": 1414
     },
     {
-      "gpu_name": "Ryzen 5 4600GE",
-      "benchmark_score": 1412
-    },
-    {
       "gpu_name": "Pro WX 4170",
       "benchmark_score": 1409
-    },
-    {
-      "gpu_name": "Ryzen 3 PRO 5350G",
-      "benchmark_score": 1408
-    }
-  ],
-  "B": [
-    {
-      "gpu_name": "Ryzen 3 5300G",
-      "benchmark_score": 1406
     },
     {
       "gpu_name": "GTX 275",
@@ -2743,7 +2605,9 @@
     {
       "gpu_name": "540X",
       "benchmark_score": 1398
-    },
+    }
+  ],
+  "B": [
     {
       "gpu_name": "HD 4870",
       "benchmark_score": 1391
@@ -2778,10 +2642,6 @@
     },
     {
       "gpu_name": "Quadro K2100M",
-      "benchmark_score": 1348
-    },
-    {
-      "gpu_name": "Ryzen 3 4300U with Radeon",
       "benchmark_score": 1348
     },
     {
@@ -2821,14 +2681,6 @@
       "benchmark_score": 1313
     },
     {
-      "gpu_name": "R7 PRO A8 8670E",
-      "benchmark_score": 1310
-    },
-    {
-      "gpu_name": "Ryzen 3 4300U",
-      "benchmark_score": 1310
-    },
-    {
       "gpu_name": "HD 4870 X2",
       "benchmark_score": 1309
     },
@@ -2849,11 +2701,11 @@
       "benchmark_score": 1302
     },
     {
-      "gpu_name": "Ryzen Embedded V2748",
+      "gpu_name": "Vega 6",
       "benchmark_score": 1296
     },
     {
-      "gpu_name": "Vega 6",
+      "gpu_name": "Ryzen Embedded V2748",
       "benchmark_score": 1296
     },
     {
@@ -2863,10 +2715,6 @@
     {
       "gpu_name": "R7 A370",
       "benchmark_score": 1281
-    },
-    {
-      "gpu_name": "R7 A10 7870K",
-      "benchmark_score": 1280
     },
     {
       "gpu_name": "540",
@@ -2933,11 +2781,11 @@
       "benchmark_score": 1235
     },
     {
-      "gpu_name": "FirePro 3D V5800",
+      "gpu_name": "R7 + R7 250 Dual",
       "benchmark_score": 1232
     },
     {
-      "gpu_name": "R7 + R7 250 Dual",
+      "gpu_name": "FirePro 3D V5800",
       "benchmark_score": 1232
     },
     {
@@ -3001,10 +2849,6 @@
       "benchmark_score": 1186
     },
     {
-      "gpu_name": "Ryzen 3 5400U",
-      "benchmark_score": 1183
-    },
-    {
       "gpu_name": "GT 640",
       "benchmark_score": 1182
     },
@@ -3061,20 +2905,12 @@
       "benchmark_score": 1144
     },
     {
-      "gpu_name": "Ryzen 3 PRO 5450U",
-      "benchmark_score": 1143
-    },
-    {
       "gpu_name": "NVS 810",
       "benchmark_score": 1141
     },
     {
       "gpu_name": "HD 8850M / R9 M265X",
       "benchmark_score": 1140
-    },
-    {
-      "gpu_name": "R7 A10 9700E RADEON",
-      "benchmark_score": 1138
     },
     {
       "gpu_name": "HD 4850 X2",
@@ -3141,10 +2977,6 @@
       "benchmark_score": 1096
     },
     {
-      "gpu_name": "R5 PRO A6 9500 2C+6G",
-      "benchmark_score": 1096
-    },
-    {
       "gpu_name": "GTX 850M MODDED",
       "benchmark_score": 1092
     },
@@ -3185,10 +3017,6 @@
       "benchmark_score": 1067
     },
     {
-      "gpu_name": "R5 PRO A6 8570 R5, 8 COMPUTE CORES 2C+6G",
-      "benchmark_score": 1064
-    },
-    {
       "gpu_name": "Mobility Radeon HD 5870",
       "benchmark_score": 1062
     },
@@ -3217,16 +3045,12 @@
       "benchmark_score": 1053
     },
     {
-      "gpu_name": "GTX 850A",
-      "benchmark_score": 1050
-    },
-    {
       "gpu_name": "HD 7670A",
       "benchmark_score": 1050
     },
     {
-      "gpu_name": "R7 PRO A8 9600",
-      "benchmark_score": 1049
+      "gpu_name": "GTX 850A",
+      "benchmark_score": 1050
     },
     {
       "gpu_name": "535",
@@ -3285,11 +3109,11 @@
       "benchmark_score": 1024
     },
     {
-      "gpu_name": "Iris Pro 5200",
+      "gpu_name": "HD 8670D + R7 240 Dual",
       "benchmark_score": 1020
     },
     {
-      "gpu_name": "HD 8670D + R7 240 Dual",
+      "gpu_name": "Iris Pro 5200",
       "benchmark_score": 1020
     },
     {
@@ -3301,10 +3125,6 @@
       "benchmark_score": 1016
     },
     {
-      "gpu_name": "R5 A6 9500E 2C+4G",
-      "benchmark_score": 1015
-    },
-    {
       "gpu_name": "930M",
       "benchmark_score": 1011
     },
@@ -3313,11 +3133,11 @@
       "benchmark_score": 1009
     },
     {
-      "gpu_name": "830A",
+      "gpu_name": "HD 6750",
       "benchmark_score": 1005
     },
     {
-      "gpu_name": "HD 6750",
+      "gpu_name": "830A",
       "benchmark_score": 1005
     },
     {
@@ -3329,8 +3149,8 @@
       "benchmark_score": 1002
     },
     {
-      "gpu_name": "R5 PRO A6 9500 R5, 8 COMPUTE CORES 2C+6G",
-      "benchmark_score": 1000
+      "gpu_name": "HD 8570D + R7 200 Dual",
+      "benchmark_score": 999
     },
     {
       "gpu_name": "FirePro M4150",
@@ -3338,10 +3158,6 @@
     },
     {
       "gpu_name": "HD 7660G + HD 7500M/7600M Dual",
-      "benchmark_score": 999
-    },
-    {
-      "gpu_name": "HD 8570D + R7 200 Dual",
       "benchmark_score": 999
     },
     {
@@ -3381,40 +3197,24 @@
       "benchmark_score": 983
     },
     {
-      "gpu_name": "R7 A10 7850K",
-      "benchmark_score": 982
-    },
-    {
       "gpu_name": "Quadro FX 4800",
       "benchmark_score": 979
-    },
-    {
-      "gpu_name": "R5 A10 9630P 4C+6G",
-      "benchmark_score": 977
     },
     {
       "gpu_name": "830M",
       "benchmark_score": 976
     },
     {
-      "gpu_name": "R7 A10 9700 RADEON",
-      "benchmark_score": 975
+      "gpu_name": "HD 8670D + 8570 Dual",
+      "benchmark_score": 974
     },
     {
       "gpu_name": "FirePro V4900",
       "benchmark_score": 974
     },
     {
-      "gpu_name": "HD 8670D + 8570 Dual",
-      "benchmark_score": 974
-    },
-    {
       "gpu_name": "HD 8850M",
       "benchmark_score": 973
-    },
-    {
-      "gpu_name": "R6 A10 9600P 4C+6G",
-      "benchmark_score": 970
     },
     {
       "gpu_name": "HD 7660G N HD 7660G + HD 7700M N HD 7700M D",
@@ -3433,19 +3233,19 @@
       "benchmark_score": 964
     },
     {
-      "gpu_name": "R7 M270DX",
-      "benchmark_score": 962
-    },
-    {
       "gpu_name": "R7 PRO A12 8870E",
       "benchmark_score": 962
     },
     {
-      "gpu_name": "GT 645M",
-      "benchmark_score": 958
+      "gpu_name": "R7 M270DX",
+      "benchmark_score": 962
     },
     {
       "gpu_name": "R7 A10 PRO 7850B",
+      "benchmark_score": 958
+    },
+    {
+      "gpu_name": "GT 645M",
       "benchmark_score": 958
     },
     {
@@ -3457,11 +3257,11 @@
       "benchmark_score": 955
     },
     {
-      "gpu_name": "FirePro W4170M",
+      "gpu_name": "HD 4850",
       "benchmark_score": 953
     },
     {
-      "gpu_name": "HD 4850",
+      "gpu_name": "FirePro W4170M",
       "benchmark_score": 953
     },
     {
@@ -3477,15 +3277,11 @@
       "benchmark_score": 949
     },
     {
-      "gpu_name": "R7 A8 7500",
-      "benchmark_score": 948
-    },
-    {
-      "gpu_name": "Quadro CX",
+      "gpu_name": "R7 M260X",
       "benchmark_score": 947
     },
     {
-      "gpu_name": "R7 M260X",
+      "gpu_name": "Quadro CX",
       "benchmark_score": 947
     },
     {
@@ -3501,19 +3297,15 @@
       "benchmark_score": 945
     },
     {
-      "gpu_name": "R7 PRO A10 8850B",
-      "benchmark_score": 945
-    },
-    {
       "gpu_name": "zxcvIntel HD 620",
       "benchmark_score": 944
     },
     {
-      "gpu_name": "Quadro 2000",
+      "gpu_name": "HD 7660D + R7 240 Dual",
       "benchmark_score": 942
     },
     {
-      "gpu_name": "HD 7660D + R7 240 Dual",
+      "gpu_name": "Quadro 2000",
       "benchmark_score": 942
     },
     {
@@ -3537,19 +3329,11 @@
       "benchmark_score": 936
     },
     {
-      "gpu_name": "R7 PRO A10 9700E",
-      "benchmark_score": 933
-    },
-    {
-      "gpu_name": "HD 7660G + 7730M Dual",
-      "benchmark_score": 931
-    },
-    {
       "gpu_name": "R7 340",
       "benchmark_score": 931
     },
     {
-      "gpu_name": "R7 PRO A10 8770",
+      "gpu_name": "HD 7660G + 7730M Dual",
       "benchmark_score": 931
     },
     {
@@ -3581,19 +3365,11 @@
       "benchmark_score": 918
     },
     {
-      "gpu_name": "R7 A8 8650",
-      "benchmark_score": 913
-    },
-    {
       "gpu_name": "R7 M445",
       "benchmark_score": 913
     },
     {
       "gpu_name": "GRID K220Q",
-      "benchmark_score": 912
-    },
-    {
-      "gpu_name": "R7 A10 7860K",
       "benchmark_score": 912
     },
     {
@@ -3629,10 +3405,6 @@
       "benchmark_score": 898
     },
     {
-      "gpu_name": "R7 PRO A10 8770E",
-      "benchmark_score": 897
-    },
-    {
       "gpu_name": "7900 MOD Radeon HD 6550D",
       "benchmark_score": 893
     },
@@ -3647,14 +3419,6 @@
     {
       "gpu_name": "Vega 3",
       "benchmark_score": 889
-    },
-    {
-      "gpu_name": "R7 + R5 435 Dual A10 9700 RADEON",
-      "benchmark_score": 886
-    },
-    {
-      "gpu_name": "R7 A10 8750",
-      "benchmark_score": 885
     },
     {
       "gpu_name": "HD 8650G + 7670M Dual",
@@ -3677,10 +3441,6 @@
       "benchmark_score": 881
     },
     {
-      "gpu_name": "R5 A6 9500 RADEON R5, 8 COMPUTE CORES 2C+6G",
-      "benchmark_score": 878
-    },
-    {
       "gpu_name": "E6760",
       "benchmark_score": 877
     },
@@ -3701,27 +3461,19 @@
       "benchmark_score": 868
     },
     {
-      "gpu_name": "HD 520",
-      "benchmark_score": 866
-    },
-    {
       "gpu_name": "Mobility Radeon HD 4850",
       "benchmark_score": 866
     },
     {
-      "gpu_name": "R5 PRO A6 8570E R5, 6 COMPUTE CORES 2C+4G",
+      "gpu_name": "HD 520",
       "benchmark_score": 866
-    },
-    {
-      "gpu_name": "R7 A8 7670K",
-      "benchmark_score": 866
-    },
-    {
-      "gpu_name": "HD 8470D + HD 6450 Dual",
-      "benchmark_score": 863
     },
     {
       "gpu_name": "R7 240",
+      "benchmark_score": 863
+    },
+    {
+      "gpu_name": "HD 8470D + HD 6450 Dual",
       "benchmark_score": 863
     },
     {
@@ -3749,14 +3501,6 @@
       "benchmark_score": 853
     },
     {
-      "gpu_name": "R5 A6 9500 2C+6G",
-      "benchmark_score": 853
-    },
-    {
-      "gpu_name": "R7 A8 7500 4C+6G",
-      "benchmark_score": 853
-    },
-    {
       "gpu_name": "GT 635",
       "benchmark_score": 852
     },
@@ -3767,10 +3511,6 @@
     {
       "gpu_name": "UHD 617",
       "benchmark_score": 848
-    },
-    {
-      "gpu_name": "R5 PRO A6 8570 2C+6G",
-      "benchmark_score": 847
     },
     {
       "gpu_name": "R5 435",
@@ -3797,11 +3537,11 @@
       "benchmark_score": 836
     },
     {
-      "gpu_name": "520",
+      "gpu_name": "HD 7560D + 6570 Dual",
       "benchmark_score": 833
     },
     {
-      "gpu_name": "HD 7560D + 6570 Dual",
+      "gpu_name": "520",
       "benchmark_score": 833
     },
     {
@@ -3857,11 +3597,11 @@
       "benchmark_score": 816
     },
     {
-      "gpu_name": "535DX",
+      "gpu_name": "HD 7670",
       "benchmark_score": 813
     },
     {
-      "gpu_name": "HD 7670",
+      "gpu_name": "535DX",
       "benchmark_score": 813
     },
     {
@@ -3874,10 +3614,6 @@
     },
     {
       "gpu_name": "GRID K1",
-      "benchmark_score": 811
-    },
-    {
-      "gpu_name": "R5 A6 7480",
       "benchmark_score": 811
     },
     {
@@ -3894,10 +3630,6 @@
     },
     {
       "gpu_name": "9800 GX2",
-      "benchmark_score": 798
-    },
-    {
-      "gpu_name": "R7 A8 9600 RADEON",
       "benchmark_score": 798
     },
     {
@@ -3921,19 +3653,7 @@
       "benchmark_score": 784
     },
     {
-      "gpu_name": "R7 A8 7600",
-      "benchmark_score": 782
-    },
-    {
-      "gpu_name": "R7 A10 7890K",
-      "benchmark_score": 781
-    },
-    {
       "gpu_name": "R7 A365",
-      "benchmark_score": 781
-    },
-    {
-      "gpu_name": "R7 PRO A6 9500 2C+6G",
       "benchmark_score": 781
     },
     {
@@ -3941,11 +3661,11 @@
       "benchmark_score": 780
     },
     {
-      "gpu_name": "GT 740M",
+      "gpu_name": "HD 8650G + HD 8750M Dual",
       "benchmark_score": 779
     },
     {
-      "gpu_name": "HD 8650G + HD 8750M Dual",
+      "gpu_name": "GT 740M",
       "benchmark_score": 779
     },
     {
@@ -3973,18 +3693,6 @@
       "benchmark_score": 774
     },
     {
-      "gpu_name": "Mobility Radeon HD 5000",
-      "benchmark_score": 773
-    },
-    {
-      "gpu_name": "Quadro 2000M",
-      "benchmark_score": 773
-    },
-    {
-      "gpu_name": "Quadro K1000M",
-      "benchmark_score": 773
-    },
-    {
       "gpu_name": "HD 7600M + 7600M Dual",
       "benchmark_score": 773
     },
@@ -3993,24 +3701,16 @@
       "benchmark_score": 773
     },
     {
-      "gpu_name": "R7 A10 8850",
+      "gpu_name": "Quadro K1000M",
       "benchmark_score": 773
     },
     {
-      "gpu_name": "R5 PRO A6 9500E 2C+4G",
-      "benchmark_score": 771
+      "gpu_name": "Quadro 2000M",
+      "benchmark_score": 773
     },
     {
-      "gpu_name": "R7 PRO A10 9700",
-      "benchmark_score": 771
-    },
-    {
-      "gpu_name": "730A",
-      "benchmark_score": 769
-    },
-    {
-      "gpu_name": "825M",
-      "benchmark_score": 769
+      "gpu_name": "Mobility Radeon HD 5000",
+      "benchmark_score": 773
     },
     {
       "gpu_name": "9800 GTX",
@@ -4018,6 +3718,14 @@
     },
     {
       "gpu_name": "Quadro K600",
+      "benchmark_score": 769
+    },
+    {
+      "gpu_name": "825M",
+      "benchmark_score": 769
+    },
+    {
+      "gpu_name": "730A",
       "benchmark_score": 769
     },
     {
@@ -4033,10 +3741,6 @@
       "benchmark_score": 764
     },
     {
-      "gpu_name": "Mobility Radeon HD 5850",
-      "benchmark_score": 763
-    },
-    {
       "gpu_name": "HD 6450 + 8470D Dual",
       "benchmark_score": 763
     },
@@ -4045,11 +3749,15 @@
       "benchmark_score": 763
     },
     {
-      "gpu_name": "UHD 615",
-      "benchmark_score": 760
+      "gpu_name": "Mobility Radeon HD 5850",
+      "benchmark_score": 763
     },
     {
       "gpu_name": "HD 7660G + HD 7500/7600 Dual",
+      "benchmark_score": 760
+    },
+    {
+      "gpu_name": "UHD 615",
       "benchmark_score": 760
     },
     {
@@ -4057,7 +3765,7 @@
       "benchmark_score": 759
     },
     {
-      "gpu_name": "Iris 5100",
+      "gpu_name": "HD 8650G + HD 8600M N HD 8600M Dual",
       "benchmark_score": 758
     },
     {
@@ -4065,15 +3773,7 @@
       "benchmark_score": 758
     },
     {
-      "gpu_name": "HD 8650G + HD 8600M N HD 8600M Dual",
-      "benchmark_score": 758
-    },
-    {
-      "gpu_name": "R7 PRO A10 8750B",
-      "benchmark_score": 758
-    },
-    {
-      "gpu_name": "R7 PRO A10 9700B",
+      "gpu_name": "Iris 5100",
       "benchmark_score": 758
     },
     {
@@ -4097,20 +3797,12 @@
       "benchmark_score": 752
     },
     {
-      "gpu_name": "R7 A8 7680",
-      "benchmark_score": 752
-    },
-    {
-      "gpu_name": "IncrediblE HD 4600",
-      "benchmark_score": 750
-    },
-    {
       "gpu_name": "M535DX",
       "benchmark_score": 750
     },
     {
-      "gpu_name": "R7 A10 7700K",
-      "benchmark_score": 749
+      "gpu_name": "IncrediblE HD 4600",
+      "benchmark_score": 750
     },
     {
       "gpu_name": "HD 7640G + 7650M Dual",
@@ -4137,11 +3829,11 @@
       "benchmark_score": 744
     },
     {
-      "gpu_name": "GT 730A",
+      "gpu_name": "HD 7660G + 7670M Dual",
       "benchmark_score": 743
     },
     {
-      "gpu_name": "HD 7660G + 7670M Dual",
+      "gpu_name": "GT 730A",
       "benchmark_score": 743
     },
     {
@@ -4151,10 +3843,6 @@
     {
       "gpu_name": "R8 M365DX",
       "benchmark_score": 741
-    },
-    {
-      "gpu_name": "R7 PRO A8 8650B",
-      "benchmark_score": 740
     },
     {
       "gpu_name": "Poison Ivy",
@@ -4173,19 +3861,15 @@
       "benchmark_score": 734
     },
     {
-      "gpu_name": "R5 A10 9620P 4C+6G",
-      "benchmark_score": 732
-    },
-    {
       "gpu_name": "NVS 510",
       "benchmark_score": 730
     },
     {
-      "gpu_name": "UHD 610",
+      "gpu_name": "HD 7550M/7650M",
       "benchmark_score": 729
     },
     {
-      "gpu_name": "HD 7550M/7650M",
+      "gpu_name": "UHD 610",
       "benchmark_score": 729
     },
     {
@@ -4241,19 +3925,11 @@
       "benchmark_score": 719
     },
     {
-      "gpu_name": "R5 PRO A8 9600B R5, 10 COMPUTE CORES 4C+6G",
-      "benchmark_score": 718
-    },
-    {
       "gpu_name": "HD 8470D + 6450 Dual",
       "benchmark_score": 717
     },
     {
       "gpu_name": "HD 8650G + HD 8570M Dual",
-      "benchmark_score": 716
-    },
-    {
-      "gpu_name": "R5 A10 9600P RADEON R5, 10 COMPUTE CORES 4C",
       "benchmark_score": 716
     },
     {
@@ -4297,10 +3973,6 @@
       "benchmark_score": 704
     },
     {
-      "gpu_name": "R7 A8 7650K",
-      "benchmark_score": 704
-    },
-    {
       "gpu_name": "R7 A12 9700P RADEON",
       "benchmark_score": 703
     },
@@ -4317,24 +3989,8 @@
       "benchmark_score": 699
     },
     {
-      "gpu_name": "R5 PRO A10 8730B 4C+6G",
-      "benchmark_score": 695
-    },
-    {
-      "gpu_name": "R5 PRO A6 9500B 2C+4G",
-      "benchmark_score": 693
-    },
-    {
       "gpu_name": "HD 7640G + 7700M Dual",
       "benchmark_score": 691
-    },
-    {
-      "gpu_name": "R7 A10 7800",
-      "benchmark_score": 691
-    },
-    {
-      "gpu_name": "R5 PRO A6 8530B 2C+4G",
-      "benchmark_score": 690
     },
     {
       "gpu_name": "R7E",
@@ -4421,11 +4077,11 @@
       "benchmark_score": 665
     },
     {
-      "gpu_name": "Quadro 500M",
+      "gpu_name": "HD 8550G + 8690M Dual",
       "benchmark_score": 664
     },
     {
-      "gpu_name": "HD 8550G + 8690M Dual",
+      "gpu_name": "Quadro 500M",
       "benchmark_score": 664
     },
     {
@@ -4449,12 +4105,12 @@
       "benchmark_score": 659
     },
     {
-      "gpu_name": "R5 PRO A8 9600B 4C+6G",
-      "benchmark_score": 659
-    },
-    {
       "gpu_name": "GT 140",
       "benchmark_score": 658
+    },
+    {
+      "gpu_name": "HD 8550G + HD 8600/8700M Dual",
+      "benchmark_score": 655
     },
     {
       "gpu_name": "GTS 360M",
@@ -4465,15 +4121,11 @@
       "benchmark_score": 655
     },
     {
-      "gpu_name": "HD 8550G + HD 8600/8700M Dual",
-      "benchmark_score": 655
-    },
-    {
-      "gpu_name": "Professional HD Driver",
+      "gpu_name": "HD 8650G + 8570M Dual",
       "benchmark_score": 654
     },
     {
-      "gpu_name": "HD 8650G + 8570M Dual",
+      "gpu_name": "Professional HD Driver",
       "benchmark_score": 654
     },
     {
@@ -4521,10 +4173,6 @@
       "benchmark_score": 639
     },
     {
-      "gpu_name": "R5 PRO A6 8570E 2C+4G",
-      "benchmark_score": 638
-    },
-    {
       "gpu_name": "GT 710",
       "benchmark_score": 637
     },
@@ -4553,11 +4201,11 @@
       "benchmark_score": 635
     },
     {
-      "gpu_name": "HD 7660D + HD 7000 Dual",
+      "gpu_name": "HD 7730M",
       "benchmark_score": 634
     },
     {
-      "gpu_name": "HD 7730M",
+      "gpu_name": "HD 7660D + HD 7000 Dual",
       "benchmark_score": 634
     },
     {
@@ -4565,11 +4213,11 @@
       "benchmark_score": 634
     },
     {
-      "gpu_name": "9800 GTX/9800 GTX+",
+      "gpu_name": "HD 7610M",
       "benchmark_score": 632
     },
     {
-      "gpu_name": "HD 7610M",
+      "gpu_name": "9800 GTX/9800 GTX+",
       "benchmark_score": 632
     },
     {
@@ -4617,19 +4265,11 @@
       "benchmark_score": 627
     },
     {
-      "gpu_name": "R5 A10 9620P RADEON R5, 10 COMPUTE CORES 4C",
-      "benchmark_score": 626
-    },
-    {
-      "gpu_name": "HD P4600/P4700",
-      "benchmark_score": 624
-    },
-    {
       "gpu_name": "HD 7520G + HD 8600/8700M Dual",
       "benchmark_score": 624
     },
     {
-      "gpu_name": "R5 A6 8500P",
+      "gpu_name": "HD P4600/P4700",
       "benchmark_score": 624
     },
     {
@@ -4665,15 +4305,11 @@
       "benchmark_score": 619
     },
     {
-      "gpu_name": "R5 A10 9600P 4C+6G",
-      "benchmark_score": 619
-    },
-    {
-      "gpu_name": "GTS 250",
+      "gpu_name": "HD 8550G + 8600M Dual",
       "benchmark_score": 618
     },
     {
-      "gpu_name": "HD 8550G + 8600M Dual",
+      "gpu_name": "GTS 250",
       "benchmark_score": 618
     },
     {
@@ -4701,15 +4337,15 @@
       "benchmark_score": 612
     },
     {
+      "gpu_name": "HD 8610G + 8500M Dual",
+      "benchmark_score": 610
+    },
+    {
       "gpu_name": "7900 MOD Radeon HD 6520G",
       "benchmark_score": 610
     },
     {
       "gpu_name": "Quadro K510M",
-      "benchmark_score": 610
-    },
-    {
-      "gpu_name": "HD 8610G + 8500M Dual",
       "benchmark_score": 610
     },
     {
@@ -4729,15 +4365,11 @@
       "benchmark_score": 605
     },
     {
-      "gpu_name": "R5 A6 9400 RADEON R5, 6 COMPUTE CORES 2C+4G",
-      "benchmark_score": 605
-    },
-    {
-      "gpu_name": "GT 430",
+      "gpu_name": "HD 8550G + 8500M Dual",
       "benchmark_score": 603
     },
     {
-      "gpu_name": "HD 8550G + 8500M Dual",
+      "gpu_name": "GT 430",
       "benchmark_score": 603
     },
     {
@@ -4753,19 +4385,15 @@
       "benchmark_score": 599
     },
     {
-      "gpu_name": "R5 PRO A10 8730B R5, 10 COMPUTE CORES 4C+6G",
-      "benchmark_score": 598
-    },
-    {
       "gpu_name": "8800 GTX",
       "benchmark_score": 597
     },
     {
-      "gpu_name": "HD 8510G + 8500M Dual",
+      "gpu_name": "R5 M330",
       "benchmark_score": 596
     },
     {
-      "gpu_name": "R5 M330",
+      "gpu_name": "HD 8510G + 8500M Dual",
       "benchmark_score": 596
     },
     {
@@ -4789,15 +4417,15 @@
       "benchmark_score": 591
     },
     {
-      "gpu_name": "HD 7640G + HD 7700M Dual",
-      "benchmark_score": 589
-    },
-    {
       "gpu_name": "HD 8610G + 8600M Dual",
       "benchmark_score": 589
     },
     {
-      "gpu_name": "HD 7520G + 7610M Dual",
+      "gpu_name": "HD 7640G + HD 7700M Dual",
+      "benchmark_score": 589
+    },
+    {
+      "gpu_name": "HD 7660G + 8670M Dual",
       "benchmark_score": 588
     },
     {
@@ -4805,7 +4433,7 @@
       "benchmark_score": 588
     },
     {
-      "gpu_name": "HD 7660G + 8670M Dual",
+      "gpu_name": "HD 7520G + 7610M Dual",
       "benchmark_score": 588
     },
     {
@@ -4821,19 +4449,15 @@
       "benchmark_score": 585
     },
     {
-      "gpu_name": "HD 5500",
-      "benchmark_score": 582
-    },
-    {
       "gpu_name": "HD 7520G + 7500/7600 Dual",
       "benchmark_score": 582
     },
     {
-      "gpu_name": "GT 550M",
-      "benchmark_score": 580
+      "gpu_name": "HD 5500",
+      "benchmark_score": 582
     },
     {
-      "gpu_name": "R5 A10 9630P RADEON R5, 10 COMPUTE CORES 4C",
+      "gpu_name": "GT 550M",
       "benchmark_score": 580
     },
     {
@@ -4861,6 +4485,10 @@
       "benchmark_score": 577
     },
     {
+      "gpu_name": "R7 M265",
+      "benchmark_score": 576
+    },
+    {
       "gpu_name": "HD 3870",
       "benchmark_score": 576
     },
@@ -4869,8 +4497,12 @@
       "benchmark_score": 576
     },
     {
-      "gpu_name": "R7 M265",
-      "benchmark_score": 576
+      "gpu_name": "HD 8450G + HD 8670M Dual",
+      "benchmark_score": 575
+    },
+    {
+      "gpu_name": "R5 420",
+      "benchmark_score": 575
     },
     {
       "gpu_name": "HD 7520G + HD 7700M Dual",
@@ -4878,14 +4510,6 @@
     },
     {
       "gpu_name": "HD 7520G N HD 7520G + HD 7500/7600 7500/760",
-      "benchmark_score": 575
-    },
-    {
-      "gpu_name": "HD 8450G + HD 8670M Dual",
-      "benchmark_score": 575
-    },
-    {
-      "gpu_name": "R5 420",
       "benchmark_score": 575
     },
     {
@@ -4897,19 +4521,15 @@
       "benchmark_score": 572
     },
     {
-      "gpu_name": "R6 PRO A8 8600B R6, 10 Compute Cores 4C+6G",
-      "benchmark_score": 572
-    },
-    {
       "gpu_name": "R6 + R7 M265DX Dual",
       "benchmark_score": 571
     },
     {
-      "gpu_name": "GTS 250M",
+      "gpu_name": "HD 7560D + 6450 Dual",
       "benchmark_score": 569
     },
     {
-      "gpu_name": "HD 7560D + 6450 Dual",
+      "gpu_name": "GTS 250M",
       "benchmark_score": 569
     },
     {
@@ -4937,11 +4557,11 @@
       "benchmark_score": 563
     },
     {
-      "gpu_name": "Quadro FX 5600",
+      "gpu_name": "R7 A10 PRO 7800B",
       "benchmark_score": 562
     },
     {
-      "gpu_name": "R7 A10 PRO 7800B",
+      "gpu_name": "Quadro FX 5600",
       "benchmark_score": 562
     },
     {
@@ -4993,11 +4613,11 @@
       "benchmark_score": 549
     },
     {
-      "gpu_name": "Mobility Radeon HD 3870",
+      "gpu_name": "HD 8670D",
       "benchmark_score": 548
     },
     {
-      "gpu_name": "HD 8670D",
+      "gpu_name": "Mobility Radeon HD 3870",
       "benchmark_score": 548
     },
     {
@@ -5045,19 +4665,11 @@
       "benchmark_score": 543
     },
     {
-      "gpu_name": "R6 A10 8700P",
-      "benchmark_score": 541
-    },
-    {
-      "gpu_name": "9800 GTX+",
-      "benchmark_score": 538
-    },
-    {
       "gpu_name": "KV SPECTRE LITE MOBILE 25W",
       "benchmark_score": 538
     },
     {
-      "gpu_name": "R6 PRO A10 8700B 4C+6G",
+      "gpu_name": "9800 GTX+",
       "benchmark_score": 538
     },
     {
@@ -5081,10 +4693,6 @@
       "benchmark_score": 532
     },
     {
-      "gpu_name": "R6 PRO A8 8600B 4C+6G",
-      "benchmark_score": 532
-    },
-    {
       "gpu_name": "HD 8550G + HD 8570M Dual",
       "benchmark_score": 529
     },
@@ -5101,10 +4709,6 @@
       "benchmark_score": 526
     },
     {
-      "gpu_name": "R6 PRO A10 8700B R6, 10 Compute Cores 4C+6G",
-      "benchmark_score": 526
-    },
-    {
       "gpu_name": "HD 7660D + R5 235 Dual",
       "benchmark_score": 524
     },
@@ -5113,11 +4717,11 @@
       "benchmark_score": 523
     },
     {
-      "gpu_name": "GT 435M",
+      "gpu_name": "HD 4400",
       "benchmark_score": 521
     },
     {
-      "gpu_name": "HD 4400",
+      "gpu_name": "GT 435M",
       "benchmark_score": 521
     },
     {
@@ -5125,19 +4729,19 @@
       "benchmark_score": 520
     },
     {
-      "gpu_name": "HD 8670M",
-      "benchmark_score": 520
-    },
-    {
       "gpu_name": "R5 240",
       "benchmark_score": 520
     },
     {
-      "gpu_name": "8800 GT",
-      "benchmark_score": 519
+      "gpu_name": "HD 8670M",
+      "benchmark_score": 520
     },
     {
       "gpu_name": "HD 7640G + HD 7670M Dual",
+      "benchmark_score": 519
+    },
+    {
+      "gpu_name": "8800 GT",
       "benchmark_score": 519
     },
     {
@@ -5153,15 +4757,11 @@
       "benchmark_score": 516
     },
     {
-      "gpu_name": "A10 8700P",
-      "benchmark_score": 514
-    },
-    {
-      "gpu_name": "6600M",
+      "gpu_name": "R5 330",
       "benchmark_score": 513
     },
     {
-      "gpu_name": "R5 330",
+      "gpu_name": "6600M",
       "benchmark_score": 513
     },
     {
@@ -5183,10 +4783,6 @@
     {
       "gpu_name": "HD 7620G + 8600M Dual",
       "benchmark_score": 509
-    },
-    {
-      "gpu_name": "R5 PRO A6 8500B 2C+4G",
-      "benchmark_score": 508
     },
     {
       "gpu_name": "HD 7620G + HD 8670M Dual",
@@ -5213,11 +4809,11 @@
       "benchmark_score": 499
     },
     {
-      "gpu_name": "SUMO 964A",
+      "gpu_name": "TRINITY SCRAPPER MOBILE",
       "benchmark_score": 498
     },
     {
-      "gpu_name": "TRINITY SCRAPPER MOBILE",
+      "gpu_name": "SUMO 964A",
       "benchmark_score": 498
     },
     {
@@ -5225,11 +4821,11 @@
       "benchmark_score": 497
     },
     {
-      "gpu_name": "ASUS EAH4870x2",
+      "gpu_name": "HD 6570",
       "benchmark_score": 496
     },
     {
-      "gpu_name": "HD 6570",
+      "gpu_name": "ASUS EAH4870x2",
       "benchmark_score": 496
     },
     {
@@ -5241,11 +4837,11 @@
       "benchmark_score": 495
     },
     {
-      "gpu_name": "GT 540M",
+      "gpu_name": "GT625M",
       "benchmark_score": 493
     },
     {
-      "gpu_name": "GT625M",
+      "gpu_name": "GT 540M",
       "benchmark_score": 493
     },
     {
@@ -5281,11 +4877,11 @@
       "benchmark_score": 485
     },
     {
-      "gpu_name": "9800 GT",
+      "gpu_name": "HD 8610G + HD 8600M Dual",
       "benchmark_score": 481
     },
     {
-      "gpu_name": "HD 8610G + HD 8600M Dual",
+      "gpu_name": "9800 GT",
       "benchmark_score": 481
     },
     {
@@ -5321,15 +4917,7 @@
       "benchmark_score": 475
     },
     {
-      "gpu_name": "R6 A8 8600P",
-      "benchmark_score": 475
-    },
-    {
       "gpu_name": "HD 5570",
-      "benchmark_score": 473
-    },
-    {
-      "gpu_name": "R5 PRO A6 9500B R5, 6 COMPUTE CORES 2C+4G",
       "benchmark_score": 473
     },
     {
@@ -5365,12 +4953,16 @@
       "benchmark_score": 467
     },
     {
+      "gpu_name": "Quadro FX 3700M",
+      "benchmark_score": 467
+    },
+    {
       "gpu_name": "Quadro FX 3600M",
       "benchmark_score": 467
     },
     {
-      "gpu_name": "Quadro FX 3700M",
-      "benchmark_score": 467
+      "gpu_name": "SUMO 9644",
+      "benchmark_score": 466
     },
     {
       "gpu_name": "HD 7660D + 7470 Dual",
@@ -5378,10 +4970,6 @@
     },
     {
       "gpu_name": "HD 8690A",
-      "benchmark_score": 466
-    },
-    {
-      "gpu_name": "SUMO 9644",
       "benchmark_score": 466
     },
     {
@@ -5429,7 +5017,7 @@
       "benchmark_score": 452
     },
     {
-      "gpu_name": "HD 7620G N HD 7620G + HD 8600M N HD 8600M D",
+      "gpu_name": "R7 M260",
       "benchmark_score": 452
     },
     {
@@ -5437,7 +5025,7 @@
       "benchmark_score": 452
     },
     {
-      "gpu_name": "R7 M260",
+      "gpu_name": "HD 7620G N HD 7620G + HD 8600M N HD 8600M D",
       "benchmark_score": 452
     },
     {
@@ -5455,9 +5043,7 @@
     {
       "gpu_name": "HD 7650M",
       "benchmark_score": 451
-    }
-  ],
-  "C": [
+    },
     {
       "gpu_name": "710M",
       "benchmark_score": 450
@@ -5495,11 +5081,11 @@
       "benchmark_score": 444
     },
     {
-      "gpu_name": "HD 7620G + HD 8600M Dual",
+      "gpu_name": "HD 8350G",
       "benchmark_score": 443
     },
     {
-      "gpu_name": "HD 8350G",
+      "gpu_name": "HD 7620G + HD 8600M Dual",
       "benchmark_score": 443
     },
     {
@@ -5519,11 +5105,11 @@
       "benchmark_score": 435
     },
     {
-      "gpu_name": "HD 7600G + HD Dual",
+      "gpu_name": "HD 8410G",
       "benchmark_score": 435
     },
     {
-      "gpu_name": "HD 8410G",
+      "gpu_name": "HD 7600G + HD Dual",
       "benchmark_score": 435
     },
     {
@@ -5571,11 +5157,11 @@
       "benchmark_score": 423
     },
     {
-      "gpu_name": "GT 330",
+      "gpu_name": "HD 8570M",
       "benchmark_score": 422
     },
     {
-      "gpu_name": "HD 8570M",
+      "gpu_name": "GT 330",
       "benchmark_score": 422
     },
     {
@@ -5621,7 +5207,9 @@
     {
       "gpu_name": "HD 7640G + HD 7600M N HD 7600M Dual",
       "benchmark_score": 407
-    },
+    }
+  ],
+  "C": [
     {
       "gpu_name": "FirePro M2000",
       "benchmark_score": 406
@@ -5631,11 +5219,11 @@
       "benchmark_score": 406
     },
     {
-      "gpu_name": "Quadro FX 1800",
+      "gpu_name": "E4690",
       "benchmark_score": 405
     },
     {
-      "gpu_name": "E4690",
+      "gpu_name": "Quadro FX 1800",
       "benchmark_score": 405
     },
     {
@@ -5707,19 +5295,19 @@
       "benchmark_score": 378
     },
     {
-      "gpu_name": "HD 7520G + 8750M Dual",
-      "benchmark_score": 377
-    },
-    {
       "gpu_name": "HD 7600G + 6400M Dual",
       "benchmark_score": 377
     },
     {
-      "gpu_name": "PHDGD Ivy 4",
-      "benchmark_score": 374
+      "gpu_name": "HD 7520G + 8750M Dual",
+      "benchmark_score": 377
     },
     {
       "gpu_name": "HD 8570D + HD8490 Dual",
+      "benchmark_score": 374
+    },
+    {
+      "gpu_name": "PHDGD Ivy 4",
       "benchmark_score": 374
     },
     {
@@ -5747,11 +5335,11 @@
       "benchmark_score": 366
     },
     {
-      "gpu_name": "GT 620",
+      "gpu_name": "HD 7520G N HD 7520G + HD 7600M N HD 7600M D",
       "benchmark_score": 365
     },
     {
-      "gpu_name": "HD 7520G N HD 7520G + HD 7600M N HD 7600M D",
+      "gpu_name": "GT 620",
       "benchmark_score": 365
     },
     {
@@ -5763,11 +5351,11 @@
       "benchmark_score": 362
     },
     {
-      "gpu_name": "HD 8450G",
+      "gpu_name": "HD 8510G",
       "benchmark_score": 361
     },
     {
-      "gpu_name": "HD 8510G",
+      "gpu_name": "HD 8450G",
       "benchmark_score": 361
     },
     {
@@ -5815,15 +5403,15 @@
       "benchmark_score": 344
     },
     {
-      "gpu_name": "FireGL V5600",
-      "benchmark_score": 341
-    },
-    {
       "gpu_name": "FirePro 3D V3750",
       "benchmark_score": 341
     },
     {
       "gpu_name": "HD 8310E",
+      "benchmark_score": 341
+    },
+    {
+      "gpu_name": "FireGL V5600",
       "benchmark_score": 341
     },
     {
@@ -5851,6 +5439,10 @@
       "benchmark_score": 333
     },
     {
+      "gpu_name": "R5 310",
+      "benchmark_score": 332
+    },
+    {
       "gpu_name": "FirePro V3800",
       "benchmark_score": 332
     },
@@ -5859,15 +5451,11 @@
       "benchmark_score": 332
     },
     {
-      "gpu_name": "R5 310",
-      "benchmark_score": 332
-    },
-    {
-      "gpu_name": "HD 7450M",
+      "gpu_name": "HD 7500G",
       "benchmark_score": 330
     },
     {
-      "gpu_name": "HD 7500G",
+      "gpu_name": "HD 7450M",
       "benchmark_score": 330
     },
     {
@@ -5907,15 +5495,15 @@
       "benchmark_score": 322
     },
     {
-      "gpu_name": "240M GT",
-      "benchmark_score": 320
-    },
-    {
       "gpu_name": "HD 7600G",
       "benchmark_score": 320
     },
     {
       "gpu_name": "HD6370D",
+      "benchmark_score": 320
+    },
+    {
+      "gpu_name": "240M GT",
       "benchmark_score": 320
     },
     {
@@ -5975,11 +5563,11 @@
       "benchmark_score": 300
     },
     {
-      "gpu_name": "GT 520",
+      "gpu_name": "HD P3000",
       "benchmark_score": 297
     },
     {
-      "gpu_name": "HD P3000",
+      "gpu_name": "GT 520",
       "benchmark_score": 297
     },
     {
@@ -6019,15 +5607,15 @@
       "benchmark_score": 291
     },
     {
+      "gpu_name": "HD 7450A",
+      "benchmark_score": 288
+    },
+    {
       "gpu_name": "7950 Xtreme",
       "benchmark_score": 288
     },
     {
       "gpu_name": "GT 520M",
-      "benchmark_score": 288
-    },
-    {
-      "gpu_name": "HD 7450A",
       "benchmark_score": 288
     },
     {
@@ -6127,11 +5715,11 @@
       "benchmark_score": 258
     },
     {
-      "gpu_name": "510",
+      "gpu_name": "HD 3000",
       "benchmark_score": 257
     },
     {
-      "gpu_name": "HD 3000",
+      "gpu_name": "HD 8470",
       "benchmark_score": 257
     },
     {
@@ -6139,7 +5727,7 @@
       "benchmark_score": 257
     },
     {
-      "gpu_name": "HD 8470",
+      "gpu_name": "510",
       "benchmark_score": 257
     },
     {
@@ -6159,11 +5747,11 @@
       "benchmark_score": 252
     },
     {
-      "gpu_name": "410M",
+      "gpu_name": "HD 7640G + 8600M Dual",
       "benchmark_score": 250
     },
     {
-      "gpu_name": "HD 7640G + 8600M Dual",
+      "gpu_name": "410M",
       "benchmark_score": 250
     },
     {
@@ -6171,11 +5759,11 @@
       "benchmark_score": 248
     },
     {
-      "gpu_name": "CARRIZO 9874",
+      "gpu_name": "7900 GT/GTO",
       "benchmark_score": 247
     },
     {
-      "gpu_name": "7900 GT/GTO",
+      "gpu_name": "CARRIZO 9874",
       "benchmark_score": 247
     },
     {
@@ -6187,7 +5775,7 @@
       "benchmark_score": 243
     },
     {
-      "gpu_name": "NVS 310",
+      "gpu_name": "HD 8330E",
       "benchmark_score": 242
     },
     {
@@ -6195,7 +5783,7 @@
       "benchmark_score": 242
     },
     {
-      "gpu_name": "HD 8330E",
+      "gpu_name": "NVS 310",
       "benchmark_score": 242
     },
     {
@@ -6251,15 +5839,15 @@
       "benchmark_score": 222
     },
     {
+      "gpu_name": "HD 7450",
+      "benchmark_score": 221
+    },
+    {
       "gpu_name": "HD6450",
       "benchmark_score": 221
     },
     {
       "gpu_name": "HD 7340M",
-      "benchmark_score": 221
-    },
-    {
-      "gpu_name": "HD 7450",
       "benchmark_score": 221
     },
     {
@@ -6307,11 +5895,11 @@
       "benchmark_score": 213
     },
     {
-      "gpu_name": "2nd Generation SandyBridge HD",
+      "gpu_name": "WinFast GT 610",
       "benchmark_score": 212
     },
     {
-      "gpu_name": "WinFast GT 610",
+      "gpu_name": "2nd Generation SandyBridge HD",
       "benchmark_score": 212
     },
     {
@@ -6343,7 +5931,7 @@
       "benchmark_score": 208
     },
     {
-      "gpu_name": "Barco MXRT 1450",
+      "gpu_name": "R3E",
       "benchmark_score": 206
     },
     {
@@ -6351,7 +5939,7 @@
       "benchmark_score": 206
     },
     {
-      "gpu_name": "R3E",
+      "gpu_name": "Barco MXRT 1450",
       "benchmark_score": 206
     },
     {
@@ -6367,11 +5955,11 @@
       "benchmark_score": 205
     },
     {
-      "gpu_name": "7600 GT",
+      "gpu_name": "HD 6380G",
       "benchmark_score": 204
     },
     {
-      "gpu_name": "HD 6380G",
+      "gpu_name": "7600 GT",
       "benchmark_score": 204
     },
     {
@@ -6383,15 +5971,15 @@
       "benchmark_score": 201
     },
     {
+      "gpu_name": "HD 6450",
+      "benchmark_score": 200
+    },
+    {
       "gpu_name": "G200",
       "benchmark_score": 200
     },
     {
       "gpu_name": "Mobility Radeon HD 545v",
-      "benchmark_score": 200
-    },
-    {
-      "gpu_name": "HD 6450",
       "benchmark_score": 200
     },
     {
@@ -6459,15 +6047,15 @@
       "benchmark_score": 187
     },
     {
-      "gpu_name": "Quadro FX 1600M",
-      "benchmark_score": 186
-    },
-    {
       "gpu_name": "Quadro FX 3450/4000 SDI",
       "benchmark_score": 186
     },
     {
       "gpu_name": "Quadro FX 380",
+      "benchmark_score": 186
+    },
+    {
+      "gpu_name": "Quadro FX 1600M",
       "benchmark_score": 186
     },
     {
@@ -6479,11 +6067,11 @@
       "benchmark_score": 181
     },
     {
-      "gpu_name": "Barco MXRT 7100",
+      "gpu_name": "FireGL V3600",
       "benchmark_score": 180
     },
     {
-      "gpu_name": "FireGL V3600",
+      "gpu_name": "Barco MXRT 7100",
       "benchmark_score": 180
     },
     {
@@ -6523,19 +6111,19 @@
       "benchmark_score": 171
     },
     {
-      "gpu_name": "GT 325M",
-      "benchmark_score": 171
-    },
-    {
       "gpu_name": "Quadro FX 1500M",
       "benchmark_score": 171
     },
     {
-      "gpu_name": "FirePro 2460",
-      "benchmark_score": 170
+      "gpu_name": "GT 325M",
+      "benchmark_score": 171
     },
     {
       "gpu_name": "HDG 4670",
+      "benchmark_score": 170
+    },
+    {
+      "gpu_name": "FirePro 2460",
       "benchmark_score": 170
     },
     {
@@ -6583,11 +6171,11 @@
       "benchmark_score": 157
     },
     {
-      "gpu_name": "Quadro FX 570",
+      "gpu_name": "HD 4300/4500 Serisi",
       "benchmark_score": 156
     },
     {
-      "gpu_name": "HD 4300/4500 Serisi",
+      "gpu_name": "Quadro FX 570",
       "benchmark_score": 156
     },
     {
@@ -6603,11 +6191,11 @@
       "benchmark_score": 152
     },
     {
-      "gpu_name": "305M",
+      "gpu_name": "HD 3670",
       "benchmark_score": 151
     },
     {
-      "gpu_name": "HD 3670",
+      "gpu_name": "305M",
       "benchmark_score": 151
     },
     {
@@ -6651,11 +6239,11 @@
       "benchmark_score": 146
     },
     {
-      "gpu_name": "Quadro 400",
+      "gpu_name": "X1900 GT",
       "benchmark_score": 146
     },
     {
-      "gpu_name": "X1900 GT",
+      "gpu_name": "Quadro 400",
       "benchmark_score": 146
     },
     {
@@ -6667,10 +6255,6 @@
       "benchmark_score": 143
     },
     {
-      "gpu_name": "6800 GT",
-      "benchmark_score": 142
-    },
-    {
       "gpu_name": "Q45/Q43 Express Chipset",
       "benchmark_score": 142
     },
@@ -6679,12 +6263,8 @@
       "benchmark_score": 142
     },
     {
-      "gpu_name": "EG PARK",
-      "benchmark_score": 141
-    },
-    {
-      "gpu_name": "HD 4290",
-      "benchmark_score": 141
+      "gpu_name": "6800 GT",
+      "benchmark_score": 142
     },
     {
       "gpu_name": "HD 6350",
@@ -6692,6 +6272,14 @@
     },
     {
       "gpu_name": "X1800 GTO",
+      "benchmark_score": 141
+    },
+    {
+      "gpu_name": "EG PARK",
+      "benchmark_score": 141
+    },
+    {
+      "gpu_name": "HD 4290",
       "benchmark_score": 141
     },
     {
@@ -6723,7 +6311,7 @@
       "benchmark_score": 138
     },
     {
-      "gpu_name": "6600 GT",
+      "gpu_name": "X1900 CrossFire Edition",
       "benchmark_score": 137
     },
     {
@@ -6731,7 +6319,7 @@
       "benchmark_score": 137
     },
     {
-      "gpu_name": "X1900 CrossFire Edition",
+      "gpu_name": "6600 GT",
       "benchmark_score": 137
     },
     {
@@ -6739,11 +6327,7 @@
       "benchmark_score": 136
     },
     {
-      "gpu_name": "7300 GT",
-      "benchmark_score": 135
-    },
-    {
-      "gpu_name": "9500 GT",
+      "gpu_name": "R5 220",
       "benchmark_score": 135
     },
     {
@@ -6751,15 +6335,19 @@
       "benchmark_score": 135
     },
     {
-      "gpu_name": "Mobility Radeon HD 4570",
-      "benchmark_score": 135
-    },
-    {
       "gpu_name": "Mobility Radeon X1900",
       "benchmark_score": 135
     },
     {
-      "gpu_name": "R5 220",
+      "gpu_name": "Mobility Radeon HD 4570",
+      "benchmark_score": 135
+    },
+    {
+      "gpu_name": "9500 GT",
+      "benchmark_score": 135
+    },
+    {
+      "gpu_name": "7300 GT",
       "benchmark_score": 135
     },
     {
@@ -6787,15 +6375,15 @@
       "benchmark_score": 132
     },
     {
+      "gpu_name": "HD 7310",
+      "benchmark_score": 130
+    },
+    {
       "gpu_name": "Mobility Radeon HD 3650",
       "benchmark_score": 130
     },
     {
       "gpu_name": "MOBILITY RADEON X1800",
-      "benchmark_score": 130
-    },
-    {
-      "gpu_name": "HD 7310",
       "benchmark_score": 130
     },
     {
@@ -6863,11 +6451,7 @@
       "benchmark_score": 124
     },
     {
-      "gpu_name": "Haswell HD GT1",
-      "benchmark_score": 123
-    },
-    {
-      "gpu_name": "Matrox G200e WDDM 2.0",
+      "gpu_name": "HD 7290M",
       "benchmark_score": 123
     },
     {
@@ -6875,11 +6459,15 @@
       "benchmark_score": 123
     },
     {
-      "gpu_name": "HD 6310",
+      "gpu_name": "Matrox G200e WDDM 2.0",
       "benchmark_score": 123
     },
     {
-      "gpu_name": "HD 7290M",
+      "gpu_name": "Haswell HD GT1",
+      "benchmark_score": 123
+    },
+    {
+      "gpu_name": "HD 6310",
       "benchmark_score": 123
     },
     {
@@ -6891,11 +6479,11 @@
       "benchmark_score": 122
     },
     {
-      "gpu_name": "9500M G",
+      "gpu_name": "G210M",
       "benchmark_score": 122
     },
     {
-      "gpu_name": "G210M",
+      "gpu_name": "9500M G",
       "benchmark_score": 122
     },
     {
@@ -6919,6 +6507,10 @@
       "benchmark_score": 120
     },
     {
+      "gpu_name": "RV530 PRO",
+      "benchmark_score": 119
+    },
+    {
       "gpu_name": "9600M GS",
       "benchmark_score": 119
     },
@@ -6927,27 +6519,15 @@
       "benchmark_score": 119
     },
     {
-      "gpu_name": "RV530 PRO",
-      "benchmark_score": 119
+      "gpu_name": "HD 3450",
+      "benchmark_score": 118
     },
     {
       "gpu_name": "Quadro FX 1700",
       "benchmark_score": 118
     },
     {
-      "gpu_name": "HD 3450",
-      "benchmark_score": 118
-    },
-    {
       "gpu_name": "FireMV 2260",
-      "benchmark_score": 117
-    },
-    {
-      "gpu_name": "8600 GT",
-      "benchmark_score": 117
-    },
-    {
-      "gpu_name": "Mobile Intel 45 Express Chipsatzfamilie",
       "benchmark_score": 117
     },
     {
@@ -6959,7 +6539,15 @@
       "benchmark_score": 117
     },
     {
-      "gpu_name": "FireGL V7200",
+      "gpu_name": "8600 GT",
+      "benchmark_score": 117
+    },
+    {
+      "gpu_name": "Mobile Intel 45 Express Chipsatzfamilie",
+      "benchmark_score": 117
+    },
+    {
+      "gpu_name": "X1600 XT",
       "benchmark_score": 116
     },
     {
@@ -6967,7 +6555,7 @@
       "benchmark_score": 116
     },
     {
-      "gpu_name": "X1600 XT",
+      "gpu_name": "FireGL V7200",
       "benchmark_score": 116
     },
     {
@@ -7007,7 +6595,7 @@
       "benchmark_score": 114
     },
     {
-      "gpu_name": "FirePro 2260",
+      "gpu_name": "X1950 Pro",
       "benchmark_score": 113
     },
     {
@@ -7015,7 +6603,7 @@
       "benchmark_score": 113
     },
     {
-      "gpu_name": "X1950 Pro",
+      "gpu_name": "FirePro 2260",
       "benchmark_score": 113
     },
     {
@@ -7023,11 +6611,11 @@
       "benchmark_score": 113
     },
     {
-      "gpu_name": "9400",
+      "gpu_name": "HD Modded",
       "benchmark_score": 112
     },
     {
-      "gpu_name": "HD Modded",
+      "gpu_name": "9400",
       "benchmark_score": 112
     },
     {
@@ -7059,18 +6647,6 @@
       "benchmark_score": 111
     },
     {
-      "gpu_name": "6800 LE",
-      "benchmark_score": 110
-    },
-    {
-      "gpu_name": "HD 2600 Pro AGP",
-      "benchmark_score": 110
-    },
-    {
-      "gpu_name": "HD 4270",
-      "benchmark_score": 110
-    },
-    {
       "gpu_name": "VIA/S3G Chrome 645/640 GPU",
       "benchmark_score": 110
     },
@@ -7079,11 +6655,23 @@
       "benchmark_score": 110
     },
     {
-      "gpu_name": "HD 4330",
-      "benchmark_score": 109
+      "gpu_name": "HD 4270",
+      "benchmark_score": 110
+    },
+    {
+      "gpu_name": "6800 LE",
+      "benchmark_score": 110
+    },
+    {
+      "gpu_name": "HD 2600 Pro AGP",
+      "benchmark_score": 110
     },
     {
       "gpu_name": "HD 6290",
+      "benchmark_score": 109
+    },
+    {
+      "gpu_name": "HD 4330",
       "benchmark_score": 109
     },
     {
@@ -7127,6 +6715,14 @@
       "benchmark_score": 105
     },
     {
+      "gpu_name": "Quadro FX 3400/4400",
+      "benchmark_score": 104
+    },
+    {
+      "gpu_name": "M880G with Mobility Radeon HD 4250",
+      "benchmark_score": 104
+    },
+    {
       "gpu_name": "9500M",
       "benchmark_score": 104
     },
@@ -7135,19 +6731,11 @@
       "benchmark_score": 104
     },
     {
-      "gpu_name": "M880G with Mobility Radeon HD 4250",
-      "benchmark_score": 104
-    },
-    {
-      "gpu_name": "Quadro FX 3400/4400",
-      "benchmark_score": 104
-    },
-    {
-      "gpu_name": "FireGL V3400",
+      "gpu_name": "6800 GS/XT",
       "benchmark_score": 103
     },
     {
-      "gpu_name": "6800 GS/XT",
+      "gpu_name": "FireGL V3400",
       "benchmark_score": 103
     },
     {
@@ -7191,11 +6779,7 @@
       "benchmark_score": 98
     },
     {
-      "gpu_name": "9300GE",
-      "benchmark_score": 98
-    },
-    {
-      "gpu_name": "ION LE",
+      "gpu_name": "X800 XT",
       "benchmark_score": 98
     },
     {
@@ -7207,15 +6791,19 @@
       "benchmark_score": 98
     },
     {
+      "gpu_name": "9300GE",
+      "benchmark_score": 98
+    },
+    {
       "gpu_name": "3000",
       "benchmark_score": 98
     },
     {
-      "gpu_name": "X800 XT",
+      "gpu_name": "ION LE",
       "benchmark_score": 98
     },
     {
-      "gpu_name": "210",
+      "gpu_name": "Quadro NVS 130M",
       "benchmark_score": 97
     },
     {
@@ -7223,7 +6811,7 @@
       "benchmark_score": 97
     },
     {
-      "gpu_name": "Quadro NVS 130M",
+      "gpu_name": "210",
       "benchmark_score": 97
     },
     {
@@ -7247,15 +6835,7 @@
       "benchmark_score": 94
     },
     {
-      "gpu_name": "FireGL V5100",
-      "benchmark_score": 93
-    },
-    {
-      "gpu_name": "M880G with Mobility Radeon HD 4200",
-      "benchmark_score": 93
-    },
-    {
-      "gpu_name": "Mobility Radeon HD 3470",
+      "gpu_name": "Quadro NVS 150M",
       "benchmark_score": 93
     },
     {
@@ -7267,11 +6847,19 @@
       "benchmark_score": 93
     },
     {
-      "gpu_name": "Quadro NVS 150M",
+      "gpu_name": "M880G with Mobility Radeon HD 4200",
       "benchmark_score": 93
     },
     {
-      "gpu_name": "8600 GS",
+      "gpu_name": "Mobility Radeon HD 3470",
+      "benchmark_score": 93
+    },
+    {
+      "gpu_name": "FireGL V5100",
+      "benchmark_score": 93
+    },
+    {
+      "gpu_name": "G205M",
       "benchmark_score": 92
     },
     {
@@ -7279,19 +6867,19 @@
       "benchmark_score": 92
     },
     {
-      "gpu_name": "G205M",
-      "benchmark_score": 92
-    },
-    {
       "gpu_name": "Mobility Radeon X1600",
       "benchmark_score": 92
     },
     {
-      "gpu_name": "nForce 780a SLI",
+      "gpu_name": "8600 GS",
       "benchmark_score": 92
     },
     {
       "gpu_name": "X600XT",
+      "benchmark_score": 92
+    },
+    {
+      "gpu_name": "nForce 780a SLI",
       "benchmark_score": 92
     },
     {
@@ -7331,7 +6919,7 @@
       "benchmark_score": 87
     },
     {
-      "gpu_name": "G33/G31 Express",
+      "gpu_name": "Quadro FX 350",
       "benchmark_score": 86
     },
     {
@@ -7339,7 +6927,7 @@
       "benchmark_score": 86
     },
     {
-      "gpu_name": "Quadro FX 350",
+      "gpu_name": "G33/G31 Express",
       "benchmark_score": 86
     },
     {
@@ -7355,7 +6943,15 @@
       "benchmark_score": 85
     },
     {
-      "gpu_name": "ALL IN WONDER X800 GT",
+      "gpu_name": "Quadro FX 370",
+      "benchmark_score": 84
+    },
+    {
+      "gpu_name": "X800 GT",
+      "benchmark_score": 84
+    },
+    {
+      "gpu_name": "X1300 PRO",
       "benchmark_score": 84
     },
     {
@@ -7367,15 +6963,7 @@
       "benchmark_score": 84
     },
     {
-      "gpu_name": "Quadro FX 370",
-      "benchmark_score": 84
-    },
-    {
-      "gpu_name": "X1300 PRO",
-      "benchmark_score": 84
-    },
-    {
-      "gpu_name": "X800 GT",
+      "gpu_name": "ALL IN WONDER X800 GT",
       "benchmark_score": 84
     },
     {
@@ -7387,31 +6975,7 @@
       "benchmark_score": 83
     },
     {
-      "gpu_name": "7300 GS",
-      "benchmark_score": 82
-    },
-    {
-      "gpu_name": "9100",
-      "benchmark_score": 82
-    },
-    {
-      "gpu_name": "9300 SE",
-      "benchmark_score": 82
-    },
-    {
-      "gpu_name": "MOBILITY FireGL V5000",
-      "benchmark_score": 82
-    },
-    {
-      "gpu_name": "Mobility Radeon X2500",
-      "benchmark_score": 82
-    },
-    {
       "gpu_name": "nForce 980a/780a SLI",
-      "benchmark_score": 82
-    },
-    {
-      "gpu_name": "HD 3200",
       "benchmark_score": 82
     },
     {
@@ -7419,11 +6983,39 @@
       "benchmark_score": 82
     },
     {
+      "gpu_name": "HD 3200",
+      "benchmark_score": 82
+    },
+    {
+      "gpu_name": "Mobility Radeon X2500",
+      "benchmark_score": 82
+    },
+    {
+      "gpu_name": "MOBILITY FireGL V5000",
+      "benchmark_score": 82
+    },
+    {
+      "gpu_name": "7300 GS",
+      "benchmark_score": 82
+    },
+    {
+      "gpu_name": "9300 SE",
+      "benchmark_score": 82
+    },
+    {
+      "gpu_name": "9100",
+      "benchmark_score": 82
+    },
+    {
+      "gpu_name": "Mobility Radeon 4100",
+      "benchmark_score": 81
+    },
+    {
       "gpu_name": "8400",
       "benchmark_score": 81
     },
     {
-      "gpu_name": "Mobility Radeon 4100",
+      "gpu_name": "X850 XT",
       "benchmark_score": 81
     },
     {
@@ -7432,10 +7024,6 @@
     },
     {
       "gpu_name": "X800 XT Platinum Edition",
-      "benchmark_score": 81
-    },
-    {
-      "gpu_name": "X850 XT",
       "benchmark_score": 81
     },
     {
@@ -7467,11 +7055,7 @@
       "benchmark_score": 76
     },
     {
-      "gpu_name": "9400M",
-      "benchmark_score": 75
-    },
-    {
-      "gpu_name": "G45/G43 Express Chipset",
+      "gpu_name": "X1650 GTO",
       "benchmark_score": 75
     },
     {
@@ -7479,7 +7063,11 @@
       "benchmark_score": 75
     },
     {
-      "gpu_name": "X1650 GTO",
+      "gpu_name": "G45/G43 Express Chipset",
+      "benchmark_score": 75
+    },
+    {
+      "gpu_name": "9400M",
       "benchmark_score": 75
     },
     {
@@ -7487,15 +7075,15 @@
       "benchmark_score": 74
     },
     {
-      "gpu_name": "7350 LE",
-      "benchmark_score": 74
-    },
-    {
       "gpu_name": "3100",
       "benchmark_score": 74
     },
     {
-      "gpu_name": "8600M GS",
+      "gpu_name": "7350 LE",
+      "benchmark_score": 74
+    },
+    {
+      "gpu_name": "X700",
       "benchmark_score": 73
     },
     {
@@ -7503,7 +7091,7 @@
       "benchmark_score": 73
     },
     {
-      "gpu_name": "X700",
+      "gpu_name": "8600M GS",
       "benchmark_score": 73
     },
     {
@@ -7513,6 +7101,10 @@
     {
       "gpu_name": "X850 PRO",
       "benchmark_score": 73
+    },
+    {
+      "gpu_name": "MEDION RADEON 9800 XXL",
+      "benchmark_score": 72
     },
     {
       "gpu_name": "FireGL V7100",
@@ -7527,14 +7119,6 @@
       "benchmark_score": 72
     },
     {
-      "gpu_name": "MEDION RADEON 9800 XXL",
-      "benchmark_score": 72
-    },
-    {
-      "gpu_name": "FireGL V3300",
-      "benchmark_score": 71
-    },
-    {
       "gpu_name": "X1650 SE",
       "benchmark_score": 71
     },
@@ -7547,12 +7131,8 @@
       "benchmark_score": 71
     },
     {
-      "gpu_name": "BASICDISPLAY",
-      "benchmark_score": 70
-    },
-    {
-      "gpu_name": "Diamond X1300 PCIE 256MB",
-      "benchmark_score": 70
+      "gpu_name": "FireGL V3300",
+      "benchmark_score": 71
     },
     {
       "gpu_name": "9100M G",
@@ -7560,6 +7140,14 @@
     },
     {
       "gpu_name": "Quadro NVS 420",
+      "benchmark_score": 70
+    },
+    {
+      "gpu_name": "BASICDISPLAY",
+      "benchmark_score": 70
+    },
+    {
+      "gpu_name": "Diamond X1300 PCIE 256MB",
       "benchmark_score": 70
     },
     {
@@ -7603,10 +7191,6 @@
       "benchmark_score": 68
     },
     {
-      "gpu_name": "256MB RADEON X600",
-      "benchmark_score": 67
-    },
-    {
       "gpu_name": "8300 GS",
       "benchmark_score": 67
     },
@@ -7615,11 +7199,15 @@
       "benchmark_score": 67
     },
     {
-      "gpu_name": "Quadro NVS 135M",
+      "gpu_name": "X1550",
       "benchmark_score": 67
     },
     {
-      "gpu_name": "X1550",
+      "gpu_name": "256MB RADEON X600",
+      "benchmark_score": 67
+    },
+    {
+      "gpu_name": "Quadro NVS 135M",
       "benchmark_score": 67
     },
     {
@@ -7643,11 +7231,7 @@
       "benchmark_score": 65
     },
     {
-      "gpu_name": "8400M GT",
-      "benchmark_score": 64
-    },
-    {
-      "gpu_name": "M71 M",
+      "gpu_name": "Quadro NVS 450",
       "benchmark_score": 64
     },
     {
@@ -7655,7 +7239,11 @@
       "benchmark_score": 64
     },
     {
-      "gpu_name": "Quadro NVS 450",
+      "gpu_name": "M71 M",
+      "benchmark_score": 64
+    },
+    {
+      "gpu_name": "8400M GT",
       "benchmark_score": 64
     },
     {
@@ -7691,19 +7279,7 @@
       "benchmark_score": 60
     },
     {
-      "gpu_name": "FireGL X1",
-      "benchmark_score": 59
-    },
-    {
-      "gpu_name": "6800 XE",
-      "benchmark_score": 59
-    },
-    {
       "gpu_name": "8400M G",
-      "benchmark_score": 59
-    },
-    {
-      "gpu_name": "FX 5950 Ultra",
       "benchmark_score": 59
     },
     {
@@ -7711,11 +7287,23 @@
       "benchmark_score": 59
     },
     {
+      "gpu_name": "FX 5950 Ultra",
+      "benchmark_score": 59
+    },
+    {
       "gpu_name": "9800 PRO",
       "benchmark_score": 59
     },
     {
-      "gpu_name": "Express Chipset Q45/Q43",
+      "gpu_name": "6800 XE",
+      "benchmark_score": 59
+    },
+    {
+      "gpu_name": "FireGL X1",
+      "benchmark_score": 59
+    },
+    {
+      "gpu_name": "9800",
       "benchmark_score": 58
     },
     {
@@ -7723,21 +7311,15 @@
       "benchmark_score": 58
     },
     {
-      "gpu_name": "9800",
-      "benchmark_score": 58
-    },
-    {
       "gpu_name": "X1300",
       "benchmark_score": 58
-    }
-  ],
-  "D": [
-    {
-      "gpu_name": "Express Chipset G41",
-      "benchmark_score": 57
     },
     {
-      "gpu_name": "G41 Express Chipsatz",
+      "gpu_name": "Express Chipset Q45/Q43",
+      "benchmark_score": 58
+    },
+    {
+      "gpu_name": "9800 XT",
       "benchmark_score": 57
     },
     {
@@ -7745,11 +7327,15 @@
       "benchmark_score": 57
     },
     {
-      "gpu_name": "9800 XT",
+      "gpu_name": "X600 256MB HyperMemory",
       "benchmark_score": 57
     },
     {
-      "gpu_name": "X600 256MB HyperMemory",
+      "gpu_name": "Express Chipset G41",
+      "benchmark_score": 57
+    },
+    {
+      "gpu_name": "G41 Express Chipsatz",
       "benchmark_score": 57
     },
     {
@@ -7765,15 +7351,15 @@
       "benchmark_score": 53
     },
     {
-      "gpu_name": "7100 GS",
-      "benchmark_score": 52
-    },
-    {
       "gpu_name": "Go 7300",
       "benchmark_score": 52
     },
     {
       "gpu_name": "Matrox G200eh WDDM 1.2",
+      "benchmark_score": 52
+    },
+    {
+      "gpu_name": "7100 GS",
       "benchmark_score": 52
     },
     {
@@ -7783,17 +7369,11 @@
     {
       "gpu_name": "Xpress 1300",
       "benchmark_score": 52
-    },
-    {
-      "gpu_name": "FirePro 2450",
-      "benchmark_score": 51
-    },
+    }
+  ],
+  "D": [
     {
       "gpu_name": "6600 LE",
-      "benchmark_score": 51
-    },
-    {
-      "gpu_name": "FX Go5700",
       "benchmark_score": 51
     },
     {
@@ -7801,7 +7381,15 @@
       "benchmark_score": 51
     },
     {
+      "gpu_name": "FirePro 2450",
+      "benchmark_score": 51
+    },
+    {
       "gpu_name": "X550",
+      "benchmark_score": 51
+    },
+    {
+      "gpu_name": "FX Go5700",
       "benchmark_score": 51
     },
     {
@@ -7813,19 +7401,7 @@
       "benchmark_score": 50
     },
     {
-      "gpu_name": "128MB RADEON X600 SE",
-      "benchmark_score": 49
-    },
-    {
-      "gpu_name": "7300 SE/7200 GS",
-      "benchmark_score": 49
-    },
-    {
       "gpu_name": "Mobility Radeon X2300 HD",
-      "benchmark_score": 49
-    },
-    {
-      "gpu_name": "MOBILITY RADEON X600 SE",
       "benchmark_score": 49
     },
     {
@@ -7833,19 +7409,31 @@
       "benchmark_score": 49
     },
     {
-      "gpu_name": "X1050",
-      "benchmark_score": 49
-    },
-    {
       "gpu_name": "X1600",
       "benchmark_score": 49
     },
     {
-      "gpu_name": "Mobility Radeon X2300",
-      "benchmark_score": 48
+      "gpu_name": "128MB RADEON X600 SE",
+      "benchmark_score": 49
+    },
+    {
+      "gpu_name": "X1050",
+      "benchmark_score": 49
+    },
+    {
+      "gpu_name": "7300 SE/7200 GS",
+      "benchmark_score": 49
+    },
+    {
+      "gpu_name": "MOBILITY RADEON X600 SE",
+      "benchmark_score": 49
     },
     {
       "gpu_name": "Quadro NVS 110M",
+      "benchmark_score": 48
+    },
+    {
+      "gpu_name": "Mobility Radeon X2300",
       "benchmark_score": 48
     },
     {
@@ -7853,11 +7441,11 @@
       "benchmark_score": 48
     },
     {
-      "gpu_name": "Quadro NVS 120M",
+      "gpu_name": "SAPPHIRE RADEON 9600 ATLANTIS",
       "benchmark_score": 47
     },
     {
-      "gpu_name": "SAPPHIRE RADEON 9600 ATLANTIS",
+      "gpu_name": "Quadro NVS 120M",
       "benchmark_score": 47
     },
     {
@@ -7873,18 +7461,6 @@
       "benchmark_score": 46
     },
     {
-      "gpu_name": "Go 6600 TE/6200 TE",
-      "benchmark_score": 45
-    },
-    {
-      "gpu_name": "Go 7200",
-      "benchmark_score": 45
-    },
-    {
-      "gpu_name": "Matrox G200eh WDDM 2.0",
-      "benchmark_score": 45
-    },
-    {
       "gpu_name": "Matrox G200eR WDDM 1.2",
       "benchmark_score": 45
     },
@@ -7893,7 +7469,19 @@
       "benchmark_score": 45
     },
     {
+      "gpu_name": "Go 7200",
+      "benchmark_score": 45
+    },
+    {
+      "gpu_name": "Go 6600 TE/6200 TE",
+      "benchmark_score": 45
+    },
+    {
       "gpu_name": "Mobile Intel serie 4 Express",
+      "benchmark_score": 45
+    },
+    {
+      "gpu_name": "Quadro FX 350M",
       "benchmark_score": 45
     },
     {
@@ -7901,7 +7489,7 @@
       "benchmark_score": 45
     },
     {
-      "gpu_name": "Quadro FX 350M",
+      "gpu_name": "Matrox G200eh WDDM 2.0",
       "benchmark_score": 45
     },
     {
@@ -7933,19 +7521,11 @@
       "benchmark_score": 42
     },
     {
-      "gpu_name": "FX 5700",
-      "benchmark_score": 41
-    },
-    {
       "gpu_name": "FX 5900 Ultra",
       "benchmark_score": 41
     },
     {
-      "gpu_name": "Gigabyte RADEON X300",
-      "benchmark_score": 41
-    },
-    {
-      "gpu_name": "Matrox G200eh",
+      "gpu_name": "FX 5700",
       "benchmark_score": 41
     },
     {
@@ -7953,15 +7533,15 @@
       "benchmark_score": 41
     },
     {
-      "gpu_name": "FX 5900XT",
-      "benchmark_score": 40
+      "gpu_name": "Matrox G200eh",
+      "benchmark_score": 41
     },
     {
-      "gpu_name": "Matrox G200eW",
-      "benchmark_score": 40
+      "gpu_name": "Gigabyte RADEON X300",
+      "benchmark_score": 41
     },
     {
-      "gpu_name": "Mobility Radeon X1300",
+      "gpu_name": "S3 Chrome 430 ULP",
       "benchmark_score": 40
     },
     {
@@ -7973,11 +7553,19 @@
       "benchmark_score": 40
     },
     {
-      "gpu_name": "S3 Chrome 430 ULP",
+      "gpu_name": "FX 5900XT",
       "benchmark_score": 40
     },
     {
-      "gpu_name": "7050 / nForce 620i",
+      "gpu_name": "Mobility Radeon X1300",
+      "benchmark_score": 40
+    },
+    {
+      "gpu_name": "Matrox G200eW",
+      "benchmark_score": 40
+    },
+    {
+      "gpu_name": "Mobile Intel famiglia Express Chipset 45",
       "benchmark_score": 39
     },
     {
@@ -7985,11 +7573,7 @@
       "benchmark_score": 39
     },
     {
-      "gpu_name": "GIGABYTE RADEON 9600 PRO",
-      "benchmark_score": 39
-    },
-    {
-      "gpu_name": "Mobile Intel famiglia Express Chipset 45",
+      "gpu_name": "Quadro NVS 285",
       "benchmark_score": 39
     },
     {
@@ -7997,11 +7581,15 @@
       "benchmark_score": 39
     },
     {
-      "gpu_name": "Quadro NVS 285",
+      "gpu_name": "GIGABYTE RADEON 9600 PRO",
       "benchmark_score": 39
     },
     {
-      "gpu_name": "256MB DDR Radeon 9800 XT",
+      "gpu_name": "7050 / nForce 620i",
+      "benchmark_score": 39
+    },
+    {
+      "gpu_name": "7050 / nForce 630i",
       "benchmark_score": 38
     },
     {
@@ -8009,15 +7597,7 @@
       "benchmark_score": 38
     },
     {
-      "gpu_name": "7050 / nForce 630i",
-      "benchmark_score": 38
-    },
-    {
       "gpu_name": "Quadro NVS 285 128MB",
-      "benchmark_score": 38
-    },
-    {
-      "gpu_name": "Quadro NVS 440",
       "benchmark_score": 38
     },
     {
@@ -8025,11 +7605,15 @@
       "benchmark_score": 38
     },
     {
-      "gpu_name": "6200SE TurboCache",
-      "benchmark_score": 37
+      "gpu_name": "Quadro NVS 440",
+      "benchmark_score": 38
     },
     {
-      "gpu_name": "Matrox G200eR",
+      "gpu_name": "256MB DDR Radeon 9800 XT",
+      "benchmark_score": 38
+    },
+    {
+      "gpu_name": "6200SE TurboCache",
       "benchmark_score": 37
     },
     {
@@ -8037,19 +7621,19 @@
       "benchmark_score": 37
     },
     {
-      "gpu_name": "CONNECT 3D RADEON X300",
-      "benchmark_score": 36
+      "gpu_name": "Matrox G200eR",
+      "benchmark_score": 37
     },
     {
       "gpu_name": "FireMV 2200 PCIe",
       "benchmark_score": 36
     },
     {
-      "gpu_name": "MOBILITY RADEON 9600",
+      "gpu_name": "Quadro FX 1100",
       "benchmark_score": 36
     },
     {
-      "gpu_name": "Quadro FX 1100",
+      "gpu_name": "MOBILITY RADEON 9600",
       "benchmark_score": 36
     },
     {
@@ -8061,16 +7645,8 @@
       "benchmark_score": 36
     },
     {
-      "gpu_name": "6200",
-      "benchmark_score": 35
-    },
-    {
-      "gpu_name": "7100 / nForce 630i",
-      "benchmark_score": 35
-    },
-    {
-      "gpu_name": "FX 5900",
-      "benchmark_score": 35
+      "gpu_name": "CONNECT 3D RADEON X300",
+      "benchmark_score": 36
     },
     {
       "gpu_name": "PCX 5750",
@@ -8081,8 +7657,36 @@
       "benchmark_score": 35
     },
     {
+      "gpu_name": "FX 5900",
+      "benchmark_score": 35
+    },
+    {
+      "gpu_name": "6200",
+      "benchmark_score": 35
+    },
+    {
+      "gpu_name": "7100 / nForce 630i",
+      "benchmark_score": 35
+    },
+    {
       "gpu_name": "9600 XT",
       "benchmark_score": 35
+    },
+    {
+      "gpu_name": "MOBILITY RADEON X300",
+      "benchmark_score": 34
+    },
+    {
+      "gpu_name": "MOBILITY FIREGL T2/T2e",
+      "benchmark_score": 34
+    },
+    {
+      "gpu_name": "Xpress 1100",
+      "benchmark_score": 34
+    },
+    {
+      "gpu_name": "Quadro FX 1300",
+      "benchmark_score": 34
     },
     {
       "gpu_name": "7025 / nForce 630a",
@@ -8097,35 +7701,11 @@
       "benchmark_score": 34
     },
     {
-      "gpu_name": "MOBILITY FIREGL T2/T2e",
-      "benchmark_score": 34
-    },
-    {
-      "gpu_name": "MOBILITY RADEON X300",
-      "benchmark_score": 34
-    },
-    {
       "gpu_name": "Quadro FX 1000",
       "benchmark_score": 34
     },
     {
-      "gpu_name": "Quadro FX 1300",
-      "benchmark_score": 34
-    },
-    {
-      "gpu_name": "Xpress 1100",
-      "benchmark_score": 34
-    },
-    {
-      "gpu_name": "6150 LE",
-      "benchmark_score": 33
-    },
-    {
-      "gpu_name": "7150 / nForce 630i",
-      "benchmark_score": 33
-    },
-    {
-      "gpu_name": "FX 5700VE",
+      "gpu_name": "S3 Chrome S27 DDR3",
       "benchmark_score": 33
     },
     {
@@ -8133,7 +7713,7 @@
       "benchmark_score": 33
     },
     {
-      "gpu_name": "Media Accelerator",
+      "gpu_name": "X1200",
       "benchmark_score": 33
     },
     {
@@ -8141,16 +7721,20 @@
       "benchmark_score": 33
     },
     {
-      "gpu_name": "X1200",
+      "gpu_name": "7150 / nForce 630i",
       "benchmark_score": 33
     },
     {
-      "gpu_name": "S3 Chrome S27 DDR3",
+      "gpu_name": "Media Accelerator",
       "benchmark_score": 33
     },
     {
-      "gpu_name": "6200 A LE",
-      "benchmark_score": 32
+      "gpu_name": "FX 5700VE",
+      "benchmark_score": 33
+    },
+    {
+      "gpu_name": "6150 LE",
+      "benchmark_score": 33
     },
     {
       "gpu_name": "Matrox M9148 LP PCIe x16",
@@ -8158,6 +7742,10 @@
     },
     {
       "gpu_name": "Red Hat QXL controller",
+      "benchmark_score": 32
+    },
+    {
+      "gpu_name": "6200 A LE",
       "benchmark_score": 32
     },
     {
@@ -8185,7 +7773,7 @@
       "benchmark_score": 30
     },
     {
-      "gpu_name": "6150SE nForce 430",
+      "gpu_name": "Xpress 1150",
       "benchmark_score": 30
     },
     {
@@ -8193,7 +7781,7 @@
       "benchmark_score": 30
     },
     {
-      "gpu_name": "Xpress 1150",
+      "gpu_name": "6150SE nForce 430",
       "benchmark_score": 30
     },
     {
@@ -8213,14 +7801,6 @@
       "benchmark_score": 27
     },
     {
-      "gpu_name": "MOBILITY FireGL V5250",
-      "benchmark_score": 27
-    },
-    {
-      "gpu_name": "MOBILITY RADEON 9700",
-      "benchmark_score": 27
-    },
-    {
       "gpu_name": "MOBILITY RADEON XPRESS 200",
       "benchmark_score": 27
     },
@@ -8229,12 +7809,24 @@
       "benchmark_score": 27
     },
     {
+      "gpu_name": "Xpress 1270",
+      "benchmark_score": 27
+    },
+    {
+      "gpu_name": "MOBILITY FireGL V5250",
+      "benchmark_score": 27
+    },
+    {
+      "gpu_name": "MOBILITY RADEON 9700",
+      "benchmark_score": 27
+    },
+    {
       "gpu_name": "9600SE",
       "benchmark_score": 27
     },
     {
-      "gpu_name": "Xpress 1270",
-      "benchmark_score": 27
+      "gpu_name": "PHDGD Sapphire GR for Mobile Intel 965",
+      "benchmark_score": 26
     },
     {
       "gpu_name": "7100 / nForce 620i",
@@ -8249,23 +7841,7 @@
       "benchmark_score": 26
     },
     {
-      "gpu_name": "PHDGD Sapphire GR for Mobile Intel 965",
-      "benchmark_score": 26
-    },
-    {
       "gpu_name": "6100 nForce 400",
-      "benchmark_score": 25
-    },
-    {
-      "gpu_name": "6100 nForce 405",
-      "benchmark_score": 25
-    },
-    {
-      "gpu_name": "6100 nForce 420",
-      "benchmark_score": 25
-    },
-    {
-      "gpu_name": "6150SE",
       "benchmark_score": 25
     },
     {
@@ -8273,11 +7849,15 @@
       "benchmark_score": 25
     },
     {
-      "gpu_name": "G965 Express",
+      "gpu_name": "6150SE",
       "benchmark_score": 25
     },
     {
-      "gpu_name": "MOBILITY RADEON 9600 PRO TURBO",
+      "gpu_name": "6100 nForce 420",
+      "benchmark_score": 25
+    },
+    {
+      "gpu_name": "G965 Express",
       "benchmark_score": 25
     },
     {
@@ -8285,11 +7865,19 @@
       "benchmark_score": 25
     },
     {
+      "gpu_name": "6100 nForce 405",
+      "benchmark_score": 25
+    },
+    {
+      "gpu_name": "MOBILITY RADEON 9600 PRO TURBO",
+      "benchmark_score": 25
+    },
+    {
       "gpu_name": "7050 / nForce 610i",
       "benchmark_score": 24
     },
     {
-      "gpu_name": "Go 6400",
+      "gpu_name": "9800 SE",
       "benchmark_score": 24
     },
     {
@@ -8301,7 +7889,7 @@
       "benchmark_score": 24
     },
     {
-      "gpu_name": "9800 SE",
+      "gpu_name": "Go 6400",
       "benchmark_score": 24
     },
     {
@@ -8329,11 +7917,11 @@
       "benchmark_score": 23
     },
     {
-      "gpu_name": "9xx Soldiers sans frontiers Sigma 2",
+      "gpu_name": "6150",
       "benchmark_score": 22
     },
     {
-      "gpu_name": "6150",
+      "gpu_name": "9xx Soldiers sans frontiers Sigma 2",
       "benchmark_score": 22
     },
     {
@@ -8349,27 +7937,15 @@
       "benchmark_score": 20
     },
     {
-      "gpu_name": "Go 6150",
-      "benchmark_score": 19
-    },
-    {
       "gpu_name": "QXL KMDOD",
       "benchmark_score": 19
     },
     {
-      "gpu_name": "7150M / nForce 630M",
-      "benchmark_score": 18
-    },
-    {
-      "gpu_name": "FX Go 5600",
-      "benchmark_score": 18
+      "gpu_name": "Go 6150",
+      "benchmark_score": 19
     },
     {
       "gpu_name": "Go 6100",
-      "benchmark_score": 18
-    },
-    {
-      "gpu_name": "Mobile Intel965 Express",
       "benchmark_score": 18
     },
     {
@@ -8389,6 +7965,18 @@
       "benchmark_score": 18
     },
     {
+      "gpu_name": "Mobile Intel965 Express",
+      "benchmark_score": 18
+    },
+    {
+      "gpu_name": "7150M / nForce 630M",
+      "benchmark_score": 18
+    },
+    {
+      "gpu_name": "FX Go 5600",
+      "benchmark_score": 18
+    },
+    {
       "gpu_name": "FX 5600 Ultra",
       "benchmark_score": 17
     },
@@ -8405,20 +7993,16 @@
       "benchmark_score": 15
     },
     {
-      "gpu_name": "82945G Express",
+      "gpu_name": "Quadro FX 500/600 PCI",
       "benchmark_score": 14
     },
     {
-      "gpu_name": "Quadro FX 500/600 PCI",
+      "gpu_name": "82945G Express",
       "benchmark_score": 14
     },
     {
       "gpu_name": "HD 2400 PCI",
       "benchmark_score": 14
-    },
-    {
-      "gpu_name": "7000M",
-      "benchmark_score": 13
     },
     {
       "gpu_name": "7000M / nForce 610M",
@@ -8430,6 +8014,10 @@
     },
     {
       "gpu_name": "FX Go5300",
+      "benchmark_score": 13
+    },
+    {
+      "gpu_name": "7000M",
       "benchmark_score": 13
     },
     {
@@ -8453,20 +8041,16 @@
       "benchmark_score": 11
     },
     {
+      "gpu_name": "MOBILITY IGP 9000/9100",
+      "benchmark_score": 10
+    },
+    {
       "gpu_name": "Familia Intel Q33 Express Chipset",
       "benchmark_score": 10
     },
     {
       "gpu_name": "Master X3100 Driver",
       "benchmark_score": 10
-    },
-    {
-      "gpu_name": "MOBILITY IGP 9000/9100",
-      "benchmark_score": 10
-    },
-    {
-      "gpu_name": "ASUS A7000",
-      "benchmark_score": 9
     },
     {
       "gpu_name": "GeCube RADEON 7000",
@@ -8477,7 +8061,7 @@
       "benchmark_score": 9
     },
     {
-      "gpu_name": "Matrox Parhelia 256MB",
+      "gpu_name": "ASUS A7000",
       "benchmark_score": 9
     },
     {
@@ -8485,23 +8069,27 @@
       "benchmark_score": 9
     },
     {
+      "gpu_name": "Matrox Parhelia 256MB",
+      "benchmark_score": 9
+    },
+    {
       "gpu_name": "ASUS V9520 X V62.11",
       "benchmark_score": 8
     },
     {
-      "gpu_name": "FX 5100",
+      "gpu_name": "Quadro NVS 280 PCI",
       "benchmark_score": 8
     },
     {
-      "gpu_name": "FX 5200",
+      "gpu_name": "Quadro FX 500/FX 600",
       "benchmark_score": 8
     },
     {
-      "gpu_name": "FX 5500",
+      "gpu_name": "MOBILITY RADEON 9000 IGP",
       "benchmark_score": 8
     },
     {
-      "gpu_name": "FX Go 5200",
+      "gpu_name": "Mobile Intel 965 Express BR 0907 0461 v1839",
       "benchmark_score": 8
     },
     {
@@ -8513,20 +8101,24 @@
       "benchmark_score": 8
     },
     {
-      "gpu_name": "Mobile Intel 965 Express BR 0907 0461 v1839",
+      "gpu_name": "FX Go 5200",
       "benchmark_score": 8
     },
     {
-      "gpu_name": "MOBILITY RADEON 9000 IGP",
+      "gpu_name": "FX 5500",
       "benchmark_score": 8
     },
     {
-      "gpu_name": "Quadro FX 500/FX 600",
+      "gpu_name": "FX 5200",
       "benchmark_score": 8
     },
     {
-      "gpu_name": "Quadro NVS 280 PCI",
+      "gpu_name": "FX 5100",
       "benchmark_score": 8
+    },
+    {
+      "gpu_name": "Media Accelerator 600",
+      "benchmark_score": 7
     },
     {
       "gpu_name": "Famille de jeu de puces Express Intel 946GZ",
@@ -8537,31 +8129,11 @@
       "benchmark_score": 7
     },
     {
-      "gpu_name": "GeForce4 MX Integrated GPU",
-      "benchmark_score": 7
-    },
-    {
       "gpu_name": "GeForce4 Ti 4400",
       "benchmark_score": 7
     },
     {
-      "gpu_name": "GeForce4 Ti 4800 SE",
-      "benchmark_score": 7
-    },
-    {
-      "gpu_name": "Media Accelerator 600",
-      "benchmark_score": 7
-    },
-    {
-      "gpu_name": "US15 Embedded Media and Controller",
-      "benchmark_score": 7
-    },
-    {
-      "gpu_name": "Matrox Millennium P690 Plus LP PCIe x16",
-      "benchmark_score": 7
-    },
-    {
-      "gpu_name": "Quadro4 380 XGL",
+      "gpu_name": "GeForce4 MX Integrated GPU",
       "benchmark_score": 7
     },
     {
@@ -8569,23 +8141,23 @@
       "benchmark_score": 7
     },
     {
-      "gpu_name": "64MB DDR GeForce3 Ti 200",
-      "benchmark_score": 6
+      "gpu_name": "Quadro4 380 XGL",
+      "benchmark_score": 7
     },
     {
-      "gpu_name": "ALL IN WONDER RADEON 8500DV",
-      "benchmark_score": 6
+      "gpu_name": "GeForce4 Ti 4800 SE",
+      "benchmark_score": 7
     },
     {
-      "gpu_name": "PCX 5300",
-      "benchmark_score": 6
+      "gpu_name": "Matrox Millennium P690 Plus LP PCIe x16",
+      "benchmark_score": 7
     },
     {
-      "gpu_name": "GeForce2 Ultra",
-      "benchmark_score": 6
+      "gpu_name": "US15 Embedded Media and Controller",
+      "benchmark_score": 7
     },
     {
-      "gpu_name": "GeForce4 440 Go 64M",
+      "gpu_name": "GeForce4 Ti 4800",
       "benchmark_score": 6
     },
     {
@@ -8593,7 +8165,11 @@
       "benchmark_score": 6
     },
     {
-      "gpu_name": "GeForce4 Ti 4200",
+      "gpu_name": "GeForce4 440 Go 64M",
+      "benchmark_score": 6
+    },
+    {
+      "gpu_name": "GeForce2 Ultra",
       "benchmark_score": 6
     },
     {
@@ -8601,27 +8177,7 @@
       "benchmark_score": 6
     },
     {
-      "gpu_name": "GeForce4 Ti 4800",
-      "benchmark_score": 6
-    },
-    {
       "gpu_name": "82915G Express",
-      "benchmark_score": 6
-    },
-    {
-      "gpu_name": "Matrox Parhelia APVe",
-      "benchmark_score": 6
-    },
-    {
-      "gpu_name": "Mobile Intel 945GM Express",
-      "benchmark_score": 6
-    },
-    {
-      "gpu_name": "MOBILITY RADEON 7000 IGP",
-      "benchmark_score": 6
-    },
-    {
-      "gpu_name": "MOBILITY RADEON 9000/9100 IGP",
       "benchmark_score": 6
     },
     {
@@ -8629,7 +8185,15 @@
       "benchmark_score": 6
     },
     {
-      "gpu_name": "Quadro NVS 55/280 PCI",
+      "gpu_name": "GeForce4 Ti 4200",
+      "benchmark_score": 6
+    },
+    {
+      "gpu_name": "PCX 5300",
+      "benchmark_score": 6
+    },
+    {
+      "gpu_name": "64MB DDR GeForce3 Ti 200",
       "benchmark_score": 6
     },
     {
@@ -8641,6 +8205,18 @@
       "benchmark_score": 6
     },
     {
+      "gpu_name": "Matrox Parhelia APVe",
+      "benchmark_score": 6
+    },
+    {
+      "gpu_name": "ALL IN WONDER RADEON 8500DV",
+      "benchmark_score": 6
+    },
+    {
+      "gpu_name": "Mobile Intel 945GM Express",
+      "benchmark_score": 6
+    },
+    {
       "gpu_name": "V9560XT V62.11",
       "benchmark_score": 6
     },
@@ -8649,119 +8225,19 @@
       "benchmark_score": 6
     },
     {
-      "gpu_name": "ALL IN WONDER 9000",
-      "benchmark_score": 5
+      "gpu_name": "Quadro NVS 55/280 PCI",
+      "benchmark_score": 6
     },
     {
-      "gpu_name": "ASUS AGP V3800PRO v31.40H",
-      "benchmark_score": 5
+      "gpu_name": "MOBILITY RADEON 9000/9100 IGP",
+      "benchmark_score": 6
     },
     {
-      "gpu_name": "256",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "GeForce2 MX with DVI D and TV out",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "GeForce2 Ti",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "GeForce3",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "GeForce4 420 Go 32M",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "GeForce4 440",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "GeForce4 MX 4000",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "GeForce4 MX 420",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "GeForce4 MX 440",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "GeForce4 MX 440 with AGP8X",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "GeForce4 MX 440SE",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "82865G Controller",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "915G/915GV/910GL Embedded Controller Functio",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "945G Embedded Chipset Function 0",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "Q33 Express",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "Matrox Millennium P650 PCIe 128",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "Mobile Intel 945GM/GU Express",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "MOBILITY FIREGL 7800",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "Quadro2 MXR/EX",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "Quadro4 900 XGL",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "Quadro4 980 XGL",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "7500 Family",
-      "benchmark_score": 5
+      "gpu_name": "MOBILITY RADEON 7000 IGP",
+      "benchmark_score": 6
     },
     {
       "gpu_name": "9000",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "9100 IGP",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "SAPPHIRE RADEON 9000 ATLANTIS PRO",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "VIA/S3G UniChrome Pro IGP",
-      "benchmark_score": 5
-    },
-    {
-      "gpu_name": "WinFast A250 LE",
       "benchmark_score": 5
     },
     {
@@ -8773,15 +8249,119 @@
       "benchmark_score": 5
     },
     {
-      "gpu_name": "ABIT Siluro T400",
-      "benchmark_score": 4
+      "gpu_name": "VIA/S3G UniChrome Pro IGP",
+      "benchmark_score": 5
     },
     {
-      "gpu_name": "Dell 8200",
-      "benchmark_score": 4
+      "gpu_name": "SAPPHIRE RADEON 9000 ATLANTIS PRO",
+      "benchmark_score": 5
     },
     {
-      "gpu_name": "6200A",
+      "gpu_name": "9100 IGP",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "7500 Family",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "945G Embedded Chipset Function 0",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "Quadro4 900 XGL",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "Quadro4 980 XGL",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "Matrox Millennium P650 PCIe 128",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "Q33 Express",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "Quadro2 MXR/EX",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "ALL IN WONDER 9000",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "Mobile Intel 945GM/GU Express",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "915G/915GV/910GL Embedded Controller Functio",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "MOBILITY FIREGL 7800",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "GeForce4 440",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "82865G Controller",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "ASUS AGP V3800PRO v31.40H",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "GeForce4 MX 440 with AGP8X",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "GeForce4 MX 440",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "GeForce4 MX 420",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "GeForce4 MX 4000",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "GeForce4 420 Go 32M",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "GeForce2 MX with DVI D and TV out",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "WinFast A250 LE",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "GeForce2 Ti",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "GeForce4 MX 440SE",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "256",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "GeForce3",
+      "benchmark_score": 5
+    },
+    {
+      "gpu_name": "915G,910G Express",
       "benchmark_score": 4
     },
     {
@@ -8789,19 +8369,27 @@
       "benchmark_score": 4
     },
     {
-      "gpu_name": "GeForce2 GTS/GeForce2 Pro",
+      "gpu_name": "82915G/915GV/910GL",
       "benchmark_score": 4
     },
     {
-      "gpu_name": "GeForce2 Integrated GPU",
+      "gpu_name": "VIA/S3G UniChrome IGP",
       "benchmark_score": 4
     },
     {
-      "gpu_name": "GeForce2 MX/MX 400",
+      "gpu_name": "ABIT Siluro T400",
       "benchmark_score": 4
     },
     {
       "gpu_name": "GeForce3 Ti 200",
+      "benchmark_score": 4
+    },
+    {
+      "gpu_name": "Dell 8200",
+      "benchmark_score": 4
+    },
+    {
+      "gpu_name": "GeForce2 Integrated GPU",
       "benchmark_score": 4
     },
     {
@@ -8817,7 +8405,11 @@
       "benchmark_score": 4
     },
     {
-      "gpu_name": "82915G/915GV/910GL",
+      "gpu_name": "GeForce2 GTS/GeForce2 Pro",
+      "benchmark_score": 4
+    },
+    {
+      "gpu_name": "6200A",
       "benchmark_score": 4
     },
     {
@@ -8825,7 +8417,7 @@
       "benchmark_score": 4
     },
     {
-      "gpu_name": "915G,910G Express",
+      "gpu_name": "VIA/S3G KM400/KN400",
       "benchmark_score": 4
     },
     {
@@ -8833,7 +8425,7 @@
       "benchmark_score": 4
     },
     {
-      "gpu_name": "MOBILITY/RADEON 9000",
+      "gpu_name": "VIA Chrome9 HC IGP Family",
       "benchmark_score": 4
     },
     {
@@ -8845,11 +8437,23 @@
       "benchmark_score": 4
     },
     {
-      "gpu_name": "IGP 320",
+      "gpu_name": "IGP 320M",
       "benchmark_score": 4
     },
     {
-      "gpu_name": "IGP 320M",
+      "gpu_name": "VIA Chrome9 HC IGP Family WDDM",
+      "benchmark_score": 4
+    },
+    {
+      "gpu_name": "GeForce2 MX/MX 400",
+      "benchmark_score": 4
+    },
+    {
+      "gpu_name": "MOBILITY/RADEON 9000",
+      "benchmark_score": 4
+    },
+    {
+      "gpu_name": "IGP 320",
       "benchmark_score": 4
     },
     {
@@ -8861,55 +8465,27 @@
       "benchmark_score": 4
     },
     {
-      "gpu_name": "VIA Chrome9 HC IGP Family",
-      "benchmark_score": 4
-    },
-    {
-      "gpu_name": "VIA Chrome9 HC IGP Family WDDM",
-      "benchmark_score": 4
-    },
-    {
-      "gpu_name": "VIA/S3G KM400/KN400",
-      "benchmark_score": 4
-    },
-    {
-      "gpu_name": "VIA/S3G UniChrome IGP",
-      "benchmark_score": 4
-    },
-    {
-      "gpu_name": "64MB GeForce2 MX with TV Out",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "AMIGAMERLIN 3.1 R1 For Voodoo 4 4500 PCI",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "GeForce2 MX",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "GeForce2 MX 100/200",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "GeForce3 Ti 500",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "GeForce4 420 Go",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "82845G/GL Controller",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "82845G/GL/GE/PE/GV Controller",
-      "benchmark_score": 3
-    },
-    {
       "gpu_name": "82915G/GV/910GL Advanced v3.5",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "9200 LE Family",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "Rage Fury Pro/Xpert 2000 Pro",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "7000 / Radeon VE",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "GMA 3150 Express",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "MOBILITY RADEON 9200",
       "benchmark_score": 3
     },
     {
@@ -8917,15 +8493,11 @@
       "benchmark_score": 3
     },
     {
-      "gpu_name": "946GZ Embedded Chipset Function 0",
+      "gpu_name": "MOBILITY RADEON 9100 IGP",
       "benchmark_score": 3
     },
     {
       "gpu_name": "946GZ Express",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "GMA 3150 Express",
       "benchmark_score": 3
     },
     {
@@ -8941,23 +8513,7 @@
       "benchmark_score": 3
     },
     {
-      "gpu_name": "MOBILITY RADEON 9000",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "MOBILITY RADEON 9100 IGP",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "MOBILITY RADEON 9200",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "7000 / Radeon VE",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "7200",
+      "gpu_name": "9200 SE",
       "benchmark_score": 3
     },
     {
@@ -8965,7 +8521,15 @@
       "benchmark_score": 3
     },
     {
-      "gpu_name": "9200 LE Family",
+      "gpu_name": "946GZ Embedded Chipset Function 0",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "82845G/GL/GE/PE/GV Controller",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "MOBILITY RADEON 9000",
       "benchmark_score": 3
     },
     {
@@ -8973,23 +8537,7 @@
       "benchmark_score": 3
     },
     {
-      "gpu_name": "9200 SE",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "9250",
-      "benchmark_score": 3
-    },
-    {
       "gpu_name": "IGP 340M",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "IGP 345M",
-      "benchmark_score": 3
-    },
-    {
-      "gpu_name": "Rage Fury Pro/Xpert 2000 Pro",
       "benchmark_score": 3
     },
     {
@@ -8997,7 +8545,15 @@
       "benchmark_score": 3
     },
     {
-      "gpu_name": "S3 Inc. Savage4",
+      "gpu_name": "GeForce4 420 Go",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "GeForce2 MX",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "AMIGAMERLIN 3.1 R1 For Voodoo 4 4500 PCI",
       "benchmark_score": 3
     },
     {
@@ -9005,11 +8561,23 @@
       "benchmark_score": 3
     },
     {
+      "gpu_name": "64MB GeForce2 MX with TV Out",
+      "benchmark_score": 3
+    },
+    {
       "gpu_name": "VIA Chrome9 HC IGP WDDM",
       "benchmark_score": 3
     },
     {
-      "gpu_name": "VIA Chrome9 HC IGP WDDM 1.1",
+      "gpu_name": "GeForce3 Ti 500",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "GeForce2 MX 100/200",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "7200",
       "benchmark_score": 3
     },
     {
@@ -9021,23 +8589,31 @@
       "benchmark_score": 3
     },
     {
-      "gpu_name": "Dell 8100",
+      "gpu_name": "S3 Inc. Savage4",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "9250",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "82845G/GL Controller",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "IGP 345M",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "VIA Chrome9 HC IGP WDDM 1.1",
+      "benchmark_score": 3
+    },
+    {
+      "gpu_name": "IGP 34xM",
       "benchmark_score": 2
     },
     {
-      "gpu_name": "82845G Controller",
-      "benchmark_score": 2
-    },
-    {
-      "gpu_name": "Extreme Controller",
-      "benchmark_score": 2
-    },
-    {
-      "gpu_name": "Mobile Intel 915GM/GMS/910GML Express",
-      "benchmark_score": 2
-    },
-    {
-      "gpu_name": "Mobile Intel 945 Express",
+      "gpu_name": "VisionTek Radeon 7000",
       "benchmark_score": 2
     },
     {
@@ -9045,11 +8621,7 @@
       "benchmark_score": 2
     },
     {
-      "gpu_name": "IGP 34xM",
-      "benchmark_score": 2
-    },
-    {
-      "gpu_name": "S3 SuperSavage/IXC 1014",
+      "gpu_name": "VIA Chrome9 HCM IGP",
       "benchmark_score": 2
     },
     {
@@ -9057,11 +8629,27 @@
       "benchmark_score": 2
     },
     {
-      "gpu_name": "VIA Chrome9 HCM IGP",
+      "gpu_name": "Mobile Intel 915GM/GMS/910GML Express",
       "benchmark_score": 2
     },
     {
-      "gpu_name": "VisionTek Radeon 7000",
+      "gpu_name": "S3 SuperSavage/IXC 1014",
+      "benchmark_score": 2
+    },
+    {
+      "gpu_name": "Extreme Controller",
+      "benchmark_score": 2
+    },
+    {
+      "gpu_name": "82845G Controller",
+      "benchmark_score": 2
+    },
+    {
+      "gpu_name": "Dell 8100",
+      "benchmark_score": 2
+    },
+    {
+      "gpu_name": "Mobile Intel 945 Express",
       "benchmark_score": 2
     },
     {
