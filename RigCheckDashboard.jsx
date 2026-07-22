@@ -151,12 +151,12 @@ function formatGamePrice(priceInr) {
  * values instead of resetting to demo defaults.
  * ─────────────────────────────────────────────────────────────────── */
 let _persistedInputs = {
-  vibeQuery:   "I want a horror survival game with zombies",
-  maxBudget:   4000,
-  gpuModel:    "RTX 4050",
-  ramSize:     32,
-  cpuModel:    "Intel Core i5-12400F",
-  freeStorage: 256,
+  vibeQuery:   "",
+  maxBudget:   "",
+  gpuModel:    "",
+  ramSize:     "",
+  cpuModel:    "",
+  freeStorage: "",
 };
 
 function MatchRing({ value = 0 }) {
@@ -310,11 +310,14 @@ export default function RigCheckDashboard({ onGameClick }) {
 
     const payload = {
       description: vibeQuery.trim(),
-      budget: maxBudget,
-      gpu_name: gpuModel.trim(),
-      ram: ramSize,
-      cpu_name: cpuModel.trim() || null,
-      storage_gb: freeStorage,
+      // Coerce empty-string fields to safe numeric defaults.
+      // Empty budget = no budget ceiling (send a high value).
+      // Empty RAM / storage = 0 (backend treats 0 as "not evaluated").
+      budget:     maxBudget   !== "" ? Number(maxBudget)   : 999999,
+      gpu_name:   gpuModel.trim(),
+      ram:        ramSize     !== "" ? Number(ramSize)     : 0,
+      cpu_name:   cpuModel.trim() || null,
+      storage_gb: freeStorage !== "" ? Number(freeStorage) : null,
     };
 
     try {
@@ -398,7 +401,10 @@ export default function RigCheckDashboard({ onGameClick }) {
                 <input
                   type="number"
                   value={maxBudget}
-                  onChange={(e) => setMaxBudget(Math.max(0, Number(e.target.value) || 0))}
+                  onChange={(e) => {
+                    const v = e.target.value;
+                    setMaxBudget(v === "" ? "" : Math.max(0, Number(v)));
+                  }}
                   placeholder="e.g. 3500"
                   min={0}
                   className="w-full rounded-lg border border-slate-800 bg-slate-950 py-2 pl-7 pr-3 text-xs font-semibold text-slate-200 outline-none transition focus:border-cyan-400/60 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.07)]"
@@ -430,7 +436,10 @@ export default function RigCheckDashboard({ onGameClick }) {
               <input
                 type="number"
                 value={ramSize}
-                onChange={(e) => setRamSize(Number(e.target.value))}
+                onChange={(e) => {
+                  const v = e.target.value;
+                  setRamSize(v === "" ? "" : Number(v));
+                }}
                 placeholder="e.g. 16"
                 className="w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-2 text-xs font-semibold text-slate-200 outline-none transition focus:border-cyan-400/60 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.07)]"
               />
@@ -460,7 +469,10 @@ export default function RigCheckDashboard({ onGameClick }) {
               <input
                 type="number"
                 value={freeStorage}
-                onChange={(e) => setFreeStorage(Number(e.target.value))}
+                onChange={(e) => {
+                  const v = e.target.value;
+                  setFreeStorage(v === "" ? "" : Number(v));
+                }}
                 placeholder="e.g. 250"
                 className="w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-2 text-xs font-semibold text-slate-200 outline-none transition focus:border-cyan-400/60 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.07)]"
               />
