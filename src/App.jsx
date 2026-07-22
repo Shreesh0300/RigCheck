@@ -44,7 +44,18 @@ export default function App() {
   const handleGenreHover = useCallback((genre) => setActiveGenre(genre), []);
   const handleGenreSelect = useCallback((genre) => setSelectedGenre(genre), []);
   const handleClearGenre = useCallback(() => setSelectedGenre(null), []);
-  const handleGameClick = useCallback((game) => setSelectedGame(game), []);
+
+  // Opens a game in the GameDetailModal.
+  // If called from within the DiagnosticModal (e.g. "You Might Also Like"),
+  // we must close DiagnosticModal first — otherwise it stays on top and
+  // buries the GameDetailModal (both share the same z-index layer).
+  // If GameDetailModal is already open, updating selectedGame just replaces
+  // the content in-place via props — no second modal is ever created.
+  const handleGameClick = useCallback((game) => {
+    setShowDiagnostic(false); // always close diagnostic before showing game detail
+    setSelectedGame(game);
+  }, []);
+
   const closeGameDetail = useCallback(() => setSelectedGame(null), []);
 
   return (
@@ -69,21 +80,33 @@ export default function App() {
         onGameClick={handleGameClick}
       />
 
-      {/* ── Game Detail Modal ── */}
-      <GameDetailModal 
-        game={selectedGame}
-        onClose={closeGameDetail}
-        onOpenDiagnostic={openDiagnostic}
-      />
-
       {/* Floating "Ask RigCheck AI" Button */}
       <FloatingCTA onClick={openDiagnostic} />
 
       {/* Login Button — top right */}
       <LoginButton />
 
-      {/* Diagnostic Modal — wraps existing RigCheckDashboard */}
+      {/*
+        ── Diagnostic Modal (renders first = lower in paint order) ──
+        Must render BEFORE GameDetailModal so that when a game is selected
+        from within it, the GameDetailModal (rendered after) naturally sits
+        on top without any z-index conflicts.
+      */}
       <DiagnosticModal isOpen={showDiagnostic} onClose={closeDiagnostic} onGameClick={handleGameClick} />
+
+      {/*
+        ── Game Detail Modal (renders last = highest in paint order) ──
+        Driven entirely by `selectedGame` prop.
+        - When selectedGame changes while already open, content updates in-place.
+        - Clicking any game (gallery, diagnostic hero, or "You Might Also Like")
+          calls handleGameClick which closes DiagnosticModal and sets selectedGame,
+          so this modal is always the sole visible overlay.
+      */}
+      <GameDetailModal
+        game={selectedGame}
+        onClose={closeGameDetail}
+        onOpenDiagnostic={openDiagnostic}
+      />
     </main>
   );
 }

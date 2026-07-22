@@ -220,8 +220,16 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
               <X className="h-5 w-5" />
             </button>
 
-            {/* Scrollable Content Container */}
-            <div className="flex-1 overflow-y-auto overflow-x-hidden pb-20">
+            {/* Scrollable Content Container — keyed on game.id so switching games
+                crossfades the content in-place without remounting the modal shell. */}
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.div
+                key={game.id}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0, transition: { duration: 0.25, ease: "easeOut" } }}
+                exit={{ opacity: 0, y: -8, transition: { duration: 0.15, ease: "easeIn" } }}
+                className="flex-1 overflow-y-auto overflow-x-hidden pb-20"
+              >
               {/* ── HERO BANNER ── */}
               <div className="relative h-[400px] w-full shrink-0 sm:h-[500px] lg:h-[600px]">
                 {/* Artwork */}
@@ -510,7 +518,8 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                 </div>
 
               </div>
-            </div>
+              </motion.div>
+            </AnimatePresence>
           </motion.div>
         </motion.div>
       )}
