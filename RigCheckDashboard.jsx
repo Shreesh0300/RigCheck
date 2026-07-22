@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import {
   Cpu,
   Gamepad2,
@@ -145,47 +145,19 @@ function formatGamePrice(priceInr) {
 
 /* ─── Sub-Components ───────────────────────────────────────────────── */
 
-function StatSlider({ icon: Icon, label, value, min, max, step, suffix, prefixed, onChange }) {
-  const progress = ((value - min) / (max - min)) * 100;
-  const displayValue = prefixed ? `${suffix}${fmt(value)}` : `${fmt(value)} ${suffix}`;
-
-  return (
-    <div className="space-y-2.5">
-      <div className="flex items-center justify-between gap-3">
-        <label className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-slate-300">
-          <Icon className="h-3.5 w-3.5 text-cyan-400" />
-          {label}
-        </label>
-        <span className="text-xs font-extrabold tabular-nums text-cyan-400">{displayValue}</span>
-      </div>
-
-      <input
-        type="range"
-        min={min}
-        max={max}
-        step={step}
-        value={value}
-        onChange={(e) => onChange(Number(e.target.value))}
-        style={{
-          background: `linear-gradient(to right, #22d3ee ${progress}%, #1e293b ${progress}%)`,
-        }}
-        className="h-1.5 w-full cursor-pointer appearance-none rounded-full outline-none
-          [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4
-          [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full
-          [&::-webkit-slider-thumb]:border-2 [&::-webkit-slider-thumb]:border-white
-          [&::-webkit-slider-thumb]:bg-cyan-300 [&::-webkit-slider-thumb]:shadow-[0_0_14px_rgba(34,211,238,0.8)]
-          [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:rounded-full
-          [&::-moz-range-thumb]:border-2 [&::-moz-range-thumb]:border-white
-          [&::-moz-range-thumb]:bg-cyan-300"
-      />
-
-      <div className="flex justify-between text-[10px] font-medium text-slate-600">
-        <span>{prefixed ? `${suffix}${fmt(min)}` : `${min} ${suffix}`}</span>
-        <span>{prefixed ? `${suffix}${fmt(max)}` : `${max} ${suffix}`}</span>
-      </div>
-    </div>
-  );
-}
+/* ─── Persisted Input State ───────────────────────────────────────────
+ * Module-level singleton — survives component unmount/remount.
+ * Ensures "Re-Run PC Diagnostic" always restores the user's last-entered
+ * values instead of resetting to demo defaults.
+ * ─────────────────────────────────────────────────────────────────── */
+let _persistedInputs = {
+  vibeQuery:   "I want a horror survival game with zombies",
+  maxBudget:   4000,
+  gpuModel:    "RTX 4050",
+  ramSize:     32,
+  cpuModel:    "Intel Core i5-12400F",
+  freeStorage: 256,
+};
 
 function MatchRing({ value = 0 }) {
   const radius = 38;
@@ -308,14 +280,21 @@ function ErrorState({ message }) {
 /* ─── Main Dashboard ───────────────────────────────────────────────── */
 
 export default function RigCheckDashboard({ onGameClick }) {
-  /* ── Input State ── */
-  const [vibeQuery, setVibeQuery] = useState("I want a horror survival game with zombies");
-  const [maxBudget, setMaxBudget] = useState(4000);
-  const [gpuModel, setGpuModel] = useState("RTX 4050");
-  const [ramSize, setRamSize] = useState(32);
-  const [cpuModel, setCpuModel] = useState("Intel Core i5-12400F");
-  const [freeStorage, setFreeStorage] = useState(256);
-  const [isLoading, setIsLoading] = useState(false);
+  /* ── Input State — initialised from persisted values so reopening the
+     diagnostic always restores what the user last typed. ── */
+  const [vibeQuery,   setVibeQuery]   = useState(_persistedInputs.vibeQuery);
+  const [maxBudget,   setMaxBudget]   = useState(_persistedInputs.maxBudget);
+  const [gpuModel,    setGpuModel]    = useState(_persistedInputs.gpuModel);
+  const [ramSize,     setRamSize]     = useState(_persistedInputs.ramSize);
+  const [cpuModel,    setCpuModel]    = useState(_persistedInputs.cpuModel);
+  const [freeStorage, setFreeStorage] = useState(_persistedInputs.freeStorage);
+  const [isLoading,   setIsLoading]   = useState(false);
+
+  /* ── Persist inputs to module-level state on every change.
+     This survives DiagnosticModal open/close cycles (component unmount). ── */
+  useEffect(() => {
+    _persistedInputs = { vibeQuery, maxBudget, gpuModel, ramSize, cpuModel, freeStorage };
+  }, [vibeQuery, maxBudget, gpuModel, ramSize, cpuModel, freeStorage]);
 
   /* ── Result State (populated from the backend response) ── */
   const [result, setResult] = useState(null);    // full API response object
@@ -408,18 +387,24 @@ export default function RigCheckDashboard({ onGameClick }) {
               />
             </div>
 
-            {/* Budget Slider */}
-            <StatSlider
-              icon={Zap}
-              label="Max Budget"
-              value={maxBudget}
-              min={500}
-              max={10000}
-              step={100}
-              suffix="₹"
-              prefixed
-              onChange={setMaxBudget}
-            />
+            {/* Max Budget — plain numeric input, no slider */}
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-slate-300">
+                <Zap className="h-3.5 w-3.5 text-cyan-400" />
+                Max Budget
+              </label>
+              <div className="relative">
+                <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-xs font-bold text-cyan-400">₹</span>
+                <input
+                  type="number"
+                  value={maxBudget}
+                  onChange={(e) => setMaxBudget(Math.max(0, Number(e.target.value) || 0))}
+                  placeholder="e.g. 3500"
+                  min={0}
+                  className="w-full rounded-lg border border-slate-800 bg-slate-950 py-2 pl-7 pr-3 text-xs font-semibold text-slate-200 outline-none transition focus:border-cyan-400/60 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.07)]"
+                />
+              </div>
+            </div>
 
             {/* GPU Model */}
             <div className="space-y-2">
