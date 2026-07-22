@@ -148,7 +148,13 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
   // Derived properties
   const priceLabel = useMemo(() => {
     if (!game) return "";
-    return game.price === 0 ? "Free to Play" : `₹${game.price.toLocaleString("en-IN")}`;
+    // Prefer price_inr from the backend API response (actual Steam/store price).
+    // Fall back to the static `price` field from gameData.js.
+    // Never use user budget — budget is only for filtering, not display.
+    const rawPrice = game.price_inr ?? game.price;
+    if (rawPrice === null || rawPrice === undefined) return "Price Unavailable";
+    if (rawPrice === 0) return "Free to Play";
+    return `\u20B9${Number(rawPrice).toLocaleString("en-IN")}`;
   }, [game]);
 
   const requirements = useMemo(() => {

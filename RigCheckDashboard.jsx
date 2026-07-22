@@ -517,6 +517,9 @@ export default function RigCheckDashboard({ onGameClick }) {
                     if (staticGame) {
                       onGameClick({
                         ...staticGame,
+                        // Merge backend price_inr so GameDetailModal shows the real game price,
+                        // independent of the user's Max Budget input.
+                        price_inr: result.price_inr,
                         compatibility: result.compatibility,
                       });
                     }
@@ -674,6 +677,9 @@ export default function RigCheckDashboard({ onGameClick }) {
                               if (staticGame) {
                                 onGameClick({
                                   ...staticGame,
+                                  // Pass the backend price_inr for this alternative game
+                                  // so GameDetailModal shows the real price, not the budget.
+                                  price_inr: game.price_inr,
                                   compatibility: game.compatibility,
                                 });
                               }
