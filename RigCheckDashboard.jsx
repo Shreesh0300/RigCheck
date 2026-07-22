@@ -54,6 +54,18 @@ function getComponentStatusColor(component, data) {
   return "text-slate-400";
 }
 
+/**
+ * Returns true only when ALL four compatibility categories are passing (no red status).
+ * Red statuses: BELOW_MINIMUM (GPU/CPU) and FAIL (RAM/Storage).
+ * BELOW_RECOMMENDED (amber) is a warning but not a blocker for hardware advice.
+ * Hardware Advice is only meaningful when the rig can fully run the game.
+ */
+function allComponentsPass(compat) {
+  if (!compat) return false;
+  const isRed = (data) => data && (data.status === "BELOW_MINIMUM" || data.status === "FAIL");
+  return !isRed(compat.gpu) && !isRed(compat.cpu) && !isRed(compat.ram) && !isRed(compat.storage);
+}
+
 /* ─── Constants ────────────────────────────────────────────────────── */
 
 /** Map the select value to the integer the backend expects. */
@@ -640,8 +652,10 @@ export default function RigCheckDashboard({ onGameClick }) {
                   </div>
                 )}
 
-                {/* Hardware Advice Banner */}
-                {advice && (
+                {/* Hardware Advice Banner — only shown when ALL four components pass (no red status).
+                    A failing GPU, CPU, RAM, or Storage check means the rig can't fully run the game,
+                    so hardware advice (which assumes sufficient specs) is not relevant. */}
+                {advice && allComponentsPass(result.compatibility) && (
                   <div className="border-t border-slate-800/60 px-5 pb-5 sm:px-6">
                     <div className="mt-4 rounded-lg border border-cyan-400/20 bg-cyan-950/50 px-4 py-3.5 shadow-[0_0_20px_rgba(34,211,238,0.08)]">
                       <div className="flex items-start gap-3">
