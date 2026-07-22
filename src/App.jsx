@@ -83,7 +83,7 @@ export default function App() {
       <LoginButton />
 
       {/* Diagnostic Modal — wraps existing RigCheckDashboard */}
-      <DiagnosticModal isOpen={showDiagnostic} onClose={closeDiagnostic} />
+      <DiagnosticModal isOpen={showDiagnostic} onClose={closeDiagnostic} onGameClick={handleGameClick} />
     </main>
   );
 }

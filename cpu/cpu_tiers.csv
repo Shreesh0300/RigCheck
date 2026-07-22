@@ -1,0 +1,3820 @@
+canonical_name,benchmark_score,tier
+AMD Ryzen Threadripper PRO 5995WX,108822,S
+AMD EPYC 7763,88338,S
+AMD EPYC 7J13,86006,S
+AMD EPYC 7713,85861,S
+AMD Ryzen Threadripper PRO 3995WX,83971,S
+AMD Ryzen Threadripper 3990X,81568,S
+AMD Ryzen Threadripper PRO 5975WX,80842,S
+AMD EPYC 7B13,77460,S
+AMD EPYC 7643,76455,S
+AMD EPYC 7702,71646,S
+AMD EPYC 7662,71576,S
+AMD EPYC 7742,68749,S
+AMD EPYC 75F3,68505,S
+AMD Ryzen Threadripper PRO 5965WX,68405,S
+AMD EPYC 7642,67748,S
+AMD EPYC 7543P,67144,S
+AMD EPYC 7R32,64727,S
+AMD Ryzen Threadripper 3970X,63835,S
+AMD Ryzen Threadripper PRO 3975WX,63495,S
+Intel Xeon Platinum 8380,62317,S
+AMD EPYC 7702P,61689,S
+AMD EPYC 74F3,60948,S
+AMD EPYC 7513,59732,S
+AMD EPYC 7443P,57666,S
+AMD EPYC 7542,56728,S
+AMD EPYC 7543,56562,S
+AMD EPYC 7532,55358,S
+AMD Ryzen Threadripper 3960X,54757,S
+Intel Xeon Platinum 8358,54416,S
+AMD EPYC 7453,53511,S
+Intel Xeon Gold 6348,53112,S
+Intel Xeon Platinum 8375C,51836,S
+AMD Ryzen Threadripper PRO 5955WX,51656,S
+AMD EPYC 7402,51368,S
+Intel Xeon Platinum 8347C,49386,S
+AMD EPYC 7502,49177,S
+AMD EPYC 7502P,48995,S
+Intel Xeon Gold 6342,48330,S
+AMD EPYC 7413,46295,S
+AMD Ryzen 9 5950X,46195,S
+AMD EPYC 73F3,46085,S
+AMD EPYC 7343,45882,S
+AMD EPYC 7713P,45860,S
+Intel Xeon Gold 6336Y,45517,S
+Intel Core i9-12900KS,44243,S
+Intel Xeon Gold 6312U,43745,S
+Intel Xeon Gold 6330,43056,S
+AMD EPYC 7601,42244,S
+AMD EPYC 7452,41871,S
+AMD EPYC 7402P,41741,S
+AMD Ryzen Threadripper PRO 5945WX,41578,S
+Intel Xeon Gold 6354,41434,S
+Apple M1 Ultra 20 Core,41360,S
+Intel Core i9-12900KF,41163,S
+Intel Core i9-12900K,41077,S
+AMD EPYC 7F52,40951,S
+AMD EPYC 7313P,40879,S
+Intel Xeon Platinum 8275CL,40794,S
+Intel Xeon W-3275M,40767,S
+AMD EPYC 7313,40575,S
+AMD EPYC 7352,40472,S
+AMD Ryzen Threadripper PRO 3955WX,40225,S
+Intel Xeon W-3265M,39620,S
+AMD Ryzen 9 5900X,39457,S
+AMD Ryzen 9 3950X,39157,S
+Intel Xeon W-3335,38944,S
+Intel Xeon Gold 6248R,38604,S
+Intel Core i9-12900,38281,S
+ARM Neoverse-N1 80 Core 3000 MHz,38122,S
+ARM Neoverse-N1 80 Core 0 MHz,37809,S
+Intel Xeon Gold 6346,37606,S
+Intel Xeon Platinum 8280,37575,S
+Intel Xeon Gold 6238R,37511,S
+Intel Xeon Silver 4316,37264,S
+Intel Xeon W-3175X,37167,S
+Intel Core i9-12900F,35726,S
+Intel Xeon Gold 6242R,35352,S
+Intel Xeon Gold 6326,35328,S
+Intel Core i9-12900T,34999,S
+AMD Ryzen 9 5900,34721,S
+Intel Core i7-12700K,34125,S
+Intel Core i7-12700KF,34110,S
+Intel Xeon Platinum 8260M,33970,S
+Intel Xeon D-2799,33792,S
+AMD Ryzen Threadripper PRO 3945WX,33417,S
+Intel Core i9-10980XE,33408,S
+Intel Xeon Gold 5220R,33370,S
+AMD EPYC 7302,33015,S
+AMD Ryzen 9 3900XT,32869,S
+AMD Ryzen 9 3900X,32751,S
+Intel Xeon Platinum 8168,32616,S
+AMD EPYC 7302P,32480,S
+AMD Ryzen Threadripper 2990WX,32475,S
+Intel Xeon Gold 6252,32410,S
+Intel Core i7-12700F,32268,S
+Intel Xeon Gold 6230R,32223,S
+Intel Core i9-9980XE,31905,S
+Intel Xeon W-2295,31680,S
+Intel Core i7-12700,31659,S
+AMD EPYC 7282,31631,S
+Intel Xeon Platinum 8259CL,31500,S
+AMD Ryzen 9 PRO 3900,31372,S
+AMD EPYC 7371,31094,S
+AMD Ryzen 9 3900,30660,S
+Intel Core i9-9960X,30655,S
+Intel Xeon Gold 6253CL,30616,S
+Intel Xeon W-3245,30549,S
+AMD Ryzen Threadripper 2970WX,30433,S
+AMD EPYC 7551P,30313,S
+Intel Xeon Gold 6246R,30220,S
+Intel Core i9-12900HK,30213,S
+Intel Core i9-9990XE,30162,S
+Intel Xeon W-3265,30105,S
+Intel Xeon Platinum 8268,30103,S
+Intel Xeon Silver 4314,30043,S
+AMD Ryzen Threadripper 2950X,29981,S
+Intel Core i9-7980XE,29842,S
+Intel Core i9-12900H,29714,S
+Intel Xeon Gold 6254,29356,S
+Intel Xeon W-2191B,29049,S
+Intel Xeon Gold 6148,28962,S
+Intel Xeon Gold 6210U,28915,S
+Intel Xeon Gold 6154,28848,S
+Intel Core i9-10940X,28619,S
+Intel Xeon Gold 5317,28580,S
+Intel Core i9-9940X,28411,S
+AMD Ryzen 7 5800X,28368,S
+AMD EPYC 7401P,28271,S
+ARM Neoverse-N1 64 Core 0 MHz,28079,S
+AMD Ryzen Threadripper 1950X,28037,S
+Intel Xeon W-2275,27904,S
+Intel Xeon Gold 6238,27617,S
+Intel Xeon Gold 6212U,27470,S
+AMD EPYC 7571,27445,S
+Intel Core i5-12600K,27429,S
+Intel Core i7-12700H,27391,S
+Intel Xeon Platinum 8173M,27377,S
+Intel Xeon W-2195,27325,S
+Intel Xeon Gold 6226R,27211,S
+Intel Core i5-12600KF,27186,S
+AMD Ryzen 7 5700X,27065,S
+Intel Xeon Gold 6208U,26901,S
+Intel Core i9-7960X,26699,S
+Intel Core i9-10920X,26696,S
+Intel Xeon Platinum 8175M,26659,S
+Intel Xeon Gold 6230,26657,S
+Intel Core i9-7940X,26508,S
+Intel Xeon Platinum 8160,26485,S
+AMD Ryzen Threadripper 2990X,26469,S
+AMD EPYC 7272,26446,S
+Intel Xeon Gold 5318Y,26400,S
+Intel Xeon Gold 6242,26288,S
+Intel Xeon W-1390P,26031,S
+Intel Xeon W-2265,25984,S
+Intel Xeon W-3235,25974,S
+Intel Xeon W-3323,25875,S
+Intel Xeon Gold 5220,25740,S
+AMD Ryzen 7 5800,25644,S
+Intel Core i9-11900K,25539,S
+Intel Xeon E5-2698R v4,25532,S
+AMD Ryzen 7 5800X3D,25508,S
+AMD EPYC 7351P,25484,S
+AMD Ryzen 7 6800HS,25460,S
+Intel Xeon Platinum 8167M,25396,S
+Intel Core i9-11900KF,25390,S
+Intel Core i9-9920X,25291,S
+AMD Ryzen Threadripper 2920X,25203,S
+Intel Xeon W-1370P,25202,S
+Intel Xeon Gold 5218R,25191,S
+AMD Ryzen 7 PRO 5750G,25004,S
+AMD EPYC 7501,24925,S
+Intel Xeon Gold 6138T,24800,S
+Intel Xeon Gold 6143,24786,S
+Intel Core i7-11700K,24749,S
+Intel Xeon W-2170B,24745,S
+Intel Xeon E5-2699 v4,24619,S
+AMD Ryzen 7 5700G,24545,S
+Intel Xeon Gold 6150,24489,S
+Intel Xeon Gold 6246,24446,S
+AMD Ryzen 9 6900HS,24390,S
+AMD Ryzen 7 PRO 6850U,24352,S
+Intel Xeon Gold 6248,24234,S
+Intel Core i7-11700KF,24147,S
+Intel Xeon W-1370,23908,S
+Intel Xeon W-11955M,23859,S
+AMD Ryzen 7 3800XT,23815,S
+Intel Core i9-11900F,23814,S
+Intel Core i9-10900K,23768,S
+Intel Core i9-11980HK,23629,S
+Intel Xeon Silver 4310,23589,S
+AMD EPYC 7351,23566,S
+Intel Xeon E5-2696 v3,23556,S
+Intel Core i5-12500H,23530,S
+Intel Xeon W-1390,23515,S
+Intel Xeon E5-2679 v4,23512,S
+Intel Core i9-10900KF,23508,S
+Intel Xeon E-2388G,23501,S
+AMD Ryzen 7 6800H,23447,S
+Intel Xeon Gold 6146,23432,S
+AMD Ryzen 9 5980HX,23425,S
+Intel Core i9-7920X,23292,S
+AMD Ryzen 7 3800X,23275,S
+Intel Xeon W-2175,23215,S
+Intel Xeon E5-2696 v4,23207,S
+Intel Xeon Platinum 8176,23179,S
+AMD Ryzen 9 5900HX,23160,S
+Intel Core i5-1250P,23120,S
+Intel Core i9-11900,23117,S
+Intel Core i9-10850K,23055,S
+AMD EPYC 7F32,23026,S
+Intel Xeon W-1290P,22997,S
+AMD Ryzen Threadripper 1920X,22903,S
+Intel Xeon Gold 6138,22851,S
+AMD Ryzen 7 PRO 3700,22800,S
+Intel Core i9-11900KB,22769,S
+Intel Xeon Gold 6140,22733,S
+AMD Ryzen 7 3700X,22716,S
+Intel Core i7-12700T,22688,S
+Intel Core i9-10900X,22683,S
+Intel Core i9-11950H,22570,S
+AMD Ryzen 7 5700GE,22566,S
+Apple M1 Max 10 Core 3200 MHz,22566,S
+Intel Core i7-11700B,22539,S
+AMD Ryzen 7 PRO 5750GE,22315,S
+Apple M1 Pro 10 Core 3200 MHz,22314,S
+Intel Xeon Platinum 8124M,22298,S
+Intel Xeon Gold 6152,22291,S
+Intel Xeon Gold 6136,22266,S
+AMD Ryzen 9 5900HS,22215,S
+Intel Xeon Gold 6334,22160,S
+Intel Xeon Gold 5218,22117,S
+AMD Ryzen 5 5600X,22088,S
+Intel Xeon W-1290E,22066,S
+AMD Ryzen Threadripper 1920,22066,S
+Intel Xeon W-2255,22042,S
+AMD EPYC 7551,22005,S
+Intel Core i9-9900X,21868,S
+Intel Xeon Gold 6130T,21803,S
+Intel Core i9-10910,21799,S
+Intel Xeon E5-2698 v4,21755,S
+Intel Xeon E5-2697 v4,21545,S
+Intel Xeon E5-2697A v4,21494,S
+AMD Ryzen 7 5800H,21469,S
+Intel Core i7-11700F,21447,S
+AMD Ryzen 9 5980HS,21412,S
+Intel Core i9-11900H,21385,S
+Intel Core i5-12600,21368,S
+Intel Core i7-11800H,21363,S
+AMD Ryzen 5 5600,21350,S
+Intel Core i9-7900X,21310,S
+AMD EPYC 7281,21230,S
+Intel Xeon Gold 5315Y,21225,S
+Intel Core i7-11850H,21212,S
+Intel Xeon W-2155,21198,S
+Intel Xeon Gold 6132,21042,S
+Intel Core i7-1270P,21030,S
+Intel Xeon Silver 4310T,20973,S
+AMD Ryzen 9 5900H,20960,S
+AMD Ryzen 7 5800HS Creator Edition,20948,S
+Intel Core i9-10900F,20881,S
+AMD Ryzen 7 PRO 4700G,20848,S
+Intel Xeon E5-2697R v4,20843,S
+AMD EPYC 7262,20827,S
+Intel Xeon Gold 6130,20721,S
+AMD Ryzen 7 5800HS,20684,S
+Intel Core i9-10900E,20658,S
+AMD Ryzen 5 PRO 5650G,20633,S
+Intel Core i7-11700,20588,S
+AMD Ryzen 7 PRO 4750G,20570,S
+Intel Xeon W-1290,20533,S
+AMD EPYC 7451,20471,S
+Intel Xeon W-2150B,20457,S
+Intel Core i9-10900,20446,S
+Intel Xeon Gold 6244,20402,S
+AMD Ryzen 7 4700GE,20392,S
+Intel Xeon E5-2695 v4,20373,S
+AMD Ryzen 7 PRO 5875U,20369,S
+Intel Core i5-12500,20309,S
+Intel Core i9-11900T,20225,S
+AMD Ryzen 7 4700G,20138,S
+Intel Xeon E5-2699 v3,20138,S
+Intel Xeon E5-2690 v4,20094,S
+Intel Xeon E5-2699C v4,20079,S
+AMD Ryzen 5 5500,19949,S
+Intel Xeon W-1350P,19935,S
+AMD Ryzen 5 5600G,19830,S
+Intel Core i5-12450H,19820,S
+Intel Xeon Gold 6226,19810,S
+Intel Xeon E5-2698 v3,19794,S
+Intel Core i5-11600K,19781,S
+Intel Core i5-11600KF,19742,S
+Intel Core i5-12400F,19659,S
+Intel Core i5-12400,19571,S
+Intel Xeon E5-2682 v4,19551,S
+AMD EPYC 7252,19550,S
+Intel Core i9-9900KS,19518,S
+Intel Xeon Silver 4216,19451,S
+Intel Xeon W-2245,19446,S
+AMD Ryzen 9 4900HS,19425,S
+Intel Xeon Gold 6137,19365,S
+Intel Core i7-7900X,19358,S
+AMD Ryzen 9 4900H,19339,S
+Intel Core i7-10700K,19277,S
+Intel Xeon W-1270P,19245,S
+Intel Xeon E5-2697 v3,19238,S
+Intel Xeon Gold 6126,19223,S
+Intel Core i7-10700KF,19143,S
+AMD Ryzen 7 4800H,19056,S
+Intel Core i7-12800H,19052,S
+Intel Xeon Silver 4309Y,19010,S
+Intel Xeon E5-2676 v4,18978,S
+Intel Core i5-1240P,18963,S
+Intel Xeon W-1350,18940,S
+AMD Ryzen 5 5600GE,18879,S
+AMD Ryzen 7 4800HS,18864,S
+Intel Xeon W-11855M,18857,S
+AMD Ryzen 7 5800U,18852,S
+Intel Xeon Silver 4214R,18846,S
+Hygon C86 7255 16-core,18831,S
+ARM Neoverse-N1 80 Core 2600 MHz,18823,S
+AMD Ryzen 5 3600XT,18780,S
+Intel Xeon E-2356G,18757,S
+AMD Ryzen 5 PRO 5650GE,18716,S
+Intel Core i9-9900K,18716,S
+Intel Core i9-9900KF,18691,S
+Intel Xeon Gold 6144,18656,S
+AMD Ryzen 5 PRO 6650U,18649,S
+Intel Xeon W-1270E,18635,S
+AMD Ryzen 7 PRO 4750GE,18550,S
+Intel Xeon Platinum P-8124,18416,S
+Intel Xeon W-1290T,18409,S
+Intel Xeon D-2183IT,18385,S
+Intel Core i5-11600,18318,S
+Intel Core i9-9820X,18288,S
+AMD Ryzen 5 3600X,18285,S
+Intel Xeon E-2378,18248,S
+Intel Xeon E7-8880 v3,18244,S
+Intel Core i7-9800X,18240,S
+Intel Xeon W-2145,18225,S
+AMD 4700S,18224,S
+AMD Ryzen 7 Extreme Edition,18209,S
+Intel Core i5-12600T,18202,S
+Intel Xeon E5-2686 v3,18148,S
+AMD Ryzen 7 5825U,18122,S
+Intel Xeon W-1270,18093,S
+Intel Xeon D-2187NT,18070,S
+AMD Ryzen Embedded V2718,17972,S
+AMD Ryzen 5 PRO 3600,17900,S
+Intel Core i9-10900TE,17888,S
+AMD Ryzen 5 3600,17822,S
+Intel Xeon E5-2680R v4,17795,S
+Intel Core i5-11500B,17783,S
+Intel Xeon E5-2687W v4,17757,S
+Intel Xeon E5-2680 v4,17737,S
+Intel Core i5-12500T,17728,S
+Intel Xeon E-2278G,17706,S
+Intel Xeon Gold 5120,17686,S
+Intel Core i5-11500,17626,S
+AMD Ryzen 7 PRO 5850U,17581,S
+AMD Ryzen 7 2700X,17578,S
+Intel Xeon W-2140B,17576,S
+Intel Xeon Gold 5120T,17540,S
+Intel Xeon E5-2673 v4,17533,S
+Apple M1 Pro 8 Core 3200 MHz,17521,S
+Intel Xeon W-3223,17456,S
+Intel Xeon E5-4669 v3,17430,S
+Intel Xeon E5-2683 v4,17388,S
+Intel Xeon E-2288G,17313,S
+Intel Core i7-7820X,17283,S
+AMD Ryzen 7 PRO 2700X,17221,S
+Intel Core i5-11400F,17213,S
+AMD Ryzen 5 5600H,17196,S
+Intel Core i7-6950X,17142,S
+Intel Core i5-11400,17132,S
+AMD Ryzen 7 4800U,17073,S
+Intel Core i7-10700E,17020,S
+AMD EPYC 7232P,17017,S
+Intel Core i7-10700F,16973,S
+AMD Ryzen Threadripper 1900X,16955,S
+Intel Core i7-10700,16946,S
+Intel Xeon E5-2689 v4,16936,S
+Intel Core i9-9900,16873,S
+Intel Xeon E5-2686 v4,16745,A
+AMD Ryzen 5 4500,16698,A
+Intel Xeon Gold 6134,16518,A
+Intel Core i5-11500H,16458,A
+AMD Ryzen 5 PRO 4400G,16456,A
+Intel Xeon E5-2690 v3,16444,A
+AMD Ryzen 5 PRO 4650G,16428,A
+Intel Core i7-11600H,16403,A
+Intel Core i7-10700TE,16332,A
+AMD Ryzen 7 1800X,16306,A
+Intel Xeon Gold 5118,16287,A
+Intel Core i9-10980HK,16271,A
+AMD Ryzen Embedded V2748,16186,A
+Intel Xeon E5-2669 v3,16107,A
+AMD Ryzen 7 5700U,16104,A
+Intel Core i5-11400H,16073,A
+Intel Core i7-1260P,16020,A
+Intel Xeon W-10885M,16013,A
+AMD Ryzen 7 4850U Mobile,15920,A
+Intel Xeon E-2336,15900,A
+Intel Xeon Gold 5117,15816,A
+Intel Xeon E5-2695 v3,15801,A
+Intel Xeon Silver 4214,15772,A
+AMD Ryzen 5 PRO 4650GE,15712,A
+Intel Core i9-10885H,15679,A
+AMD Ryzen 5 4600GE,15656,A
+AMD Ryzen 7 2700,15654,A
+AMD Ryzen 5 4600G,15577,A
+AMD Ryzen 7 PRO 1700X,15530,A
+Intel Xeon E5-2680 v3,15522,A
+AMD Ryzen 7 PRO 4750U,15511,A
+AMD Ryzen 7 1700X,15496,A
+Intel Xeon Gold 5217,15429,A
+Intel Core i7-10875H,15426,A
+Intel Xeon Gold 5215,15420,A
+Intel Xeon E5-4667 v3,15397,A
+AMD Ryzen 5 PRO 5650U,15373,A
+Intel Core i5-11260H,15313,A
+Intel Core i7-11700T,15271,A
+Intel Core i5-11600T,15254,A
+Intel Xeon E-2278GE,15252,A
+Intel Xeon E-2286M,15249,A
+Intel Xeon Silver 4214Y,15248,A
+AMD Ryzen 5 5600U,15241,A
+Intel Xeon Silver 4116T,15187,A
+Intel Xeon Silver 4215R,15147,A
+Intel Core i9-10900T,15134,A
+Intel Xeon D-2166NT,15105,A
+AMD Ryzen 5 5625U,15099,A
+Intel Core i9-10880H,15064,A
+AMD Ryzen 7 PRO 2700,15059,A
+Intel Xeon E5-2660 v4,15038,A
+Intel Xeon Silver 4210R,15030,A
+Intel Core i7-10870H,15027,A
+AMD EPYC 7301,14991,A
+Intel Core i3-12300,14955,A
+AMD EPYC 7251,14935,A
+Intel Xeon Silver 4116,14931,A
+Intel Xeon W-1250P,14924,A
+Intel Xeon E5-2699A v4,14917,A
+Intel Xeon E5-2658A v3,14879,A
+Intel Xeon E5-2683 v3,14829,A
+Intel Xeon E5-1681 v3,14820,A
+Intel Xeon E5-2687W v3,14812,A
+AMD Ryzen 5 PRO 4400GE,14795,A
+AMD Ryzen 5 4600HS,14735,A
+AMD Ryzen 5 4600H,14735,A
+Intel Core i9-9980HK,14728,A
+Apple M1 8 Core 3200 MHz,14694,A
+Intel Xeon E5-2678 v3,14682,A
+AMD Ryzen 7 2700E,14657,A
+AMD Ryzen 7 1700,14628,A
+AMD Ryzen 7 PRO 1700,14590,A
+Intel Core i5-10600KF,14575,A
+Intel Core i7-9700K,14550,A
+Intel Core i7-8086K,14550,A
+Intel Xeon E5-2676 v3,14537,A
+Intel Core i5-10600K,14534,A
+Intel Core i3-12100,14503,A
+Intel Core i7-9700KF,14499,A
+Intel Core i3-12100F,14490,A
+Intel Xeon Silver 4215,14439,A
+Intel Xeon E5-2658 v4,14434,A
+Intel Xeon Silver 4123,14405,A
+Intel Xeon E-2286G,14384,A
+Intel Xeon W-2235,14332,A
+Intel Xeon E-2236,14307,A
+Intel Core i7-6900K,14291,A
+Intel Xeon Silver 4210,14285,A
+Intel Xeon Gold 6128,14273,A
+Intel Xeon E5-4660 v3,14256,A
+AMD Ryzen 5 PRO 5675U,14253,A
+Intel Xeon E5-2697 v2,14218,A
+Intel Xeon E5-2696 v2,14206,A
+Intel Xeon E5-1680 v4,14120,A
+Intel Xeon E5-2673 v3,14112,A
+Intel Xeon W-2135,14109,A
+Intel Xeon E-2374G,14086,A
+AMD Ryzen 5 2600X,14053,A
+Intel Xeon E-2246G,14050,A
+Intel Core i9-9880H,13979,A
+AMD Ryzen 3 PRO 5350G,13976,A
+AMD EPYC 3251,13965,A
+Intel Core i9-9900T,13947,A
+Intel Core i5-10600,13928,A
+Intel Xeon E5-2670 v3,13917,A
+Intel Xeon E-2186G,13909,A
+Intel Core i7-8700K,13850,A
+Intel Xeon E5-2667 v4,13846,A
+AMD Ryzen 3 5300GE,13843,A
+Intel Core i5-11500T,13820,A
+Intel Xeon W-1250,13799,A
+AMD Ryzen 3 PRO 5350GE,13707,A
+AMD Ryzen 7 4700U,13648,A
+Intel Xeon E-2176G,13643,A
+Intel Xeon W-1270TE,13553,A
+Intel Xeon E5-2695 v2,13521,A
+Intel Xeon E5-2650 v4,13489,A
+Intel Xeon E5-2658 v3,13487,A
+Intel Xeon E5-2690 v2,13481,A
+Intel Core i7-9700F,13462,A
+AMD Ryzen 5 4600U,13460,A
+Intel Core i7-9700,13385,A
+Intel Xeon E-2276G,13371,A
+Intel Xeon E-2136,13356,A
+Intel Xeon E-2146G,13351,A
+Intel Xeon E5-1660 v4,13340,A
+AMD Ryzen 5 3500X,13319,A
+AMD Ryzen 5 PRO 2600,13250,A
+Intel Xeon E5-1680 v3,13214,A
+AMD Ryzen 5 2600,13195,A
+AMD Ryzen 5 5500U,13190,A
+Intel Xeon E-2334,13189,A
+Intel Xeon Silver 4114,13169,A
+Intel Xeon E5-2660 v3,13146,A
+AMD Ryzen 3 5300G,13139,A
+Intel Core i7-10700T,13119,A
+Intel Xeon D-2143IT,13107,A
+Intel Core i5-11400T,13078,A
+Intel Core i5-10500,13056,A
+Intel Core i7-8700,13046,A
+Intel Xeon E5-4627 v4,12969,A
+Intel Xeon W-10855M,12955,A
+Intel Xeon E5-2685 v3,12944,A
+AMD Ryzen 5 1600X,12943,A
+AMD Ryzen 5 PRO 4650U,12889,A
+Intel Core i7-7800X,12864,A
+AMD Ryzen 5 3500,12836,A
+Intel Xeon E5-2618L v4,12816,A
+Intel Core i3-12100T,12767,A
+AMD Ryzen 3 3300X,12746,A
+Intel Core i7-5960X,12719,A
+Intel Xeon E5-2680 v2,12530,A
+Intel Xeon E5-1680 v2,12503,A
+Intel Xeon E5-4657L v2,12495,A
+Intel Core i5-10400F,12439,A
+Intel Xeon W-2133,12438,A
+Intel Xeon E5-2649 v3,12399,A
+Intel Core i7-11375H,12383,A
+Intel Xeon E5-1660 v3,12360,A
+Intel Core i7-10750H,12355,A
+Intel Xeon E5-2667 v3,12354,A
+Intel Core i7-1265U,12334,A
+Intel Core i5-10400,12320,A
+AMD Ryzen 5 1600,12314,A
+Intel Core i7-8700B,12239,A
+Intel Core i7-9700E,12239,A
+AMD Ryzen 3 PRO 5475U,12230,A
+Intel Xeon E5-2667 v2,12222,A
+Intel Core i5-10505,12221,A
+Intel Xeon D-2141I,12177,A
+Intel Core i7-10850H,12124,A
+Intel Xeon E5-2692 v2,12119,A
+Intel Core i7-11370H,12098,A
+Intel Xeon E5-2687W v2,12083,A
+AMD Ryzen 5 PRO 4500U,12049,A
+Intel Xeon E-2278GEL,12024,A
+Intel Xeon E5-2675 v3,11960,A
+Intel Xeon E5-2640 v4,11950,A
+Intel Core i5-1245U,11934,A
+Intel Xeon E5-2650 v3,11931,A
+Intel Xeon E5-2673 v2,11919,A
+AMD Ryzen 3 5400U,11839,A
+Intel Xeon E5-2650L v3,11820,A
+Intel Xeon E-2276M,11818,A
+Intel Xeon E5-2663 v3,11777,A
+Intel Xeon D-2146NT,11736,A
+Intel Xeon E5-2670 v2,11718,A
+AMD Ryzen 3 3100,11660,A
+Intel Xeon D-1577,11645,A
+Intel Core i5-10500H,11604,A
+Intel Xeon E5-2648L v4,11547,A
+Intel Xeon E5-1650 v4,11534,A
+Intel Xeon E5-4669 v4,11523,A
+Intel Core i7-9850H,11483,A
+AMD Ryzen 3 PRO 5450U,11453,A
+Intel Xeon E5-2650L v4,11436,A
+Intel Core i7-9750HF,11391,A
+Intel Core i5-10600T,11376,A
+Intel Xeon E5-2630 v4,11373,A
+Intel Core i3-11100B,11357,A
+Intel Xeon E5-4627 v3,11344,A
+AMD Ryzen 3 4300GE,11332,A
+AMD Ryzen 3 PRO 4200G,11315,A
+Intel Core i7-6850K,11295,A
+ARM Neoverse-N1 16 Core 0 MHz,11281,A
+AMD Ryzen 3 PRO 4350GE,11270,A
+Intel Core i7-9750H,11207,A
+Intel Xeon E5-2640 v3,11205,A
+Intel Xeon E5-2643 v4,11152,A
+Intel Xeon Silver 4208,11137,A
+Intel Core i5-1235U,11119,A
+Intel Xeon E-2226G,11119,A
+Intel Core i7-1185G7E,11114,A
+AMD Ryzen 5 4500U,11098,A
+Intel Xeon E5-2628L v4,11079,A
+Intel Core i5-11300H,11048,A
+Intel Core i7-1195G7,11019,A
+Intel Core i7-1185G7,10948,A
+Intel Xeon E-2176M,10946,A
+AMD Ryzen 3 PRO 4200GE,10930,A
+Intel Xeon E-2186M,10904,A
+Intel Xeon E5-2470 v2,10902,A
+Intel Core i7-11390H,10897,A
+Intel Xeon E5-2630L v4,10864,A
+Apple A12X Bionic,10845,A
+Intel Xeon W-2225,10844,A
+Intel Core i5-9600KF,10838,A
+Intel Xeon E5-4650 v3,10838,A
+AMD Ryzen 3 PRO 4350G,10833,A
+Intel Core i7-9700TE,10826,A
+Intel Core i9-8950HK,10803,A
+Intel Core i5-9600K,10793,A
+AMD Ryzen 3 4300G,10792,A
+Intel Xeon E-2126G,10747,A
+Intel Core i7-9700T,10736,A
+Intel Core i5-11320H,10732,A
+Intel Core i7-6800K,10681,A
+Intel Core i7-1165G7,10595,A
+Intel Core i5-1155G7,10561,A
+Intel Xeon E5-4620 v3,10525,A
+Intel Xeon D-1581,10476,A
+Intel Xeon E5-2618L v3,10464,A
+Intel Core i5-1145G7E,10454,A
+Intel Core i7-8700T,10431,A
+Intel Core i5-1145G7,10413,A
+AMD Ryzen 5 PRO 1600,10401,A
+Intel Xeon E5-2630 v3,10392,A
+Intel Xeon E5-2643 v3,10391,A
+Intel Xeon E5-2660 v2,10382,A
+Intel Xeon E5-1650 v3,10373,A
+Intel Xeon E5-4640 v3,10372,A
+Intel Core i5-9600,10369,A
+Intel Core i5-10500T,10365,A
+Intel Xeon Silver 4109T,10348,A
+Intel Core i7-8850H,10333,A
+Intel Core i5-9500F,10330,A
+Intel Core i7-1160G7,10316,A
+Intel Core i3-10325,10308,A
+Intel Core i7-5930K,10304,A
+Intel Core i5-1140G7,10279,A
+Intel Xeon E5-2658 v2,10274,A
+AMD EPYC 3201,10258,A
+Intel Xeon Silver 4110,10246,A
+Intel Xeon E5-1660 v2,10223,A
+Intel Core i5-8600K,10195,A
+Intel Xeon D-1541,10170,A
+AMD Ryzen 3 PRO 4450U,10129,A
+Intel Core i7-10710U,10126,A
+Intel Core i3-10320,10115,A
+Intel Core i5-1135G7,10100,A
+Intel Core i7-1068NG7,10093,A
+Intel Core i7-8750H,10085,A
+Intel Core i5-10400T,10052,A
+AMD Ryzen 3 5300U,10046,A
+Intel Xeon W-2125,10039,A
+Intel Xeon D-1540,10028,A
+Intel Xeon E5-2650 v2,9995,A
+Intel Core i5-10500TE,9960,A
+Intel Xeon E5-2628L v3,9949,A
+Intel Core i3-1125G4,9932,A
+Intel Core i7-4960X,9906,A
+Intel Xeon E-2234,9903,A
+Intel Core i7-7740X,9864,A
+Intel Core i5-8600,9849,A
+Intel Xeon E5-2648L v3,9847,A
+Intel Xeon E5-2690,9832,A
+Intel Xeon E-2244G,9826,A
+Intel Core i7-5820K,9814,A
+Intel Xeon E5-2687W,9796,A
+Intel Xeon E5-2689,9767,A
+Intel Core i5-1130G7,9756,A
+Intel Core i5-9500,9698,A
+Intel Core i3-10305,9689,A
+AMD Ryzen 5 3350GE,9684,A
+Intel Xeon E-2274G,9660,A
+Intel Core i7-7700K,9658,A
+AMD Ryzen 5 PRO 3350GE,9643,A
+AMD Ryzen 3 5425U,9641,A
+Intel Core i5-1038NG7,9626,A
+Intel Xeon E-2174G,9596,A
+Intel Core i5-8500,9576,A
+Intel Core i5-9400F,9544,A
+AMD Ryzen 5 PRO 3350G,9498,A
+Intel Core i5-9400,9478,A
+Intel Core i5-8500B,9429,A
+Intel Xeon Gold 5222,9428,A
+AMD Ryzen 5 PRO 1500,9402,A
+AMD Ryzen 5 2500X,9384,A
+Intel Xeon E5-4655 v3,9377,A
+Intel Xeon E5-2680,9361,A
+Intel Core i7-4930K,9360,A
+AMD Ryzen 5 3400G,9331,A
+Intel Xeon E5-1650 v2,9323,A
+Intel Xeon E-2144G,9322,A
+Intel Xeon E5-4627 v2,9320,A
+AMD Ryzen 5 PRO 3400G,9307,A
+Intel Core i3-10300,9284,A
+Intel Xeon E3-1285 v6,9276,A
+Intel Xeon Silver 4108,9262,A
+Intel Xeon D-1567,9236,A
+Intel Xeon E3-1275 v6,9229,A
+Intel Xeon D-1587,9223,A
+Intel Core i5-8400,9222,A
+Intel Xeon E5-2651 v2,9216,A
+Intel Core i5-9500TE,9212,A
+Intel Xeon E3-1280 v6,9166,A
+Intel Xeon E5-2620 v4,9152,A
+Intel Core i7-1185GRE,9142,A
+Intel Core i3-10105F,9141,A
+Intel Xeon E5-2629 v3,9139,A
+Intel Core i7-9850HL,9112,A
+Intel Xeon D-1715TER,9104,A
+AMD Ryzen 5 1500X,9083,A
+Intel Xeon E5-2643 v2,9083,A
+Intel Xeon D-1548,9075,A
+AMD Ryzen 5 3350G,9067,A
+Intel Xeon E5-4648 v3,9061,A
+AMD Ryzen 5 3400GE,8985,A
+Intel Xeon E5-2630L v3,8978,A
+Intel Core i7-6700K,8967,A
+Intel Core i3-10105,8928,A
+Intel Core i5-10400H,8916,A
+Intel Xeon E5-2670,8902,A
+Intel Core i5-3170K,8882,A
+Intel Xeon E3-1270 v6,8862,A
+Intel Core i3-10100F,8854,A
+Intel Xeon E3-1240 v6,8853,A
+Intel Core i3-10100,8800,A
+Intel Xeon Gold 5122,8771,A
+Intel Core i7-8809G,8759,A
+Intel Core i7-8559U,8745,A
+Intel Xeon E-2134,8741,A
+AMD Ryzen 5 2400G,8729,A
+Intel Core i5-10300H,8692,A
+Intel Xeon W-2223,8686,A
+ARM X-Gene 32 Core 3300 MHz,8684,A
+Intel Core i7-1065G7,8668,A
+Intel Xeon E3-1245 v6,8659,A
+Intel Core i7-7700,8638,A
+Intel Xeon E5-4650,8630,A
+Intel Xeon E5-2648L v2,8611,A
+Intel Core i7-3960X,8596,A
+Apple A14 Bionic,8541,A
+Intel Core i7-8569U,8523,A
+Intel Xeon W-2123,8489,A
+AMD Ryzen Embedded V1807B,8488,A
+Intel Xeon E5-4650L,8472,A
+Intel Xeon E5-2628 v3,8447,A
+Intel Xeon E-2314,8422,A
+Intel Xeon E3-1275 v5,8421,A
+Intel Xeon E5-1660,8417,A
+Intel Core i5-10200H,8414,A
+Intel Xeon E5-2665,8411,A
+Intel Xeon E3-1585 v5,8408,A
+Intel Xeon E3-1230 v6,8408,A
+Intel Core i5-9600T,8393,A
+Intel Core i7-8706G,8388,A
+Intel Core i5-1035G7,8388,A
+AMD Ryzen 5 PRO 2400G,8378,A
+Intel Core i7-3970X,8373,A
+Intel Core i7-10810U,8353,A
+Intel Xeon E3-1280 v5,8320,A
+AMD Opteron 6386 SE,8320,A
+Intel Xeon E3-1270 v5,8317,A
+AMD Ryzen 7 3750H,8277,A
+AMD Ryzen 5 PRO 3400GE,8269,A
+Intel Core i5-9400H,8261,A
+Intel Core i5-9500T,8256,A
+Intel Xeon E3-1240 v5,8254,A
+Intel Core i5-1035G4,8251,A
+Intel Core i7-3930K,8244,A
+Intel Xeon E5-2470,8240,A
+Intel Core i3-10100E,8229,A
+Intel Core i5-8600T,8227,A
+Intel Core i7-8557U,8225,A
+AMD Ryzen Embedded V1756B,8215,A
+Intel Xeon E3-1535M v6,8184,A
+Intel Xeon E-2276ME,8167,A
+Intel Core i3-10305T,8136,A
+AMD Ryzen 5 2400GE,8134,A
+Intel Core i5-8259U,8131,A
+Intel Xeon E5-1650,8113,A
+Intel Xeon E5-2660,8104,A
+Intel Core i7-6700,8078,A
+Intel Xeon E3-1245 v5,8073,A
+Intel Core i7-4790K,8061,A
+Intel Core i5-8269U,8055,A
+Intel Core i5-8400H,8037,A
+AMD Opteron 6348,8030,A
+Intel Core i5-8279U,8028,A
+Intel Xeon E3-1285L v4,8022,A
+Intel Xeon E3-1585L v5,8021,A
+Intel Core i3-10300T,7997,A
+AMD Ryzen 5 3550H,7994,A
+Intel Core i7-8709G,7990,A
+Intel Core i7-8705G,7947,A
+Intel Xeon E3-1515M v5,7938,A
+Intel Xeon E3-1545M v5,7930,A
+Intel Xeon E5-2620 v3,7906,A
+Intel Xeon E3-1230 v5,7880,A
+Intel Core i5-8260U,7854,A
+Intel Core i3-10105T,7850,A
+AMD Ryzen 5 3580U,7846,A
+AMD Ryzen 5 2600H,7836,A
+Intel Core i5-9400T,7819,A
+Intel Core i7-5775C,7801,A
+Intel Core i5-9300H,7793,A
+AMD Ryzen 5 1400,7783,A
+Intel Xeon E3-1260L v5,7757,A
+Intel Xeon E5-2640 v2,7741,A
+Intel Core i5-1035G1,7737,A
+Intel Xeon D-2123IT,7731,A
+AMD Ryzen 3 PRO 1300,7717,A
+Intel Core i7-5775R,7714,A
+AMD Athlon Gold PRO 3150G,7702,A
+Intel Core i5-8500T,7699,A
+Intel Core i7-5950HQ,7696,A
+Intel Core i3-9350K,7694,A
+Intel Core i7-7820HK,7682,A
+AMD Ryzen 5 3550U,7681,A
+Intel Core i5-8257U,7680,A
+Intel Core i5-9300HF,7678,A
+Intel Xeon E3-1270L v4,7662,A
+AMD Ryzen 7 2800H,7656,A
+AMD Ryzen 7 3780U,7651,A
+Intel Xeon E3-1575M v5,7629,A
+Intel Xeon E3-1285 v4,7614,A
+Intel Xeon E5-1630 v4,7585,A
+Intel Xeon E5-2623 v4,7582,A
+AMD Ryzen 3 4300U,7568,A
+AMD Ryzen 3 2300X,7566,A
+Intel Core i7-7700T,7561,A
+Intel Xeon E-2224G,7545,A
+Intel Core i5-8300H,7542,A
+AMD Ryzen 5 PRO 2400GE,7530,A
+Intel Xeon E3-1535M v5,7523,A
+Intel Xeon E-2124G,7518,A
+Intel Xeon E5-2667,7501,A
+Intel Xeon E5-2637 v3,7485,A
+Intel Xeon E5-2650L v2,7475,A
+Intel Xeon E5-2630 v2,7470,A
+Intel Xeon E5-1630 v3,7456,A
+Intel Core i7-7820EQ,7453,A
+Intel Core i7-7920HQ,7449,A
+Intel Xeon D-1531,7447,A
+Intel Core i5-8400T,7447,A
+Intel Xeon E5-1620 v4,7437,A
+Intel Xeon E3-1271 v3,7432,A
+Intel Xeon E3-1286 v3,7418,A
+Intel Xeon E5-2450,7410,A
+Intel Xeon E3-1281 v3,7406,A
+Intel Core i3-10100T,7405,A
+Intel Core i7-6920HQ,7378,A
+AMD Ryzen 7 PRO 2700U,7372,A
+Intel Xeon,7363,A
+Intel Core i3-9320,7358,A
+Intel Xeon D-1559,7353,A
+Intel Xeon E3-1276 v3,7345,A
+Intel Xeon E5-2650,7335,A
+Intel Core i3-9350KF,7318,A
+AMD Ryzen 3 3200GE,7317,A
+AMD Ryzen 7 3700U,7317,A
+AMD Ryzen 7 PRO 3700U,7310,A
+Intel Core i3-9300,7279,A
+AMD Opteron 6281,7279,A
+Intel Core i7-6700T,7271,A
+Intel Xeon E3-1280 v3,7256,A
+Intel Xeon E3-1270 v3,7245,A
+Intel Core i7-4790,7235,A
+Intel Xeon E5-4610 v3,7229,A
+Intel Xeon E-2224,7223,A
+Intel Xeon E3-1246 v3,7218,A
+Intel Core i7-7820HQ,7209,A
+Intel Xeon W3690,7208,A
+AMD Ryzen 3 3200G,7188,A
+Intel Xeon E5-2628L v2,7181,A
+Intel Xeon D-1537,7176,A
+Intel Xeon D-1539,7175,A
+Intel Core i7-6770HQ,7145,A
+AMD Ryzen 7 3700C,7145,A
+Intel Xeon E3-1275 v3,7143,A
+Intel Core i7-990X,7137,A
+Intel Core i7-4770K,7129,A
+Intel Xeon D-1557,7118,A
+AMD Ryzen 5 3500U,7102,A
+Intel Xeon X5679,7095,A
+AMD Athlon Gold PRO 3150GE,7093,A
+Intel Xeon E3-1505M v5,7092,A
+Intel Xeon E3-1505M v6,7080,A
+Intel Core i7-995X,7079,A
+Intel Core i7-4771,7074,A
+Intel Core i5-8305G,7073,A
+AMD Ryzen 3 PRO 3200GE,7071,A
+Intel Xeon E3-1241 v3,7070,A
+Intel Xeon E3-1240 v3,7065,A
+Intel Core i7-10610U,7062,A
+Intel Core i7-4940MX,7060,A
+Intel Core i7-1060NG7,7045,A
+AMD Ryzen 3 PRO 3200G,7037,A
+Intel Core i7-5850EQ,7036,A
+Intel Core i7-4770,7030,A
+Intel Core i7-980,7018,A
+Intel Xeon E5-4640,7012,A
+Intel Xeon E3-1245 v3,7008,A
+AMD Athlon Gold 3150G,7002,A
+Intel Xeon E3-1231 v3,6998,A
+Intel Xeon E5-1620 v3,6991,A
+Intel Xeon E3-1285 v3,6987,A
+Intel Xeon E5-4607 v2,6986,A
+Intel Xeon E-2124,6977,A
+AMD Ryzen 5 PRO 3500U,6968,A
+Intel Core i7-7700HQ,6957,A
+Intel Xeon E3-1265L v4,6954,A
+Intel Core i7-4790S,6954,A
+Intel Core i7-6820HQ,6939,A
+Intel Xeon E5-2440 v2,6927,A
+AMD Ryzen 3 1300X,6925,A
+AMD Opteron 6287 SE,6925,A
+Intel Core i7-6820EQ,6924,A
+AMD Ryzen 5 PRO 2500U,6921,A
+Intel Xeon W3680,6917,A
+Intel Core i7-6820HK,6906,A
+Intel Xeon E5-2637 v4,6897,A
+Intel Pentium Gold G7400,6896,A
+AMD Ryzen 7 2700U,6895,A
+Intel Core i5-7600K,6869,A
+Intel Xeon E5-2623 v3,6869,A
+Intel Xeon X5690,6867,A
+Intel Core i7-5850HQ,6866,A
+Intel Xeon E5-2430 v2,6864,A
+Intel Core i3-8350K,6862,A
+Intel Xeon E3-1285L v3,6848,A
+Intel Core i7-10510U,6837,A
+Intel Xeon E5-4620,6830,A
+AMD Ryzen 5 3450U,6824,A
+AMD Ryzen Embedded V1605B,6822,A
+Intel Core i7-4770S,6819,A
+Intel Core i7-980X,6813,A
+Intel Xeon X5680,6811,A
+AMD Ryzen 3 2200G,6781,A
+Intel Core i7-4960HQ,6779,A
+Intel Xeon E5-2448L v2,6774,A
+Intel Pentium Gold 8505,6771,A
+AMD FX-9590 Eight-Core,6768,A
+Intel Core i3-9100F,6768,A
+Intel Core i7-4980HQ,6767,A
+Intel Xeon E3-1230 v3,6760,A
+Intel Core i7-4930MX,6753,A
+Intel Core i7-6700TE,6734,A
+AMD Ryzen 3 PRO 2200G,6703,A
+Intel Core i5-7640X,6675,A
+Intel Core i5-10310U,6658,A
+AMD Opteron 6380,6645,A
+AMD Ryzen Embedded R2314,6643,A
+Intel Core i3-9100,6625,A
+Intel Xeon E3-1275 V2,6613,A
+Intel Xeon E5-2630L v2,6610,A
+Intel Core i7-1180G7,6607,A
+Intel Core i5-7600,6598,A
+MT6891Z/CZA,6596,A
+Intel Xeon Platinum 8151,6591,A
+Intel Xeon E5-1428L v2,6566,A
+AMD Ryzen 5 2500U,6555,A
+"Qualcomm Technologies, Inc SA8195P",6554,A
+Intel Core i7-6700HQ,6544,A
+AMD Ryzen 3 2200GE,6537,A
+Intel Xeon E5-1620 v2,6535,A
+Intel Xeon W3670,6534,A
+"Odin based on Qualcomm Technologies, Inc SM8350",6533,A
+Intel Xeon E3-1280 V2,6511,A
+Intel Core i7-4820K,6501,A
+Intel Core i7-970,6499,A
+Intel Core i7-3770K,6462,A
+Intel Xeon E3-1290 V2,6461,A
+Intel Xeon E5-4610,6460,A
+Intel Xeon E3-1286L v3,6450,A
+Intel Xeon E3-1270 V2,6431,A
+Intel Core i7-4770R,6429,A
+Intel Xeon Silver 4112,6420,A
+MT6893Z_C/CZA,6418,A
+Intel Xeon E5-2608L v3,6415,A
+Intel Core i5-10210U,6401,A
+Intel Core i7-3770,6397,A
+Intel Core i7-4870HQ,6387,A
+AMD Opteron 6282 SE,6385,A
+"Qualcomm Technologies, Inc SM8350AC",6385,A
+Intel Core i7-8665U,6383,A
+Intel Xeon X5675,6378,A
+Intel Xeon E5-2420 v2,6362,A
+Intel Core i7-8565U,6358,A
+Intel Core i7-8650U,6358,A
+AMD Ryzen 3 PRO 1200,6347,A
+Intel Xeon E-2254ML,6333,A
+Intel Xeon E5-2640,6321,A
+Intel Xeon E3-1245 V2,6316,A
+Intel Xeon E3-1225 v6,6312,A
+Intel Core i5-6600K,6307,A
+AMD Ryzen 3 1200,6304,A
+Intel Xeon E3-1240 V2,6301,A
+Intel Core i7-4760HQ,6300,A
+Intel Core i7-4850HQ,6299,A
+Intel Xeon E5-4617,6298,A
+Intel Core i7-4790T,6291,A
+Intel Core i5-8350U,6284,A
+Intel Core i3-1115G4,6273,A
+Intel Core i7-4910MQ,6265,A
+Intel Xeon E5-2620 v2,6246,A
+AMD Opteron 6276,6245,A
+Intel Xeon E5-2637 v2,6244,A
+Intel Core i5-8365U,6239,A
+Intel Xeon D-1622,6205,A
+Intel Xeon W-2104,6202,A
+Intel Xeon E3-1230 V2,6192,A
+Intel Core i7-8565UC,6187,A
+Intel Core i5-1030NG7,6180,A
+Intel Core i7-3770S,6178,A
+Intel Xeon E3-1240L v5,6173,A
+Intel Core i3-8100,6163,A
+Intel Core i3-9300T,6162,A
+SM7325,6145,A
+AMD Ryzen 3 PRO 3300U,6144,A
+Intel Core i7-4860HQ,6138,A
+Intel Core i3-8300,6136,A
+Intel Xeon E5-2630,6131,A
+AMD FX-8370 Eight-Core,6128,A
+Intel Core i7-4770HQ,6125,A
+Intel Core i5-6600,6107,A
+Intel Xeon X5660,6107,A
+Intel Core i5-8265U,6103,A
+Intel Xeon X5670,6090,A
+Intel Core i7-5675C,6089,A
+Intel Xeon E3-1505L v6,6088,A
+Intel Core i3-8100B,6081,A
+Intel Xeon E3-1268L v5,6079,A
+Intel Core i5-7600T,6073,A
+Intel Xeon E5-2658,6073,A
+AMD Opteron 6344,6069,A
+Intel Core i5-7500,6064,A
+Intel Xeon E-2104G,6057,A
+Intel Core i7-4900MQ,6051,A
+AMD EPYC 3101 4-Core,6050,A
+Intel Xeon E3-1275L v3,6035,A
+Intel Core i7-4810MQ,6034,A
+Intel Core i7-5700HQ,6023,A
+vendor Kirin990,5998,A
+Intel Core i5-8265UC,5988,A
+Intel Xeon E3-1265L v3,5987,A
+AMD FX-9370 Eight-Core,5985,A
+AMD Ryzen 3 PRO 2300U,5982,A
+AMD FX-8350 Eight-Core,5969,A
+Intel Core i7-3840QM,5966,A
+Intel Core i7-8550U,5964,A
+Intel Xeon E3-1225 v5,5961,A
+Intel Core i5-8250U,5941,A
+Intel Xeon E5-2650L,5929,A
+AMD Ryzen Embedded V1404I,5917,A
+Intel Xeon D-1528,5910,A
+MT6893Z/CZA,5908,A
+Intel Core i7-5700EQ,5905,A
+AMD Ryzen 3 3350U,5904,A
+Intel Xeon E5-2430L v2,5903,A
+Intel Xeon E5-2440,5900,A
+AMD Ryzen 3 PRO 2200GE,5897,A
+AMD Opteron 6378,5889,A
+Intel Xeon D-1521,5876,A
+Intel Xeon E5-1620,5871,A
+Intel Xeon E5-2430,5863,A
+Intel Xeon E5-1410 v2,5842,A
+vendor Kirin985,5834,A
+Intel Core i7-4800MQ,5829,A
+Intel Core i3-8300T,5827,A
+AMD Ryzen 3 3300U,5803,A
+Intel Core i7-4710MQ,5800,A
+Intel Core i3-1115G4E,5776,A
+AMD Opteron 4274 HE,5776,A
+Intel Xeon E5-2450L,5769,A
+Intel Core i7-4720HQ,5762,A
+Intel Xeon X5650,5761,A
+SM8350,5761,A
+Intel Core i7-3820QM,5755,A
+Intel Xeon Bronze 3106,5754,A
+Intel Core i7-3820,5754,A
+Intel Core i7-4770T,5748,A
+MT8195AV/ZA,5735,A
+Snapdragon 8cx Gen 2 @ 3.1,5734,A
+Intel Xeon E3-1220 v6,5729,A
+"Qualcomm Technologies, Inc SM8250_AC",5724,A
+Intel Core i5-7440EQ,5711,A
+Intel Core i7-3740QM,5708,A
+Intel Xeon E3-1220 v5,5707,A
+MT6893Z_D/CZA,5701,A
+Intel Core i7-3920XM,5700,A
+MT6891,5688,A
+Intel Xeon E3-1205 v6,5682,A
+Intel Core i7-3940XM,5671,A
+MT6883Z/CZA,5665,A
+Intel Core i5-6600T,5655,A
+Intel Core i5-6500,5655,A
+Intel Core i7-3720QM,5651,A
+AMD Opteron 6238,5625,A
+Intel Core i5-4690K,5623,A
+Intel Core i7-4722HQ,5620,A
+Intel Core i7-2700K,5604,A
+Intel Core i7-4750HQ,5599,A
+"Qualcomm Technologies, Inc SM8350",5596,A
+Intel Core i5-5675R,5589,A
+Intel Core i7-3770T,5573,A
+Intel Core i5-4690,5572,A
+AMD Opteron 6376,5572,A
+ARM Neoverse-N1 8 Core 0 MHz,5561,A
+Intel Core i7-4700HQ,5560,A
+Intel Core i5-8365UE,5555,A
+Intel Core i5-5675C,5548,A
+Intel Core i5-4670K,5547,A
+Intel Core i5-7440HQ,5526,A
+Intel Xeon E5-2643,5523,A
+Intel Xeon E3-1226 v3,5520,A
+Intel Core i7-4710HQ,5518,A
+Intel Xeon E3-1280,5510,A
+AMD Ryzen 3 2300U,5507,A
+vendor Kirin820,5502,A
+Intel Core i7-4860EQ,5500,A
+Intel Core i7-2600K,5500,A
+Intel Core i5-7400,5499,A
+Intel Core i7-3615QE,5459,A
+Intel Core i5-4670,5440,A
+Intel Core i5-760S,5440,A
+ARM Cortex-A72 16 Core 0 MHz,5435,A
+MT6893Z_A/CZA,5429,A
+Intel Core i7-4785T,5427,A
+Intel Xeon E3-1268L v3,5427,A
+Intel Core i3-9100T,5419,A
+Intel Core i5-6402P,5414,A
+AMD FX-8320 Eight-Core,5409,A
+Intel Xeon E3-1240,5398,A
+Intel Xeon E3-1270,5386,A
+Intel Core i5-4690S,5380,A
+Intel Xeon E3-1275,5372,A
+Intel Core i5-6440EQ,5368,A
+Intel Xeon E3-1245,5366,A
+"Qualcomm Technologies, Inc SM8250",5366,A
+Intel Core i7-4702HQ,5361,A
+Intel Pentium Gold 7505,5360,A
+Intel Xeon E5-2609 v4,5351,B
+Intel Core i5-4590,5344,B
+Intel Core i7-2600,5344,B
+Intel Core i5-7500T,5319,B
+Intel Core i7-4700MQ,5319,B
+Intel Xeon E5-2630L,5305,B
+Intel Xeon E3-1240L v3,5304,B
+"Qualcomm Technologies, Inc KONA",5302,B
+Intel Xeon E3-1505L v5,5301,B
+Intel Core i3-8100T,5291,B
+AMD Opteron 6274,5286,B
+Intel Xeon X5687,5282,B
+Intel Xeon E5-2620,5280,B
+vendor Kirin9000,5276,B
+Intel Xeon E5-2430L,5273,B
+Intel Core i7-4712MQ,5273,B
+Intel Xeon E3-1225 v3,5264,B
+AMD Ryzen Embedded V1500B Quad-core,5257,B
+AMD Opteron 6328,5246,B
+Intel Xeon E5-1607 v4,5245,B
+Intel Core i7-6822EQ,5241,B
+AMD Opteron 6272,5240,B
+AMD FX-8370E Eight-Core,5235,B
+Intel Core i5-4670R,5233,B
+Intel Core i7-3615QM,5228,B
+"lisa based Qualcomm Technologies, Inc. SM7325",5227,B
+AMD FX-8300 Eight-Core,5223,B
+AMD Ryzen 5 3500C,5214,B
+"Vili based on Qualcomm Technologies, Inc SM8350",5213,B
+Intel Core i5-4570,5199,B
+Microsoft SQ2,5199,B
+"Qualcomm Technologies, Inc SDM778G",5186,B
+Intel Core i5-6400,5163,B
+Intel Core i7-4712HQ,5161,B
+Intel Xeon E5649,5160,B
+AMD FX-8150 Eight-Core,5158,B
+Intel Xeon E3-1220 v3,5154,B
+vendor Kirin980,5150,B
+Intel Xeon E5-2420,5149,B
+Qualcomm Snapdragon 7325,5148,B
+AMD FX-8310 Eight-Core,5145,B
+Apple A13 Bionic,5145,B
+Intel Core i7-3630QM,5131,B
+Intel Core i3-1005G1,5128,B
+Intel Core i5-6440HQ,5128,B
+Intel Xeon X5672,5117,B
+Intel Xeon X5677,5112,B
+Intel Core i5-7300HQ,5104,B
+Intel Core i7-3610QM,5100,B
+Intel Core i7-4702MQ,5095,B
+Intel Core i5-4590S,5095,B
+"Star based on Qualcomm Technologies, Inc SM8350",5087,B
+Hisilicon Kirin9000,5083,B
+Intel Xeon W-2102,5077,B
+Intel Core i5-5575R,5070,B
+"Venus based on Qualcomm Technologies, Inc SM8350",5069,B
+06/8c,5040,B
+Intel Core i7-4765T,5036,B
+"Haydn based on Qualcomm Technologies, Inc SM8350",5035,B
+Intel Core i5-4670K CPT,5034,B
+Intel Core i7-8665UE,5017,B
+Intel Core i7-10510Y,5016,B
+Intel Xeon E3-1235L v5,5013,B
+Intel Xeon E3-1230,5006,B
+Intel Xeon E3-1290,4988,B
+AMD FX-8320E Eight-Core,4972,B
+Intel Xeon E5645,4955,B
+Intel Xeon E5-1607 v3,4950,B
+Samsung Exynos 2100,4949,B
+Intel Core i7-4700EQ,4941,B
+Intel Core i5-3570K,4936,B
+Intel Core i7-3612QE,4929,B
+Intel Core i5-4670S,4919,B
+Intel Core i5-4570S,4914,B
+Intel Core i5-3570,4910,B
+ARM Cortex-A72 4 Core 0 MHz,4907,B
+AMD FX-8140 Eight-Core,4860,B
+AMD Opteron 6366 HE,4858,B
+Intel Core i3-7320,4856,B
+"Samsung Technologies, Inc Exynos E1080",4846,B
+Intel Core i5-6500T,4845,B
+Intel Core i5-10210Y,4836,B
+Intel Core i5-7442EQ,4834,B
+Intel Core i5-4460,4834,B
+MT6877V/TZA,4824,B
+Intel Core i3-7350K,4819,B
+Intel Xeon E5-1603 v4,4812,B
+Intel Xeon Bronze 3204,4796,B
+Intel Xeon D-1518,4784,B
+Intel Core i5-3550,4783,B
+Intel Core i5-6500TE,4776,B
+Intel Core i7-3610QE,4767,B
+Intel Xeon E3-1225 V2,4766,B
+Intel Xeon E3-1230L v3,4764,B
+ARM Neoverse-N1 6 Core 0 MHz,4756,B
+AMD Opteron 6220,4753,B
+Intel Pentium Silver N6005,4752,B
+Intel Pentium 6805,4745,B
+Intel Core i5-4470S,4742,B
+vendor Kirin9000E,4728,B
+Intel Xeon E3-1235,4725,B
+Intel Core i5-4440,4718,B
+Intel Xeon E3-1265L V2,4711,B
+Intel Core i5-7400T,4710,B
+Apple A12 Bionic,4707,B
+Intel Core i3-7300,4703,B
+Intel Core i5-6300HQ,4701,B
+Intel Xeon E5-2603 v4,4695,B
+Intel Xeon E3-1220 V2,4691,B
+Intel Atom C3758,4683,B
+Intel Xeon E5-1410,4677,B
+AMD Opteron 4284,4665,B
+Intel Core i5-4690T,4660,B
+Intel Core i5-3470,4657,B
+Intel Core i5-4430,4646,B
+AMD Athlon Silver PRO 3125GE,4633,B
+Intel Core i7-3632QM,4628,B
+Intel Celeron N5095A,4627,B
+Intel Core i5-3570S,4620,B
+Intel Core i7-2860QM,4607,B
+Intel Core i7-3612QM,4603,B
+Qualcomm Snapdragon 8350,4599,B
+Intel Core i5-6442EQ,4598,B
+"Qualcomm Technologies, Inc SM6375",4597,B
+"Mars based on Qualcomm Technologies, Inc SM8350",4592,B
+Intel Xeon L5640,4591,B
+AMD Ryzen Embedded V1500B,4588,B
+Intel Xeon Bronze 3104,4585,B
+AMD FX-8120 Eight-Core,4578,B
+Intel Core i7-3635QM,4575,B
+AMD Athlon 240GE,4551,B
+Intel Xeon X5667,4551,B
+MT6893,4551,B
+AMD Athlon Silver 3050GE,4545,B
+Microsoft ARM SQ1,4545,B
+"Renoir based on Qualcomm Technologies, Inc SM7350",4543,B
+Intel Core i5-3550S,4537,B
+Intel Core i5-4570R,4527,B
+Intel Core i7-2600S,4524,B
+AMD Opteron 4280,4504,B
+Intel Core i5-4460S,4503,B
+Intel Core i3-9100TE,4501,B
+Intel Core i5-3450,4497,B
+Intel Pentium Gold G6605,4493,B
+AMD Athlon 3000G,4480,B
+AMD Athlon PRO 300GE,4475,B
+AMD FX-6350 Six-Core,4463,B
+AMD FX-6330 Six-Core,4455,B
+Intel Xeon X5647,4455,B
+AMD Athlon 220GE,4450,B
+Intel Xeon E5-1603 v3,4448,B
+MT6877T,4442,B
+Intel Xeon E5-2609 v3,4423,B
+Intel Core i7-2960XM,4423,B
+Intel Xeon L5639,4419,B
+MT6889Z/CZA,4416,B
+vendor Kirin810,4409,B
+Intel Pentium Gold G6600,4396,B
+MT6875,4393,B
+Intel Core i3-6300,4386,B
+AMD Opteron 4386,4378,B
+Intel Pentium Gold G6505,4378,B
+Intel Core i3-8121U,4376,B
+Intel Core i3-6320,4372,B
+AMD Athlon 300GE,4366,B
+Intel Core i5-4670T,4361,B
+AMD FX-6130 Six-Core,4353,B
+Intel Core i7-2760QM,4353,B
+Intel Core i5-3470S,4353,B
+Intel Core i7-2820QM,4347,B
+Intel Core i7-2920XM,4344,B
+Intel Core i3-7100,4342,B
+Hisilicon Kirin990,4328,B
+Intel Core i5-6400T,4302,B
+Intel Core i3-8109U,4301,B
+Intel Pentium Gold G6405,4285,B
+MT6877V/ZA,4285,B
+Intel Atom C3958,4281,B
+Intel Core i5-4440S,4277,B
+Intel Core i5-3450S,4264,B
+Intel Xeon E5-1607 v2,4259,B
+Intel Core i7-4770TE,4257,B
+Intel Core i7-7567U,4256,B
+Intel Core i5-6350HQ,4255,B
+AMD Ryzen Embedded R1606G,4253,B
+"Qualcomm Technologies, Inc SM8150",4248,B
+AMD Athlon 320GE,4237,B
+Intel Core i5-3350P,4237,B
+Intel Xeon E5-2648L,4235,B
+Apple A11 Bionic,4231,B
+Intel Core i3-8140U,4227,B
+Hisilicon Kirin980,4224,B
+"Qualcomm Technologies, Inc SM8150P",4224,B
+AMD Ryzen 3 PRO 2100GE,4187,B
+Intel Core i3-6100,4177,B
+Intel Core i5-3475S,4177,B
+Intel Pentium J6426,4173,B
+Intel Core i3-6098P,4170,B
+Intel Core i5-4430S,4168,B
+Intel Core i5-3570T,4168,B
+Intel Core i5-3340,4165,B
+Hisilicon Kirin985,4162,B
+Intel Pentium Gold G5600F,4160,B
+Intel Core i3-7300T,4159,B
+Intel Celeron N5105,4158,B
+AMD FX-6300 Six-Core,4155,B
+Intel Atom x6425E,4153,B
+Intel Core i5-7287U,4149,B
+Intel Pentium Gold G6500,4147,B
+AMD Athlon PRO 200GE,4139,B
+AMD Athlon 200GE,4135,B
+AMD Opteron 3380,4134,B
+Intel Core i3-8145UE,4133,B
+Intel Pentium Gold G6400,4130,B
+Intel Core i5-2550K,4123,B
+Intel Core i7-2720QM,4114,B
+Intel Core i7-7660U,4105,B
+Intel Pentium Gold G5620,4102,B
+Intel Core i5-3340S,4102,B
+Intel Core i5-2500,4101,B
+Intel Core i5-2500K,4097,B
+Intel Core i5-3330,4090,B
+Intel Celeron J6413,4075,B
+AMD Opteron 6234,4072,B
+Intel Atom x6413E,4070,B
+MT6833P,4051,B
+Intel Core i5-7360U,4050,B
+Intel Core i7-2710QE,4044,B
+Intel Xeon E3-1260L,4041,B
+Intel Core i3-6300T,4040,B
+AMD Athlon Gold 3150U,4025,B
+Intel Xeon E5640,4018,B
+Intel Celeron N5095,4010,B
+AMD Opteron 6212,4007,B
+Intel Core i3-10110U,4005,B
+Intel Pentium Gold G6500T,4005,B
+AMD FX-6200 Six-Core,4001,B
+AMD Ryzen 3 3250U,3988,B
+Intel Core i5-4590T,3982,B
+AMD Athlon 300U,3978,B
+Intel Core i5-2450P,3974,B
+AMD Opteron 3365,3973,B
+AMD Ryzen Embedded R1505G,3966,B
+AMD Opteron 4334,3949,B
+MT6781,3937,B
+Intel Core i7-985,3928,B
+Intel Core i5-7267U,3925,B
+Intel Core i5-6287U,3925,B
+Intel Core i3-7101TE,3911,B
+AMD Opteron 4332 HE,3906,B
+ARM Cortex-A72 8 Core 0 MHz,3906,B
+Intel Celeron J6412,3904,B
+Intel Core i5-7260U,3895,B
+AMD Ryzen 3 3200U,3885,B
+AMD PRO A12-9800,3878,B
+AMD A8-7500,3878,B
+AMD FX-6120 Six-Core,3863,B
+Intel Core i3-1000NG4,3862,B
+Intel Xeon E3-1220,3855,B
+Intel Core i7-6660U,3851,B
+AMD PRO A12-8870,3848,B
+06/8e,3848,B
+AMD FX-8100 Eight-Core,3847,B
+Intel Core i7-2840QM,3842,B
+Intel Core i5-2400,3840,B
+Intel Core i3-8145U,3837,B
+Intel Xeon E3-1225,3817,B
+Intel Core i3-1115GRE,3816,B
+Intel Core i7-6567U,3812,B
+Intel Core i5-3330S,3810,B
+Intel Core i3-4370,3807,B
+ZHAOXIN KaiXian KX-U6780A,3802,B
+Intel Core i7-7560U,3801,B
+MT8789V/CT,3800,B
+Intel Core i5-2380P,3797,B
+Intel Core i3-7100T,3787,B
+AMD Athlon X4 845,3784,B
+Intel Pentium G4620,3777,B
+Intel Pentium Gold G5500,3770,B
+Intel Pentium Gold G5600,3769,B
+Intel Core i7-2675QM,3766,B
+Intel Pentium N6415,3760,B
+Intel Core i5-3335S,3754,B
+AMD PRO A10-8850B,3752,B
+Intel Xeon E5-2603 v3,3752,B
+MediaTek MT6873,3752,B
+Intel Core i5-7300U,3750,B
+Intel Pentium Gold G6405T,3746,B
+Intel Xeon E5-1607,3730,B
+"Qualcomm Technologies, Inc SM8150_Plus",3730,B
+AMD Phenom II X6 1100T,3729,B
+Intel Xeon E5630,3726,B
+Intel Core i7-2670QM,3726,B
+Intel Pentium Gold G5400,3723,B
+AMD Opteron 3280,3720,B
+AMD Opteron 6174,3697,B
+Intel Core i3-4360,3688,B
+AMD Ryzen 3 2200U,3686,B
+AMD FX-6100 Six-Core,3679,B
+AMD Athlon X4 880K,3676,B
+Intel Core i7-7600U,3667,B
+AMD A9-9820,3662,B
+Intel Core i7-7500U,3658,B
+AMD Phenom II X6 1090T,3655,B
+Snapdragon 8cx,3655,B
+Intel Core i3-8130U,3648,B
+AMD PRO A10-9700,3644,B
+Intel Pentium Gold G5420,3641,B
+Intel Core i5-2320,3632,B
+Intel Xeon E5620,3630,B
+DG1301SML87HY,3624,B
+Intel Core i3-6100T,3617,B
+AMD Athlon X4 950,3611,B
+Intel Pentium Gold G6400T,3610,B
+Intel Pentium G4600,3605,B
+Intel Core i5-2310,3603,B
+Intel Pentium Gold G5600T,3601,B
+Intel Core i5-4460T,3595,B
+Intel Xeon E3-1265L,3589,B
+Intel Core i7-6650U,3585,B
+MT6853V/ZA,3577,B
+AMD A8-7680,3571,B
+Intel Core i3-4170,3569,B
+AMD Opteron 6176 SE,3564,B
+Intel Core i7-2630QM,3555,B
+AMD A10-9700,3546,B
+Intel Core i3-4330,3539,B
+AMD A10-8850,3525,B
+Intel Pentium Silver J5040,3518,B
+Intel Xeon E5-2418L,3518,B
+Intel Xeon E5-2609 v2,3516,B
+Intel Pentium G4560,3513,B
+Intel Core i7-6600U,3508,B
+Intel Pentium Gold G5420T,3508,B
+Intel Core i3-4340,3506,B
+Samsung Exynos 9820,3505,B
+Intel Xeon E5-2407 v2,3504,B
+Intel Core i3-4160,3495,B
+Intel Xeon W3580,3495,B
+Intel Core i5-4340M,3491,B
+AMD A10-7870K,3485,B
+AMD Opteron 4365 EE,3485,B
+Intel Core i5-6267U,3478,B
+AMD Opteron 6164 HE,3478,B
+AMD A10-7890K,3477,B
+Intel Core i7-2635QM,3466,B
+Intel Core i3-4350,3459,B
+Intel Core i5-2500S,3459,B
+AMD A10 PRO-7850B APU,3458,B
+"Qualcomm Technologies, Inc KHAJE",3458,B
+Samsung Exynos 9825,3452,B
+Intel Xeon E5-1603,3448,B
+AMD A12-9800E,3447,B
+AMD A12-9800,3447,B
+Intel Xeon X5698,3447,B
+Intel Celeron G6900,3446,B
+AMD Athlon X4 860K,3436,B
+AMD PRO A10-8770,3434,B
+Intel Core i3-7100H,3430,B
+AMD Embedded R-Series RX-418GD Radeon R6,3426,B
+Intel Core i3-1110G4,3421,B
+Intel Core i5-L16G7,3421,B
+Intel Core i5-7200U,3409,B
+Intel Pentium Silver N5020,3404,B
+MT6833,3404,B
+Samsung Exynos 9810,3401,B
+AMD Opteron 4226,3400,B
+Intel Core i7-6560U,3398,B
+MT6833V/ZA,3396,B
+Intel Xeon E5-4603,3391,B
+Intel Xeon W5580,3386,B
+AMD Athlon X4 870K,3383,B
+AMD Opteron 6136,3381,B
+Intel Core i5-2300,3380,B
+AMD Opteron X3421 APU,3375,B
+Intel Core i7-975,3370,B
+AMD FX-B4150 Quad-Core,3369,B
+Intel Core i3-4370T,3368,B
+AMD A10-7850K APU,3363,B
+Intel Core i3-4150,3360,B
+MT6781V/CD,3356,B
+Intel Xeon W3570,3354,B
+MT6785,3348,B
+AMD PRO A8-9600,3347,B
+AMD Phenom II X6 1405T,3335,B
+AMD A10-7860K,3333,B
+MT6853V/TNZA,3332,B
+Intel Xeon W3565,3331,B
+AMD FX-4150 Quad-Core,3327,B
+Intel Xeon D-1520,3324,B
+AMD Phenom II X6 1065T,3320,B
+AMD A10-8750,3320,B
+Intel Core i3-6100E,3315,B
+Intel Core i7-6498DU,3303,B
+AMD Embedded R-Series RX-421BD,3302,B
+Intel Xeon L5609,3298,B
+AMD A8-9600,3291,B
+Intel Core i3-4130,3291,B
+Intel Core i7-965,3288,B
+AMD Athlon X4 840,3287,B
+MT6833V/PNZA,3286,B
+AMD Phenom II X6 1075T,3284,B
+Intel Core i3-7167U,3280,B
+Intel Core i7-6500U,3278,B
+Intel Core i3-10110Y,3278,B
+Hisilicon Kirin820,3273,B
+"Qualcomm Technologies, Inc SM7225",3271,B
+Intel Xeon X5570,3270,B
+AMD FX-9830P,3268,B
+AMD Ryzen Embedded R1305G,3268,B
+MT6833V/NZA,3266,B
+AMD FX-4350 Quad-Core,3262,B
+Intel Core i5-6360U,3260,B
+Intel Core i5-6300U,3259,B
+AMD Ryzen Embedded V1202B,3253,B
+Intel Core i5-4400E,3251,B
+AMD FX-4330,3248,B
+Intel Core i7-960,3245,B
+Intel Core i3-4570T,3244,B
+Intel Pentium D1508,3240,B
+Intel Xeon X3480,3240,B
+Intel Xeon W5590,3239,B
+Intel Pentium Gold G5500T,3234,B
+Intel Xeon L5638,3225,B
+"Qualcomm Technologies, Inc SM7250",3225,B
+AMD A8-7670K,3224,B
+Intel Core i7-2715QE,3221,B
+MediaTek MT6853T,3217,B
+Intel Core i5-5287U,3216,B
+AMD A8-7600 APU,3215,B
+Intel Core i5-4330M,3208,B
+Intel Core i5-6260U,3207,B
+AMD PRO A8-8650B,3203,B
+"Qualcomm Technologies, Inc LAGOON",3202,B
+AMD Phenom II X6 1055T,3195,B
+"Qualcomm Technologies, Inc ATOLL-AB",3195,B
+Intel Xeon X3470,3194,B
+Intel Xeon W3550,3193,B
+06/9c,3191,B
+AMD A10 PRO-7800B APU,3184,B
+AMD PRO A12-9800E,3182,B
+Intel Core i7-5557U,3181,B
+Intel Core i7-4600M,3180,B
+ARM Neoverse-N1 4 Core 0 MHz,3176,B
+AMD A12-9730P,3172,B
+Intel Core i5-6198DU,3170,B
+Intel Celeron N5100,3165,B
+Intel Core i3-4360T,3164,B
+Intel Core i3-4170T,3162,B
+MediaTek MT6785V/CD,3162,B
+Intel Core i5-2400S,3160,B
+AMD A10-6800K APU,3158,B
+Intel Atom C3858,3154,B
+Intel Core i7-950,3154,B
+AMD A10-7700K APU,3153,B
+"Qualcomm Technologies, Inc SDM730G AIE",3148,B
+AMD A10-7800 APU,3142,B
+AMD Opteron X3418 APU,3137,B
+Intel Core i5-4570T,3136,B
+AMD FX-4200 Quad-Core,3134,B
+Intel Core i3-4160T,3133,B
+MT8786V/CA,3131,B
+Intel Pentium G4600T,3130,B
+AMD A10-6790K APU,3124,B
+Intel Core i3-10100Y,3120,B
+Intel Pentium Gold G5400T,3119,B
+Intel Core i7-875K,3119,B
+Intel Core i5-4310M,3119,B
+Intel Core i5-4200H,3113,B
+AMD FX-4170 Quad-Core,3109,B
+AMD PRO A10-8770E,3106,B
+Intel Core i5-4570TE,3106,B
+Snapdragon 7c Gen 2 @ 2.55,3103,B
+Intel Xeon X5560,3100,B
+Intel Core i3-4330T,3098,B
+"Qualcomm Technologies, Inc LITO",3097,B
+AMD FX-870K Quad Core,3094,B
+AMD FX-4320,3092,B
+"Qualcomm Technologies, Inc SDM720G",3091,B
+AMD A10-6700 APU,3090,B
+Intel Core i3-6100TE,3085,B
+AMD PRO A12-8870E,3083,B
+Intel Core i7-870,3074,B
+MT6853V/NZA,3072,B
+AMD Athlon Silver 3050U,3067,B
+Intel Core i7-940,3066,B
+vendor Kirin710,3066,B
+ZHAOXIN KaiXian KX-U6580,3066,B
+Intel Core i5-4308U,3064,B
+AMD Opteron 2435,3061,B
+Intel Core i5-24050S,3061,B
+Intel Xeon W3530,3045,B
+Intel Core i5-5257U,3044,B
+MediaTek MT6785V/CC,3043,B
+Intel Core i3-6100H,3041,B
+Intel Pentium Silver J5005,3040,B
+AMD Phenom II X6 1045T,3034,B
+Intel Core i5-6200U,3030,B
+Intel Core i7-4578U,3026,B
+Intel Core i5-4300M,3025,B
+Intel Pentium GOLD 6500Y,3024,B
+"Qualcomm Technologies, Inc SM7125",3015,B
+AMD A8-7650K,3013,B
+Intel Core i7-5650U,3007,B
+Intel Core i5-3380M,3006,B
+SMDK4x12,3006,B
+Intel Core i7-4610M,3002,B
+Intel Celeron J4125,2994,B
+Intel Core m3-8100Y,2991,B
+"Qualcomm Technologies, Inc SDM765G 5G",2990,B
+AMD PRO A8-8670E,2989,B
+Intel Xeon X5550,2988,B
+Hisilicon Kirin810,2986,B
+Intel Core i3-7130U,2983,B
+"Qualcomm Technologies, Inc SM7150",2983,B
+Intel Core i7-5600U,2982,B
+Intel Core i5-2405S,2980,B
+"Qualcomm Technologies, Inc SDMMAGPIEP",2980,B
+Intel Pentium Silver N6000,2979,B
+Intel Xeon E5-2637,2978,B
+AMD A8-6600K APU,2977,B
+Intel Core i5-3470T,2958,B
+Intel Core i7-4558U,2956,B
+Intel Core i7-4560U,2950,B
+AMD Phenom II X6 1035T,2947,B
+AMD A10-9700E,2947,B
+Intel Xeon L5630,2943,B
+Intel Core i5-2500T,2942,B
+AMD Athlon X4 760K Quad Core,2941,B
+Intel Celeron G5925,2939,B
+AMD FX-4300 Quad-Core,2937,B
+AMD Opteron 2431,2936,B
+AMD A10-5800K APU,2936,B
+Intel Core m3-7Y32,2935,B
+AMD Opteron 6128 HE,2932,B
+Intel Pentium G4520,2926,B
+Intel Core i7-880,2920,B
+Intel Core i5-4210H,2918,B
+AMD Athlon Silver 3050e,2918,B
+AMD Ryzen 3 3250C,2917,B
+Intel Celeron J4105,2911,B
+Intel Core i7-3540M,2911,B
+Intel Pentium G4560T,2909,B
+Intel Core i7-5550U,2908,B
+HiSilicon Kirin 970,2908,B
+"Qualcomm Technologies, Inc SDMMAGPIE",2906,B
+Intel Atom x6425RE,2903,B
+AMD Athlon X4 830,2901,B
+AMD A10-9630P,2899,B
+AMD A8-6500B APU,2898,B
+AMD FX-670K Quad-Core,2897,B
+AMD A10-5800B APU,2897,B
+AMD PRO A10-8750B,2897,B
+AMD PRO A10-9700E,2896,B
+Intel Core i5-4210M,2893,B
+Intel Core i7-860,2890,B
+Intel Xeon W3540,2890,B
+Intel Core i3-4350T,2888,B
+Intel Core i7-3520M,2879,B
+Intel Core i7-930,2877,B
+Intel Core i3-4130T,2874,B
+Intel Xeon E5-2403 v2,2873,B
+AMD Opteron 4184,2872,B
+Intel Core i3-4150T,2867,B
+AMD FX-7600P APU,2856,B
+Intel Core i5-3360M,2846,B
+AMD Phenom II X4 980,2829,B
+AMD A8-6500 APU,2826,B
+AMD Opteron 6128,2826,B
+Intel Core i5-8210Y,2825,B
+AMD Opteron 3350 HE,2825,B
+AMD A10-6800B APU,2824,B
+Intel Xeon X3450,2818,B
+Intel Celeron G5905,2815,B
+Intel Core i5-4278U,2814,B
+Intel Core i5-7Y57,2814,B
+Intel Xeon X3460,2814,B
+Samsung Exynos 8895,2807,B
+AMD A8-5600K APU,2803,B
+AMD FX-8800P,2801,B
+Snapdragon 7c,2800,B
+AMD A8 PRO-7600B APU,2793,B
+Intel Core i3-6157U,2790,B
+Intel Celeron G5900,2790,B
+AMD Opteron 6172,2789,B
+AMD Athlon X4 750K Quad Core,2787,B
+Intel Xeon W3520,2787,B
+Intel Core i7-870S,2786,B
+Intel Core2 Extreme X9775,2780,B
+Intel Core i5-4200M,2776,B
+Intel Atom C2750,2775,B
+AMD A8-8650,2774,B
+Rockchip RK3399,2770,B
+Intel Core 860,2754,B
+Intel Xeon E5-2603 v2,2751,B
+Intel Core i5-7Y54,2741,B
+Intel Core i7-920,2741,B
+Intel Core i5-5300U,2740,B
+MediaTek MT6779V/CE,2740,B
+Intel Xeon E5540,2738,B
+AMD A10-5700 APU,2735,B
+Intel Pentium G4500,2734,B
+AMD FX-4130 Quad-Core,2730,B
+AMD RX-427BB,2729,B
+AMD PRO A12-9800B,2729,B
+AMD RX-425BB,2724,B
+Intel Core i3-7100U,2721,B
+AMD 3015e,2720,B
+Intel Core i7-5500U,2719,B
+AMD A6-9400,2717,B
+Intel Celeron G4950,2714,B
+Intel Xeon X5470,2709,B
+AMD A8-5500B APU,2707,B
+Intel Celeron J4115,2706,B
+Intel Xeon X5492,2705,B
+Intel Xeon E5-2407,2699,B
+Intel Pentium Silver N5030,2695,B
+Intel Xeon E5607,2686,B
+Intel Core i7-4600U,2685,B
+Intel Core i5-4402E,2681,B
+Intel Xeon X3440,2680,B
+Intel Core i3-4110M,2678,B
+Intel Core i7-7Y75,2666,B
+AArch64 rev 0 (aarch64),2656,B
+AMD Athlon X4 740 Quad Core,2655,B
+Intel Core i7-3687U,2653,B
+Intel Core i3-3250T,2650,B
+Intel Celeron G5900T,2648,B
+Intel Core i5-3320M,2646,B
+AMD Phenom II X4 970,2644,B
+Intel Core i3-6100U,2640,B
+Intel Core i5-3340M,2636,B
+Intel Xeon X5482,2636,B
+AMD FirePro A320 APU,2634,B
+"Qualcomm Technologies, Inc SM6150",2634,B
+ARM D2000/8 8 Core 2300 MHz,2633,B
+Intel Core2 Extreme X9770,2632,B
+Intel Xeon E5-2609,2623,B
+AMD PRO A12-8800B,2622,B
+Intel Core i5-5350U,2614,B
+Intel Xeon E5530,2614,B
+Intel Core i5-4288U,2612,B
+AMD A12-9720P,2608,B
+Intel Core i5-680,2603,B
+AMD PRO A10-9700B,2602,B
+AMD Athlon II X4 559,2602,B
+Intel Pentium G4400,2599,B
+Intel Core i5-760,2599,B
+1-Unisoc,2596,B
+Intel Core i7-4510U,2595,B
+Intel Pentium Silver N5000,2593,B
+Intel Xeon L3426,2590,B
+Intel Core m3-7Y30,2589,B
+Intel Core i3-5157U,2588,B
+Intel Core i7-8500Y,2587,B
+Intel Xeon X5460,2586,B
+AMD FX-770K Quad-Core,2578,B
+AMD A8-5500 APU,2577,B
+Hisilicon Kirin970,2577,B
+AMD Phenom II X4 B65,2576,B
+MT6768G,2572,B
+Intel Celeron G4930,2571,B
+AMD Athlon II X4 557,2567,B
+AMD FX-4100 Quad-Core,2565,B
+Intel Core i3-7020U,2564,B
+Intel Core i5-3610ME,2553,B
+AMD Phenom II X4 965,2546,B
+AMD Phenom II X4 975,2544,B
+"Qualcomm Technologies, Inc SM4350",2543,B
+"Qualcomm Technologies, Inc MSM8998",2540,B
+Apple A9X,2537,B
+AMD Phenom II X4 B99,2536,B
+Intel Core i7-4500U,2529,B
+Intel Xeon L5530,2522,B
+Intel Core i3-7102E,2521,B
+Intel Core i5-4258U,2518,B
+Intel Pentium G4500T,2518,B
+AMD A10-9620P,2518,B
+Intel Core i5-3230M,2513,B
+Intel Core i5-4300U,2512,B
+Intel Core i5-670,2511,B
+Intel Core i5-5250U,2504,B
+Intel Core i5-5200U,2502,B
+Intel Celeron N4120,2501,B
+AMD Phenom II X4 B97,2498,B
+AMD Phenom II X4 850,2496,B
+Intel Core i5-750,2495,B
+Intel Xeon L7455,2494,B
+AMD 3020e,2492,B
+Intel Core i5-4310U,2490,B
+Intel Xeon E5472,2490,B
+Intel Xeon E5450,2486,B
+Intel Celeron G5920,2482,B
+AMD FX-7600P,2481,B
+Intel Core i3-3245,2480,B
+AMD Opteron 8439 SE,2479,B
+Intel Xeon E5520,2479,B
+AMD Phenom II X4 B55,2465,B
+Unisoc T610,2464,B
+Intel Core i5-661,2462,B
+Intel Xeon D-1602,2459,B
+Intel Core2 Extreme X9650,2455,B
+Intel Celeron N4100,2451,B
+Intel Core i5-3210M,2449,B
+AMD Phenom II X4 B60,2449,B
+Intel Celeron G4900,2448,B
+Intel Core i3-4100M,2447,B
+Intel Core i7-4610Y,2446,B
+Intel Xeon X3370,2446,B
+AMD Athlon II X4 650,2440,B
+Intel Core i7-2640M,2439,B
+Snapdragon 850,2437,B
+AMD Phenom II X4 955,2432,B
+MediaTek MT6779V/CU,2429,B
+Intel Pentium G3470,2428,B
+Intel Core i7-2620M,2427,B
+Intel Core i7-860S,2424,B
+AMD A12-9700P,2422,B
+Intel Core i7-4650U,2421,B
+Intel Core i7-3667U,2418,B
+MediaTek MT6771V/CT,2418,B
+AMD Athlon II X4 553,2418,B
+"Qualcomm Technologies, Inc SM6115",2416,B
+AArch64 rev 1 (aarch64),2413,B
+Intel Core2 Quad Q9650,2411,B
+MT6771V/WL,2411,B
+Intel Core i7-3537U,2406,B
+Intel Celeron G4920,2406,B
+Intel Atom C3558,2405,B
+MT6769H,2404,B
+Intel Celeron G4900T,2403,B
+Intel Core i3-3250,2401,B
+HiSilicon Kirin 960,2401,B
+Intel Xeon X5450,2400,B
+T610-Unisoc,2400,B
+T618,2393,B
+AMD PRO A12-8830B,2392,B
+AMD PRO A10-8730B,2388,B
+AMD PRO A8-9600B,2388,B
+Unisoc ums512,2384,B
+AMD Opteron 4170 HE,2382,B
+Intel Core m7-6Y75,2380,B
+AMD Phenom II X4 977,2377,B
+Intel Core m5-6Y57,2374,B
+MediaTek MT6779V/CV,2372,B
+Intel Celeron G3950,2369,B
+Intel Pentium J4205,2367,B
+Intel Celeron N4505,2367,B
+Apple A8X,2366,B
+Intel Core i5-2390T,2364,B
+Intel Pentium 6405U,2363,B
+Intel Xeon E5-2403,2363,B
+MT6769V/CT,2363,B
+Intel Xeon E5-2603,2362,B
+AMD Phenom II X4 840,2355,B
+Intel Core i7-4550U,2354,B
+Intel Core i5-660,2352,B
+Intel Core i3-6102E,2349,B
+Intel Core2 Extreme X9750,2348,B
+AMD Opteron 4130,2347,B
+AMD Phenom II X4 B35,2341,B
+Intel Xeon E5440,2340,B
+AMD Athlon II X4 651 Quad-Core,2338,B
+MediaTek MT6771V/C,2337,B
+AMD A8-3870K APU,2336,B
+Intel Core i5-4260U,2331,B
+Intel Xeon X5365,2331,B
+AMD Phenom II X4 B95,2329,B
+Intel Xeon E5606,2326,B
+Intel Xeon X3360,2325,B
+Hisilicon Kirin710,2323,B
+"Qualcomm Technologies, Inc SDA660",2323,B
+"Qualcomm Technologies, Inc SDM710",2323,B
+Samsung Exynos 8890,2315,B
+Intel Pentium G4400T,2312,B
+AMD A10-6700T APU,2311,B
+Intel Celeron G3920,2310,B
+Intel Celeron G5905T,2310,B
+AMD Athlon II X4 555,2310,B
+Intel Xeon X3380,2308,B
+Intel Core i3-2140,2307,B
+Intel Core i5-4350U,2305,B
+AMD Phenom II X4 B70,2303,B
+AMD FX-9800P,2302,B
+Intel Core i5-4210U,2300,B
+AMD Athlon II X4 645,2298,B
+Intel Core i5-2540M,2297,B
+Intel Core i5-3437U,2293,B
+Intel Core2 Quad Q9550,2291,B
+MediaTek MT6769T,2291,B
+Intel Core i3-3240,2287,B
+Intel Pentium 5405U,2286,B
+MediaTek MT6769Z,2285,B
+Intel Pentium 1403 v2,2284,B
+AMD Opteron 3260 HE,2283,B
+Intel Xeon X3363,2283,B
+Intel Xeon E3-1220L V2,2278,B
+MediaTek MT6769V/CB,2277,B
+Intel Pentium 4417U,2276,B
+Intel Core i3-6006U,2275,B
+"Qualcomm Technologies, Inc SDM712",2275,B
+AArch64 rev 2 (aarch64),2274,B
+Intel Xeon L3360,2273,B
+Intel Celeron G3930,2270,B
+AMD Phenom II X4 840T,2269,B
+Intel Core i5-3427U,2269,B
+Intel Core2 Extreme Q6850,2268,B
+Intel Core2 Extreme Q6800,2267,B
+MediaTek MT6771V/WT,2266,B
+AMD PRO A10-8700B,2262,B
+AMD Phenom II X4 945,2261,B
+Intel Xeon L5430,2260,B
+Intel Core i3-4330TE,2255,B
+Intel Xeon X3430,2253,B
+Intel Core i7-940XM,2252,B
+Intel Core i5-2520M,2252,B
+AMD A10-8700P,2246,B
+AMD A8-3850 APU,2244,B
+"Qualcomm Technologies, Inc BENGALP",2241,B
+AMD A8-8600P,2240,B
+"Qualcomm Technologies, Inc BENGAL",2239,B
+AMD Phenom II X4 B40,2238,B
+AMD Phenom II X4 B50,2237,B
+Intel Celeron J3455,2237,B
+"Qualcomm Technologies, Inc SDM670",2232,B
+"Qualcomm Technologies, Inc TRINKET",2231,B
+Intel Xeon X3353,2229,B
+AMD Phenom II X4 940,2228,B
+MT6969T,2228,B
+Intel Core i3-5020U,2226,B
+Intel Core i3-3225,2222,B
+Intel Celeron G3930TE,2218,B
+AMD A10-9600P,2218,B
+Intel Xeon X5472,2218,B
+MediaTek MT6769V/CU,2216,B
+Intel Core i5-650,2215,B
+Intel Celeron G3900,2212,B
+Intel Core i5-4200U,2211,B
+Intel Xeon E5430,2210,B
+Intel Celeron G4930T,2209,B
+Intel Celeron N6211,2207,B
+AMD Phenom II X4 973,2204,B
+Intel Core i3-3220,2203,B
+Unisoc T700,2203,B
+Intel Pentium 4415U,2202,B
+AMD Phenom II X4 960T,2196,B
+Intel Core i5-4250U,2196,B
+Intel Celeron 6305,2194,B
+Intel Core i3-21050,2193,B
+Intel Core2 Quad Q9500,2192,B
+MediaTek MT6769V/WB,2192,B
+Intel Core M-5Y51,2191,B
+Intel Pentium G4400TE,2190,B
+Unisoc T618,2184,B
+AMD Athlon II X4 638 Quad-Core,2183,B
+MT6765H,2183,B
+MT6769V/CZ,2177,B
+AMD Phenom II X4 925,2173,B
+AMD Athlon II X4 640,2171,B
+Intel Core i5-8200Y,2169,B
+Intel Core i3-5010U,2166,B
+AMD A8-3820 APU,2165,B
+Intel Pentium G3460,2165,B
+Intel Xeon L5520,2163,B
+Intel Core m5-6Y54,2162,B
+Unisoc ums9230,2161,B
+AMD PRO A8-8600B,2160,B
+MediaTek MT6771V/W,2160,B
+Intel Xeon X3350,2158,B
+"Qualcomm Technologies, Inc SDM665",2156,B
+MediaTek MT6768V/CA,2154,B
+AMD Phenom II X4 B45,2152,B
+"Qualcomm Technologies, Inc SDM660",2148,B
+AMD Athlon II X4 641 Quad-Core,2143,B
+Intel Core i7-3517UE,2141,B
+Intel Pentium N4200,2140,B
+AMD A10-7400P,2140,B
+Intel Celeron J3455E,2139,B
+Virtual,2137,B
+AMD A8-7200P,2135,B
+Intel Core i5-2560M,2131,B
+Intel Pentium G3440,2129,B
+MediaTek MT6763V/CE,2129,B
+Intel Pentium G3430,2125,B
+AMD Athlon X4 640,2115,B
+Hardkernel ODROID-N2Plus,2115,B
+Intel Core i3-3210,2112,B
+Intel Celeron G3930T,2109,B
+Intel Core2 Quad Q9450,2109,B
+AMD Phenom II X4 B25,2108,B
+AMD Athlon II X4 635,2108,B
+Intel Pentium G3440T,2107,B
+AMD 3015Ce,2105,B
+AMD Phenom II X4 B93,2104,B
+MediaTek MT6797X,2104,B
+AMD Phenom II X4 820,2103,B
+Intel Atom E3950,2101,B
+Intel Core M-5Y31,2095,B
+"Qualcomm Technologies, Inc SM6225",2095,B
+Intel Core i5-2415M,2094,B
+"Qualcomm Technologies, Inc SM6125",2094,B
+AMD Athlon II X4 630,2093,B
+Intel Core i3-2125,2093,B
+Intel Pentium G2140,2092,B
+Intel Pentium G3258,2091,B
+Intel Pentium G3450,2091,B
+Intel Core i7-3517U,2089,B
+T700-Unisoc,2088,B
+Intel Core i5-2435M,2085,B
+Intel Pentium 4405U,2085,B
+AMD Athlon II X4 631 Quad-Core,2085,B
+Intel Celeron G3900T,2085,B
+AMD Opteron 1389,2079,B
+AMD Athlon II X4 655,2078,B
+AMD Opteron 2384,2074,B
+Intel Core M-5Y71,2069,B
+Intel Core2 Quad Q9400,2068,B
+Intel Core i5-3337U,2067,B
+Intel Xeon E5462,2067,B
+Intel Core2 Quad Q6700,2062,B
+AMD Opteron 3250 HE,2061,B
+Intel Core i5-2450M,2060,B
+AMD Opteron 4162 EE,2058,B
+MediaTek MT6771V/WM,2057,B
+Intel Atom C2758,2056,B
+AMD A6-3670 APU,2055,B
+Intel Xeon X3230,2052,B
+Intel Xeon L5420,2051,B
+Apple A9,2051,B
+Intel Xeon E3-1220L,2050,B
+Intel Pentium G3260,2049,B
+AMD Phenom II X4 910e,2044,B
+Intel Core i7-640M,2042,B
+Intel Core m3-6Y30,2041,B
+AMD A6-3650 APU,2037,B
+Intel Core2 Quad Q8400,2036,B
+Intel Celeron G3900E,2034,B
+Intel Atom T5700,2030,B
+Intel Core i3-2102,2029,B
+Intel Xeon E7- 2830,2027,B
+AMD Phenom II X4 830,2022,B
+Intel Core i7-920XM,2021,B
+Intel Core2 Quad Q9505,2020,B
+Intel Core i3-5005U,2018,B
+Intel Core i5-655K,2017,B
+Intel Pentium G3450T,2016,B
+Intel Core i3-3240T,2013,B
+Intel Core2 Extreme Q9200,2011,B
+Intel Core i5-2430M,2007,B
+Intel Core i7-2655LE,1999,B
+Intel Core i7-620M,1999,B
+AMD Opteron 2427,1995,B
+Intel Core i7-2677M,1993,B
+HiSilicon Kirin 950,1991,B
+Intel Pentium G3420,1990,B
+AMD Athlon X4 750 Quad Core,1986,B
+Intel Core i3-2130,1986,B
+Intel Xeon X3320,1986,B
+AMD A10-5757M APU,1985,B
+"Qualcomm Technologies, Inc SDM662",1980,B
+Intel Xeon X5355,1979,B
+"Qualcomm Technologies, Inc 450",1978,B
+Intel Core i3-4025U,1974,B
+Intel Core i5-3317U,1972,B
+AMD Athlon II X4 615e,1967,B
+Intel Core i7-3689Y,1967,B
+Intel Core2 Quad Q9300,1962,B
+MT8788,1961,B
+Intel Atom E3940,1960,B
+AMD Athlon II X4 605e,1957,B
+Intel Core i5-2410M,1954,B
+Intel Atom E3900,1953,B
+Intel Core i3-3220T,1949,B
+Intel Core i3-4120U,1948,B
+"Qualcomm Technologies, Inc SDM636",1947,B
+Intel Xeon E5506,1946,B
+AMD Phenom 9850B Quad-Core,1946,B
+Samsung Exynos 9610,1942,B
+Intel Core i3-5015U,1939,B
+AMD A8-3800 APU,1939,B
+Intel Celeron N3450,1938,B
+AMD Athlon X4 730,1936,B
+Intel Xeon X6550,1936,B
+Intel Xeon E5603,1935,B
+AMD Athlon II X4 620,1934,B
+AMD A6-7480,1931,B
+Intel Xeon E5420,1931,B
+Intel Pentium G3250,1928,B
+Intel Xeon E5507,1928,B
+Intel Xeon X3330,1928,B
+Intel Core i7-840QM,1928,B
+Intel Celeron G1850,1926,B
+Intel Core i3-2120,1926,B
+AMD Athlon II X3 460,1924,B
+AMD Athlon 5370 APU,1923,B
+Intel Xeon E5410,1923,B
+Intel Xeon L5410,1921,B
+"Qualcomm Technologies, Inc SM4250",1920,B
+Intel Pentium G3240,1919,B
+AMD Opteron 3320 EE,1918,B
+Intel Core i5-580M,1914,B
+Intel Pentium G3420T,1912,B
+"Qualcomm Technologies, Inc MSM8976SG",1912,B
+AMD Opteron X2170 APU,1911,B
+AMD A10 PRO-7350B APU,1910,B
+AMD A10-4600M APU,1908,B
+Samsung Exynos 9611,1908,B
+Intel Core i5-3439Y,1907,B
+Intel Core i5-4422E,1907,B
+AMD Phenom II X4 B05e,1906,B
+Intel Core M-5Y10a,1905,B
+Intel Celeron N4500,1904,B
+AMD Opteron 2419 EE,1902,B
+AMD A10-5750M APU,1902,B
+AMD Phenom II X4 920,1899,B
+AMD Opteron 1385,1898,B
+AMD Phenom II X4 905e,1895,B
+Intel Pentium G2130,1895,B
+AMD Phenom 9950 Quad-Core,1892,B
+AMD PRO A6-8570,1889,B
+Intel Core i5-2510E,1889,B
+AMD PRO A6-8550B,1885,B
+Intel Core M-5Y10,1885,B
+Intel Core i5-2515E,1882,B
+Intel Core i7-3555LE,1880,B
+Intel Celeron 4305UE,1876,B
+AMD PRO A6-9500,1875,B
+Intel Core i3-4030U,1875,B
+AMD Athlon II X4 610e,1871,B
+Intel Core i3-2105,1871,B
+Intel Pentium G2120,1870,B
+AMD A6-9500,1864,B
+AMD Opteron 2378,1864,B
+"Qualcomm Technologies, Inc SDM460",1861,B
+Intel Core i5-4230U,1853,B
+Intel Core i3-4110U,1853,B
+Intel Pentium 1403,1851,B
+ARM Cortex-A53 6 Core 1896 MHz,1851,B
+Intel Celeron G3900TE,1850,B
+AMD Phenom II X4 810,1849,B
+Intel Pentium G3220,1849,B
+Intel Core i3-4100E,1848,B
+MediaTek MT8183,1847,B
+Intel Core i3-2310E,1845,B
+Intel Core2 Extreme Q9300,1845,B
+AMD Phenom II X3 B77,1844,B
+AMD Phenom II X4 805,1844,B
+AMD A8-5550M APU,1844,B
+AMD A6-9500E,1841,B
+UIS7862A,1839,B
+Intel Xeon X3323,1837,B
+AMD FX-7500 APU,1835,B
+AMD Athlon II X3 455,1832,B
+Intel Core i5-560M,1832,B
+AMD A6-3620 APU,1830,B
+AMD Phenom II X4 B15e,1825,B
+Intel Core i3-3130M,1824,B
+SAMSUNG Exynos7420,1824,B
+Intel Core i3-2330E,1823,B
+Intel Core M-5Y10c,1822,B
+Intel Core i3-2100,1819,B
+Intel Xeon X3220,1819,B
+Intel Core i7-610E,1818,B
+Intel Core i5-4302Y,1817,B
+AMD A8-6500T APU,1816,B
+Intel Xeon E5345,1814,B
+Intel Core2 Quad Q8300,1814,B
+Intel Core i7-2637M,1811,B
+AMD Athlon X4 620,1810,B
+"Qualcomm Technologies, Inc SDM632",1809,B
+AMD Athlon II X3 445,1808,B
+Intel Core M-5Y70,1807,B
+AMD Phenom 9750 Quad-Core,1804,B
+AMD A8-7410 APU,1801,B
+AMD A6-7470K,1799,B
+AMD Opteron 1381,1797,B
+Intel Core2 Quad Q8200,1797,B
+AMD Phenom II X940 Quad-Core,1797,B
+AMD GX-420MC SOC,1796,B
+AMD Athlon X4 530,1786,B
+AMD Phenom X4 Quad-Core GP-9730,1784,B
+Snapdragon 835,1784,B
+AMD Athlon X3 455,1783,B
+Intel Core i7-740QM,1782,B
+AMD Athlon X3 435,1781,B
+"Qualcomm Technologies, Inc SDM630",1780,B
+Intel Core2 Quad Q6600,1778,B
+AMD A8-6410 APU,1777,B
+AMD Phenom II X4 910,1776,B
+AMD A8-5557M APU,1774,B
+AMD R-464L APU,1773,B
+Intel Core i7-820QM,1768,B
+AMD Phenom II N830 3+1,1768,B
+AMD GX-420CA SOC,1767,B
+Intel Core2 Quad Q9100,1764,B
+AMD Athlon II X3 450,1763,B
+Intel Xeon L5408,1761,B
+AMD A10-4657M APU,1759,B
+Intel Celeron G1840,1758,B
+Intel Atom C3538,1756,B
+Intel Pentium G3240T,1755,B
+Intel Pentium G3260T,1755,B
+Intel Core i5-540M,1752,B
+MediaTek MT8768WT,1748,B
+MT6765,1748,B
+MT6797M,1745,B
+Intel Core i3-4000M,1744,B
+HP Hexa-Core 2.0GHz,1741,B
+AMD A10-5745M APU,1738,B
+AMD Athlon 5350 APU,1737,B
+AMD Phenom 9600B Quad-Core,1736,B
+AMD A6-7310 APU,1736,B
+AMD GX-424CC SOC,1735,B
+AArch64 rev 4 (aarch64),1735,B
+AMD Opteron 2356,1733,B
+Intel Core i5-2557M,1732,B
+MT6752,1728,B
+Intel Pentium G3250T,1726,B
+MediaTek MT8768CT,1724,B
+MediaTek MT6797T,1723,B
+AMD Phenom X2 Dual-Core GE-6060,1722,B
+AMD Athlon II X3 440,1718,B
+Intel Core i3-4158U,1718,B
+AMD A10-7300 APU,1715,B
+"Qualcomm Technologies, Inc APQ8053",1712,B
+AMD Athlon II X4 600e,1711,B
+Intel Pentium G2030,1711,B
+Intel Celeron G1630,1707,B
+AMD PRO A6-8500B,1704,B
+AMD Opteron 1356,1703,B
+HiSilicon Kirin 659,1703,B
+AMD PRO A4-3350B APU,1702,B
+AMD Phenom 9650 Quad-Core,1699,B
+AMD Phenom FX-5200 Quad-Core,1699,B
+Intel Pentium 4425Y,1697,B
+Intel Core i3-560,1696,B
+Intel Atom x6211E,1695,B
+Intel Celeron 4305U,1694,B
+Intel Celeron 3965U,1692,B
+Intel Pentium G2100T,1691,B
+Intel Celeron J4025,1688,B
+MT6765V/WB,1688,B
+Intel Core i7-2617M,1687,B
+AMD A4-6250J APU,1685,B
+Intel Pentium G2020,1684,B
+Intel Core i5-520M,1683,B
+AMD Phenom 9850 Quad-Core,1680,C
+AMD PRO A6-7350B,1679,C
+Intel Xeon L5335,1678,C
+AMD A9-9430,1676,C
+Intel Celeron 6305E,1675,C
+AMD Athlon II X3 435,1670,C
+Intel Celeron G1820,1670,C
+AMD Phenom II X920 Quad-Core,1669,C
+AMD A6-6310 APU,1666,C
+Intel Xeon E5405,1664,C
+Samsung Exynos 7880,1664,C
+AMD A4-7210 APU,1663,C
+MediaTek MT6765V/CB,1663,C
+Samsung Exynos 7885,1663,C
+AMD PRO A6-9500E,1662,C
+Intel Core i7-720QM,1661,C
+MediaTek MT6765V/CA,1659,C
+Samsung Exynos 7904,1657,C
+Intel Core i3-4030Y,1654,C
+"Qualcomm Technologies, Inc MSM8953",1654,C
+AMD A6-5200 APU,1653,C
+HiSilicon Kirin 650,1653,C
+AMD A4 PRO-3340B,1652,C
+AMD Phenom X4 Quad-Core GP-9600,1649,C
+AMD A6-3600 APU,1649,C
+MT6757W,1648,C
+Intel Core i3-4010U,1647,C
+AMD Phenom II N970 Quad-Core,1647,C
+AMD A8-7100 APU,1644,C
+AMD A6 PRO-7400B,1641,C
+Intel Core i3-3120M,1641,C
+Rockchip RK,1641,C
+AMD A10-4655M APU,1637,C
+AMD Phenom 9550 Quad-Core,1636,C
+AMD Opteron 2373 EE,1635,C
+Nvidia Tegra T210,1635,C
+Intel Core i3-4005U,1634,C
+Intel Core i3-2100T,1634,C
+Snapdragon 888,1630,C
+AMD Embedded R-Series RX-216GD,1628,C
+AMD A8-4500M APU,1624,C
+Intel Pentium G3320TE,1623,C
+AMD Opteron 1354,1620,C
+AMD Phenom 9600 Quad-Core,1619,C
+Intel Core i5 E 520,1619,C
+AMD A6-6400B APU,1616,C
+MediaTek MT6797,1616,C
+Intel Celeron G1820T,1614,C
+Intel Pentium G2120T,1613,C
+MediaTek MT6757CD,1612,C
+Samsung Exynos 7420,1612,C
+Intel Celeron N4000C,1611,C
+AMD A8-5545M APU,1611,C
+Intel Core i3-3110M,1609,C
+Intel Celeron 2000E,1607,C
+MT6765V/WA,1606,C
+Unisoc T310,1606,C
+AMD A6-8550,1604,C
+MT6757WD,1602,C
+Intel Pentium 4415Y,1600,C
+AMD Phenom FX-5000 Quad-Core,1599,C
+Intel Xeon X3210,1599,C
+MT6755V/W,1596,C
+Intel Core i5-4220Y,1591,C
+Qualcomm MSM8953,1589,C
+Intel Core i3-550,1588,C
+AMD A6-7400K APU,1587,C
+ARM Neoverse-N1 2 Core 0 MHz,1583,C
+Intel Celeron J4005,1581,C
+AMD A8-3550MX APU,1579,C
+ARM phytium FT1500a 4 Core 2000 MHz,1579,C
+AMD Athlon II X3 425,1576,C
+Intel Celeron G1840T,1576,C
+Intel Celeron N4020,1570,C
+AMD A8-3530MX APU,1570,C
+Intel Core i5-3339Y,1569,C
+ZHAOXIN KaiXian KX-6640MA@2.2+GHz,1566,C
+AMD Phenom X2 Dual-Core GE-5060,1566,C
+Intel Pentium G3220T,1564,C
+AMD A4-6320 APU,1563,C
+AMD Embedded G-Series GX-420GI Radeon R7E,1561,C
+AMD Phenom II X3 B75,1560,C
+Intel Celeron G1830,1560,C
+Intel Core i5-4200Y,1558,C
+AMD Phenom II N930 Quad-Core,1558,C
+AMD Athlon II X3 420e,1557,C
+AMD A8 PRO-7150B APU,1557,C
+AMD Phenom II X3 710,1554,C
+Intel Pentium 3560M,1552,C
+AMD PRO A4-8350B,1552,C
+AMD A6-6420B APU,1550,C
+Intel Xeon E5335,1549,C
+ZHAOXIN KaiXian ZX-C+ C4700,1547,C
+AMD A4 PRO-7350B,1544,C
+Intel Pentium G2010,1541,C
+AMD Phenom II X3 B73,1538,C
+AMD A6-6420K APU,1538,C
+Intel Core i5-4210Y,1537,C
+Intel Pentium G2030T,1535,C
+Apple A8,1531,C
+Qualcomm MSM8996PRO-AB,1530,C
+AMD E2-7110 APU,1529,C
+Intel Xeon E5504,1529,C
+"Qualcomm Technologies, Inc APQ8096",1529,C
+AMD Opteron X3216 APU,1525,C
+AMD A9-9425,1524,C
+Intel Xeon X5270,1524,C
+AMD Phenom 9750B Quad-Core,1520,C
+Intel Pentium 4405Y,1518,C
+Intel Core i3-540,1516,C
+AMD Athlon X3 425,1516,C
+AMD A9-9420,1515,C
+"Qualcomm Technologies, Inc MSM8976",1513,C
+AMD Phenom 9500 Quad-Core,1512,C
+AMD Opteron 2354,1509,C
+Intel Celeron G1620T,1507,C
+AMD Phenom II X4 900e,1505,C
+AMD A9-9410,1504,C
+AMD Athlon X2 370K Dual Core,1504,C
+AMD Phenom 9350e Quad-Core,1501,C
+Intel Celeron 2970M,1501,C
+AMD PRO A6-8530B,1498,C
+Intel Pentium G870,1495,C
+MT6763V/B,1495,C
+AMD A4-7300 APU,1492,C
+Intel Celeron 3955U,1490,C
+AMD PRO A6-8570E,1489,C
+Intel Celeron 3867U,1488,C
+Intel Core i3-2120T,1486,C
+MediaTek MT8768WA,1482,C
+AMD A4 PRO-7300B APU,1481,C
+Intel Core2 Quad Q9000,1480,C
+Intel Core i5-4300Y,1479,C
+MediaTek MT6757V,1479,C
+Intel Celeron G1610,1478,C
+Intel Core m5-7Y54,1475,C
+Pentium Dual-Core E6000,1472,C
+AMD A4-6210 APU,1471,C
+Intel Xeon E7320,1469,C
+Intel Core i7-640LM,1469,C
+AMD Phenom II X3 720,1466,C
+AMD A6-8500P,1466,C
+Intel Celeron G1620,1466,C
+Intel Pentium J3710,1465,C
+AMD Opteron 1352,1464,C
+AMD Phenom II N950 Quad-Core,1460,C
+AMD A8-3510MX APU,1457,C
+MT6763V/CT,1457,C
+AMD Phenom 9450e Quad-Core,1455,C
+MediaTek MT6763V/V,1454,C
+AMD A6-6400K APU,1453,C
+AMD PRO A6-9500B,1453,C
+Intel Xeon E5320,1451,C
+Intel Xeon X5272,1451,C
+Intel Core i3-530,1449,C
+AMD A6-3430MX APU,1448,C
+Intel Xeon E5240,1448,C
+Intel Core i3-4020Y,1447,C
+"Qualcomm Technologies, Inc MSM8996pro",1446,C
+Intel Core i5-2467M,1445,C
+Intel Pentium 4410Y,1444,C
+AMD Athlon II X3 415e,1441,C
+AMD Athlon X3 440,1438,C
+MediaTek MT6762V/WR,1438,C
+"Qualcomm Technologies, Inc APQ8076",1438,C
+Intel Pentium G860,1437,C
+AMD A4-6300 APU,1431,C
+AMD Phenom II X3 700e,1430,C
+MediaTek MT6762V/WD,1430,C
+Intel Xeon E3113,1429,C
+AMD A6-5400B APU,1428,C
+AMD Phenom II X2 560,1426,C
+"Qualcomm Technologies, Inc. MSM8940-PMI8940 MTP",1426,C
+AMD Phenom II X3 740,1424,C
+ASUS Tinker Board 2/2S,1423,C
+Intel Atom C2550,1422,C
+Intel Core i7-620LM,1422,C
+Hisilicon Kirin 930,1415,C
+AMD Phenom 9150e Quad-Core,1414,C
+Intel Celeron 5205U,1414,C
+AMD Phenom II P960 Quad-Core,1412,C
+Intel Atom C2558,1410,C
+MediaTek MT6765G,1410,C
+Intel Core i7-2610UE,1409,C
+Intel Core2 Duo E8290,1408,C
+Intel Xeon E3-1220L v3,1407,C
+Intel Celeron 1020E,1406,C
+AMD Phenom II X2 565,1405,C
+MT6755V/B,1404,C
+Intel Pentium G6951,1401,C
+Intel Celeron N4000,1399,C
+AMD A8-3520M APU,1398,C
+AMD Phenom II X2 B59,1392,C
+AMD Phenom 8600B Triple-Core,1390,C
+AMD A9-9400,1390,C
+AMD Athlon 5150 APU,1389,C
+MT6755V/WS,1389,C
+"Qualcomm Technologies, Inc SDA450",1388,C
+AMD GX-415GA SOC,1386,C
+Intel Xeon L5310,1385,C
+AMD E1-6050J APU,1385,C
+AMD A6-3500 APU,1382,C
+MT8176,1380,C
+Intel Pentium G850,1373,C
+Intel Pentium 2020M,1367,C
+Intel Pentium N3710,1364,C
+Intel Core i3-3217UE,1362,C
+Intel Core2 Duo E8600,1362,C
+AMD Phenom II X2 570,1360,C
+AMD Athlon II X2 280,1355,C
+MediaTek MT6762V/WA,1355,C
+Intel Pentium 2030M,1353,C
+Intel Pentium G645,1353,C
+Intel Core i3-2332M,1353,C
+Intel Core i3-4010Y,1350,C
+AMD A4-5300 APU,1349,C
+Intel Atom x7-Z8750,1349,C
+AMD A4-5100 APU,1346,C
+AMD A10 Micro-6700T APU,1345,C
+"Qualcomm Technologies, Inc MSM8956",1345,C
+AMD Phenom 8750 Triple-Core,1343,C
+Intel Celeron 4205U,1341,C
+Intel Pentium 3825U,1340,C
+MediaTek MT6762V/CB,1340,C
+Intel Xeon L3110,1338,C
+Intel Pentium G2020T,1337,C
+Intel Xeon L5240,1337,C
+AMD A6-9225,1336,C
+Intel Core i3-2370M,1336,C
+Intel Celeron G1610T,1334,C
+AMD Athlon II X3 405e,1331,C
+Intel Xeon E3120,1330,C
+AMD A4-5050 APU,1328,C
+AMD A4-6300B APU,1328,C
+AMD Athlon X2 280,1327,C
+Intel Core i5 750S,1326,C
+VIA QuadCore C4650,1323,C
+AMD Athlon II X3 400e,1320,C
+Samsung Exynos 7884,1320,C
+AMD Phenom II P940 Quad-Core,1319,C
+Intel Atom x7-Z8700,1318,C
+MT6750V/C,1318,C
+AMD Opteron 2393 SE,1317,C
+AMD Athlon X2 340 Dual Core,1315,C
+MT6763V/WT,1313,C
+Intel Core i5-480M,1312,C
+ARM Cortex-A73 6 Core 1992 MHz,1311,C
+ARM Cortex-A57 4 Core 2091 MHz,1311,C
+Intel Core i5-4202Y,1309,C
+Intel Pentium 3550M,1309,C
+AMD Phenom II X2 555,1308,C
+AMD A8-3500M APU,1308,C
+AMD A8-4555M APU,1307,C
+Qualcomm MSM8996,1307,C
+Intel Xeon E5310,1306,C
+Unisoc SC9863a,1306,C
+MediaTek MT6762V/WB,1303,C
+"Qualcomm Technologies, Inc MSM8996",1302,C
+"Qualcomm Technologies, Inc SDM439",1302,C
+AMD Phenom X4 Quad-Core GP-9500,1297,C
+Intel Pentium G6960,1293,C
+Hisilicon Kirin 935,1291,C
+AMD A4-5000 APU,1289,C
+Intel Pentium N3700,1288,C
+AMD A6-9220,1287,C
+AMD Phenom 8850B Triple-Core,1281,C
+AMD Phenom 9100e Quad-Core,1279,C
+AMD Phenom II X2 521,1279,C
+Intel Core i5-460M,1279,C
+AMD A6-5400K APU,1279,C
+AMD A6-9230,1279,C
+Unisoc UIS8581E,1279,C
+AMD Sempron 240,1278,C
+MT6755,1278,C
+Intel Pentium G630,1277,C
+Intel Celeron 1020M,1275,C
+Intel Core i7-660UM,1272,C
+AMD Embedded G-Series GX-224IJ Radeon R4E,1271,C
+Intel Pentium G640,1270,C
+Intel Celeron G555,1268,C
+Intel Celeron 3865U,1266,C
+Intel Pentium A1020,1265,C
+Intel Core i3-2350M,1263,C
+AMD A6-3420M APU,1262,C
+AMD Phenom II X620 Dual-Core,1262,C
+Intel Core i3-330E,1260,C
+AMD A6-5357M APU,1260,C
+AMD A6-9210,1260,C
+Intel Core i3-2348M,1259,C
+AMD Phenom II N850 Triple-Core,1253,C
+Intel Celeron 3765U,1252,C
+Intel Core i3-3227U,1248,C
+Intel Pentium J2900,1246,C
+Intel Atom C3338,1245,C
+Intel Xeon E3110,1242,C
+Intel Core2 Duo E8435,1240,C
+Intel Xeon X5260,1238,C
+Intel Core2 Duo E8500,1238,C
+Intel Atom x5-Z8500,1238,C
+Intel Celeron 3855U,1237,C
+Intel Celeron 2950M,1237,C
+Intel Core i3-2330M,1235,C
+AMD Athlon II X2 270,1234,C
+Snapdragon 898,1234,C
+AMD Athlon II X2 265,1233,C
+Intel Core2 Duo T9900,1232,C
+BCM2835,1231,C
+AMD A4-9120,1230,C
+Intel Core i3-4012Y,1229,C
+MT6755M,1229,C
+AMD Phenom X4 Quad-Core GP-9530,1228,C
+Intel Celeron J3160,1227,C
+AMD A6-3400M APU,1226,C
+AMD A4-4020 APU,1225,C
+AMD Athlon II X2 B26,1224,C
+AMD Phenom II X3 705e,1222,C
+Intel Core i3-2328M,1221,C
+AMD A4-5300B APU,1220,C
+MT6755V/BM,1219,C
+Intel Pentium N3540,1216,C
+AMD R-272F APU,1215,C
+Qualcomm MSM8992,1215,C
+AMD Phenom 8450 Triple-Core,1214,C
+AMD Phenom II P860 Triple-Core,1214,C
+AMD A4-9125,1212,C
+Intel Core i5-430M,1211,C
+AMD Phenom 8600 Triple-Core,1210,C
+Intel Core i5-450M,1208,C
+Intel Pentium G620,1207,C
+AMD Phenom 8650 Triple-Core,1205,C
+"Qualcomm Technologies, Inc SDM450",1204,C
+Intel Celeron G550,1200,C
+Intel Atom x5-Z8550,1200,C
+AMD A6-3410MX APU,1199,C
+AMD Opteron 2222,1198,C
+Intel Celeron N3150,1197,C
+Intel Pentium N3530,1197,C
+ROC-RK3568-PC HDMI (Android),1197,C
+Intel Celeron J3355,1195,C
+Intel Core i3-2310M,1193,C
+ARM Cortex-A72 6 Core 1512 MHz,1192,C
+AMD A4-4000 APU,1190,C
+Rockchip RK3568 EVB1 DDR4 V10 Board,1189,C
+AMD Phenom 8750B Triple-Core,1188,C
+Intel Core i3-3217U,1188,C
+Intel Core2 Duo E8335,1187,C
+AMD R-460L APU,1183,C
+Intel Celeron 3755U,1182,C
+Intel Celeron 3965Y,1179,C
+Intel Core i3-390M,1178,C
+AMD Athlon II X2 B28,1177,C
+Intel Pentium G840,1175,C
+Intel Celeron G540T,1174,C
+Intel Xeon Gold 6133,1172,C
+MT6755V/CM,1172,C
+ARM Cortex-A57 4 Core 1734 MHz,1172,C
+AMD Phenom II X2 550,1169,C
+Intel Core2 Duo E8400,1169,C
+Intel Pentium E6800,1166,C
+Intel Atom Z3795,1166,C
+Intel Pentium E5800,1165,C
+Intel Core i3-380M,1165,C
+AMD Phenom II X640 Dual-Core,1165,C
+Intel Pentium G645T,1164,C
+AMD Phenom II X2 511,1163,C
+AMD Athlon II X2 255,1163,C
+Intel Core2 Duo T9800,1163,C
+Intel Core2 Duo E7600,1161,C
+MT6757WH,1161,C
+AMD A6-5350M APU,1160,C
+AMD Phenom II P920 Quad-Core,1160,C
+AMD A6-9220C,1159,C
+MTK6757,1158,C
+AMD Athlon II X2 250e,1155,C
+AMD QC-4000,1155,C
+Intel Celeron N3160,1154,C
+AMD Sempron 3850 APU,1153,C
+ARM Cortex-A57 4 Core 2014 MHz,1153,C
+Intel Pentium E6700,1152,C
+AMD Phenom II X2 B55,1151,C
+Intel Core i5-2537M,1150,C
+MediaTek MT6753T,1149,C
+Intel Pentium 3805U,1148,C
+AMD A6 Micro-6500T APU,1146,C
+Intel Celeron 3215U,1144,C
+AMD Phenom 8850 Triple-Core,1142,C
+Intel Xeon W3505,1142,C
+Intel Core2 Duo E6850,1140,C
+Intel Pentium G640T,1139,C
+Intel Core2 Extreme X9100,1139,C
+AMD Phenom II N870 Triple-Core,1139,C
+Intel Core2 Extreme X7800,1138,C
+Intel Core i3-2312M,1138,C
+Intel Celeron J1900,1137,C
+AMD Phenom II N830 Triple-Core,1137,C
+Intel Core2 Extreme X9000,1135,C
+AMD A9-9420e,1135,C
+AMD Phenom 8450e Triple-Core,1134,C
+Intel Pentium N3520,1134,C
+AMD A8-7050,1129,C
+AMD Phenom II X2 B53,1126,C
+Intel Celeron N3350,1126,C
+Intel Core i3-370M,1126,C
+AMD E2-3800 APU,1124,C
+MediaTek MT6750T,1123,C
+AMD A6-5345M APU,1122,C
+AMD E2-6110 APU,1121,C
+Intel Core2 Duo E8135,1119,C
+Intel Xeon L5320,1118,C
+Intel Pentium A1018,1117,C
+AMD A6-1450 APU,1117,C
+AMD Phenom II P840 Triple-Core,1116,C
+MediaTek MT6762G,1116,C
+Intel Celeron G1820TE,1115,C
+AMD Phenom 8250 Triple-Core,1114,C
+AMD Athlon II X2 260,1113,C
+Intel Celeron G540,1110,C
+Intel Core2 Duo P9700,1109,C
+AMD Phenom II X2 545,1107,C
+AMD Opteron 2220,1106,C
+AMD Athlon II X2 210e,1105,C
+Intel Celeron G550T,1102,C
+ARM Cortex-A72 6 Core 1416 MHz,1101,C
+AMD Phenom II X2 B57,1099,C
+Intel Celeron G530,1096,C
+Intel Xeon 3075,1096,C
+AMD A4-3420 APU,1094,C
+AMD PRO A4-4350B,1093,C
+Intel Core2 Extreme X7900,1093,C
+Intel Celeron 2002E,1091,C
+Intel Pentium B970,1091,C
+Intel Core i7-640UM,1090,C
+Intel Core2 Duo E7500,1090,C
+AMD Opteron 1222,1089,C
+MT6795,1088,C
+Intel Celeron G1101,1086,C
+Qualcomm MSM 8939 HUAWEI TEXAS-A1,1085,C
+15/70,1085,C
+AMD Phenom 8250e Triple-Core,1084,C
+AMD Athlon II X2 250,1083,C
+AMD Phenom 8400 Triple-Core,1079,C
+MT8173,1077,C
+AMD Athlon II X2 245e,1075,C
+ARM Cortex-A72 4 Core 2300 MHz,1075,C
+Intel Celeron 1005M,1074,C
+AMD Athlon II X2 B24,1073,C
+Intel Pentium E6500,1073,C
+Intel Pentium E6600,1072,C
+Samsung EXYNOS5433,1072,C
+Intel Xeon 3085,1070,C
+MT6755BM,1070,C
+Intel Core2 Duo P9600,1069,C
+AMD Phenom II P820 Triple-Core,1068,C
+MediaTek MT6750V/WT,1068,C
+AMD A4-3400 APU,1066,C
+AMD GX-412HC,1065,C
+Qualcomm MSM 8939 HUAWEI KIW-L24,1065,C
+Intel Pentium B980,1064,C
+Intel Core2 Duo E8200,1064,C
+AMD Phenom X4 Quad-Core GS-6560,1063,C
+AMD A6-9200,1062,C
+Intel Core i3-350M,1062,C
+Intel Pentium G6950,1061,C
+AMD Athlon II X2 4400e,1059,C
+Rockchip RK3566 BOX DEMO V10 ANDROID Board,1058,C
+AMD Embedded G-Series GX-215JJ Radeon R2E,1057,C
+Intel Celeron 2980U,1056,C
+Intel Celeron G530T,1056,C
+MT6592T,1056,C
+Intel Xeon W3503,1052,C
+Intel Core2 Duo T9600,1051,C
+AMD Athlon II X2 235e,1049,C
+Intel Core i7-680UM,1046,C
+MT8783,1039,C
+AMD GX-222GC SOC,1038,C
+Intel Atom E3845,1038,C
+AMD Athlon 7850 Dual-Core,1037,C
+AMD Opteron 1220,1036,C
+AMD Athlon II X2 B22,1036,C
+AMD Opteron 2218,1036,C
+Intel Celeron N2940,1035,C
+Qualcomm MSM 8939 HUAWEI KIW-L21,1035,C
+Intel Core2 Duo E8300,1034,C
+Intel Pentium G630T,1029,C
+Intel Celeron U1900,1028,C
+AMD A6 PRO-7050B APU,1027,C
+Intel Celeron 1000M,1026,C
+AMD A6-4400M APU,1026,C
+Intel Xeon 3070,1025,C
+AMD Athlon II X2 220,1024,C
+AMD Phenom II N660 Dual-Core,1024,C
+AMD Athlon II X2 245,1022,C
+ARM Cortex-A57 8 Core 1500 MHz,1022,C
+Intel Pentium 2127U,1018,C
+Intel Pentium 3556U,1017,C
+Intel Pentium E5700,1017,C
+"Qualcomm Technologies, Inc MSM8937",1017,C
+Intel Core2 Duo T9500,1016,C
+Intel Pentium J2850,1016,C
+AMD Turion II Ultra Dual-Core Mobile M640,1016,C
+Intel Core i5-560UM,1015,C
+AMD Athlon X2 240e,1015,C
+Qualcomm MSM8939,1013,C
+Intel Core2 Duo E6700,1012,C
+AMD Turion II Ultra Dual-Core Mobile M660,1011,C
+AMD A6-7000,1010,C
+Intel Core2 Duo E6750,1010,C
+Intel Pentium E5500,1010,C
+AMD Phenom X2 Dual-Core GE-7060,1010,C
+MT8168B,1008,C
+Pentium Dual-Core T4500,1008,C
+MediaTek MT6762V/CA,1006,C
+Intel Core i3-3229Y,1004,C
+Intel Pentium 3558U,1004,C
+AMD A4 Micro-6400T APU,1004,C
+Intel Celeron N2930,1003,C
+Intel Core i5-540UM,1002,C
+Intel Pentium E6300,1000,C
+Intel Pentium 2117U,998,C
+Intel Core i3-330M,997,C
+AMD Athlon X2 215,996,C
+Intel Core2 Duo E8235,995,C
+AMD Athlon X2 250,993,C
+Intel Celeron 2981U,991,C
+AMD E2-9010,991,C
+AMD Phenom II N620 Dual-Core,990,C
+AMD Athlon II X2 4300e,990,C
+Nvidia Tegra T132,990,C
+Intel Pentium Extreme Edition 965,987,C
+Intel Atom x5-E8000,985,C
+Intel Pentium B950,984,C
+ARM ARMv7 rev 3 (v7l) 4 Core 2065 MHz,984,C
+MT6755V/WM,981,C
+AMD Athlon II X2 240e,980,C
+Intel Core2 Duo E7400,980,C
+AMD Opteron 1218 HE,979,C
+tn8,979,C
+MT8768WD,979,C
+MediaTek MT6750,977,C
+AMD Phenom X3 8550,976,C
+Intel Core i3-2340UE,976,C
+Intel Core2 Duo T7800,976,C
+Qualcomm MSM8937,973,C
+AMD Athlon 64 FX-74,972,C
+AMD A4-3300 APU,971,C
+AMD A4-4300M APU,971,C
+Intel Celeron 1037U,969,C
+MT6795M,968,C
+AMD Athlon 64 X2 Dual Core 6400+,967,C
+AMD Phenom II N640 Dual-Core,965,C
+Intel Core i7-620UM,964,C
+Intel Core2 Duo E7300,964,C
+Intel Xeon 5160,963,C
+Intel Atom C2538,960,C
+AMD Athlon II X2 215,959,C
+Intel Core2 Duo P9500,959,C
+AMD E2-9000,958,C
+Unisoc ums312,958,C
+AMD Opteron 285,956,C
+Intel Core2 Duo P8700,956,C
+AMD A6-9220e,956,C
+MT6750V/CS,955,C
+AMD R-260H APU,954,C
+AMD E2-3200 APU,953,C
+AMD Opteron 290,952,C
+AMD Athlon 7750 Dual-Core,951,C
+Samsung J7 Max LTE SWA board based on MT6757V/WL,950,C
+Intel Core2 Duo SP9400,948,C
+Intel Core2 Duo E7200,947,C
+ARM Cortex-A57 4 Core 1479 MHz,947,C
+VIA Eden X4 C4250 @ 1.2+GHz,944,C
+AMD Athlon 64 FX-62 Dual Core,943,C
+Intel Celeron J1850,942,C
+Intel Core2 Duo T9400,941,C
+Intel Core2 Duo P8800,940,C
+Intel Core2 Duo T9300,940,C
+Octa Core,940,C
+Intel Xeon 3060,939,C
+AMD Athlon X2 255,938,C
+Intel Core2 Duo T9550,937,C
+Intel Pentium E5400,936,C
+AMD Athlon II X2 240,935,C
+Intel Celeron E3500,935,C
+AMD Phenom II P650 Dual-Core,933,C
+AMD Sempron X2 198 Dual-Core,930,C
+Intel Celeron B840,930,C
+Intel Xeon L3406,928,C
+AMD Athlon 64 X2 Dual Core 5600+,923,C
+AMD Turion II Ultra Dual-Core Mobile M600,923,C
+AMD E2-9030,922,C
+AMD Athlon X2 240,921,C
+AMD Athlon 64 X2 Dual Core 6000+,919,C
+Intel Celeron 3205U,918,C
+Intel Celeron N2920,918,C
+MediaTek MT6753,916,C
+Intel Xeon 5148,912,C
+AMD Turion II Dual-Core Mobile M540,912,C
+AMD Athlon 64 X2 Dual Core 5400+,910,C
+AMD Opteron 1218,910,C
+Intel Pentium B960,910,C
+"Qualcomm Technologies, Inc SDM429",910,C
+AMD Opteron 2220 SE,909,C
+Intel Core2 Duo P9300,909,C
+Rockchip RK3566 RK817 TABLET LP4X Board,909,C
+Intel Atom x5-Z8350,909,C
+MediaTek MT8166B,907,C
+Intel Core2 Duo T8300,906,C
+Intel Pentium E5300,906,C
+Intel Core i5-520UM,902,C
+"Qualcomm Technologies, Inc MSM8940",902,C
+Intel Core2 Duo E6600,901,C
+Intel Xeon 3.73GHz,901,C
+AMD A4-9120e,899,C
+AMD Athlon II N370 Dual-Core,899,C
+Intel Pentium G620T,896,C
+Intel Core i3-2375M,894,C
+AMD A4-9120C,894,C
+UGOOS UT8 Board,894,C
+Intel Core2 Duo L9600,892,C
+"Qualcomm Technologies, Inc MSM8994",890,C
+Samsung Exynos 7870,890,C
+Intel Celeron 1017U,888,C
+Intel Xeon 5133,887,C
+AMD Turion II P540 Dual-Core,884,C
+AMD Phenom X2 Dual-Core GP-7730,884,C
+ARM FT-2000/4 4 Core 2200 MHz,881,C
+AMD Sempron X2 190,879,C
+Intel Atom x5-E3930,878,C
+Intel Pentium N3510,878,C
+Samsung Exynos 7580,878,C
+AMD Turion II N550 Dual-Core,877,C
+Athlon 64 Dual Core 5600+,875,C
+Intel Core2 Duo E6550,875,C
+AMD Athlon 5200 Dual-Core,869,C
+Intel Core2 Duo P7550,868,C
+AMD Athlon II X2 4450e,867,C
+Intel Pentium E5200,867,C
+Intel Xeon 3065,867,C
+Intel Celeron P4600,862,C
+AMD Turion 64 X2 Mobile TL-68,861,C
+Intel Celeron E3200,860,C
+AMD Athlon 7550 Dual-Core,859,C
+Intel Xeon 5140,857,C
+MT6762V/CR,857,C
+MT8161AA,857,C
+AMD Turion II N530 Dual-Core,855,C
+Intel Core2 Duo P8600,853,C
+ARM Cortex-A72 4 Core 1800 MHz,853,C
+SAMSUNG Exynos7580,851,C
+Intel Pentium P6100,850,C
+Athlon 64 Dual Core 5000+,850,C
+Intel Pentium 3560Y,849,C
+Intel Pentium P6200,847,C
+MT6761V/CBB,846,C
+Intel Core i3-2377M,845,C
+MT9950,845,C
+Rockchip RK3566 EVB2 LP4X V10 Board,843,C
+Intel Celeron 2957U,841,C
+Intel Xeon 3050,841,C
+AMD TurionX2 Ultra DualCore Mobile ZM-85,841,C
+Intel Xeon 5150,840,C
+AMD Opteron 275,839,C
+Intel Xeon E5205,838,C
+Intel Xeon E5502,837,C
+Intel Celeron E3300,837,C
+Intel Atom Z3580,837,C
+Intel Core i5-430UM,836,C
+AMD Athlon Dual Core 5000B,835,C
+AMD Athlon 5000 Dual-Core,835,C
+Intel Celeron 2955U,835,C
+Intel Pentium P6300,834,C
+BCM2711,834,C
+Intel Core i3-2367M,832,C
+Intel Pentium B940,832,C
+AMD E2-9000e,832,C
+AMD Turion II Dual-Core Mobile M520,830,C
+Intel Core2 Duo E4600,829,C
+Intel Celeron E3400,829,C
+Intel Core2 Duo P8400,827,C
+AMD Athlon Dual Core 5400B,826,C
+AMD Sempron X2 180,826,C
+Intel Core2 Duo T7700,825,C
+Intel Core i3-2357M,824,C
+Intel Core2 Duo T7500,823,C
+Intel Core2 Extreme X6800,823,C
+Intel Atom x5-Z8330,822,C
+"Qualcomm Technologies, Inc MSM8939",819,C
+DO-Regular,819,C
+Intel Atom x5-Z8300,819,C
+AMD A4-4355M APU,818,C
+AMD Turion II P560 Dual-Core,818,C
+Intel Celeron P4500,816,C
+Intel Core i3-2365M,815,C
+AMD Turion II Ultra Dual-Core Mobile M620,814,C
+AMD Athlon 64 X2 Dual Core 5200+,812,C
+Intel Celeron B830,812,C
+Intel Core2 Duo E4700,811,C
+MT8165,810,C
+Intel Core2 Duo E6540,808,C
+MT8766B,808,C
+AMD Opteron 1214 HE,806,C
+Intel Atom Z3735G,806,C
+Qualcomm MSM8994,805,C
+Intel Xeon E5503,804,C
+"Qualcomm Technologies, Inc MSM8952",804,C
+ARM Cortex-A72 4 Core 2200 MHz,804,C
+AMD Athlon64 X2 Dual Core 4600+,803,C
+MT8161A,800,C
+Intel Celeron 1007U,798,C
+AMD Athlon 64 X2 Dual Core 5800+,797,C
+AMD Athlon Dual Core 5200B,796,C
+hi6210sft,796,C
+AMD A6-4455M APU,795,C
+Intel Xeon 5130,795,C
+Rockchip RK3566 RK817 ZIDOO TABLET LP4X Board,795,C
+Intel Atom Z3775D,794,C
+Intel Pentium E2220,793,C
+Intel Pentium T4500,793,C
+AMD Turion X2 Ultra Dual-Core Mobile ZM-84,793,C
+ARM Neoverse-N1 1 Core 0 MHz,791,C
+Intel Core2 Duo P7370,790,C
+AMD Turion II P520 Dual-Core,790,C
+AMD Athlon 7450 Dual-Core,789,C
+Intel Pentium 997,789,C
+Intel Xeon 3040,789,C
+Intel Celeron B820,789,C
+MT6761V/CD,784,C
+"Qualcomm Technologies, Inc MSM8992",782,C
+AMD Opteron 1216,781,C
+MT6750V/W,779,C
+Intel Celeron B810,775,C
+VIA QuadCore L4700 @ 1.2+ GHz,773,C
+Intel Core2 Duo E6400,772,C
+AMD Opteron 1212 HE,771,C
+Intel Pentium T4300,771,C
+Intel Core2 Duo T7600,770,C
+Intel Core2 Duo P7570,770,C
+Athlon Dual Core 4850e,769,C
+AMD A4-3310MX APU,769,C
+MT6761V/WAB,769,C
+AMD Athlon II N350 Dual-Core,767,C
+AMD Opteron 280,765,C
+Intel Pentium P6000,765,C
+Intel Xeon 5120,763,C
+AMD GX-217GA SOC,762,C
+Intel Pentium T4400,762,C
+AMD Opteron 270,761,C
+Intel Core2 Duo T6600,761,C
+Intel Atom Z3735D,761,C
+"rockchip,rk3328",761,C
+AMD Athlon 64 X2 Dual Core 5000+,760,C
+AMD Turion II Dual-Core Mobile M500,760,C
+MT6797D,758,C
+Intel Core2 Duo T6670,756,C
+Intel Core i5-470UM,755,C
+AMD GX-218GL SOC,754,C
+Intel Atom Z3775,754,C
+AMD A4-5150M APU,753,C
+AMD A4-3330MX APU,752,C
+Intel Pentium E2200,752,C
+Rockchip RK3566 EVB1 DDR4 V10 Board,751,C
+AMD Athlon Dual Core 5050e,748,C
+Dual-Core AMD Opteron 1220 SE,748,C
+Intel Celeron 1047UE,748,C
+Intel Core2 Duo P7450,747,C
+Celeron Dual-Core T3500,747,C
+AMD Opteron 180,746,C
+Intel Core2 Duo SL9400,743,C
+Intel Pentium D 960,743,C
+Intel Celeron N2910,742,C
+ARM Cortex-A55 4 Core 2124 MHz,742,C
+AMD Turion II Neo N54L Dual-Core,741,C
+ARM Cortex-A55 4 Core 1992 MHz,741,C
+Intel Core2 Duo T8100,739,C
+AMD Turion 64 X2 Mobile TL-62,738,C
+Intel Atom Z3770,738,C
+AMD Athlon Dual Core 5600B,737,C
+Athlon 64 Dual Core 3800+,736,C
+MT8696,736,C
+AMD Athlon Dual Core 4850e,735,C
+AC8257V/WAB,735,C
+Qualcomm APQ 8084 (Flattened Device Tree),734,C
+Spreadtrum SC9853I-IA,734,C
+Intel Celeron 2961Y,732,C
+Rockchip RK3368,731,C
+AMD Turion X2 Ultra Dual-Core Mobile ZM-85,730,C
+AMD Opteron 1216 HE,727,C
+AMD Athlon Dual Core 4850B,727,C
+Intel Celeron 887,727,C
+Intel Core2 Duo P7350,727,C
+AMD A4-3305M APU,727,C
+AMD E2-3000 APU,726,C
+ARM Cortex-A72 4 Core 2000 MHz,726,C
+Intel Core2 Duo T7200,723,C
+AMD Athlon 64 X2 Dual Core 4800+,722,C
+ARM Cortex-A55 4 Core 2100 MHz,719,C
+Intel Core2 Duo E4500,718,C
+Intel Core2 Duo T6570,718,C
+AMD Athlon 64 X2 Dual Core 4600+,716,C
+Intel Pentium T4200,715,C
+Intel Core2 Duo E6420,714,C
+MediaTek MT6761V/WE,714,C
+Intel Celeron E1600,712,C
+AMD Athlon II P360 Dual-Core,711,C
+Intel Atom Z3560,710,C
+AMD Athlon 64 FX-60 Dual Core,709,C
+Intel Core2 Duo T6400,708,C
+AMD Turion X2 Dual-Core Mobile RM-75,708,C
+Rockchip RK3288,708,C
+Intel Celeron B815,706,C
+Intel Core2 Duo T5870,705,C
+MT8735T,704,C
+Intel Atom E3840,704,C
+Intel Core2 Duo T7400,702,C
+Intel Pentium E2210,702,C
+MT5893,702,C
+Intel Core i3-380UM,699,C
+AMD Athlon Dual Core 4450e,698,C
+AMD Opteron 1214,696,C
+Intel Core2 Duo T6500,696,C
+AMD Athlon II Dual-Core M320,696,C
+AMD Opteron 185,695,C
+AMD Turion X2 Ultra Dual-Core Mobile ZM-86,695,C
+Intel Core2 Duo T7300,693,C
+MT6738,692,C
+AMD Athlon 64 X2 Dual Core 4400+,691,C
+Intel Celeron G470,691,C
+AMD Turion X2 Dual Core Mobile RM-76,691,C
+Intel Celeron P4505,689,C
+AMD Turion X2 Ultra Dual-Core Mobile ZM-87,689,C
+Intel Core2 Duo T7250,688,C
+AMD Athlon X2 Dual Core BE-2400,688,C
+AMD Athlon Dual Core 4450B,684,C
+AMD Turion II Neo K685 Dual-Core,684,C
+AMD A4-3300M APU,683,C
+AMD Opteron 175,682,C
+Athlon Dual Core 4450e,681,C
+Intel Core2 Duo L7800,680,C
+Intel Pentium D 950,679,C
+AMD Athlon II Dual-Core M340,676,C
+AMD Athlon II X2 270u,675,C
+AMD Turion 64 X2 Mobile TL-64,675,C
+AMD Athlon II P320 Dual-Core,674,C
+AMD Athlon II P340 Dual-Core,673,C
+AMD Athlon 64 X2 Dual Core 4200+,672,C
+Intel Pentium E2180,671,C
+Intel Celeron E1400,671,C
+Athlon Dual Core 4050e,670,C
+Intel Celeron J3060,668,C
+Intel Core2 Duo T5750,667,C
+Intel Core2 Duo L9300,666,C
+AMD Turion X2 Dual-Core Mobile RM-72,666,C
+VIA QuadCore U4650 @ 1.0+ GHz,666,C
+AMD E2-3000M APU,665,C
+Celeron Dual-Core T3000,665,C
+AMD Athlon II N330 Dual-Core,665,C
+Intel Celeron N3060,664,C
+AMD Athlon II X2 260u,663,C
+AMD Athlon 64 X2 Dual Core 4000+,661,C
+ARM Cortex-A72 4 Core 1500 MHz,661,C
+AMD Turion Dual-Core RM-75,659,C
+Intel Core2 Duo T5850,657,C
+AMD Turion X2 Ultra Dual-Core Mobile ZM-82,654,C
+ARM Cortex-A72 4 Core 2100 MHz,653,C
+Intel Core2 Duo T5900,652,C
+Intel Atom Z3740,651,C
+Intel Celeron E1500,649,C
+Intel Celeron B800,649,C
+AMD Turion Dual-Core RM-72,649,C
+AMD Opteron 170,648,C
+M7221,646,C
+Intel Core2 Duo T5600,645,C
+Intel Pentium T3400,645,C
+Intel Pentium T3200,644,C
+Intel Core2 Duo T7100,643,C
+Intel Pentium 987,642,C
+Qualcomm MSM8974,642,C
+Samsung EXYNOS5420,642,C
+AMD Athlon 64 X2 QL-66,641,C
+AMD A4-3320M APU,640,C
+Intel Core2 Duo T5800,638,C
+Intel Pentium E2160,636,C
+Intel Pentium 2129Y,635,C
+Intel Core2 Duo T5300,635,C
+AMD Turion X2 Dual-Core Mobile RM-77,635,C
+AMD Athlon 64 X2 Dual-Core TK-57,634,C
+Intel Core2 Duo E4400,632,C
+AMD Athlon II Dual-Core M300,631,C
+AMD Turion 64 X2 Mobile TL-66,627,C
+Celeron Dual-Core T3300,627,C
+Intel Pentium 967,626,C
+Intel Atom C2358,625,C
+Qualcomm MSM8974PRO-AB,625,C
+ARM Cortex-A72 2 Core 0 MHz,625,C
+Intel Pentium U5600,624,C
+AMD Turion X2 Dual-Core Mobile RM-70,624,C
+AMD Turion X2 Dual-Core Mobile RM-74,623,C
+Intel Pentium 957,622,C
+AMD Athlon 64 X2 QL-64,622,C
+Intel Atom Z3745,621,C
+AMD GX-212JC SOC,619,C
+MT6795MM,618,C
+AMD Athlon Dual Core 4050e,616,C
+Intel Celeron 877,615,C
+Intel Atom Z3740D,614,C
+MediaTek MT6761V/WBB,613,C
+Generic DT based system,612,C
+AMD Athlon 64 X2 Dual Core 3800+,611,C
+Qualcomm MSM8974PRO-AC,611,C
+AMD Athlon 64 X2 QL-65,609,C
+Intel Core2 Duo L7700,607,C
+AMD Athlon II X2 250u,604,C
+Intel Celeron N3000,604,C
+AMD Turion X2 Dual Core L510,603,C
+AMD E1 Micro-6200T APU,600,C
+Intel Xeon 5110,600,C
+AMD TurionX2 Ultra DualCore Mobile ZM-87,599,C
+Rockchip (Device Tree),598,C
+Intel Pentium T2410,598,C
+AMD E1-2500 APU,597,C
+Intel Core2 Duo E6320,597,C
+AMD Athlon 64 X2 Dual Core 3600+,596,C
+Intel Atom S1260,596,C
+Intel Core2 Duo T5550,596,C
+Intel Celeron J1750,595,C
+AMD Athlon 64 X2 Dual Core BE-2300,594,C
+AMD Opteron 1212,593,C
+Intel Celeron N3050,592,C
+Intel Core2 Duo E6300,592,C
+AMD Athlon X2 Dual Core BE-2350,591,C
+AMD Turion 64 X2 Mobile TL-60,591,C
+AMD Turion II Neo N40L Dual-Core,589,C
+AMD Turion Dual-Core RM-74,588,C
+Qualcomm MSM8974PRO-AA,587,C
+Intel Atom Z3745D,585,C
+Intel Core2 Duo U9600,584,C
+Intel Celeron 847E,584,C
+Intel Atom C2338,584,C
+AMD E1-7010 APU,582,C
+Intel Xeon MV 3.20GHz,582,C
+AMD Athlon 64 X2 QL-67,582,C
+Qualcomm MSM8917,582,C
+Intel Celeron J1800,581,C
+MT8766A,581,C
+Intel Celeron N2840,580,C
+Pentium Dual-Core T4200,578,C
+AMD Athlon 64 X2 Dual-Core TK-42,577,C
+Intel Celeron 1019Y,576,C
+Intel Core2 Duo L7500,575,C
+MT6761V/CAB,575,C
+AMD Athlon 64 X2 Dual Core BE-2350,573,C
+MediaTek MT8168A,571,C
+AMD Athlon X2 Dual Core BE-2300,570,C
+Intel Celeron 857,569,C
+MediaTek MT6737T,568,C
+AMD Athlon 64 X2 3800+,566,D
+Qualcomm MSM 8974 HAMMERHEAD (Flattened Device Tre,566,D
+AMD Turion II Neo K625 Dual-Core,565,D
+AMD Athlon X2 Dual Core 6850e,564,D
+AMD Sempron Dual Core 2200,563,D
+Intel Celeron 867,562,D
+AMD Sempron 2650 APU,561,D
+Intel Core2 Duo E4300,561,D
+AMD Turion Dual-Core RM-70,561,D
+Intel Celeron U3600,560,D
+"Qualcomm Technologies, Inc MSM8929",560,D
+ARM Cortex-A53 4 Core 1800 MHz,558,D
+Intel Atom Z3735E,557,D
+AMD Sempron Dual Core 2300,555,D
+AMD Athlon 64 X2 QL-62,553,D
+Intel Pentium E2140,549,D
+Intel T1500,548,D
+Intel Celeron,548,D
+Intel Pentium T2390,547,D
+MediaTek MT6762V/CN,546,D
+MediaTek MT8163,545,D
+Qualcomm APQ8084,544,D
+Intel Atom Z3735F,544,D
+Intel Core2 Duo T5450,543,D
+MT6761V/WD,543,D
+AMD E1-6015 APU,542,D
+Intel Celeron N2830,542,D
+Intel Pentium U5400,538,D
+mt6762m,538,D
+Amlogic,537,D
+Intel Pentium T2330,536,D
+AMD TurionX2 Dual Core Mobile RM-70,536,D
+AMD Athlon 64 X2 Dual-Core TK-53,535,D
+AMD Sempron Dual Core 2100,533,D
+Intel Celeron N2808,532,D
+Intel Atom C2350,532,D
+AMD Athlon 64 X2 Dual Core 3400+,531,D
+AMD Opteron 165,531,D
+Intel Core2 Duo T5470,531,D
+Intel Core2 Duo T5670,530,D
+MT6739CH,530,D
+AMD Athlon Neo X2 Dual Core L335,529,D
+AMD Athlon II Neo K345 Dual-Core,527,D
+MT8735A,527,D
+AMD Athlon 64 X2 Dual-Core TK-55,525,D
+AMD E1-6010 APU,522,D
+AMD Turion X2 Ultra Dual-Core Mobile ZM-80,521,D
+MT6592,521,D
+Celeron Dual-Core T3100,519,D
+Intel Celeron T1600,519,D
+AMD Athlon 64 FX-57,517,D
+Intel Core2 Duo L7400,516,D
+Intel T2050,516,D
+Intel Pentium T2310,515,D
+ARM Cortex-A17 4 Core 1800 MHz,515,D
+Intel Core2 Duo T5500,513,D
+Intel Atom D2701,511,D
+Intel Core2 Duo SU9400,509,D
+Rockchip RK3288 (Flattened Device Tree),508,D
+AMD Sempron 145,505,D
+Intel Atom Z3736F,502,D
+AMD Sempron 130,501,D
+AMD E2-2000 APU,501,D
+Intel Core2 Duo U7300,501,D
+Intel Pentium T2370,500,D
+AMD Sempron 150,498,D
+Intel Core Duo T2700,498,D
+Intel Pentium D 940,498,D
+AMD Turion X2 Dual Core Mobile RM-70,497,D
+MediaTek MT6735,497,D
+Intel Core2 Duo T5270,496,D
+MT8735,495,D
+Intel Celeron G460,494,D
+Intel Pentium D 830,494,D
+Intel Atom D2700,492,D
+Intel Celeron E1200,492,D
+Intel Core2 Duo L7300,489,D
+"rockchip,rk3368",489,D
+Intel Atom Z3770D,488,D
+Intel Celeron N3010,486,D
+Intel Celeron N2815,486,D
+Intel Core2 Duo U9300,485,D
+AMD Athlon 64 3100+,484,D
+Intel Core i3-330UM,484,D
+Intel Core2 Duo T5250,483,D
+Intel Celeron G465,480,D
+Intel Celeron N2806,479,D
+Intel Xeon 3.20GHz,478,D
+AMD Turion 64 X2 Mobile TL-58,478,D
+AMD Athlon II Neo N36L Dual-Core,478,D
+AMD E-350D APU,478,D
+MT8167A,478,D
+Intel Pentium SU4100,476,D
+AMD Athlon Neo X2 Dual Core L325,476,D
+Intel T1400,475,D
+AMD E1-2200 APU,474,D
+Intel Celeron U3400,473,D
+AMD Sempron 140,471,D
+AMD TurionX2 Dual Core Mobile RM-72,471,D
+Intel Celeron 847,470,D
+AMD G-T56N,470,D
+Intel Celeron N2820,469,D
+Intel Pentium Extreme Edition 955,469,D
+Intel Core2 Duo L7100,467,D
+AMD Athlon 64 FX-59,465,D
+AMD Athlon 64 X2 QL-60,465,D
+Intel Atom E3827,460,D
+ARM Cortex-A53 4 Core 1392 MHz,459,D
+AMD Opteron 154,457,D
+Unisoc SC9832e,457,D
+AMD Athlon Neo X2 Dual Core 6850e,456,D
+"Qualcomm Technologies, Inc MSM8917",456,D
+"Qualcomm Technologies, Inc QM215",455,D
+AMD Turion 64 X2 Mobile TL-56,453,D
+QCT APQ8064 DEB,453,D
+AMD Opteron 254,451,D
+Intel Core Duo T2600,450,D
+Intel Celeron N2807,450,D
+MT8167D,450,D
+QCT APQ8064 FLO,449,D
+ARM Cortex-A53 4 Core 1512 MHz,448,D
+Intel Celeron SU2300,445,D
+Intel Celeron 450,445,D
+Intel Celeron 925,444,D
+SAMSUNG JF,443,D
+AMD E2-1800 APU,442,D
+AMD G-T56E,442,D
+Intel Core2 Duo T5200,438,D
+AMD Turion 64 X2 Mobile TL-50,436,D
+"Qualcomm Technologies, Inc MSM8920",436,D
+MT8161P,434,D
+Intel Atom D2560,433,D
+AMD A4-1250 APU,432,D
+MediaTek MT6737,432,D
+AMD Turion Neo X2 Dual Core L625,431,D
+AMD Athlon LE-1640,430,D
+Intel Atom N2800,429,D
+AMD Opteron 152,428,D
+Sony Mobile fusion3,428,D
+Intel Celeron G440,426,D
+Intel Xeon 3.00GHz,425,D
+ARM Cortex-A53 4 Core 1296 MHz,425,D
+Qualcomm MSM8916,424,D
+Intel Pentium D 915,423,D
+AMD E-450 APU,422,D
+AMD Athlon LE-1620,421,D
+Intel Celeron N2810,420,D
+AMD Athlon LE-1660,416,D
+AMD G-T48E,416,D
+Samsung GrandPrimePlus LTE LTN OPEN rev04 board ba,415,D
+AMD E-350,414,D
+AMD Athlon LE-1600,412,D
+AMD Athlon 1640B,412,D
+Intel Celeron 900,409,D
+MediaTek MT6739WW,409,D
+Intel Core Duo T2500,408,D
+Intel Atom D2550,408,D
+AMD E1-2100 APU,407,D
+Intel Core2 Duo U7500,405,D
+MT8735P,405,D
+AMD Athlon 64 FX-55,404,D
+Intel Core Duo L2500,404,D
+Intel Atom D510,404,D
+Intel Core Duo T2450,404,D
+Intel Xeon 3.60GHz,403,D
+AMD E-350 APU,401,D
+AMD Turion 64 Mobile ML-42,400,D
+AMD Sempron LE-1300,400,D
+Intel Core i7-2630UM,400,D
+AMD Geode NX 2400+,400,D
+ARM Cortex-A53 4 Core 1600 MHz,400,D
+Intel Atom D525,399,D
+QCT APQ8064 MAKO,399,D
+ARM ARMv7 rev 4 (v7l) 4 Core 1400 MHz,399,D
+AMD Athlon 64 3500+,396,D
+Samsung Exynos 7570,396,D
+ARM ARMv7 rev 4 (v7l) 4 Core 1200 MHz,396,D
+AMD Athlon 64 3700+,394,D
+AMD Opteron 150,393,D
+VIA Nano X2 U4025,393,D
+Intel Xeon 3.80GHz,393,D
+AMD Opteron 148,392,D
+Intel Celeron 807,392,D
+AMD A4-1200 APU,391,D
+AMD E1-1500 APU,390,D
+Intel Core Duo L2300,387,D
+AMD Athlon II Neo K325 Dual-Core,387,D
+Intel Atom E3825,385,D
+Intel Pentium 4 3.73GHz,385,D
+AMD Turion 64 Mobile ML-44,384,D
+Intel Core Duo T2350,384,D
+AMD Turion 64 X2 Mobile TL-52,384,D
+Intel Pentium T2130,382,D
+QCT APQ8064 AWIFI,382,D
+"Qualcomm Technologies, Inc MSM8916",382,D
+AMD Athlon X2 Dual Core L310,379,D
+AMD V140,379,D
+AMD Athlon 64 3400+,375,D
+Intel Xeon 3.40GHz,375,D
+AMD Athlon 64 3300+,375,D
+Intel Pentium D 805,374,D
+ARM Cortex-A53 4 Core 0 MHz,374,D
+AMD E1-1200 APU,372,D
+Intel Celeron D 360,372,D
+Intel Atom 330,371,D
+Intel Celeron 827E,371,D
+Intel Celeron 440,368,D
+Intel Celeron 560,365,D
+"Qualcomm Technologies, Inc APQ8017",365,D
+AMD Sempron 3600+,364,D
+AMD V120,362,D
+AMD Turion 64 Mobile MK-38,362,D
+AMD Sempron 3800+,360,D
+MediaTek MT6739WA,360,D
+AMD E-300 APU,359,D
+AMD Athlon II 160u,358,D
+AMD Athlon II 170u,357,D
+AMD Athlon X2 Dual Core 3250e,357,D
+Mobile AMD Athlon 64 3700+,356,D
+Manta,356,D
+"Qualcomm Technologies, Inc QCM2150",356,D
+MediaTek MT6737M,355,D
+ARM Cortex-A7 4 Core 1300 MHz,354,D
+AMD Sempron LE-1200,349,D
+Intel Core Duo T2400,349,D
+Intel Core Duo L2400,348,D
+Intel Pentium T2080,348,D
+Intel Core Duo T2250,347,D
+ARM Cortex-A53 4 Core 1152 MHz,347,D
+AMD Opteron 146,346,D
+ARM Cortex-A7 4 Core 1368 MHz,346,D
+Intel Core2 Duo U7700,345,D
+ARM Cortex-A53 4 Core 1400 MHz,345,D
+Intel Celeron 570,344,D
+Mobile Intel Pentium 4 3.33GHz,344,D
+"Qualcomm Technologies, Inc APQ8016",343,D
+Intel 2.80GHz,341,D
+AMD Athlon 64 4000+,340,D
+AMD Athlon 64 3200+,340,D
+AMD Athlon TF-36,338,D
+AMD Sempron M100,338,D
+AMD V160,337,D
+Qualcomm MSM8928,337,D
+AMD Turion 64 Mobile ML-40,336,D
+Intel Atom N570,335,D
+Intel Celeron N2805,335,D
+Mobile AMD Sempron 3800+,335,D
+ARM Cortex-A72 4 Core 1750 MHz,335,D
+AMD Turion 64 Mobile ML-37,334,D
+AMD Turion 64 Mobile MK-36,334,D
+ARM Cortex-A35 4 Core 1296 MHz,334,D
+AMD Athlon 2850e,333,D
+Mobile AMD Athlon 64 3400+,333,D
+MediaTek MT8167B,332,D
+Qualcomm MSM8228,332,D
+Intel Core Duo T2300,330,D
+Intel Pentium T2060,330,D
+MT8765WB,328,D
+Intel Pentium 4 3.20GHz,326,D
+Mobile AMD Athlon 64 3200+,326,D
+MT6735P,326,D
+Unisoc SC7731e,324,D
+Intel Atom N2600,323,D
+ARM Cortex-A53 4 Core 1200 MHz,323,D
+Mobile AMD Sempron 3400+,321,D
+Intel Core Duo T2050,320,D
+Rockchip RK3328,319,D
+AMD Opteron 144,316,D
+Intel Core2 Duo U7600,316,D
+AMD Turion 64 Mobile MT-37,315,D
+AMD Sempron 3300+,315,D
+AMD Sempron LE-1100,315,D
+Intel Pentium 4 3.60GHz,315,D
+VIA Eden X2 U4200 @ 1.0+ GHz,315,D
+Intel Celeron D 420,313,D
+Intel Pentium 4 3.00GHz,313,D
+Mobile AMD Athlon 64 4000+,313,D
+Intel Pentium 4 3.80GHz,313,D
+Samsung GrandPrimePlus LTE CIS rev04 board based o,312,D
+MT6739WM,310,D
+AMD C-60 APU,309,D
+MT6735M,308,D
+AMD Z-01,308,D
+Intel Celeron M 530,307,D
+Intel Atom E3826,304,D
+AMD Athlon 64 3000+,303,D
+AMD Athlon II Neo K125,302,D
+Mobile AMD Sempron 3600+,302,D
+AMD Sempron LE-1250,301,D
+Intel Celeron 550,301,D
+AMD C-70 APU,300,D
+Qualcomm MSM8926,300,D
+AMD Sempron 3100+,298,D
+Intel Atom Z2760,298,D
+AMD Athlon II Neo K145,298,D
+AMD Athlon 64 2800+,295,D
+Intel Pentium 4 3.46GHz,295,D
+Mobile AMD Sempron 3300+,294,D
+MediaTek MT8735B,294,D
+Qualcomm MSM8626,294,D
+UNIVERSAL3475,294,D
+Intel Celeron 430,293,D
+Intel Pentium 4 3.40GHz,293,D
+AMD Athlon 64 3800+,292,D
+AMD Sempron 3400+,292,D
+AMD G-T40N,292,D
+Intel Pentium M 2.10GHz,292,D
+"Qualcomm Technologies, Inc MSM8216",292,D
+AMD Athlon 2800+,291,D
+Qualcomm APQ8026,291,D
+AMD C-60,290,D
+Mobile AMD Sempron 3500+,290,D
+AMD G-T40E,289,D
+AMD Sempron 3200+,288,D
+AMD Sempron SI-40,288,D
+AMD Turion 64 Mobile MT-32,286,D
+"Qualcomm Technologies, Inc APQ8009",286,D
+AMD Turion 64 Mobile ML-32,285,D
+Intel Celeron 540,283,D
+Intel Celeron D 352,283,D
+AMD Athlon Neo MV-40,282,D
+AMD Athlon XP 3100+,282,D
+AMD Athlon XP 3200+,281,D
+Intel Pentium M 1.80GHz,280,D
+AMD Turion 64 Mobile MT-34,279,D
+VIA Nano L2100@1800MHz,279,D
+AMD Turion 64 Mobile ML-30,277,D
+AMD Turion 64 Mobile ML-34,277,D
+Mobile AMD Sempron 3100+,277,D
+Rockchip RK3326,277,D
+Spreadtrum SC7731e,277,D
+AMD Athlon XP 2900+,276,D
+Intel Atom D2500,275,D
+AMD Athlon 2650e,274,D
+AMD Athlon TF-20,272,D
+Intel Pentium M 2.13GHz,271,D
+VIA Nano U2250 (1.6GHz Capable),270,D
+Intel Pentium M 2.00GHz,270,D
+ARM Cortex-A7 4 Core 1200 MHz,270,D
+Mobile AMD Sempron 3000+,269,D
+AMD Sempron 3000+,268,D
+Intel Celeron 743,268,D
+Intel Celeron 530,268,D
+Intel Celeron M 723,267,D
+AMD Sempron 210U,267,D
+"Qualcomm Technologies, Inc MSM8909",267,D
+Intel Celeron 3.20GHz,267,D
+Intel Atom N550,265,D
+Qualcomm MSM8226,265,D
+Intel Celeron 3.33GHz,263,D
+VIA Eden C1050,263,D
+AMD Z-60 APU,262,D
+AMD Athlon XP 3000+,262,D
+AMD Sempron SI-42,261,D
+AMD Athlon XP 2800+,260,D
+AMD C-50,260,D
+Intel Xeon 2.80GHz,260,D
+Mobile AMD Sempron 2600+,256,D
+AMD Athlon XP 2700+,256,D
+Intel Core Duo U2400,255,D
+AMD Turion 64 Mobile ML-28,254,D
+VIA Nano L2007@1600MHz,254,D
+Intel Core Solo T1400,253,D
+AMD Sempron 2600+,253,D
+Intel Core2 Solo U3500,252,D
+Intel Celeron M 1.70GHz,252,D
+msm8960dt,252,D
+AMD Sempron LE-1150,251,D
+Intel Celeron D 356,251,D
+Intel Pentium 4 3.06GHz,249,D
+AMD GX-210JA SOC,248,D
+AMD Sempron M120,247,D
+SAMSUNG SERRANO,247,D
+AMD Turion 64 Mobile MT-30,246,D
+Mobile AMD Sempron 3200+,245,D
+ARM Cortex-A7 4 Core 900 MHz,244,D
+AMD Sempron 2800+,243,D
+AMD Athlon 64 2600+,243,D
+AMD Athlon XP2400+,243,D
+AMD Athlon XP 2600+,242,D
+Intel Celeron 807UE,241,D
+Mobile AMD Athlon 2500+,241,D
+Mobile AMD Athlon XP-M 2600+,241,D
+Intel Pentium M 1.50GHz,240,D
+Intel Pentium M 1.70GHz,239,D
+Intel Pentium SU2700,239,D
+Intel Pentium M 1.86GHz,238,D
+Mobile AMD Athlon XP-M 2800+,238,D
+Mobile AMD Athlon XP-M 3000+,238,D
+Intel Pentium M 1700MHz,237,D
+Mobile AMD Athlon XP-M 2200+,237,D
+Mobile AMD Sempron 2800+,237,D
+Intel Pentium 4 2.80GHz,236,D
+Intel Celeron 420,235,D
+Rockchip RK3229,234,D
+AMD Athlon XP 2400+,234,D
+Intel Celeron 3.06GHz,234,D
+Intel Core2 Solo U2100,233,D
+Mobile AMD Athlon 4 2400+,233,D
+AMD Sempron 3500+,232,D
+Mobile Intel Pentium 4 3.20GHz,232,D
+Intel Celeron D 347,232,D
+AMD Athlon XP 2500+,231,D
+Intel Celeron M 450,230,D
+Intel Celeron 2.93GHz,230,D
+Intel Pentium M 1.60GHz,229,D
+Intel Pentium M 2.26GHz,227,D
+Mobile AMD Athlon XP-M 2500+,226,D
+Intel Pentium M 1.40GHz,225,D
+Mobile AMD Athlon XP-M 2400+,225,D
+Intel Atom N470,224,D
+Intel Atom D425,222,D
+Intel Celeron M 360 1.40GHz,221,D
+Intel Core Duo U2500,220,D
+Mobile Intel Pentium 4 3.06GHz,220,D
+Intel Celeron M 1500MHz,217,D
+Intel Celeron M 1.50GHz,216,D
+Intel Pentium 4 2.60GHz,215,D
+Intel Celeron M 520,215,D
+AMD Athlon XP 2200+,214,D
+Intel Celeron 723,213,D
+Intel Atom 230,210,D
+Intel Core Solo T1300,210,D
+AMD Athlon XP 2100+,210,D
+Intel Celeron 220,209,D
+Intel Pentium M 1400MHz,208,D
+Intel Celeron 2.53GHz,208,D
+AMD Sempron 2300+,207,D
+AMD Sempron 2500+,207,D
+Intel Pentium M 1.73GHz,205,D
+Mobile Intel Pentium 4 2.80GHz,205,D
+AMD Sempron 2400+,205,D
+Intel Celeron M 1.30GHz,205,D
+AMD Athlon XP 1900+,203,D
+ARM Cortex-A53 4 Core 1536 MHz,202,D
+VIA Nano U2500@1200MHz,199,D
+Intel Pentium M 1.20GHz,199,D
+ARM Cortex-A72 4 Core 1850 MHz,199,D
+Intel Pentium M 1300MHz,197,D
+AMD Athlon L110,197,D
+Intel Celeron M 1300MHz,197,D
+Intel Pentium M 1.30GHz,196,D
+Mobile AMD Athlon XP-M 2000+,196,D
+AMD Athlon XP 1800+,195,D
+AMD Athlon XP 2000+,195,D
+Intel Pentium III 1400S @ 1400MHz,194,D
+Intel Core Solo T1350,194,D
+Intel Pentium M 1600MHz,193,D
+Intel Pentium III 1400 @ 1400MHz,193,D
+Mobile AMD Athlon XP-M 1800+,193,D
+Mobile AMD Athlon MP-M 2400+,192,D
+AMD Athlon 1500+,191,D
+Intel Celeron 2.80GHz,190,D
+Intel Celeron M 1.60GHz,190,D
+Intel Atom N2100,188,D
+Intel Pentium M 1500MHz,188,D
+VIA Nano U3500@1000MHz,184,D
+AMD V105,184,D
+AMD Sempron 2200+,184,D
+Intel Pentium M 1.10GHz,184,D
+Intel Atom Z530,183,D
+Mobile Intel Celeron 1333MHz,183,D
+AMD Athlon XP1600+,183,D
+AMD E-240,182,D
+Mobile Intel Pentium 4 2.66GHz,182,D
+Intel Celeron 2.26GHz,182,D
+Intel Xeon 2.40GHz,180,D
+VIA Nano U2250@1300+MHz,179,D
+Intel Atom N455,179,D
+Intel Atom N475,179,D
+AMD C-30,178,D
+Intel Atom N450,177,D
+Intel Atom D410,177,D
+AMD G-T52R,177,D
+AMD Athlon XP 1700+,176,D
+Intel Atom N270,175,D
+Intel Atom N280,175,D
+Intel Celeron 215,174,D
+AMD Athlon XP 1600+,174,D
+Mobile AMD Athlon MP-M 1800+,173,D
+Intel Celeron M 440,169,D
+Intel Celeron M 430,169,D
+Mobile AMD Athlon XP-M 1600+,169,D
+AMD Athlon XP 1500+,167,D
+Intel Celeron 2.13GHz,166,D
+VIA Nano L2207@1600MHz,165,D
+Mobile AMD Sempron 2100+,164,D
+Intel Core Solo U1500,164,D
+Intel Pentium III Mobile 1133MHz,164,D
+Intel XEON 2.20GHz,164,D
+Intel Celeron 2.50GHz,164,D
+Intel Pentium 4 2.53GHz,162,D
+Intel Pentium 4 2.50GHz,160,D
+Intel Pentium III Mobile 1066MHz,160,D
+Intel Atom E3815,159,D
+Intel Celeron 1200MHz,159,D
+Intel Celeron 2.70GHz,159,D
+Intel Atom Z670,158,D
+Intel Pentium 4 2.20GHz,157,D
+Intel Pentium 4 2.66GHz,157,D
+Intel Pentium M 1000MHz,156,D
+Intel Pentium III Mobile 1200MHz,156,D
+Intel Pentium M 1200MHz,155,D
+AMD Athlon 64 2000+,154,D
+Intel Pentium 4 3.83GHz,154,D
+Mobile Intel Celeron 2.40GHz,154,D
+Intel Celeron 2.66GHz,154,D
+Intel Atom N435,153,D
+Intel Xeon 2.00GHz,152,D
+Intel Pentium 4 2.26GHz,151,D
+VIA C7-D 1800MHz,150,D
+Intel Pentium 4 2.93GHz,150,D
+Intel Celeron M 1.00GHz,149,D
+Intel Celeron 2.30GHz,148,D
+Mobile Intel Celeron 2.20GHz,147,D
+Mobile Intel Pentium III - M 1200MHz,146,D
+VIA C7-M 6300MHz,145,D
+Mobile Intel Pentium 4 - M 2.20GHz,143,D
+Intel Celeron 2.40GHz,143,D
+Intel Celeron 2.60GHz,143,D
+ARM Cortex-A7 2 Core 1080 MHz,142,D
+Intel Pentium M 900MHz,141,D
+Intel Celeron M 420,139,D
+Mobile Intel Pentium 4 - M 2.40GHz,139,D
+Intel Celeron 1000MHz,139,D
+Intel Celeron 2.20GHz,139,D
+Mobile Intel Pentium 4 - M 2.00GHz,138,D
+Intel Pentium 4 Mobile 1.90GHz,136,D
+VIA Esther 1500MHz,135,D
+Intel Pentium 4 2.00GHz,133,D
+Mobile Intel Celeron 2.00GHz,133,D
+Intel Pentium 4 Mobile 2.00GHz,132,D
+Intel Pentium 4 2.40GHz,131,D
+Mobile Intel Pentium III - M 933MHz,130,D
+AMD G-T44R,130,D
+Intel Core Solo U1400,130,D
+Intel Core Solo U1300,127,D
+Intel Celeron M 443,125,D
+Intel Celeron 2.00GHz,125,D
+Intel Celeron M 410,123,D
+Intel Celeron M 900MHz,123,D
+Intel Atom Z520,122,D
+Mobile Intel Celeron 1.80GHz,121,D
+Mobile Intel Pentium 4 - M 1.70GHz,121,D
+AMD G-T40R,120,D
+Intel Pentium III Mobile 800MHz,119,D
+Mobile Intel Pentium 4 - M 1.80GHz,119,D
+Mobile Intel Celeron 1.70GHz,118,D
+VIA C7-M 1600MHz,116,D
+Intel Pentium 4 Mobile 1.60GHz,116,D
+Intel Pentium 4 1.80GHz,115,D
+Intel Pentium 4 1800MHz,114,D
+Intel Pentium 4 Mobile 1.80GHz,114,D
+Intel Celeron 1100MHz,113,D
+VIA C7-M 1200MHz,112,D
+Intel Celeron B710,106,D
+Intel Pentium 4 1.90GHz,104,D
+Intel Celeron 1.70GHz,101,D
+VIA Nehemiah,101,D
+Intel Pentium 4 1700MHz,100,D
+Intel Pentium III Mobile 866MHz,99,D
+Intel Celeron 1.80GHz,96,D
+VIA Esther 1000MHz,95,D
+VIA Eden 1200MHz,93,D
+ARM Cortex-A7 2 Core 960 MHz,93,D
+Intel Pentium 4 1.50GHz,86,D
+Intel Pentium 4 1.70GHz,86,D
+Intel Pentium 4 1.60GHz,84,D
+Intel Pentium 4 1400MHz,83,D
+Intel Pentium 4 1500MHz,81,D
+VIA Eden 1000MHz,80,D
+Intel Pentium 4 1300MHz,77,D

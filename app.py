@@ -1,7 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
+from typing import Optional
 import os
 
 from model.rigcheck_engine import recommend_game
@@ -23,8 +24,10 @@ app.add_middleware(
 class UserInput(BaseModel):
     description: str = Field(..., min_length=1)
     budget: int = Field(..., ge=0)
-    gpu_tier: int = Field(..., ge=0)
+    gpu_name: str = Field(..., min_length=1)
     ram: int = Field(..., ge=0)
+    cpu_name: Optional[str] = None       # Phase 5: optional CPU name for compatibility eval
+    storage_gb: Optional[float] = None   # Phase 5: optional free storage (GB)
 
 # Home route - serve index.html
 @app.get("/")
@@ -34,12 +37,17 @@ async def home():
 # Recommendation route
 @app.post("/recommend")
 def recommend(data: UserInput):
-    return recommend_game(
-        user_input=data.description,
-        budget=data.budget,
-        gpu_tier=data.gpu_tier,
-        ram=data.ram,
-    )
+    try:
+        return recommend_game(
+            user_input=data.description,
+            budget=data.budget,
+            gpu_name=data.gpu_name,
+            ram=data.ram,
+            cpu_name=data.cpu_name,
+            storage_gb=data.storage_gb,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
 # Serve static files directly
 @app.get("/style.css")

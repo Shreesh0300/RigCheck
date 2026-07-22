@@ -37,7 +37,7 @@ const modalVariants = {
   },
 };
 
-function DiagnosticModal({ isOpen, onClose }) {
+function DiagnosticModal({ isOpen, onClose, onGameClick }) {
   // Close on Escape key
   useEffect(() => {
     if (!isOpen) return;
@@ -96,7 +96,7 @@ function DiagnosticModal({ isOpen, onClose }) {
 
             {/* Existing RigCheckDashboard — rendered untouched */}
             <div className="max-h-[85vh] overflow-y-auto">
-              <RigCheckDashboard />
+              <RigCheckDashboard onGameClick={onGameClick} />
             </div>
           </motion.div>
         </motion.div>

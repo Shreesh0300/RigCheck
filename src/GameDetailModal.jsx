@@ -70,6 +70,81 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
     [onClose]
   );
 
+  // Helpers
+  const getComponentStatusLabel = useCallback((component, data) => {
+    if (!data) return "N/A";
+    if (component === "gpu" || component === "cpu") {
+      if (data.status === "BELOW_RECOMMENDED") return "Below Recommended";
+      if (data.status === "BELOW_MINIMUM") return "Below Minimum";
+      return "Excellent";
+    }
+    if (component === "ram") {
+      if (data.status === "FAIL") {
+        return data.label ? data.label.replace("❌ ", "").trim() : "Need More RAM";
+      }
+      return "Enough";
+    }
+    if (component === "storage") {
+      if (data.status === "FAIL") {
+        if (data.detail) {
+          let msg = data.detail.replace("❌ ", "").trim();
+          return msg.replace(/\b[a-z]/g, (char) => char.toUpperCase());
+        }
+        return "Need More Free Storage";
+      }
+      return "Enough";
+    }
+    return "PASS";
+  }, []);
+
+  const getComponentStatusColor = useCallback((component, data) => {
+    if (!data) return "text-slate-400";
+    if (data.status === "PASS") return "text-emerald-400";
+    if (data.status === "BELOW_RECOMMENDED") return "text-amber-400";
+    if (data.status === "BELOW_MINIMUM") return "text-rose-500";
+    if (data.status === "FAIL") return "text-rose-500";
+    return "text-slate-400";
+  }, []);
+
+  const getReasoningLine = useCallback((component, data) => {
+    if (!data) return "Not evaluated.";
+    if (component === "gpu") {
+      if (data.status === "PASS") return "GPU exceeds recommended requirements.";
+      if (data.status === "BELOW_RECOMMENDED") return "GPU meets minimum requirements but is below recommended.";
+      return "GPU is below minimum requirements.";
+    }
+    if (component === "cpu") {
+      if (data.status === "PASS") return "CPU exceeds recommended requirements.";
+      if (data.status === "BELOW_RECOMMENDED") return "CPU meets minimum requirements but is below recommended.";
+      return "CPU is below minimum requirements.";
+    }
+    if (component === "ram") {
+      if (data.status === "PASS") return "System RAM is sufficient.";
+      if (data.label) {
+        const match = data.label.match(/Need (\d+\s*GB|\d+GB|\d+)/i);
+        if (match) {
+          let amt = match[1];
+          if (!amt.toLowerCase().includes("gb")) amt += "GB";
+          return `System RAM is below the minimum requirement by ${amt}.`;
+        }
+      }
+      return "System RAM is below the minimum requirement.";
+    }
+    if (component === "storage") {
+      if (data.status === "PASS") return "Storage space is sufficient.";
+      if (data.label) {
+        const match = data.label.match(/Need ([\d.]+\s*GB|[\d.]+GB|[\d.]+)/i);
+        if (match) {
+          let amt = match[1];
+          if (!amt.toLowerCase().includes("gb")) amt += "GB";
+          return `Storage space is below the minimum requirement by ${amt}.`;
+        }
+      }
+      return "Storage space is below the minimum requirement.";
+    }
+    return "";
+  }, []);
+
   // Derived properties
   const priceLabel = useMemo(() => {
     if (!game) return "";
@@ -78,18 +153,32 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
 
   const requirements = useMemo(() => {
     if (!game) return null;
+    const cpuTiersText = {
+      1: "Dual-Core (Intel Pentium / AMD Athlon)",
+      2: "Quad-Core (Intel Core i3 / AMD Ryzen 3)",
+      3: "Six-Core (Intel Core i5 / AMD Ryzen 5)",
+      4: "Eight-Core (Intel Core i7 / AMD Ryzen 7)",
+      5: "Enthusiast (Intel Core i9 / AMD Ryzen 9)",
+    };
+
+    const minCpu = cpuTiersText[game.minCpuTier] || "Intel Core i5 / AMD Ryzen 5";
+    const recCpu = cpuTiersText[game.recCpuTier] || "Intel Core i7 / AMD Ryzen 7";
+    const minGpu = GPU_TIERS[game.minGpuTier] || "Unknown";
+    const recGpu = GPU_TIERS[game.recGpuTier] || GPU_TIERS[Math.min(game.minGpuTier + 1, 5)] || "Unknown";
+    const storage = game.requiredStorageGb ? `${game.requiredStorageGb} GB Available space` : "60 GB Available space";
+
     return {
       min: {
         ram: `${game.minRam} GB`,
-        gpu: GPU_TIERS[game.minGpuTier] || "Unknown",
-        cpu: "Intel Core i5 / AMD Ryzen 5 (See store)",
-        storage: "60 GB Available space",
+        gpu: minGpu,
+        cpu: minCpu,
+        storage: storage,
       },
       rec: {
         ram: `${Math.ceil(game.minRam * 1.5)} GB`,
-        gpu: GPU_TIERS[Math.min(game.minGpuTier + 1, 5)] || "Unknown",
-        cpu: "Intel Core i7 / AMD Ryzen 7 (See store)",
-        storage: "60 GB SSD Available space",
+        gpu: recGpu,
+        cpu: recCpu,
+        storage: storage,
       },
     };
   }, [game]);
@@ -227,6 +316,13 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                           <li className="flex gap-3 text-slate-300">
                             <Cpu className="mt-0.5 h-4 w-4 shrink-0 text-cyan-400" />
                             <div>
+                              <span className="block font-semibold text-white">Processor</span>
+                              {requirements.min.cpu}
+                            </div>
+                          </li>
+                          <li className="flex gap-3 text-slate-300">
+                            <Cpu className="mt-0.5 h-4 w-4 shrink-0 text-cyan-400" />
+                            <div>
                               <span className="block font-semibold text-white">Memory</span>
                               {requirements.min.ram} RAM
                             </div>
@@ -257,6 +353,13 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                           <li className="flex gap-3 text-slate-300">
                             <Cpu className="mt-0.5 h-4 w-4 shrink-0 text-violet-400" />
                             <div>
+                              <span className="block font-semibold text-white">Processor</span>
+                              {requirements.rec.cpu}
+                            </div>
+                          </li>
+                          <li className="flex gap-3 text-slate-300">
+                            <Cpu className="mt-0.5 h-4 w-4 shrink-0 text-violet-400" />
+                            <div>
                               <span className="block font-semibold text-white">Memory</span>
                               {requirements.rec.ram} RAM
                             </div>
@@ -272,6 +375,76 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                       </div>
                     </div>
                   </section>
+
+                  {/* RigCheck Detailed Analysis & Reasoning Panel */}
+                  {game.compatibility && (
+                    <section className="rounded-2xl border border-cyan-400/20 bg-cyan-950/5 p-5 sm:p-6 space-y-6">
+                      <div className="flex items-center gap-3">
+                        <Gamepad2 className="h-5 w-5 text-cyan-400" />
+                        <h2 className="text-xl font-bold text-white">RigCheck Analysis</h2>
+                      </div>
+
+                      <div className="grid gap-4 sm:grid-cols-2">
+                        <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
+                          <span className="block text-xs text-slate-500 font-bold uppercase">Estimated FPS</span>
+                          <span className="text-lg font-black text-white">{game.compatibility.estimated_fps} FPS</span>
+                        </div>
+                        <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
+                          <span className="block text-xs text-slate-500 font-bold uppercase">Expected Settings</span>
+                          <span className="text-lg font-black text-white">{game.compatibility.expected_settings}</span>
+                        </div>
+                      </div>
+
+                      <div className="grid gap-6 sm:grid-cols-2">
+                        <div className="space-y-4">
+                          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-400">GPU & CPU Analysis</h3>
+                          <ul className="space-y-3 text-sm">
+                            <li className="flex justify-between items-center bg-slate-950/20 p-2.5 rounded-lg border border-slate-800">
+                              <span className="text-slate-300 font-medium">GPU Status</span>
+                              <span className={`font-semibold ${getComponentStatusColor('gpu', game.compatibility.gpu)}`}>
+                                {getComponentStatusLabel('gpu', game.compatibility.gpu)}
+                              </span>
+                            </li>
+                            <li className="flex justify-between items-center bg-slate-950/20 p-2.5 rounded-lg border border-slate-800">
+                              <span className="text-slate-300 font-medium">CPU Status</span>
+                              <span className={`font-semibold ${getComponentStatusColor('cpu', game.compatibility.cpu)}`}>
+                                {getComponentStatusLabel('cpu', game.compatibility.cpu)}
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div className="space-y-4">
+                          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-400">RAM & Storage Analysis</h3>
+                          <ul className="space-y-3 text-sm">
+                            <li className="flex justify-between items-center bg-slate-950/20 p-2.5 rounded-lg border border-slate-800">
+                              <span className="text-slate-300 font-medium">RAM Status</span>
+                              <span className={`font-semibold ${getComponentStatusColor('ram', game.compatibility.ram)}`}>
+                                {getComponentStatusLabel('ram', game.compatibility.ram)}
+                              </span>
+                            </li>
+                            <li className="flex justify-between items-center bg-slate-950/20 p-2.5 rounded-lg border border-slate-800">
+                              <span className="text-slate-300 font-medium">Storage Status</span>
+                              <span className={`font-semibold ${getComponentStatusColor('storage', game.compatibility.storage)}`}>
+                                {getComponentStatusLabel('storage', game.compatibility.storage)}
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      {/* Reasoning Panel */}
+                      <div className="rounded-xl border border-slate-800/80 bg-slate-950/60 p-5 space-y-3">
+                        <h3 className="text-sm font-bold uppercase tracking-wider text-cyan-400">Reasoning Panel</h3>
+                        <div className="space-y-2 text-sm text-slate-300 leading-relaxed">
+                          <div>• {getReasoningLine('gpu', game.compatibility.gpu)}</div>
+                          <div>• {getReasoningLine('cpu', game.compatibility.cpu)}</div>
+                          <div>• {getReasoningLine('ram', game.compatibility.ram)}</div>
+                          <div>• {getReasoningLine('storage', game.compatibility.storage)}</div>
+                        </div>
+                      </div>
+                    </section>
+                  )}
                 </div>
 
                 {/* RIGHT COLUMN: Sidebar (RigCheck & Store) */}
@@ -289,10 +462,14 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                     <div className="mb-6 text-center">
                       <div className="text-sm font-medium text-slate-400">Compatibility Score</div>
                       <div className="mt-1 flex items-baseline justify-center gap-1 font-black text-slate-500">
-                        <span className="text-4xl text-white">--</span>
+                        <span className="text-4xl text-white">
+                          {game.compatibility ? game.compatibility.compatibility_pct : "--"}
+                        </span>
                         <span className="text-xl">/100</span>
                       </div>
-                      <p className="mt-2 text-xs text-slate-400">Run diagnostic to calculate</p>
+                      <p className="mt-2 text-xs text-slate-400">
+                        {game.compatibility ? "Calculated via active diagnostic" : "Run diagnostic to calculate"}
+                      </p>
                     </div>
 
                     <button
@@ -303,7 +480,7 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                       }}
                       className="group flex w-full items-center justify-center gap-2 rounded-xl bg-cyan-400 px-4 py-3.5 text-sm font-bold text-slate-950 transition-all hover:bg-cyan-300 active:scale-95"
                     >
-                      Analyze My PC
+                      {game.compatibility ? "Re-Run PC Diagnostic" : "Analyze My PC"}
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </button>
                   </div>

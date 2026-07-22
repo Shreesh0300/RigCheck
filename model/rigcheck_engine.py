@@ -6,6 +6,8 @@ import pandas as pd
 from nltk.stem import PorterStemmer
 from rank_bm25 import BM25Okapi
 
+from model.compatibility_engine import evaluate_game, rank_games
+
 # Core NLP + recommendation logic belongs here so the API layer stays thin and reusable.
 # This separation makes the system easier to test, evolve, and reuse from scripts or APIs.
 
@@ -182,7 +184,47 @@ def _empty_response(message):
     }
 
 
-def recommend_game(user_input, budget, gpu_tier, ram):
+def recommend_game(user_input, budget, gpu_name, ram,
+                   cpu_name=None, storage_gb=None, gpu_tier=None):
+    # ── Backward Compatibility ──
+    if isinstance(gpu_name, int) or (isinstance(gpu_name, str) and gpu_name.isdigit()):
+        gpu_tier = int(gpu_name)
+        gpu_name = None
+
+    # ── Resolve GPU Model ──
+    gpu_benchmark_score = None
+    resolved_gpu_tier = 1
+
+    if gpu_name:
+        from gpu.gpu_tier_engine import validateGpu
+        gpu_res = validateGpu(gpu_name)
+        if gpu_res.get("error"):
+            raise ValueError(gpu_res["error"])
+        
+        letter_tier = gpu_res.get("tier", "D")
+        tier_map = {"D": 1, "C": 2, "B": 3, "A": 4, "S": 5}
+        resolved_gpu_tier = tier_map.get(letter_tier, 1)
+        gpu_benchmark_score = gpu_res.get("benchmark_score")
+    elif gpu_tier is not None:
+        resolved_gpu_tier = int(gpu_tier)
+    else:
+        raise ValueError("GPU model not recognized. Please check the spelling and try again.")
+
+    # ── Resolve CPU Model ──
+    cpu_benchmark_score = None
+    resolved_cpu_tier = 1
+
+    if cpu_name and cpu_name.strip():
+        from cpu.cpu_tier_engine import validateCpu
+        cpu_res = validateCpu(cpu_name)
+        if cpu_res.get("error"):
+            raise ValueError("CPU model not recognized. Please check the spelling and try again.")
+        
+        letter_tier_cpu = cpu_res.get("tier", "D")
+        tier_map = {"D": 1, "C": 2, "B": 3, "A": 4, "S": 5}
+        resolved_cpu_tier = tier_map.get(letter_tier_cpu, 1)
+        cpu_benchmark_score = cpu_res.get("benchmark_score")
+
     cleaned_vibe = clean_and_expand_input(user_input)
     vibe_results = run_vibe_check(cleaned_vibe, top_n=len(df))
 
@@ -198,68 +240,128 @@ def recommend_game(user_input, budget, gpu_tier, ram):
     if wallet_passed.empty:
         return _empty_response("Games found, but they are out of your budget.")
 
-    rig_passed = wallet_passed[
-        (wallet_passed["Min_GPU_Tier"] <= gpu_tier)
-        & (wallet_passed["Min_RAM_GB"] <= ram)
-    ]
-    if rig_passed.empty:
-        return _empty_response("Your PC hardware is too weak to run these games.")
-
-    winner = rig_passed.iloc[0]
-    advice = get_graphics_advice(
-        gpu_tier,
-        ram,
-        winner["Min_GPU_Tier"],
-        winner["Min_RAM_GB"],
-    )
-
+    # ── Compatibility Evaluation ─────────────────────────────────────────
+    # Evaluate ALL vibe+budget candidates through the compatibility engine.
+    # Games that fail hardware checks are NOT rejected — they are ranked
+    # lower by compatibility score instead.
     max_possible = max(1, len(cleaned_vibe.split()) * 1.5)
-    confidence = min(99, int((winner["Vibe_Score"] / max_possible) * 100))
-    if confidence < 40:
-        confidence += 30
+
+    evaluated_games = []
+    vibe_score_map = {}
+    budget_score_map = {}
+
+    for i in range(len(wallet_passed)):
+        row = wallet_passed.iloc[i]
+        game_dict = row.to_dict()
+
+        # Run full 4-component compatibility evaluation
+        compat_result = evaluate_game(
+            game_row=game_dict,
+            user_gpu_tier=resolved_gpu_tier,
+            user_ram_gb=ram,
+            user_cpu_name=cpu_name,
+            user_storage_gb=storage_gb,
+            user_gpu_score=gpu_benchmark_score,
+            user_cpu_score=cpu_benchmark_score,
+            user_cpu_tier=resolved_cpu_tier,
+        )
+
+        # Attach vibe and budget info
+        vibe_sc = float(row["Vibe_Score"])
+        title = str(row["Title"])
+        compat_result["vibe_score"] = vibe_sc
+        compat_result["price_inr"] = int(row["Price_INR"])
+        compat_result["store_url"] = _get_store_url(row)
+        compat_result["description"] = str(row["Description"])
+
+        # Parse tags
+        raw_tags = str(row.get("Tags", ""))
+        compat_result["tags"] = [t.strip() for t in raw_tags.split(",") if t.strip()]
+
+        # Confidence
+        conf = min(99, int((vibe_sc / max_possible) * 100))
+        if conf < 40:
+            conf += 30
+        compat_result["confidence"] = conf
+
+        evaluated_games.append(compat_result)
+        vibe_score_map[title] = vibe_sc
+        budget_score_map[title] = max(0, 1.0 - (int(row["Price_INR"]) / max(budget, 1)))
+
+    # Rank games: compatibility → vibe → budget
+    ranked = rank_games(evaluated_games, vibe_score_map, budget_score_map)
+
+    if not ranked:
+        return _empty_response("No compatible games found.")
+
+    # Build response — winner is the top-ranked game
+    winner = ranked[0]
+    advice = get_graphics_advice(
+        resolved_gpu_tier,
+        ram,
+        int(wallet_passed.iloc[0].get("Min_GPU_Tier", 1)),
+        int(wallet_passed.iloc[0].get("Min_RAM_GB", 2)),
+    )
 
     matched_keywords = []
     for word in cleaned_vibe.split():
-        if word in str(winner["Master_Search"]) and word not in matched_keywords:
-            matched_keywords.append(word)
+        winner_row = wallet_passed[wallet_passed["Title"] == winner["title"]]
+        if not winner_row.empty:
+            if word in str(winner_row.iloc[0].get("Master_Search", "")):
+                if word not in matched_keywords:
+                    matched_keywords.append(word)
 
-    # Build richer alternative game objects with tags, description, and confidence
+    # Build alternative games list (all ranked games after the winner)
     alternative_games = []
-    if len(rig_passed) > 1:
-        for i in range(1, min(4, len(rig_passed))):
-            alt = rig_passed.iloc[i]
-            alt_conf = min(99, int((alt["Vibe_Score"] / max_possible) * 100))
-            if alt_conf < 40:
-                alt_conf += 30
-            # Parse tags into a clean list
-            raw_tags = str(alt.get("Tags", ""))
-            tag_list = [t.strip() for t in raw_tags.split(",") if t.strip()]
-            alternative_games.append(
-                {
-                    "title": str(alt["Title"]),
-                    "price_inr": int(alt["Price_INR"]),
-                    "description": str(alt["Description"]),
-                    "tags": tag_list,
-                    "confidence": int(alt_conf),
-                    "store_url": _get_store_url(alt),
-                }
-            )
+    for alt in ranked[1:min(4, len(ranked))]:
+        alternative_games.append({
+            "title": alt["title"],
+            "price_inr": alt["price_inr"],
+            "description": alt["description"],
+            "tags": alt["tags"],
+            "confidence": alt["confidence"],
+            "store_url": alt["store_url"],
+            "compatibility": {
+                "compatibility_pct": alt["compatibility_pct"],
+                "gpu": alt["gpu"],
+                "cpu": alt["cpu"],
+                "ram": alt["ram"],
+                "storage": alt["storage"],
+                "estimated_fps": alt["estimated_fps"],
+                "expected_settings": alt["expected_settings"],
+                "reduction_reasons": alt["reduction_reasons"],
+            },
+        })
 
     return {
-        "recommended_game": str(winner["Title"]),
-        "confidence": int(confidence),
-        "description": str(winner["Description"]),
+        "recommended_game": winner["title"],
+        "confidence": winner["confidence"],
+        "description": winner["description"],
         "hardware_advice": advice,
         "matched_keywords": matched_keywords,
         "alternative_games": alternative_games,
-        "store_url": _get_store_url(winner),
+        "store_url": winner["store_url"],
+        "price_inr": winner["price_inr"],   # actual game price, independent of user budget
+        "compatibility": {
+            "compatibility_pct": winner["compatibility_pct"],
+            "gpu": winner["gpu"],
+            "cpu": winner["cpu"],
+            "ram": winner["ram"],
+            "storage": winner["storage"],
+            "estimated_fps": winner["estimated_fps"],
+            "expected_settings": winner["expected_settings"],
+            "reduction_reasons": winner["reduction_reasons"],
+        },
     }
 
 
-def run_rigcheck(user_input, budget, user_gpu_tier, user_ram):
+def run_rigcheck(user_input, budget, user_gpu, user_ram,
+                 user_cpu=None, user_storage_gb=None):
     return recommend_game(
         user_input=user_input,
         budget=budget,
-        gpu_tier=user_gpu_tier,
+        gpu_name=user_gpu,
         ram=user_ram,
+        cpu_name=user_cpu,
+        storage_gb=user_storage_gb,
     )

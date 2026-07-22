@@ -1,0 +1,196 @@
+cpuName,benchmark_score,cores,threads,base_clock_ghz,category
+AMD Ryzen 9 9950X,65123,16,32,4.3,Desktop
+AMD Ryzen 9 9900X,56842,12,24,4.4,Desktop
+AMD Ryzen 9 7950X,63489,16,32,4.5,Desktop
+AMD Ryzen 9 7950X3D,62710,16,32,4.2,Desktop
+AMD Ryzen 9 7900X,52543,12,24,4.7,Desktop
+AMD Ryzen 9 7900X3D,51230,12,24,4.4,Desktop
+AMD Ryzen 9 7900,46890,12,24,3.7,Desktop
+AMD Ryzen 9 5950X,46008,16,32,3.4,Desktop
+AMD Ryzen 9 5900X,39184,12,24,3.7,Desktop
+AMD Ryzen 9 5900,35620,12,24,3.0,Desktop
+AMD Ryzen 9 3950X,36148,16,32,3.5,Desktop
+AMD Ryzen 9 3900X,32874,12,24,3.8,Desktop
+AMD Ryzen 9 3900XT,33410,12,24,3.8,Desktop
+AMD Ryzen 7 9700X,36740,8,16,3.8,Desktop
+AMD Ryzen 7 7800X3D,34825,8,16,4.2,Desktop
+AMD Ryzen 7 7700X,36190,8,16,4.5,Desktop
+AMD Ryzen 7 7700,32450,8,16,3.8,Desktop
+AMD Ryzen 7 5800X,28768,8,16,3.8,Desktop
+AMD Ryzen 7 5800X3D,25284,8,16,3.4,Desktop
+AMD Ryzen 7 5700X,25190,8,16,3.4,Desktop
+AMD Ryzen 7 5700G,23734,8,16,3.8,Desktop
+AMD Ryzen 7 3800X,23688,8,16,3.9,Desktop
+AMD Ryzen 7 3700X,22762,8,16,3.6,Desktop
+AMD Ryzen 7 2700X,18300,8,16,3.7,Desktop
+AMD Ryzen 7 2700,16452,8,16,3.2,Desktop
+AMD Ryzen 7 1700X,15368,8,16,3.4,Desktop
+AMD Ryzen 7 1700,14420,8,16,3.0,Desktop
+AMD Ryzen 5 9600X,28150,6,12,3.9,Desktop
+AMD Ryzen 5 7600X,28648,6,12,4.7,Desktop
+AMD Ryzen 5 7600,26270,6,12,3.8,Desktop
+AMD Ryzen 5 5600X,22082,6,12,3.7,Desktop
+AMD Ryzen 5 5600,20912,6,12,3.5,Desktop
+AMD Ryzen 5 5600G,19548,6,12,3.9,Desktop
+AMD Ryzen 5 5500,17624,6,12,3.6,Desktop
+AMD Ryzen 5 3600,17822,6,12,3.6,Desktop
+AMD Ryzen 5 3600X,18284,6,12,3.8,Desktop
+AMD Ryzen 5 3600XT,18590,6,12,3.8,Desktop
+AMD Ryzen 5 2600,13628,6,12,3.4,Desktop
+AMD Ryzen 5 2600X,14410,6,12,3.6,Desktop
+AMD Ryzen 5 1600,12180,6,12,3.2,Desktop
+AMD Ryzen 5 1600X,12960,6,12,3.6,Desktop
+AMD Ryzen 3 5300G,13280,4,8,4.0,Desktop
+AMD Ryzen 3 3300X,13092,4,8,3.8,Desktop
+AMD Ryzen 3 3100,11518,4,8,3.6,Desktop
+AMD Ryzen 3 2200G,7372,4,4,3.5,Desktop
+AMD Ryzen 3 1200,6208,4,4,3.1,Desktop
+AMD Threadripper 7980X,108540,64,128,3.2,Desktop
+AMD Threadripper 7970X,90200,32,64,4.0,Desktop
+AMD Threadripper 7960X,77340,24,48,4.2,Desktop
+AMD Threadripper PRO 5995WX,90230,64,128,2.7,Desktop
+AMD Threadripper PRO 5975WX,62750,32,64,3.6,Desktop
+AMD Threadripper 3990X,81444,64,128,2.9,Desktop
+AMD Threadripper 3970X,56420,32,64,3.7,Desktop
+AMD Threadripper 3960X,46810,24,48,3.8,Desktop
+Intel Core i9-14900K,59180,24,32,3.2,Desktop
+Intel Core i9-14900KS,62340,24,32,3.2,Desktop
+Intel Core i9-14900KF,58920,24,32,3.2,Desktop
+Intel Core i9-14900,51250,24,32,2.0,Desktop
+Intel Core i9-14900F,50980,24,32,2.0,Desktop
+Intel Core i9-13900K,58942,24,32,3.0,Desktop
+Intel Core i9-13900KS,60120,24,32,3.2,Desktop
+Intel Core i9-13900KF,58620,24,32,3.0,Desktop
+Intel Core i9-13900,49210,24,32,2.0,Desktop
+Intel Core i9-13900F,48890,24,32,2.0,Desktop
+Intel Core i9-12900K,41674,16,24,3.2,Desktop
+Intel Core i9-12900KS,43520,16,24,3.4,Desktop
+Intel Core i9-12900KF,41350,16,24,3.2,Desktop
+Intel Core i9-12900,36820,16,24,2.4,Desktop
+Intel Core i9-12900F,36540,16,24,2.4,Desktop
+Intel Core i9-11900K,25592,8,16,3.5,Desktop
+Intel Core i9-11900KF,25310,8,16,3.5,Desktop
+Intel Core i9-11900,22840,8,16,2.5,Desktop
+Intel Core i9-10900K,22618,10,20,3.7,Desktop
+Intel Core i9-10900KF,22410,10,20,3.7,Desktop
+Intel Core i9-10900,20580,10,20,2.8,Desktop
+Intel Core i9-10900F,20420,10,20,2.8,Desktop
+Intel Core i9-10850K,22012,10,20,3.6,Desktop
+Intel Core i9-9900K,19360,8,16,3.6,Desktop
+Intel Core i9-9900KF,19180,8,16,3.6,Desktop
+Intel Core i7-14700K,52480,20,28,3.4,Desktop
+Intel Core i7-14700KF,52120,20,28,3.4,Desktop
+Intel Core i7-14700,43280,20,28,2.1,Desktop
+Intel Core i7-14700F,42960,20,28,2.1,Desktop
+Intel Core i7-13700K,46352,16,24,3.4,Desktop
+Intel Core i7-13700KF,46010,16,24,3.4,Desktop
+Intel Core i7-13700,39870,16,24,2.1,Desktop
+Intel Core i7-13700F,39540,16,24,2.1,Desktop
+Intel Core i7-12700K,34568,12,20,3.6,Desktop
+Intel Core i7-12700KF,34280,12,20,3.6,Desktop
+Intel Core i7-12700,30240,12,20,2.1,Desktop
+Intel Core i7-12700F,29960,12,20,2.1,Desktop
+Intel Core i7-11700K,23484,8,16,3.6,Desktop
+Intel Core i7-11700KF,23210,8,16,3.6,Desktop
+Intel Core i7-11700,20860,8,16,2.5,Desktop
+Intel Core i7-10700K,18928,8,16,3.8,Desktop
+Intel Core i7-10700KF,18740,8,16,3.8,Desktop
+Intel Core i7-10700,17280,8,16,2.9,Desktop
+Intel Core i7-10700F,17090,8,16,2.9,Desktop
+Intel Core i7-9700K,14576,8,8,3.6,Desktop
+Intel Core i7-9700KF,14380,8,8,3.6,Desktop
+Intel Core i7-9700,13720,8,8,3.0,Desktop
+Intel Core i7-8700K,14262,6,12,3.7,Desktop
+Intel Core i7-8700,13190,6,12,3.2,Desktop
+Intel Core i7-7700K,11148,4,8,4.2,Desktop
+Intel Core i7-7700,10340,4,8,3.6,Desktop
+Intel Core i7-6700K,10024,4,8,4.0,Desktop
+Intel Core i7-6700,9310,4,8,3.4,Desktop
+Intel Core i7-4790K,9228,4,8,4.0,Desktop
+Intel Core i7-4790,8712,4,8,3.6,Desktop
+Intel Core i7-4770K,8610,4,8,3.5,Desktop
+Intel Core i7-4770,8148,4,8,3.4,Desktop
+Intel Core i5-14600K,38240,14,20,3.5,Desktop
+Intel Core i5-14600KF,37920,14,20,3.5,Desktop
+Intel Core i5-14600,30850,14,20,2.7,Desktop
+Intel Core i5-14400,26480,10,16,2.5,Desktop
+Intel Core i5-14400F,26180,10,16,2.5,Desktop
+Intel Core i5-13600K,38614,14,20,3.5,Desktop
+Intel Core i5-13600KF,38280,14,20,3.5,Desktop
+Intel Core i5-13600,30120,14,20,2.7,Desktop
+Intel Core i5-13400,25640,10,16,2.5,Desktop
+Intel Core i5-13400F,25360,10,16,2.5,Desktop
+Intel Core i5-12600K,27614,10,16,3.7,Desktop
+Intel Core i5-12600KF,27340,10,16,3.7,Desktop
+Intel Core i5-12600,21520,6,12,3.3,Desktop
+Intel Core i5-12400,19428,6,12,2.5,Desktop
+Intel Core i5-12400F,19280,6,12,2.5,Desktop
+Intel Core i5-11600K,17948,6,12,3.9,Desktop
+Intel Core i5-11600KF,17760,6,12,3.9,Desktop
+Intel Core i5-11400,14840,6,12,2.6,Desktop
+Intel Core i5-11400F,14640,6,12,2.6,Desktop
+Intel Core i5-10600K,13620,6,12,4.1,Desktop
+Intel Core i5-10600KF,13480,6,12,4.1,Desktop
+Intel Core i5-10400,10780,6,12,2.9,Desktop
+Intel Core i5-10400F,10640,6,12,2.9,Desktop
+Intel Core i5-9600K,10988,6,6,3.7,Desktop
+Intel Core i5-9600KF,10820,6,6,3.7,Desktop
+Intel Core i5-9400F,9140,6,6,2.9,Desktop
+Intel Core i5-8600K,10612,6,6,3.6,Desktop
+Intel Core i5-8400,9024,6,6,2.8,Desktop
+Intel Core i5-7600K,8150,4,4,3.8,Desktop
+Intel Core i5-7500,7460,4,4,3.4,Desktop
+Intel Core i5-6600K,7720,4,4,3.5,Desktop
+Intel Core i5-6500,6850,4,4,3.2,Desktop
+Intel Core i5-4690K,6710,4,4,3.5,Desktop
+Intel Core i5-4590,6280,4,4,3.3,Desktop
+Intel Core i5-4460,5920,4,4,3.2,Desktop
+Intel Core i3-14100,14320,4,8,3.5,Desktop
+Intel Core i3-14100F,14150,4,8,3.5,Desktop
+Intel Core i3-13100,13180,4,8,3.4,Desktop
+Intel Core i3-13100F,12980,4,8,3.4,Desktop
+Intel Core i3-12100,12416,4,8,3.3,Desktop
+Intel Core i3-12100F,12280,4,8,3.3,Desktop
+Intel Core i3-10100,7168,4,8,3.6,Desktop
+Intel Core i3-10100F,7042,4,8,3.6,Desktop
+Intel Core i3-9100F,6128,4,4,3.6,Desktop
+Intel Core i3-8100,6148,4,4,3.6,Desktop
+Intel Pentium Gold G7400,4810,2,4,3.7,Desktop
+Intel Pentium Gold G6400,4226,2,4,4.0,Desktop
+Intel Celeron G6900,3620,2,2,3.4,Desktop
+Intel Celeron G5905,2980,2,2,3.5,Desktop
+Intel Core Ultra 9 285K,55840,24,24,3.7,Desktop
+Intel Core Ultra 7 265K,42680,20,20,3.9,Desktop
+Intel Core Ultra 5 245K,30250,14,14,4.2,Desktop
+Apple M1,14762,8,8,3.2,Laptop
+Apple M1 Pro,21448,10,10,3.2,Laptop
+Apple M1 Max,24498,10,10,3.2,Laptop
+Apple M1 Ultra,46312,20,20,3.2,Laptop
+Apple M2,15528,8,8,3.5,Laptop
+Apple M2 Pro,21710,12,12,3.5,Laptop
+Apple M2 Max,28620,12,12,3.7,Laptop
+Apple M2 Ultra,53480,24,24,3.5,Laptop
+Apple M3,16258,8,8,3.5,Laptop
+Apple M3 Pro,22810,12,12,3.5,Laptop
+Apple M3 Max,31420,16,16,3.5,Laptop
+Apple M4,18240,10,10,3.5,Laptop
+Apple M4 Pro,26890,14,14,3.5,Laptop
+Apple M4 Max,36560,16,16,3.5,Laptop
+Intel Core i7-13700H,25120,14,20,2.4,Laptop
+Intel Core i7-12700H,23540,14,20,2.3,Laptop
+Intel Core i7-11800H,20420,8,16,2.3,Laptop
+Intel Core i5-13500H,20850,12,16,2.6,Laptop
+Intel Core i5-12500H,18920,12,16,2.5,Laptop
+AMD Ryzen 9 7945HX,51280,16,32,2.5,Laptop
+AMD Ryzen 7 7840HS,28320,8,16,3.8,Laptop
+AMD Ryzen 7 6800H,24680,8,16,3.2,Laptop
+AMD Ryzen 5 7535HS,18950,6,12,3.3,Laptop
+AMD Ryzen 5 6600H,18240,6,12,3.3,Laptop
+AMD FX-8350,7900,8,8,4.0,Desktop
+AMD FX-6300,4812,6,6,3.5,Desktop
+AMD FX-4300,3580,4,4,3.8,Desktop
+AMD A10-7850K,4148,4,4,3.7,Desktop
+AMD Athlon 3000G,4540,2,4,3.5,Desktop
+Intel Xeon E5-2699 v4,22580,22,44,2.2,Server
+Intel Xeon W-3275M,30420,28,56,2.5,Server
+Intel Xeon E5-2690 v3,14280,12,24,2.6,Server

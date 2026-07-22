@@ -13,7 +13,46 @@ import {
   AlertTriangle,
   Frown,
   ExternalLink,
+  HardDrive,
 } from "lucide-react";
+import GAMES from "./src/gameData.js";
+
+/* ─── Helpers ──────────────────────────────────────────────────────── */
+
+function getComponentStatusLabel(component, data) {
+  if (!data) return "N/A";
+  if (component === "gpu" || component === "cpu") {
+    if (data.status === "BELOW_RECOMMENDED") return "Below Recommended";
+    if (data.status === "BELOW_MINIMUM") return "Below Minimum";
+    return "Excellent";
+  }
+  if (component === "ram") {
+    if (data.status === "FAIL") {
+      return data.label ? data.label.replace("❌ ", "").trim() : "Need More RAM";
+    }
+    return "Enough";
+  }
+  if (component === "storage") {
+    if (data.status === "FAIL") {
+      if (data.detail) {
+        let msg = data.detail.replace("❌ ", "").trim();
+        return msg.replace(/\b[a-z]/g, (char) => char.toUpperCase());
+      }
+      return "Need More Free Storage";
+    }
+    return "Enough";
+  }
+  return "PASS";
+}
+
+function getComponentStatusColor(component, data) {
+  if (!data) return "text-slate-400";
+  if (data.status === "PASS") return "text-emerald-400";
+  if (data.status === "BELOW_RECOMMENDED") return "text-amber-400";
+  if (data.status === "BELOW_MINIMUM") return "text-rose-500";
+  if (data.status === "FAIL") return "text-rose-500";
+  return "text-slate-400";
+}
 
 /* ─── Constants ────────────────────────────────────────────────────── */
 
@@ -80,6 +119,16 @@ function parseHardwareAdvice(raw) {
 /** Format a number with Indian-locale commas, e.g. 4000 → "4,000" */
 function fmt(n) {
   return n.toLocaleString("en-IN");
+}
+
+/**
+ * Format a game's actual price_inr from the backend response.
+ * Never falls back to user budget — only uses the game's own price.
+ */
+function formatGamePrice(priceInr) {
+  if (priceInr === null || priceInr === undefined) return "Price Unavailable";
+  if (priceInr === 0) return "Free to Play";
+  return `\u20B9${fmt(priceInr)}`;
 }
 
 /* ─── Sub-Components ───────────────────────────────────────────────── */
@@ -246,12 +295,14 @@ function ErrorState({ message }) {
 
 /* ─── Main Dashboard ───────────────────────────────────────────────── */
 
-export default function RigCheckDashboard() {
+export default function RigCheckDashboard({ onGameClick }) {
   /* ── Input State ── */
   const [vibeQuery, setVibeQuery] = useState("I want a horror survival game with zombies");
   const [maxBudget, setMaxBudget] = useState(4000);
-  const [gpuTier, setGpuTier] = useState("tier-4");
+  const [gpuModel, setGpuModel] = useState("RTX 4050");
   const [ramSize, setRamSize] = useState(32);
+  const [cpuModel, setCpuModel] = useState("Intel Core i5-12400F");
+  const [freeStorage, setFreeStorage] = useState(256);
   const [isLoading, setIsLoading] = useState(false);
 
   /* ── Result State (populated from the backend response) ── */
@@ -269,8 +320,10 @@ export default function RigCheckDashboard() {
     const payload = {
       description: vibeQuery.trim(),
       budget: maxBudget,
-      gpu_tier: GPU_TIER_MAP[gpuTier] ?? 4,
+      gpu_name: gpuModel.trim(),
       ram: ramSize,
+      cpu_name: cpuModel.trim() || null,
+      storage_gb: freeStorage,
     };
 
     try {
@@ -300,7 +353,7 @@ export default function RigCheckDashboard() {
     } finally {
       setIsLoading(false);
     }
-  }, [vibeQuery, maxBudget, gpuTier, ramSize]);
+  }, [vibeQuery, maxBudget, gpuModel, ramSize, cpuModel, freeStorage]);
 
   /* ── Derived values from the result ── */
   const confidence    = result?.confidence ?? 0;
@@ -356,39 +409,65 @@ export default function RigCheckDashboard() {
               onChange={setMaxBudget}
             />
 
-            {/* GPU Tier */}
+            {/* GPU Model */}
             <div className="space-y-2">
               <label className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-slate-300">
                 <Gauge className="h-3.5 w-3.5 text-cyan-400" />
-                GPU Tier
+                Graphics Card
               </label>
-              <div className="relative">
-                <select
-                  value={gpuTier}
-                  onChange={(e) => setGpuTier(e.target.value)}
-                  className="w-full appearance-none rounded-lg border border-slate-800 bg-slate-900/60 px-3.5 py-2.5 pr-9 text-xs font-semibold text-slate-200 outline-none transition focus:border-cyan-400/60 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.07)]"
-                >
-                  <option value="tier-1">Tier 1 – Integrated / GT 1030</option>
-                  <option value="tier-2">Tier 2 – GTX 1050, RX 570</option>
-                  <option value="tier-3">Tier 3 – GTX 1660, RTX 3050</option>
-                  <option value="tier-4">Tier 4 – Ultra (RTX 4060, RX 7900)</option>
-                  <option value="tier-5">Tier 5 – Enthusiast (RTX 4080+)</option>
-                </select>
-                <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-500" />
-              </div>
+              <input
+                type="text"
+                value={gpuModel}
+                onChange={(e) => setGpuModel(e.target.value)}
+                placeholder="e.g. RTX 4050"
+                className="w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-2 text-xs font-semibold text-slate-200 outline-none transition focus:border-cyan-400/60 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.07)]"
+              />
             </div>
 
-            {/* RAM Slider */}
-            <StatSlider
-              icon={Cpu}
-              label="RAM"
-              value={ramSize}
-              min={4}
-              max={64}
-              step={4}
-              suffix="GB"
-              onChange={setRamSize}
-            />
+            {/* RAM Input */}
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-slate-300">
+                <Cpu className="h-3.5 w-3.5 text-cyan-400" />
+                Installed RAM (GB)
+              </label>
+              <input
+                type="number"
+                value={ramSize}
+                onChange={(e) => setRamSize(Number(e.target.value))}
+                placeholder="e.g. 16"
+                className="w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-2 text-xs font-semibold text-slate-200 outline-none transition focus:border-cyan-400/60 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.07)]"
+              />
+            </div>
+
+            {/* CPU Model */}
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-slate-300">
+                <Cpu className="h-3.5 w-3.5 text-cyan-400" />
+                CPU Model
+              </label>
+              <input
+                type="text"
+                value={cpuModel}
+                onChange={(e) => setCpuModel(e.target.value)}
+                placeholder="e.g. Core i5-12400F"
+                className="w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-2 text-xs font-semibold text-slate-200 outline-none transition focus:border-cyan-400/60 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.07)]"
+              />
+            </div>
+
+            {/* Free Storage Input */}
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-slate-300">
+                <HardDrive className="h-3.5 w-3.5 text-cyan-400" />
+                Free Storage (GB)
+              </label>
+              <input
+                type="number"
+                value={freeStorage}
+                onChange={(e) => setFreeStorage(Number(e.target.value))}
+                placeholder="e.g. 250"
+                className="w-full rounded-lg border border-slate-800 bg-slate-950 px-3 py-2 text-xs font-semibold text-slate-200 outline-none transition focus:border-cyan-400/60 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.07)]"
+              />
+            </div>
           </div>
 
           {/* CTA */}
@@ -430,7 +509,20 @@ export default function RigCheckDashboard() {
           {result && !isLoading && (
             <>
               {/* ── Hero Result Card ── */}
-              <article className="overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/80 shadow-2xl shadow-black/40">
+              <article
+                className="overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/80 shadow-2xl shadow-black/40 cursor-pointer hover:border-cyan-400/30 transition-all duration-200"
+                onClick={() => {
+                  if (onGameClick) {
+                    const staticGame = GAMES.find((g) => g.title === result.recommended_game);
+                    if (staticGame) {
+                      onGameClick({
+                        ...staticGame,
+                        compatibility: result.compatibility,
+                      });
+                    }
+                  }
+                }}
+              >
                 {/* Banner Image */}
                 <div
                   className="relative h-[180px] bg-cover bg-center sm:h-[200px]"
@@ -446,10 +538,10 @@ export default function RigCheckDashboard() {
                     </span>
                     <div className="flex items-center gap-2">
                       <span className="rounded-md bg-slate-900/70 px-2 py-1 text-[10px] font-bold text-cyan-300 backdrop-blur-sm">
-                        {fpsLabel}
+                        {result.compatibility ? `${result.compatibility.estimated_fps} FPS` : fpsLabel}
                       </span>
                       <span className="rounded-md bg-black/70 px-2.5 py-1.5 text-xs font-black text-white backdrop-blur-sm">
-                        ₹{fmt(maxBudget)}
+                        {formatGamePrice(result.price_inr)}
                       </span>
                     </div>
                   </div>
@@ -487,15 +579,63 @@ export default function RigCheckDashboard() {
 
                     {/* Match Ring */}
                     <div className="hidden sm:block">
-                      <MatchRing value={confidence} />
+                      <MatchRing value={result.compatibility ? result.compatibility.compatibility_pct : confidence} />
                     </div>
                   </div>
 
                   {/* Mobile ring */}
                   <div className="mt-5 flex justify-center sm:hidden">
-                    <MatchRing value={confidence} />
+                    <MatchRing value={result.compatibility ? result.compatibility.compatibility_pct : confidence} />
                   </div>
                 </div>
+
+                {/* Compatibility Block */}
+                {result.compatibility && (
+                  <div className="border-t border-slate-800/60 px-5 py-4 sm:px-6 space-y-3 bg-slate-900/20">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-bold text-slate-400">Overall Compatibility</span>
+                      <span className="text-sm font-black text-cyan-400">{result.compatibility.compatibility_pct}%</span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-2 text-xs sm:grid-cols-4">
+                      <div className="rounded-lg border border-slate-800 bg-slate-950/40 p-2">
+                        <span className="block text-[10px] text-slate-500 font-bold uppercase">GPU</span>
+                        <span className={`font-semibold ${getComponentStatusColor('gpu', result.compatibility.gpu)}`}>
+                          {getComponentStatusLabel('gpu', result.compatibility.gpu)}
+                        </span>
+                      </div>
+                      <div className="rounded-lg border border-slate-800 bg-slate-950/40 p-2">
+                        <span className="block text-[10px] text-slate-500 font-bold uppercase">CPU</span>
+                        <span className={`font-semibold ${getComponentStatusColor('cpu', result.compatibility.cpu)}`}>
+                          {getComponentStatusLabel('cpu', result.compatibility.cpu)}
+                        </span>
+                      </div>
+                      <div className="rounded-lg border border-slate-800 bg-slate-950/40 p-2">
+                        <span className="block text-[10px] text-slate-500 font-bold uppercase">RAM</span>
+                        <span className={`font-semibold ${getComponentStatusColor('ram', result.compatibility.ram)}`}>
+                          {getComponentStatusLabel('ram', result.compatibility.ram)}
+                        </span>
+                      </div>
+                      <div className="rounded-lg border border-slate-800 bg-slate-950/40 p-2">
+                        <span className="block text-[10px] text-slate-500 font-bold uppercase">Storage</span>
+                        <span className={`font-semibold ${getComponentStatusColor('storage', result.compatibility.storage)}`}>
+                          {getComponentStatusLabel('storage', result.compatibility.storage)}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between text-xs pt-1">
+                      <span className="text-slate-400">Settings: <span className="font-bold text-white">{result.compatibility.expected_settings}</span></span>
+                      <span className="text-slate-400">Est. FPS: <span className="font-bold text-white">{result.compatibility.estimated_fps} FPS</span></span>
+                    </div>
+                    {result.compatibility.reduction_reasons?.length > 0 && (
+                      <div className="text-[11px] text-rose-400/90 leading-relaxed bg-rose-500/5 p-2 rounded-lg border border-rose-500/10">
+                        <span className="font-bold block mb-0.5">Deficiency Alert:</span>
+                        {result.compatibility.reduction_reasons.map((r, i) => (
+                          <div key={i}>• {r}</div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
 
                 {/* Hardware Advice Banner */}
                 {advice && (
@@ -527,7 +667,18 @@ export default function RigCheckDashboard() {
                       return (
                         <article
                           key={game.title}
-                          className="group overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950 shadow-lg shadow-black/30 transition-all duration-200 hover:-translate-y-0.5 hover:border-cyan-400/30 hover:shadow-cyan-400/5"
+                          className="group overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950 shadow-lg shadow-black/30 transition-all duration-200 hover:-translate-y-0.5 hover:border-cyan-400/30 hover:shadow-cyan-400/5 cursor-pointer"
+                          onClick={() => {
+                            if (onGameClick) {
+                              const staticGame = GAMES.find((g) => g.title === game.title);
+                              if (staticGame) {
+                                onGameClick({
+                                  ...staticGame,
+                                  compatibility: game.compatibility,
+                                });
+                              }
+                            }
+                          }}
                         >
                           {/* Banner */}
                           <div
@@ -540,7 +691,7 @@ export default function RigCheckDashboard() {
                             {/* Confidence badge */}
                             {game.confidence > 0 && (
                               <span className="absolute right-2 top-2 rounded-md bg-black/70 px-1.5 py-0.5 text-[10px] font-bold text-cyan-300 backdrop-blur-sm">
-                                {game.confidence}% match
+                                {game.compatibility ? `${game.compatibility.compatibility_pct}% Match` : `${game.confidence}% Match`}
                               </span>
                             )}
 
@@ -548,11 +699,48 @@ export default function RigCheckDashboard() {
                               <h4 className="line-clamp-1 text-xs font-black text-white">
                                 {game.title}
                               </h4>
-                              <p className="shrink-0 text-xs font-extrabold text-cyan-400">
-                                {game.price_inr > 0 ? `₹${fmt(game.price_inr)}` : "Free"}
-                              </p>
                             </div>
                           </div>
+
+                          {/* Compatibility Block */}
+                          {game.compatibility && (
+                            <div className="px-3 pb-3 pt-2 border-t border-slate-900 bg-slate-900/10 space-y-2 text-[11px]">
+                              <div className="flex justify-between items-center">
+                                <span className="text-slate-500">Compatibility:</span>
+                                <span className="font-bold text-cyan-400">{game.compatibility.compatibility_pct}%</span>
+                              </div>
+                              <div className="grid grid-cols-2 gap-1.5">
+                                <div className="p-1.5 rounded bg-slate-950/30 border border-slate-900">
+                                  <span className="block text-[9px] text-slate-600 font-bold">GPU</span>
+                                  <span className={`font-medium ${getComponentStatusColor('gpu', game.compatibility.gpu)}`}>
+                                    {getComponentStatusLabel('gpu', game.compatibility.gpu)}
+                                  </span>
+                                </div>
+                                <div className="p-1.5 rounded bg-slate-950/30 border border-slate-900">
+                                  <span className="block text-[9px] text-slate-600 font-bold">CPU</span>
+                                  <span className={`font-medium ${getComponentStatusColor('cpu', game.compatibility.cpu)}`}>
+                                    {getComponentStatusLabel('cpu', game.compatibility.cpu)}
+                                  </span>
+                                </div>
+                                <div className="p-1.5 rounded bg-slate-950/30 border border-slate-900">
+                                  <span className="block text-[9px] text-slate-600 font-bold">RAM</span>
+                                  <span className={`font-medium ${getComponentStatusColor('ram', game.compatibility.ram)}`}>
+                                    {getComponentStatusLabel('ram', game.compatibility.ram)}
+                                  </span>
+                                </div>
+                                <div className="p-1.5 rounded bg-slate-950/30 border border-slate-900">
+                                  <span className="block text-[9px] text-slate-600 font-bold">STORAGE</span>
+                                  <span className={`font-medium ${getComponentStatusColor('storage', game.compatibility.storage)}`}>
+                                    {getComponentStatusLabel('storage', game.compatibility.storage)}
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex justify-between text-[10px] text-slate-400 pt-0.5">
+                                <span>Settings: <span className="font-semibold text-white">{game.compatibility.expected_settings}</span></span>
+                                <span>FPS: <span className="font-semibold text-white">{game.compatibility.estimated_fps}</span></span>
+                              </div>
+                            </div>
+                          )}
 
                           {/* Tags row */}
                           {game.tags && game.tags.length > 0 && (
