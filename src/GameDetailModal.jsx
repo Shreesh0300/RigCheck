@@ -1,6 +1,7 @@
-import React, { useEffect, useCallback, useMemo, memo } from "react";
+import React, { useState, useEffect, useCallback, useMemo, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Play, Cpu, Monitor, Download, HardDrive, Gamepad2, ArrowRight } from "lucide-react";
+import { X, Play, Cpu, Monitor, Download, HardDrive, Gamepad2, ArrowRight, Loader2 } from "lucide-react";
+import { fetchGame, searchGames } from "./services/gameService.js";
 
 /**
  * GameDetailModal — Cinematic game detail overlay.
@@ -46,6 +47,47 @@ const modalVariants = {
 };
 
 function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
+  const [detailedGame, setDetailedGame] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+
+  // Fetch full game metadata dynamically on open
+  useEffect(() => {
+    if (!game) {
+      setDetailedGame(null);
+      return;
+    }
+
+    let mounted = true;
+    async function loadData() {
+      setIsLoading(true);
+      let appid = game.appid;
+
+      // If missing appid (e.g., from RigCheckDashboard), try searching by title
+      if (!appid && game.title) {
+        const results = await searchGames(game.title, 1);
+        if (results.length > 0) {
+          appid = results[0].appid;
+        }
+      }
+
+      if (appid) {
+        const fullData = await fetchGame(appid);
+        if (mounted && fullData) {
+          setDetailedGame({ ...game, ...fullData });
+        } else if (mounted) {
+          setDetailedGame(game);
+        }
+      } else {
+        if (mounted) setDetailedGame(game);
+      }
+      
+      if (mounted) setIsLoading(false);
+    }
+    
+    loadData();
+    return () => { mounted = false; };
+  }, [game]);
+
   // Close on Escape key
   useEffect(() => {
     if (!game) return;
@@ -147,18 +189,18 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
 
   // Derived properties
   const priceLabel = useMemo(() => {
-    if (!game) return "";
-    // Prefer price_inr from the backend API response (actual Steam/store price).
-    // Fall back to the static `price` field from gameData.js.
-    // Never use user budget — budget is only for filtering, not display.
-    const rawPrice = game.price_inr ?? game.price;
+    if (!detailedGame) return "";
+    let rawPrice = detailedGame.price_inr ?? detailedGame.price;
+    if (detailedGame.price && typeof detailedGame.price.final !== "undefined") {
+      rawPrice = detailedGame.price.final === 0 ? 0 : detailedGame.price.final / 100;
+    }
     if (rawPrice === null || rawPrice === undefined) return "Price Unavailable";
     if (rawPrice === 0) return "Free to Play";
     return `\u20B9${Number(rawPrice).toLocaleString("en-IN")}`;
-  }, [game]);
+  }, [detailedGame]);
 
   const requirements = useMemo(() => {
-    if (!game) return null;
+    if (!detailedGame) return null;
     const cpuTiersText = {
       1: "Dual-Core (Intel Pentium / AMD Athlon)",
       2: "Quad-Core (Intel Core i3 / AMD Ryzen 3)",
@@ -167,27 +209,35 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
       5: "Enthusiast (Intel Core i9 / AMD Ryzen 9)",
     };
 
-    const minCpu = cpuTiersText[game.minCpuTier] || "Intel Core i5 / AMD Ryzen 5";
-    const recCpu = cpuTiersText[game.recCpuTier] || "Intel Core i7 / AMD Ryzen 7";
-    const minGpu = GPU_TIERS[game.minGpuTier] || "Unknown";
-    const recGpu = GPU_TIERS[game.recGpuTier] || GPU_TIERS[Math.min(game.minGpuTier + 1, 5)] || "Unknown";
-    const storage = game.requiredStorageGb ? `${game.requiredStorageGb} GB Available space` : "60 GB Available space";
+    const minGpuTier = detailedGame.minimum_requirements?.gpu_tiers?.[0]?.tier || detailedGame.minGpuTier || 1;
+    const recGpuTier = detailedGame.recommended_requirements?.gpu_tiers?.[0]?.tier || detailedGame.recGpuTier || Math.min(minGpuTier + 1, 5);
+    const minCpuTier = detailedGame.minimum_requirements?.cpu_tiers?.[0]?.tier || detailedGame.minCpuTier || 3;
+    const recCpuTier = detailedGame.recommended_requirements?.cpu_tiers?.[0]?.tier || detailedGame.recCpuTier || 4;
+    
+    const minRam = detailedGame.minimum_requirements?.ram_gb || detailedGame.minRam || 8;
+    const storageGb = detailedGame.minimum_requirements?.storage_gb || detailedGame.requiredStorageGb || 60;
+
+    const minCpu = cpuTiersText[minCpuTier] || "Intel Core i5 / AMD Ryzen 5";
+    const recCpu = cpuTiersText[recCpuTier] || "Intel Core i7 / AMD Ryzen 7";
+    const minGpu = GPU_TIERS[minGpuTier] || "Unknown";
+    const recGpu = GPU_TIERS[recGpuTier] || "Unknown";
+    const storage = `${storageGb} GB Available space`;
 
     return {
       min: {
-        ram: `${game.minRam} GB`,
+        ram: `${minRam} GB`,
         gpu: minGpu,
         cpu: minCpu,
         storage: storage,
       },
       rec: {
-        ram: `${Math.ceil(game.minRam * 1.5)} GB`,
+        ram: `${Math.ceil(minRam * 1.5)} GB`,
         gpu: recGpu,
         cpu: recCpu,
         storage: storage,
       },
     };
-  }, [game]);
+  }, [detailedGame]);
 
   return (
     <AnimatePresence>
@@ -220,11 +270,14 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
               <X className="h-5 w-5" />
             </button>
 
-            {/* Scrollable Content Container — keyed on game.id so switching games
-                crossfades the content in-place without remounting the modal shell. */}
+            {isLoading || !detailedGame ? (
+              <div className="flex flex-1 items-center justify-center">
+                <Loader2 className="h-10 w-10 animate-spin text-cyan-400" />
+              </div>
+            ) : (
             <AnimatePresence mode="wait" initial={false}>
               <motion.div
-                key={game.id}
+                key={detailedGame.appid || detailedGame.id || detailedGame.title}
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0, transition: { duration: 0.25, ease: "easeOut" } }}
                 exit={{ opacity: 0, y: -8, transition: { duration: 0.15, ease: "easeIn" } }}
@@ -235,8 +288,8 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                 {/* Artwork */}
                 <div className="absolute inset-0">
                   <img
-                    src={game.image}
-                    alt={game.title}
+                    src={detailedGame.header_image || detailedGame.image}
+                    alt={detailedGame.name || detailedGame.title}
                     className="h-full w-full object-cover object-top opacity-60 mix-blend-screen"
                   />
                   {/* Gradients to fade smoothly into background */}
@@ -248,18 +301,18 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                 <div className="absolute bottom-0 left-0 flex w-full flex-col justify-end px-6 pb-12 sm:px-10 sm:pb-16 lg:px-16">
                   {/* Genre badge */}
                   <span className="mb-4 inline-block w-fit rounded-full border border-cyan-400/30 bg-cyan-950/40 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-cyan-400 backdrop-blur-md">
-                    {game.genre}
+                    {detailedGame.genres?.[0] || detailedGame.genre || "Game"}
                   </span>
 
                   <h1 className="mb-4 text-3xl font-black leading-tight tracking-tight text-white drop-shadow-xl sm:text-5xl lg:text-6xl">
-                    {game.title}
+                    {detailedGame.name || detailedGame.title}
                   </h1>
 
                   <div className="flex flex-wrap items-center gap-4 text-sm font-medium text-slate-300">
                     <span className="rounded-lg bg-white/10 px-3 py-1.5 font-bold text-white backdrop-blur-md">
                       {priceLabel}
                     </span>
-                    {game.tags.slice(0, 4).map((tag) => (
+                    {(detailedGame.tags || detailedGame.genres || []).slice(0, 4).map((tag) => (
                       <span key={tag} className="flex items-center gap-1.5">
                         <span className="h-1 w-1 rounded-full bg-slate-500" />
                         {tag}
@@ -278,7 +331,7 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                   <section>
                     <h2 className="mb-4 text-xl font-bold text-white">About the Game</h2>
                     <p className="leading-relaxed text-slate-300 sm:text-lg">
-                      {game.description}
+                      {detailedGame.description}
                     </p>
                   </section>
 
@@ -286,26 +339,40 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                   <section>
                     <h2 className="mb-4 text-xl font-bold text-white">Gallery</h2>
                     <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory hide-scrollbar">
-                      {[1, 2, 3].map((i) => (
-                        <div
-                          key={`shot-${i}`}
-                          className="relative aspect-video w-[280px] shrink-0 snap-center overflow-hidden rounded-xl border border-slate-800 bg-slate-900 sm:w-[400px]"
-                        >
-                          {/* Placeholder using main image with different filters to look like distinct screenshots */}
-                          <img
-                            src={game.image}
-                            alt={`${game.title} screenshot ${i}`}
-                            className="h-full w-full object-cover"
-                            style={{
-                              filter: `hue-rotate(${i * 45}deg) brightness(${1 - i * 0.1}) saturate(${1 + i * 0.2})`,
-                              transform: `scale(${1 + i * 0.1})`,
-                            }}
-                          />
-                          <div className="absolute inset-0 grid place-items-center bg-black/20">
-                            <Play className="h-10 w-10 text-white/50" />
+                      {detailedGame.screenshots && detailedGame.screenshots.length > 0 ? (
+                        detailedGame.screenshots.slice(0, 5).map((shot, i) => (
+                          <div
+                            key={`shot-${i}`}
+                            className="relative aspect-video w-[280px] shrink-0 snap-center overflow-hidden rounded-xl border border-slate-800 bg-slate-900 sm:w-[400px]"
+                          >
+                            <img
+                              src={shot.path_full}
+                              alt={`${detailedGame.name || detailedGame.title} screenshot ${i}`}
+                              className="h-full w-full object-cover"
+                            />
                           </div>
-                        </div>
-                      ))}
+                        ))
+                      ) : (
+                        [1, 2, 3].map((i) => (
+                          <div
+                            key={`shot-${i}`}
+                            className="relative aspect-video w-[280px] shrink-0 snap-center overflow-hidden rounded-xl border border-slate-800 bg-slate-900 sm:w-[400px]"
+                          >
+                            <img
+                              src={detailedGame.header_image || detailedGame.image}
+                              alt={`${detailedGame.name || detailedGame.title} screenshot ${i}`}
+                              className="h-full w-full object-cover"
+                              style={{
+                                filter: `hue-rotate(${i * 45}deg) brightness(${1 - i * 0.1}) saturate(${1 + i * 0.2})`,
+                                transform: `scale(${1 + i * 0.1})`,
+                              }}
+                            />
+                            <div className="absolute inset-0 grid place-items-center bg-black/20">
+                              <Play className="h-10 w-10 text-white/50" />
+                            </div>
+                          </div>
+                        ))
+                      )}
                     </div>
                   </section>
 
@@ -391,7 +458,7 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                   </section>
 
                   {/* RigCheck Detailed Analysis & Reasoning Panel */}
-                  {game.compatibility && (
+                  {detailedGame.compatibility && (
                     <section className="rounded-2xl border border-cyan-400/20 bg-cyan-950/5 p-5 sm:p-6 space-y-6">
                       <div className="flex items-center gap-3">
                         <Gamepad2 className="h-5 w-5 text-cyan-400" />
@@ -401,11 +468,11 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                       <div className="grid gap-4 sm:grid-cols-2">
                         <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
                           <span className="block text-xs text-slate-500 font-bold uppercase">Estimated FPS</span>
-                          <span className="text-lg font-black text-white">{game.compatibility.estimated_fps} FPS</span>
+                          <span className="text-lg font-black text-white">{detailedGame.compatibility.estimated_fps} FPS</span>
                         </div>
                         <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
                           <span className="block text-xs text-slate-500 font-bold uppercase">Expected Settings</span>
-                          <span className="text-lg font-black text-white">{game.compatibility.expected_settings}</span>
+                          <span className="text-lg font-black text-white">{detailedGame.compatibility.expected_settings}</span>
                         </div>
                       </div>
 
@@ -415,14 +482,14 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                           <ul className="space-y-3 text-sm">
                             <li className="flex justify-between items-center bg-slate-950/20 p-2.5 rounded-lg border border-slate-800">
                               <span className="text-slate-300 font-medium">GPU Status</span>
-                              <span className={`font-semibold ${getComponentStatusColor('gpu', game.compatibility.gpu)}`}>
-                                {getComponentStatusLabel('gpu', game.compatibility.gpu)}
+                              <span className={`font-semibold ${getComponentStatusColor('gpu', detailedGame.compatibility.gpu)}`}>
+                                {getComponentStatusLabel('gpu', detailedGame.compatibility.gpu)}
                               </span>
                             </li>
                             <li className="flex justify-between items-center bg-slate-950/20 p-2.5 rounded-lg border border-slate-800">
                               <span className="text-slate-300 font-medium">CPU Status</span>
-                              <span className={`font-semibold ${getComponentStatusColor('cpu', game.compatibility.cpu)}`}>
-                                {getComponentStatusLabel('cpu', game.compatibility.cpu)}
+                              <span className={`font-semibold ${getComponentStatusColor('cpu', detailedGame.compatibility.cpu)}`}>
+                                {getComponentStatusLabel('cpu', detailedGame.compatibility.cpu)}
                               </span>
                             </li>
                           </ul>
@@ -433,14 +500,14 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                           <ul className="space-y-3 text-sm">
                             <li className="flex justify-between items-center bg-slate-950/20 p-2.5 rounded-lg border border-slate-800">
                               <span className="text-slate-300 font-medium">RAM Status</span>
-                              <span className={`font-semibold ${getComponentStatusColor('ram', game.compatibility.ram)}`}>
-                                {getComponentStatusLabel('ram', game.compatibility.ram)}
+                              <span className={`font-semibold ${getComponentStatusColor('ram', detailedGame.compatibility.ram)}`}>
+                                {getComponentStatusLabel('ram', detailedGame.compatibility.ram)}
                               </span>
                             </li>
                             <li className="flex justify-between items-center bg-slate-950/20 p-2.5 rounded-lg border border-slate-800">
                               <span className="text-slate-300 font-medium">Storage Status</span>
-                              <span className={`font-semibold ${getComponentStatusColor('storage', game.compatibility.storage)}`}>
-                                {getComponentStatusLabel('storage', game.compatibility.storage)}
+                              <span className={`font-semibold ${getComponentStatusColor('storage', detailedGame.compatibility.storage)}`}>
+                                {getComponentStatusLabel('storage', detailedGame.compatibility.storage)}
                               </span>
                             </li>
                           </ul>
@@ -451,10 +518,10 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                       <div className="rounded-xl border border-slate-800/80 bg-slate-950/60 p-5 space-y-3">
                         <h3 className="text-sm font-bold uppercase tracking-wider text-cyan-400">Reasoning Panel</h3>
                         <div className="space-y-2 text-sm text-slate-300 leading-relaxed">
-                          <div>• {getReasoningLine('gpu', game.compatibility.gpu)}</div>
-                          <div>• {getReasoningLine('cpu', game.compatibility.cpu)}</div>
-                          <div>• {getReasoningLine('ram', game.compatibility.ram)}</div>
-                          <div>• {getReasoningLine('storage', game.compatibility.storage)}</div>
+                          <div>• {getReasoningLine('gpu', detailedGame.compatibility.gpu)}</div>
+                          <div>• {getReasoningLine('cpu', detailedGame.compatibility.cpu)}</div>
+                          <div>• {getReasoningLine('ram', detailedGame.compatibility.ram)}</div>
+                          <div>• {getReasoningLine('storage', detailedGame.compatibility.storage)}</div>
                         </div>
                       </div>
                     </section>
@@ -477,12 +544,12 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                       <div className="text-sm font-medium text-slate-400">Compatibility Score</div>
                       <div className="mt-1 flex items-baseline justify-center gap-1 font-black text-slate-500">
                         <span className="text-4xl text-white">
-                          {game.compatibility ? game.compatibility.compatibility_pct : "--"}
+                          {detailedGame.compatibility ? detailedGame.compatibility.compatibility_pct : "--"}
                         </span>
                         <span className="text-xl">/100</span>
                       </div>
                       <p className="mt-2 text-xs text-slate-400">
-                        {game.compatibility ? "Calculated via active diagnostic" : "Run diagnostic to calculate"}
+                        {detailedGame.compatibility ? "Calculated via active diagnostic" : "Run diagnostic to calculate"}
                       </p>
                     </div>
 
@@ -494,7 +561,7 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                       }}
                       className="group flex w-full items-center justify-center gap-2 rounded-xl bg-cyan-400 px-4 py-3.5 text-sm font-bold text-slate-950 transition-all hover:bg-cyan-300 active:scale-95"
                     >
-                      {game.compatibility ? "Re-Run PC Diagnostic" : "Analyze My PC"}
+                      {detailedGame.compatibility ? "Re-Run PC Diagnostic" : "Analyze My PC"}
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </button>
                   </div>
@@ -520,6 +587,7 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
               </div>
               </motion.div>
             </AnimatePresence>
+            )}
           </motion.div>
         </motion.div>
       )}

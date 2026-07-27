@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import difflib
 
 import pandas as pd
@@ -7,13 +5,13 @@ from nltk.stem import PorterStemmer
 from rank_bm25 import BM25Okapi
 
 from model.compatibility_engine import evaluate_game, rank_games
+from model.steam_database import load_database
+from model.steam_adapter import adapt_all_games
 
 # Core NLP + recommendation logic belongs here so the API layer stays thin and reusable.
 # This separation makes the system easier to test, evolve, and reuse from scripts or APIs.
 
 stemmer = PorterStemmer()
-
-DATA_PATH = Path(__file__).resolve().parent.parent / "games_dataset.csv"
 
 ignore_words = [
     "i",
@@ -64,8 +62,12 @@ def create_master_search(row):
 
 
 def _load_dataset():
-    dataframe = pd.read_csv(DATA_PATH)
-    dataframe.columns = dataframe.columns.str.strip()
+    """Load the Steam game database and build a DataFrame with the same
+    column names (Title, Description, Tags, Price_INR, Min_GPU_Tier, etc.)
+    that the BM25 search engine and compatibility engine expect."""
+    steam_games = load_database()
+    adapted_records = adapt_all_games(steam_games)
+    dataframe = pd.DataFrame(adapted_records)
     dataframe["Master_Search"] = dataframe.apply(create_master_search, axis=1)
     return dataframe
 
@@ -319,6 +321,7 @@ def recommend_game(user_input, budget, gpu_name, ram,
             "price_inr": alt["price_inr"],
             "description": alt["description"],
             "tags": alt["tags"],
+            "header_image": alt.get("header_image", ""),
             "confidence": alt["confidence"],
             "store_url": alt["store_url"],
             "compatibility": {
@@ -339,6 +342,7 @@ def recommend_game(user_input, budget, gpu_name, ram,
         "description": winner["description"],
         "hardware_advice": advice,
         "matched_keywords": matched_keywords,
+        "header_image": winner.get("header_image", ""),
         "alternative_games": alternative_games,
         "store_url": winner["store_url"],
         "price_inr": winner["price_inr"],   # actual game price, independent of user budget

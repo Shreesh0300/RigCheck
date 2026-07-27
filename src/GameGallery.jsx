@@ -1,10 +1,10 @@
-import React, { useMemo, useCallback, memo } from "react";
+import React, { useState, useEffect, useMemo, useCallback, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
-import GAMES from "./gameData.js";
 import { GENRES } from "./GenreDiscovery.jsx";
 import GameCard from "./GameCard.jsx";
 import ComingSoonCard from "./ComingSoonCard.jsx";
+import { fetchGames } from "./services/gameService.js";
 
 /**
  * GameGallery — Game discovery grid.
@@ -58,9 +58,50 @@ function filterByGenre(games, selectedGenre) {
 }
 
 function GameGallery({ onGenreHover, selectedGenre, onClearGenre, onGameClick }) {
+  const [games, setGames] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    let mounted = true;
+    
+    async function loadGames() {
+      setIsLoading(true);
+      const data = await fetchGames(100, 0);
+      
+      if (!mounted) return;
+
+      // Map backend schema to what GameCard expects
+      const mapped = data.map((g) => {
+        let priceVal = "Price Unavailable";
+        if (g.price && typeof g.price.final !== 'undefined') {
+          priceVal = g.price.final === 0 ? 0 : g.price.final / 100;
+        }
+
+        return {
+          id: g.appid,
+          appid: g.appid,
+          title: g.name,
+          genre: g.genres && g.genres.length > 0 ? g.genres[0] : "Game",
+          tags: g.genres || [],
+          price: priceVal,
+          price_inr: priceVal, 
+          image: g.header_image,
+          description: g.short_description
+        };
+      });
+      
+      setGames(mapped);
+      setIsLoading(false);
+    }
+    
+    loadGames();
+    
+    return () => { mounted = false; };
+  }, []);
+
   const filteredGames = useMemo(
-    () => filterByGenre(GAMES, selectedGenre),
-    [selectedGenre]
+    () => filterByGenre(games, selectedGenre),
+    [games, selectedGenre]
   );
 
   const handleGenreHover = useCallback(
@@ -120,10 +161,12 @@ function GameGallery({ onGenreHover, selectedGenre, onClearGenre, onGameClick })
           <div className="h-px w-24 bg-gradient-to-r from-transparent via-cyan-400/30 to-transparent" />
 
           {/* Game count */}
-          <p className="text-xs text-slate-600 sm:text-sm">
-            {filteredGames.length} {filteredGames.length === 1 ? "game" : "games"}
-            {selectedGenre ? " in this genre" : " available"}
-          </p>
+          {!isLoading && (
+            <p className="text-xs text-slate-600 sm:text-sm">
+              {filteredGames.length} {filteredGames.length === 1 ? "game" : "games"}
+              {selectedGenre ? " in this genre" : " available"}
+            </p>
+          )}
         </div>
 
         {/* Gallery Grid */}
@@ -134,18 +177,25 @@ function GameGallery({ onGenreHover, selectedGenre, onClearGenre, onGameClick })
           animate="visible"
           className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-5"
         >
-          {/* Active game cards */}
-          {filteredGames.map((game) => (
-            <GameCard 
-              key={game.id} 
-              game={game} 
-              onGenreHover={handleGenreHover}
-              onClick={onGameClick} 
-            />
-          ))}
+          {isLoading ? (
+            /* Skeleton Loading State using ComingSoonCard */
+            Array.from({ length: 8 }, (_, i) => (
+              <ComingSoonCard key={`skeleton-${i}`} index={i} />
+            ))
+          ) : (
+            /* Active game cards */
+            filteredGames.map((game) => (
+              <GameCard 
+                key={game.id} 
+                game={game} 
+                onGenreHover={handleGenreHover}
+                onClick={onGameClick} 
+              />
+            ))
+          )}
 
-          {/* Coming Soon placeholders — only show when unfiltered */}
-          {!selectedGenre &&
+          {/* Coming Soon placeholders — only show when unfiltered and loaded */}
+          {!isLoading && !selectedGenre &&
             Array.from({ length: COMING_SOON_COUNT }, (_, i) => (
               <ComingSoonCard key={`coming-soon-${i}`} index={i} />
             ))}

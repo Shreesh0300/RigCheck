@@ -15,7 +15,6 @@ import {
   ExternalLink,
   HardDrive,
 } from "lucide-react";
-import GAMES from "./src/gameData.js";
 
 /* ─── Helpers ──────────────────────────────────────────────────────── */
 
@@ -353,7 +352,7 @@ export default function RigCheckDashboard({ onGameClick }) {
   const confidence    = result?.confidence ?? 0;
   const fpsLabel      = result ? estimateFps(confidence) : "";
   const advice        = result ? parseHardwareAdvice(result.hardware_advice) : null;
-  const heroImage     = result ? (GAME_IMAGES[result.recommended_game] || FALLBACK_IMAGE) : null;
+  const heroImage     = result?.header_image || FALLBACK_IMAGE;
   const alternatives  = result?.alternative_games ?? [];
 
   return (
@@ -522,16 +521,11 @@ export default function RigCheckDashboard({ onGameClick }) {
                 className="overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/80 shadow-2xl shadow-black/40 cursor-pointer hover:border-cyan-400/30 transition-all duration-200"
                 onClick={() => {
                   if (onGameClick) {
-                    const staticGame = GAMES.find((g) => g.title === result.recommended_game);
-                    if (staticGame) {
-                      onGameClick({
-                        ...staticGame,
-                        // Merge backend price_inr so GameDetailModal shows the real game price,
-                        // independent of the user's Max Budget input.
-                        price_inr: result.price_inr,
-                        compatibility: result.compatibility,
-                      });
-                    }
+                    onGameClick({
+                      title: result.recommended_game,
+                      price_inr: result.price_inr,
+                      compatibility: result.compatibility,
+                    });
                   }
                 }}
               >
@@ -570,20 +564,13 @@ export default function RigCheckDashboard({ onGameClick }) {
                         {result.description}
                       </p>
 
-                      {/* Match Details (keyword pills) */}
-                      {result.matched_keywords?.length > 0 && (
-                        <div className="mt-4">
-                          <p className="mb-2 flex items-center gap-1.5 text-[11px] font-black text-slate-200">
-                            <Check className="h-3.5 w-3.5 text-emerald-400" />
-                            Match Details
-                          </p>
-                          <div className="flex flex-wrap gap-1.5">
-                            {result.matched_keywords.map((kw) => (
-                              <Pill key={kw}>{kw}</Pill>
-                            ))}
-                          </div>
-                        </div>
-                      )}
+                      {/* Match Explanation */}
+                      <div className="mt-4">
+                        <p className="flex items-center gap-1.5 text-[11px] font-black text-emerald-400">
+                          <Check className="h-3.5 w-3.5" />
+                          Recommended based on your specific gaming interests.
+                        </p>
+                      </div>
 
                       {/* Steam store link */}
                       <StoreButton url={result.store_url} />
@@ -677,23 +664,18 @@ export default function RigCheckDashboard({ onGameClick }) {
                   <h3 className="mb-3.5 text-sm font-black text-white">You Might Also Like</h3>
                   <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
                     {alternatives.map((game) => {
-                      const img = GAME_IMAGES[game.title] || FALLBACK_IMAGE;
+                      const img = game.header_image || FALLBACK_IMAGE;
                       return (
                         <article
                           key={game.title}
                           className="group overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950 shadow-lg shadow-black/30 transition-all duration-200 hover:-translate-y-0.5 hover:border-cyan-400/30 hover:shadow-cyan-400/5 cursor-pointer"
                           onClick={() => {
                             if (onGameClick) {
-                              const staticGame = GAMES.find((g) => g.title === game.title);
-                              if (staticGame) {
-                                onGameClick({
-                                  ...staticGame,
-                                  // Pass the backend price_inr for this alternative game
-                                  // so GameDetailModal shows the real price, not the budget.
-                                  price_inr: game.price_inr,
-                                  compatibility: game.compatibility,
-                                });
-                              }
+                              onGameClick({
+                                title: game.title,
+                                price_inr: game.price_inr,
+                                compatibility: game.compatibility,
+                              });
                             }
                           }}
                         >
