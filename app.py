@@ -74,6 +74,7 @@ def get_games(limit: int = Query(20, ge=1, le=100), offset: int = Query(0, ge=0)
             "short_description": g.get("short_description"),
             "genres": g.get("genres", []),
             "price": g.get("price_overview", {}),
+            "is_free": g.get("is_free", False),
             "header_image": g.get("header_image"),
             "release_date": g.get("release_date")
         })
@@ -102,7 +103,8 @@ def get_game(appid: int):
         "header_image": game.get("header_image"),
         "capsule_image": game.get("header_image"), # Fallback since we didn't extract capsule_image
         "website": game.get("website"),
-        "price": game.get("price_overview", {})
+        "price": game.get("price_overview", {}),
+        "is_free": game.get("is_free", False)
     }
 
 @app.get("/search")
@@ -117,7 +119,8 @@ def search(q: str = Query(..., min_length=1), limit: int = Query(20, ge=1, le=10
             "name": g.get("name"),
             "header_image": g.get("header_image"),
             "genres": g.get("genres", []),
-            "short_description": g.get("short_description")
+            "short_description": g.get("short_description"),
+            "is_free": g.get("is_free", False)
         })
     return response
 

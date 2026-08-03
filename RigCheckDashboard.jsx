@@ -76,37 +76,16 @@ const GPU_TIER_MAP = {
   "tier-5": 5,
 };
 
-/** Banner images keyed by game title. */
-const GAME_IMAGES = {
-  // Original 10
-  "Uncharted: Legacy of Thieves Collection": "/images/uncharted.png",
-  "Cities: Skylines":                        "/images/cities_skylines.png",
-  "Forza Horizon 5":                         "/images/forza_horizon_5.png",
-  "Resident Evil 4":                         "/images/resident_evil_village.png",
-  "Resident Evil Village":                   "/images/resident_evil_village.png",
-  "Slay the Spire":                          "/images/slay_the_spire.png",
-  "Tekken 8":                                "/images/tekken_8.png",
-  "Celeste":                                 "/images/celeste.png",
-  "Crusader Kings III":                      "/images/crusader_kings.png",
-  "Overcooked! 2":                           "/images/celeste.png",
-  "Return of the Obra Dinn":                 "/images/dead_space_remake.png",
-  // New 10
-  "GTA V":                                   "/images/gta_v.png",
-  "Valorant":                                "/images/valorant.png",
-  "The Witcher 3":                           "/images/witcher_3.png",
-  "Stardew Valley":                          "/images/stardew_valley.png",
-  "Cyberpunk 2077":                          "/images/cyberpunk_2077.png",
-  "Minecraft":                               "/images/minecraft.png",
-  "Apex Legends":                            "/images/apex_legends.png",
-  "Age of Empires IV":                       "/images/age_of_empires.png",
-  "Hades":                                   "/images/hades.png",
-  "Microsoft Flight Simulator":              "/images/flight_simulator.png",
-  "Dead Space Remake":                       "/images/dead_space_remake.png",
-  "The Last of Us Part I":                   "/images/last_of_us.png",
-  "Dying Light 2":                           "/images/dying_light_2.png",
-};
-
-const FALLBACK_IMAGE = "/images/dead_space_remake.png";
+/**
+ * Build a Steam CDN header image URL from an appid.
+ * Used as a fallback when the API response has no header_image.
+ */
+function getSteamHeaderImage(appid) {
+  if (appid && Number(appid) > 0) {
+    return `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${appid}/header.jpg`;
+  }
+  return "";
+}
 
 
 /** Derive a UI-friendly FPS label from the confidence score. */
@@ -137,8 +116,8 @@ function fmt(n) {
  * Never falls back to user budget — only uses the game's own price.
  */
 function formatGamePrice(priceInr) {
-  if (priceInr === null || priceInr === undefined) return "Price Unavailable";
-  if (priceInr === 0) return "Free to Play";
+  if (priceInr === null || priceInr === undefined || Number.isNaN(Number(priceInr))) return "Price Unavailable";
+  if (priceInr === 0) return "FREE";
   return `\u20B9${fmt(priceInr)}`;
 }
 
@@ -352,7 +331,7 @@ export default function RigCheckDashboard({ onGameClick }) {
   const confidence    = result?.confidence ?? 0;
   const fpsLabel      = result ? estimateFps(confidence) : "";
   const advice        = result ? parseHardwareAdvice(result.hardware_advice) : null;
-  const heroImage     = result?.header_image || FALLBACK_IMAGE;
+  const heroImage     = result?.header_image || getSteamHeaderImage(result?.store_url?.match(/\/app\/(\d+)/)?.[1]);
   const alternatives  = result?.alternative_games ?? [];
 
   return (
@@ -524,6 +503,7 @@ export default function RigCheckDashboard({ onGameClick }) {
                     onGameClick({
                       title: result.recommended_game,
                       price_inr: result.price_inr,
+                      header_image: result.header_image,
                       compatibility: result.compatibility,
                     });
                   }
@@ -664,7 +644,7 @@ export default function RigCheckDashboard({ onGameClick }) {
                   <h3 className="mb-3.5 text-sm font-black text-white">You Might Also Like</h3>
                   <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
                     {alternatives.map((game) => {
-                      const img = game.header_image || FALLBACK_IMAGE;
+                      const img = game.header_image || getSteamHeaderImage(game.store_url?.match(/\/app\/(\d+)/)?.[1]);
                       return (
                         <article
                           key={game.title}
@@ -674,6 +654,7 @@ export default function RigCheckDashboard({ onGameClick }) {
                               onGameClick({
                                 title: game.title,
                                 price_inr: game.price_inr,
+                                header_image: game.header_image,
                                 compatibility: game.compatibility,
                               });
                             }

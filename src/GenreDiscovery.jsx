@@ -29,8 +29,7 @@ const GENRES = [
     descriptors: ["Open Worlds", "Story Driven Adventures", "Epic Exploration"],
     icon: Swords,
     image: "/images/genre_action_rpg.png",
-    // Maps to these game.genre values in gameData.js
-    matchGenres: ["Action", "RPG", "Horror", "Racing"],
+    matchTags: ["action", "rpg", "adventure", "horror", "racing", "story rich", "open world", "single-player"],
     videoSrc: "/bgv/RPGOPW.mp4",
     accentColor: "rgba(239, 68, 68, 0.5)",     // red
     glowColor: "rgba(239, 68, 68, 0.25)",
@@ -42,7 +41,7 @@ const GENRES = [
     descriptors: ["Build Worlds", "Manage Empires", "Shape Reality"],
     icon: Mountain,
     image: "/images/genre_simulation.png",
-    matchGenres: ["Simulation", "Sandbox"],
+    matchTags: ["simulation", "sandbox", "survival", "building", "city builder", "management"],
     videoSrc: "/bgv/SS.mp4",
     accentColor: "rgba(34, 197, 94, 0.5)",      // green
     glowColor: "rgba(34, 197, 94, 0.25)",
@@ -54,7 +53,7 @@ const GENRES = [
     descriptors: ["Test Your Skills", "Fight to Win", "Prove Yourself"],
     icon: Crosshair,
     image: "/images/genre_competitive.png",
-    matchGenres: ["Fighting", "FPS"],
+    matchTags: ["competitive", "combat", "pvp", "multi-player", "online pvp", "shooter", "fps", "fighting", "battle royale", "esports", "massively multiplayer"],
     videoSrc: "/bgv/Comp.mp4",
     accentColor: "rgba(59, 130, 246, 0.5)",     // blue
     glowColor: "rgba(59, 130, 246, 0.25)",
@@ -66,7 +65,7 @@ const GENRES = [
     descriptors: ["Relax", "Explore", "Enjoy the Journey"],
     icon: Heart,
     image: "/images/genre_indie_cozy.png",
-    matchGenres: ["Casual", "Platformer", "Puzzle"],
+    matchTags: ["indie", "casual", "cozy", "platformer", "puzzle", "relaxing", "2d", "story rich"],
     videoSrc: "/bgv/indie.mp4",
     accentColor: "rgba(236, 72, 153, 0.5)",     // pink
     glowColor: "rgba(236, 72, 153, 0.25)",
@@ -78,7 +77,7 @@ const GENRES = [
     descriptors: ["Command Armies", "Outwit Opponents", "Conquer Realms"],
     icon: Castle,
     image: "/images/genre_strategy.png",
-    matchGenres: ["Strategy"],
+    matchTags: ["strategy", "rts", "turn-based", "grand strategy", "tactical", "base building"],
     videoSrc: "/bgv/str.mp4",
     accentColor: "rgba(234, 179, 8, 0.5)",      // amber
     glowColor: "rgba(234, 179, 8, 0.25)",
@@ -90,9 +89,7 @@ const GENRES = [
     descriptors: ["Die", "Learn", "Repeat", "Master the Loop"],
     icon: Repeat,
     image: "/images/genre_roguelike.png",
-    // Special: matches games whose tags include "Rogue-like" or "Roguelike"
-    matchGenres: [],
-    matchTags: ["Rogue-like", "Roguelike"],
+    matchTags: ["roguelike", "rogue-like", "rogue-lite", "loop", "deckbuilder", "bullet hell", "permadeath"],
     videoSrc: "/bgv/loop.mp4",
     accentColor: "rgba(139, 92, 246, 0.5)",     // violet
     glowColor: "rgba(139, 92, 246, 0.25)",

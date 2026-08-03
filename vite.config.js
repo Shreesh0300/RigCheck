@@ -22,6 +22,18 @@ export default defineConfig({
         target: "http://127.0.0.1:8000",
         changeOrigin: true,
       },
+      "/games": {
+        target: "http://127.0.0.1:8000",
+        changeOrigin: true,
+      },
+      "/search": {
+        target: "http://127.0.0.1:8000",
+        changeOrigin: true,
+      },
+      "/stats": {
+        target: "http://127.0.0.1:8000",
+        changeOrigin: true,
+      },
     },
   },
 });

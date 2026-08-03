@@ -275,6 +275,7 @@ def recommend_game(user_input, budget, gpu_name, ram,
         compat_result["price_inr"] = int(row["Price_INR"])
         compat_result["store_url"] = _get_store_url(row)
         compat_result["description"] = str(row["Description"])
+        compat_result["header_image"] = str(row.get("Header_Image", ""))
 
         # Parse tags
         raw_tags = str(row.get("Tags", ""))

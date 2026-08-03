@@ -190,12 +190,14 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
   // Derived properties
   const priceLabel = useMemo(() => {
     if (!detailedGame) return "";
+    if (detailedGame.is_free) return "FREE";
+
     let rawPrice = detailedGame.price_inr ?? detailedGame.price;
     if (detailedGame.price && typeof detailedGame.price.final !== "undefined") {
       rawPrice = detailedGame.price.final === 0 ? 0 : detailedGame.price.final / 100;
     }
-    if (rawPrice === null || rawPrice === undefined) return "Price Unavailable";
-    if (rawPrice === 0) return "Free to Play";
+    if (rawPrice === null || rawPrice === undefined || Number.isNaN(Number(rawPrice))) return "Price Unavailable";
+    if (rawPrice === 0) return "FREE";
     return `\u20B9${Number(rawPrice).toLocaleString("en-IN")}`;
   }, [detailedGame]);
 
@@ -340,18 +342,21 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                     <h2 className="mb-4 text-xl font-bold text-white">Gallery</h2>
                     <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory hide-scrollbar">
                       {detailedGame.screenshots && detailedGame.screenshots.length > 0 ? (
-                        detailedGame.screenshots.slice(0, 5).map((shot, i) => (
+                        detailedGame.screenshots.slice(0, 5).map((shot, i) => {
+                          const shotUrl = typeof shot === 'string' ? shot : shot.path_full;
+                          return (
                           <div
                             key={`shot-${i}`}
                             className="relative aspect-video w-[280px] shrink-0 snap-center overflow-hidden rounded-xl border border-slate-800 bg-slate-900 sm:w-[400px]"
                           >
                             <img
-                              src={shot.path_full}
+                              src={shotUrl}
                               alt={`${detailedGame.name || detailedGame.title} screenshot ${i}`}
                               className="h-full w-full object-cover"
                             />
                           </div>
-                        ))
+                          );
+                        })
                       ) : (
                         [1, 2, 3].map((i) => (
                           <div
@@ -566,19 +571,41 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                     </button>
                   </div>
 
-                  {/* Available On Placeholders */}
+                  {/* Available On */}
                   <div className="rounded-2xl border border-slate-800/60 bg-slate-900/30 p-6">
                     <h3 className="mb-4 text-sm font-bold text-slate-400">Available On</h3>
                     <div className="space-y-3">
-                      {["Steam", "Epic Games", "Xbox"].map((platform) => (
-                        <button
-                          key={platform}
+                      {(detailedGame.appid || detailedGame.steamAppId) && (
+                        <a
+                          href={`https://store.steampowered.com/app/${detailedGame.appid || detailedGame.steamAppId}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="flex w-full items-center justify-between rounded-xl border border-white/5 bg-white/5 px-4 py-3 text-sm font-medium text-slate-300 transition-colors hover:bg-white/10"
                         >
-                          {platform}
+                          Steam
                           <Download className="h-4 w-4 opacity-50" />
-                        </button>
-                      ))}
+                        </a>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Game Trailer */}
+                  <div className="rounded-2xl border border-slate-800/60 bg-slate-900/30 p-6">
+                    <h3 className="mb-4 text-sm font-bold text-slate-400">Game Trailer</h3>
+                    <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-slate-800 bg-slate-950 flex flex-col items-center justify-center text-slate-500">
+                      {detailedGame.trailers && detailedGame.trailers.length > 0 ? (
+                        <video
+                          src={detailedGame.trailers[0].webm?.max || detailedGame.trailers[0].webm?.['480'] || detailedGame.trailers[0].mp4?.max}
+                          poster={detailedGame.trailers[0].thumbnail}
+                          controls
+                          className="h-full w-full object-cover"
+                        />
+                      ) : (
+                        <>
+                          <Play className="mb-2 h-8 w-8 opacity-20" />
+                          <span className="text-xs font-medium">No trailer available.</span>
+                        </>
+                      )}
                     </div>
                   </div>
 

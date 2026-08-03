@@ -42,18 +42,11 @@ function filterByGenre(games, selectedGenre) {
   if (!selectedGenre) return games;
 
   const genreDef = GENRES.find((g) => g.key === selectedGenre);
-  if (!genreDef) return games;
+  if (!genreDef || !genreDef.matchTags) return games;
 
   return games.filter((game) => {
-    // Match by genre field
-    if (genreDef.matchGenres?.length && genreDef.matchGenres.includes(game.genre)) {
-      return true;
-    }
-    // Match by tags (for roguelikes)
-    if (genreDef.matchTags?.length) {
-      return game.tags.some((tag) => genreDef.matchTags.includes(tag));
-    }
-    return false;
+    // A game matches if ANY of its all_tags are in the genreDef.matchTags
+    return game.all_tags.some((tag) => genreDef.matchTags.includes(tag));
   });
 }
 
@@ -77,12 +70,39 @@ function GameGallery({ onGenreHover, selectedGenre, onClearGenre, onGameClick })
           priceVal = g.price.final === 0 ? 0 : g.price.final / 100;
         }
 
+        // Flatten genres and categories into a single lowercased tags array
+        const all_tags = [];
+        if (Array.isArray(g.genres)) {
+          g.genres.forEach(gn => {
+             if (typeof gn === 'string') all_tags.push(gn.toLowerCase());
+             else if (gn.description) all_tags.push(gn.description.toLowerCase());
+          });
+        }
+        if (Array.isArray(g.categories)) {
+          g.categories.forEach(c => {
+             if (typeof c === 'string') all_tags.push(c.toLowerCase());
+             else if (c.description) all_tags.push(c.description.toLowerCase());
+          });
+        }
+        
+        // Also add keywords from short_description just in case
+        const desc = (g.short_description || "").toLowerCase();
+        if (desc.includes("roguelike") || desc.includes("rogue-like") || desc.includes("rogue-lite") || desc.includes("loop")) {
+          all_tags.push("roguelike");
+        }
+
+        const uniqueTags = Array.from(new Set(all_tags));
+        const displayTags = uniqueTags
+          .filter(t => !t.includes("steam") && !t.includes("controller") && !t.includes("sound") && !t.includes("remote play")) // filter out noise
+          .map(t => t.replace(/\b\w/g, c => c.toUpperCase())); // Title Case
+
         return {
           id: g.appid,
           appid: g.appid,
           title: g.name,
-          genre: g.genres && g.genres.length > 0 ? g.genres[0] : "Game",
-          tags: g.genres || [],
+          genre: g.genres && g.genres.length > 0 ? (typeof g.genres[0] === 'string' ? g.genres[0] : g.genres[0].description || "Game") : "Game",
+          tags: displayTags, // Cleaned, capitalized unique tags for the UI
+          all_tags: all_tags, // For internal filtering
           price: priceVal,
           price_inr: priceVal, 
           image: g.header_image,

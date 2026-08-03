@@ -23,7 +23,18 @@ const cardVariants = {
 };
 
 function GameCard({ game, onGenreHover, onClick }) {
-  const priceLabel = game.price === 0 ? "Free" : `₹${game.price.toLocaleString("en-IN")}`;
+  let priceLabel = "Price Unavailable";
+  if (game.is_free || game.price === 0) {
+    priceLabel = "FREE";
+  } else if (typeof game.price === "number" && !Number.isNaN(game.price)) {
+    priceLabel = `₹${game.price.toLocaleString("en-IN")}`;
+  } else if (game.price && typeof game.price.final === "number") {
+    if (game.price.final === 0) {
+      priceLabel = "FREE";
+    } else {
+      priceLabel = `₹${(game.price.final / 100).toLocaleString("en-IN")}`;
+    }
+  }
 
   return (
     <motion.div
