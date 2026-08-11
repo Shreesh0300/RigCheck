@@ -5,6 +5,7 @@ import GenreDiscovery from "./GenreDiscovery.jsx";
 import GameGallery from "./GameGallery.jsx";
 import FloatingCTA from "./FloatingCTA.jsx";
 import LoginButton from "./LoginButton.jsx";
+import SearchBar from "./SearchBar.jsx";
 import DiagnosticModal from "./DiagnosticModal.jsx";
 import GameDetailModal from "./GameDetailModal.jsx";
 
@@ -35,6 +36,12 @@ export default function App() {
 
   // Active genre filter for game gallery
   const [selectedGenre, setSelectedGenre] = useState(null);
+
+  // Search query
+  const [searchQuery, setSearchQuery] = useState("");
+
+  // Total loaded games
+  const [totalGames, setTotalGames] = useState(0);
 
   // Active game for detail modal
   const [selectedGame, setSelectedGame] = useState(null);
@@ -76,12 +83,17 @@ export default function App() {
       <GameGallery
         onGenreHover={handleGenreHover}
         selectedGenre={selectedGenre}
+        searchQuery={searchQuery}
         onClearGenre={handleClearGenre}
         onGameClick={handleGameClick}
+        onGamesLoaded={setTotalGames}
       />
 
       {/* Floating "Ask RigCheck AI" Button */}
       <FloatingCTA onClick={openDiagnostic} />
+
+      {/* Search Bar — top right next to login */}
+      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} totalGames={totalGames} />
 
       {/* Login Button — top right */}
       <LoginButton />

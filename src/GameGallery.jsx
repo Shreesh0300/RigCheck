@@ -38,19 +38,31 @@ const containerVariants = {
  * Genre categories map to one or more `game.genre` values,
  * and the "roguelike" category also matches by tags.
  */
-function filterByGenre(games, selectedGenre) {
-  if (!selectedGenre) return games;
+function filterGames(games, selectedGenre, searchQuery) {
+  let result = games;
 
-  const genreDef = GENRES.find((g) => g.key === selectedGenre);
-  if (!genreDef || !genreDef.matchTags) return games;
+  if (selectedGenre) {
+    const genreDef = GENRES.find((g) => g.key === selectedGenre);
+    if (genreDef && genreDef.matchTags) {
+      result = result.filter((game) => {
+        return game.all_tags.some((tag) => genreDef.matchTags.includes(tag));
+      });
+    }
+  }
 
-  return games.filter((game) => {
-    // A game matches if ANY of its all_tags are in the genreDef.matchTags
-    return game.all_tags.some((tag) => genreDef.matchTags.includes(tag));
-  });
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    result = result.filter(
+      (game) =>
+        game.title.toLowerCase().includes(q) ||
+        game.all_tags.some((t) => t.includes(q))
+    );
+  }
+
+  return result;
 }
 
-function GameGallery({ onGenreHover, selectedGenre, onClearGenre, onGameClick }) {
+function GameGallery({ onGenreHover, selectedGenre, searchQuery, onClearGenre, onGameClick, onGamesLoaded }) {
   const [games, setGames] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -59,7 +71,7 @@ function GameGallery({ onGenreHover, selectedGenre, onClearGenre, onGameClick })
     
     async function loadGames() {
       setIsLoading(true);
-      const data = await fetchGames(100, 0);
+      const data = await fetchGames(500, 0);
       
       if (!mounted) return;
 
@@ -111,6 +123,7 @@ function GameGallery({ onGenreHover, selectedGenre, onClearGenre, onGameClick })
       });
       
       setGames(mapped);
+      if (onGamesLoaded) onGamesLoaded(mapped.length);
       setIsLoading(false);
     }
     
@@ -120,8 +133,8 @@ function GameGallery({ onGenreHover, selectedGenre, onClearGenre, onGameClick })
   }, []);
 
   const filteredGames = useMemo(
-    () => filterByGenre(games, selectedGenre),
-    [games, selectedGenre]
+    () => filterGames(games, selectedGenre, searchQuery),
+    [games, selectedGenre, searchQuery]
   );
 
   const handleGenreHover = useCallback(
@@ -156,7 +169,7 @@ function GameGallery({ onGenreHover, selectedGenre, onClearGenre, onGameClick })
             transition={{ duration: 0.4 }}
             className="text-2xl font-black tracking-tight text-white sm:text-3xl"
           >
-            {selectedGenre ? activeGenreLabel : "All Games"}
+            {searchQuery ? `Search Results for "${searchQuery}"` : selectedGenre ? activeGenreLabel : "All Games"}
           </motion.h2>
 
           {/* Active filter badge + "Show All Games" reset */}
@@ -184,7 +197,7 @@ function GameGallery({ onGenreHover, selectedGenre, onClearGenre, onGameClick })
           {!isLoading && (
             <p className="text-xs text-slate-600 sm:text-sm">
               {filteredGames.length} {filteredGames.length === 1 ? "game" : "games"}
-              {selectedGenre ? " in this genre" : " available"}
+              {searchQuery ? " found" : selectedGenre ? " in this genre" : " available"}
             </p>
           )}
         </div>

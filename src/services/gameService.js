@@ -12,7 +12,7 @@ const API_BASE_URL = "";
  * @param {number} offset
  * @returns {Promise<Array>} Array of game objects.
  */
-export async function fetchGames(limit = 100, offset = 0) {
+export async function fetchGames(limit = 500, offset = 0) {
   try {
     const response = await fetch(`${API_BASE_URL}/games?limit=${limit}&offset=${offset}`);
     if (!response.ok) throw new Error("Failed to fetch games");
@@ -48,7 +48,7 @@ export async function fetchGame(appid) {
  * @param {number} limit
  * @returns {Promise<Array>} Array of matching game objects.
  */
-export async function searchGames(query, limit = 20) {
+export async function searchGames(query, limit = 50) {
   if (!query) return [];
   try {
     const response = await fetch(`${API_BASE_URL}/search?q=${encodeURIComponent(query)}&limit=${limit}`);

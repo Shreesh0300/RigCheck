@@ -1,0 +1,1130 @@
+{
+    "RDR2_Long": {
+        "query": "I\u2019m looking for a realistic open world western adventure set in the late 1800s. I want to play as a cowboy, ride horses across towns and wilderness, rob trains, hunt wildlife, complete story-driven missions, and experience an immersive frontier with gunslinging, outlaws, sheriffs, and a rich cinematic narrative.",
+        "target": "Red Dead Redemption 2",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Red Dead Redemption 2"
+        ],
+        "latency": 1.0284268856048584,
+        "bm25_latency": 0.3326709270477295
+    },
+    "RDR2_Short": {
+        "query": "western cowboy open world",
+        "target": "Red Dead Redemption 2",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Red Dead Redemption 2"
+        ],
+        "latency": 0.16987013816833496,
+        "bm25_latency": 0.08337807655334473
+    },
+    "Submarine_WW2": {
+        "query": "WWII submarine simulator",
+        "target": "UBOAT",
+        "target_retrieved": false,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Barotrauma",
+            "688(I) Hunter/Killer",
+            "PT Boats: South Gambit",
+            "Sub Command"
+        ],
+        "latency": 0.14052653312683105,
+        "bm25_latency": 0.06144380569458008
+    },
+    "Zombies_Coop": {
+        "query": "co-op zombie survival",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Left 4 Dead 2",
+            "Unturned",
+            "7 Days to Die",
+            "Dying Light"
+        ],
+        "latency": 0.15027117729187012,
+        "bm25_latency": 0.06330466270446777
+    },
+    "Zombies_Horror": {
+        "query": "survival horror game with zombies",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Left 4 Dead 2",
+            "Unturned",
+            "Resident Evil 2",
+            "7 Days to Die"
+        ],
+        "latency": 0.15509271621704102,
+        "bm25_latency": 0.07362794876098633
+    },
+    "Racing_Realistic": {
+        "query": "open world realistic racing game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Forza Horizon 5"
+        ],
+        "latency": 0.17193126678466797,
+        "bm25_latency": 0.07754945755004883
+    },
+    "Stealth_Ninja": {
+        "query": "stealth game set in feudal Japan",
+        "target": "Sekiro\u2122: Shadows Die Twice - GOTY Edition",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Sekiro\u2122: Shadows Die Twice - GOTY Edition"
+        ],
+        "latency": 0.1593620777130127,
+        "bm25_latency": 0.07421755790710449
+    },
+    "Space_Trading": {
+        "query": "space exploration game with trading",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Space Empires V",
+            "X3: Reunion",
+            "EVE Online",
+            "Antichamber"
+        ],
+        "latency": 0.14629888534545898,
+        "bm25_latency": 0.0652933120727539
+    },
+    "Survival_Crafting": {
+        "query": "open world survival game with crafting",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Subnautica",
+            "Dying Light",
+            "Valheim",
+            "Fallout 4"
+        ],
+        "latency": 0.14136719703674316,
+        "bm25_latency": 0.06691145896911621
+    },
+    "RPG_Fantasy": {
+        "query": "story driven fantasy RPG",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "FINAL FANTASY XIV Online",
+            "RimWorld",
+            "Arx Fatalis",
+            "The Elder Scrolls V: Skyrim"
+        ],
+        "latency": 0.16062712669372559,
+        "bm25_latency": 0.07094573974609375
+    },
+    "Combat_Sword": {
+        "query": "open world game with sword combat",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Dark Messiah of Might & Magic",
+            "Civilization IV: Beyond the Sword",
+            "Dying Light 2 Stay Human: Reloaded Edition",
+            "PT Boats: South Gambit"
+        ],
+        "latency": 0.17744684219360352,
+        "bm25_latency": 0.0809929370880127
+    },
+    "City_Builder": {
+        "query": "strategy game about building a city",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Cities: Skylines",
+            "CivCity: Rome",
+            "Cities: Skylines II",
+            "Tycoon City: New York"
+        ],
+        "latency": 0.1372818946838379,
+        "bm25_latency": 0.0650484561920166
+    },
+    "Heist_Coop": {
+        "query": "co-op bank heist shooter",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Grand Theft Auto V Legacy",
+            "Mystery P.I.\u2122 - The Vegas Heist",
+            "PAYDAY 3"
+        ],
+        "latency": 0.14088773727416992,
+        "bm25_latency": 0.06475615501403809
+    },
+    "Rogue_Deckbuilder": {
+        "query": "roguelike deckbuilder with cards",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Balatro",
+            "Slay the Spire"
+        ],
+        "latency": 0.11028337478637695,
+        "bm25_latency": 0.04927778244018555
+    },
+    "Factory_Automation": {
+        "query": "first person factory building automation",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Factorio",
+            "Palworld"
+        ],
+        "latency": 0.19757843017578125,
+        "bm25_latency": 0.09179925918579102
+    },
+    "Short_Western_Cowboy": {
+        "query": "western cowboy",
+        "target": "Red Dead Redemption 2",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Red Dead Redemption 2",
+            "UNCHARTED\u2122: Legacy of Thieves Collection"
+        ],
+        "latency": 0.09645462036132812,
+        "bm25_latency": 0.04097890853881836
+    },
+    "Short_Open_World_Western": {
+        "query": "open world western",
+        "target": "Red Dead Redemption 2",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Red Dead Redemption 2"
+        ],
+        "latency": 0.1084299087524414,
+        "bm25_latency": 0.04963994026184082
+    },
+    "Short_Zombie_Coop": {
+        "query": "zombie co op",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Left 4 Dead 2"
+        ],
+        "latency": 0.06426548957824707,
+        "bm25_latency": 0.027594327926635742
+    },
+    "Short_WW2_Submarine": {
+        "query": "WW2 submarine",
+        "target": "UBOAT",
+        "target_retrieved": false,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Sub Command",
+            "688(I) Hunter/Killer",
+            "Barotrauma",
+            "Dangerous Waters"
+        ],
+        "latency": 0.06824159622192383,
+        "bm25_latency": 0.029247760772705078
+    },
+    "Short_Samurai_Stealth": {
+        "query": "samurai stealth",
+        "target": "Sekiro\u2122: Shadows Die Twice - GOTY Edition",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Sekiro\u2122: Shadows Die Twice - GOTY Edition"
+        ],
+        "latency": 0.09490609169006348,
+        "bm25_latency": 0.0459446907043457
+    },
+    "Short_Pirate_Game": {
+        "query": "pirate game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Sid Meier's Pirates!",
+            "Lost Planet\u2122: Extreme Condition",
+            "Two Worlds II HD",
+            "RoboBlitz"
+        ],
+        "latency": 0.04998445510864258,
+        "bm25_latency": 0.017023801803588867
+    },
+    "Short_Space_Trading": {
+        "query": "space trading",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Space Empires IV Deluxe",
+            "Space Empires V",
+            "Oxygen Not Included",
+            "X3: Reunion"
+        ],
+        "latency": 0.10175395011901855,
+        "bm25_latency": 0.04425048828125
+    },
+    "Short_Medieval_RPG": {
+        "query": "medieval RPG",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Mount & Blade II: Bannerlord",
+            "Total War: MEDIEVAL II \u2013 Definitive Edition",
+            "Crusader Kings III"
+        ],
+        "latency": 0.06236672401428223,
+        "bm25_latency": 0.03729867935180664
+    },
+    "Short_Open_World_Racing": {
+        "query": "open world racing",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Forza Horizon 5",
+            "Forza Horizon 4",
+            "Trailmakers",
+            "X3: Terran Conflict"
+        ],
+        "latency": 0.07399535179138184,
+        "bm25_latency": 0.034037113189697266
+    },
+    "Short_Survival_Crafting": {
+        "query": "survival crafting",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Subnautica",
+            "Don't Starve",
+            "Valheim",
+            "Barotrauma"
+        ],
+        "latency": 0.05369925498962402,
+        "bm25_latency": 0.023101091384887695
+    },
+    "Short_Detective_Game": {
+        "query": "detective game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Sherlock Holmes - Nemesis",
+            "Sherlock Holmes: The Mystery of the Mummy",
+            "Sherlock Holmes versus Jack the Ripper"
+        ],
+        "latency": 0.03151535987854004,
+        "bm25_latency": 0.015853166580200195
+    },
+    "Short_Superhero_Open_World": {
+        "query": "superhero open world",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Project: Snowblind",
+            "Forza Horizon 5",
+            "Subnautica",
+            "Forza Horizon 4"
+        ],
+        "latency": 0.06772255897521973,
+        "bm25_latency": 0.03121042251586914
+    },
+    "Short_Post_Apocalyptic": {
+        "query": "post apocalyptic survival",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "The Forest"
+        ],
+        "latency": 0.06626033782958984,
+        "bm25_latency": 0.03110337257385254
+    },
+    "Short_Horror_Coop": {
+        "query": "horror co op",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Left 4 Dead 2",
+            "Resident Evil 7 Biohazard",
+            "Resident Evil 4"
+        ],
+        "latency": 0.03538060188293457,
+        "bm25_latency": 0.015946149826049805
+    },
+    "Short_Horseback": {
+        "query": "horseback adventure",
+        "target": "Red Dead Redemption 2",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Red Dead Redemption 2"
+        ],
+        "latency": 0.05750441551208496,
+        "bm25_latency": 0.028131484985351562
+    },
+    "Simple_Western": {
+        "query": "western",
+        "target": "Red Dead Redemption 2",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Red Dead Redemption 2",
+            "Call of Juarez",
+            "Total War: MEDIEVAL II \u2013 Definitive Edition",
+            "Frontlines\u2122: Fuel of War\u2122"
+        ],
+        "latency": 0.03162980079650879,
+        "bm25_latency": 0.01157832145690918
+    },
+    "Simple_Samurai": {
+        "query": "samurai",
+        "target": "Sekiro\u2122: Shadows Die Twice - GOTY Edition",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Sekiro\u2122: Shadows Die Twice - GOTY Edition"
+        ],
+        "latency": 0.028462886810302734,
+        "bm25_latency": 0.011702299118041992
+    },
+    "Simple_Zombies": {
+        "query": "zombies",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Plants vs. Zombies GOTY Edition",
+            "Stubbs the Zombie in Rebel Without a Pulse",
+            "Left 4 Dead 2",
+            "Unturned"
+        ],
+        "latency": 0.02972865104675293,
+        "bm25_latency": 0.011908769607543945
+    },
+    "Simple_Racing": {
+        "query": "racing",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "RACE 07",
+            "GTR 2 FIA GT Racing Game",
+            "RACE On",
+            "RACE - The WTCC Game"
+        ],
+        "latency": 0.033690452575683594,
+        "bm25_latency": 0.01304316520690918
+    },
+    "Simple_Space": {
+        "query": "space",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Space Empires IV Deluxe",
+            "Space Empires V",
+            "Space Quest\u2122 Collection",
+            "Oxygen Not Included"
+        ],
+        "latency": 0.03119039535522461,
+        "bm25_latency": 0.01096963882446289
+    },
+    "Simple_Pirates": {
+        "query": "pirates",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Sid Meier's Pirates!",
+            "Lost Planet\u2122: Extreme Condition",
+            "Two Worlds II HD",
+            "RoboBlitz"
+        ],
+        "latency": 0.03512096405029297,
+        "bm25_latency": 0.015353679656982422
+    },
+    "Simple_Cowboy": {
+        "query": "cowboy",
+        "target": "Red Dead Redemption 2",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Red Dead Redemption 2",
+            "UNCHARTED\u2122: Legacy of Thieves Collection"
+        ],
+        "latency": 0.027009010314941406,
+        "bm25_latency": 0.011877775192260742
+    },
+    "Simple_Horror": {
+        "query": "horror",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Killing Floor",
+            "Resident Evil 2",
+            "Left 4 Dead 2",
+            "Resident Evil 7 Biohazard"
+        ],
+        "latency": 0.03020024299621582,
+        "bm25_latency": 0.010631799697875977
+    },
+    "Simple_Survival": {
+        "query": "survival",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Subnautica",
+            "Lost Planet\u2122: Extreme Condition",
+            "Don't Starve",
+            "Frostpunk"
+        ],
+        "latency": 0.038849592208862305,
+        "bm25_latency": 0.01145625114440918
+    },
+    "Simple_Detective": {
+        "query": "detective",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Sherlock Holmes - Nemesis",
+            "Sherlock Holmes: The Mystery of the Mummy",
+            "Sherlock Holmes versus Jack the Ripper"
+        ],
+        "latency": 0.03076171875,
+        "bm25_latency": 0.01275014877319336
+    },
+    "Natural_Cowboy": {
+        "query": "i want a cowboy game",
+        "target": "Red Dead Redemption 2",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Red Dead Redemption 2",
+            "UNCHARTED\u2122: Legacy of Thieves Collection"
+        ],
+        "latency": 0.02788400650024414,
+        "bm25_latency": 0.011132955551147461
+    },
+    "Natural_ZombieCoop": {
+        "query": "good zombie coop",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Stubbs the Zombie in Rebel Without a Pulse",
+            "Left 4 Dead 2",
+            "Plants vs. Zombies GOTY Edition",
+            "Unturned"
+        ],
+        "latency": 0.05634808540344238,
+        "bm25_latency": 0.0234527587890625
+    },
+    "Natural_Samurai": {
+        "query": "game where you play as a samurai",
+        "target": "Sekiro\u2122: Shadows Die Twice - GOTY Edition",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Sekiro\u2122: Shadows Die Twice - GOTY Edition"
+        ],
+        "latency": 0.036238908767700195,
+        "bm25_latency": 0.016799449920654297
+    },
+    "Natural_Driving": {
+        "query": "open world driving game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Forza Horizon 5",
+            "Palworld"
+        ],
+        "latency": 0.06673860549926758,
+        "bm25_latency": 0.03030991554260254
+    },
+    "Natural_HorrorFriends": {
+        "query": "something scary to play with friends",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Dead by Daylight",
+            "Haunted House\u2122 (2010)",
+            "Dota 2",
+            "Ghost Master\u00ae"
+        ],
+        "latency": 0.08595752716064453,
+        "bm25_latency": 0.04065394401550293
+    },
+    "Natural_Submarine": {
+        "query": "ww2 submarine game",
+        "target": "UBOAT",
+        "target_retrieved": false,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Sub Command",
+            "688(I) Hunter/Killer",
+            "Barotrauma",
+            "Dangerous Waters"
+        ],
+        "latency": 0.04225492477416992,
+        "bm25_latency": 0.02004528045654297
+    },
+    "Natural_RPG": {
+        "query": "rpg with swords and magic",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Dark Messiah of Might & Magic"
+        ],
+        "latency": 0.06518983840942383,
+        "bm25_latency": 0.023244857788085938
+    },
+    "Natural_Pirate": {
+        "query": "game where i sail as a pirate",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Sid Meier's Pirates!"
+        ],
+        "latency": 0.06666779518127441,
+        "bm25_latency": 0.035433053970336914
+    },
+    "Natural_Detective": {
+        "query": "mystery game where i play as a detective",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Sherlock Holmes: The Mystery of the Mummy",
+            "Sherlock Holmes versus Jack the Ripper",
+            "Sherlock Holmes - Nemesis"
+        ],
+        "latency": 0.07026052474975586,
+        "bm25_latency": 0.030452251434326172
+    },
+    "Natural_Space": {
+        "query": "explore space in a ship",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Starbound",
+            "No Man's Sky",
+            "Deep Rock Galactic",
+            "ThreadSpace: Hyperbol"
+        ],
+        "latency": 0.10910606384277344,
+        "bm25_latency": 0.06018853187561035
+    },
+    "Messy_Cowboy": {
+        "query": "bro give me a cowboy game",
+        "target": "Red Dead Redemption 2",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Red Dead Redemption 2",
+            "Gotham Knights",
+            "Return of the Obra Dinn",
+            "Xpand Rally"
+        ],
+        "latency": 0.061797142028808594,
+        "bm25_latency": 0.02847576141357422
+    },
+    "Messy_RDR2": {
+        "query": "something like rdr2",
+        "target": "Red Dead Redemption 2",
+        "target_retrieved": true,
+        "target_candidate_rank": 26,
+        "target_final_rank": null,
+        "top_10": [
+            "Alpha Prime",
+            "AstroPop Deluxe",
+            "X-COM: Apocalypse",
+            "Resident Evil 4"
+        ],
+        "latency": 0.08277511596679688,
+        "bm25_latency": 0.03508353233337402
+    },
+    "Messy_Detective": {
+        "query": "i wanna play as a detective",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Sherlock Holmes versus Jack the Ripper",
+            "Sherlock Holmes - Nemesis",
+            "Sherlock Holmes: The Mystery of the Mummy",
+            "Tom Clancy\u2019s Splinter Cell Blacklist"
+        ],
+        "latency": 0.09035253524780273,
+        "bm25_latency": 0.039449453353881836
+    },
+    "Messy_ZombieBase": {
+        "query": "game where i can build a base and survive zombies",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Unturned",
+            "Left 4 Dead 2",
+            "Resident Evil 2",
+            "7 Days to Die"
+        ],
+        "latency": 0.12138104438781738,
+        "bm25_latency": 0.04805469512939453
+    },
+    "Messy_Chill": {
+        "query": "something chill where i can explore",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Dead by Daylight",
+            "Haunted House\u2122 (2010)",
+            "Brawlhalla",
+            "Alpha Prime"
+        ],
+        "latency": 0.11560559272766113,
+        "bm25_latency": 0.05089449882507324
+    },
+    "Messy_Scary": {
+        "query": "scary game plz",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Haunted House\u2122 (2010)",
+            "RACE 07",
+            "Ghost Master\u00ae",
+            "Dead by Daylight"
+        ],
+        "latency": 0.0434877872467041,
+        "bm25_latency": 0.0202329158782959
+    },
+    "Messy_Racing": {
+        "query": "driving fast cars open world",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Forza Horizon 5"
+        ],
+        "latency": 0.09814023971557617,
+        "bm25_latency": 0.046088457107543945
+    },
+    "Messy_Space": {
+        "query": "spaceship game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Space Empires IV Deluxe",
+            "Space Empires V",
+            "Space Quest\u2122 Collection",
+            "Oxygen Not Included"
+        ],
+        "latency": 0.0416111946105957,
+        "bm25_latency": 0.013596534729003906
+    },
+    "Messy_Submarine": {
+        "query": "game where u drive a submarine",
+        "target": "UBOAT",
+        "target_retrieved": false,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Sub Command",
+            "688(I) Hunter/Killer",
+            "Barotrauma",
+            "Dangerous Waters"
+        ],
+        "latency": 0.08826899528503418,
+        "bm25_latency": 0.038492679595947266
+    },
+    "Messy_Samurai": {
+        "query": "ninja or samurai stealth stuff",
+        "target": "Sekiro\u2122: Shadows Die Twice - GOTY Edition",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Sekiro\u2122: Shadows Die Twice - GOTY Edition"
+        ],
+        "latency": 0.09940671920776367,
+        "bm25_latency": 0.048340797424316406
+    },
+    "Multi_ZombieBase": {
+        "query": "open world zombie survival with base building",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Dying Light",
+            "Dying Light 2 Stay Human: Reloaded Edition",
+            "Unturned",
+            "Valheim"
+        ],
+        "latency": 0.14916038513183594,
+        "bm25_latency": 0.0637211799621582
+    },
+    "Multi_WesternHorses": {
+        "query": "western cowboy game with horses",
+        "target": "Red Dead Redemption 2",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Red Dead Redemption 2",
+            "UNCHARTED\u2122: Legacy of Thieves Collection"
+        ],
+        "latency": 0.11801552772521973,
+        "bm25_latency": 0.04903864860534668
+    },
+    "Multi_CoopHorror": {
+        "query": "co-op horror game with zombies",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Left 4 Dead 2",
+            "Unturned",
+            "Resident Evil 2",
+            "7 Days to Die"
+        ],
+        "latency": 0.08043313026428223,
+        "bm25_latency": 0.04092979431152344
+    },
+    "Multi_OpenRacing": {
+        "query": "open world racing game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Forza Horizon 5",
+            "Forza Horizon 4",
+            "Trailmakers",
+            "X3: Terran Conflict"
+        ],
+        "latency": 0.06675481796264648,
+        "bm25_latency": 0.02998805046081543
+    },
+    "Multi_StealthSamurai": {
+        "query": "stealth samurai game",
+        "target": "Sekiro\u2122: Shadows Die Twice - GOTY Edition",
+        "target_retrieved": true,
+        "target_candidate_rank": 1,
+        "target_final_rank": 1,
+        "top_10": [
+            "Sekiro\u2122: Shadows Die Twice - GOTY Edition"
+        ],
+        "latency": 0.0562441349029541,
+        "bm25_latency": 0.02542591094970703
+    },
+    "Multi_SpaceTrade": {
+        "query": "space exploration with trading",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Space Empires V",
+            "X3: Reunion",
+            "EVE Online",
+            "Antichamber"
+        ],
+        "latency": 0.07995223999023438,
+        "bm25_latency": 0.03778696060180664
+    },
+    "Multi_PirateShip": {
+        "query": "open world pirate ship game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Sid Meier's Pirates!",
+            "PT Boats: South Gambit",
+            "No Man's Sky",
+            "Valheim"
+        ],
+        "latency": 0.07817959785461426,
+        "bm25_latency": 0.03638458251953125
+    },
+    "Multi_DetectiveNoir": {
+        "query": "noir detective mystery",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Sherlock Holmes: The Mystery of the Mummy",
+            "Sherlock Holmes - Nemesis",
+            "Sherlock Holmes versus Jack the Ripper"
+        ],
+        "latency": 0.0848548412322998,
+        "bm25_latency": 0.03710436820983887
+    },
+    "Multi_MedievalSword": {
+        "query": "medieval sword fighting rpg",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Mount & Blade II: Bannerlord"
+        ],
+        "latency": 0.08006739616394043,
+        "bm25_latency": 0.03839302062988281
+    },
+    "Multi_PostApocSurv": {
+        "query": "post apocalyptic survival crafting",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "The Forest"
+        ],
+        "latency": 0.09624099731445312,
+        "bm25_latency": 0.04599452018737793
+    },
+    "Vague_Scary": {
+        "query": "something scary",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Dead by Daylight",
+            "Haunted House\u2122 (2010)",
+            "Ghost Master\u00ae",
+            "Alpha Prime"
+        ],
+        "latency": 0.056052446365356445,
+        "bm25_latency": 0.025498628616333008
+    },
+    "Vague_Friends": {
+        "query": "something fun with friends",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Dota 2",
+            "Forza Horizon 5"
+        ],
+        "latency": 0.0740194320678711,
+        "bm25_latency": 0.0324554443359375
+    },
+    "Vague_Story": {
+        "query": "good story game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Return of the Obra Dinn",
+            "Bloody Good Time",
+            "Postal III",
+            "Nothing Good Can Come Of This"
+        ],
+        "latency": 0.0414278507232666,
+        "bm25_latency": 0.016880512237548828
+    },
+    "Vague_OpenWorld": {
+        "query": "open world game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Forza Horizon 5",
+            "Subnautica",
+            "Forza Horizon 4",
+            "Jade Empire\u2122: Special Edition"
+        ],
+        "latency": 0.04296135902404785,
+        "bm25_latency": 0.016591310501098633
+    },
+    "Vague_Survival": {
+        "query": "survival game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Subnautica",
+            "Lost Planet\u2122: Extreme Condition",
+            "Don't Starve",
+            "Frostpunk"
+        ],
+        "latency": 0.03822755813598633,
+        "bm25_latency": 0.013635635375976562
+    },
+    "Vague_Action": {
+        "query": "action game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Full Spectrum Warrior: Ten Hammers",
+            "Shadowgrounds",
+            "ARMORED CORE\u2122 VI FIRES OF RUBICON\u2122",
+            "Call of Duty\u00ae: Modern Warfare\u00ae 2 (2009)"
+        ],
+        "latency": 0.041834115982055664,
+        "bm25_latency": 0.014271020889282227
+    },
+    "Vague_Strategy": {
+        "query": "strategy game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Space Empires IV Deluxe",
+            "Disciples II: Gallean's Return",
+            "Dangerous Waters",
+            "X3: Reunion"
+        ],
+        "latency": 0.05199146270751953,
+        "bm25_latency": 0.01647329330444336
+    },
+    "Vague_Shooter": {
+        "query": "good shooter",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Return of the Obra Dinn",
+            "Bloody Good Time",
+            "Postal III",
+            "Nothing Good Can Come Of This"
+        ],
+        "latency": 0.057203054428100586,
+        "bm25_latency": 0.022798776626586914
+    },
+    "Vague_Relaxing": {
+        "query": "relaxing game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "Zen of Sudoku",
+            "STAR WARS\u2122: The Old Republic\u2122"
+        ],
+        "latency": 0.03705239295959473,
+        "bm25_latency": 0.01927018165588379
+    },
+    "Vague_Coop": {
+        "query": "coop game",
+        "target": null,
+        "target_retrieved": null,
+        "target_candidate_rank": null,
+        "target_final_rank": null,
+        "top_10": [
+            "DOOM + DOOM II",
+            "Among Us",
+            "DEFCON",
+            "Multiwinia"
+        ],
+        "latency": 0.028959989547729492,
+        "bm25_latency": 0.008156538009643555
+    },
+    "_metrics": {
+        "avg_latency": 0.09206852614879608,
+        "avg_bm25_latency": 0.03956339359283447,
+        "p95_latency": 0.17193126678466797,
+        "total_time": 7.3654820919036865,
+        "total_queries": 80
+    }
+}

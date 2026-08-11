@@ -1,3 +1,6 @@
+import re
+import json
+import os
 import difflib
 
 import pandas as pd
@@ -57,7 +60,9 @@ ignore_words = [
 
 
 def create_master_search(row):
-    combined_text = str(row["Title"]) + " " + str(row["Description"]) + " " + str(row["Tags"])
+    # Weight search metadata higher by including it twice
+    search_meta = str(row.get("Search_Metadata", ""))
+    combined_text = str(row["Title"]) + " " + str(row["Description"]) + " " + str(row["Tags"]) + " " + search_meta + " " + search_meta
     return " ".join([stemmer.stem(word.strip(",.!?-")) for word in combined_text.lower().split()])
 
 
@@ -67,6 +72,22 @@ def _load_dataset():
     that the BM25 search engine and compatibility engine expect."""
     steam_games = load_database()
     adapted_records = adapt_all_games(steam_games)
+    
+    # Phase 2: Load search metadata
+    metadata_path = os.path.join(os.path.dirname(__file__), "..", "data", "search_metadata.json")
+    search_meta = {}
+    if os.path.exists(metadata_path):
+        with open(metadata_path, "r", encoding="utf-8") as f:
+            search_meta = json.load(f)
+            
+    for rec in adapted_records:
+        title = rec.get("Title")
+        # Join concepts into a single string if metadata exists
+        if title in search_meta:
+            rec["Search_Metadata"] = " ".join(search_meta[title])
+        else:
+            rec["Search_Metadata"] = ""
+            
     dataframe = pd.DataFrame(adapted_records)
     dataframe["Master_Search"] = dataframe.apply(create_master_search, axis=1)
     return dataframe
@@ -80,6 +101,8 @@ def _build_vocabulary(dataframe):
         + dataframe["Description"].astype(str)
         + " "
         + dataframe["Tags"].astype(str)
+        + " "
+        + dataframe.get("Search_Metadata", pd.Series([""] * len(dataframe))).astype(str)
     ).str.lower()
 
     for sentence in all_text:
@@ -108,7 +131,22 @@ def auto_correct(word):
     return matches[0] if matches else word
 
 
+# Phase 4: Game Acronym Expansion
+_game_aliases = {}
+_aliases_path = os.path.join(os.path.dirname(__file__), "..", "data", "game_aliases.json")
+if os.path.exists(_aliases_path):
+    with open(_aliases_path, "r", encoding="utf-8") as f:
+        _game_aliases = json.load(f)
+
+def expand_game_aliases(user_input):
+    expanded = user_input
+    for alias, canonical in _game_aliases.items():
+        pattern = r'\b' + re.escape(alias) + r'\b'
+        expanded = re.sub(pattern, lambda m: f"{m.group(0)} {canonical}", expanded, flags=re.IGNORECASE)
+    return expanded
+
 def clean_and_expand_input(user_input):
+    user_input = expand_game_aliases(user_input)
     final_keywords = []
 
     for word in user_input.lower().split():
@@ -186,6 +224,73 @@ def _empty_response(message):
     }
 
 
+
+def extract_query_constraints(cleaned_query):
+    constraints = []
+    for word in cleaned_query.split():
+        idf = bm25_index.idf.get(word, 0)
+        constraints.append({'word': word, 'idf': idf})
+    return constraints
+
+def rerank_candidates(vibe_results, cleaned_query):
+    if vibe_results.empty:
+        return vibe_results
+
+    constraints = extract_query_constraints(cleaned_query)
+    
+    # Classify terms
+    # High: IDF > 3.0 (appears in < ~20 games out of 500)
+    # Medium: 1.5 < IDF <= 3.0 (appears in 20-100 games)
+    # Low: IDF <= 1.5 (appears in > 100 games)
+    high_value_terms = [c['word'] for c in constraints if c['idf'] > 3.0]
+    medium_value_terms = [c['word'] for c in constraints if 1.5 < c['idf'] <= 3.0]
+    
+    max_bm25 = vibe_results["Vibe_Score"].max()
+    if max_bm25 == 0:
+        max_bm25 = 1.0
+
+    def calculate_new_score(row):
+        # 1. Normalize BM25
+        base_score = row["Vibe_Score"] / max_bm25
+        
+        master_search = str(row["Master_Search"]).lower()
+        search_words = set(master_search.split())
+        
+        match_count = 0
+        bonus = 0
+        penalty = 0
+        
+        # 2. Check high value terms
+        for term in high_value_terms:
+            if term in search_words:
+                match_count += 1
+                bonus += 0.4
+            else:
+                penalty += 0.2
+                
+        # 3. Check medium value terms
+        for term in medium_value_terms:
+            if term in search_words:
+                match_count += 0.5
+                bonus += 0.15
+                
+        # 4. Multi-constraint synergy
+        if match_count > 1:
+            bonus *= (match_count * 0.7)
+            
+        final_score = base_score + bonus - penalty
+        return max(0.0, final_score)
+
+    vibe_results["Rerank_Score"] = vibe_results.apply(calculate_new_score, axis=1)
+    
+    # Re-sort by the new score
+    reranked = vibe_results.sort_values("Rerank_Score", ascending=False)
+    
+    # Overwrite Vibe_Score so the rest of the engine behaves normally
+    reranked["Vibe_Score"] = reranked["Rerank_Score"]
+    
+    return reranked
+
 def recommend_game(user_input, budget, gpu_name, ram,
                    cpu_name=None, storage_gb=None, gpu_tier=None):
     # ── Backward Compatibility ──
@@ -228,19 +333,24 @@ def recommend_game(user_input, budget, gpu_name, ram,
         cpu_benchmark_score = cpu_res.get("benchmark_score")
 
     cleaned_vibe = clean_and_expand_input(user_input)
-    vibe_results = run_vibe_check(cleaned_vibe, top_n=len(df))
+    # 1. Retrieve a larger candidate pool
+    vibe_results = run_vibe_check(cleaned_vibe, top_n=50)
 
     if vibe_results.empty or vibe_results.iloc[0]["Vibe_Score"] == 0:
         return _empty_response("No games match that vibe.")
 
-    top_score = vibe_results.iloc[0]["Vibe_Score"]
-    # Tighter threshold — alternatives must be at least 45% as relevant as the best match
-    dynamic_threshold = top_score * 0.45
-    vibe_passed = vibe_results[vibe_results["Vibe_Score"] >= dynamic_threshold]
+    # 2. Intent-Aware Reranking
+    vibe_results = rerank_candidates(vibe_results, cleaned_vibe)
 
-    wallet_passed = vibe_passed[vibe_passed["Price_INR"] <= budget]
-    if wallet_passed.empty:
+    # 3. Filter by Budget First
+    affordable_candidates = vibe_results[vibe_results["Price_INR"] <= budget]
+    if affordable_candidates.empty:
         return _empty_response("Games found, but they are out of your budget.")
+
+    # 4. Apply Threshold on new Rerank_Score (using affordable top score)
+    top_score = affordable_candidates.iloc[0]["Vibe_Score"]
+    dynamic_threshold = top_score * 0.45
+    wallet_passed = affordable_candidates[affordable_candidates["Vibe_Score"] >= dynamic_threshold]
 
     # ── Compatibility Evaluation ─────────────────────────────────────────
     # Evaluate ALL vibe+budget candidates through the compatibility engine.
@@ -288,6 +398,26 @@ def recommend_game(user_input, budget, gpu_name, ram,
         compat_result["confidence"] = conf
 
         evaluated_games.append(compat_result)
+        # Check if this game is PAYDAY 2 or Slay the Spire for debug logging
+        if title in ["PAYDAY 2", "Slay the Spire"]:
+            from .debug_logger import log_debug_info
+            # Since steam API returns prices natively in INR and our budget is natively INR, 
+            # normalized price/budget are the same.
+            price = int(row["Price_INR"])
+            log_debug_info(
+                game=title,
+                game_price=price,
+                price_type="final",
+                price_currency="INR",
+                user_budget=budget,
+                normalized_price=price,
+                normalized_budget=budget,
+                price_lte_budget=price <= budget,
+                compatibility=f"{compat_result['compatibility_pct']}%",
+                final_eligible=True # It made it this far
+            )
+
+        # Budget Score: closer to 0 is better (cheaper relative to budget)
         vibe_score_map[title] = vibe_sc
         budget_score_map[title] = max(0, 1.0 - (int(row["Price_INR"]) / max(budget, 1)))
 

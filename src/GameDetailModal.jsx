@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, useMemo, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Play, Cpu, Monitor, Download, HardDrive, Gamepad2, ArrowRight, Loader2 } from "lucide-react";
 import { fetchGame, searchGames } from "./services/gameService.js";
+import Hls from "hls.js";
 
 /**
  * GameDetailModal — Cinematic game detail overlay.
@@ -45,6 +46,61 @@ const modalVariants = {
     transition: { duration: 0.2, ease: "easeIn" },
   },
 };
+
+/**
+ * TrailerPlayer — Handles Steam trailer playback.
+ *
+ * Steam now uses adaptive streaming (HLS/DASH) instead of direct mp4/webm.
+ * Priority: hls_h264 (via HLS.js) → legacy mp4/webm direct playback.
+ */
+function TrailerPlayer({ trailer }) {
+  const videoRef = React.useRef(null);
+  const hlsRef = React.useRef(null);
+
+  React.useEffect(() => {
+    const video = videoRef.current;
+    if (!video || !trailer) return;
+
+    // Determine the best available source
+    const hlsUrl = trailer.hls_h264;
+    const directUrl = trailer.mp4_max || trailer.webm_max || trailer.mp4_480 || trailer.webm_480;
+
+    if (hlsUrl && Hls.isSupported()) {
+      // Use HLS.js for adaptive streaming
+      const hls = new Hls({
+        maxBufferLength: 30,
+        maxMaxBufferLength: 60,
+      });
+      hlsRef.current = hls;
+      hls.loadSource(hlsUrl);
+      hls.attachMedia(video);
+    } else if (hlsUrl && video.canPlayType("application/vnd.apple.mpegurl")) {
+      // Safari has native HLS support
+      video.src = hlsUrl;
+    } else if (directUrl) {
+      // Legacy fallback — direct mp4/webm URL
+      video.src = directUrl;
+    }
+
+    return () => {
+      // Clean up HLS instance on unmount
+      if (hlsRef.current) {
+        hlsRef.current.destroy();
+        hlsRef.current = null;
+      }
+    };
+  }, [trailer]);
+
+  return (
+    <video
+      ref={videoRef}
+      poster={trailer?.thumbnail}
+      controls
+      className="h-full w-full object-cover"
+      playsInline
+    />
+  );
+}
 
 function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
   const [detailedGame, setDetailedGame] = useState(null);
@@ -594,12 +650,7 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                     <h3 className="mb-4 text-sm font-bold text-slate-400">Game Trailer</h3>
                     <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-slate-800 bg-slate-950 flex flex-col items-center justify-center text-slate-500">
                       {detailedGame.trailers && detailedGame.trailers.length > 0 ? (
-                        <video
-                          src={detailedGame.trailers[0].webm?.max || detailedGame.trailers[0].webm?.['480'] || detailedGame.trailers[0].mp4?.max}
-                          poster={detailedGame.trailers[0].thumbnail}
-                          controls
-                          className="h-full w-full object-cover"
-                        />
+                        <TrailerPlayer trailer={detailedGame.trailers[0]} />
                       ) : (
                         <>
                           <Play className="mb-2 h-8 w-8 opacity-20" />

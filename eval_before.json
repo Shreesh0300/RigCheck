@@ -1,0 +1,154 @@
+{
+    "RDR2_Long": {
+        "query": "I\u2019m looking for a realistic open world western adventure set in the late 1800s. I want to play as a cowboy, ride horses across towns and wilderness, rob trains, hunt wildlife, complete story-driven missions, and experience an immersive frontier with gunslinging, outlaws, sheriffs, and a rich cinematic narrative.",
+        "top_5": [
+            "Metro Exodus",
+            "Destiny 2",
+            "Resident Evil 2",
+            "Hogwarts Legacy"
+        ],
+        "latency": 0.6080479621887207
+    },
+    "RDR2_Short": {
+        "query": "western cowboy open world",
+        "top_5": [
+            "Total War: MEDIEVAL II \u2013 Definitive Edition",
+            "Frontlines\u2122: Fuel of War\u2122",
+            "Call of Juarez",
+            "Codename: Panzers - Cold War"
+        ],
+        "latency": 0.0788881778717041
+    },
+    "Submarine_WW2": {
+        "query": "WWII submarine simulator",
+        "top_5": [
+            "Barotrauma",
+            "688(I) Hunter/Killer",
+            "PT Boats: South Gambit",
+            "Sub Command"
+        ],
+        "latency": 0.0551145076751709
+    },
+    "Zombies_Coop": {
+        "query": "co-op zombie survival",
+        "top_5": [
+            "7 Days to Die",
+            "Stubbs the Zombie in Rebel Without a Pulse",
+            "Dying Light",
+            "Dying Light 2 Stay Human: Reloaded Edition"
+        ],
+        "latency": 0.058214426040649414
+    },
+    "Zombies_Horror": {
+        "query": "survival horror game with zombies",
+        "top_5": [
+            "7 Days to Die",
+            "Resident Evil 2",
+            "Left 4 Dead",
+            "Left 4 Dead 2"
+        ],
+        "latency": 0.06120705604553223
+    },
+    "Racing_Realistic": {
+        "query": "open world realistic racing game",
+        "top_5": [
+            "Forza Horizon 4",
+            "Xpand Rally",
+            "Trailmakers",
+            "X3: Terran Conflict"
+        ],
+        "latency": 0.08835077285766602
+    },
+    "Stealth_Ninja": {
+        "query": "stealth game set in feudal Japan",
+        "top_5": [
+            "Dark Messiah of Might & Magic",
+            "Tom Clancy\u2019s Splinter Cell Blacklist",
+            "Persona\u00ae 5 Strikers",
+            "Hitman: Codename 47"
+        ],
+        "latency": 0.08707046508789062
+    },
+    "Space_Trading": {
+        "query": "space exploration game with trading",
+        "top_5": [
+            "Space Empires V",
+            "X3: Reunion",
+            "EVE Online",
+            "Antichamber"
+        ],
+        "latency": 0.06316804885864258
+    },
+    "Survival_Crafting": {
+        "query": "open world survival game with crafting",
+        "top_5": [
+            "Dying Light",
+            "Valheim",
+            "Don't Starve",
+            "Subnautica"
+        ],
+        "latency": 0.07535910606384277
+    },
+    "RPG_Fantasy": {
+        "query": "story driven fantasy RPG",
+        "top_5": [
+            "FINAL FANTASY XIV Online",
+            "RimWorld",
+            "Arx Fatalis",
+            "The Elder Scrolls V: Skyrim"
+        ],
+        "latency": 0.07351350784301758
+    },
+    "Combat_Sword": {
+        "query": "open world game with sword combat",
+        "top_5": [
+            "Civilization IV: Beyond the Sword",
+            "Dark Messiah of Might & Magic",
+            "Dying Light 2 Stay Human: Reloaded Edition",
+            "PT Boats: South Gambit"
+        ],
+        "latency": 0.06741642951965332
+    },
+    "City_Builder": {
+        "query": "strategy game about building a city",
+        "top_5": [
+            "CivCity: Rome",
+            "Cities: Skylines",
+            "City Life 2008",
+            "Cities: Skylines II"
+        ],
+        "latency": 0.06334614753723145
+    },
+    "Heist_Coop": {
+        "query": "co-op bank heist shooter",
+        "top_5": [
+            "Mystery P.I.\u2122 - The Vegas Heist",
+            "PAYDAY 3",
+            "Grand Theft Auto V Legacy",
+            "RAGE"
+        ],
+        "latency": 0.0857384204864502
+    },
+    "Rogue_Deckbuilder": {
+        "query": "roguelike deckbuilder with cards",
+        "top_5": [
+            "Balatro",
+            "Slay the Spire"
+        ],
+        "latency": 0.05707192420959473
+    },
+    "Factory_Automation": {
+        "query": "first person factory building automation",
+        "top_5": [
+            "Factorio",
+            "Dyson Sphere Program",
+            "Satisfactory",
+            "The Forest"
+        ],
+        "latency": 0.1293032169342041
+    },
+    "_metrics": {
+        "avg_latency": 0.11012067794799804,
+        "total_time": 1.6518101692199707
+    }
+}

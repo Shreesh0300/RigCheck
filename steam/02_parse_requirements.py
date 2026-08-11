@@ -88,13 +88,26 @@ def main():
             }
         }
 
-        # Trailers extraction
+        # Trailers extraction — supports both new adaptive streaming and legacy formats
         for movie in data.get("movies", []):
-            game["trailers"].append({
+            mp4_data = movie.get("mp4")
+            webm_data = movie.get("webm")
+            trailer = {
                 "movie_id": movie.get("id"),
-                "mp4_max": movie.get("mp4", {}).get("max"),
-                "thumbnail": movie.get("thumbnail")
-            })
+                "name": movie.get("name"),
+                "thumbnail": movie.get("thumbnail"),
+                "highlight": movie.get("highlight", False),
+                # New adaptive streaming formats (priority order)
+                "dash_h264": movie.get("dash_h264"),
+                "hls_h264": movie.get("hls_h264"),
+                "dash_av1": movie.get("dash_av1"),
+                # Legacy fallback formats
+                "mp4_max": mp4_data.get("max") if isinstance(mp4_data, dict) else None,
+                "mp4_480": mp4_data.get("480") if isinstance(mp4_data, dict) else None,
+                "webm_max": webm_data.get("max") if isinstance(webm_data, dict) else None,
+                "webm_480": webm_data.get("480") if isinstance(webm_data, dict) else None,
+            }
+            game["trailers"].append(trailer)
             
         # Price overview extraction
         price_data = data.get("price_overview")

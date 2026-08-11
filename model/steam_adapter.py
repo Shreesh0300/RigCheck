@@ -87,19 +87,19 @@ def _extract_price_inr(game: dict[str, Any]) -> int:
     Steam stores prices in the smallest currency unit (paise for INR),
     so 299900 = ₹2999.  Free-to-play games have is_free=True.
 
-    Returns 0 for free games or when price data is missing.
+    # Returns 99999 for non-free games with missing price data to prevent them from bypassing budget checks.
     """
     if game.get("is_free"):
         return 0
 
     price_overview = game.get("price_overview")
     if not price_overview:
-        return 0
+        return 99999
 
-    # Use 'initial' (base price before discount) for budget comparison
-    raw_price = price_overview.get("initial")
+    # Use 'final' (current discounted price) for realistic budget comparison
+    raw_price = price_overview.get("final")
     if raw_price is None:
-        return 0
+        return 99999
 
     # Steam prices are in paise (1/100 of a rupee) for INR
     # e.g., 299900 paise = ₹2999

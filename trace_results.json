@@ -1,0 +1,103 @@
+{
+    "payday2": {
+        "recommended_game": "Tom Clancy's Rainbow Six Siege",
+        "confidence": 43,
+        "description": "Tom Clancy's Rainbow Six Siege is an elite, tactical team-based shooter where superior planning and execution triumph.",
+        "hardware_advice": "ULTRA: You can max out every setting. Enjoy the eye-candy!",
+        "matched_keywords": [
+            "co-op",
+            "shooter",
+            "plan",
+            "execut"
+        ],
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/dbd0c4a94a49fa7a1a2ee3b1426592334c195f88/header_alt_assets_24.jpg?t=1786117431",
+        "alternative_games": [
+            {
+                "title": "Dangerous Waters",
+                "price_inr": 479,
+                "description": "S.C.S. - Dangerous Waters allows you total control over multiple air, surface, and submarine platforms in a modern-day naval environment. Take direct control of individual crew stations and also plan and execute combined arms naval strategies from a top-down 'Commanders Eye' perspective.",
+                "tags": [
+                    "Strategy",
+                    "Single-player",
+                    "Multi-player",
+                    "Family Sharing",
+                    "Sonalysts"
+                ],
+                "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1600/header.jpg?t=1759951459",
+                "confidence": 37,
+                "store_url": "https://store.steampowered.com/app/1600",
+                "compatibility": {
+                    "compatibility_pct": 98,
+                    "gpu": {
+                        "status": "PASS",
+                        "label": "Excellent",
+                        "sub_score": 100.0,
+                        "detail": "GPU Tier 4 vs required Tier 1 (recommended Tier 1)"
+                    },
+                    "cpu": {
+                        "status": "PASS",
+                        "label": "Excellent",
+                        "sub_score": 100.0,
+                        "detail": "CPU 'AMD Ryzen 9 9950X3D' (score: 46195) vs required Tier 1 (recommended Tier 1)"
+                    },
+                    "ram": {
+                        "status": "PASS",
+                        "label": "Enough",
+                        "sub_score": 90.0,
+                        "detail": "8GB available, 2GB required."
+                    },
+                    "storage": {
+                        "status": "PASS",
+                        "label": "Enough",
+                        "sub_score": 100.0,
+                        "detail": "\u2705 Enough storage"
+                    },
+                    "estimated_fps": 120,
+                    "expected_settings": "Ultra",
+                    "reduction_reasons": []
+                }
+            }
+        ],
+        "store_url": "https://store.steampowered.com/app/359550",
+        "price_inr": 0,
+        "compatibility": {
+            "compatibility_pct": 98,
+            "gpu": {
+                "status": "PASS",
+                "label": "Excellent",
+                "sub_score": 100.0,
+                "detail": "GPU Tier 4 vs required Tier 1 (recommended Tier 1)"
+            },
+            "cpu": {
+                "status": "PASS",
+                "label": "Excellent",
+                "sub_score": 100.0,
+                "detail": "CPU 'AMD Ryzen 9 9950X3D' (score: 46195) vs required Tier 1 (recommended Tier 1)"
+            },
+            "ram": {
+                "status": "PASS",
+                "label": "Enough",
+                "sub_score": 90.0,
+                "detail": "8GB available, 2GB required."
+            },
+            "storage": {
+                "status": "PASS",
+                "label": "Enough",
+                "sub_score": 100.0,
+                "detail": "\u2705 Enough storage"
+            },
+            "estimated_fps": 120,
+            "expected_settings": "Ultra",
+            "reduction_reasons": []
+        }
+    },
+    "sts": {
+        "recommended_game": "",
+        "confidence": 0,
+        "description": "Games found, but they are out of your budget.",
+        "hardware_advice": "",
+        "matched_keywords": [],
+        "alternative_games": [],
+        "store_url": ""
+    }
+}
