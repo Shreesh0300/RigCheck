@@ -277,6 +277,7 @@ export default function RigCheckDashboard({ onGameClick }) {
   /* ── Result State (populated from the backend response) ── */
   const [result, setResult] = useState(null);    // full API response object
   const [error, setError] = useState(null);       // error message string
+  const resultsRef = React.useRef(null);          // reference to scroll to results
 
   /* ── Call the FastAPI backend ── */
   const runDiagnostics = useCallback(async () => {
@@ -324,6 +325,12 @@ export default function RigCheckDashboard({ onGameClick }) {
       setError(err.message || "Could not reach the RigCheck backend.");
     } finally {
       setIsLoading(false);
+      // Wait for React to render the result/error, then smoothly scroll to it
+      setTimeout(() => {
+        if (resultsRef.current) {
+          resultsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
     }
   }, [vibeQuery, maxBudget, gpuModel, ramSize, cpuModel, freeStorage]);
 
@@ -362,6 +369,14 @@ export default function RigCheckDashboard({ onGameClick }) {
               <textarea
                 value={vibeQuery}
                 onChange={(e) => setVibeQuery(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" && !e.shiftKey) {
+                    e.preventDefault();
+                    if (!isLoading && vibeQuery.trim()) {
+                      runDiagnostics();
+                    }
+                  }
+                }}
                 rows={3}
                 className="w-full resize-none rounded-lg border border-slate-800 bg-slate-900/60 px-3.5 py-3 text-sm leading-relaxed text-slate-100 outline-none transition placeholder:text-slate-600 focus:border-cyan-400/60 focus:shadow-[0_0_0_3px_rgba(34,211,238,0.07)]"
                 placeholder="Tell RigCheck what you want to play..."
@@ -474,7 +489,7 @@ export default function RigCheckDashboard({ onGameClick }) {
         </aside>
 
         {/* ───────── RIGHT PANEL (Results) ───────── */}
-        <section className="flex-1 overflow-y-auto bg-[radial-gradient(circle_at_50%_0%,rgba(14,165,233,0.06),transparent_36%),radial-gradient(circle_at_70%_55%,rgba(124,58,237,0.06),transparent_28%),#02040a] p-5 sm:p-6 lg:p-7">
+        <section ref={resultsRef} className="flex-1 overflow-y-auto bg-[radial-gradient(circle_at_50%_0%,rgba(14,165,233,0.06),transparent_36%),radial-gradient(circle_at_70%_55%,rgba(124,58,237,0.06),transparent_28%),#02040a] p-5 sm:p-6 lg:p-7">
           {/* Header */}
           <div className="mb-5 flex items-center gap-2.5">
             <div className="grid h-7 w-7 place-items-center rounded-lg border border-violet-400/20 bg-violet-500/15 shadow-[0_0_18px_rgba(139,92,246,0.2)]">

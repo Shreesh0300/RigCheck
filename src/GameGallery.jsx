@@ -71,7 +71,7 @@ function GameGallery({ onGenreHover, selectedGenre, searchQuery, onClearGenre, o
     
     async function loadGames() {
       setIsLoading(true);
-      const data = await fetchGames(500, 0);
+      const data = await fetchGames(1000, 0);
       
       if (!mounted) return;
 

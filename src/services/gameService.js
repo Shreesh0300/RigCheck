@@ -12,7 +12,7 @@ const API_BASE_URL = "";
  * @param {number} offset
  * @returns {Promise<Array>} Array of game objects.
  */
-export async function fetchGames(limit = 500, offset = 0) {
+export async function fetchGames(limit = 1000, offset = 0) {
   try {
     const response = await fetch(`${API_BASE_URL}/games?limit=${limit}&offset=${offset}`);
     if (!response.ok) throw new Error("Failed to fetch games");

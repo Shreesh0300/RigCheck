@@ -504,16 +504,24 @@ def rank_games(evaluated_games: list[dict],
 
     for game in evaluated_games:
         title = game["title"]
-        game["vibe_score"] = vibe_scores.get(title, 0.0)
+        raw_vibe = vibe_scores.get(title, 0.0)
+        
+        game["vibe_score"] = raw_vibe
         game["budget_score"] = budget_scores.get(title, 0.0)
+        
+        # Calculate Final Score additively without squashing Vibe.
+        # Vibe Score (typically 1.0 to 3.0+) represents intent.
+        # Compatibility is scaled to max 0.5 points.
+        # Budget is scaled to max 0.2 points.
+        # This guarantees Semantic Relevance > Hardware > Price
+        compat_score = game["compatibility_pct"] / 100.0
+        final_score = raw_vibe + (compat_score * 0.5) + (game["budget_score"] * 0.2)
+        
+        game["final_score"] = final_score
 
-    # Sort: compatibility first, then vibe, then budget (all descending)
+    # Sort by final weighted score (descending)
     evaluated_games.sort(
-        key=lambda g: (
-            g["compatibility_pct"],
-            g["vibe_score"],
-            g["budget_score"],
-        ),
+        key=lambda g: g["final_score"],
         reverse=True,
     )
 

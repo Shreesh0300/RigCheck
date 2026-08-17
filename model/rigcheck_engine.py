@@ -56,6 +56,82 @@ ignore_words = [
     "players",
     "you",
     "your",
+    "my",
+    "me",
+    "we",
+    "us",
+    "our",
+    "they",
+    "them",
+    "he",
+    "she",
+    "it",
+    "am",
+    "is",
+    "are",
+    "was",
+    "were",
+    "be",
+    "been",
+    "being",
+    "have",
+    "has",
+    "had",
+    "do",
+    "does",
+    "did",
+    "will",
+    "would",
+    "shall",
+    "should",
+    "can",
+    "could",
+    "may",
+    "might",
+    "must",
+    "but",
+    "if",
+    "or",
+    "because",
+    "as",
+    "until",
+    "of",
+    "at",
+    "by",
+    "on",
+    "off",
+    "then",
+    "once",
+    "here",
+    "there",
+    "when",
+    "where",
+    "why",
+    "how",
+    "all",
+    "any",
+    "both",
+    "each",
+    "few",
+    "more",
+    "most",
+    "other",
+    "some",
+    "such",
+    "no",
+    "nor",
+    "not",
+    "only",
+    "own",
+    "same",
+    "so",
+    "than",
+    "too",
+    "very",
+    "s",
+    "t",
+    "just",
+    "now"
 ]
 
 
@@ -145,6 +221,21 @@ def expand_game_aliases(user_input):
         expanded = re.sub(pattern, lambda m: f"{m.group(0)} {canonical}", expanded, flags=re.IGNORECASE)
     return expanded
 
+_concept_synonyms = {
+    "heist": "heist crime robbery",
+    "heists": "heist crime robbery",
+    "robbery": "robbery heist crime",
+    "robberies": "robbery heist crime",
+    "friends": "friend co-op multiplayer",
+    "friend": "friend co-op multiplayer",
+    "sneak": "sneak stealth",
+    "sneaking": "sneak stealth",
+    "ship": "ship naval",
+    "ships": "ship naval",
+    "submarine": "submarine naval",
+    "submarines": "submarine naval",
+}
+
 def clean_and_expand_input(user_input):
     user_input = expand_game_aliases(user_input)
     final_keywords = []
@@ -153,10 +244,18 @@ def clean_and_expand_input(user_input):
         clean_word = word.strip(",.!?-")
         if clean_word and clean_word not in ignore_words:
             corrected_word = auto_correct(clean_word)
-            stemmed_word = stemmer.stem(corrected_word)
-
-            if stemmed_word not in final_keywords:
-                final_keywords.append(stemmed_word)
+            
+            # Apply general concept expansion
+            if corrected_word in _concept_synonyms:
+                expanded_words = _concept_synonyms[corrected_word].split()
+                for ew in expanded_words:
+                    stemmed_ew = stemmer.stem(ew)
+                    if stemmed_ew not in final_keywords:
+                        final_keywords.append(stemmed_ew)
+            else:
+                stemmed_word = stemmer.stem(corrected_word)
+                if stemmed_word not in final_keywords:
+                    final_keywords.append(stemmed_word)
 
     return " ".join(final_keywords)
 
@@ -238,48 +337,29 @@ def rerank_candidates(vibe_results, cleaned_query):
 
     constraints = extract_query_constraints(cleaned_query)
     
-    # Classify terms
-    # High: IDF > 3.0 (appears in < ~20 games out of 500)
-    # Medium: 1.5 < IDF <= 3.0 (appears in 20-100 games)
-    # Low: IDF <= 1.5 (appears in > 100 games)
-    high_value_terms = [c['word'] for c in constraints if c['idf'] > 3.0]
-    medium_value_terms = [c['word'] for c in constraints if 1.5 < c['idf'] <= 3.0]
-    
-    max_bm25 = vibe_results["Vibe_Score"].max()
-    if max_bm25 == 0:
-        max_bm25 = 1.0
-
     def calculate_new_score(row):
-        # 1. Normalize BM25
-        base_score = row["Vibe_Score"] / max_bm25
+        # 1. Use raw BM25 score instead of squashing it to 1.0
+        # Normalizing to 1.0 destroyed the TF-IDF weighting and allowed the raw word-count bonus to dominate.
+        base_score = row["Vibe_Score"]
         
         master_search = str(row["Master_Search"]).lower()
-        search_words = set(master_search.split())
+        search_words = master_search.split()
         
-        match_count = 0
-        bonus = 0
-        penalty = 0
+        bonus = 0.0
         
-        # 2. Check high value terms
-        for term in high_value_terms:
-            if term in search_words:
-                match_count += 1
-                bonus += 0.4
-            else:
-                penalty += 0.2
+        # 2. Add continuous IDF-weighted bonuses (no negative penalties)
+        for c in constraints:
+            word = c['word']
+            idf = c['idf']
+            tf = search_words.count(word)
+            if tf > 0:
+                capped_tf = min(tf, 3)
+                # Base weight: A word with IDF 5 gives 0.5 bonus per occurrence
+                term_weight = (idf / 10.0) * capped_tf
+                bonus += term_weight
                 
-        # 3. Check medium value terms
-        for term in medium_value_terms:
-            if term in search_words:
-                match_count += 0.5
-                bonus += 0.15
-                
-        # 4. Multi-constraint synergy
-        if match_count > 1:
-            bonus *= (match_count * 0.7)
-            
-        final_score = base_score + bonus - penalty
-        return max(0.0, final_score)
+        final_score = base_score + bonus
+        return final_score
 
     vibe_results["Rerank_Score"] = vibe_results.apply(calculate_new_score, axis=1)
     
@@ -349,7 +429,7 @@ def recommend_game(user_input, budget, gpu_name, ram,
 
     # 4. Apply Threshold on new Rerank_Score (using affordable top score)
     top_score = affordable_candidates.iloc[0]["Vibe_Score"]
-    dynamic_threshold = top_score * 0.45
+    dynamic_threshold = top_score * 0.10
     wallet_passed = affordable_candidates[affordable_candidates["Vibe_Score"] >= dynamic_threshold]
 
     # ── Compatibility Evaluation ─────────────────────────────────────────
