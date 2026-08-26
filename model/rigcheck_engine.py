@@ -10,6 +10,7 @@ from rank_bm25 import BM25Okapi
 from model.compatibility_engine import evaluate_game, rank_games
 from model.steam_database import load_database
 from model.steam_adapter import adapt_all_games
+from model.concept_engine import extract_game_concepts, extract_query_concepts
 
 # Core NLP + recommendation logic belongs here so the API layer stays thin and reusable.
 # This separation makes the system easier to test, evolve, and reuse from scripts or APIs.
@@ -165,29 +166,20 @@ def _load_dataset():
             rec["Search_Metadata"] = ""
             
     dataframe = pd.DataFrame(adapted_records)
+    dataframe["Concepts"] = dataframe.apply(extract_game_concepts, axis=1)
     dataframe["Master_Search"] = dataframe.apply(create_master_search, axis=1)
     return dataframe
 
 
-def _build_vocabulary(dataframe):
-    vocabulary = set()
-    all_text = (
-        dataframe["Title"].astype(str)
-        + " "
-        + dataframe["Description"].astype(str)
-        + " "
-        + dataframe["Tags"].astype(str)
-        + " "
-        + dataframe.get("Search_Metadata", pd.Series([""] * len(dataframe))).astype(str)
-    ).str.lower()
-
-    for sentence in all_text:
-        for word in sentence.split():
+def _build_game_vocab(dataframe):
+    game_vocab = set()
+    all_titles = dataframe["Title"].astype(str).str.lower()
+    for title in all_titles:
+        for word in title.split():
             clean_word = word.strip(",.!?-")
             if clean_word:
-                vocabulary.add(clean_word)
-
-    return vocabulary
+                game_vocab.add(clean_word)
+    return game_vocab
 
 
 def _build_bm25_index(dataframe):
@@ -195,15 +187,36 @@ def _build_bm25_index(dataframe):
     return BM25Okapi(tokenized_corpus)
 
 
+import nltk
+def _initialize_english_vocab():
+    try:
+        nltk.data.find('corpora/words.zip')
+    except LookupError:
+        nltk.download('words', quiet=True)
+    from nltk.corpus import words
+    
+    eng_vocab = set(word.lower() for word in words.words())
+    # Add gaming terms and all concepts
+    from model.concept_engine import CONCEPT_VOCAB
+    gaming_terms = {"pc", "fps", "rpg", "co-op", "coop", "multiplayer", "game", "games", "friends", "friend", "characters", "bosses", "zombies", "zombie", "heists", "heist", "robberies", "robbery", "casual", "competitive", "story"}
+    eng_vocab.update(gaming_terms)
+    for concept in CONCEPT_VOCAB:
+        for word in concept.split("-"):
+            eng_vocab.add(word)
+    return eng_vocab
+
+
 df = _load_dataset()
-vocabulary = _build_vocabulary(df)
-vocabulary_list = list(vocabulary)
+game_vocab_list = list(_build_game_vocab(df))
+exact_titles = {str(t).lower() for t in df["Title"]}
+english_vocab = _initialize_english_vocab()
 bm25_index = _build_bm25_index(df)
 
 
 def auto_correct(word):
-    # Checks against your dynamically generated dataset vocabulary.
-    matches = difflib.get_close_matches(word, vocabulary_list, n=1, cutoff=0.7)
+    if word in english_vocab:
+        return word
+    matches = difflib.get_close_matches(word, game_vocab_list, n=1, cutoff=0.7)
     return matches[0] if matches else word
 
 
@@ -256,6 +269,16 @@ def clean_and_expand_input(user_input):
                 stemmed_word = stemmer.stem(corrected_word)
                 if stemmed_word not in final_keywords:
                     final_keywords.append(stemmed_word)
+
+    # Inject extracted concepts as keywords so BM25 can retrieve conceptually relevant games
+    from model.concept_engine import extract_query_concepts
+    concepts = extract_query_concepts(user_input)
+    for concept in concepts:
+        # Split multi-word concepts (like 'story-driven') and stem them
+        for concept_word in concept.split("-"):
+            stemmed = stemmer.stem(concept_word)
+            if stemmed not in final_keywords:
+                final_keywords.append(stemmed)
 
     return " ".join(final_keywords)
 
@@ -371,6 +394,71 @@ def rerank_candidates(vibe_results, cleaned_query):
     
     return reranked
 
+def extract_hardware_intent(user_input):
+    words = []
+    for word in user_input.lower().split():
+        clean_word = word.strip(",.!?-")
+        if clean_word:
+            words.append(auto_correct(clean_word))
+        else:
+            words.append(word)
+    q = " ".join(words).replace("'", "")
+    
+    low_patterns = [
+        r"\b(old|older|low end|low-end|weak|potato)\s+(pc|computer|gpu|hardware|system)\b",
+        r"\b(low|bad)\s+(specs|specifications)\b",
+        r"\b(not|isnt|is not|aint|without being)\s+(very\s+|too\s+)?(powerful|demanding|heavy|taxing)\b",
+        r"\b(lightweight|light game|easy to run)\b",
+        r"\bruns\s+(easily\s+)?on\s+(low end|old)\b"
+    ]
+    for p in low_patterns:
+        if re.search(p, q):
+            return "LOW_HARDWARE"
+            
+    high_patterns = [
+        r"\b(powerful|high end|high-end|strong|beast|top tier)\s+(pc|computer|gpu|hardware|system)\b",
+        r"\bhigh\s+(specs|specifications)\b",
+        r"\bmodern\s+gaming\s+pc\b",
+        r"\bcan\s+(run|handle)\s+anything\b",
+        r"\b(graphically\s+|very\s+)?demanding\b",
+        r"\b(max|ultra)\s+settings\b",
+        r"\baaa\b"
+    ]
+    for p in high_patterns:
+        if re.search(p, q):
+            return "HIGH_HARDWARE"
+            
+    return "NO_HARDWARE_INTENT"
+
+GENERIC_WORDS = {"good", "great", "fun", "interesting", "awesome", "cool", "nice", "something", "anything", "game", "games", "play", "recommend", "recommendation", "best"}
+
+def detect_query_vagueness(user_input, query_concepts):
+    # Check if exact title or alias
+    if user_input.lower() in exact_titles:
+        return 1.0, "SPECIFIC"
+    if expand_game_aliases(user_input) != user_input:
+        return 1.0, "SPECIFIC"
+    
+    raw_words = [w.strip(",.!?-").lower() for w in user_input.split() if w.strip(",.!?-")]
+    
+    meaningful_count = 0
+    generic_count = 0
+    
+    for w in raw_words:
+        if w in GENERIC_WORDS:
+            generic_count += 1
+        elif w not in ignore_words:
+            meaningful_count += 1
+            
+    concept_count = len(query_concepts)
+    
+    if concept_count >= 2 or meaningful_count >= 3:
+        return 1.0, "SPECIFIC"
+    elif concept_count == 1 or meaningful_count >= 1:
+        return 0.6, "MODERATELY_SPECIFIC"
+    else:
+        return 0.2, "VAGUE"
+
 def recommend_game(user_input, budget, gpu_name, ram,
                    cpu_name=None, storage_gb=None, gpu_tier=None):
     # ── Backward Compatibility ──
@@ -412,18 +500,65 @@ def recommend_game(user_input, budget, gpu_name, ram,
         resolved_cpu_tier = tier_map.get(letter_tier_cpu, 1)
         cpu_benchmark_score = cpu_res.get("benchmark_score")
 
+    hw_intent = extract_hardware_intent(user_input)
+    query_concepts = extract_query_concepts(user_input)
+    vagueness_score, vagueness_class = detect_query_vagueness(user_input, query_concepts)
+    
     cleaned_vibe = clean_and_expand_input(user_input)
+    
+    if vagueness_class == "VAGUE":
+        generic_stems = {stemmer.stem(w) for w in GENERIC_WORDS}
+        cleaned_vibe = " ".join([w for w in cleaned_vibe.split() if w not in generic_stems])
+        
+    top_n_candidates = 50
+    if vagueness_class == "MODERATELY_SPECIFIC":
+        top_n_candidates = 100
+    elif vagueness_class == "VAGUE":
+        top_n_candidates = 150
+        
     # 1. Retrieve a larger candidate pool
-    vibe_results = run_vibe_check(cleaned_vibe, top_n=50)
+    vibe_results = run_vibe_check(cleaned_vibe, top_n=top_n_candidates)
 
-    if vibe_results.empty or vibe_results.iloc[0]["Vibe_Score"] == 0:
+    if vibe_results.empty or (vagueness_class != "VAGUE" and vibe_results.iloc[0]["Vibe_Score"] == 0):
         return _empty_response("No games match that vibe.")
 
     # 2. Intent-Aware Reranking
     vibe_results = rerank_candidates(vibe_results, cleaned_vibe)
 
+    # 2.5 Concept-Aware Semantic Scoring
+    max_rerank = vibe_results["Vibe_Score"].max() if not vibe_results.empty else 1.0
+    if max_rerank == 0:
+        max_rerank = 1.0
+
+    vibe_results["Raw_Vibe"] = vibe_results["Vibe_Score"]
+
+    def compute_concept_score(row):
+        game_concepts = row.get("Concepts", [])
+        if not query_concepts:
+            return 0.0
+        matches = set(query_concepts) & set(game_concepts)
+        return len(matches) / len(query_concepts)
+
+    vibe_results["Concept_Score"] = vibe_results.apply(compute_concept_score, axis=1)
+
+    def compute_semantic_score(row):
+        base_normalized = row["Vibe_Score"] / max_rerank
+        score = (base_normalized * 0.70) + (row["Concept_Score"] * 0.30)
+        if vagueness_class == "VAGUE":
+            popularity_boost = min(1.0, row.get("Popularity", 0) / 1000000.0) * 0.30
+            score += popularity_boost
+        return score
+        
+    vibe_results["Semantic_Score"] = vibe_results.apply(compute_semantic_score, axis=1)
+    vibe_results = vibe_results.sort_values("Semantic_Score", ascending=False)
+    vibe_results["Vibe_Score"] = vibe_results["Semantic_Score"]
+
     # 3. Filter by Budget First
-    affordable_candidates = vibe_results[vibe_results["Price_INR"] <= budget]
+    # Ensure Price_INR >= 0 so that games with UNKNOWN prices (-1) do not automatically pass.
+    affordable_candidates = vibe_results[
+        (vibe_results["Price_INR"] >= 0) & 
+        (vibe_results["Price_INR"] <= budget)
+    ]
     if affordable_candidates.empty:
         return _empty_response("Games found, but they are out of your budget.")
 
@@ -436,7 +571,8 @@ def recommend_game(user_input, budget, gpu_name, ram,
     # Evaluate ALL vibe+budget candidates through the compatibility engine.
     # Games that fail hardware checks are NOT rejected — they are ranked
     # lower by compatibility score instead.
-    max_possible = max(1, len(cleaned_vibe.split()) * 1.5)
+    # A base of 15.0 ensures that short/ambiguous queries do not artificially reach 100% semantic confidence.
+    max_possible = max(15.0, len(cleaned_vibe.split()) * 1.5)
 
     evaluated_games = []
     vibe_score_map = {}
@@ -462,6 +598,8 @@ def recommend_game(user_input, budget, gpu_name, ram,
         vibe_sc = float(row["Vibe_Score"])
         title = str(row["Title"])
         compat_result["vibe_score"] = vibe_sc
+        compat_result["raw_vibe"] = float(row["Raw_Vibe"])
+        compat_result["concept_score"] = float(row["Concept_Score"])
         compat_result["price_inr"] = int(row["Price_INR"])
         compat_result["store_url"] = _get_store_url(row)
         compat_result["description"] = str(row["Description"])
@@ -470,12 +608,6 @@ def recommend_game(user_input, budget, gpu_name, ram,
         # Parse tags
         raw_tags = str(row.get("Tags", ""))
         compat_result["tags"] = [t.strip() for t in raw_tags.split(",") if t.strip()]
-
-        # Confidence
-        conf = min(99, int((vibe_sc / max_possible) * 100))
-        if conf < 40:
-            conf += 30
-        compat_result["confidence"] = conf
 
         evaluated_games.append(compat_result)
         # Check if this game is PAYDAY 2 or Slay the Spire for debug logging
@@ -502,10 +634,35 @@ def recommend_game(user_input, budget, gpu_name, ram,
         budget_score_map[title] = max(0, 1.0 - (int(row["Price_INR"]) / max(budget, 1)))
 
     # Rank games: compatibility → vibe → budget
-    ranked = rank_games(evaluated_games, vibe_score_map, budget_score_map)
+    ranked = rank_games(evaluated_games, vibe_score_map, budget_score_map, hw_intent)
 
     if not ranked:
         return _empty_response("No compatible games found.")
+
+    # ── P6 Confidence Calculation ──
+    has_concepts = len(query_concepts) > 0
+    for i, game in enumerate(ranked):
+        semantic_conf = min(1.0, game.get("raw_vibe", 0.0) / max_possible)
+        semantic_conf *= vagueness_score
+        concept_conf = game.get("concept_score", 0.0) if has_concepts else semantic_conf
+        hw_conf = game.get("compat_normalized", 0.0)
+        budget_conf = game.get("budget_normalized", 0.0)
+        
+        if i + 1 < len(ranked):
+            score_1 = game.get("final_score", 0.0)
+            score_2 = ranked[i+1].get("final_score", 0.0)
+            gap_conf = min(1.0, (score_1 - score_2) / 0.10)
+        else:
+            gap_conf = 1.0
+            
+        confidence = (
+            semantic_conf * 0.35
+            + concept_conf * 0.20
+            + hw_conf * 0.15
+            + budget_conf * 0.10
+            + gap_conf * 0.20
+        )
+        game["confidence"] = int(round(confidence * 100))
 
     # Build response — winner is the top-ranked game
     winner = ranked[0]
@@ -529,7 +686,7 @@ def recommend_game(user_input, budget, gpu_name, ram,
     for alt in ranked[1:min(4, len(ranked))]:
         alternative_games.append({
             "title": alt["title"],
-            "price_inr": alt["price_inr"],
+            "price_inr": alt["price_inr"] if alt["price_inr"] >= 0 else "UNKNOWN",
             "description": alt["description"],
             "tags": alt["tags"],
             "header_image": alt.get("header_image", ""),
@@ -556,11 +713,12 @@ def recommend_game(user_input, budget, gpu_name, ram,
         "header_image": winner.get("header_image", ""),
         "alternative_games": alternative_games,
         "store_url": winner["store_url"],
-        "price_inr": winner["price_inr"],   # actual game price, independent of user budget
+        "price_inr": winner["price_inr"] if winner["price_inr"] >= 0 else "UNKNOWN",
         "compatibility": {
             "compatibility_pct": winner["compatibility_pct"],
             "gpu": winner["gpu"],
             "cpu": winner["cpu"],
+
             "ram": winner["ram"],
             "storage": winner["storage"],
             "estimated_fps": winner["estimated_fps"],

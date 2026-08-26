@@ -87,19 +87,19 @@ def _extract_price_inr(game: dict[str, Any]) -> int:
     Steam stores prices in the smallest currency unit (paise for INR),
     so 299900 = ₹2999.  Free-to-play games have is_free=True.
 
-    # Returns 99999 for non-free games with missing price data to prevent them from bypassing budget checks.
+    Returns -1 for non-free games with missing price data to indicate UNKNOWN price.
     """
     if game.get("is_free"):
         return 0
 
     price_overview = game.get("price_overview")
     if not price_overview:
-        return 99999
+        return -1
 
     # Use 'final' (current discounted price) for realistic budget comparison
     raw_price = price_overview.get("final")
     if raw_price is None:
-        return 99999
+        return -1
 
     # Steam prices are in paise (1/100 of a rupee) for INR
     # e.g., 299900 paise = ₹2999
@@ -159,22 +159,28 @@ def adapt_steam_game(game: dict[str, Any]) -> dict[str, Any]:
     combined_tags = []
     
     # Genres
+    genres_list = []
     genres = game.get("genres", [])
     if isinstance(genres, list):
         for g in genres:
             if isinstance(g, dict):
-                combined_tags.append(g.get("description", ""))
+                genres_list.append(g.get("description", ""))
             elif isinstance(g, str):
-                combined_tags.append(g)
+                genres_list.append(g)
+    genres_str = ", ".join(genres_list)
+    combined_tags.extend(genres_list)
 
     # Categories
+    categories_list = []
     categories = game.get("categories", [])
     if isinstance(categories, list):
         for c in categories:
             if isinstance(c, dict):
-                combined_tags.append(c.get("description", ""))
+                categories_list.append(c.get("description", ""))
             elif isinstance(c, str):
-                combined_tags.append(c)
+                categories_list.append(c)
+    categories_str = ", ".join(categories_list)
+    combined_tags.extend(categories_list)
 
     # Developers
     developers = game.get("developers", [])
@@ -209,10 +215,19 @@ def adapt_steam_game(game: dict[str, Any]) -> dict[str, Any]:
     if min_storage == 0:
         min_storage = _safe_int(rec_req.get("storage_gb"), default=0)
 
+    # Popularity tiebreaker for vague queries
+    recs = game.get("recommendations")
+    if isinstance(recs, dict):
+        popularity = _safe_int(recs.get("total"), default=0)
+    else:
+        popularity = _safe_int(recs, default=0)
+
     return {
         "Title": str(game.get("name", "")),
         "Description": str(game.get("short_description", "")),
         "Tags": tags_str,
+        "Genres": genres_str,
+        "Categories": categories_str,
         "Price_INR": _extract_price_inr(game),
         "Min_GPU_Tier": min_gpu_tier,
         "Rec_GPU_Tier": rec_gpu_tier,
@@ -222,6 +237,7 @@ def adapt_steam_game(game: dict[str, Any]) -> dict[str, Any]:
         "Required_Storage_GB": min_storage,
         "Steam_AppID": _safe_int(game.get("appid"), default=0),
         "Header_Image": game.get("header_image", ""),
+        "Popularity": popularity,
     }
 
 

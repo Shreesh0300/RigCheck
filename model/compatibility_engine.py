@@ -466,6 +466,9 @@ def evaluate_game(game_row: dict,
     return {
         "title": str(game_row.get("Title", "")),
         "compatibility_pct": compat["compatibility_pct"],
+        "game_gpu_tier": game_min_gpu,
+        "game_cpu_tier": game_min_cpu,
+        "game_ram_gb": game_min_ram,
         "gpu": gpu_eval,
         "cpu": cpu_eval,
         "ram": ram_eval,
@@ -482,19 +485,24 @@ def evaluate_game(game_row: dict,
 
 def rank_games(evaluated_games: list[dict],
                vibe_scores: Optional[dict[str, float]] = None,
-               budget_scores: Optional[dict[str, float]] = None) -> list[dict]:
+               budget_scores: Optional[dict[str, float]] = None,
+               hw_intent: str = "NO_HARDWARE_INTENT") -> list[dict]:
     """
-    Sort evaluated games by:
-      1. Compatibility Score (highest first)
-      2. Vibe Match (if provided)
-      3. Budget Match (if provided)
+    Sort evaluated games by a balanced weighted score:
+      - Vibe (semantic relevance):  50%  — what the user wants
+      - Hardware (compatibility):   30%  — can their PC run it?
+      - Budget (affordability):     20%  — can they afford it?
+
+    All three components are normalized to 0–1 before weighting so that
+    no single raw scoring system can dominate simply by having a larger
+    numerical range.
 
     Never removes a game — partial compatibility games are still shown.
 
     Parameters
     ----------
     evaluated_games : list of dicts from evaluate_game()
-    vibe_scores : dict mapping title -> vibe_score (0-1)
+    vibe_scores : dict mapping title -> raw vibe/rerank score
     budget_scores : dict mapping title -> budget_score (0-1)
     """
     if vibe_scores is None:
@@ -502,22 +510,61 @@ def rank_games(evaluated_games: list[dict],
     if budget_scores is None:
         budget_scores = {}
 
+    # ── First pass: attach raw scores and find max vibe for normalization ──
+    max_vibe = 0.0
     for game in evaluated_games:
         title = game["title"]
         raw_vibe = vibe_scores.get(title, 0.0)
-        
         game["vibe_score"] = raw_vibe
         game["budget_score"] = budget_scores.get(title, 0.0)
+        if raw_vibe > max_vibe:
+            max_vibe = raw_vibe
+
+    # ── Second pass: compute normalized final score ──
+    # Weights (must sum to 1.0)
+    W_VIBE   = 0.50
+    W_COMPAT = 0.30
+    W_BUDGET = 0.20
+
+    for game in evaluated_games:
+        # Normalize vibe to 0–1 within this candidate pool
+        vibe_normalized = game["vibe_score"] / max_vibe if max_vibe > 0 else 0.0
+
+        # Compatibility is already 0–100%; scale to 0–1
+        compat_normalized = game["compatibility_pct"] / 100.0
+
+        # P5 Hardware Intent
+        gpu_demand = game.get("game_gpu_tier", 1) / 5.0
+        cpu_demand = game.get("game_cpu_tier", 1) / 5.0
+        ram_demand = min(game.get("game_ram_gb", 2) / 16.0, 1.0)
+        requirement_demand = (gpu_demand + cpu_demand + ram_demand) / 3.0
         
-        # Calculate Final Score additively without squashing Vibe.
-        # Vibe Score (typically 1.0 to 3.0+) represents intent.
-        # Compatibility is scaled to max 0.5 points.
-        # Budget is scaled to max 0.2 points.
-        # This guarantees Semantic Relevance > Hardware > Price
-        compat_score = game["compatibility_pct"] / 100.0
-        final_score = raw_vibe + (compat_score * 0.5) + (game["budget_score"] * 0.2)
-        
-        game["final_score"] = final_score
+        if hw_intent == "LOW_HARDWARE":
+            hw_preference = 1.0 - requirement_demand
+        elif hw_intent == "HIGH_HARDWARE":
+            hw_preference = requirement_demand
+        else:
+            hw_preference = 0.5
+            
+        compat_normalized = (compat_normalized * 0.85) + (hw_preference * 0.15)
+
+        # Budget score is already 0–1; apply sqrt to compress extreme gaps.
+        # Without sqrt, a ₹51 game at ₹500 budget (0.90) vs a ₹449 game (0.10)
+        # creates a 0.80 gap that can overwhelm vibe differences.
+        # sqrt(0.90)=0.95, sqrt(0.10)=0.32 → gap shrinks to 0.63.
+        budget_normalized = game["budget_score"] ** 0.5
+
+        final_score = (
+            vibe_normalized   * W_VIBE
+            + compat_normalized * W_COMPAT
+            + budget_normalized * W_BUDGET
+        )
+
+        # Store normalized components for score-breakdown / debugging
+        game["vibe_normalized"] = round(vibe_normalized, 4)
+        game["compat_normalized"] = round(compat_normalized, 4)
+        game["budget_normalized"] = round(budget_normalized, 4)
+        game["final_score"] = round(final_score, 4)
 
     # Sort by final weighted score (descending)
     evaluated_games.sort(
