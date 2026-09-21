@@ -129,11 +129,11 @@ function formatGamePrice(priceInr) {
  * values instead of resetting to demo defaults.
  * ─────────────────────────────────────────────────────────────────── */
 let _persistedInputs = {
-  vibeQuery:   "",
-  maxBudget:   "",
-  gpuModel:    "",
-  ramSize:     "",
-  cpuModel:    "",
+  vibeQuery: "",
+  maxBudget: "",
+  gpuModel: "",
+  ramSize: "",
+  cpuModel: "",
   freeStorage: "",
 };
 
@@ -260,13 +260,13 @@ function ErrorState({ message }) {
 export default function RigCheckDashboard({ onGameClick }) {
   /* ── Input State — initialised from persisted values so reopening the
      diagnostic always restores what the user last typed. ── */
-  const [vibeQuery,   setVibeQuery]   = useState(_persistedInputs.vibeQuery);
-  const [maxBudget,   setMaxBudget]   = useState(_persistedInputs.maxBudget);
-  const [gpuModel,    setGpuModel]    = useState(_persistedInputs.gpuModel);
-  const [ramSize,     setRamSize]     = useState(_persistedInputs.ramSize);
-  const [cpuModel,    setCpuModel]    = useState(_persistedInputs.cpuModel);
+  const [vibeQuery, setVibeQuery] = useState(_persistedInputs.vibeQuery);
+  const [maxBudget, setMaxBudget] = useState(_persistedInputs.maxBudget);
+  const [gpuModel, setGpuModel] = useState(_persistedInputs.gpuModel);
+  const [ramSize, setRamSize] = useState(_persistedInputs.ramSize);
+  const [cpuModel, setCpuModel] = useState(_persistedInputs.cpuModel);
   const [freeStorage, setFreeStorage] = useState(_persistedInputs.freeStorage);
-  const [isLoading,   setIsLoading]   = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   /* ── Persist inputs to module-level state on every change.
      This survives DiagnosticModal open/close cycles (component unmount). ── */
@@ -292,10 +292,10 @@ export default function RigCheckDashboard({ onGameClick }) {
       // Coerce empty-string fields to safe numeric defaults.
       // Empty budget = no budget ceiling (send a high value).
       // Empty RAM / storage = 0 (backend treats 0 as "not evaluated").
-      budget:     maxBudget   !== "" ? Number(maxBudget)   : 999999,
-      gpu_name:   gpuModel.trim(),
-      ram:        ramSize     !== "" ? Number(ramSize)     : 0,
-      cpu_name:   cpuModel.trim() || null,
+      budget: maxBudget !== "" ? Number(maxBudget) : 999999,
+      gpu_name: gpuModel.trim(),
+      ram: ramSize !== "" ? Number(ramSize) : 0,
+      cpu_name: cpuModel.trim() || null,
       storage_gb: freeStorage !== "" ? Number(freeStorage) : null,
     };
 
@@ -335,11 +335,11 @@ export default function RigCheckDashboard({ onGameClick }) {
   }, [vibeQuery, maxBudget, gpuModel, ramSize, cpuModel, freeStorage]);
 
   /* ── Derived values from the result ── */
-  const confidence    = result?.confidence ?? 0;
-  const fpsLabel      = result ? estimateFps(confidence) : "";
-  const advice        = result ? parseHardwareAdvice(result.hardware_advice) : null;
-  const heroImage     = result?.header_image || getSteamHeaderImage(result?.store_url?.match(/\/app\/(\d+)/)?.[1]);
-  const alternatives  = result?.alternative_games ?? [];
+  const confidence = result?.confidence ?? 0;
+  const fpsLabel = result ? estimateFps(confidence) : "";
+  const advice = result ? parseHardwareAdvice(result.hardware_advice) : null;
+  const heroImage = result?.header_image || getSteamHeaderImage(result?.store_url?.match(/\/app\/(\d+)/)?.[1]);
+  const alternatives = result?.alternative_games ?? [];
 
   return (
     <main className="min-h-screen bg-[#02040a] font-['Inter',ui-sans-serif,system-ui,sans-serif] text-slate-100">
@@ -484,22 +484,28 @@ export default function RigCheckDashboard({ onGameClick }) {
             ) : (
               <Sparkles className="h-4 w-4" />
             )}
-            {isLoading ? "Running Diagnostics..." : "Run Diagnostics"}
+            {isLoading ? "Finding Game..." : "Find My Game"}
           </button>
         </aside>
 
         {/* ───────── RIGHT PANEL (Results) ───────── */}
-        <section ref={resultsRef} className="flex-1 overflow-y-auto bg-[radial-gradient(circle_at_50%_0%,rgba(14,165,233,0.06),transparent_36%),radial-gradient(circle_at_70%_55%,rgba(124,58,237,0.06),transparent_28%),#02040a] p-5 sm:p-6 lg:p-7">
-          {/* Header */}
-          <div className="mb-5 flex items-center gap-2.5">
+        <section ref={resultsRef} className="relative flex-1 overflow-y-auto bg-[#02040a] p-5 sm:p-6 lg:p-7">
+          {/* Subtle Background Image layer with Mask for a Cutout Effect */}
+          <div 
+            className={`pointer-events-none absolute inset-0 bg-[url('/empty-state-bg.png')] bg-[length:75%] bg-center bg-no-repeat mix-blend-screen brightness-125 [mask-image:radial-gradient(circle_at_50%_50%,black_20%,transparent_70%)] transition-all duration-700 ${!result && !isLoading && !error ? 'opacity-100 grayscale-0 scale-100' : 'opacity-[0.03] grayscale scale-110'}`}
+          />
+
+          {/* Content Layer */}
+          <div className="relative z-10">
+            {/* Header */}
+            <div className="mb-5 flex items-center gap-2.5">
             <div className="grid h-7 w-7 place-items-center rounded-lg border border-violet-400/20 bg-violet-500/15 shadow-[0_0_18px_rgba(139,92,246,0.2)]">
               <Sparkles className="h-3.5 w-3.5 text-violet-300" />
             </div>
-            <h2 className="text-sm font-black text-white">Diagnostic Results</h2>
+            <h2 className="text-sm font-black text-white"> Results</h2>
           </div>
 
           {/* ─── Empty / Error / Result states ─── */}
-          {!result && !error && !isLoading && <EmptyState />}
           {error && <ErrorState message={error} />}
           {isLoading && (
             <div className="flex flex-col items-center justify-center rounded-xl border border-slate-800/60 bg-slate-950/50 px-8 py-24">
@@ -573,13 +579,13 @@ export default function RigCheckDashboard({ onGameClick }) {
 
                     {/* Match Ring */}
                     <div className="hidden sm:block">
-                      <MatchRing value={result.compatibility ? result.compatibility.compatibility_pct : confidence} />
+                      <MatchRing value={confidence} />
                     </div>
                   </div>
 
                   {/* Mobile ring */}
                   <div className="mt-5 flex justify-center sm:hidden">
-                    <MatchRing value={result.compatibility ? result.compatibility.compatibility_pct : confidence} />
+                    <MatchRing value={confidence} />
                   </div>
                 </div>
 
@@ -686,7 +692,7 @@ export default function RigCheckDashboard({ onGameClick }) {
                             {/* Confidence badge */}
                             {game.confidence > 0 && (
                               <span className="absolute right-2 top-2 rounded-md bg-black/70 px-1.5 py-0.5 text-[10px] font-bold text-cyan-300 backdrop-blur-sm">
-                                {game.compatibility ? `${game.compatibility.compatibility_pct}% Match` : `${game.confidence}% Match`}
+                                {`${game.confidence}% Match`}
                               </span>
                             )}
 
@@ -767,6 +773,7 @@ export default function RigCheckDashboard({ onGameClick }) {
               )}
             </>
           )}
+          </div>
         </section>
       </div>
     </main>

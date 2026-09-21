@@ -199,7 +199,13 @@ def _initialize_english_vocab():
     # Add gaming terms and all concepts
     from model.concept_engine import CONCEPT_VOCAB
     gaming_terms = {"pc", "fps", "rpg", "co-op", "coop", "multiplayer", "game", "games", "friends", "friend", "characters", "bosses", "zombies", "zombie", "heists", "heist", "robberies", "robbery", "casual", "competitive", "story"}
+    
+    # Protected External Game/Franchise Vocabulary
+    external_games = {"minecraft", "zelda", "skyrim", "rdr2", "red", "dead", "redemption", "gta", "fallout"}
+    
     eng_vocab.update(gaming_terms)
+    eng_vocab.update(external_games)
+    
     for concept in CONCEPT_VOCAB:
         for word in concept.split("-"):
             eng_vocab.add(word)
@@ -249,8 +255,34 @@ _concept_synonyms = {
     "submarines": "submarine naval",
 }
 
+def get_explicit_references(user_input):
+    expanded = expand_game_aliases(user_input).lower()
+    protected_franchises = {"minecraft", "zelda", "skyrim", "rdr2", "red dead", "gta", "grand theft auto", "fallout", "cyberpunk", "witcher", "payday", "mario", "pokemon"}
+    
+    explicit_refs = []
+    
+    for p in protected_franchises:
+        if re.search(r'\b' + re.escape(p) + r'\b', expanded):
+            explicit_refs.append(p)
+            
+    for t in exact_titles:
+        if len(t) > 3 and t in expanded:
+            explicit_refs.append(t)
+            
+    return explicit_refs
+
 def clean_and_expand_input(user_input):
     user_input = expand_game_aliases(user_input)
+    
+    # P8.2 Hardware Phrase Sanitization
+    hardware_phrases = [
+        r"\bpotato\s*pc\b", r"\blow\s*end\s*pc\b", r"\bold\s*pc\b", r"\bweak\s*pc\b",
+        r"\blaptop\b", r"\bpowerful\s*pc\b", r"\bhigh\s*end\s*pc\b",
+        r"\bgood\s*pc\b", r"\bbad\s*pc\b", r"\btoaster\b", r"\blow\s*spec\b", r"\bhigh\s*spec\b"
+    ]
+    for phrase in hardware_phrases:
+        user_input = re.sub(phrase, "", user_input, flags=re.IGNORECASE)
+        
     final_keywords = []
 
     for word in user_input.lower().split():
@@ -541,9 +573,44 @@ def recommend_game(user_input, budget, gpu_name, ram,
 
     vibe_results["Concept_Score"] = vibe_results.apply(compute_concept_score, axis=1)
 
+    explicit_refs_found = get_explicit_references(user_input)
+    has_explicit_reference = len(explicit_refs_found) > 0
+
+    def compute_reference_score(row):
+        if not has_explicit_reference:
+            return 0.0
+            
+        score = 0.0
+        title_lower = str(row["Title"]).lower()
+        
+        for ref in explicit_refs_found:
+            # 1. Exact match
+            if title_lower == ref:
+                score = max(score, 1.0)
+            # 2. Substring match (e.g. "fallout" inside "fallout 3")
+            elif re.search(r'\b' + re.escape(ref) + r'\b', title_lower):
+                score = max(score, 0.8)
+            else:
+                # 3. Meaningful token overlap
+                ref_tokens = set(re.findall(r'\b\w+\b', ref)) - set(ignore_words)
+                title_tokens = set(re.findall(r'\b\w+\b', title_lower))
+                if ref_tokens:
+                    overlap = ref_tokens.intersection(title_tokens)
+                    if overlap:
+                        overlap_ratio = len(overlap) / len(ref_tokens)
+                        score = max(score, 0.5 * overlap_ratio)
+        return score
+
+    vibe_results["Reference_Score"] = vibe_results.apply(compute_reference_score, axis=1)
+
     def compute_semantic_score(row):
         base_normalized = row["Vibe_Score"] / max_rerank
-        score = (base_normalized * 0.70) + (row["Concept_Score"] * 0.30)
+        if has_explicit_reference:
+            # Prioritize reference similarity over generic concepts
+            score = (base_normalized * 0.40) + (row["Concept_Score"] * 0.20) + (row["Reference_Score"] * 0.40)
+        else:
+            score = (base_normalized * 0.70) + (row["Concept_Score"] * 0.30)
+            
         if vagueness_class == "VAGUE":
             popularity_boost = min(1.0, row.get("Popularity", 0) / 1000000.0) * 0.30
             score += popularity_boost
@@ -634,7 +701,7 @@ def recommend_game(user_input, budget, gpu_name, ram,
         budget_score_map[title] = max(0, 1.0 - (int(row["Price_INR"]) / max(budget, 1)))
 
     # Rank games: compatibility → vibe → budget
-    ranked = rank_games(evaluated_games, vibe_score_map, budget_score_map, hw_intent)
+    ranked = rank_games(evaluated_games, vibe_score_map, budget_score_map, hw_intent, has_explicit_reference)
 
     if not ranked:
         return _empty_response("No compatible games found.")

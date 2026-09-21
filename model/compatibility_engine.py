@@ -486,7 +486,8 @@ def evaluate_game(game_row: dict,
 def rank_games(evaluated_games: list[dict],
                vibe_scores: Optional[dict[str, float]] = None,
                budget_scores: Optional[dict[str, float]] = None,
-               hw_intent: str = "NO_HARDWARE_INTENT") -> list[dict]:
+               hw_intent: str = "NO_HARDWARE_INTENT",
+               has_explicit_reference: bool = False) -> list[dict]:
     """
     Sort evaluated games by a balanced weighted score:
       - Vibe (semantic relevance):  50%  — what the user wants
@@ -522,9 +523,14 @@ def rank_games(evaluated_games: list[dict],
 
     # ── Second pass: compute normalized final score ──
     # Weights (must sum to 1.0)
-    W_VIBE   = 0.50
-    W_COMPAT = 0.30
-    W_BUDGET = 0.20
+    if has_explicit_reference:
+        W_VIBE   = 0.80
+        W_COMPAT = 0.15
+        W_BUDGET = 0.05
+    else:
+        W_VIBE   = 0.50
+        W_COMPAT = 0.30
+        W_BUDGET = 0.20
 
     for game in evaluated_games:
         # Normalize vibe to 0–1 within this candidate pool

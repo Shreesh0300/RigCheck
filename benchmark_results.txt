@@ -1,0 +1,592 @@
+
+################################################################################
+# A. Exact game searches
+################################################################################
+
+--------------------------------------------------
+QUERY: payday 2 | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: payday 2
+Explicit Refs: ['payday', 'payday 2']
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: PAYDAY 2 (Conf: 99% | Price: 449)
+Alternatives:
+  - PAYDAY 3 (Conf: 81% | Price: 1349)
+  - Counter-Strike 2 (Conf: 43% | Price: 0)
+
+--------------------------------------------------
+QUERY: left 4 dead 2 | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: left 4 dead 2
+Explicit Refs: ['left 4 dead 2', 'left 4 dead']
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Left 4 Dead 2 (Conf: 84% | Price: 480)
+Alternatives:
+  - Left 4 Dead (Conf: 99% | Price: 480)
+  - Red Dead Redemption 2 (Conf: 71% | Price: 4999)
+
+--------------------------------------------------
+QUERY: portal 2 | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: portal 2
+Explicit Refs: ['portal', 'portal 2']
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Portal 2 (Conf: 93% | Price: 480)
+Alternatives:
+  - Portal (Conf: 74% | Price: 480)
+  - Peggle Extreme (Conf: 71% | Price: 0)
+
+--------------------------------------------------
+QUERY: gta 5 | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: gta grand theft auto v legaci 5
+Explicit Refs: ['gta', 'grand theft auto', 'grand theft auto v legacy']
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Grand Theft Auto IV: The Complete Edition (Conf: 98% | Price: 999)
+Alternatives:
+  - Heroes of Might & Magic V: Hammers of Fate (Conf: 66% | Price: 499)
+  - Space Empires V (Conf: 55% | Price: 479)
+
+################################################################################
+# B. Typo correction
+################################################################################
+
+--------------------------------------------------
+QUERY: paydya 2 | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: payday 2
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: MODERATELY_SPECIFIC (0.6)
+
+WINNER: PAYDAY 2 (Conf: 77% | Price: 449)
+Alternatives:
+  - PAYDAY 3 (Conf: 62% | Price: 1349)
+  - Mutant Year Zero: Road to Eden (Conf: 56% | Price: 1460)
+
+--------------------------------------------------
+QUERY: left 4 ded 2 | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: left 4 dead 2
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Left 4 Dead 2 (Conf: 86% | Price: 480)
+Alternatives:
+  - Left 4 Dead (Conf: 99% | Price: 480)
+  - Desperados 2: Cooper's Revenge (Conf: 56% | Price: 92)
+
+--------------------------------------------------
+QUERY: cybeprunk 2077 | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: cyberpunk 2077
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: MODERATELY_SPECIFIC (0.6)
+
+WINNER: Cyberpunk 2077 (Conf: 76% | Price: 899)
+Alternatives:
+  - Ghostrunner (Conf: 54% | Price: 2099)
+
+--------------------------------------------------
+QUERY: red dead redemtion 2 | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: red dead redempt 2
+Explicit Refs: ['red dead']
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Red Dead Redemption 2 (Conf: 93% | Price: 4999)
+Alternatives:
+  - The Walking Dead (Conf: 74% | Price: 690)
+  - Left 4 Dead 2 (Conf: 59% | Price: 480)
+
+################################################################################
+# C. Games-like/reference searches
+################################################################################
+
+--------------------------------------------------
+QUERY: games like gta 5 | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: gta grand theft auto v legaci 5 crime shooter drive open world
+Explicit Refs: ['gta', 'grand theft auto', 'grand theft auto v legacy']
+Detected concepts: ['crime', 'shooter', 'driving', 'open-world']
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Grand Theft Auto IV: The Complete Edition (Conf: 78% | Price: 999)
+Alternatives:
+  - Crash Time 2 (Conf: 90% | Price: 250)
+  - RAGE 2 (Conf: 59% | Price: 1799)
+
+--------------------------------------------------
+QUERY: games like rdr2 | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: rdr2 red dead redempt 2
+Explicit Refs: ['rdr2', 'red dead', 'red dead redemption 2']
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Red Dead Redemption 2 (Conf: 93% | Price: 4999)
+Alternatives:
+  - The Walking Dead (Conf: 73% | Price: 690)
+  - Left 4 Dead 2 (Conf: 59% | Price: 480)
+
+--------------------------------------------------
+QUERY: games like skyrim | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: skyrim elder scroll v:
+Explicit Refs: ['skyrim', 'the elder scrolls v: skyrim']
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: The Elder Scrolls V: Skyrim (Conf: 88% | Price: 565)
+Alternatives:
+  - The Elder Scrolls V: Skyrim Special Edition (Conf: 91% | Price: 1799)
+  - The Elder Scrolls V: Skyrim VR (Conf: 98% | Price: 749)
+
+--------------------------------------------------
+QUERY: games like fallout | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: fallout
+Explicit Refs: ['fallout']
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: MODERATELY_SPECIFIC (0.6)
+
+WINNER: Fallout 3: Game of the Year Edition (Conf: 47% | Price: 296)
+Alternatives:
+  - Fallout Shelter (Conf: 54% | Price: 0)
+  - Fallout 4 (Conf: 64% | Price: 999)
+
+--------------------------------------------------
+QUERY: games like cyberpunk 2077 | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: cyberpunk 2077
+Explicit Refs: ['cyberpunk', 'cyberpunk 2077']
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: MODERATELY_SPECIFIC (0.6)
+
+WINNER: Cyberpunk 2077 (Conf: 76% | Price: 899)
+Alternatives:
+  - Ghostrunner (Conf: 54% | Price: 2099)
+
+--------------------------------------------------
+QUERY: games like minecraft | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: minecraft
+Explicit Refs: ['minecraft']
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: MODERATELY_SPECIFIC (0.6)
+
+WINNER: Super Meat Boy (Conf: 56% | Price: 479)
+Alternatives:
+
+################################################################################
+# D. Genre/concept searches
+################################################################################
+
+--------------------------------------------------
+QUERY: open world games | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: open world
+Explicit Refs: []
+Detected concepts: ['open-world']
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: MODERATELY_SPECIFIC (0.6)
+
+WINNER: RAGE 2 (Conf: 51% | Price: 1799)
+Alternatives:
+  - Shenmue I & II (Conf: 58% | Price: 2749)
+  - Forza Horizon 5 (Conf: 56% | Price: 3499)
+
+--------------------------------------------------
+QUERY: co-op zombie games | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: co-op zombi multiplay co op
+Explicit Refs: []
+Detected concepts: ['multiplayer', 'co-op', 'zombie']
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Left 4 Dead 2 (Conf: 99% | Price: 480)
+Alternatives:
+  - Unturned (Conf: 69% | Price: 0)
+  - Stubbs the Zombie in Rebel Without a Pulse (Conf: 75% | Price: 880)
+
+--------------------------------------------------
+QUERY: fun games to play with friends | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: fun friend co-op multiplay co op
+Explicit Refs: []
+Detected concepts: ['multiplayer', 'co-op']
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Left 4 Dead 2 (Conf: 86% | Price: 480)
+Alternatives:
+  - Call of Duty®: Black Ops Cold War (Conf: 80% | Price: 5399)
+  - Party Animals (Conf: 79% | Price: 1124)
+
+--------------------------------------------------
+QUERY: good story games | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: good stori driven
+Explicit Refs: []
+Detected concepts: ['story-driven']
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: MODERATELY_SPECIFIC (0.6)
+
+WINNER: RimWorld (Conf: 42% | Price: 1200)
+Alternatives:
+  - STAR WARS™: The Old Republic™ (Conf: 56% | Price: 0)
+  - Dragon's Dogma 2 (Conf: 54% | Price: 2499)
+
+--------------------------------------------------
+QUERY: difficult fantasy games | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: difficult fantasi challeng
+Explicit Refs: []
+Detected concepts: ['challenging', 'fantasy']
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Path of Exile (Conf: 63% | Price: 0)
+Alternatives:
+  - Overlord™: Raising Hell (Conf: 52% | Price: 369)
+  - Granblue Fantasy: Versus (Conf: 56% | Price: 529)
+
+--------------------------------------------------
+QUERY: multiplayer games | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: multiplay
+Explicit Refs: []
+Detected concepts: ['multiplayer']
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: MODERATELY_SPECIFIC (0.6)
+
+WINNER: Day of Defeat: Source (Conf: 49% | Price: 480)
+Alternatives:
+  - Halo Infinite (Conf: 49% | Price: 0)
+  - Goose Goose Duck (Conf: 48% | Price: 0)
+
+################################################################################
+# E. Budget tests
+################################################################################
+
+--------------------------------------------------
+QUERY: good games under 500 | BUDGET: 500 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: good 500
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: MODERATELY_SPECIFIC (0.6)
+
+WINNER: Bloody Good Time (Conf: 38% | Price: 249)
+Alternatives:
+  - Nothing Good Can Come Of This (Conf: 37% | Price: 200)
+  - Postal III (Conf: 32% | Price: 300)
+
+--------------------------------------------------
+QUERY: cheap games | BUDGET: 500 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: cheap
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: MODERATELY_SPECIFIC (0.6)
+
+WINNER: Counter-Strike 2 (Conf: 24% | Price: 0)
+Alternatives:
+  - Dota 2 (Conf: 24% | Price: 0)
+  - Team Fortress 2 (Conf: 24% | Price: 0)
+
+--------------------------------------------------
+QUERY: good game under 300 | BUDGET: 300 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: good 300
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: MODERATELY_SPECIFIC (0.6)
+
+WINNER: Trove (Conf: 33% | Price: 0)
+Alternatives:
+  - Bloody Good Time (Conf: 31% | Price: 249)
+  - Nothing Good Can Come Of This (Conf: 41% | Price: 200)
+
+################################################################################
+# F. Hardware tests
+################################################################################
+
+--------------------------------------------------
+QUERY: something I can run on my old PC | BUDGET: 10000 | GPU: GTX 1050 | RAM: 8
+--------------------------------------------------
+Cleaned Intent: someth run
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: LOW_HARDWARE
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Little Nightmares II (Conf: 51% | Price: 1999)
+Alternatives:
+  - Alpha Prime (Conf: 44% | Price: 349)
+  - AstroPop Deluxe (Conf: 47% | Price: 259)
+
+--------------------------------------------------
+QUERY: a demanding game for my powerful PC | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: demand
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: HIGH_HARDWARE
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Mortal Shell (Conf: 58% | Price: 800)
+Alternatives:
+  - Frostpunk 2 (Conf: 66% | Price: 1800)
+  - Saints Row: The Third (Conf: 44% | Price: 560)
+
+--------------------------------------------------
+QUERY: games for a potato PC | BUDGET: 10000 | GPU: GTX 1050 | RAM: 8
+--------------------------------------------------
+Cleaned Intent: 
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: LOW_HARDWARE
+Vagueness: MODERATELY_SPECIFIC (0.6)
+
+WINNER: Penguins Arena: Sedna's World (Conf: 32% | Price: 299)
+Alternatives:
+  - Tom Clancy's Rainbow Six® Vegas 2 (Conf: 30% | Price: 499)
+  - Tom Clancy's Rainbow Six Lockdown™ (Conf: 33% | Price: 249)
+
+--------------------------------------------------
+QUERY: open world games for my low end PC | BUDGET: 10000 | GPU: GTX 1050 | RAM: 8
+--------------------------------------------------
+Cleaned Intent: open world
+Explicit Refs: []
+Detected concepts: ['open-world']
+Detected HW Intent: LOW_HARDWARE
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Shenmue I & II (Conf: 59% | Price: 2749)
+Alternatives:
+  - RAGE 2 (Conf: 64% | Price: 1799)
+  - Forza Horizon 5 (Conf: 61% | Price: 3499)
+
+################################################################################
+# G. Combined constraints
+################################################################################
+
+--------------------------------------------------
+QUERY: cheap open world games for a potato pc | BUDGET: 500 | GPU: GTX 1050 | RAM: 8
+--------------------------------------------------
+Cleaned Intent: cheap open world
+Explicit Refs: []
+Detected concepts: ['open-world']
+Detected HW Intent: LOW_HARDWARE
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Crash Time 2 (Conf: 69% | Price: 250)
+Alternatives:
+  - Disco Elysium - The Final Cut (Conf: 63% | Price: 399)
+  - Mystery P.I.™ - The Vegas Heist (Conf: 30% | Price: 259)
+
+--------------------------------------------------
+QUERY: co-op games under 500 for my old PC | BUDGET: 500 | GPU: GTX 1050 | RAM: 8
+--------------------------------------------------
+Cleaned Intent: co-op 500 multiplay co op
+Explicit Refs: []
+Detected concepts: ['multiplayer', 'co-op']
+Detected HW Intent: LOW_HARDWARE
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Left 4 Dead 2 (Conf: 73% | Price: 480)
+Alternatives:
+  - Goose Goose Duck (Conf: 56% | Price: 0)
+  - VRChat (Conf: 58% | Price: 0)
+
+--------------------------------------------------
+QUERY: good story game under 500 that runs on my PC | BUDGET: 500 | GPU: GTX 1050 | RAM: 8
+--------------------------------------------------
+Cleaned Intent: good stori 500 rust pc driven
+Explicit Refs: []
+Detected concepts: ['story-driven']
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: STAR WARS™: The Old Republic™ (Conf: 64% | Price: 0)
+Alternatives:
+  - Chip (Conf: 63% | Price: 39)
+  - EVE Online (Conf: 43% | Price: 0)
+
+################################################################################
+# H. Vague queries
+################################################################################
+
+--------------------------------------------------
+QUERY: I want something fun | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: someth fun
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: VAGUE (0.2)
+
+WINNER: PAYDAY 2 (Conf: 34% | Price: 449)
+Alternatives:
+  - Dead by Daylight (Conf: 27% | Price: 1159)
+  - Penguins Arena: Sedna's World (Conf: 27% | Price: 299)
+
+--------------------------------------------------
+QUERY: recommend a good game | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: recommend good
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: VAGUE (0.2)
+
+WINNER: PAYDAY 2 (Conf: 34% | Price: 449)
+Alternatives:
+  - Dead by Daylight (Conf: 27% | Price: 1159)
+  - Penguins Arena: Sedna's World (Conf: 27% | Price: 299)
+
+--------------------------------------------------
+QUERY: something to play | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: someth
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: VAGUE (0.2)
+
+WINNER: PAYDAY 2 (Conf: 34% | Price: 449)
+Alternatives:
+  - Dead by Daylight (Conf: 27% | Price: 1159)
+  - Penguins Arena: Sedna's World (Conf: 27% | Price: 299)
+
+--------------------------------------------------
+QUERY: I want a fun game with friends | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: fun friend co-op multiplay co op
+Explicit Refs: []
+Detected concepts: ['multiplayer', 'co-op']
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Left 4 Dead 2 (Conf: 86% | Price: 480)
+Alternatives:
+  - Call of Duty®: Black Ops Cold War (Conf: 80% | Price: 5399)
+  - Party Animals (Conf: 79% | Price: 1124)
+
+################################################################################
+# I. Natural/messy queries
+################################################################################
+
+--------------------------------------------------
+QUERY: i wanna play something chill with my friends | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: wanna someth chill friend co-op multiplay
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Brawlhalla (Conf: 62% | Price: 0)
+Alternatives:
+  - Amnesia: The Dark Descent (Conf: 70% | Price: 88)
+  - Haunted House™ (2010) (Conf: 55% | Price: 299)
+
+--------------------------------------------------
+QUERY: give me something addictive under 500 | BUDGET: 500 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: give someth addict 500
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Bejeweled 2 Deluxe (Conf: 55% | Price: 259)
+Alternatives:
+  - The Binding of Isaac: Rebirth (Conf: 45% | Price: 459)
+  - Mystery P.I.™ - The Vegas Heist (Conf: 48% | Price: 259)
+
+--------------------------------------------------
+QUERY: i want a game with a really good story | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: realli good stori driven
+Explicit Refs: []
+Detected concepts: ['story-driven']
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: MODERATELY_SPECIFIC (0.6)
+
+WINNER: Hades (Conf: 64% | Price: 1100)
+Alternatives:
+  - RimWorld (Conf: 41% | Price: 1200)
+  - STAR WARS™: The Old Republic™ (Conf: 57% | Price: 0)
+
+--------------------------------------------------
+QUERY: something like gta but my pc sucks | BUDGET: 10000 | GPU: GTX 1050 | RAM: 8
+--------------------------------------------------
+Cleaned Intent: someth gta grand theft auto v legaci pc truck crime shooter drive open world
+Explicit Refs: ['gta', 'grand theft auto', 'grand theft auto v legacy']
+Detected concepts: ['crime', 'shooter', 'driving', 'open-world']
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: Grand Theft Auto IV: The Complete Edition (Conf: 78% | Price: 999)
+Alternatives:
+  - Crash Time 2 (Conf: 64% | Price: 250)
+  - RAGE 2 (Conf: 73% | Price: 1799)
+
+--------------------------------------------------
+QUERY: me and 3 friends need a game | BUDGET: 10000 | GPU: RTX 4070 | RAM: 16
+--------------------------------------------------
+Cleaned Intent: 3 friend co-op multiplay need
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: PAYDAY 3 (Conf: 68% | Price: 1349)
+Alternatives:
+  - Keep Talking and Nobody Explodes (Conf: 63% | Price: 690)
+  - Dr. Daisy Pet Vet (Conf: 59% | Price: 480)
+
+--------------------------------------------------
+QUERY: i have a 1050 what can i actually run | BUDGET: 10000 | GPU: GTX 1050 | RAM: 8
+--------------------------------------------------
+Cleaned Intent: 1050 what actual run
+Explicit Refs: []
+Detected concepts: []
+Detected HW Intent: NO_HARDWARE_INTENT
+Vagueness: SPECIFIC (1.0)
+
+WINNER: 9th Company: Roots Of Terror (Conf: 59% | Price: 369)
+Alternatives:
+  - Velvet Assassin (Conf: 66% | Price: 300)
+  - Frostpunk (Conf: 40% | Price: 1300)
