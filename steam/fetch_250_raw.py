@@ -96,13 +96,13 @@ def main():
         if appid and appid not in existing_appids and appid not in targets:
             targets.append(appid)
 
-    # 2. Top up with chronologically earlier games (often classics) until we have 300 targets to try
-    if len(targets) < 300:
+    # 2. Top up with chronologically earlier games (often classics) until we have 500 targets to try
+    if len(targets) < 500:
         for m in master:
             appid = m['appid']
             if appid not in existing_appids and appid not in targets:
                 targets.append(appid)
-            if len(targets) >= 300:
+            if len(targets) >= 500:
                 break
 
     new_games = []

@@ -6,14 +6,14 @@
         "wild west"
     ],
     "Cities: Skylines": [
-        "strategy game about building a city",
-        "city builder"
+        "city builder",
+        "strategy game about building a city"
     ],
     "Forza Horizon 5": [
         "realistic racing game",
-        "open world racing",
+        "racing",
         "driving",
-        "racing"
+        "open world racing"
     ],
     "Slay the Spire": [
         "deckbuilder"
@@ -22,19 +22,19 @@
         "medieval RPG"
     ],
     "Grand Theft Auto V Legacy": [
-        "crime",
-        "heist"
+        "heist",
+        "crime"
     ],
     "Stardew Valley": [
         "space exploration"
     ],
     "Red Dead Redemption 2": [
-        "western",
+        "late 1800s",
+        "western cowboy open world",
+        "cowboy",
         "wild west",
         "horseback adventure",
-        "late 1800s",
-        "cowboy",
-        "western cowboy open world"
+        "western"
     ],
     "ELDEN RING": [
         "stealth"
@@ -43,15 +43,15 @@
         "space exploration"
     ],
     "Left 4 Dead 2": [
-        "zombie co op survival",
         "zombie survival",
-        "survival horror game with zombies",
-        "horror"
+        "horror",
+        "zombie co op survival",
+        "survival horror game with zombies"
     ],
     "Sekiro\u2122: Shadows Die Twice - GOTY Edition": [
-        "feudal japan",
         "stealth",
         "stealth ninja",
+        "feudal japan",
         "samurai stealth"
     ],
     "Battlefield\u2122 1": [
@@ -65,9 +65,9 @@
         "building"
     ],
     "The Forest": [
-        "mutants",
+        "post apocalyptic",
         "stealth",
-        "post apocalyptic"
+        "mutants"
     ],
     "Mount & Blade II: Bannerlord": [
         "medieval RPG"
@@ -104,5 +104,531 @@
     "Subnautica": [
         "open world survival",
         "survival crafting"
+    ],
+    "The Elder Scrolls V: Skyrim Special Edition": [
+        "space exploration"
+    ],
+    "Kingdom Come: Deliverance": [
+        "stealth",
+        "medieval RPG"
+    ],
+    "Dead Space": [
+        "space exploration"
+    ],
+    "Outlast": [
+        "stealth"
+    ],
+    "Alien: Isolation": [
+        "space exploration"
+    ],
+    "Outer Wilds": [
+        "space exploration"
+    ],
+    "Ghostrunner": [
+        "post apocalyptic survival"
+    ],
+    "Sniper Elite 4": [
+        "stealth"
+    ],
+    "Dishonored 2": [
+        "stealth"
+    ],
+    "Prey": [
+        "space exploration"
+    ],
+    "RAGE 2": [
+        "post apocalyptic",
+        "mutants"
+    ],
+    "Mad Max": [
+        "post apocalyptic survival"
+    ],
+    "The Walking Dead": [
+        "zombie survival",
+        "horror"
+    ],
+    "Unravel Two": [
+        "space exploration"
+    ],
+    "Braid": [
+        "space exploration"
+    ],
+    "FEZ": [
+        "space exploration"
+    ],
+    "My Time at Portia": [
+        "post apocalyptic survival"
+    ],
+    "My Time at Sandrock": [
+        "post apocalyptic survival"
+    ],
+    "Rune Factory 4 Special": [
+        "factory automation",
+        "building"
+    ],
+    "Elite Dangerous": [
+        "space exploration"
+    ],
+    "Kerbal Space Program": [
+        "space exploration"
+    ],
+    "Space Engineers": [
+        "space exploration"
+    ],
+    "Chivalry 2": [
+        "medieval RPG"
+    ],
+    "MORDHAU": [
+        "medieval RPG"
+    ],
+    "Mount & Blade": [
+        "medieval RPG"
+    ],
+    "Golf With Your Friends": [
+        "naval",
+        "pirate game"
+    ],
+    "Nickelodeon All-Star Brawl": [
+        "post apocalyptic",
+        "feudal japan",
+        "mutants",
+        "samurai stealth"
+    ],
+    "Judgment": [
+        "racing"
+    ],
+    "Lost Judgment": [
+        "racing"
+    ],
+    "Shenmue I & II": [
+        "racing"
+    ],
+    "Far Cry 3": [
+        "stealth"
+    ],
+    "Crysis Remastered": [
+        "racing",
+        "driving"
+    ],
+    "Crysis 2 Remastered": [
+        "stealth"
+    ],
+    "Crysis 3 Remastered": [
+        "stealth"
+    ],
+    "BONEWORKS": [
+        "space exploration"
+    ],
+    "Pistol Whip": [
+        "racing",
+        "driving"
+    ],
+    "VTOL VR": [
+        "stealth"
+    ],
+    "Ghost of Tsushima DIRECTOR'S CUT": [
+        "feudal japan",
+        "samurai stealth"
+    ],
+    "Pacific Drive": [
+        "racing",
+        "driving"
+    ],
+    "Manor Lords": [
+        "space exploration",
+        "medieval RPG"
+    ],
+    "Star Wars Outlaws": [
+        "stealth"
+    ],
+    "Avowed": [
+        "racing"
+    ],
+    "Wo Long: Fallen Dynasty": [
+        "feudal japan",
+        "samurai stealth"
+    ],
+    "Shadowgrounds Survivor": [
+        "space exploration"
+    ],
+    "Gumboy Tournament": [
+        "space exploration"
+    ],
+    "Space Trader: Merchant Marine": [
+        "space exploration"
+    ],
+    "Pacific Storm Allies": [
+        "naval",
+        "WW2 submarine"
+    ],
+    "Crash Time 2": [
+        "racing",
+        "driving"
+    ],
+    "Second Sight": [
+        "stealth"
+    ],
+    "Darkstar One": [
+        "space exploration"
+    ],
+    "Big Mutha Truckers": [
+        "racing",
+        "driving"
+    ],
+    "Port Royale 2": [
+        "naval",
+        "pirate game"
+    ],
+    "Sprint Cars Road to Knoxville": [
+        "racing",
+        "driving"
+    ],
+    "Midnight Outlaw: 6 Hours to SunUp": [
+        "racing"
+    ],
+    "Overlord II": [
+        "stealth"
+    ],
+    "Ninja Reflex: Steamworks Edition": [
+        "feudal japan",
+        "samurai stealth"
+    ],
+    "Far Cry\u00ae": [
+        "racing",
+        "stealth",
+        "driving"
+    ],
+    "Prince of Persia: The Two Thrones\u2122": [
+        "stealth"
+    ],
+    "Tom Clancy's Splinter Cell\u00ae": [
+        "stealth"
+    ],
+    "Tom Clancy's Splinter Cell Chaos Theory\u00ae": [
+        "stealth"
+    ],
+    "Tom Clancy's Splinter Cell Double Agent\u00ae": [
+        "stealth"
+    ],
+    "Prince of Persia\u00ae: The Sands of Time": [
+        "medieval RPG"
+    ],
+    "Tom Clancy's Ghost Recon\u00ae Desert Siege\u2122": [
+        "space exploration"
+    ],
+    "Tom Clancy's Rainbow Six Lockdown\u2122": [
+        "space exploration"
+    ],
+    "Assassin's Creed\u2122: Director's Cut Edition": [
+        "stealth",
+        "medieval RPG"
+    ],
+    "Silent Hunter\u00ae: Wolves of the Pacific": [
+        "naval",
+        "WW2 submarine"
+    ],
+    "Silent Hunter\u00ae III": [
+        "naval",
+        "WW2 submarine"
+    ],
+    "Silent Hunter\u00ae: Wolves of the Pacific U-Boat Missions": [
+        "naval",
+        "WW2 submarine"
+    ],
+    "Warhammer 40,000: Dawn of War II - Anniversary Edition (Classic)": [
+        "space exploration"
+    ],
+    "Oddworld: Stranger's Wrath HD": [
+        "western cowboy",
+        "wild west"
+    ],
+    "Virtual Villagers: The Lost Children": [
+        "western cowboy",
+        "wild west"
+    ],
+    "Insecticide Part 1": [
+        "post apocalyptic",
+        "mutants"
+    ],
+    "Velvet Assassin": [
+        "stealth"
+    ],
+    "GROUND BRANCH": [
+        "racing"
+    ],
+    "Mosby's Confederacy": [
+        "stealth"
+    ],
+    "Crysis Warhead\u00ae": [
+        "racing"
+    ],
+    "SPORE\u2122": [
+        "space exploration"
+    ],
+    "SPORE\u2122 Creepy & Cute Parts Pack": [
+        "zombie survival",
+        "horror"
+    ],
+    "Dead Space (2008)": [
+        "space exploration"
+    ],
+    "Zombie Panic! Source": [
+        "zombie survival",
+        "horror"
+    ],
+    "Pirates Vikings & Knights II": [
+        "naval",
+        "pirate game",
+        "medieval RPG"
+    ],
+    "Dystopia": [
+        "racing",
+        "space exploration"
+    ],
+    "Nuclear Dawn": [
+        "stealth",
+        "post apocalyptic survival"
+    ],
+    "DeathSpank: Thongs of Virtue": [
+        "feudal japan",
+        "samurai stealth"
+    ],
+    "Unstoppable Gorg": [
+        "space exploration"
+    ],
+    "Crazy Machines 2": [
+        "space exploration"
+    ],
+    "Defense Grid: The Awakening": [
+        "space exploration"
+    ],
+    "Space Ark": [
+        "space exploration"
+    ],
+    "Tom Clancy's Rainbow Six\u00ae 3 Gold": [
+        "factory automation",
+        "stealth",
+        "building"
+    ],
+    "Red Faction": [
+        "stealth"
+    ],
+    "Red Faction II": [
+        "naval",
+        "stealth",
+        "WW2 submarine"
+    ],
+    "Starscape": [
+        "space exploration"
+    ],
+    "The Witcher: Enhanced Edition Director's Cut": [
+        "medieval RPG"
+    ],
+    "F.E.A.R.": [
+        "space exploration"
+    ],
+    "Pyroblazer\u00ae": [
+        "racing"
+    ],
+    "Tom Clancy's EndWar\u2122": [
+        "space exploration"
+    ],
+    "R.U.S.E.\u2122": [
+        "western cowboy",
+        "wild west"
+    ],
+    "Call of Juarez: Bound in Blood": [
+        "western cowboy",
+        "wild west"
+    ],
+    "Penumbra Overture": [
+        "space exploration"
+    ],
+    "Fallout 3": [
+        "post apocalyptic",
+        "mutants",
+        "post apocalyptic survival"
+    ],
+    "Worms Reloaded": [
+        "racing"
+    ],
+    "Alien Breed 2: Assault": [
+        "space exploration"
+    ],
+    "Alien Breed 3: Descent": [
+        "space exploration"
+    ],
+    "Train Simulator Classic": [
+        "western cowboy",
+        "wild west"
+    ],
+    "PAYDAY\u2122 The Heist": [
+        "heist",
+        "crime"
+    ],
+    "Crusaders: Thy Kingdom Come": [
+        "medieval RPG"
+    ],
+    "SPORE\u2122 Galactic Adventures": [
+        "space exploration"
+    ],
+    "The Saboteur\u2122": [
+        "stealth"
+    ],
+    "Overgrowth": [
+        "feudal japan",
+        "samurai stealth"
+    ],
+    "Lugaru HD": [
+        "stealth"
+    ],
+    "Hearts of Iron III": [
+        "naval",
+        "WW2 submarine"
+    ],
+    "East India Company": [
+        "naval",
+        "pirate game"
+    ],
+    "The Path": [
+        "racing"
+    ],
+    "Fatale": [
+        "space exploration"
+    ],
+    "Space Giraffe": [
+        "space exploration"
+    ],
+    "Gridrunner Revolution": [
+        "space exploration"
+    ],
+    "Twin Sector": [
+        "post apocalyptic survival"
+    ],
+    "Dead Horde": [
+        "post apocalyptic",
+        "mutants"
+    ],
+    "Tales of Monkey Island: Complete Season": [
+        "naval",
+        "pirate game"
+    ],
+    "Zombie Bowl-o-Rama": [
+        "zombie survival",
+        "horror"
+    ],
+    "Metal Drift": [
+        "stealth"
+    ],
+    "STAR WARS\u2122 Starfighter\u2122": [
+        "naval",
+        "pirate game",
+        "space exploration"
+    ],
+    "The Secret of Monkey Island: Special Edition": [
+        "naval",
+        "pirate game"
+    ],
+    "STAR WARS\u2122 Jedi Knight - Mysteries of the Sith\u2122": [
+        "naval",
+        "pirate game"
+    ],
+    "Monkey Island\u2122 2 Special Edition: LeChuck\u2019s Revenge\u2122": [
+        "naval",
+        "pirate game",
+        "horror",
+        "zombie survival"
+    ],
+    "STAR WARS\u2122 Empire at War - Gold Pack": [
+        "space exploration"
+    ],
+    "LEGO\u00ae Star Wars\u2122 III - The Clone Wars\u2122": [
+        "space exploration"
+    ],
+    "MiG-29 Fulcrum": [
+        "western cowboy",
+        "wild west"
+    ],
+    "Tachyon: The Fringe": [
+        "space exploration"
+    ],
+    "Restaurant Empire II": [
+        "racing"
+    ],
+    "Zombie Shooter": [
+        "zombie survival",
+        "horror"
+    ],
+    "Zombie Shooter 2": [
+        "zombie survival",
+        "horror"
+    ],
+    "Tom Clancy's Splinter Cell Conviction\u2122": [
+        "stealth"
+    ],
+    "Tropico Reloaded": [
+        "naval",
+        "pirate game"
+    ],
+    "Patrician III": [
+        "naval",
+        "pirate game",
+        "medieval RPG"
+    ],
+    "Crash Time 3": [
+        "racing",
+        "driving"
+    ],
+    "18 Wheels of Steel: Extreme Trucker": [
+        "racing",
+        "driving"
+    ],
+    "The Search for Amelia Earhart": [
+        "space exploration"
+    ],
+    "Drakensang: The River of Time": [
+        "medieval RPG"
+    ],
+    "Pound of Ground": [
+        "zombie survival",
+        "horror"
+    ],
+    "Total War: NAPOLEON \u2013 Definitive Edition": [
+        "stealth"
+    ],
+    "Sonic & SEGA All-Stars Racing": [
+        "racing",
+        "medieval RPG"
+    ],
+    "Death to Spies: Moment of Truth": [
+        "western cowboy",
+        "stealth",
+        "wild west"
+    ],
+    "XIII Century \u2013 Gold Edition": [
+        "western cowboy",
+        "wild west",
+        "medieval RPG"
+    ],
+    "Light of Altair": [
+        "space exploration"
+    ],
+    "Order of War\u2122": [
+        "western cowboy",
+        "wild west"
+    ],
+    "Massive Assault": [
+        "space exploration"
+    ],
+    "Massive Assault: Phantom Renaissance": [
+        "space exploration"
+    ],
+    "Project Freedom": [
+        "space exploration"
+    ],
+    "Mini Ninjas": [
+        "stealth",
+        "feudal japan",
+        "samurai stealth"
     ]
 }

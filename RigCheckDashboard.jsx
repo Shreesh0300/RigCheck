@@ -490,10 +490,32 @@ export default function RigCheckDashboard({ onGameClick }) {
 
         {/* ───────── RIGHT PANEL (Results) ───────── */}
         <section ref={resultsRef} className="relative flex-1 overflow-y-auto bg-[#02040a] p-5 sm:p-6 lg:p-7">
-          {/* Subtle Background Image layer with Mask for a Cutout Effect */}
-          <div 
-            className={`pointer-events-none absolute inset-0 bg-[url('/empty-state-bg.png')] bg-[length:75%] bg-center bg-no-repeat mix-blend-screen brightness-125 [mask-image:radial-gradient(circle_at_50%_50%,black_20%,transparent_70%)] transition-all duration-700 ${!result && !isLoading && !error ? 'opacity-100 grayscale-0 scale-100' : 'opacity-[0.03] grayscale scale-110'}`}
-          />
+          {/* Atmospheric Background Image Cutout */}
+          <div className="pointer-events-none absolute inset-0 overflow-hidden flex items-center justify-center p-4 lg:p-8">
+            <div className="w-full h-full max-w-[1200px]">
+              {/* Top/Bottom Mask */}
+              <div 
+                className="w-full h-full"
+                style={{
+                  maskImage: 'linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)',
+                  WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)',
+                }}
+              >
+                {/* Left/Right Mask & Image */}
+                <div 
+                  className={`w-full h-full bg-[url('/empty-state-bg.png')] bg-contain bg-center bg-no-repeat transition-all duration-1000 ease-out ${
+                    !result && !isLoading && !error 
+                      ? 'opacity-[0.85] scale-100 mix-blend-screen brightness-110 saturate-125' 
+                      : 'opacity-[0.06] scale-105 mix-blend-screen grayscale'
+                  }`}
+                  style={{
+                    maskImage: 'linear-gradient(to right, transparent 0%, black 25%, black 90%, transparent 100%)',
+                    WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 25%, black 90%, transparent 100%)',
+                  }}
+                />
+              </div>
+            </div>
+          </div>
 
           {/* Content Layer */}
           <div className="relative z-10">
