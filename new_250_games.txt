@@ -1,250 +1,226 @@
-Crysis Warhead® (AppID: 17330)
-SPORE™ (AppID: 17390)
-Mirror's Edge™ (AppID: 17410)
-SPORE™ Creepy & Cute Parts Pack (AppID: 17440)
-Mass Effect (2007) (AppID: 17460)
-Dead Space (2008) (AppID: 17470)
-Command & Conquer™ Red Alert™ 3 (AppID: 17480)
-Zombie Panic! Source (AppID: 17500)
-Pirates Vikings & Knights II (AppID: 17570)
-Dystopia (AppID: 17580)
-Nuclear Dawn (AppID: 17710)
-Empires Mod (AppID: 17740)
-Precipice of Darkness, Episode One (AppID: 18000)
-Precipice of Darkness, Episode Two (AppID: 18020)
-DeathSpank (AppID: 18040)
-DeathSpank: Thongs of Virtue (AppID: 18050)
-The Baconing (AppID: 18070)
-Unstoppable Gorg (AppID: 18120)
-Spectraball (AppID: 18300)
-Crazy Machines 2 (AppID: 18400)
-Crazy Machines (AppID: 18420)
-Crazy Machines 1.5 (AppID: 18430)
-Helldorado (AppID: 18470)
-Mata Hari (AppID: 18480)
-Defense Grid: The Awakening (AppID: 18500)
-Mayhem Intergalactic (AppID: 18600)
-And Yet It Moves (AppID: 18700)
-Zero Gear (AppID: 18820)
-Tank Universal (AppID: 19200)
-Space Ark (AppID: 19320)
-Eternity's Child (AppID: 19500)
-Alice: Madness Returns (AppID: 19680)
-Brothers in Arms: Earned in Blood™ (AppID: 19800)
-Tom Clancy's Rainbow Six® 3 Gold (AppID: 19830)
-Far Cry® 2 (AppID: 19900)
-Prince of Persia® (AppID: 19980)
-Galactic Bowling (AppID: 20200)
-Red Faction Guerrilla Steam Edition (AppID: 20500)
-Red Faction (AppID: 20530)
-Company of Heroes: Tales of Valor (AppID: 20540)
-Red Faction II (AppID: 20550)
-Starscape (AppID: 20700)
-Mr. Robot (AppID: 20710)
-Shatter (AppID: 20820)
-The Witcher: Enhanced Edition Director's Cut (AppID: 20900)
-The Witcher 2: Assassins of Kings Enhanced Edition (AppID: 20920)
-LEGO® Batman™: The Videogame (AppID: 21000)
-Watchmen: The End is Nigh (AppID: 21010)
-Watchmen: The End is Nigh Part 2 (AppID: 21030)
-F.E.A.R. (AppID: 21090)
-F.E.A.R. 3 (AppID: 21100)
-LEGO® Harry Potter: Years 1-4 (AppID: 21130)
-Gravitron 2 (AppID: 21300)
-Pyroblazer® (AppID: 21500)
-Street Fighter® IV (AppID: 21660)
-Bionic Commando (AppID: 21670)
-Bionic Commando: Rearmed (AppID: 21680)
-Driver® Parallel Lines (AppID: 21780)
-Tom Clancy's EndWar™ (AppID: 21800)
-R.U.S.E.™ (AppID: 21970)
-Call of Juarez: Bound in Blood (AppID: 21980)
-World of Goo (AppID: 22000)
-Penumbra: Black Plague Gold Edition (AppID: 22120)
-Hearts of Iron 2 Complete (AppID: 22130)
-Penumbra: Requiem (AppID: 22140)
-Penumbra Overture (AppID: 22180)
-Zeno Clash (AppID: 22200)
-Rock of Ages (AppID: 22230)
-Fallout 3 (AppID: 22300)
-Rogue Warrior (AppID: 22310)
-The Elder Scrolls III: Morrowind® Game of the Year Edition (AppID: 22320)
-Call of Cthulhu®: Dark Corners of the Earth (AppID: 22340)
-BRINK (AppID: 22350)
-Hunted: The Demon’s Forge™ (AppID: 22450)
-Spectromancer (AppID: 22500)
-Worms Reloaded (AppID: 22600)
-Alien Breed: Impact (AppID: 22610)
-Alien Breed 2: Assault (AppID: 22650)
-Alien Breed 3: Descent (AppID: 22670)
-Fluttabyes (AppID: 23150)
-Yosumin!™ (AppID: 23300)
-Gyromancer (AppID: 23380)
-Imperium Romanum Gold Edition (AppID: 23400)
-Europa Universalis: Rome - Gold Edition (AppID: 23420)
-Grand Ages: Rome (AppID: 23450)
-Grand Ages: Rome - Reign of Augustus (AppID: 23455)
-Ceville (AppID: 23460)
-Tropico 3 (AppID: 23490)
-Puzzle Quest: Galactrix (AppID: 23500)
-Earth Defense Force: Insect Armageddon (AppID: 23530)
-Depths of Peril (AppID: 23600)
-Puzzle Kingdoms (AppID: 23700)
-Train Simulator Classic (AppID: 24010)
-DC Universe™ Online (AppID: 24200)
-PAYDAY™ The Heist (AppID: 24240)
-King Arthur - The Role-playing Wargame (AppID: 24400)
-Crusaders: Thy Kingdom Come (AppID: 24410)
-Aquaria (AppID: 24420)
-King Arthur: Fallen Champions (AppID: 24460)
-King Arthur II: The Role-Playing Wargame (AppID: 24480)
-SPORE™ Galactic Adventures (AppID: 24720)
-SimCity™ 4 Deluxe Edition (AppID: 24780)
-Command & Conquer 3 Tiberium Wars™ (AppID: 24790)
-Command & Conquer: Red Alert 3 - Uprising (AppID: 24800)
-Command & Conquer™ 3: Kane’s Wrath (AppID: 24810)
-The Saboteur™ (AppID: 24880)
-Overgrowth (AppID: 25000)
-Lugaru HD (AppID: 25010)
-Cricket Revolution (AppID: 25500)
-Eschalon: Book I (AppID: 25600)
-Eschalon: Book II (AppID: 25620)
-Madballs in Babo:Invasion (AppID: 25700)
-Europa Universalis III Complete (AppID: 25800)
-Europa Universalis III: Divine Wind (AppID: 25808)
-Knights of Honor (AppID: 25830)
-Elven Legacy (AppID: 25850)
-Hearts of Iron III (AppID: 25890)
-King's Bounty: The Legend (AppID: 25900)
-Supreme Ruler 2020 Gold (AppID: 25910)
-East India Company (AppID: 25930)
-Majesty 2 (AppID: 25980)
-Majesty Gold HD (AppID: 25990)
-The Maw (AppID: 26000)
-Drug Wars (AppID: 26300)
-Cogs (AppID: 26500)
-Crayon Physics Deluxe (AppID: 26900)
-The Path (AppID: 27000)
-The Graveyard (AppID: 27020)
-Fatale (AppID: 27050)
-Summer Athletics (AppID: 27200)
-Dangerous High School Girls in Trouble!™ (AppID: 27400)
-Space Giraffe (AppID: 27800)
-Gridrunner Revolution (AppID: 27810)
-Twin Sector (AppID: 27900)
-Booster Trooper (AppID: 27920)
-Dead Horde (AppID: 27940)
-Kane & Lynch 2: Dog Days (AppID: 28000)
-Yumsters 2: Around the World (AppID: 29120)
-Musaic Box (AppID: 29130)
-Blueberry Garden (AppID: 29160)
-Osmos (AppID: 29180)
-Guild Wars® Reforged (AppID: 29720)
-Caster (AppID: 29800)
-Dark Sector (AppID: 29900)
-Wallace & Gromit’s Grand Adventures (AppID: 31100)
-Tales of Monkey Island: Complete Season (AppID: 31170)
-Puzzle Agent (AppID: 31270)
-Tunnel Rats (AppID: 31300)
-Iron Grip: Warlord (AppID: 31700)
-Nancy Drew®: Danger by Design (AppID: 31800)
-Nancy Drew®: Last Train to Blue Moon Canyon (AppID: 31810)
-Nancy Drew®: The Haunted Carousel (AppID: 31820)
-Nancy Drew®: Curse of Blackmoor Manor (AppID: 31830)
-Nancy Drew®: Danger on Deception Island (AppID: 31840)
-Nancy Drew®: Ghost Dogs of Moon Lake (AppID: 31850)
-Nancy Drew®: Legend of the Crystal Skull (AppID: 31860)
-Nancy Drew® Dossier: Lights, Camera, Curses! (AppID: 31870)
-Nancy Drew®: Secret of the Old Clock (AppID: 31880)
-Nancy Drew®: Secret of the Scarlet Hand (AppID: 31890)
-Nancy Drew®: The Creature of Kapu Cave (AppID: 31900)
-Nancy Drew®: The Haunting of Castle Malloy (AppID: 31910)
-Nancy Drew®: The Phantom of Venice (AppID: 31920)
-Nancy Drew®: The White Wolf of Icicle Creek (AppID: 31930)
-Raycatcher (AppID: 32000)
-LUXOR: Mah Jong (AppID: 32110)
-Chainz 2: Relinked (AppID: 32120)
-Midnight Mysteries (AppID: 32140)
-Everyday Genius: SquareLogic (AppID: 32150)
-Zombie Bowl-o-Rama (AppID: 32160)
-Metal Drift (AppID: 32200)
-Indiana Jones® and the Last Crusade™ (AppID: 32310)
-LEGO® Indiana Jones™: The Original Adventures (AppID: 32330)
-LOOM™ (AppID: 32340)
-STAR WARS™ Starfighter™ (AppID: 32350)
-The Secret of Monkey Island: Special Edition (AppID: 32360)
-STAR WARS™ Knights of the Old Republic™ (AppID: 32370)
-STAR WARS™ Jedi Knight: Dark Forces II (AppID: 32380)
-STAR WARS™ Jedi Knight - Mysteries of the Sith™ (AppID: 32390)
-STAR WARS™ - The Force Unleashed™ Ultimate Sith Edition (AppID: 32430)
-LEGO® Star Wars™ - The Complete Saga (AppID: 32440)
-LEGO® Indiana Jones™ 2: The Adventure Continues (AppID: 32450)
-Monkey Island™ 2 Special Edition: LeChuck’s Revenge™ (AppID: 32460)
-STAR WARS™ Empire at War - Gold Pack (AppID: 32470)
-STAR WARS™: The Force Unleashed™ II (AppID: 32500)
-LEGO® Star Wars™ III - The Clone Wars™ (AppID: 32510)
-Delta Force Xtreme 2 (AppID: 32610)
-Delta Force 1 (AppID: 32620)
-Delta Force 2 (AppID: 32630)
-Delta Force Land Warrior (AppID: 32640)
-Delta Force: Task Force Dagger (AppID: 32650)
-Delta Force: Xtreme (AppID: 32660)
-Delta Force — Black Hawk Down: Team Sabre (AppID: 32680)
-Armored Fist 3 (AppID: 32710)
-F-16 Multirole Fighter (AppID: 32720)
-F-22 Lightning 3 (AppID: 32730)
-MiG-29 Fulcrum (AppID: 32740)
-Comanche 4 (AppID: 32750)
-Tachyon: The Fringe (AppID: 32760)
-Joint Operations: Combined Arms Gold (AppID: 32770)
-Restaurant Empire II (AppID: 32900)
-Alien Shooter (AppID: 33100)
-Alien Shooter: Revisited (AppID: 33110)
-Alien Shooter 2: Reloaded (AppID: 33120)
-Zombie Shooter (AppID: 33130)
-Zombie Shooter 2 (AppID: 33180)
-Tom Clancy's Splinter Cell Conviction™ (AppID: 33220)
-Assassin's Creed 2 (AppID: 33230)
-Prince of Persia: The Forgotten Sands™ (AppID: 33320)
-Zeit² (AppID: 33390)
-From Dust (AppID: 33460)
-Tropico Reloaded (AppID: 33520)
-Dawn of Magic 2 (AppID: 33540)
-Patrician III (AppID: 33570)
-The Great Art Race (AppID: 33580)
-Broken Sword 2 - the Smoking Mirror: Remastered (2010) (AppID: 33600)
-Broken Sword 3 - the Sleeping Dragon (2003) (AppID: 33610)
-Crash Time 3 (AppID: 33620)
-Puzzler World (AppID: 33650)
-Ziro (AppID: 33660)
-Disciples III - Renaissance Steam Special Edition (AppID: 33670)
-eversion (AppID: 33680)
-18 Wheels of Steel: Extreme Trucker (AppID: 33730)
-Prison Tycoon 4: SuperMax (AppID: 33750)
-The Search for Amelia Earhart (AppID: 33760)
-Drakensang: The River of Time (AppID: 33770)
-Elizabeth Find M.D. - Diagnosis Mystery - Season 2 (AppID: 33790)
-Arma 2 (AppID: 33900)
-Arma 2: Operation Arrowhead (AppID: 33930)
-Fish Fillets 2 (AppID: 33950)
-Pound of Ground (AppID: 33980)
-Alternativa (AppID: 33990)
-Total War: NAPOLEON – Definitive Edition (AppID: 34030)
-Sonic & SEGA All-Stars Racing (AppID: 34190)
-Death to Spies: Moment of Truth (AppID: 34410)
-XIII Century – Gold Edition (AppID: 34420)
-Light of Altair (AppID: 34500)
-Order of War™ (AppID: 34600)
-Massive Assault (AppID: 34630)
-Massive Assault: Phantom Renaissance (AppID: 34640)
-Chronicles of Mystery: The Scorpio Ritual (AppID: 34800)
-Project Freedom (AppID: 34810)
-Combat Wings: Battle of Britain (AppID: 34820)
-Sniper: Ghost Warrior (AppID: 34830)
-Sniper: Ghost Warrior 2 (AppID: 34870)
-Bad Rats: the Rats' Revenge (AppID: 34900)
-Razor2: Hidden Skies (AppID: 34920)
-Mini Ninjas (AppID: 35000)
-Flora's Fruit Farm (AppID: 35070)
-Lara Croft and the Guardian of Light (AppID: 35130)
-Warfare (AppID: 35300)
+New Games Added to RigCheck Database
+==================================================
+
+  1. [4500] S.T.A.L.K.E.R.: Shadow of Chernobyl | Action, RPG | INR 999
+  2. [17460] Mass Effect (2007) | Action, RPG | INR 1799
+  3. [17470] Dead Space (2008) | Action, Adventure | INR 999
+  4. [42700] Call of Duty®: Black Ops | Action | INR 2999
+  5. [47810] Dragon Age: Origins - Ultimate Edition | RPG | INR 1799
+  6. [48000] LIMBO | Action, Adventure, Indie | INR 550
+  7. [50130] Mafia II (Classic) | Action | INR 1699
+  8. [65980] Sid Meier's Civilization®: Beyond Earth™ | Strategy | INR 1999
+  9. [107410] Arma 3 | Action, Simulation, Strategy | INR 2099
+ 10. [108600] Project Zomboid | Indie, RPG, Simulation | INR 1149
+ 11. [201810] Wolfenstein: The New Order | Action | INR 1179
+ 12. [202970] Call of Duty®: Black Ops II | Action | INR 2999
+ 13. [205100] Dishonored | Action, Adventure | INR 670
+ 14. [209160] Call of Duty®: Ghosts | Action | INR 2999
+ 15. [212680] FTL: Faster Than Light | Indie, Simulation, Strategy | INR 480
+ 16. [219150] Hotline Miami | Action, Indie | INR 480
+ 17. [221100] DayZ | Action, Adventure, Massively Multiplayer | INR 3499
+ 18. [223750] DCS World Steam Edition | Simulation, Free To Play | Free
+ 19. [228200] Company of Heroes | Action, Strategy | INR 135
+ 20. [230410] Warframe | Action, RPG, Free To Play | Free
+ 21. [233450] Prison Architect | Indie, Simulation, Strategy | INR 1599
+ 22. [233720] Surgeon Simulator | Action, Indie, Simulation | INR 48
+ 23. [236870] HITMAN™ | Action | N/A
+ 24. [236930] Blackwell Epiphany | Adventure, Indie | INR 369
+ 25. [238010] Deus Ex: Human Revolution - Director's Cut | Action, RPG | INR 99
+ 26. [239160] Thief | Action, Adventure | INR 999
+ 27. [240720] Getting Over It with Bennett Foddy | Action | INR 299
+ 28. [240760] Wasteland 2: Director's Cut | Adventure, Indie, RPG | INR 699
+ 29. [243470] Watch_Dogs™ | Action, Adventure | INR 139
+ 30. [245620] Tropico 5 | RPG, Simulation, Strategy | INR 1199
+ 31. [248820] Risk of Rain (2013) | Action, Indie, RPG | INR 369
+ 32. [250760] Shovel Knight: Treasure Trove | Action, Adventure, Indie | INR 899
+ 33. [253250] Stonehearth | Indie, Simulation, Strategy | INR 529
+ 34. [257510] The Talos Principle | Action, Adventure, Indie | INR 1300
+ 35. [257850] Hyper Light Drifter | Action, Adventure, Indie | INR 141
+ 36. [268050] The Evil Within | Action | INR 1179
+ 37. [274170] Hotline Miami 2: Wrong Number | Action, Indie | INR 690
+ 38. [284160] BeamNG.drive | Racing, Simulation, Early Access | INR 1100
+ 39. [287390] Metro: Last Light Redux | Action | INR 1500
+ 40. [287700] METAL GEAR SOLID V: THE PHANTOM PAIN | Action, Adventure | INR 769
+ 41. [292730] Call of Duty®: Infinite Warfare | Action, Adventure | INR 5399
+ 42. [293760] Automation - The Car Company Tycoon Game | Indie, Racing, Simulation | INR 1300
+ 43. [298110] Far Cry® 4 | Action, Adventure | INR 299
+ 44. [304390] FOR HONOR™ | Action | INR 149
+ 45. [304430] INSIDE | Action, Adventure, Indie | INR 1100
+ 46. [305620] The Long Dark | Adventure, Indie, Simulation | INR 899
+ 47. [311210] Call of Duty®: Black Ops III | Action, Adventure | INR 5399
+ 48. [312520] Rain World | Action, Adventure, Indie | INR 1100
+ 49. [315920] Stonerid | Action, Indie | INR 250
+ 50. [319630] Life is Strange - Episode 1 | Action, Adventure | Free
+ 51. [324800] Shadow Warrior 2 | Action, Adventure | INR 1300
+ 52. [327030] Worms W.M.D | Action, Strategy | INR 449
+ 53. [337000] Deus Ex: Mankind Divided | Action, RPG | INR 149
+ 54. [342180] Arizona Sunshine® VR Legacy | Action, Adventure, Indie | INR 1099
+ 55. [342200] MechWarrior Online™ Legends | Action, Massively Multiplayer, Simulation | Free
+ 56. [349040] NARUTO SHIPPUDEN: Ultimate Ninja STORM 4 | Action, Adventure | INR 1199
+ 57. [362620] Software Inc. | Indie, Simulation, Strategy | INR 1012
+ 58. [367580] Hook | Casual, Indie | INR 155
+ 59. [383870] Firewatch | Adventure, Indie | INR 880
+ 60. [389730] TEKKEN 7 | Action, Sports | INR 989
+ 61. [393380] Squad | Action, Indie, Massively Multiplayer | INR 1053
+ 62. [414340] Hellblade: Senua's Sacrifice | Action, Adventure, Indie | INR 499
+ 63. [420530] OneShot | Adventure, Casual, Indie | INR 480
+ 64. [422970] Devil Daggers | Action, Indie | INR 205
+ 65. [429720] IMSCARED | Action, Adventure, Indie | INR 229
+ 66. [440900] Conan Exiles Enhanced | Action, Adventure, Massively Multiplayer | INR 999
+ 67. [447040] Watch_Dogs® 2 | Action, Adventure | INR 149
+ 68. [452440] Flowers -Le volume sur printemps- | Casual | INR 529
+ 69. [453090] Parkitect | Casual, Indie, Simulation | INR 1299
+ 70. [459220] Halo Wars: Definitive Edition | Strategy | INR 414
+ 71. [460810] Vanquish | Action | INR 1449
+ 72. [464920] Surviving Mars | Simulation, Strategy | N/A
+ 73. [466560] Northgard: Definitive Edition | Adventure, Indie, Simulation | INR 1399
+ 74. [471710] Rec Room | Adventure, Casual, Massively Multiplayer | N/A
+ 75. [476600] Call of Duty®: WWII | Action | INR 5399
+ 76. [482400] System Shock | Action, Adventure | INR 2240
+ 77. [485510] Nioh: Complete Edition | Action, RPG | INR 3500
+ 78. [492720] Tropico 6 | Simulation, Strategy | INR 2299
+ 79. [499520] The Turing Test | Adventure | INR 1100
+ 80. [501300] What Remains of Edith Finch | Adventure, Indie | INR 849
+ 81. [504300] Gangs of Space | Action, Free To Play, Indie | Free
+ 82. [505460] Foxhole | Action, Indie, Massively Multiplayer | INR 699
+ 83. [516750] My Summer Car | Indie, Racing, Simulation | INR 305
+ 84. [518790] theHunter: Call of the Wild™ | Adventure, Simulation, Sports | Free
+ 85. [530070] Train Sim World® 2020 | Simulation | INR 610
+ 86. [535930] Two Point Hospital | Indie, Simulation | INR 1999
+ 87. [552500] Warhammer: Vermintide 2 | Action, Indie, RPG | INR 1300
+ 88. [552520] Far Cry® 5 | Action, Adventure | INR 449
+ 89. [553050] Welcome Home, Love | Adventure, Casual, Simulation | INR 149
+ 90. [553850] HELLDIVERS™ 2 | Action | INR 2499
+ 91. [554620] Life is Strange: Before the Storm | Action, Adventure | INR 479
+ 92. [555160] Pavlov | Action, Indie | INR 569
+ 93. [560130] Pillars of Eternity II: Deadfire | RPG | INR 559
+ 94. [591660] Final Rest | Violent, Gore, Casual | INR 58
+ 95. [599140] Graveyard Keeper | Adventure, Indie, RPG | INR 880
+ 96. [612840] Boxplosion | Casual, Indie, Simulation | INR 105
+ 97. [613100] House Flipper | Action, Adventure, Casual | INR 1100
+ 98. [620590] Ancestors Legacy | Strategy | INR 1500
+ 99. [621060] PC Building Simulator | Indie, Simulation | INR 880
+100. [627270] Injustice™ 2 | Action | INR 2699
+101. [629730] Blade and Sorcery | Action, Adventure, Indie | INR 1349
+102. [638230] Journey | Adventure, Indie | INR 659
+103. [638970] Yakuza 0 | Action, Adventure, RPG | N/A
+104. [641320] Cooking Simulator | Casual, Simulation | INR 1029
+105. [644930] They Are Billions | Strategy | INR 1349
+106. [645630] Car Mechanic Simulator 2018 | Racing, Simulation | INR 70
+107. [648350] Jurassic World Evolution | Simulation, Strategy | INR 713
+108. [648800] Raft | Adventure, Indie, Simulation | INR 915
+109. [675010] MudRunner | Simulation | INR 999
+110. [685690] Guns'n'Stories: Bulletproof VR | Action, Adventure, Casual | INR 349
+111. [686810] Hell Let Loose | Action, Indie, Massively Multiplayer | INR 749
+112. [688420] Bad North: Jotunn Edition | Action, Indie, Simulation | INR 690
+113. [690790] DiRT Rally 2.0 | Racing, Simulation, Sports | INR 569
+114. [698670] Scorn | Action, Adventure, Indie | INR 93
+115. [699130] World War Z | Action | INR 1399
+116. [703080] Planet Zoo | Casual, Simulation, Strategy | INR 644
+117. [731490] Crash Bandicoot™ N. Sane Trilogy | Action | INR 3599
+118. [740130] Tales of ARISE | Action, RPG | INR 2999
+119. [755790] Ring of Elysium | Action, Free To Play, Massively Multiplayer | N/A
+120. [775500] SCARLET NEXUS | Action, Adventure, RPG | INR 467
+121. [779340] Total War: THREE KINGDOMS | Action, Strategy | INR 2449
+122. [815370] Green Hell | Action, Adventure, Indie | INR 700
+123. [837470] Untitled Goose Game | Action, Indie | INR 404
+124. [860950] Mark of the Ninja: Remastered | Action, Indie | INR 529
+125. [863550] HITMAN™ 2 | Action | N/A
+126. [870780] CONTROL Ultimate Edition | Action, Adventure | INR 1499
+127. [881100] Noita | Action, Adventure, Indie | INR 529
+128. [916440] Anno 1800 | Simulation, Strategy | INR 749
+129. [924970] Back 4 Blood | Action | INR 2999
+130. [936580] Avoidon | Casual, Indie | INR 105
+131. [954850] Kerbal Space Program 2 | Indie, Simulation, Early Access | INR 2799
+132. [963930] Contractors | Action, Casual, Indie | INR 529
+133. [972660] Spiritfarer®: Farewell Edition | Adventure, Indie, Simulation | INR 1349
+134. [973760] Thronebreaker: The Witcher Tales | Adventure, RPG | INR 199
+135. [978300] Saints Row®: The Third™ Remastered | Action, Adventure | INR 1680
+136. [996580] Spyro™ Reignited Trilogy | Action, Adventure | INR 3599
+137. [1020790] NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS | Action, Adventure | INR 1529
+138. [1049820] Must Dash Amigos | Action, Indie, Racing | INR 259
+139. [1054490] Wingspan | Indie, Strategy | INR 359
+140. [1061090] Jump King | Action, Adventure, Indie | INR 549
+141. [1089350] NBA 2K20 | Simulation, Sports | N/A
+142. [1092790] Inscryption | Adventure, Indie, Strategy | INR 699
+143. [1097840] Gears 5 | Action, Adventure | INR 2699
+144. [1114430] Ballex | Adventure, Casual, Indie | INR 165
+145. [1135690] Unpacking | Casual, Indie, Simulation | INR 529
+146. [1151640] Horizon Zero Dawn™ Complete Edition | Action, Adventure, RPG | N/A
+147. [1158370] Aragami 2 | Action, Indie | INR 1500
+148. [1167380] Neither Day nor Night | Action, Adventure, Indie | Free
+149. [1167630] Teardown | Action, Indie, Simulation | INR 749
+150. [1172620] Sea of Thieves: 2026 Edition | Action, Adventure | INR 3499
+151. [1222680] Need for Speed™ Heat | Action, Adventure, Racing | INR 3499
+152. [1229490] ULTRAKILL | Action, Indie, Early Access | INR 615
+153. [1237320] Sonic Frontiers | Action, Adventure | INR 2999
+154. [1244460] Jurassic World Evolution 2 | Simulation, Strategy | INR 734
+155. [1248130] Farming Simulator 22 | Simulation | INR 1369
+156. [1253920] Rogue Legacy 2 | Action, Adventure, Indie | INR 1100
+157. [1265920] Life is Strange Remastered | Action, Adventure | INR 1999
+158. [1273400] Construction Simulator | Casual, Simulation | INR 1100
+159. [1282690] Crysis® 3 | Action, Adventure, Strategy | N/A
+160. [1283400] Steelrising | Action, Adventure, RPG | INR 141
+161. [1289310] Helltaker | Adventure, Free To Play, Indie | Free
+162. [1295510] DRAGON QUEST® XI S: Echoes of an Elusive Age™ - Definitive Edition | Adventure, RPG | INR 1249
+163. [1295660] Sid Meier's Civilization VII | Simulation, Strategy | INR 3999
+164. [1304930] The Outlast Trials | Action, Adventure, Indie | INR 1600
+165. [1313140] Cult of the Lamb | Action, Adventure, Indie | INR 899
+166. [1325200] Nioh 2 – The Complete Edition | Action, RPG | INR 3500
+167. [1361210] Warhammer 40,000: Darktide | Action, Adventure, RPG | INR 2199
+168. [1370050] Trek to Yomi | Action, Adventure | INR 880
+169. [1372680] Castle Grimholt | Action, Adventure, Indie | N/A
+170. [1388030] Bocce VR Simulator | Action, Casual, Indie | INR 200
+171. [1390190] APICO | Casual, Simulation | INR 529
+172. [1401590] Disney Dreamlight Valley | Action, Adventure, Casual | INR 1499
+173. [1451480] The Greatest Penguin Heist of All Time | Action, Adventure, Indie | INR 229
+174. [1465360] SnowRunner | Adventure, Simulation | INR 1699
+175. [1498570] THE KING OF FIGHTERS XV | Action | INR 832
+176. [1514890] VR Shark | Adventure, Casual | INR 165
+177. [1517180] Mindcop | Adventure, Casual, Indie | INR 650
+178. [1533420] Neon White | Action, Adventure, Indie | INR 1124
+179. [1544020] The Callisto Protocol™ | Action, Adventure | INR 2400
+180. [1548850] Six Days in Fallujah | Action, Early Access | INR 1599
+181. [1643320] S.T.A.L.K.E.R. 2: Heart of Chornobyl | Action, Adventure, RPG | INR 3299
+182. [1649080] Two Point Campus | Casual, Indie, Simulation | INR 1999
+183. [1649240] Returnal™ | Action | INR 3999
+184. [1665070] Squad Of Dangerous | Action, Indie, Strategy | INR 125
+185. [1677280] Company of Heroes 3 | Action, Strategy | INR 960
+186. [1703340] The Stanley Parable: Ultra Deluxe | Adventure, Casual, Indie | INR 569
+187. [1720180] Mini Island: Autumn | Action, Casual, Indie | INR 155
+188. [1771300] Kingdom Come: Deliverance II | Action, Adventure, RPG | INR 1344
+189. [1817230] Hi-Fi RUSH | Action | INR 1799
+190. [1818750] MultiVersus | Action, Free To Play | N/A
+191. [1845910] Dragon Age™: The Veilguard | Action, Adventure, RPG | INR 2999
+192. [1846380] Need for Speed™ Unbound | Action, Racing | INR 3499
+193. [1849760] Siege of Treboulain | Action, Adventure, Casual | INR 345
+194. [1869590] Omega Strikers | Action, Strategy, Free To Play | Free
+195. [1887930] Idle Monster TD: Evolved | Casual, Indie, Strategy | Free
+196. [1934680] Age of Mythology: Retold | Strategy | INR 1499
+197. [1944430] Amnesia: The Bunker | Action, Adventure, Indie | INR 1100
+198. [1971870] Mortal Kombat 1 | Action | INR 2799
+199. [2000950] Call of Duty®: Modern Warfare® | Action | INR 5399
+200. [2005010] Warhammer 40,000: Boltgun | Action, Indie | INR 1199
+201. [2014780] X-Plane 12 | Simulation | INR 2400
+202. [2019380] Pocket Harvest | Casual, Indie, Simulation | INR 329
+203. [2096570] A Fisherman's Tale 2 | Adventure, Casual | INR 1099
+204. [2144740] Ghostrunner 2 | Action, Adventure, Strategy | INR 2599
+205. [2172010] Until Dawn™ | Adventure | INR 3999
+206. [2321470] Deep Rock Galactic: Survivor | Action | INR 635
+207. [2338770] NBA 2K24 | Simulation, Sports | N/A
+208. [2357570] Overwatch® | Action, Free To Play | Free
+209. [2369390] Far Cry® 6 | Action, Adventure | INR 299
+210. [2378480] GallowsHill | Casual, Indie | INR 105
+211. [2395210] Tony Hawk's™ Pro Skater™ 1 + 2 | Sports | INR 3599
+212. [2420110] Horizon Forbidden West™ Complete Edition | Action, RPG | INR 3999
+213. [2467710] Dash For Your Life | Indie | N/A
+214. [2513280] SONIC X SHADOW GENERATIONS | Action | INR 3999
+215. [2515020] FINAL FANTASY XVI | Action, RPG | INR 1399
+216. [2560660] Educational Suite | Casual | INR 109
+217. [2567870] Chained Together | Adventure, Casual, Indie | INR 250
+218. [2644730] 雌小鬼赛车 | Indie, Racing | N/A
+219. [2767030] Marvel Rivals | Action, Adventure, Casual | Free
+220. [2868840] Slay the Spire 2 | Indie, Strategy, Early Access | INR 1100
+221. [3088560] Sunrise Down | Adventure, Indie | INR 880
+
+Total: 221 games
