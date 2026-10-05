@@ -4,10 +4,10 @@ import HeroSection from "./HeroSection.jsx";
 import GenreDiscovery from "./GenreDiscovery.jsx";
 import GameGallery from "./GameGallery.jsx";
 import FloatingCTA from "./FloatingCTA.jsx";
-import LoginButton from "./LoginButton.jsx";
 import SearchBar from "./SearchBar.jsx";
 import DiagnosticModal from "./DiagnosticModal.jsx";
 import GameDetailModal from "./GameDetailModal.jsx";
+import LandingPage from "./LandingPage.jsx";
 
 /**
  * App — Root application component.
@@ -29,6 +29,7 @@ import GameDetailModal from "./GameDetailModal.jsx";
  */
 
 export default function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showDiagnostic, setShowDiagnostic] = useState(false);
 
   // Genre hover state — drives background video crossfade
@@ -65,6 +66,10 @@ export default function App() {
 
   const closeGameDetail = useCallback(() => setSelectedGame(null), []);
 
+  if (!isLoggedIn) {
+    return <LandingPage onLogin={() => setIsLoggedIn(true)} />;
+  }
+
   return (
     <main className="min-h-screen font-['Inter',ui-sans-serif,system-ui,sans-serif] text-slate-100">
       {/* ── Background Video Layer ── */}
@@ -94,9 +99,6 @@ export default function App() {
 
       {/* Search Bar — top right next to login */}
       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} totalGames={totalGames} />
-
-      {/* Login Button — top right */}
-      <LoginButton />
 
       {/*
         ── Diagnostic Modal (renders first = lower in paint order) ──

@@ -7,8 +7,6 @@ KEYWORD_MAPPINGS = {
     "post-apocalyptic": ["post apocalyptic survival"],
     "mutant": ["mutants", "post apocalyptic"],
     "space": ["space exploration"],
-    "ninja": ["samurai stealth", "feudal japan"],
-    "samurai": ["samurai stealth", "feudal japan"],
     "pirate": ["pirate game", "naval"],
     "submarine": ["WW2 submarine", "naval"],
     "zombie": ["zombie survival", "horror"],

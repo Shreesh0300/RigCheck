@@ -1,9 +1,9 @@
 {
     "UNCHARTED\u2122: Legacy of Thieves Collection": [
         "pirate game",
-        "wild west",
+        "naval",
         "western cowboy",
-        "naval"
+        "wild west"
     ],
     "Cities: Skylines": [
         "strategy game about building a city",
@@ -11,9 +11,9 @@
     ],
     "Forza Horizon 5": [
         "realistic racing game",
+        "driving",
         "racing",
-        "open world racing",
-        "driving"
+        "open world racing"
     ],
     "Slay the Spire": [
         "deckbuilder"
@@ -22,19 +22,19 @@
         "medieval RPG"
     ],
     "Grand Theft Auto V Legacy": [
-        "crime",
-        "heist"
+        "heist",
+        "crime"
     ],
     "Stardew Valley": [
         "space exploration"
     ],
     "Red Dead Redemption 2": [
+        "cowboy",
+        "late 1800s",
+        "wild west",
         "horseback adventure",
         "western",
-        "cowboy",
-        "western cowboy open world",
-        "wild west",
-        "late 1800s"
+        "western cowboy open world"
     ],
     "ELDEN RING": [
         "stealth"
@@ -43,16 +43,16 @@
         "space exploration"
     ],
     "Left 4 Dead 2": [
+        "zombie survival",
         "zombie co op survival",
         "survival horror game with zombies",
-        "horror",
-        "zombie survival"
+        "horror"
     ],
     "Sekiro\u2122: Shadows Die Twice - GOTY Edition": [
-        "stealth ninja",
-        "feudal japan",
         "samurai stealth",
-        "stealth"
+        "stealth",
+        "stealth ninja",
+        "feudal japan"
     ],
     "Battlefield\u2122 1": [
         "space exploration"
@@ -61,13 +61,13 @@
         "stealth"
     ],
     "Palworld": [
-        "building",
-        "factory automation"
+        "factory automation",
+        "building"
     ],
     "The Forest": [
-        "mutants",
         "post apocalyptic",
-        "stealth"
+        "stealth",
+        "mutants"
     ],
     "Mount & Blade II: Bannerlord": [
         "medieval RPG"
@@ -84,16 +84,16 @@
         "stealth"
     ],
     "Factorio": [
-        "base building",
-        "factory automation"
+        "factory automation",
+        "base building"
     ],
     "Resident Evil 2": [
-        "horror",
-        "zombie survival"
+        "zombie survival",
+        "horror"
     ],
     "Unturned": [
-        "horror",
-        "zombie survival"
+        "zombie survival",
+        "horror"
     ],
     "DOOM": [
         "space exploration"
@@ -137,15 +137,15 @@
         "space exploration"
     ],
     "RAGE 2": [
-        "mutants",
-        "post apocalyptic"
+        "post apocalyptic",
+        "mutants"
     ],
     "Mad Max": [
         "post apocalyptic survival"
     ],
     "The Walking Dead": [
-        "horror",
-        "zombie survival"
+        "zombie survival",
+        "horror"
     ],
     "Unravel Two": [
         "space exploration"
@@ -163,8 +163,8 @@
         "post apocalyptic survival"
     ],
     "Rune Factory 4 Special": [
-        "building",
-        "factory automation"
+        "factory automation",
+        "building"
     ],
     "Elite Dangerous": [
         "space exploration"
@@ -189,10 +189,8 @@
         "naval"
     ],
     "Nickelodeon All-Star Brawl": [
-        "feudal japan",
-        "mutants",
         "post apocalyptic",
-        "samurai stealth"
+        "mutants"
     ],
     "Judgment": [
         "racing"
@@ -207,8 +205,8 @@
         "stealth"
     ],
     "Crysis Remastered": [
-        "racing",
-        "driving"
+        "driving",
+        "racing"
     ],
     "Crysis 2 Remastered": [
         "stealth"
@@ -220,19 +218,15 @@
         "space exploration"
     ],
     "Pistol Whip": [
-        "racing",
-        "driving"
+        "driving",
+        "racing"
     ],
     "VTOL VR": [
         "stealth"
     ],
-    "Ghost of Tsushima DIRECTOR'S CUT": [
-        "feudal japan",
-        "samurai stealth"
-    ],
     "Pacific Drive": [
-        "racing",
-        "driving"
+        "driving",
+        "racing"
     ],
     "Manor Lords": [
         "medieval RPG",
@@ -243,10 +237,6 @@
     ],
     "Avowed": [
         "racing"
-    ],
-    "Wo Long: Fallen Dynasty": [
-        "feudal japan",
-        "samurai stealth"
     ],
     "Shadowgrounds Survivor": [
         "space exploration"
@@ -262,8 +252,8 @@
         "WW2 submarine"
     ],
     "Crash Time 2": [
-        "racing",
-        "driving"
+        "driving",
+        "racing"
     ],
     "Second Sight": [
         "stealth"
@@ -272,16 +262,16 @@
         "space exploration"
     ],
     "Big Mutha Truckers": [
-        "racing",
-        "driving"
+        "driving",
+        "racing"
     ],
     "Port Royale 2": [
         "pirate game",
         "naval"
     ],
     "Sprint Cars Road to Knoxville": [
-        "racing",
-        "driving"
+        "driving",
+        "racing"
     ],
     "Midnight Outlaw: 6 Hours to SunUp": [
         "racing"
@@ -289,14 +279,10 @@
     "Overlord II": [
         "stealth"
     ],
-    "Ninja Reflex: Steamworks Edition": [
-        "feudal japan",
-        "samurai stealth"
-    ],
     "Far Cry\u00ae": [
-        "racing",
         "stealth",
-        "driving"
+        "driving",
+        "racing"
     ],
     "Prince of Persia: The Two Thrones\u2122": [
         "stealth"
@@ -339,16 +325,16 @@
         "space exploration"
     ],
     "Oddworld: Stranger's Wrath HD": [
-        "wild west",
-        "western cowboy"
+        "western cowboy",
+        "wild west"
     ],
     "Virtual Villagers: The Lost Children": [
-        "wild west",
-        "western cowboy"
+        "western cowboy",
+        "wild west"
     ],
     "Insecticide Part 1": [
-        "mutants",
-        "post apocalyptic"
+        "post apocalyptic",
+        "mutants"
     ],
     "Velvet Assassin": [
         "stealth"
@@ -360,22 +346,22 @@
         "stealth"
     ],
     "S.T.A.L.K.E.R.: Shadow of Chernobyl": [
-        "mutants",
-        "post apocalyptic"
+        "post apocalyptic",
+        "mutants"
     ],
     "Dead Space (2008)": [
         "space exploration"
     ],
     "Call of Duty\u00ae: Black Ops": [
-        "horror",
-        "zombie survival"
+        "zombie survival",
+        "horror"
     ],
     "Sid Meier's Civilization\u00ae: Beyond Earth\u2122": [
         "space exploration"
     ],
     "Project Zomboid": [
-        "horror",
-        "zombie survival"
+        "zombie survival",
+        "horror"
     ],
     "Dishonored": [
         "stealth"
@@ -384,16 +370,16 @@
         "space exploration"
     ],
     "Hotline Miami": [
-        "racing",
-        "driving"
+        "driving",
+        "racing"
     ],
     "DayZ": [
         "post apocalyptic survival",
         "space exploration"
     ],
     "DCS World Steam Edition": [
-        "wild west",
-        "western cowboy"
+        "western cowboy",
+        "wild west"
     ],
     "Warframe": [
         "space exploration"
@@ -402,67 +388,53 @@
         "stealth"
     ],
     "Thief": [
-        "crime",
-        "heist"
+        "heist",
+        "crime"
     ],
     "Wasteland 2: Director's Cut": [
         "post apocalyptic survival"
     ],
     "Watch_Dogs\u2122": [
-        "racing",
-        "driving"
+        "driving",
+        "racing"
     ],
     "BeamNG.drive": [
-        "racing",
-        "driving"
+        "driving",
+        "racing"
     ],
     "Metro: Last Light Redux": [
-        "mutants",
-        "post apocalyptic",
         "post apocalyptic survival",
-        "stealth"
+        "post apocalyptic",
+        "stealth",
+        "mutants"
     ],
     "Call of Duty\u00ae: Infinite Warfare": [
-        "horror",
+        "zombie survival",
         "space exploration",
-        "zombie survival"
+        "horror"
     ],
     "Far Cry\u00ae 4": [
         "stealth"
     ],
-    "FOR HONOR\u2122": [
-        "feudal japan",
-        "samurai stealth"
-    ],
     "The Long Dark": [
-        "horror",
-        "zombie survival"
+        "zombie survival",
+        "horror"
     ],
     "Call of Duty\u00ae: Black Ops III": [
-        "horror",
-        "zombie survival"
+        "zombie survival",
+        "horror"
     ],
     "Rain World": [
         "stealth"
     ],
-    "Shadow Warrior 2": [
-        "feudal japan",
-        "samurai stealth"
-    ],
     "Arizona Sunshine\u00ae VR Legacy": [
-        "horror",
         "post apocalyptic survival",
-        "western cowboy",
         "zombie survival",
+        "western cowboy",
+        "horror",
         "wild west"
     ],
-    "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4": [
-        "feudal japan",
-        "samurai stealth"
-    ],
     "Firewatch": [
-        "samurai stealth",
-        "feudal japan",
         "space exploration"
     ],
     "Hellblade: Senua's Sacrifice": [
@@ -475,13 +447,9 @@
         "space exploration"
     ],
     "System Shock": [
-        "mutants",
         "post apocalyptic",
-        "space exploration"
-    ],
-    "Nioh: Complete Edition": [
-        "feudal japan",
-        "samurai stealth"
+        "space exploration",
+        "mutants"
     ],
     "The Turing Test": [
         "space exploration"
@@ -495,15 +463,15 @@
     ],
     "My Summer Car": [
         "building",
-        "racing",
+        "factory automation",
         "driving",
-        "factory automation"
+        "racing"
     ],
     "Train Sim World\u00ae 2020": [
-        "wild west",
         "western cowboy",
+        "driving",
         "racing",
-        "driving"
+        "wild west"
     ],
     "Far Cry\u00ae 5": [
         "stealth"
@@ -518,44 +486,40 @@
         "medieval RPG"
     ],
     "They Are Billions": [
-        "horror",
-        "zombie survival"
+        "zombie survival",
+        "horror"
     ],
     "MudRunner": [
-        "racing",
-        "driving"
+        "driving",
+        "racing"
     ],
     "Guns'n'Stories: Bulletproof VR": [
-        "wild west",
-        "western cowboy"
+        "western cowboy",
+        "wild west"
     ],
     "Hell Let Loose": [
-        "wild west",
-        "western cowboy"
+        "western cowboy",
+        "wild west"
     ],
     "DiRT Rally 2.0": [
-        "racing",
-        "driving"
+        "driving",
+        "racing"
     ],
     "World War Z": [
-        "horror",
-        "zombie survival"
+        "zombie survival",
+        "horror"
     ],
     "Ring of Elysium": [
         "stealth"
     ],
     "SCARLET NEXUS": [
-        "wild west",
-        "mutants",
+        "post apocalyptic",
         "western cowboy",
-        "post apocalyptic"
+        "mutants",
+        "wild west"
     ],
     "Untitled Goose Game": [
         "stealth"
-    ],
-    "Mark of the Ninja: Remastered": [
-        "feudal japan",
-        "samurai stealth"
     ],
     "HITMAN\u2122 2": [
         "stealth"
@@ -567,18 +531,12 @@
         "space exploration"
     ],
     "Contractors": [
-        "horror",
-        "zombie survival"
+        "zombie survival",
+        "horror"
     ],
     "Saints Row\u00ae: The Third\u2122 Remastered": [
         "pirate game",
-        "feudal japan",
-        "samurai stealth",
         "naval"
-    ],
-    "NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS": [
-        "feudal japan",
-        "samurai stealth"
     ],
     "Must Dash Amigos": [
         "racing"
@@ -590,8 +548,8 @@
         "stealth"
     ],
     "Teardown": [
-        "crime",
-        "heist"
+        "heist",
+        "crime"
     ],
     "Sea of Thieves: 2026 Edition": [
         "pirate game",
@@ -609,38 +567,26 @@
     "The Outlast Trials": [
         "stealth"
     ],
-    "Nioh 2 \u2013 The Complete Edition": [
-        "feudal japan",
-        "samurai stealth"
-    ],
-    "Trek to Yomi": [
-        "feudal japan",
-        "samurai stealth"
-    ],
     "The Greatest Penguin Heist of All Time": [
-        "horror",
-        "stealth",
-        "crime",
         "zombie survival",
-        "heist"
+        "heist",
+        "stealth",
+        "horror",
+        "crime"
     ],
     "THE KING OF FIGHTERS XV": [
-        "racing",
-        "driving"
+        "driving",
+        "racing"
     ],
     "VR Shark": [
         "space exploration"
     ],
     "Squad Of Dangerous": [
-        "horror",
-        "zombie survival"
+        "zombie survival",
+        "horror"
     ],
     "Need for Speed\u2122 Unbound": [
         "racing"
-    ],
-    "Age of Mythology: Retold": [
-        "feudal japan",
-        "samurai stealth"
     ],
     "Warhammer 40,000: Boltgun": [
         "space exploration"
@@ -649,9 +595,7 @@
         "space exploration"
     ],
     "Ghostrunner 2": [
-        "feudal japan",
-        "post apocalyptic survival",
-        "samurai stealth"
+        "post apocalyptic survival"
     ],
     "GallowsHill": [
         "space exploration"
@@ -685,13 +629,13 @@
         "space exploration"
     ],
     "No More Room in Hell": [
-        "horror",
-        "zombie survival"
+        "zombie survival",
+        "horror"
     ],
     "Robocraft": [
         "building",
-        "racing",
+        "factory automation",
         "driving",
-        "factory automation"
+        "racing"
     ]
 }

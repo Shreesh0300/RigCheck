@@ -266,7 +266,7 @@ def get_explicit_references(user_input):
             explicit_refs.append(p)
             
     for t in exact_titles:
-        if len(t) > 3 and t in expanded:
+        if len(t) > 3 and re.search(r'\b' + re.escape(t) + r'\b', expanded):
             explicit_refs.append(t)
             
     return explicit_refs
