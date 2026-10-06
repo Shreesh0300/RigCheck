@@ -1,4 +1,92 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+// Reuse the existing sign-in video asset (project root). Vite resolves this
+// import to a served URL in dev and a hashed asset in production builds,
+// so no file copy or hardcoded filesystem path is needed.
+import signInVideo from '../signin.mp4';
+
+/**
+ * SignInVideoBackground — fullscreen, muted, looping background video that
+ * is only rendered on the pre-login Sign In page.
+ *
+ * - Fades in once the video is actually playing, so the existing
+ *   `/sign-in.jpg` layer underneath acts as the fallback while loading.
+ * - If the video fails to load, it is removed entirely and the existing
+ *   background image remains visible.
+ * - On unmount (successful login), the source is released so the video
+ *   stops downloading/decoding in the background.
+ */
+function SignInVideoBackground() {
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [hasError, setHasError] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return undefined;
+
+    // Set muted as a DOM property too — some browsers require it for autoplay.
+    video.muted = true;
+    video.defaultMuted = true;
+
+    const playPromise = video.play();
+    if (playPromise && typeof playPromise.catch === 'function') {
+      playPromise.catch(() => {
+        // Autoplay blocked — keep the static fallback background.
+      });
+    }
+
+    return () => {
+      // Stop playback when the sign-in page unmounts (i.e. after login).
+      // The element is removed from the DOM, so the browser releases it.
+      video.pause();
+    };
+  }, []);
+
+  if (hasError) return null;
+
+  return (
+    <div
+      className="pointer-events-none fixed inset-0 z-0 overflow-hidden"
+      aria-hidden="true"
+    >
+      <video
+        ref={videoRef}
+        src={signInVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        disablePictureInPicture
+        onPlaying={() => setIsPlaying(true)}
+        onError={() => setHasError(true)}
+        className="absolute inset-0 h-full w-full object-cover"
+        style={{
+          opacity: isPlaying ? 1 : 0,
+          transition: 'opacity 700ms ease',
+        }}
+      />
+
+      {/* Dark gradient overlay — keeps the form readable, video still visible */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            'linear-gradient(180deg, rgba(2, 4, 10, 0.55) 0%, rgba(2, 4, 10, 0.35) 40%, rgba(2, 4, 10, 0.4) 70%, rgba(2, 4, 10, 0.7) 100%)',
+        }}
+      />
+
+      {/* Vignette — darkens edges to focus attention on the sign-in card */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            'radial-gradient(ellipse at center, transparent 35%, rgba(2, 4, 10, 0.55) 100%)',
+        }}
+      />
+    </div>
+  );
+}
 
 export default function LandingPage({ onLogin }) {
   const [email, setEmail] = useState('');
@@ -12,16 +100,19 @@ export default function LandingPage({ onLogin }) {
 
   return (
     <div 
-      className="relative min-h-screen w-full flex items-center justify-center bg-black overflow-hidden font-['Inter',ui-sans-serif,system-ui,sans-serif]"
+      className="relative min-h-screen w-full flex items-center justify-center bg-black overflow-hidden px-4 py-8 sm:px-6 font-['Inter',ui-sans-serif,system-ui,sans-serif]"
     >
-      {/* Background Image Layer */}
+      {/* Background Image Layer (fallback while the video loads, or if it fails) */}
       <div 
         className="absolute inset-0 z-0 bg-center bg-no-repeat bg-black"
         style={{ backgroundImage: "url('/sign-in.jpg')", backgroundSize: "100% 100%", filter: "brightness(0.85) contrast(1.1)" }}
       ></div>
 
-      {/* Glassmorphism Panel */}
-      <div className="relative z-10 w-full max-w-md mx-auto p-8 rounded-2xl border border-white/10 bg-slate-900/60 backdrop-blur-xl shadow-[0_0_50px_rgba(0,0,0,0.5)] flex flex-col items-center">
+      {/* Background Video Layer — above the fallback image, below the panel */}
+      <SignInVideoBackground />
+
+      {/* Glassmorphism Panel — translucent so the background video shows through */}
+      <div className="relative z-10 w-full max-w-md mx-auto p-8 rounded-2xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/35 via-slate-950/25 to-slate-900/35 backdrop-blur-md backdrop-saturate-150 shadow-[0_8px_40px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.08)] ring-1 ring-inset ring-white/5 flex flex-col items-center">
         
         {/* Logo and Branding */}
         <div className="flex items-center space-x-3 mb-2">
@@ -52,7 +143,7 @@ export default function LandingPage({ onLogin }) {
               <input 
                 type="email" 
                 placeholder="Enter your email address"
-                className="w-full pl-10 pr-4 py-3 bg-slate-900/50 border border-slate-700/50 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-400 transition-colors"
+                className="w-full pl-10 pr-4 py-3 bg-slate-950/30 border border-white/15 rounded-lg text-white placeholder-slate-400 focus:bg-slate-950/45 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-400 transition-colors"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -71,7 +162,7 @@ export default function LandingPage({ onLogin }) {
               <input 
                 type="password" 
                 placeholder="••••••••"
-                className="w-full pl-10 pr-4 py-3 bg-slate-900/50 border border-slate-700/50 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-400 transition-colors"
+                className="w-full pl-10 pr-4 py-3 bg-slate-950/30 border border-white/15 rounded-lg text-white placeholder-slate-400 focus:bg-slate-950/45 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-400 transition-colors"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -88,14 +179,14 @@ export default function LandingPage({ onLogin }) {
         </form>
 
         <div className="w-full flex items-center my-6">
-          <div className="flex-grow border-t border-slate-700/50"></div>
-          <span className="px-3 text-xs text-slate-400 uppercase tracking-widest">Or continue with</span>
-          <div className="flex-grow border-t border-slate-700/50"></div>
+          <div className="flex-grow border-t border-white/15"></div>
+          <span className="px-3 text-xs text-slate-300 uppercase tracking-widest">Or continue with</span>
+          <div className="flex-grow border-t border-white/15"></div>
         </div>
 
         {/* Social Logins */}
         <div className="w-full grid grid-cols-2 gap-3">
-          <button className="flex items-center justify-center space-x-2 bg-slate-800/80 hover:bg-slate-700 border border-slate-700/50 py-2.5 rounded-lg text-sm font-medium text-white transition-colors">
+          <button className="flex items-center justify-center space-x-2 bg-white/5 hover:bg-white/15 border border-white/15 hover:border-white/25 backdrop-blur-sm py-2.5 rounded-lg text-sm font-medium text-white transition-colors">
             {/* Steam Icon minimal SVG */}
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M11.967 0C5.356 0 0 5.359 0 11.97c0 4.606 2.592 8.618 6.402 10.597L9.42 16.27a4.912 4.912 0 0 1-1.397-2.144L3.6 12.822a.566.566 0 0 1-.362-.68c.245-.98 1.573-4.669 5.867-5.614 3.037-.67 6.13.257 8.356 2.457 2.222 2.196 2.923 5.358 1.83 8.363l3.666 4.708c2.977-2.274 4.88-5.83 4.88-9.832 0-6.61-5.356-11.968-11.967-11.968zm5.725 15.655a3.195 3.195 0 0 1-4.043.682l-2.455 3.486a4.856 4.856 0 0 0 4.904 1.487c2.261-.502 3.864-2.528 3.822-4.838l-2.228-1.573zM10.15 13.9a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4z"/>
@@ -103,7 +194,7 @@ export default function LandingPage({ onLogin }) {
             <span>Steam</span>
           </button>
           
-          <button className="flex items-center justify-center space-x-2 bg-slate-800/80 hover:bg-slate-700 border border-slate-700/50 py-2.5 rounded-lg text-sm font-medium text-white transition-colors">
+          <button className="flex items-center justify-center space-x-2 bg-white/5 hover:bg-white/15 border border-white/15 hover:border-white/25 backdrop-blur-sm py-2.5 rounded-lg text-sm font-medium text-white transition-colors">
             {/* Google Icon minimal SVG */}
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
