@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import BackgroundVideoLayer from "./BackgroundVideoLayer.jsx";
 import HeroSection from "./HeroSection.jsx";
 import GenreDiscovery from "./GenreDiscovery.jsx";
@@ -8,6 +8,9 @@ import SearchBar from "./SearchBar.jsx";
 import DiagnosticModal from "./DiagnosticModal.jsx";
 import GameDetailModal from "./GameDetailModal.jsx";
 import LandingPage from "./LandingPage.jsx";
+import ProfileDropdown from "./ProfileDropdown.jsx";
+import ProfileModal from "./ProfileModal.jsx";
+import SettingsModal from "./SettingsModal.jsx";
 
 /**
  * App — Root application component.
@@ -22,6 +25,8 @@ import LandingPage from "./LandingPage.jsx";
  *   6. GameDetailModal      — cinematic game detail overlay
  *
  * State:
+ *  - isLoggedIn: authenticated session status
+ *  - currentUser: verified MongoDB user record
  *  - showDiagnostic: controls the diagnostic modal visibility
  *  - activeGenre: tracks hovered genre → drives background video crossfade
  *  - selectedGenre: the genre filter applied to the game gallery
@@ -30,7 +35,11 @@ import LandingPage from "./LandingPage.jsx";
 
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [currentUser, setCurrentUser] = useState(null);
+  const [authChecking, setAuthChecking] = useState(true);
   const [showDiagnostic, setShowDiagnostic] = useState(false);
+  const [showProfileModal, setShowProfileModal] = useState(false);
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
 
   // Genre hover state — drives background video crossfade
   const [activeGenre, setActiveGenre] = useState(null);
@@ -47,27 +56,76 @@ export default function App() {
   // Active game for detail modal
   const [selectedGame, setSelectedGame] = useState(null);
 
+  // Check existing session on initial load
+  useEffect(() => {
+    let isMounted = true;
+    async function checkExistingSession() {
+      try {
+        const res = await fetch("/auth/me");
+        if (res.ok) {
+          const data = await res.json();
+          if (isMounted && data.authenticated && data.user) {
+            setCurrentUser(data.user);
+            setIsLoggedIn(true);
+          }
+        }
+      } catch (err) {
+        // Unauthenticated or network issue
+      } finally {
+        if (isMounted) setAuthChecking(false);
+      }
+    }
+    checkExistingSession();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  const handleLogin = useCallback((userData) => {
+    setCurrentUser(userData);
+    setIsLoggedIn(true);
+  }, []);
+
+  const handleLogout = useCallback(async () => {
+    try {
+      await fetch("/auth/logout", { method: "POST" });
+    } catch (e) {
+      // Ignore network errors on logout
+    }
+    setCurrentUser(null);
+    setIsLoggedIn(false);
+    setShowProfileModal(false);
+    setShowSettingsModal(false);
+  }, []);
+
+  const openProfile = useCallback(() => setShowProfileModal(true), []);
+  const closeProfile = useCallback(() => setShowProfileModal(false), []);
+  const openSettings = useCallback(() => setShowSettingsModal(true), []);
+  const closeSettings = useCallback(() => setShowSettingsModal(false), []);
+
   const openDiagnostic = useCallback(() => setShowDiagnostic(true), []);
   const closeDiagnostic = useCallback(() => setShowDiagnostic(false), []);
   const handleGenreHover = useCallback((genre) => setActiveGenre(genre), []);
   const handleGenreSelect = useCallback((genre) => setSelectedGenre(genre), []);
   const handleClearGenre = useCallback(() => setSelectedGenre(null), []);
 
-  // Opens a game in the GameDetailModal.
-  // If called from within the DiagnosticModal (e.g. "You Might Also Like"),
-  // we must close DiagnosticModal first — otherwise it stays on top and
-  // buries the GameDetailModal (both share the same z-index layer).
-  // If GameDetailModal is already open, updating selectedGame just replaces
-  // the content in-place via props — no second modal is ever created.
   const handleGameClick = useCallback((game) => {
-    setShowDiagnostic(false); // always close diagnostic before showing game detail
+    setShowDiagnostic(false);
     setSelectedGame(game);
   }, []);
 
   const closeGameDetail = useCallback(() => setSelectedGame(null), []);
 
+  if (authChecking) {
+    return (
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
+        <div className="h-10 w-10 animate-spin rounded-full border-2 border-cyan-400 border-t-transparent shadow-[0_0_20px_rgba(34,211,238,0.3)]" />
+      </div>
+    );
+  }
+
   if (!isLoggedIn) {
-    return <LandingPage onLogin={() => setIsLoggedIn(true)} />;
+    return <LandingPage onLogin={handleLogin} />;
   }
 
   return (
@@ -97,8 +155,18 @@ export default function App() {
       {/* Floating "Ask RigCheck AI" Button */}
       <FloatingCTA onClick={openDiagnostic} />
 
-      {/* Search Bar — top right next to login */}
+      {/* Search Bar — top right next to user profile */}
       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} totalGames={totalGames} />
+
+      {/* Account Profile Dropdown — top right */}
+      <div className="fixed right-6 top-6 z-50">
+        <ProfileDropdown
+          currentUser={currentUser}
+          onOpenProfile={openProfile}
+          onOpenSettings={openSettings}
+          onLogout={handleLogout}
+        />
+      </div>
 
       {/*
         ── Diagnostic Modal (renders first = lower in paint order) ──
@@ -120,6 +188,19 @@ export default function App() {
         game={selectedGame}
         onClose={closeGameDetail}
         onOpenDiagnostic={openDiagnostic}
+      />
+
+      {/* Profile Modal */}
+      <ProfileModal
+        isOpen={showProfileModal}
+        onClose={closeProfile}
+        currentUser={currentUser}
+      />
+
+      {/* Settings Modal */}
+      <SettingsModal
+        isOpen={showSettingsModal}
+        onClose={closeSettings}
       />
     </main>
   );

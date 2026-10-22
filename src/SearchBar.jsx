@@ -15,11 +15,8 @@ export default function SearchBar({ searchQuery, setSearchQuery, totalGames }) {
   };
 
   return (
-    <div className="fixed right-36 top-6 z-50 flex items-center gap-2">
+    <div className="fixed right-52 top-6 z-40 flex items-center">
       <div className="relative group">
-        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-          <Search className="h-4 w-4 text-slate-400 group-focus-within:text-cyan-400 transition-colors" />
-        </div>
         <input
           type="text"
           value={searchQuery}
@@ -31,26 +28,33 @@ export default function SearchBar({ searchQuery, setSearchQuery, totalGames }) {
             }
           }}
           placeholder={`Search ${totalGames || ''} games...`}
-          className="w-64 rounded-2xl border border-slate-600/30 bg-slate-950/70 py-2.5 pl-10 pr-10 text-sm text-slate-200 shadow-[0_0_20px_rgba(34,211,238,0.05)] backdrop-blur-xl transition-all duration-300 placeholder:text-slate-500 focus:w-72 focus:border-cyan-400/50 focus:bg-slate-900/90 focus:outline-none focus:ring-2 focus:ring-cyan-400/20"
+          className="w-64 rounded-2xl border border-slate-600/30 bg-slate-950/70 py-2.5 pl-4 pr-11 text-sm text-slate-200 shadow-[0_0_20px_rgba(34,211,238,0.05)] backdrop-blur-xl transition-all duration-300 placeholder:text-slate-500 focus:w-72 focus:border-cyan-400/50 focus:bg-slate-900/90 focus:outline-none focus:ring-2 focus:ring-cyan-400/20"
         />
-        {searchQuery && (
+
+        {/* Action icons inside the search box */}
+        <div className="absolute inset-y-0 right-0 pr-3 flex items-center gap-1.5">
+          {searchQuery && (
+            <button
+              type="button"
+              onClick={() => setSearchQuery("")}
+              className="p-1 text-slate-500 hover:text-slate-300 transition-colors"
+              title="Clear search"
+            >
+              <X className="h-3.5 w-3.5" />
+            </button>
+          )}
+
+          {/* Search trigger button inside the box */}
           <button
-            onClick={() => setSearchQuery("")}
-            className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-500 hover:text-slate-300"
+            type="button"
+            onClick={handleSearch}
+            title="Search"
+            className="p-1 text-slate-400 hover:text-cyan-400 transition-colors focus:outline-none group-focus-within:text-cyan-400"
           >
-            <X className="h-4 w-4" />
+            <Search className="h-4 w-4" />
           </button>
-        )}
+        </div>
       </div>
-      
-      {/* Search trigger button */}
-      <button
-        onClick={handleSearch}
-        title="Scroll to Results"
-        className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl border border-slate-600/30 bg-slate-950/70 text-slate-400 shadow-[0_0_20px_rgba(34,211,238,0.05)] backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/50 hover:bg-slate-900/90 hover:text-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/20"
-      >
-        <Search className="h-4 w-4" />
-      </button>
     </div>
   );
 }

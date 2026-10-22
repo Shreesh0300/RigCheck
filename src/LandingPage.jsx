@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Eye, EyeOff } from 'lucide-react';
 // Reuse the existing sign-in video asset (project root). Vite resolves this
 // import to a served URL in dev and a hashed asset in production builds,
 // so no file copy or hardcoded filesystem path is needed.
@@ -91,11 +92,191 @@ function SignInVideoBackground() {
 export default function LandingPage({ onLogin }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [isRegister, setIsRegister] = useState(false);
+  const [error, setError] = useState('');
+  const [passwordError, setPasswordError] = useState('');
+  const [success, setSuccess] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [socialLoading, setSocialLoading] = useState(null); // 'google' | 'steam' | null
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  
+  const passwordInputRef = useRef(null);
+  const confirmPasswordInputRef = useRef(null);
 
-  const handleSubmit = (e) => {
+  // Check URL parameters for OAuth callbacks and errors
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const authError = params.get('auth_error');
+    const loginSuccess = params.get('login_success');
+
+    if (authError) {
+      setError(decodeURIComponent(authError));
+      window.history.replaceState({}, document.title, window.location.pathname);
+    } else if (loginSuccess) {
+      async function completeSocialLogin() {
+        try {
+          const res = await fetch('/auth/me');
+          const data = await res.json();
+          if (data.authenticated && data.user) {
+            setSuccess(`Welcome back, ${data.user.display_name}!`);
+            setTimeout(() => {
+              onLogin(data.user);
+            }, 600);
+          } else {
+            setError('Could not verify social login session.');
+          }
+        } catch (e) {
+          setError('Failed to reach authentication server.');
+        } finally {
+          window.history.replaceState({}, document.title, window.location.pathname);
+        }
+      }
+      completeSocialLogin();
+    }
+  }, [onLogin]);
+
+  const togglePasswordVisibility = () => {
+    const input = passwordInputRef.current;
+    if (input) {
+      const start = input.selectionStart;
+      const end = input.selectionEnd;
+      setShowPassword((prev) => !prev);
+      requestAnimationFrame(() => {
+        if (input) {
+          input.focus();
+          input.setSelectionRange(start, end);
+        }
+      });
+    } else {
+      setShowPassword((prev) => !prev);
+    }
+  };
+
+  const toggleConfirmPasswordVisibility = () => {
+    const input = confirmPasswordInputRef.current;
+    if (input) {
+      const start = input.selectionStart;
+      const end = input.selectionEnd;
+      setShowConfirmPassword((prev) => !prev);
+      requestAnimationFrame(() => {
+        if (input) {
+          input.focus();
+          input.setSelectionRange(start, end);
+        }
+      });
+    } else {
+      setShowConfirmPassword((prev) => !prev);
+    }
+  };
+
+  const handleSteamLogin = () => {
+    setError('');
+    setPasswordError('');
+    setSuccess('');
+    setSocialLoading('steam');
+    window.location.href = '/auth/steam/login';
+  };
+
+  const handleGoogleLogin = async () => {
+    setError('');
+    setPasswordError('');
+    setSuccess('');
+    setSocialLoading('google');
+    try {
+      const res = await fetch('/auth/status');
+      const data = await res.json();
+      if (!data.google_configured) {
+        setError('Google OAuth is not configured. Please add GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET to your .env file.');
+        setSocialLoading(null);
+        return;
+      }
+      window.location.href = '/auth/google/login';
+    } catch (e) {
+      setError('Unable to initiate Google sign-in. Please try again.');
+      setSocialLoading(null);
+    }
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Simulate login success instantly
-    onLogin();
+    setError('');
+    setPasswordError('');
+    setSuccess('');
+
+    if (!email || !password) {
+      setError('Please fill in all fields.');
+      return;
+    }
+
+    if (isRegister) {
+      if (password.length < 6) {
+        setPasswordError('Password must be at least 6 characters long.');
+        return;
+      }
+      if (password !== confirmPassword) {
+        setPasswordError('Passwords do not match.');
+        return;
+      }
+    }
+
+    setLoading(true);
+    try {
+      const endpoint = isRegister ? '/auth/register' : '/auth/login';
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email.trim(), password }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        let errorMsg = 'Authentication failed. Please check your credentials.';
+        if (typeof data.detail === 'string') {
+          errorMsg = data.detail;
+        } else if (Array.isArray(data.detail) && data.detail.length > 0) {
+          errorMsg = data.detail.map((d) => d.msg || 'Invalid input').join(', ');
+        } else if (typeof data.message === 'string') {
+          errorMsg = data.message;
+        }
+
+        // Incorrect password handling: display immediately above the password field
+        if (!isRegister && (response.status === 401 || errorMsg.toLowerCase().includes('password') || errorMsg.toLowerCase().includes('invalid email or password') || errorMsg.toLowerCase().includes('invalid credentials'))) {
+          setPasswordError('Invalid password. Try again.');
+          // Ensure email is preserved, password is available for correction
+        } else {
+          setError(errorMsg);
+        }
+        setLoading(false);
+        return;
+      }
+
+      if (isRegister) {
+        setSuccess('Account created! Entering RigCheck...');
+        setTimeout(() => {
+          onLogin(data.user);
+        }, 600);
+      } else {
+        onLogin(data.user);
+      }
+    } catch (err) {
+      setError('Unable to reach auth server. Please ensure the backend is running.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const toggleAuthMode = () => {
+    setIsRegister(!isRegister);
+    setError('');
+    setPasswordError('');
+    setSuccess('');
+    setPassword('');
+    setConfirmPassword('');
+    setShowPassword(false);
+    setShowConfirmPassword(false);
   };
 
   return (
@@ -130,10 +311,28 @@ export default function LandingPage({ onLogin }) {
             Rig<span className="text-cyan-400">Check</span>
           </h1>
         </div>
-        <p className="text-slate-300 font-medium mb-8 text-lg">Login to Discover your next game</p>
+        <p className="text-slate-300 font-medium mb-6 text-lg">
+          {isRegister ? "Create an Account" : "Login to Discover your next game"}
+        </p>
 
-        {/* Login Form */}
-        <form onSubmit={handleSubmit} className="w-full flex flex-col space-y-5">
+        {/* Error Alert */}
+        {error && (
+          <div className="w-full mb-4 px-3.5 py-2.5 rounded-lg bg-rose-500/15 border border-rose-500/40 text-rose-300 text-xs flex items-center space-x-2 backdrop-blur-sm animate-fadeIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            <span>{error}</span>
+          </div>
+        )}
+
+        {/* Success Alert */}
+        {success && (
+          <div className="w-full mb-4 px-3.5 py-2.5 rounded-lg bg-emerald-500/15 border border-emerald-500/40 text-emerald-300 text-xs flex items-center space-x-2 backdrop-blur-sm animate-fadeIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span>{success}</span>
+          </div>
+        )}
+
+        {/* Login / Register Form */}
+        <form onSubmit={handleSubmit} className="w-full flex flex-col space-y-4">
           <div className="flex flex-col space-y-1">
             <label className="text-sm font-medium text-slate-300 ml-1">Email Address</label>
             <div className="relative">
@@ -142,10 +341,15 @@ export default function LandingPage({ onLogin }) {
               </div>
               <input 
                 type="email" 
+                required
                 placeholder="Enter your email address"
                 className="w-full pl-10 pr-4 py-3 bg-slate-950/30 border border-white/15 rounded-lg text-white placeholder-slate-400 focus:bg-slate-950/45 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-400 transition-colors"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  if (passwordError) setPasswordError('');
+                  if (error) setError('');
+                }}
               />
             </div>
           </div>
@@ -153,32 +357,119 @@ export default function LandingPage({ onLogin }) {
           <div className="flex flex-col space-y-1">
             <div className="flex justify-between items-center ml-1">
               <label className="text-sm font-medium text-slate-300">Password</label>
-              <a href="#" className="text-xs text-cyan-400 hover:text-cyan-300 transition-colors">Forgot Password?</a>
+              {!isRegister && (
+                <a href="#" className="text-xs text-cyan-400 hover:text-cyan-300 transition-colors">Forgot Password?</a>
+              )}
             </div>
+
+            {/* Compact Error Message for Incorrect Password */}
+            {passwordError && (
+              <div 
+                role="alert"
+                aria-live="polite"
+                className="flex items-center space-x-1.5 py-1 px-2.5 rounded-md bg-rose-500/15 border border-rose-500/35 text-rose-300 text-xs font-medium animate-fadeIn"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 text-rose-400">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <span>{passwordError}</span>
+              </div>
+            )}
+
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
               </div>
               <input 
-                type="password" 
+                ref={passwordInputRef}
+                type={showPassword ? "text" : "password"} 
+                required
                 placeholder="••••••••"
-                className="w-full pl-10 pr-4 py-3 bg-slate-950/30 border border-white/15 rounded-lg text-white placeholder-slate-400 focus:bg-slate-950/45 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-400 transition-colors"
+                className={`w-full pl-10 pr-11 py-3 bg-slate-950/30 border ${passwordError ? 'border-rose-500/60 ring-1 ring-rose-500/40' : 'border-white/15'} rounded-lg text-white placeholder-slate-400 focus:bg-slate-950/45 focus:outline-none focus:ring-2 ${passwordError ? 'focus:ring-rose-500/50 focus:border-rose-400' : 'focus:ring-cyan-500/50 focus:border-cyan-400'} transition-colors`}
                 value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={(e) => {
+                  setPassword(e.target.value);
+                  if (passwordError) setPasswordError('');
+                  if (error) setError('');
+                }}
               />
+              <button
+                type="button"
+                onClick={togglePasswordVisibility}
+                aria-label={showPassword ? "Hide password" : "Show password"}
+                title={showPassword ? "Hide password" : "Show password"}
+                className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-cyan-300 transition-colors focus:outline-none focus:text-cyan-300"
+              >
+                {showPassword ? (
+                  <EyeOff className="w-4 h-4" aria-hidden="true" />
+                ) : (
+                  <Eye className="w-4 h-4" aria-hidden="true" />
+                )}
+              </button>
             </div>
           </div>
 
+          {isRegister && (
+            <div className="flex flex-col space-y-1 animate-fadeIn">
+              <label className="text-sm font-medium text-slate-300 ml-1">Confirm Password</label>
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </div>
+                <input 
+                  ref={confirmPasswordInputRef}
+                  type={showConfirmPassword ? "text" : "password"} 
+                  required
+                  placeholder="Repeat your password"
+                  className="w-full pl-10 pr-11 py-3 bg-slate-950/30 border border-white/15 rounded-lg text-white placeholder-slate-400 focus:bg-slate-950/45 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-400 transition-colors"
+                  value={confirmPassword}
+                  onChange={(e) => {
+                    setConfirmPassword(e.target.value);
+                    if (passwordError) setPasswordError('');
+                  }}
+                />
+                <button
+                  type="button"
+                  onClick={toggleConfirmPasswordVisibility}
+                  aria-label={showConfirmPassword ? "Hide password" : "Show password"}
+                  title={showConfirmPassword ? "Hide password" : "Show password"}
+                  className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-cyan-300 transition-colors focus:outline-none focus:text-cyan-300"
+                >
+                  {showConfirmPassword ? (
+                    <EyeOff className="w-4 h-4" aria-hidden="true" />
+                  ) : (
+                    <Eye className="w-4 h-4" aria-hidden="true" />
+                  )}
+                </button>
+              </div>
+            </div>
+          )}
+
           <button 
             type="submit"
-            className="w-full py-3 mt-4 bg-cyan-400 hover:bg-cyan-300 text-slate-900 font-bold rounded-lg shadow-[0_0_15px_rgba(34,211,238,0.4)] hover:shadow-[0_0_25px_rgba(34,211,238,0.6)] transition-all flex items-center justify-center space-x-2"
+            disabled={loading}
+            className="w-full py-3 mt-4 bg-cyan-400 hover:bg-cyan-300 text-slate-900 font-bold rounded-lg shadow-[0_0_15px_rgba(34,211,238,0.4)] hover:shadow-[0_0_25px_rgba(34,211,238,0.6)] transition-all flex items-center justify-center space-x-2 disabled:opacity-70 disabled:cursor-not-allowed"
           >
-            <span>Sign In</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            {loading ? (
+              <>
+                <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-slate-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span>{isRegister ? "Creating Account..." : "Signing In..."}</span>
+              </>
+            ) : (
+              <>
+                <span>{isRegister ? "Create Account" : "Sign In"}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </>
+            )}
           </button>
         </form>
 
-        <div className="w-full flex items-center my-6">
+        <div className="w-full flex items-center my-5">
           <div className="flex-grow border-t border-white/15"></div>
           <span className="px-3 text-xs text-slate-300 uppercase tracking-widest">Or continue with</span>
           <div className="flex-grow border-t border-white/15"></div>
@@ -186,36 +477,90 @@ export default function LandingPage({ onLogin }) {
 
         {/* Social Logins */}
         <div className="w-full grid grid-cols-2 gap-3">
-          <button className="flex items-center justify-center space-x-2 bg-white/5 hover:bg-white/15 border border-white/15 hover:border-white/25 backdrop-blur-sm py-2.5 rounded-lg text-sm font-medium text-white transition-colors">
-            {/* Steam Icon minimal SVG */}
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M11.967 0C5.356 0 0 5.359 0 11.97c0 4.606 2.592 8.618 6.402 10.597L9.42 16.27a4.912 4.912 0 0 1-1.397-2.144L3.6 12.822a.566.566 0 0 1-.362-.68c.245-.98 1.573-4.669 5.867-5.614 3.037-.67 6.13.257 8.356 2.457 2.222 2.196 2.923 5.358 1.83 8.363l3.666 4.708c2.977-2.274 4.88-5.83 4.88-9.832 0-6.61-5.356-11.968-11.967-11.968zm5.725 15.655a3.195 3.195 0 0 1-4.043.682l-2.455 3.486a4.856 4.856 0 0 0 4.904 1.487c2.261-.502 3.864-2.528 3.822-4.838l-2.228-1.573zM10.15 13.9a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4z"/>
-            </svg>
-            <span>Steam</span>
+          <button 
+            type="button"
+            onClick={handleSteamLogin}
+            disabled={loading || Boolean(socialLoading)}
+            className="flex items-center justify-center space-x-2 bg-white/5 hover:bg-white/15 border border-white/15 hover:border-white/25 backdrop-blur-sm py-2.5 rounded-lg text-sm font-medium text-white transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+          >
+            {socialLoading === 'steam' ? (
+              <>
+                <svg className="animate-spin h-4 w-4 text-cyan-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span>Connecting...</span>
+              </>
+            ) : (
+              <>
+                {/* Steam Icon minimal SVG */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M11.967 0C5.356 0 0 5.359 0 11.97c0 4.606 2.592 8.618 6.402 10.597L9.42 16.27a4.912 4.912 0 0 1-1.397-2.144L3.6 12.822a.566.566 0 0 1-.362-.68c.245-.98 1.573-4.669 5.867-5.614 3.037-.67 6.13.257 8.356 2.457 2.222 2.196 2.923 5.358 1.83 8.363l3.666 4.708c2.977-2.274 4.88-5.83 4.88-9.832 0-6.61-5.356-11.968-11.967-11.968zm5.725 15.655a3.195 3.195 0 0 1-4.043.682l-2.455 3.486a4.856 4.856 0 0 0 4.904 1.487c2.261-.502 3.864-2.528 3.822-4.838l-2.228-1.573zM10.15 13.9a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4z"/>
+                </svg>
+                <span>Steam</span>
+              </>
+            )}
           </button>
           
-          <button className="flex items-center justify-center space-x-2 bg-white/5 hover:bg-white/15 border border-white/15 hover:border-white/25 backdrop-blur-sm py-2.5 rounded-lg text-sm font-medium text-white transition-colors">
-            {/* Google Icon minimal SVG */}
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-            </svg>
-            <span>Google</span>
+          <button 
+            type="button"
+            onClick={handleGoogleLogin}
+            disabled={loading || Boolean(socialLoading)}
+            className="flex items-center justify-center space-x-2 bg-white/5 hover:bg-white/15 border border-white/15 hover:border-white/25 backdrop-blur-sm py-2.5 rounded-lg text-sm font-medium text-white transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+          >
+            {socialLoading === 'google' ? (
+              <>
+                <svg className="animate-spin h-4 w-4 text-cyan-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span>Connecting...</span>
+              </>
+            ) : (
+              <>
+                {/* Google Icon minimal SVG */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                </svg>
+                <span>Google</span>
+              </>
+            )}
           </button>
         </div>
 
-        {/* Footer Links */}
-        <div className="w-full flex justify-between mt-8 text-xs text-slate-400">
-          <a href="#" className="hover:text-cyan-400 transition-colors">Create an Account</a>
+        {/* Footer Links & Mode Toggle */}
+        <div className="w-full flex justify-between mt-6 text-xs text-slate-400">
+          <button 
+            type="button" 
+            onClick={toggleAuthMode}
+            className="hover:text-cyan-400 text-cyan-300 font-semibold transition-colors underline-offset-4 hover:underline"
+          >
+            {isRegister ? "← Back to Sign In" : "Create an Account"}
+          </button>
           <div className="space-x-3">
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition-colors">Terms</a>
+            <a href="#" className="hover:text-white transition-colors">Privacy</a>
           </div>
         </div>
-
       </div>
+
+      {/* High-resolution Samurai Figurine concealing the video artifact */}
+      <div className="pointer-events-none absolute bottom-0 right-[2%] sm:right-[3%] md:right-[3.5%] z-[2] select-none">
+        <img 
+          src="/SAMURAI.jpeg" 
+          alt="Samurai Figurine" 
+          className="h-[36vh] sm:h-[39vh] md:h-[42vh] max-h-[450px] min-h-[220px] w-auto object-contain"
+          style={{
+            filter: "brightness(0.92) contrast(1.05)",
+            maskImage: "radial-gradient(ellipse 46% 42% at 50% 56%, black 50%, transparent 95%)",
+            WebkitMaskImage: "radial-gradient(ellipse 46% 42% at 50% 56%, black 50%, transparent 95%)",
+          }}
+        />
+      </div>
+
     </div>
   );
 }

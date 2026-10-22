@@ -4,3 +4,9 @@ pydantic
 pandas
 rank_bm25
 nltk
+pymongo
+motor
+bcrypt
+python-dotenv
+email-validator
+httpx

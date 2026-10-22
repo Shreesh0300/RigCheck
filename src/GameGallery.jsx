@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { X, ChevronDown } from "lucide-react";
 import { GENRES } from "./GenreDiscovery.jsx";
 import GameCard from "./GameCard.jsx";
 import ComingSoonCard from "./ComingSoonCard.jsx";
@@ -22,6 +22,8 @@ import { fetchGames } from "./services/gameService.js";
  */
 
 const COMING_SOON_COUNT = 4;
+const INITIAL_VISIBLE_COUNT = 50;
+const LOAD_MORE_COUNT = 50;
 
 const containerVariants = {
   hidden: {},
@@ -65,6 +67,12 @@ function filterGames(games, selectedGenre, searchQuery) {
 function GameGallery({ onGenreHover, selectedGenre, searchQuery, onClearGenre, onGameClick, onGamesLoaded }) {
   const [games, setGames] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_COUNT);
+
+  // Reset visible count back to initial whenever genre or search query changes
+  useEffect(() => {
+    setVisibleCount(INITIAL_VISIBLE_COUNT);
+  }, [selectedGenre, searchQuery]);
 
   useEffect(() => {
     let mounted = true;
@@ -137,6 +145,11 @@ function GameGallery({ onGenreHover, selectedGenre, searchQuery, onClearGenre, o
     [games, selectedGenre, searchQuery]
   );
 
+  const visibleGames = useMemo(
+    () => filteredGames.slice(0, visibleCount),
+    [filteredGames, visibleCount]
+  );
+
   const handleGenreHover = useCallback(
     (genre) => onGenreHover?.(genre),
     [onGenreHover]
@@ -195,8 +208,10 @@ function GameGallery({ onGenreHover, selectedGenre, searchQuery, onClearGenre, o
 
           {/* Game count */}
           {!isLoading && (
-            <p className="text-xs text-slate-600 sm:text-sm">
-              {filteredGames.length} {filteredGames.length === 1 ? "game" : "games"}
+            <p className="text-xs text-slate-500 sm:text-sm">
+              Showing <span className="font-semibold text-slate-300">{visibleGames.length}</span> of{" "}
+              <span className="font-semibold text-slate-300">{filteredGames.length}</span>{" "}
+              {filteredGames.length === 1 ? "game" : "games"}
               {searchQuery ? " found" : selectedGenre ? " in this genre" : " available"}
             </p>
           )}
@@ -217,7 +232,7 @@ function GameGallery({ onGenreHover, selectedGenre, searchQuery, onClearGenre, o
             ))
           ) : (
             /* Active game cards */
-            filteredGames.map((game) => (
+            visibleGames.map((game) => (
               <GameCard 
                 key={game.id} 
                 game={game} 
@@ -227,12 +242,46 @@ function GameGallery({ onGenreHover, selectedGenre, searchQuery, onClearGenre, o
             ))
           )}
 
-          {/* Coming Soon placeholders — only show when unfiltered and loaded */}
-          {!isLoading && !selectedGenre &&
+          {/* Coming Soon placeholders — only show when unfiltered, loaded, and reached the end */}
+          {!isLoading && !selectedGenre && !searchQuery && visibleCount >= filteredGames.length &&
             Array.from({ length: COMING_SOON_COUNT }, (_, i) => (
               <ComingSoonCard key={`coming-soon-${i}`} index={i} />
             ))}
         </motion.div>
+
+        {/* View More Games Button & Progress */}
+        {!isLoading && visibleCount < filteredGames.length && (
+          <div className="mt-12 flex flex-col items-center justify-center gap-4">
+            {/* Subtle progress indicator */}
+            <div className="flex flex-col items-center gap-2">
+              <div className="h-1 w-48 overflow-hidden rounded-full border border-slate-700/40 bg-slate-800/80">
+                <div
+                  className="h-full rounded-full bg-gradient-to-r from-cyan-400 to-violet-500 shadow-[0_0_12px_rgba(34,211,238,0.5)] transition-all duration-500 ease-out"
+                  style={{
+                    width: `${Math.min(100, Math.round((visibleGames.length / filteredGames.length) * 100))}%`,
+                  }}
+                />
+              </div>
+              <span className="text-[11px] font-medium tracking-wide text-slate-400">
+                Showing {visibleGames.length} of {filteredGames.length} games
+              </span>
+            </div>
+
+            {/* Load More Button */}
+            <motion.button
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => setVisibleCount((prev) => prev + LOAD_MORE_COUNT)}
+              className="group relative inline-flex items-center gap-2.5 overflow-hidden rounded-xl border border-cyan-500/30 bg-slate-900/80 px-8 py-3.5 text-sm font-bold tracking-wide text-cyan-300 shadow-[0_0_25px_rgba(34,211,238,0.12)] backdrop-blur-md transition-all duration-300 hover:border-cyan-400/60 hover:bg-slate-900/95 hover:text-white hover:shadow-[0_0_35px_rgba(34,211,238,0.25)]"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                View More Games
+                <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
+              </span>
+              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-cyan-500/10 via-cyan-400/20 to-transparent transition-transform duration-500 group-hover:translate-x-0" />
+            </motion.button>
+          </div>
+        )}
 
         {/* Footer spacer */}
         <div className="h-20" />
