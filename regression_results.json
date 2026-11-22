@@ -1,50 +1,107 @@
 [
     {
         "query": "payday 2",
-        "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /recommend (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+        "top_5": [
+            "PAYDAY 2",
+            "PAYDAY 3",
+            "Hotline Miami 2: Wrong Number",
+            "Counter-Strike 2"
+        ]
     },
     {
         "query": "left 4 dead 2",
-        "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /recommend (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+        "top_5": [
+            "Left 4 Dead 2",
+            "Left 4 Dead",
+            "Back 4 Blood",
+            "Red Dead Redemption 2"
+        ]
     },
     {
         "query": "games like gta 5",
-        "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /recommend (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+        "top_5": [
+            "Grand Theft Auto V Legacy",
+            "Grand Theft Auto: Episodes from Liberty City",
+            "Grand Theft Auto IV: The Complete Edition",
+            "Crash Time 2"
+        ]
     },
     {
         "query": "games like rdr2",
-        "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /recommend (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+        "top_5": [
+            "Red Dead Redemption 2",
+            "The Walking Dead",
+            "Left 4 Dead 2",
+            "Red Orchestra: Ostfront 41-45"
+        ]
     },
     {
         "query": "games like skyrim",
-        "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /recommend (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+        "top_5": [
+            "The Elder Scrolls V: Skyrim",
+            "The Elder Scrolls V: Skyrim Special Edition",
+            "The Elder Scrolls V: Skyrim VR",
+            "The Elder Scrolls IV: Oblivion\u00ae Game of the Year Edition (2009)"
+        ]
     },
     {
         "query": "games like fallout",
-        "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /recommend (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+        "top_5": [
+            "Fallout 3: Game of the Year Edition",
+            "Fallout Shelter",
+            "Fallout 4",
+            "Wasteland 2: Director's Cut"
+        ]
     },
     {
         "query": "games like minecraft",
-        "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /recommend (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+        "top_5": [
+            "Super Meat Boy"
+        ]
     },
     {
         "query": "cybeprunk 2077",
-        "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /recommend (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+        "top_5": [
+            "Cyberpunk 2077",
+            "Ghostrunner 2",
+            "Ghostrunner",
+            "CyberCorp"
+        ]
     },
     {
         "query": "fun games to play with friends",
-        "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /recommend (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+        "top_5": [
+            "Call of Duty\u00ae: Black Ops",
+            "Left 4 Dead 2",
+            "Call of Duty\u00ae: Black Ops Cold War",
+            "Call of Duty\u00ae"
+        ]
     },
     {
         "query": "good story games",
-        "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /recommend (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+        "top_5": [
+            "Life is Strange: Before the Storm",
+            "Dragon's Dogma 2",
+            "RimWorld",
+            "STAR WARS\u2122: The Old Republic\u2122"
+        ]
     },
     {
         "query": "open world games",
-        "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /recommend (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+        "top_5": [
+            "Forza Horizon 5",
+            "Far Cry\u00ae 4",
+            "RAGE 2",
+            "SnowRunner"
+        ]
     },
     {
         "query": "cheap open world games for a potato pc",
-        "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /recommend (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+        "top_5": [
+            "Far Cry\u00ae 4",
+            "theHunter: Call of the Wild\u2122",
+            "Far Cry\u00ae 6",
+            "Far Cry\u00ae 5"
+        ]
     }
 ]

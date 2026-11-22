@@ -59,3 +59,22 @@ export async function searchGames(query, limit = 50) {
     return [];
   }
 }
+
+/** Resolve the selected card, preserving its diagnostic fields and summary on failure. */
+export async function loadGameDetails(game) {
+  const { appid, steamAppId, ...summary } = game;
+  let id = appid === undefined ? steamAppId : appid;
+  if (id === undefined && game.title) {
+    // Search returns exact matches first. Two results suffice to detect ambiguity.
+    const results = await searchGames(game.title, 2);
+    const title = game.title.trim().toLowerCase();
+    const exact = results.filter((item) => item.name.trim().toLowerCase() === title);
+    if (exact.length === 1) id = exact[0].appid;
+  }
+
+  // Accept older decimal-string IDs, but never retry an explicit ID by title.
+  if (typeof id === "string" && /^[1-9]\d*$/.test(id)) id = Number(id);
+  if (!Number.isSafeInteger(id) || id <= 0) return summary;
+  const detail = await fetchGame(id);
+  return detail?.appid === id ? { ...game, ...detail } : summary;
+}

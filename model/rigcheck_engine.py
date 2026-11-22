@@ -642,8 +642,6 @@ def recommend_game(user_input, budget, gpu_name, ram,
     max_possible = max(15.0, len(cleaned_vibe.split()) * 1.5)
 
     evaluated_games = []
-    vibe_score_map = {}
-    budget_score_map = {}
 
     for i in range(len(wallet_passed)):
         row = wallet_passed.iloc[i]
@@ -664,10 +662,12 @@ def recommend_game(user_input, budget, gpu_name, ram,
         # Attach vibe and budget info
         vibe_sc = float(row["Vibe_Score"])
         title = str(row["Title"])
+        compat_result["appid"] = int(row["Steam_AppID"])
         compat_result["vibe_score"] = vibe_sc
         compat_result["raw_vibe"] = float(row["Raw_Vibe"])
         compat_result["concept_score"] = float(row["Concept_Score"])
         compat_result["price_inr"] = int(row["Price_INR"])
+        compat_result["budget_score"] = max(0, 1.0 - compat_result["price_inr"] / max(budget, 1))
         compat_result["store_url"] = _get_store_url(row)
         compat_result["description"] = str(row["Description"])
         compat_result["header_image"] = str(row.get("Header_Image", ""))
@@ -696,12 +696,8 @@ def recommend_game(user_input, budget, gpu_name, ram,
                 final_eligible=True # It made it this far
             )
 
-        # Budget Score: closer to 0 is better (cheaper relative to budget)
-        vibe_score_map[title] = vibe_sc
-        budget_score_map[title] = max(0, 1.0 - (int(row["Price_INR"]) / max(budget, 1)))
-
     # Rank games: compatibility → vibe → budget
-    ranked = rank_games(evaluated_games, vibe_score_map, budget_score_map, hw_intent, has_explicit_reference)
+    ranked = rank_games(evaluated_games, hw_intent=hw_intent, has_explicit_reference=has_explicit_reference)
 
     if not ranked:
         return _empty_response("No compatible games found.")
@@ -741,8 +737,8 @@ def recommend_game(user_input, budget, gpu_name, ram,
     )
 
     matched_keywords = []
+    winner_row = wallet_passed[wallet_passed["Steam_AppID"] == winner["appid"]]
     for word in cleaned_vibe.split():
-        winner_row = wallet_passed[wallet_passed["Title"] == winner["title"]]
         if not winner_row.empty:
             if word in str(winner_row.iloc[0].get("Master_Search", "")):
                 if word not in matched_keywords:
@@ -752,6 +748,7 @@ def recommend_game(user_input, budget, gpu_name, ram,
     alternative_games = []
     for alt in ranked[1:min(4, len(ranked))]:
         alternative_games.append({
+            "appid": alt["appid"],
             "title": alt["title"],
             "price_inr": alt["price_inr"] if alt["price_inr"] >= 0 else "UNKNOWN",
             "description": alt["description"],
@@ -773,6 +770,7 @@ def recommend_game(user_input, budget, gpu_name, ram,
 
     return {
         "recommended_game": winner["title"],
+        "appid": winner["appid"],
         "confidence": winner["confidence"],
         "description": winner["description"],
         "hardware_advice": advice,

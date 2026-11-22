@@ -502,7 +502,7 @@ def rank_games(evaluated_games: list[dict],
 
     Parameters
     ----------
-    evaluated_games : list of dicts from evaluate_game()
+    evaluated_games : per-candidate dicts, optionally carrying vibe_score and budget_score
     vibe_scores : dict mapping title -> raw vibe/rerank score
     budget_scores : dict mapping title -> budget_score (0-1)
     """
@@ -515,9 +515,9 @@ def rank_games(evaluated_games: list[dict],
     max_vibe = 0.0
     for game in evaluated_games:
         title = game["title"]
-        raw_vibe = vibe_scores.get(title, 0.0)
+        raw_vibe = vibe_scores.get(title, game.get("vibe_score", 0.0))
         game["vibe_score"] = raw_vibe
-        game["budget_score"] = budget_scores.get(title, 0.0)
+        game["budget_score"] = budget_scores.get(title, game.get("budget_score", 0.0))
         if raw_vibe > max_vibe:
             max_vibe = raw_vibe
 

@@ -14,7 +14,11 @@ import {
   Frown,
   ExternalLink,
   HardDrive,
+  Heart,
+  Bookmark,
+  CheckCircle2,
 } from "lucide-react";
+import { useLibrary } from "./src/context/LibraryContext.jsx";
 
 /* ─── Helpers ──────────────────────────────────────────────────────── */
 
@@ -258,6 +262,13 @@ function ErrorState({ message }) {
 /* ─── Main Dashboard ───────────────────────────────────────────────── */
 
 export default function RigCheckDashboard({ onGameClick }) {
+  let library = null;
+  try {
+    library = useLibrary();
+  } catch (e) {
+    // Graceful fallback
+  }
+
   /* ── Input State — initialised from persisted values so reopening the
      diagnostic always restores what the user last typed. ── */
   const [vibeQuery, setVibeQuery] = useState(_persistedInputs.vibeQuery);
@@ -544,6 +555,7 @@ export default function RigCheckDashboard({ onGameClick }) {
                 onClick={() => {
                   if (onGameClick) {
                     onGameClick({
+                      appid: result.appid,
                       title: result.recommended_game,
                       price_inr: result.price_inr,
                       header_image: result.header_image,
@@ -580,9 +592,75 @@ export default function RigCheckDashboard({ onGameClick }) {
                 <div className="px-5 pb-5 pt-4 sm:px-6">
                   <div className="flex items-start justify-between gap-6">
                     <div className="min-w-0 flex-1">
-                      <h3 className="text-xl font-black tracking-tight text-white sm:text-2xl">
-                        {result.recommended_game}
-                      </h3>
+                      <div className="flex flex-wrap items-center gap-3">
+                        <h3 className="text-xl font-black tracking-tight text-white sm:text-2xl">
+                          {result.recommended_game}
+                        </h3>
+                        {result.appid && library && (
+                          <div
+                            className="flex items-center gap-1 rounded-full border border-slate-700/60 bg-black/70 p-1 backdrop-blur-md shadow-md"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <button
+                              type="button"
+                              title="Favourite"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                library.toggleStatus(result.appid, "is_favourite", {
+                                  appid: result.appid,
+                                  title: result.recommended_game,
+                                  image: heroImage,
+                                });
+                              }}
+                              className={`grid h-6 w-6 place-items-center rounded-full transition-all ${
+                                library.getGameStatus(result.appid).is_favourite
+                                  ? "bg-rose-500/20 text-rose-400 shadow-[0_0_8px_rgba(244,63,94,0.4)]"
+                                  : "text-slate-400 hover:bg-white/10 hover:text-rose-400"
+                              }`}
+                            >
+                              <Heart className={`h-3.5 w-3.5 ${library.getGameStatus(result.appid).is_favourite ? "fill-rose-500" : ""}`} />
+                            </button>
+                            <button
+                              type="button"
+                              title="Want to Play"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                library.toggleStatus(result.appid, "want_to_play", {
+                                  appid: result.appid,
+                                  title: result.recommended_game,
+                                  image: heroImage,
+                                });
+                              }}
+                              className={`grid h-6 w-6 place-items-center rounded-full transition-all ${
+                                library.getGameStatus(result.appid).want_to_play
+                                  ? "bg-cyan-500/20 text-cyan-300 shadow-[0_0_8px_rgba(34,211,238,0.4)]"
+                                  : "text-slate-400 hover:bg-white/10 hover:text-cyan-300"
+                              }`}
+                            >
+                              <Bookmark className={`h-3.5 w-3.5 ${library.getGameStatus(result.appid).want_to_play ? "fill-cyan-400" : ""}`} />
+                            </button>
+                            <button
+                              type="button"
+                              title="Already Played"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                library.toggleStatus(result.appid, "already_played", {
+                                  appid: result.appid,
+                                  title: result.recommended_game,
+                                  image: heroImage,
+                                });
+                              }}
+                              className={`grid h-6 w-6 place-items-center rounded-full transition-all ${
+                                library.getGameStatus(result.appid).already_played
+                                  ? "bg-emerald-500/20 text-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.4)]"
+                                  : "text-slate-400 hover:bg-white/10 hover:text-emerald-400"
+                              }`}
+                            >
+                              <CheckCircle2 className={`h-3.5 w-3.5 ${library.getGameStatus(result.appid).already_played ? "text-emerald-400 fill-emerald-500/20" : ""}`} />
+                            </button>
+                          </div>
+                        )}
+                      </div>
                       <p className="mt-2.5 text-xs leading-relaxed text-slate-400 sm:text-sm sm:leading-relaxed">
                         {result.description}
                       </p>
@@ -690,11 +768,12 @@ export default function RigCheckDashboard({ onGameClick }) {
                       const img = game.header_image || getSteamHeaderImage(game.store_url?.match(/\/app\/(\d+)/)?.[1]);
                       return (
                         <article
-                          key={game.title}
+                          key={game.appid ?? game.store_url ?? game.title}
                           className="group overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950 shadow-lg shadow-black/30 transition-all duration-200 hover:-translate-y-0.5 hover:border-cyan-400/30 hover:shadow-cyan-400/5 cursor-pointer"
                           onClick={() => {
                             if (onGameClick) {
                               onGameClick({
+                                appid: game.appid,
                                 title: game.title,
                                 price_inr: game.price_inr,
                                 header_image: game.header_image,
@@ -718,10 +797,74 @@ export default function RigCheckDashboard({ onGameClick }) {
                               </span>
                             )}
 
-                            <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-3">
+                            <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-2.5">
                               <h4 className="line-clamp-1 text-xs font-black text-white">
                                 {game.title}
                               </h4>
+                              {game.appid && library && (
+                                <div
+                                  className="flex shrink-0 items-center gap-1 rounded-full border border-slate-700/60 bg-black/75 p-0.5 backdrop-blur-md"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  <button
+                                    type="button"
+                                    title="Favourite"
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      library.toggleStatus(game.appid, "is_favourite", {
+                                        appid: game.appid,
+                                        title: game.title,
+                                        image: img,
+                                      });
+                                    }}
+                                    className={`grid h-5 w-5 place-items-center rounded-full transition-all ${
+                                      library.getGameStatus(game.appid).is_favourite
+                                        ? "text-rose-400 bg-rose-500/20"
+                                        : "text-slate-400 hover:text-rose-400"
+                                    }`}
+                                  >
+                                    <Heart className={`h-3 w-3 ${library.getGameStatus(game.appid).is_favourite ? "fill-rose-500" : ""}`} />
+                                  </button>
+                                  <button
+                                    type="button"
+                                    title="Want to Play"
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      library.toggleStatus(game.appid, "want_to_play", {
+                                        appid: game.appid,
+                                        title: game.title,
+                                        image: img,
+                                      });
+                                    }}
+                                    className={`grid h-5 w-5 place-items-center rounded-full transition-all ${
+                                      library.getGameStatus(game.appid).want_to_play
+                                        ? "text-cyan-300 bg-cyan-500/20"
+                                        : "text-slate-400 hover:text-cyan-300"
+                                    }`}
+                                  >
+                                    <Bookmark className={`h-3 w-3 ${library.getGameStatus(game.appid).want_to_play ? "fill-cyan-400" : ""}`} />
+                                  </button>
+                                  <button
+                                    type="button"
+                                    title="Already Played"
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      library.toggleStatus(game.appid, "already_played", {
+                                        appid: game.appid,
+                                        title: game.title,
+                                        image: img,
+                                      });
+                                    }}
+                                    className={`grid h-5 w-5 place-items-center rounded-full transition-all ${
+                                      library.getGameStatus(game.appid).already_played
+                                        ? "text-emerald-400 bg-emerald-500/20"
+                                        : "text-slate-400 hover:text-emerald-400"
+                                    }`}
+                                  >
+                                    <CheckCircle2 className={`h-3 w-3 ${library.getGameStatus(game.appid).already_played ? "text-emerald-400 fill-emerald-500/20" : ""}`} />
+                                  </button>
+                                </div>
+                              )}
                             </div>
                           </div>
 

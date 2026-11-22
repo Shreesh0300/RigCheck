@@ -89,7 +89,7 @@ function SignInVideoBackground() {
   );
 }
 
-export default function LandingPage({ onLogin }) {
+export default function LandingPage({ onLogin, onBrowseGuest }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -223,7 +223,7 @@ export default function LandingPage({ onLogin }) {
       const endpoint = isRegister ? '/auth/register' : '/auth/login';
       const response = await fetch(endpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'X-Session-Mode': 'cookie' },
         body: JSON.stringify({ email: email.trim(), password }),
       });
 
@@ -548,6 +548,23 @@ export default function LandingPage({ onLogin }) {
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
           </div>
         </div>
+
+        {/* Browse as Guest button */}
+        {onBrowseGuest && (
+          <div className="w-full mt-4 pt-4 border-t border-white/10 flex flex-col items-center">
+            <button
+              type="button"
+              onClick={onBrowseGuest}
+              className="group flex items-center justify-center space-x-2 py-2 px-4 rounded-xl border border-cyan-400/30 bg-cyan-950/30 hover:bg-cyan-900/40 text-cyan-300 text-xs font-bold transition-all shadow-[0_0_15px_rgba(34,211,238,0.1)] hover:shadow-[0_0_20px_rgba(34,211,238,0.25)]"
+            >
+              <span>Explore RigCheck as Guest</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+            <p className="text-[11px] text-slate-400 mt-2 text-center">
+              Browse PC games, requirements & AI recommendations without signing in
+            </p>
+          </div>
+        )}
       </div>
 
       {/* High-resolution Samurai Figurine concealing the video artifact */}

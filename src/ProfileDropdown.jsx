@@ -1,15 +1,17 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
-import { User, Settings, LogOut, ChevronDown, ShieldCheck } from "lucide-react";
+import { User, Settings, LogOut, ChevronDown, ShieldCheck, Gamepad2, Compass } from "lucide-react";
 
 /**
  * ProfileDropdown — Cyberpunk-styled account avatar and dropdown menu.
  *
  * Options:
- *  1. Profile  -> Opens ProfileModal
- *  2. Settings -> Opens SettingsModal
- *  3. Logout   -> Ends session and redirects to Sign In
+ *  1. For You  -> Opens ForYouPage (Phase 5)
+ *  2. My Games -> Opens MyGamesPage
+ *  3. Profile  -> Opens ProfileModal
+ *  4. Settings -> Opens SettingsModal
+ *  5. Logout   -> Ends session and redirects to Sign In
  */
-export default function ProfileDropdown({ currentUser, onOpenProfile, onOpenSettings, onLogout }) {
+export default function ProfileDropdown({ currentUser, onOpenProfile, onOpenSettings, onLogout, onOpenMyGames, onOpenForYou }) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const triggerRef = useRef(null);
@@ -140,6 +142,38 @@ export default function ProfileDropdown({ currentUser, onOpenProfile, onOpenSett
               <span className="capitalize">{provider} Account</span>
             </div>
           </div>
+
+          {/* Primary Option: For You */}
+          {onOpenForYou && (
+            <button
+              type="button"
+              role="menuitem"
+              onClick={() => {
+                closeDropdown();
+                onOpenForYou();
+              }}
+              className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-medium text-slate-200 transition-colors hover:bg-violet-500/15 hover:text-violet-200 focus:bg-violet-500/15 focus:text-violet-200 focus:outline-none"
+            >
+              <Compass className="h-4 w-4 text-violet-400" />
+              <span>For You</span>
+            </button>
+          )}
+
+          {/* Primary Option: My Games */}
+          {onOpenMyGames && (
+            <button
+              type="button"
+              role="menuitem"
+              onClick={() => {
+                closeDropdown();
+                onOpenMyGames();
+              }}
+              className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-medium text-slate-200 transition-colors hover:bg-cyan-500/15 hover:text-cyan-200 focus:bg-cyan-500/15 focus:text-cyan-200 focus:outline-none"
+            >
+              <Gamepad2 className="h-4 w-4 text-cyan-400" />
+              <span>My Games</span>
+            </button>
+          )}
 
           {/* Primary Option 1: Profile */}
           <button

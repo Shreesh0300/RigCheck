@@ -1,7 +1,23 @@
 import React, { useState, useEffect, useCallback, useMemo, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Play, Cpu, Monitor, Download, HardDrive, Gamepad2, ArrowRight, Loader2 } from "lucide-react";
-import { fetchGame, searchGames } from "./services/gameService.js";
+import {
+  X,
+  Play,
+  Cpu,
+  Monitor,
+  Download,
+  HardDrive,
+  Gamepad2,
+  ArrowRight,
+  Loader2,
+  Heart,
+  Bookmark,
+  CheckCircle2,
+  Star,
+} from "lucide-react";
+import { loadGameDetails } from "./services/gameService.js";
+import { useLibrary } from "./context/LibraryContext.jsx";
+import ReviewSection from "./ReviewSection.jsx";
 import Hls from "hls.js";
 
 /**
@@ -106,6 +122,34 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
   const [detailedGame, setDetailedGame] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
+  let library = null;
+  try {
+    library = useLibrary();
+  } catch (e) {
+    // Graceful fallback
+  }
+
+  const appid = detailedGame?.appid || detailedGame?.steamAppId || game?.appid || game?.steamAppId;
+  const status = library
+    ? library.getGameStatus(appid)
+    : {
+        appid,
+        is_favourite: false,
+        want_to_play: false,
+        already_played: false,
+        rating: null,
+        review: null,
+      };
+
+  const handleToggle = useCallback(
+    (key) => {
+      if (library && appid) {
+        library.toggleStatus(appid, key, detailedGame || game);
+      }
+    },
+    [library, appid, detailedGame, game]
+  );
+
   // Fetch full game metadata dynamically on open
   useEffect(() => {
     if (!game) {
@@ -116,28 +160,11 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
     let mounted = true;
     async function loadData() {
       setIsLoading(true);
-      let appid = game.appid;
-
-      // If missing appid (e.g., from RigCheckDashboard), try searching by title
-      if (!appid && game.title) {
-        const results = await searchGames(game.title, 1);
-        if (results.length > 0) {
-          appid = results[0].appid;
-        }
+      const detail = await loadGameDetails(game);
+      if (mounted) {
+        setDetailedGame(detail);
+        setIsLoading(false);
       }
-
-      if (appid) {
-        const fullData = await fetchGame(appid);
-        if (mounted && fullData) {
-          setDetailedGame({ ...game, ...fullData });
-        } else if (mounted) {
-          setDetailedGame(game);
-        }
-      } else {
-        if (mounted) setDetailedGame(game);
-      }
-      
-      if (mounted) setIsLoading(false);
     }
     
     loadData();
@@ -377,6 +404,66 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                       </span>
                     ))}
                   </div>
+
+                  {/* Stage 2 Library Actions Bar */}
+                  <div className="mt-5 flex flex-wrap items-center gap-3">
+                    {/* Favourite Button */}
+                    <button
+                      type="button"
+                      onClick={() => handleToggle("is_favourite")}
+                      className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs font-bold transition-all duration-200 ${
+                        status.is_favourite
+                          ? "border border-rose-500/50 bg-rose-500/20 text-rose-300 shadow-[0_0_15px_rgba(244,63,94,0.3)]"
+                          : "border border-slate-700/60 bg-slate-900/80 text-slate-300 hover:border-slate-500 hover:text-white"
+                      }`}
+                    >
+                      <Heart className={`h-4 w-4 ${status.is_favourite ? "fill-rose-500 text-rose-500" : ""}`} />
+                      <span>{status.is_favourite ? "Favourited" : "Favourite"}</span>
+                    </button>
+
+                    {/* Want to Play Button */}
+                    <button
+                      type="button"
+                      onClick={() => handleToggle("want_to_play")}
+                      className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs font-bold transition-all duration-200 ${
+                        status.want_to_play
+                          ? "border border-cyan-400/50 bg-cyan-950/50 text-cyan-300 shadow-[0_0_15px_rgba(34,211,238,0.3)]"
+                          : "border border-slate-700/60 bg-slate-900/80 text-slate-300 hover:border-slate-500 hover:text-white"
+                      }`}
+                    >
+                      <Bookmark className={`h-4 w-4 ${status.want_to_play ? "fill-cyan-400 text-cyan-400" : ""}`} />
+                      <span>{status.want_to_play ? "In Wishlist" : "Want to Play"}</span>
+                    </button>
+
+                    {/* Already Played Button */}
+                    <button
+                      type="button"
+                      onClick={() => handleToggle("already_played")}
+                      className={`flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs font-bold transition-all duration-200 ${
+                        status.already_played
+                          ? "border border-emerald-500/50 bg-emerald-950/50 text-emerald-300 shadow-[0_0_15px_rgba(52,211,153,0.3)]"
+                          : "border border-slate-700/60 bg-slate-900/80 text-slate-300 hover:border-slate-500 hover:text-white"
+                      }`}
+                    >
+                      <CheckCircle2 className={`h-4 w-4 ${status.already_played ? "text-emerald-400 fill-emerald-500/20" : ""}`} />
+                      <span>{status.already_played ? "Played" : "Mark as Played"}</span>
+                    </button>
+
+                    {/* Rate & Review Button Trigger */}
+                    {status.already_played && (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const elem = document.getElementById("community-reviews-section");
+                          if (elem) elem.scrollIntoView({ behavior: "smooth" });
+                        }}
+                        className="flex items-center gap-1.5 rounded-xl border border-amber-400/50 bg-amber-500/20 px-3.5 py-2.5 text-xs font-bold text-amber-300 shadow-[0_0_15px_rgba(251,191,36,0.25)] hover:bg-amber-500/30 transition-all"
+                      >
+                        <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
+                        <span>{status.rating ? `Your Rating: ${status.rating}/10` : "Rate Game"}</span>
+                      </button>
+                    )}
+                  </div>
                 </div>
               </div>
 
@@ -587,6 +674,11 @@ function GameDetailModal({ game, onClose, onOpenDiagnostic }) {
                       </div>
                     </section>
                   )}
+
+                  {/* ── Community Ratings & Public Reviews (Phase 2 Stage 2C) ── */}
+                  <div id="community-reviews-section">
+                    {appid && <ReviewSection appid={appid} />}
+                  </div>
                 </div>
 
                 {/* RIGHT COLUMN: Sidebar (RigCheck & Store) */}

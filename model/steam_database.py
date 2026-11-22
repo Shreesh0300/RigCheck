@@ -41,26 +41,28 @@ _DB_PATH = _PROJECT_ROOT / "data" / "games_database_final.json"
 
 _cached_games: Optional[list[dict[str, Any]]] = None
 _appid_index: Optional[dict[int, dict[str, Any]]] = None
-_name_index: Optional[dict[str, dict[str, Any]]] = None
+_name_index: Optional[dict[str, list[dict[str, Any]]]] = None
 
 
 def _build_indices(games: list[dict[str, Any]]) -> None:
     """Build O(1) lookup indices for appid and name."""
     global _appid_index, _name_index
 
-    _appid_index = {}
-    _name_index = {}
+    by_appid = {}
+    by_name = {}
 
     for game in games:
         # Index by appid
         appid = game.get("appid")
-        if appid is not None:
-            _appid_index[int(appid)] = game
+        if type(appid) is not int or appid <= 0 or appid in by_appid:
+            raise ValueError(f"Invalid or duplicate catalog App ID: {appid!r}")
+        by_appid[appid] = game
 
         # Index by normalized name (lowercase, stripped)
         name = game.get("name")
         if name:
-            _name_index[str(name).lower().strip()] = game
+            by_name.setdefault(str(name).lower().strip(), []).append(game)
+    _appid_index, _name_index = by_appid, by_name
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -109,8 +111,8 @@ def load_database(path: Optional[str | Path] = None) -> list[dict[str, Any]]:
     if not isinstance(data, list):
         raise ValueError(f"Expected a JSON array in {db_path}, got {type(data).__name__}.")
 
-    _cached_games = data
     _build_indices(data)
+    _cached_games = data
 
     return _cached_games
 
@@ -140,14 +142,16 @@ def get_game_by_appid(appid: int) -> Optional[dict[str, Any]]:
     dict or None
         The game object, or None if not found.
     """
+    if type(appid) is not int or appid <= 0:
+        return None
     if _appid_index is None:
         load_database()
-    return _appid_index.get(int(appid))  # type: ignore[union-attr]
+    return _appid_index.get(appid)  # type: ignore[union-attr]
 
 
 def get_game_by_name(name: str) -> Optional[dict[str, Any]]:
     """
-    Look up a single game by exact name (case-insensitive).
+    Look up a unique exact name (case-insensitive). Ambiguous names return None.
 
     Parameters
     ----------
@@ -161,7 +165,8 @@ def get_game_by_name(name: str) -> Optional[dict[str, Any]]:
     """
     if _name_index is None:
         load_database()
-    return _name_index.get(name.lower().strip())  # type: ignore[union-attr]
+    matches = _name_index.get(name.lower().strip(), [])  # type: ignore[union-attr]
+    return matches[0] if len(matches) == 1 else None
 
 
 def search_games(query: str) -> list[dict[str, Any]]:

@@ -2,12 +2,14 @@ import os
 import re
 import secrets
 import urllib.parse
+from dataclasses import dataclass
 from datetime import datetime, timezone, timedelta
 from typing import Optional, Dict, Any, Tuple
 
 import bcrypt
 import httpx
 from bson import ObjectId
+from fastapi import Depends, HTTPException, Request
 from pydantic import BaseModel, EmailStr, Field
 from dotenv import load_dotenv
 
@@ -26,7 +28,41 @@ STEAM_RETURN_URL = os.getenv("STEAM_RETURN_URL", f"{FRONTEND_URL}/auth/steam/cal
 STEAM_REALM = os.getenv("STEAM_REALM", f"{FRONTEND_URL}/").strip()
 
 SESSION_COOKIE_NAME = "rigcheck_session"
+CSRF_COOKIE_NAME = "rigcheck_csrf"
 SESSION_DURATION_DAYS = 14
+
+def generate_csrf_token() -> str:
+    """Generates a secure pseudo-random CSRF token."""
+    return secrets.token_hex(32)
+
+def verify_csrf_token(request: Request) -> bool:
+    """Verifies CSRF token for cookie-authenticated requests.
+    Bearer token requests are inherently immune to browser CSRF and pass.
+    """
+    auth_header = request.headers.get("Authorization", "")
+    if auth_header.startswith("Bearer "):
+        return True
+
+    # If the user has a session cookie, enforce matching CSRF token
+    session_cookie = request.cookies.get(SESSION_COOKIE_NAME)
+    if not session_cookie:
+        return True
+
+    csrf_header = request.headers.get("X-CSRF-Token") or request.headers.get("x-csrf-token")
+    csrf_cookie = request.cookies.get(CSRF_COOKIE_NAME)
+
+    if not csrf_header or not csrf_cookie:
+        return False
+
+    return secrets.compare_digest(csrf_header, csrf_cookie)
+
+async def require_csrf(request: Request):
+    """FastAPI dependency to protect state-changing requests against CSRF."""
+    if not verify_csrf_token(request):
+        raise HTTPException(
+            status_code=403,
+            detail="CSRF validation failed. Missing or invalid X-CSRF-Token header."
+        )
 
 class UserAuthRequest(BaseModel):
     email: EmailStr
@@ -82,20 +118,44 @@ async def get_session_user(token: str) -> Optional[Dict[str, Any]]:
 
     # Check expiration
     expires_at = session.get("expires_at")
-    if expires_at and datetime.fromisoformat(expires_at) < datetime.now(timezone.utc):
+    try:
+        expired = datetime.fromisoformat(expires_at) <= datetime.now(timezone.utc)
+    except (TypeError, ValueError):
+        return None
+    if expired:
         await sessions_col.delete_one({"token": token})
         return None
 
-    try:
-        user_obj_id = ObjectId(session["user_id"])
-    except Exception:
+    if not ObjectId.is_valid(session.get("user_id")):
         return None
+    user_obj_id = ObjectId(session["user_id"])
 
     user = await users_col.find_one({"_id": user_obj_id})
     if not user:
         return None
 
     return sanitize_user(user)
+
+
+@dataclass(frozen=True)
+class AuthenticatedUser:
+    """Owner identity for internal, session-authorized database operations."""
+    id: ObjectId
+
+
+async def optional_session_user(request: Request) -> Optional[Dict[str, Any]]:
+    token = request.cookies.get(SESSION_COOKIE_NAME)
+    if not token:
+        header = request.headers.get("Authorization", "")
+        if header.startswith("Bearer "):
+            token = header[7:].strip()
+    return await get_session_user(token) if token else None
+
+
+async def require_authenticated_user(user=Depends(optional_session_user)) -> AuthenticatedUser:
+    if user is None:
+        raise HTTPException(status_code=401, detail="Authentication required")
+    return AuthenticatedUser(ObjectId(user["id"]))
 
 async def invalidate_session(token: str) -> bool:
     """Revokes a session token from MongoDB."""
@@ -119,6 +179,10 @@ def sanitize_user(user_doc: Dict[str, Any]) -> Dict[str, Any]:
         "created_at": user_doc.get("created_at"),
         "last_login": user_doc.get("last_login"),
         "saved_rig": user_doc.get("saved_rig"),
+        "preferred_genres": user_doc.get("preferred_genres", []),
+        "interests": user_doc.get("interests", []),
+        "onboarding_completed": bool(user_doc.get("onboarding_completed", False)),
+        "feed_revision": int(user_doc.get("feed_revision", 1)),
     }
 
 # --- Email / Password Authentication ---
